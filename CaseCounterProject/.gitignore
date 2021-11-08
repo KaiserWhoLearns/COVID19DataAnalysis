@@ -1,0 +1,8 @@
+CaseCounter/obj/*
+CaseCounter/bin/*
+CurveClassifier/obj/*
+CurveClassifier/bin/*
+DataSeries/bin/*
+DataSeries/obj/*
+Utilities/obj/*
+Utilities/bin/*

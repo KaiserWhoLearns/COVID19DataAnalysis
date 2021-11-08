@@ -1,0 +1,27 @@
+﻿<Window x:Class="CaseCounter.AnalysisWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaseCounter"
+        mc:Ignorable="d"
+        Title="AnalysisWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="1" Grid.Column ="0" x:Name="analysisTextBox"/>
+        <StackPanel Grid.Row="0" Grid.Column ="1" HorizontalAlignment="Left">
+        <Button   Width="100" Click="FindPeaks_Click">Find Peaks</Button>
+        <Button   Width="100" Click="RemovePeak_Click">Remove Valley</Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,71 @@
+﻿<Window x:Class="CaseCounter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaseCounter"
+        xmlns:scottplot="clr-namespace:ScottPlot;assembly=ScottPlot"
+        mc:Ignorable="d"
+        Title="Case Counter" Height="800" Width="1200">
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Load Source Files" Click="LoadSourceFile_Click"/>
+                <MenuItem Header="Clear Source Files" Click="ClearSourceFile_Click"/>
+                <Separator/>
+                <MenuItem Header="Build Time Series" Click="BuildTimeSeries_Click"/>
+                <MenuItem Header="Save Time Series" Click="SaveTimeSeries_Click"/>
+                <MenuItem Header="Load Time Series" Click="LoadTimeSeries_Click"/>
+                <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
+                <Separator/>
+                <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="View All Time Series" Click="ViewAllTimeSeries_Click"/>
+            </MenuItem>
+            <MenuItem Header="Filter">
+                <MenuItem Header="Filter US States" Click="OnFilterUSStates_Click"/>
+                <MenuItem Header="Filter Washington" Click="OnFilterWashington_Click"/>
+                <MenuItem Header="Filter India" Click="OnFilterIndia_Click"/>
+                <Separator/>
+                <MenuItem Header="Filter Confirmed" Click="OnFilterConfirmed_Click"/>
+                <MenuItem Header="Filter Death" Click="OnFilterDeath_Click"/>
+            </MenuItem>
+            <MenuItem Header="TimeSeries">
+                <MenuItem Header="To daily count" Click="DailyCount_Click"/>
+                <Separator/>
+                <MenuItem Header="Select from countries" Click="SelectCountries_Click"/>
+                <Separator/>
+                <MenuItem Header="Weekly Smoothing" Click="WeekSmooth_Click"/>
+                <MenuItem Header="Gaussian Smoothing" Click="GaussSmooth_Click"/>
+            </MenuItem>
+            <MenuItem Header="Chart Display">
+                <MenuItem Header="Display" Click="Display_Click"/>
+                <MenuItem Header="Display WS" Click="DisplayWs_Click"/>
+                <MenuItem Header="Display GS" Click="DisplayGs_Click"/>
+                <Separator/>
+                <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
+            </MenuItem>
+            <MenuItem Header="Analyze Curve">
+                <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
+                <MenuItem Header="Display and Count Peaks" Click="DisplayPeaks_Click"/>
+            </MenuItem>
+        </Menu>
+        <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>
+        <ListBox Grid.Row="2" Grid.Column ="1" x:Name="fileListBox"/>
+        <ListBox Grid.Row="2" Grid.Column ="2" x:Name="timeSeriesListBox" SelectionMode="Multiple"/>
+        <Canvas Grid.Row="0"  Grid.Column="2" Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
+    </Grid>
+</Window>
