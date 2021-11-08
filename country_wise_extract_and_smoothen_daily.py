@@ -38,7 +38,7 @@ def find_peaks(arr):
     return max_peaks, min_peaks, buf
 
 
-def read_file(filepath='../COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'):
+def read_file(filepath='data/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'):
     df = pandas.read_csv(filepath)
     df = df.dropna(subset=['Country/Region'])
     return df
@@ -75,10 +75,6 @@ def main():
         available_provinces = [x for x in available_provinces if pandas.isnull(x) == False]
         print("Processing {} having {} Provinces/States".format(country, len(available_provinces)))
         if len(available_provinces) >= 1:
-            if country == 'Denmark':
-                print(available_provinces, type(available_provinces))
-                for a in available_provinces:
-                    print(a, type(a))
             root_folder = 'region_level'
             p = '{}/{}'.format(root_folder, country)
             create_dir(p)
