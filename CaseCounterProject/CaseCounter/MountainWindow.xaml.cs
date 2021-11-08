@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,8 @@ namespace CaseCounter {
 
         private TimeSeries timeSeries;
         private List<Peak> peaks;
+        private ScottPlot.Plottable.ScatterPlot peakCurve;
+
         public MountainWindow(TimeSeries ts) {
             InitializeComponent();
             timeSeries = ts;
@@ -56,10 +59,24 @@ namespace CaseCounter {
 
         }
         private void FindPeaks_MW_Click(object sender, RoutedEventArgs e) {
+            peaks = timeSeries.FindPeaks();
+            UpdatePeaks();
 
         }
 
+        private void UpdatePeaks() {
+            (double[] dataX, double[] dataY) = Classifier.BuildDataSeries(peaks);
+            peakCurve = wpfPlot2.Plot.AddScatter(dataX, dataY);
+            peakCurve.LineWidth = 3;
+            peakCurve.Color = System.Drawing.Color.Red;
+
+            wpfPlot2.Refresh();
+        }
+
         private void RemovePeak_MW_Click(object sender, RoutedEventArgs e) {
+            wpfPlot2.Plot.Remove(peakCurve);
+            Classifier.RemoveSmallestValley(peaks);
+            UpdatePeaks();
 
         }
     }

@@ -60,7 +60,7 @@
             </MenuItem>
             <MenuItem Header="Analyze Curve">
                 <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
-                <MenuItem Header="Display and Count Peaks" Click="DisplayPeaks_Click"/>
+                <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

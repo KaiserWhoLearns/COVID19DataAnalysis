@@ -12,7 +12,9 @@ namespace CurveClassifier {
 
         public int X { get; }
         public double Y { get; }
-        public override string ToString() => $"({X}, {Y:F2})";
+        public override string ToString() {
+            return $"({X}, {Y:F2})";
+        }
     }
 
     public class Peak {
@@ -43,8 +45,7 @@ namespace CurveClassifier {
             if (y1 < y2) {
                 double z2 = y1 * x2 / y2;
                 return (z2 + x1) * y1;
-            }
-            else {
+            } else {
                 double z1 = y2 * x1 / y1;
                 return (z1 + x2) * y2;
             }
@@ -117,6 +118,25 @@ namespace CurveClassifier {
             Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
             peaks[minSoFar] = newPeak;
             peaks.RemoveAt(minSoFar + 1);
+        }
+
+        public static (double[], double[]) BuildDataSeries(List<Peak> peaks) {
+            int len = 2 * peaks.Count + 1;
+            double[] xData = new double[len];
+            double[] yData = new double[len];
+
+            for (int i = 0; i < peaks.Count; i++) {
+                Peak p = peaks[i];
+                xData[2 * i] = p.LMin.X;
+                yData[2 * i] = p.LMin.Y;
+                xData[2 * i + 1] = p.Max.X;
+                yData[2 * i + 1] = p.Max.Y;
+            }
+            xData[^1] = peaks[^1].RMin.X;
+            yData[^1] = peaks[^1].RMin.Y;
+
+            return (xData, yData);
+
         }
     }
 
