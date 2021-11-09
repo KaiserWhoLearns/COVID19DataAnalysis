@@ -58,7 +58,6 @@ namespace CaseCounter {
                     }
                     try {
                         caseCountTable = new CaseCountTable(filePath);
-                        caseCountTable.Clean();                     // Replace nulls with zero values
                         caseCountTables.Add(caseCountTable);
                         caseCountTable.ToListBox(caseListBox);
                         _ = fileListBox.Items.Add(Util.ExtractFilename(filePath));

@@ -140,7 +140,7 @@ namespace CaseCounter {
                     }
                     try {
                         CaseCountTable cct = new(fileName);
-                        cct.Clean();                     // Replace nulls with zero values
+                        cct.Cleanup(new Config());
                         tables.Add(cct);
 
                     } catch (Exception exception) {

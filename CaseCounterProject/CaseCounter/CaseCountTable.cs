@@ -18,13 +18,6 @@ namespace CaseCounter {
         public DateTime Date { get; }           // Date extracted from filename
         public int Days { get; }                 // Number of days since 01-22-2020,  start date of JHU data
 
-        public int Rows {
-            get { return 37; }
-        }
-
-        public int Cols {
-            get { return 42; }
-        }
 
         public string FileName { get; }
 
@@ -49,13 +42,13 @@ namespace CaseCounter {
  
             _ = csvReader.Context.RegisterClassMap<JhuClassMap>();
             cases = csvReader.GetRecords<JhuCaseCountRecord>().ToList();
-        }
 
-        public void Clean() {
-            for (int i = 0; i < cases.Count; i++) {
+            for (int i = 0; i < cases.Count; i++) {     // Remove any null values
                 cases[i] = cases[i].Clean();
             }
+
         }
+
 
         public void ToListBox(ListBox listBox) {
             listBox.Items.Clear();
@@ -99,6 +92,30 @@ namespace CaseCounter {
             }
 
         }
+
+        public void Cleanup(Config config) {
+            List<JhuCaseCountRecord> jList = new();
+            foreach (JhuCaseCountRecord jccr in cases) {
+                if (! RemoveRecord(jccr, config)) {
+                    UpdateRecord(jccr, config);
+                    jList.Add(jccr);
+                }
+            }
+
+            cases = jList;
+        }
+
+        private bool RemoveRecord(JhuCaseCountRecord jccr, Config config) {
+            if (config.Admin0RemoveList.Contains(jccr.Country))
+                return true;
+            return false;
+        }
+
+        private void UpdateRecord(JhuCaseCountRecord jccr, Config config) {
+            if (config.Admin0Substitutions.ContainsKey(jccr.Country)) {
+                jccr.Country = config.Admin0Substitutions[jccr.Country];
+            }
+        }
     }
 
     public class JhuCaseCountRecord {
@@ -125,7 +142,7 @@ namespace CaseCounter {
         }
 
         public JhuCaseCountRecord Clean() {
-            JhuCaseCountRecord ccr = new JhuCaseCountRecord();
+            JhuCaseCountRecord ccr = new();
 
             ccr.FIPS = FIPS ?? 0;
             ccr.District = District;
