@@ -32,7 +32,7 @@ namespace CaseCounter {
 
             TimeSeriesSet mainTSS = BuildTimeSeriesSet(tables);
 
-            ReportStep("Built TimeSeriesSet,  Days: " + mainTSS.LastDay() + " Entries: " + mainTSS.Count);
+            ReportStep("Built TimeSeriesSet,  Days: " + mainTSS.LastDay() + 1 + " Entries: " + mainTSS.Count);
 
             string topLevelOutputDir = CreateOutputDirectories(directoryList, out error);
 
@@ -179,7 +179,7 @@ namespace CaseCounter {
             string path = folderDialog.SelectedPath;
             if (result == System.Windows.Forms.DialogResult.OK) {
 
-
+/*
                 foreach (string dir in directories) {
                     string path1 = System.IO.Path.Combine(path, dir);
                     if (Directory.Exists(path1)) {
@@ -188,8 +188,9 @@ namespace CaseCounter {
                         return path;
                     }
                 }
+*/
                 foreach (string dir in directories) {
-                    string path1 = System.IO.Path.Combine(path, dir);
+                    string path1 = Path.Combine(path, dir);
                     Directory.CreateDirectory(path1);
                 }
             } else {

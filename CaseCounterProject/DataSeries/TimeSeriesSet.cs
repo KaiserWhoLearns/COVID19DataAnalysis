@@ -73,15 +73,13 @@ namespace DataSeries {
 
 
         public void WriteToFile(string path) {
-            StreamWriter outputFile = new StreamWriter(path);
-            outputFile.WriteLine(HeaderString(LastDay()));
+            using (StreamWriter outputFile = new(path)) {
+                outputFile.WriteLine(HeaderString(LastDay()));
 
-            foreach(TimeSeries ts in series.Values) {
-                outputFile.WriteLine(ts.ToRowString());
+                foreach (TimeSeries ts in series.Values) {
+                    outputFile.WriteLine(ts.ToRowString());
+                }
             }
-
-            outputFile.Flush();
-
         }
 
         public int LastDay() {
@@ -166,8 +164,12 @@ namespace DataSeries {
         }
 
         public void ToListBox(ListBox listBox) {
+
+            List<string> itemList = series.Keys.ToList();
+            itemList.Sort();
+
             listBox.Items.Clear();
-            foreach (string str in series.Keys) {
+            foreach (string str in itemList) {
                 _ = listBox.Items.Add(str);
             }
         }

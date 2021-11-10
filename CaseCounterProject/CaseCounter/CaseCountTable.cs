@@ -108,13 +108,20 @@ namespace CaseCounter {
         private bool RemoveRecord(JhuCaseCountRecord jccr, Config config) {
             if (config.Admin0RemoveList.Contains(jccr.Country))
                 return true;
+            if (config.Admin1RemoveList.Contains((jccr.Country, jccr.Province)))
+                return true;
             return false;
         }
 
         private void UpdateRecord(JhuCaseCountRecord jccr, Config config) {
-            if (config.Admin0Substitutions.ContainsKey(jccr.Country)) {
+
+            if (config.Admin1Substitutions.ContainsKey((jccr.Country, jccr.Province))) {
+                (string Admin0Str, string Admin1Str) = config.Admin1Substitutions[(jccr.Country, jccr.Province)];
+                jccr.Country = Admin0Str;
+                jccr.Province = Admin1Str;
+            }  else if (config.Admin0Substitutions.ContainsKey(jccr.Country)) {
                 jccr.Country = config.Admin0Substitutions[jccr.Country];
-            }
+            } 
         }
     }
 
