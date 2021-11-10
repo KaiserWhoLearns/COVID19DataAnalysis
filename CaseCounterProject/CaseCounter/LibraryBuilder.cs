@@ -12,9 +12,11 @@ using DataSeries;
 namespace CaseCounter {
     public class LibraryBuilder {
         ListBox listBox;
+        Config config;
 
         public LibraryBuilder(ListBox listBox) {
             this.listBox = listBox;
+            config = new();
         }
 
         public bool Build() {
@@ -32,7 +34,7 @@ namespace CaseCounter {
 
             TimeSeriesSet mainTSS = BuildTimeSeriesSet(tables);
 
-            ReportStep("Built TimeSeriesSet,  Days: " + mainTSS.LastDay() + 1 + " Entries: " + mainTSS.Count);
+            ReportStep("Built TimeSeriesSet,  Days: " + (mainTSS.LastDay() + 1) + " Entries: " + mainTSS.Count);
 
             string topLevelOutputDir = CreateOutputDirectories(directoryList, out error);
 
@@ -42,16 +44,19 @@ namespace CaseCounter {
 
             ReportStep("Create Output Directories");
 
-            mainTSS.WriteToFile(Path.Combine(topLevelOutputDir, "TS_Main.csv"));
+            mainTSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Main.csv"));
 
             ReportStep("Write TS_Main");
 
             TimeSeriesSet dailyCount_TSS = mainTSS.ToDailyCount();
-            dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, "TS_Daily.csv"));
+            dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Daily.csv"));
 
             ReportStep("Write TS_Daily");
 
-            TimeSeriesSet unitedStates_TSS = dailyCount_TSS.Filter((TimeSeries ts) => ts.Admin0.Equals("US"));
+            // Filter US data to require Admin2 is non-empty.   This cleans up a lot of garbage
+            TimeSeriesSet unitedStates_TSS = dailyCount_TSS.Filter((TimeSeries ts) => (ts.Admin0.Equals("US") && !string.IsNullOrEmpty(ts.Admin2)));
+
+
             TimeSeriesSet world_TSS = dailyCount_TSS.Filter((TimeSeries ts) => !ts.Admin0.Equals("US"));
             TimeSeriesSet world_province_TSS = world_TSS.Filter((TimeSeries ts) => !string.IsNullOrEmpty(ts.Admin1));
             TimeSeriesSet world_country_TSS = world_TSS.Filter((TimeSeries ts) => string.IsNullOrEmpty(ts.Admin1));
@@ -110,6 +115,11 @@ namespace CaseCounter {
 
             TimeSeriesSet india_state_confirmed_TSS = world_province_confirmed_TSS.Filter((TimeSeries ts) => ts.Admin0 == "India");
             india_state_confirmed_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbp, "India_confirmed_sm.csv"));
+
+            BuildUSStateFiles(us_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, usbc_c));
+            BuildUSStateFiles(us_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, usbc_d));
+
+
             TimeSeriesSet washington_confirmed_TSS = us_confirmed_TSS.Filter((TimeSeries ts) => ts.Admin1 == "Washington");
             washington_confirmed_TSS.WriteToFile(Path.Combine(topLevelOutputDir, usbc, "Washington_confirmed_sm.csv"));
 
@@ -140,7 +150,7 @@ namespace CaseCounter {
                     }
                     try {
                         CaseCountTable cct = new(fileName);
-                        cct.Cleanup(new Config());
+                        cct.Cleanup(config);
                         tables.Add(cct);
 
                     } catch (Exception exception) {
@@ -166,32 +176,27 @@ namespace CaseCounter {
 
 
 
-        private string[] directoryList = { "World by country", "World by province", "United States by county" };
+        private string[] directoryList = { "World by country", "World by province", "United States by county", "United States by county/Confirmed",
+            "United States by county/Deaths", "Intermediate data files" };
         private string wbc = "World by country";
         private string wbp = "World by province";
         private string usbc = "United States by county";
-        private string CreateOutputDirectories(string[] directories, out bool error) {
+        private string usbc_c = "United States by county/Confirmed";
+        private string usbc_d = "United States by county/Deaths";
+        private string idf = "Intermediate data files";
+
+        private static string CreateOutputDirectories(string[] directories, out bool error) {
             error = false;
 
-            MessageBox.Show("Select directory for output");
+            _ = MessageBox.Show("Select directory for output");
             System.Windows.Forms.FolderBrowserDialog folderDialog = new System.Windows.Forms.FolderBrowserDialog();
             System.Windows.Forms.DialogResult result = folderDialog.ShowDialog();
             string path = folderDialog.SelectedPath;
             if (result == System.Windows.Forms.DialogResult.OK) {
 
-/*
-                foreach (string dir in directories) {
-                    string path1 = System.IO.Path.Combine(path, dir);
-                    if (Directory.Exists(path1)) {
-                        MessageBox.Show("Directory " + dir + " already exists");
-                        error = true;
-                        return path;
-                    }
-                }
-*/
                 foreach (string dir in directories) {
                     string path1 = Path.Combine(path, dir);
-                    Directory.CreateDirectory(path1);
+                    _ = Directory.CreateDirectory(path1);
                 }
             } else {
                 error = true;
@@ -227,6 +232,14 @@ namespace CaseCounter {
 
             return nationalSet;
 
+        }
+
+        void BuildUSStateFiles(TimeSeriesSet us_TSS, string dataType, string path) {
+            foreach (string state in config.UsStatesList) {
+                TimeSeriesSet tss = us_TSS.Filter((TimeSeries ts) => ts.Admin1 == state);
+                string fileName = state + "_" + dataType + "_sm.csv";
+                tss.WriteToFile(Path.Combine(path, fileName));
+            }
         }
         private void ReportStep(string str) {
             _ = listBox.Items.Add(str);

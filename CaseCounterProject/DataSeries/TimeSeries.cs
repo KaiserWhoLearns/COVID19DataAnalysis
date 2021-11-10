@@ -125,7 +125,7 @@ namespace DataSeries {
             _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"");
 
             for (int i = 0; i <= LastDay; i++) {
-                _ = sb.Append("," + data[i]);
+                _ = sb.Append("," + data[i].ToString("F2"));
             }
 
             return sb.ToString();
