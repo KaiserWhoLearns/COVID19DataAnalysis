@@ -1,3 +1,4 @@
+.vs/*
 owid-covid-data.csv
 countries/*
 region_level/*
