@@ -27,18 +27,27 @@ namespace DataSeries {
 
         public int LastDay { get; set; }
 
+        // Need to track date of population update - but this is not public info
+        private int lastPopulationUpdate;
+
+        // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
+        public long Population { get; set; }
+
         private double[] data;
 
-        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2) {
+        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, long population = -1) {
             DataType = dataType;
             Admin0 = admin0;
             Admin1 = admin1;
             Admin2 = admin2;
+            Population = population;
 
             Key = BuildKey(dataType, admin0, admin1, admin2);
 
             data = new double[] { 0, 0, 0, 0, 0, 0, 0, 0 };
             LastDay = -1;
+            lastPopulationUpdate = -1;
+
         }
 
         // Build a time series from a row in a CSV
@@ -64,6 +73,9 @@ namespace DataSeries {
                     case "DataType":
                         DataType = (DataType)Enum.Parse(typeof(DataType), val);
                         break;
+                    case "Population":
+                        Population = long.Parse(val);
+                        break;
 
                     default:
                         if (key.StartsWith("Day ")) {
@@ -87,6 +99,13 @@ namespace DataSeries {
 
             data[index] = value ?? 0;
             LastDay = Math.Max(index, LastDay);
+        }
+
+        public void UpdatePopulation(int index, int totalCases,  double incidence) {
+            if (index > lastPopulationUpdate) {      // Update only takes place on latest date,  we separate this from the actual update so as not to depend on order of updates
+                lastPopulationUpdate = index;
+                Population = (incidence > 0) ? (long)(totalCases * 100000.0 / incidence) : 0;
+            }
         }
 
         private void Resize(int n) {
@@ -122,7 +141,7 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"");
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population);
 
             for (int i = 0; i <= LastDay; i++) {
                 _ = sb.Append("," + data[i].ToString("F2"));
@@ -132,7 +151,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ToDailyCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
 
             ts.SetValue(0, data[0]);
             for (int i = 1; i <= LastDay; i++) {
@@ -159,7 +178,7 @@ namespace DataSeries {
             return Smooth(TimeSeriesSet.GaussianFilter);
         }
         public TimeSeries Smooth(double[] filter) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
             for (int i = 0; i <= LastDay; i++)
                 ts.SetValue(i, Smooth(i, filter));
 
@@ -191,6 +210,10 @@ namespace DataSeries {
 
             for (int i = 0; i <= ts.LastDay; i++)
                 data[i] += ts.data[i];
+                                            // Slightly complicated to handle -1 as the no-population value
+                                            // Possibly,  using 0 as the no-population value would make things easier
+            if (ts.Population != -1)
+                Population = (Population == -1) ? ts.Population : Population + ts.Population;
         }
 
         public List<Peak> FindPeaks() {

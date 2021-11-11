@@ -66,7 +66,7 @@ namespace CaseCounter {
         private readonly string[] Admin0Remove = { "Cruise Ship", "Summer Olympics 2020", "Others", "Taipei and environs", "occupied Palestinian territory",
                                                     "MS Zaandam", " Azerbaijan", "The Bahamas", "Bahamas, The", "Channel Islands", "Diamond Princess",
                                                     "Russian Federation", "St. Martin", "Saint Martine", "Republic of Moldova", "Republic of the Congo", "Cape Verde", 
-                                                    "Greenland", "Macau", "Ivory Coast", "North Ireland", "Gibraltar"};
+                                                    "Greenland", "Macau", "Ivory Coast", "North Ireland", "Gibraltar", "UK"};
 
         // Pairs of substitutions for Admin0.  Length must be even
         private readonly string[] Admin1Remove = { "Australia", "From Diamond Princess", "US", "Wuhan Evacuee", "Canada", "Diamond Princess", "Canada", "Toronto, ON",
@@ -102,7 +102,12 @@ namespace CaseCounter {
                                                 "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
                                                 "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
 
-        private readonly string[] European_countries = { };
+        private readonly string[] European_countries = {"Albania","Andorra","Austria","Belarus","Belgium","Bosnia and Herzegovina","Bulgaria",
+                                                "Croatia","Cyprus","Czech Republic","Denmark","Estonia","Finland","France","Germany",
+                                                "Greece","Iceland","Ireland","Italy","Kosovo","Latvia","Liechtenstein","Lithuania",
+                                                "Luxembourg","Moldova","Monaco","Montenegro","Netherlands","Norway","Poland","Portugal",
+                                                "Romania","Russia","San Marino","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland",
+                                                "Turkey","Ukraine","United Kingdom","Vatican City" };
 
         private readonly string[] Asian_countries = {};
 

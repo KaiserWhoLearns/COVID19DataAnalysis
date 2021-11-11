@@ -37,11 +37,12 @@ namespace CaseCounter {
             Date = dateTime;
             Days = days;
 
-            StreamReader reader = new(filePath);
-            CsvReader csvReader = new(reader, CultureInfo.InvariantCulture);
- 
-            _ = csvReader.Context.RegisterClassMap<JhuClassMap>();
-            cases = csvReader.GetRecords<JhuCaseCountRecord>().ToList();
+            using (StreamReader reader = new(filePath))
+            using (CsvReader csvReader = new(reader, CultureInfo.InvariantCulture)) {
+
+                _ = csvReader.Context.RegisterClassMap<JhuClassMap>();
+                cases = csvReader.GetRecords<JhuCaseCountRecord>().ToList();
+            }
 
             for (int i = 0; i < cases.Count; i++) {     // Remove any null values
                 cases[i] = cases[i].Clean();
@@ -69,11 +70,12 @@ namespace CaseCounter {
             }
 
             string fileName = path[^2];
-
+            // Need to watch out for the case of a date before the start 
+            // Todo: We could put a check for a future date here - since something too far in the future could blow things up
             if (DateTime.TryParse(fileName, out dateTime)) {
                 DateTime first = new(2020, 1, 22);
                 days = (int)dateTime.Subtract(first).TotalDays;
-                return days >= 0;       // Need to watch out for the case of a date before the start
+                return days >= 0;      
             } else {
                 return false;
             }
@@ -89,6 +91,7 @@ namespace CaseCounter {
             foreach (JhuCaseCountRecord jccr in cases) {
                 tss.AddConfirmed(jccr.Country, jccr.Province, jccr.District, jccr.Confirmed, Days);
                 tss.AddDeaths(jccr.Country, jccr.Province, jccr.District, jccr.Deaths, Days);
+                tss.UpdatePopulation(jccr.Country, jccr.Province, jccr.District, jccr.Confirmed, jccr.IncidentRate, Days);
             }
 
         }

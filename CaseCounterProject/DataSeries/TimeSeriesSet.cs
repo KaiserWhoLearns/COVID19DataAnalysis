@@ -30,6 +30,31 @@ namespace DataSeries {
             AddCase(admin0, admin1, admin2, deaths, DataType.Deaths, index);
         }
 
+        public void UpdatePopulation(string admin0, string admin1, string admin2, int? confirmed, double? incidence, int index) {
+            double ir = incidence ?? 0.0;                                   // Annoying, clean this up
+            int totalCases = confirmed ?? 0;
+
+            if (ir == 0.0)
+                return;
+
+            UpdatePopulation(admin0, admin1, admin2, DataType.Confirmed, totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, DataType.Deaths, totalCases, ir, index);
+
+        }
+
+        public void UpdatePopulation(string admin0, string admin1, string admin2, DataType dataType, int totalCases, double incidence, int index) {
+            string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
+
+                                    // This probably never occurs due assigning counts prior to updating population
+            if (!series.ContainsKey(key)) {
+                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2));
+            }
+
+            series[key].UpdatePopulation(index, totalCases, incidence);
+        }
+
+
+
         public void AddCase(string admin0, string admin1, string admin2, int? count, DataType dataType, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
@@ -94,7 +119,7 @@ namespace DataSeries {
 
         private static string HeaderString(int lastDay) {
             StringBuilder sb = new();
-            _ = sb.Append("DataType,Admin2,Admin1,Admin0");
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population");
 
             for (int i = 0; i <= lastDay; i++) {
                 _ = sb.Append(",Day " + i);
@@ -106,14 +131,12 @@ namespace DataSeries {
         public void LoadCsv(string filePath) {
 
 
-            StreamReader reader = new(filePath);
-            CsvReader csvReader = new(reader, CultureInfo.InvariantCulture);
-
-
-            List<dynamic> dataRecords = csvReader.GetRecords<dynamic>().ToList();
-
-            foreach (IEnumerable<KeyValuePair<string, object>> row in dataRecords) {
-                AddSeries(new(row));
+            using (StreamReader reader = new(filePath))
+            using (CsvReader csvReader = new(reader, CultureInfo.InvariantCulture)) {
+                List<dynamic> dataRecords = csvReader.GetRecords<dynamic>().ToList();
+                foreach (IEnumerable<KeyValuePair<string, object>> row in dataRecords) {
+                    AddSeries(new(row));
+                }
             }
 
         }

@@ -247,6 +247,7 @@ namespace CaseCounter {
 
         void BuildContinentFiles(TimeSeriesSet world_TSS, string dataType, string path) {
             BuildContinentFiles("Africa", config.AfricaList, world_TSS, dataType, path);
+            BuildContinentFiles("Europe", config.EuropeList, world_TSS, dataType, path);
         }
 
         void BuildContinentFiles(string continent, List<string> countryList, TimeSeriesSet world_TSS, string dataType, string path) {
