@@ -61,33 +61,33 @@ namespace CaseCounter {
             TimeSeriesSet world_province_TSS = world_TSS.Filter((TimeSeries ts) => !string.IsNullOrEmpty(ts.Admin1));
             TimeSeriesSet world_country_TSS = world_TSS.Filter((TimeSeries ts) => string.IsNullOrEmpty(ts.Admin1));
 
-            unitedStates_TSS.WriteToFile(Path.Combine(topLevelOutputDir, usbc, "USBC_Daily.csv"));
-            world_country_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbc, "WBC_Daily.csv"));
-            world_province_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbp, "WBP_Daily.csv"));
+            unitedStates_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "USBC_Daily.csv"));
+            world_country_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBC_Daily.csv"));
+            world_province_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBP_Daily.csv"));
 
 
 
             ReportStep("Write USBC, WBC, WBP");
 
-            TimeSeriesSet world_province_combined_TSS = ExtractNational(world_province_TSS, Path.Combine(topLevelOutputDir, wbp, "World_Provinces_Combined.csv"));
+            TimeSeriesSet world_province_combined_TSS = ExtractNational(world_province_TSS, Path.Combine(topLevelOutputDir, idf, "World_Provinces_Combined.csv"));
 
             ReportStep("Combine province files");
 
-            TimeSeriesSet unitedStates_state_TSS = ExtractUSStates(unitedStates_TSS, Path.Combine(topLevelOutputDir, usbc));
+            TimeSeriesSet unitedStates_state_TSS = ExtractUSStates(unitedStates_TSS, Path.Combine(topLevelOutputDir, idf));
 
             ReportStep("Write US State Data");
 
-            TimeSeriesSet us_only_TSS = ExtractNational(unitedStates_state_TSS, Path.Combine(topLevelOutputDir, usbc, "us_national_daily.csv"));
+            TimeSeriesSet us_only_TSS = ExtractNational(unitedStates_state_TSS, Path.Combine(topLevelOutputDir, idf, "US_national_daily.csv"));
 
             ReportStep("Write US National Data");
 
             world_province_TSS.AddTimeSeriesSet(unitedStates_state_TSS);
-            world_province_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbp, "WBP_Daily_with_us.csv"));
+            world_province_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBP_Daily_with_us.csv"));
 
             ReportStep("Add provice and national sets");
             world_country_TSS.AddTimeSeriesSet(world_province_combined_TSS);
             world_country_TSS.AddTimeSeriesSet(us_only_TSS);
-            world_country_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbc, "WBC_Daily_all_countries.csv"));
+            world_country_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBC_Daily_all_countries.csv"));
 
             // Separate into confirmed and dead files.  Note that smoothing is taking place here - so subsequent selections
             // should not apply smoothing
@@ -112,6 +112,9 @@ namespace CaseCounter {
             world_deaths_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbc, "World_deaths_sm.csv"));
 
             ReportStep("Separate cases/deaths and smooth");
+
+            BuildContinentFiles(world_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, wbc));
+            BuildContinentFiles(world_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, wbc));
 
             TimeSeriesSet india_state_confirmed_TSS = world_province_confirmed_TSS.Filter((TimeSeries ts) => ts.Admin0 == "India");
             india_state_confirmed_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbp, "India_confirmed_sm.csv"));
@@ -241,6 +244,17 @@ namespace CaseCounter {
                 tss.WriteToFile(Path.Combine(path, fileName));
             }
         }
+
+        void BuildContinentFiles(TimeSeriesSet world_TSS, string dataType, string path) {
+            BuildContinentFiles("Africa", config.AfricaList, world_TSS, dataType, path);
+        }
+
+        void BuildContinentFiles(string continent, List<string> countryList, TimeSeriesSet world_TSS, string dataType, string path) {
+            TimeSeriesSet tss = world_TSS.Filter((TimeSeries ts) => countryList.Contains(ts.Admin0));
+            string fileName = continent + "_" + dataType + "_sm.csv";
+            tss.WriteToFile(Path.Combine(path, fileName));
+        }
+
         private void ReportStep(string str) {
             _ = listBox.Items.Add(str);
 

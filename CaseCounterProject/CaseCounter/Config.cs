@@ -20,8 +20,11 @@ namespace CaseCounter {
 
         public List<string> UsStatesList { get; }
 
+        public List<string> AfricaList { get; }
+
         public Config() {
             UsStatesList = US_states.ToList();
+            AfricaList = African_countries.ToList();
 
             Admin0RemoveList = Admin0Remove.ToList();
 
@@ -53,20 +56,26 @@ namespace CaseCounter {
 
         private readonly string[] Admin0Remove = { "Cruise Ship", "Summer Olympics 2020", "Others", "Taipei and environs", "occupied Palestinian territory",
                                                     "MS Zaandam", " Azerbaijan", "The Bahamas", "Bahamas, The", "Channel Islands", "Diamond Princess",
-                                                    "Russian Federation"};
+                                                    "Russian Federation", "St. Martin", "Saint Martine", "Republic of Moldova", "Republic of the Congo", "Cape Verde", 
+                                                    "Greenland", "Macau", "Ivory Coast", "North Ireland", "Gibraltar"};
 
         // Pairs of substitutions for Admin0.  Length must be even
         private readonly string[] Admin1Remove = { "Australia", "From Diamond Princess", "US", "Wuhan Evacuee", "Canada", "Diamond Princess", "Canada", "Toronto, ON",
-                                                    "Canada", "Recovered", "Canada", "Grand Princess", "Canada", "Montreal, QC"};
+                                                    "Canada", "Recovered", "Canada", "Grand Princess", "Canada", "Montreal, QC", "United Kingdom", "United Kingdom",
+                                                    "United Kingdom", "UK", "United Kingdom", "Unknown", "Israel", "From Diamond Princess", "Canada", " Montreal, QC",
+                                                    "Canada", "London, ON"};
 
         // Pairs of substitutions for Admin0.  Length must be even
         private readonly string[] Admin0Subs = { "Mainland China", "China", "Palestine", "West Bank and Gaza", "The Gambia", "Gambia",
                                                  "Viet Nam", "Vietnam", "Iran (Islamic Republic of)", "Iran", "Gambia, The", "Gambia",
                                                  "Taiwan*", "Taiwan", "Czechia", "Czech Republic", "Holy See", "Vatican City",
-                                                 "Republic of Korea", "South Korea", "Korea, South", "South Korea"};
+                                                 "Republic of Korea", "South Korea", "Korea, South", "South Korea", "Republic of Ireland", "Ireland"};
 
         // Quadruples of substituions for Admin1.  Length must be divisible by four
-        private readonly string[] Admin1Subs = { "Hong Kong", "Hong Kong", "China", "Hong Kong", "Hong Kong SAR", "Hong Kong", "China", "Hong Kong" };
+        private readonly string[] Admin1Subs = { "Hong Kong", "Hong Kong", "China", "Hong Kong", "Hong Kong SAR", "Hong Kong", "China", "Hong Kong", "Reunion", "", "France", "Reunion",
+                                                "Macao SAR", "Macau", "China", "Macau", "Faroe Islands", "", "Denmark", "Faroe Islands", "United Kingdom", "Falkland Islands (Malvinas)",
+                                                "United Kingdom", "Falkland Islands", "United Kingdom", "Falkland Islands (Islas Malvinas)", "United Kingdom", "Falkland Islands",
+                                                "Cayman Islands", "", "United Kingdom", "Cayman Islands"};
 
         private readonly string[] US_states = {"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia",
                                                 "Florida", "Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
@@ -74,6 +83,15 @@ namespace CaseCounter {
                                                 "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
                                                 "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                 "Washington", "West Virginia","Wisconsin","Wyoming" };
+
+        private readonly string[] African_countries = { "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde",
+                                                "Cameroon", "Central African Republic", "Chad", "Comoros", "Congo (Brazzaville)",
+                                                 "Congo (Kinshasa)", "Cote d'Ivoire", "Djibouti", "Equatorial Guinea", "Eritrea",
+                                                   "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
+                                                "Kenya", "Lesotho", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius",
+                                                "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe",
+                                                "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
+                                                "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
     }
 }
 
