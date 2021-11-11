@@ -13,8 +13,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read state data
-confirm_by_state = pd.read_csv("data/UW time series/global 11-9-21/United States by county/US_state_confirmed_sm.csv")
-death_by_state = pd.read_csv("data/UW time series/global 11-9-21/United States by county/US_state_deaths_sm.csv")
+confirm_by_state = pd.read_csv("data/UW time series/Global/United States by county/US_state_confirmed_sm.csv")
+death_by_state = pd.read_csv("data/UW time series/Global/United States by county/US_state_deaths_sm.csv")
 
 all_states = confirm_by_state["Admin1"]
 with open("data/US_state_name.txt", "r") as f:
@@ -23,7 +23,7 @@ with open("data/US_state_name.txt", "r") as f:
 #%%
 # Process data and organize them into three month bucket
 data_list = [confirm_by_state, death_by_state]
-bucket_length = 90
+bucket_length = 30
 total_days = len(death_by_state.columns) - 4
 
 for idx, df in enumerate(data_list):
@@ -53,8 +53,9 @@ for df_idx, df in enumerate(data_list):
 ### Normalize data
 means = np.mean(features, axis=0)
 stds = np.std(features, axis=0)
+# Add mini number to avoid divide by 0
+stds += 0.00001 * np.ones(stds.shape)
 normalized_features = (features - means) / stds
-print(means.shape)
 
 ### K-means
 num_clus = 10
@@ -72,29 +73,40 @@ for idx in range(len(labels_per_country)):
         groups[labels_per_country[idx]].append(all_states[idx])
 print(groups)
 # %%
-import matplotlib.pyplot as plt
-from mpl_toolkits.basemap import Basemap
-from matplotlib.patches import Polygon
+# Write results to CSV
+import csv
+result_path = "results/US_state_clusters.csv"
+with open(result_path, mode='w') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-# create the map
-map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
-        projection='lcc',lat_1=33,lat_2=45,lon_0=-95)
+    writer.writerow(['state', 'class'])
+    for label in groups:
+        for state in groups[label]:
+            writer.writerow([state, label])
+#%%
+import altair as alt
+from vega_datasets import data
 
-# load the shapefile, use the name 'states'
-map.readshapefile('st99_d00', name='states', drawbounds=True)
+# Get id for states
+ansi = pd.read_csv('https://www2.census.gov/geo/docs/reference/state.txt', sep='|')
+ansi.columns = ['id', 'abbr', 'state', 'statens']
+ansi = ansi[['id', 'abbr', 'state']]
 
-# collect the state names from the shapefile attributes so we can
-# look up the shape obect for a state by it's name
-state_names = []
-for shape_dict in map.states_info:
-    state_names.append(shape_dict['NAME'])
+state_labels = pd.read_csv(result_path)
+state_labels = pd.merge(state_labels, ansi, how='left', on='state')
 
-ax = plt.gca() # get current axes instance
-
-# get Texas and draw the filled polygon
-seg = map.states[state_names.index('Texas')]
-poly = Polygon(seg, facecolor='red',edgecolor='red')
-ax.add_patch(poly)
-
-plt.show()
+states = alt.topo_feature(data.us_10m.url, 'states')
+source = data.us_state_capitals.url
+# pdb.set_trace()
+alt.Chart(states).mark_geoshape().encode(
+    color='class:Q'
+).transform_lookup(
+    lookup='id',
+    from_=alt.LookupData(state_labels, 'id', ['class'])
+).project(
+    type='albersUsa'
+).properties(
+    width=500,
+    height=300
+)
 # %%
