@@ -5,3 +5,4 @@ JHU files are copied to COVID19DataAnalysis daily to data/COVID-19/csse_covid_19
 
 The BuildLibrary routine creates the full set of time series files,  which should be put in the Global directory.   
 
+The directory TestData is ignored by git and can be used for testing.

@@ -21,10 +21,19 @@ namespace CaseCounter {
         public List<string> UsStatesList { get; }
 
         public List<string> AfricaList { get; }
+        public List<string> EuropeList { get; }
+        public List<string> AsiaList { get; }
+        public List<string> NorthAmericaList { get; }
+        public List<string> SoutAmericaList { get; }
+
 
         public Config() {
             UsStatesList = US_states.ToList();
             AfricaList = African_countries.ToList();
+            EuropeList = European_countries.ToList();
+            AsiaList = Asian_countries.ToList();
+            NorthAmericaList = NorthAmerican_countries.ToList();
+            SoutAmericaList = SouthAmerican_countries.ToList();
 
             Admin0RemoveList = Admin0Remove.ToList();
 
@@ -92,6 +101,16 @@ namespace CaseCounter {
                                                 "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe",
                                                 "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
                                                 "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
+
+        private readonly string[] European_countries = { };
+
+        private readonly string[] Asian_countries = {};
+
+        private readonly string[] NorthAmerican_countries = { };
+
+        private readonly string[] SouthAmerican_countries = { };
+
+
     }
 }
 
