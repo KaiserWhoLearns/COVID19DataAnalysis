@@ -223,8 +223,13 @@ namespace DataSeries {
 
         public TimeSeries ScaleByPopulation() {
             TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
-            for (int i = 0; i <= LastDay; i++)
-                ts.SetValue(i, data[i] * 100000 / Population);
+            if (Admin1 == "Unknown") {
+                int x = 0;
+            }
+            for (int i = 0; i <= LastDay; i++) {
+                double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
+                ts.SetValue(i, val);
+            }
 
             return ts;
         }
