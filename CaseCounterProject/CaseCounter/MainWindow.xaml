@@ -32,17 +32,7 @@
                 <Separator/>
                 <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
             </MenuItem>
-            <MenuItem Header="View">
-                <MenuItem Header="View All Time Series" Click="ViewAllTimeSeries_Click"/>
-            </MenuItem>
-            <MenuItem Header="Filter">
-                <MenuItem Header="Filter US States" Click="OnFilterUSStates_Click"/>
-                <MenuItem Header="Filter Washington" Click="OnFilterWashington_Click"/>
-                <MenuItem Header="Filter India" Click="OnFilterIndia_Click"/>
-                <Separator/>
-                <MenuItem Header="Filter Confirmed" Click="OnFilterConfirmed_Click"/>
-                <MenuItem Header="Filter Death" Click="OnFilterDeath_Click"/>
-            </MenuItem>
+
             <MenuItem Header="TimeSeries">
                 <MenuItem Header="To daily count" Click="DailyCount_Click"/>
                 <Separator/>
@@ -53,10 +43,12 @@
             </MenuItem>
             <MenuItem Header="Chart Display">
                 <MenuItem Header="Display" Click="Display_Click"/>
-                <MenuItem Header="Display WS" Click="DisplayWs_Click"/>
-                <MenuItem Header="Display GS" Click="DisplayGs_Click"/>
+                <MenuItem Header="Display, Normalize by population" Click="DisplayByPop_Click"/>
+                <MenuItem Header="Display, Normalize by count" Click="DisplayByCount_Click"/>
                 <Separator/>
                 <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
+                <MenuItem Header="Display Multiple, Normalize by population" Click="Display_MultipleByPop_Click" />
+                <MenuItem Header="Display Multiple, Normalize by count" Click="Display_MultipleByCount_Click" />
             </MenuItem>
             <MenuItem Header="Analyze Curve">
                 <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>

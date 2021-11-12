@@ -220,6 +220,30 @@ namespace DataSeries {
             Classifier cc = new(data, LastDay + 1);
             return cc.FindPeaks();
         }
+
+        public TimeSeries ScaleByPopulation() {
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+            for (int i = 0; i <= LastDay; i++)
+                ts.SetValue(i, data[i] * 100000 / Population);
+
+            return ts;
+        }
+
+        public TimeSeries ScaleByCount() {
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+
+            double total = 0.0;
+            for (int i = 0; i <= LastDay; i++)
+                total += data[i];
+
+            for (int i = 0; i <= LastDay; i++) {
+                double val = (total > 0) ? data[i] / total : 0;
+                ts.SetValue(i, val);
+            }
+
+            return ts;
+
+        }
     }
 
  

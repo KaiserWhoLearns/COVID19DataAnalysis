@@ -116,15 +116,15 @@ namespace CaseCounter {
             BuildContinentFiles(world_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, wbc));
             BuildContinentFiles(world_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, wbc));
 
+            BuildProvinceFiles(world_province_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, wbp));
+            BuildProvinceFiles(world_province_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, wbp));
+
             TimeSeriesSet india_state_confirmed_TSS = world_province_confirmed_TSS.Filter((TimeSeries ts) => ts.Admin0 == "India");
             india_state_confirmed_TSS.WriteToFile(Path.Combine(topLevelOutputDir, wbp, "India_confirmed_sm.csv"));
 
             BuildUSStateFiles(us_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, usbc_c));
             BuildUSStateFiles(us_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, usbc_d));
 
-
-            TimeSeriesSet washington_confirmed_TSS = us_confirmed_TSS.Filter((TimeSeries ts) => ts.Admin1 == "Washington");
-            washington_confirmed_TSS.WriteToFile(Path.Combine(topLevelOutputDir, usbc, "Washington_confirmed_sm.csv"));
 
 
             ReportStep("Create additional country/state data sets");
@@ -245,9 +245,20 @@ namespace CaseCounter {
             }
         }
 
+        void BuildProvinceFiles(TimeSeriesSet wp_TSS, string dataType, string path) {
+            foreach (string country in config.CountriesWithProvincesList) {
+                TimeSeriesSet tss = wp_TSS.Filter((TimeSeries ts) => ts.Admin0 == country);
+                string fileName = country + "_" + dataType + "_sm.csv";
+                tss.WriteToFile(Path.Combine(path, fileName));
+            }
+        }
+
         void BuildContinentFiles(TimeSeriesSet world_TSS, string dataType, string path) {
             BuildContinentFiles("Africa", config.AfricaList, world_TSS, dataType, path);
             BuildContinentFiles("Europe", config.EuropeList, world_TSS, dataType, path);
+            BuildContinentFiles("Asia", config.AsiaList, world_TSS, dataType, path);
+            BuildContinentFiles("NorthAmerica", config.NorthAmericaList, world_TSS, dataType, path);
+            BuildContinentFiles("SouthAmerica", config.SouthAmericaList, world_TSS, dataType, path);
         }
 
         void BuildContinentFiles(string continent, List<string> countryList, TimeSeriesSet world_TSS, string dataType, string path) {

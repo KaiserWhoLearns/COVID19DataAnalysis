@@ -90,12 +90,6 @@ namespace CaseCounter {
             timeSeriesListBox.Items.Clear();
         }
 
-        private void ViewAllTimeSeries_Click(object sender, RoutedEventArgs e) {
-            SecondWindow sw = new SecondWindow();
-            sw.Show();
-
-            sw.SecondTB.Text = timeSeriesSet.ToString();
-        }
 
         private void ClearSourceFile_Click(object sender, RoutedEventArgs e) {
             timeSeriesSet = new TimeSeriesSet(SeriesType.Cummulative);
@@ -162,53 +156,38 @@ namespace CaseCounter {
             sw.Show();
         }
 
-        private void OnFilterUSStates_Click(object sender, RoutedEventArgs e) {
-            static bool filter(TimeSeries ts) => ts.Admin0.Equals("US");
-            FilterTimeSeriesSet(filter);
-        }
+
 
         private void FilterTimeSeriesSet(Predicate<TimeSeries> filter) {
             SaveTimeSeries(timeSeriesSet.Filter(filter));
         }
 
-        private void OnFilterWashington_Click(object sender, RoutedEventArgs e) {
-            static bool filter(TimeSeries ts) => ts.Admin1.Equals("Washington");
-            FilterTimeSeriesSet(filter);
-        }
 
-        private void OnFilterIndia_Click(object sender, RoutedEventArgs e) {
-            static bool filter(TimeSeries ts) => ts.Admin0.Equals("India");
-            FilterTimeSeriesSet(filter);
-        }
-
-        private void OnFilterConfirmed_Click(object sender, RoutedEventArgs e) {
-            static bool filter(TimeSeries ts) => ts.DataType == DataType.Confirmed;
-            FilterTimeSeriesSet(filter);
-        }
-
-        private void OnFilterDeath_Click(object sender, RoutedEventArgs e) {
-            static bool filter(TimeSeries ts) => ts.DataType == DataType.Deaths;
-            FilterTimeSeriesSet(filter);
-        }
 
         private void DailyCount_Click(object sender, RoutedEventArgs e) {
             SaveTimeSeries(timeSeriesSet.ToDailyCount());
         }
 
         private enum ChartOptions { Raw, Weekly, Gaussian };
+        private enum ScaleOptions { None, Population, Count };
 
         private void Display_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Raw);
+            DisplayChart(ChartOptions.Raw, ScaleOptions.None);
         }
 
-        private void DisplayChart(ChartOptions options) {  
+        private void DisplayChart(ChartOptions chartOptions, ScaleOptions scaleOptions) {  
             string tsKey = (string) timeSeriesListBox.SelectedItem;
             if (!string.IsNullOrEmpty(tsKey)) {
                 TimeSeries ts = timeSeriesSet.GetSeries(tsKey);
-                if (options == ChartOptions.Weekly) {
+                if (chartOptions == ChartOptions.Weekly) {
                     ts = ts.WeeklySmoothing();
-                } else if (options == ChartOptions.Gaussian) {
+                } else if (chartOptions == ChartOptions.Gaussian) {
                     ts = ts.GaussianSmoothing();
+                }
+                if (scaleOptions == ScaleOptions.Population) {
+                    ts = ts.ScaleByPopulation();
+                } else if (scaleOptions == ScaleOptions.Count) {
+                    ts = ts.ScaleByCount();
                 }
 
                 List<TimeSeries> tsList = new();
@@ -217,7 +196,7 @@ namespace CaseCounter {
                 ChartWindow cw = new(tsList);
                 cw.Show();
             } else {
-                System.Windows.MessageBox.Show("No time series selected");
+                _ = MessageBox.Show("No time series selected");
             }
         }
 
@@ -225,17 +204,19 @@ namespace CaseCounter {
             SaveTimeSeries(timeSeriesSet.WeeklySmoothing());
         }
 
+
+
         private void GaussSmooth_Click(object sender, RoutedEventArgs e) {
             SaveTimeSeries(timeSeriesSet.GaussianSmoothing());
         }
 
         private void DisplayWs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Weekly);
+            DisplayChart(ChartOptions.Weekly, ScaleOptions.None);
 
         }
 
         private void DisplayGs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Gaussian);
+            DisplayChart(ChartOptions.Gaussian, ScaleOptions.None);
         }
 
         private void BuildLibrary_Click(object sender, RoutedEventArgs e) {
@@ -264,6 +245,24 @@ namespace CaseCounter {
             cw.Show();
         }
 
+        private void DisplayMultiple(ScaleOptions scaleOptions) {
+            List<TimeSeries> tsList = new();
+
+            foreach (object tsKey in timeSeriesListBox.SelectedItems) {
+                TimeSeries ts = timeSeriesSet.GetSeries((string)tsKey);
+
+                if (scaleOptions == ScaleOptions.Population) {
+                    ts = ts.ScaleByPopulation();
+                } else if (scaleOptions == ScaleOptions.Count) {
+                    ts = ts.ScaleByCount();
+                }
+                tsList.Add(ts);
+            }
+            ChartWindow cw = new(tsList);
+            cw.Show();
+
+        }
+
         private void CountPeaks_Click(object sender, RoutedEventArgs e) {
             string tsKey = (string)timeSeriesListBox.SelectedItem;
             if (!string.IsNullOrEmpty(tsKey)) {
@@ -284,6 +283,22 @@ namespace CaseCounter {
             } else {
                 System.Windows.MessageBox.Show("No time series selected");
             }
+        }
+
+        private void DisplayByPop_Click(object sender, RoutedEventArgs e) {
+            DisplayChart(ChartOptions.Raw, ScaleOptions.Population);
+        }
+
+        private void DisplayByCount_Click(object sender, RoutedEventArgs e) {
+            DisplayChart(ChartOptions.Raw, ScaleOptions.Count);
+        }
+
+        private void Display_MultipleByPop_Click(object sender, RoutedEventArgs e) {
+            DisplayMultiple(ScaleOptions.Population);
+        }
+
+        private void Display_MultipleByCount_Click(object sender, RoutedEventArgs e) {
+            DisplayMultiple(ScaleOptions.Count);
         }
     }
 }

@@ -16,9 +16,6 @@
     <Compile Update="MountainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SecondWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="SelectionWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,9 +31,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MountainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="SecondWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SelectionWindow.xaml">
