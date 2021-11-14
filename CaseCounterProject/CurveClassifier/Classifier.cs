@@ -34,7 +34,8 @@ namespace CurveClassifier {
         public Datum RMin { get; }
         public Datum Max { get; }
 
-        public override string ToString() => $"< {LMin}, {Max}, {RMin} >";
+        public override string ToString() =>  $"<{LMin}, {Max}, {RMin}>";
+
 
         public static double ValleySize(Peak p1, Peak p2) {
             double x1 = p1.RMin.X - p1.Max.X;
@@ -102,8 +103,20 @@ namespace CurveClassifier {
         }
 
         public static void RemoveSmallestValley(List<Peak> peaks) {
-            if (peaks.Count <= 1)
+
+            (int minSoFar, _) = FindSmallestValley(peaks);
+
+            if (minSoFar < 0)
                 return;
+
+            Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
+            peaks[minSoFar] = newPeak;
+            peaks.RemoveAt(minSoFar + 1);
+        }
+
+        public static (int, double) FindSmallestValley(List<Peak> peaks) {
+            if (peaks.Count <= 1)
+                return (-1, 0);
 
             int minSoFar = 0;
             double minValue = Peak.ValleySize(peaks[0], peaks[1]);
@@ -115,9 +128,7 @@ namespace CurveClassifier {
                 }
             }
 
-            Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
-            peaks[minSoFar] = newPeak;
-            peaks.RemoveAt(minSoFar + 1);
+            return (minSoFar, minValue);
         }
 
         public static (double[], double[]) BuildDataSeries(List<Peak> peaks) {

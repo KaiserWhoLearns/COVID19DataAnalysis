@@ -38,6 +38,10 @@ namespace CaseCounter {
             }
             sb.AppendLine();
 
+            (int peakIndex, double value) = Classifier.FindSmallestValley(peaks);
+
+            sb.Append("Smallest valley " + peakIndex + ": " + value);
+
 
             analysisTextBox.Text = sb.ToString();
         }
