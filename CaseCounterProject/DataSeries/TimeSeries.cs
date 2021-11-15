@@ -7,7 +7,7 @@ using System.Linq;
 using System.Globalization;
 using System.Windows.Controls;
 using Utilities;
-using CurveClassifier;
+
 
 
 
@@ -215,17 +215,16 @@ namespace DataSeries {
             if (ts.Population != -1)
                 Population = (Population == -1) ? ts.Population : Population + ts.Population;
         }
-
-        public List<Peak> FindPeaks() {
+/*
+        public PeakSet FindPeaks() {
             Classifier cc = new(data, LastDay + 1);
             return cc.FindPeaks();
         }
+*/
 
         public TimeSeries ScaleByPopulation() {
             TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
-            if (Admin1 == "Unknown") {
-                int x = 0;
-            }
+
             for (int i = 0; i <= LastDay; i++) {
                 double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
                 ts.SetValue(i, val);

@@ -1,8 +1,11 @@
-using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CurveClassifier {
-
+namespace DataSeries {
 
     public struct Datum {
         public Datum(int x, double y) {
@@ -34,7 +37,7 @@ namespace CurveClassifier {
         public Datum RMin { get; }
         public Datum Max { get; }
 
-        public override string ToString() =>  $"<{LMin}, {Max}, {RMin}>";
+        public override string ToString() => $"<{LMin}, {Max}, {RMin}>";
 
 
         public static double ValleySize(Peak p1, Peak p2) {
@@ -51,23 +54,45 @@ namespace CurveClassifier {
                 return (z1 + x2) * y2;
             }
 
- 
+
         }
 
         public static Peak Merge(Peak p1, Peak p2) {
             return (p1.Max.Y > p2.Max.Y) ? new Peak(p1.LMin, p1.Max, p2.RMin) : new Peak(p1.LMin, p2.Max, p2.RMin);
         }
     }
+    public class PeakSet : IEnumerable<Peak> {
+        public string Key { get; }
+        public string Admin0 { get; }       // Country
+        public string Admin1 { get; }       // State or Province
+        public string Admin2 { get; }       // District or County
 
-    public class Classifier {
-        double[] data;
-        public Classifier(double[] dataArray, int len) {
-            data = new double[len];
-            for (int i = 0; i < len; i++)
-                data[i] = dataArray[i];
+
+
+
+        // Need to track date of population update - but this is not public info
+        private int lastPopulationUpdate;
+
+        // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
+        public long Population { get; set; }
+        List<Peak> peaks;
+
+        public PeakSet() {
+            peaks = new();
         }
 
-        public List<Peak> FindPeaks() {
+        public PeakSet(List<Peak> peakList) {
+            peaks = new();
+            foreach (Peak peak in peakList) {
+                peaks.Add(new Peak(peak.LMin, peak.Max, peak.RMin));
+            }
+        }
+
+        public PeakSet(TimeSeries ts) {
+            peaks = FindPeaks(ts.GetData(), ts.LastDay + 1);
+        }
+
+        public List<Peak> FindPeaks(double[] data, int len) {
 
             List<Peak> peaks = new();
             int index = 0;
@@ -75,7 +100,7 @@ namespace CurveClassifier {
             int min = 0;
             int max = 0;
 
-            while (index < data.Length - 1) {
+            while (index < len - 1) {
                 if (state == 'R') {
                     if (data[index + 1] < data[index]) {
                         state = 'F';
@@ -102,36 +127,20 @@ namespace CurveClassifier {
             return peaks;
         }
 
-        public static void RemoveSmallestValley(List<Peak> peaks) {
 
-            (int minSoFar, _) = FindSmallestValley(peaks);
-
-            if (minSoFar < 0)
-                return;
-
-            Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
-            peaks[minSoFar] = newPeak;
-            peaks.RemoveAt(minSoFar + 1);
+        public IEnumerator<Peak> GetEnumerator() {
+            return peaks.GetEnumerator();
         }
 
-        public static (int, double) FindSmallestValley(List<Peak> peaks) {
-            if (peaks.Count <= 1)
-                return (-1, 0);
-
-            int minSoFar = 0;
-            double minValue = Peak.ValleySize(peaks[0], peaks[1]);
-            for (int i = 1; i < peaks.Count - 1; i++) {
-                double val = Peak.ValleySize(peaks[i], peaks[i + 1]);
-                if (val < minValue) {
-                    minValue = val;
-                    minSoFar = i;
-                }
-            }
-
-            return (minSoFar, minValue);
+        IEnumerator IEnumerable.GetEnumerator() {
+            return peaks.GetEnumerator();
         }
 
-        public static (double[], double[]) BuildDataSeries(List<Peak> peaks) {
+        public void Add(Peak peak) {
+            peaks.Add(peak);
+        }
+
+        public (double[], double[]) BuildDataSeries() {
             int len = 2 * peaks.Count + 1;
             double[] xData = new double[len];
             double[] yData = new double[len];
@@ -149,8 +158,36 @@ namespace CurveClassifier {
             return (xData, yData);
 
         }
+
+        public (int, double) FindSmallestValley() {
+            if (peaks.Count <= 1)
+                return (-1, 0);
+
+            int minSoFar = 0;
+            double minValue = Peak.ValleySize(peaks[0], peaks[1]);
+            for (int i = 1; i < peaks.Count - 1; i++) {
+                double val = Peak.ValleySize(peaks[i], peaks[i + 1]);
+                if (val < minValue) {
+                    minValue = val;
+                    minSoFar = i;
+                }
+            }
+
+            return (minSoFar, minValue);
+        }
+
+        public void RemoveSmallestValley() {
+
+            (int minSoFar, _) = FindSmallestValley();
+
+            if (minSoFar < 0)
+                return;
+
+            Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
+            peaks[minSoFar] = newPeak;
+            peaks.RemoveAt(minSoFar + 1);
+        }
+
     }
 
 }
-
-

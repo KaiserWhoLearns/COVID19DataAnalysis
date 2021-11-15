@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using DataSeries;
-using CurveClassifier;
+
 
 namespace CaseCounter {
     /// <summary>
@@ -11,7 +11,7 @@ namespace CaseCounter {
     public partial class AnalysisWindow : Window {
 
         private TimeSeries timeSeries;
-        private List<Peak> peaks;
+        private PeakSet peaks;
         public AnalysisWindow(TimeSeries ts) {
             InitializeComponent();
             timeSeries = ts;
@@ -20,9 +20,8 @@ namespace CaseCounter {
         }
 
         private void AnalyzeCurve(TimeSeries ts) {
- 
 
-            peaks = ts.FindPeaks();
+            peaks = new(ts);;
             PrintPeaks();
 
         }
@@ -38,7 +37,7 @@ namespace CaseCounter {
             }
             sb.AppendLine();
 
-            (int peakIndex, double value) = Classifier.FindSmallestValley(peaks);
+            (int peakIndex, double value) = peaks.FindSmallestValley();
 
             sb.Append("Smallest valley " + peakIndex + ": " + value);
 
@@ -46,7 +45,7 @@ namespace CaseCounter {
             analysisTextBox.Text = sb.ToString();
         }
         private void RemovePeak_Click(object sender, RoutedEventArgs e) {
-            Classifier.RemoveSmallestValley(peaks);
+            peaks.RemoveSmallestValley();
             PrintPeaks();
         }
 

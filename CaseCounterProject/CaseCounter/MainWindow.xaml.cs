@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-
 using DataSeries;
 using Utilities;
-using System.Text;
 using System.Windows.Media;
-using ScottPlot;
+
 
 
 
@@ -299,6 +297,30 @@ namespace CaseCounter {
 
         private void Display_MultipleByCount_Click(object sender, RoutedEventArgs e) {
             DisplayMultiple(ScaleOptions.Count);
+        }
+
+        private void ExportPeaks_Click(object sender, RoutedEventArgs e) {
+            PeakSetCollection peaks = timeSeriesSet.FindPeaks(4);
+            SavePeakSetCollection(peaks);
+        }
+
+        private void SavePeakSetCollection(PeakSetCollection peaks) {
+
+            Microsoft.Win32.SaveFileDialog saveFileDialog = new();
+
+
+            saveFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;
+            saveFileDialog.RestoreDirectory = true;
+
+            bool? result = saveFileDialog.ShowDialog();
+
+
+            if (result == true) {
+                peaks.WriteToFile(saveFileDialog.FileName);
+
+            }
+ 
         }
     }
 }

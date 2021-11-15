@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DataSeries;
-using CurveClassifier;
+
 
 namespace CaseCounter {
     /// <summary>
@@ -22,7 +22,7 @@ namespace CaseCounter {
     public partial class MountainWindow : Window {
 
         private TimeSeries timeSeries;
-        private List<Peak> peaks;
+        private PeakSet peaks;
         private ScottPlot.Plottable.ScatterPlot peakCurve;
 
         public MountainWindow(TimeSeries ts) {
@@ -59,13 +59,13 @@ namespace CaseCounter {
 
         }
         private void FindPeaks_MW_Click(object sender, RoutedEventArgs e) {
-            peaks = timeSeries.FindPeaks();
+            peaks = new(timeSeries);
             UpdatePeaks();
 
         }
 
         private void UpdatePeaks() {
-            (double[] dataX, double[] dataY) = Classifier.BuildDataSeries(peaks);
+            (double[] dataX, double[] dataY) = peaks.BuildDataSeries();
             peakCurve = wpfPlot2.Plot.AddScatter(dataX, dataY);
             peakCurve.LineWidth = 3;
             peakCurve.Color = System.Drawing.Color.Red;
@@ -75,7 +75,7 @@ namespace CaseCounter {
 
         private void RemovePeak_MW_Click(object sender, RoutedEventArgs e) {
             wpfPlot2.Plot.Remove(peakCurve);
-            Classifier.RemoveSmallestValley(peaks);
+            peaks.RemoveSmallestValley();
             UpdatePeaks();
 
         }

@@ -53,6 +53,8 @@
             <MenuItem Header="Analyze Curve">
                 <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
                 <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
+                <Separator/>
+                <MenuItem Header="Export Peakset" Click="ExportPeaks_Click"/>
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

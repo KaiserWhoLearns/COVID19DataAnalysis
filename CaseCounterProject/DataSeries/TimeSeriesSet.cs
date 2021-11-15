@@ -245,6 +245,10 @@ namespace DataSeries {
             return tss;
         }
 
+        public PeakSetCollection FindPeaks(int nPeaks) {
+            return null;
+        }
+
     }
 
 }
