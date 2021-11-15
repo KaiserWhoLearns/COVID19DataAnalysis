@@ -4,9 +4,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read state data
-peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/UnitedStates.csv")
+country = "UnitedStates"
+state_set = {"Arizona", "Oregon", "Washington"}
+country_set = {"UnitedStates", "Russia", "Canada", "Europe", "India"}
+peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/" + country +".csv")
 
-all_states = peak_data["Admin1"]
+if country in country_set:
+    all_states = peak_data["Admin1"]
+else:
+    all_states = peak_data["Admin2"]
 num_of_peaks = 9
 # print(all_states)
 print(peak_data.shape)
@@ -18,14 +24,18 @@ import numpy as np
 features = np.zeros([len(all_states), peak_data.shape[1] - 5])
 
 for state_idx, state in enumerate(all_states):
-    state_data = peak_data[peak_data["Admin1"] == state]
+    if country in country_set:
+        state_data = peak_data[peak_data["Admin1"] == state]
+    else:
+        state_data = peak_data[peak_data["Admin2"] == state]
     for peak_idx in range(1, 10):
         # Record days
         features[state_idx, (peak_idx - 1) * 2] = state_data["X" + str(peak_idx)]
         # Record cases
         features[state_idx, (peak_idx - 1) * 2 + 1] = state_data["Y" + str(peak_idx)] / state_data["Population"] * 1000000
 # print(features)
-
+# Convert all non-exist peaks to 0.0
+features = np.nan_to_num(features)
 # %%
 ### Normalize data
 means = np.mean(features, axis=0)
@@ -52,7 +62,7 @@ print(groups)
 # %%
 # Write results to CSV
 import csv
-result_path = "results/US_state_clusters_by_peak.csv"
+result_path = "results/" + country + "_state_clusters_by_peak.csv"
 with open(result_path, mode='w') as csv_file:
     writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
