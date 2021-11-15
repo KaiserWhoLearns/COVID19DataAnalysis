@@ -28,7 +28,7 @@ namespace CaseCounter {
         public MountainWindow(TimeSeries ts) {
             InitializeComponent();
             timeSeries = ts;
-            peaks = new();
+            peaks = new(ts);
             PlotSeries(ts);
         }
 

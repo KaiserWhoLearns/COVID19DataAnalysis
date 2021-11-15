@@ -66,16 +66,29 @@ namespace DataSeries {
         public string Admin0 { get; }       // Country
         public string Admin1 { get; }       // State or Province
         public string Admin2 { get; }       // District or County
+        public DataType DataType { get; }
 
 
-
-
-        // Need to track date of population update - but this is not public info
-        private int lastPopulationUpdate;
+        public int Count => peaks.Count;
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
-        List<Peak> peaks;
+        private List<Peak> peaks;
+
+        public PeakSet(DataType dataType, string admin0, string admin1, string admin2, long population = -1) {
+            peaks = new();
+
+            DataType = dataType;
+            Admin0 = admin0;
+            Admin1 = admin1;
+            Admin2 = admin2;
+            Population = population;
+
+            Key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
+
+        }
+
+        /*
 
         public PeakSet() {
             peaks = new();
@@ -88,11 +101,20 @@ namespace DataSeries {
             }
         }
 
+        */
+
         public PeakSet(TimeSeries ts) {
+            DataType = ts.DataType;
+            Admin0 = ts.Admin0;
+            Admin1 = ts.Admin1;
+            Admin2 = ts.Admin2;
+            Population = ts.Population;
+            Key = ts.Key;
+
             peaks = FindPeaks(ts.GetData(), ts.LastDay + 1);
         }
 
-        public List<Peak> FindPeaks(double[] data, int len) {
+        public static List<Peak> FindPeaks(double[] data, int len) {
 
             List<Peak> peaks = new();
             int index = 0;
@@ -134,7 +156,7 @@ namespace DataSeries {
 
         IEnumerator IEnumerable.GetEnumerator() {
             return peaks.GetEnumerator();
-        }
+        }   
 
         public void Add(Peak peak) {
             peaks.Add(peak);
@@ -186,6 +208,21 @@ namespace DataSeries {
             Peak newPeak = Peak.Merge(peaks[minSoFar], peaks[minSoFar + 1]);
             peaks[minSoFar] = newPeak;
             peaks.RemoveAt(minSoFar + 1);
+        }
+
+        public string ToRowString() {
+
+            StringBuilder sb = new();
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population);
+
+            for (int i = 0; i < peaks.Count; i++) {
+                Peak pk = peaks[i];
+                _ = sb.Append("," + pk.LMin.X + "," + pk.LMin.Y.ToString("F2"));
+                _ = sb.Append("," + pk.Max.X + "," + pk.Max.Y.ToString("F2"));
+            }
+            _ = sb.Append("," + peaks[^1].RMin.X + "," + peaks[^1].RMin.Y.ToString("F2"));
+
+            return sb.ToString();
         }
 
     }

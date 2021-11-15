@@ -15,13 +15,13 @@ namespace CaseCounter {
         public AnalysisWindow(TimeSeries ts) {
             InitializeComponent();
             timeSeries = ts;
-            peaks = new();
+            peaks = new(ts);
  
         }
 
         private void AnalyzeCurve(TimeSeries ts) {
 
-            peaks = new(ts);;
+            peaks = new(ts);
             PrintPeaks();
 
         }

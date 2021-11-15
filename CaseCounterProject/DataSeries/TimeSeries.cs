@@ -248,6 +248,10 @@ namespace DataSeries {
             return ts;
 
         }
+
+        public PeakSet FindPeaks(int nPeaks) {
+            return null;
+        }
     }
 
  

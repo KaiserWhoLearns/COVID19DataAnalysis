@@ -7,19 +7,45 @@ using System.Threading.Tasks;
 
 namespace DataSeries {
     public class PeakSetCollection {
-        public PeakSetCollection() {
 
+        private Dictionary<string, PeakSet> peakSets;
+        public PeakSetCollection() {
+            peakSets = new Dictionary<string, PeakSet>();
+        }
+
+        public void AddPeakSet(PeakSet ps) {
+            peakSets.Add(ps.Key, ps);
+        }
+
+        private int MaximumPeaks() {
+            int p = 0;
+
+            foreach (PeakSet ps in peakSets.Values) {
+                p = Math.Max(p, ps.Count);
+            }
+            return p;
         }
 
 
         public void WriteToFile(string path) {
             using (StreamWriter outputFile = new(path)) {
-  /*              outputFile.WriteLine(HeaderString(LastDay()));
-
-                foreach (TimeSeries ts in series.Values) {
-                    outputFile.WriteLine(ts.ToRowString());
-                }  */
+;
+                outputFile.WriteLine(HeaderString(MaximumPeaks()));
+                 foreach (PeakSet ps in peakSets.Values) {
+                    outputFile.WriteLine(ps.ToRowString());
+                }   
             }
+        }
+
+        private static string HeaderString(int maxPeaks) {
+            StringBuilder sb = new();
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population");
+
+            for (int i = 1; i <= 2*maxPeaks + 1; i++) {
+                _ = sb.Append(",X" + i + ",Y" + i);
+            }
+            return sb.ToString();
+
         }
 
     }

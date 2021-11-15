@@ -246,7 +246,16 @@ namespace DataSeries {
         }
 
         public PeakSetCollection FindPeaks(int nPeaks) {
-            return null;
+            PeakSetCollection psc = new();
+            foreach (TimeSeries ts in series.Values) {
+                PeakSet ps = new PeakSet(ts);
+                while (ps.Count > nPeaks) {
+                    ps.RemoveSmallestValley();
+                }
+
+                psc.AddPeakSet(ps);
+            }
+            return psc;
         }
 
     }
