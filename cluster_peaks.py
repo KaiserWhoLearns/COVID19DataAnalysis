@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read state data
-country = "UnitedStates"
+country = "Washington"
 state_set = {"Arizona", "Oregon", "Washington"}
 country_set = {"UnitedStates", "Russia", "Canada", "Europe", "India"}
 peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/" + country +".csv")
@@ -21,7 +21,11 @@ print(peak_data.shape)
 from sklearn.cluster import KMeans
 import numpy as np
 # Features: Bucket data from death and confirm cases
-features = np.zeros([len(all_states), peak_data.shape[1] - 5])
+count_day = False
+if count_day:
+    features = np.zeros([len(all_states), peak_data.shape[1] - 5])
+else:
+    features = np.zeros([len(all_states), int((peak_data.shape[1] - 5)/2)])
 
 for state_idx, state in enumerate(all_states):
     if country in country_set:
@@ -29,10 +33,13 @@ for state_idx, state in enumerate(all_states):
     else:
         state_data = peak_data[peak_data["Admin2"] == state]
     for peak_idx in range(1, 10):
-        # Record days
-        features[state_idx, (peak_idx - 1) * 2] = state_data["X" + str(peak_idx)]
-        # Record cases
-        features[state_idx, (peak_idx - 1) * 2 + 1] = state_data["Y" + str(peak_idx)] / state_data["Population"] * 1000000
+        if count_day:
+            # Record days
+            features[state_idx, (peak_idx - 1) * 2] = state_data["X" + str(peak_idx)]
+            # Record cases
+            features[state_idx, (peak_idx - 1) * 2 + 1] = state_data["Y" + str(peak_idx)] / state_data["Population"] * 1000000
+        else:
+            features[state_idx, peak_idx - 1] = state_data["Y" + str(peak_idx)] / state_data["Population"] * 1000000
 # print(features)
 # Convert all non-exist peaks to 0.0
 features = np.nan_to_num(features)

@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 confirm_by_state = pd.read_csv("data/UW time series/Global/World by province/US_confirmed_sm.csv")
 death_by_state = pd.read_csv("data/UW time series/Global/World by province/US_deaths_sm.csv")
 
+algo = "spectral"
 all_states = confirm_by_state["Admin1"]
 with open("data/US_state_name.txt", "r") as f:
     all_states = [line.rstrip() for line in f]
@@ -29,6 +30,7 @@ for idx, df in enumerate(data_list):
 # %%
 ### Gather features
 from sklearn.cluster import KMeans
+from sklearn.cluster import SpectralClustering
 import numpy as np
 # Features: Bucket data from death and confirm cases
 columns = ["Bucket " + str(bucket_idx) for bucket_idx in range(int(total_days / bucket_length) + 1)]
@@ -50,8 +52,12 @@ normalized_features = (features - means) / stds
 
 ### K-means
 num_clus = 10
-kmeans = KMeans(n_clusters=num_clus, random_state=0).fit(normalized_features)
-labels_per_country = kmeans.labels_
+if algo == "kmeans":
+    clusters = KMeans(n_clusters=num_clus, random_state=0).fit(normalized_features)
+else:
+    clusters = SpectralClustering(n_clusters=num_clus, assign_labels='discretize', random_state=0).fit(normalized_features)
+
+labels_per_country = clusters.labels_
 print("Labels: ", labels_per_country)
 # print("Cluster centers", kmeans.cluster_centers_)
 # %%
