@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 # Read state data
 country = "Washington"
+algo = "kmeans"
 state_set = {"Arizona", "Oregon", "Washington"}
 country_set = {"UnitedStates", "Russia", "Canada", "Europe", "India"}
 peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/" + country +".csv")
@@ -18,7 +19,7 @@ num_of_peaks = 9
 print(peak_data.shape)
 # %%
 ### Gather features
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, SpectralClustering
 import numpy as np
 # Features: Bucket data from death and confirm cases
 count_day = False
@@ -53,8 +54,13 @@ normalized_features = (features - means) / stds
 
 ### K-means
 num_clus = 10
-kmeans = KMeans(n_clusters=num_clus, random_state=0).fit(normalized_features)
-labels_per_country = kmeans.labels_
+if algo == "kmeans":
+    clusters = KMeans(n_clusters=num_clus, random_state=0).fit(normalized_features)
+else:
+    clusters = SpectralClustering(n_clusters=num_clus, assign_labels='discretize', random_state=0).fit(normalized_features)
+
+# kmeans = KMeans(n_clusters=num_clus, random_state=0).fit(normalized_features)
+labels_per_country = clusters.labels_
 print("Labels: ", labels_per_country)
 # print("Cluster centers", kmeans.cluster_centers_)
 # %%
