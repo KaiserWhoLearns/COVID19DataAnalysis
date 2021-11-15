@@ -161,6 +161,7 @@ def plot_covariant_heatmaps_and_area_plots(output_dir='data/covariants_images/')
         ax.legend(fancybox=True, ncol=5, bbox_to_anchor=(0, -0.5), loc='center left')
         plt.xticks(rotation=90)
         plt.savefig(f'{output_dir}{country}_area.png', bbox_inches='tight')
+        plt.close('all')
 
 
 def pipeline():
