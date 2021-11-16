@@ -54,7 +54,9 @@
                 <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
                 <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
                 <Separator/>
-                <MenuItem Header="Export Peakset" Click="ExportPeaks_Click"/>
+                <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
+                <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>
+                <MenuItem Header="Export Peakset (5 peaks)" Click="ExportPeaks5_Click"/>
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

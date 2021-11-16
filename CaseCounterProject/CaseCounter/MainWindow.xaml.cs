@@ -299,8 +299,18 @@ namespace CaseCounter {
             DisplayMultiple(ScaleOptions.Count);
         }
 
-        private void ExportPeaks_Click(object sender, RoutedEventArgs e) {
+        private void ExportPeaks3_Click(object sender, RoutedEventArgs e) {
+            PeakSetCollection peaks = timeSeriesSet.FindPeaks(3);
+            SavePeakSetCollection(peaks);
+        }
+
+        private void ExportPeaks4_Click(object sender, RoutedEventArgs e) {
             PeakSetCollection peaks = timeSeriesSet.FindPeaks(4);
+            SavePeakSetCollection(peaks);
+        }
+
+        private void ExportPeaks5_Click(object sender, RoutedEventArgs e) {
+            PeakSetCollection peaks = timeSeriesSet.FindPeaks(5);
             SavePeakSetCollection(peaks);
         }
 
@@ -322,5 +332,6 @@ namespace CaseCounter {
             }
  
         }
+
     }
 }
