@@ -73,9 +73,11 @@ namespace DataSeries {
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
+
+        public int CaseCount { get; set; }
         private List<Peak> peaks;
 
-        public PeakSet(DataType dataType, string admin0, string admin1, string admin2, long population = -1) {
+        public PeakSet(DataType dataType, string admin0, string admin1, string admin2, long population = -1, int caseCount = -1) {
             peaks = new();
 
             DataType = dataType;
@@ -83,25 +85,13 @@ namespace DataSeries {
             Admin1 = admin1;
             Admin2 = admin2;
             Population = population;
+            CaseCount = caseCount;
 
             Key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
         }
 
-        /*
 
-        public PeakSet() {
-            peaks = new();
-        }
-
-        public PeakSet(List<Peak> peakList) {
-            peaks = new();
-            foreach (Peak peak in peakList) {
-                peaks.Add(new Peak(peak.LMin, peak.Max, peak.RMin));
-            }
-        }
-
-        */
 
         public PeakSet(TimeSeries ts) {
             DataType = ts.DataType;
@@ -109,6 +99,8 @@ namespace DataSeries {
             Admin1 = ts.Admin1;
             Admin2 = ts.Admin2;
             Population = ts.Population;
+            CaseCount = ts.CaseCount;
+
             Key = ts.Key;
 
             peaks = FindPeaks(ts.GetData(), ts.LastDay + 1);
@@ -213,7 +205,7 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population);
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population + "," + CaseCount);
 
             for (int i = 0; i < peaks.Count; i++) {
                 Peak pk = peaks[i];

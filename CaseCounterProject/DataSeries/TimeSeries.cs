@@ -32,15 +32,17 @@ namespace DataSeries {
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
+        public int CaseCount { get; set; }
 
         private double[] data;
 
-        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, long population = -1) {
+        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, long population = -1, int caseCount = -1) {
             DataType = dataType;
             Admin0 = admin0;
             Admin1 = admin1;
             Admin2 = admin2;
             Population = population;
+            CaseCount = caseCount;
 
             Key = BuildKey(dataType, admin0, admin1, admin2);
 
@@ -75,6 +77,9 @@ namespace DataSeries {
                         break;
                     case "Population":
                         Population = long.Parse(val);
+                        break;
+                    case "CaseCount":
+                        CaseCount = int.Parse(val);
                         break;
 
                     default:
@@ -141,7 +146,7 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population);
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population + "," + CaseCount);
 
             for (int i = 0; i <= LastDay; i++) {
                 _ = sb.Append("," + data[i].ToString("F2"));
@@ -158,6 +163,8 @@ namespace DataSeries {
                 double dailyCount = data[i] - data[i - 1];
                 ts.SetValue(i, dailyCount);
             }
+            ts.CaseCount = (int) data[LastDay];
+
             return ts;
         }
 
@@ -178,7 +185,7 @@ namespace DataSeries {
             return Smooth(TimeSeriesSet.GaussianFilter);
         }
         public TimeSeries Smooth(double[] filter) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
             for (int i = 0; i <= LastDay; i++)
                 ts.SetValue(i, Smooth(i, filter));
 
@@ -223,7 +230,7 @@ namespace DataSeries {
 */
 
         public TimeSeries ScaleByPopulation() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
 
             for (int i = 0; i <= LastDay; i++) {
                 double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
@@ -234,7 +241,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ScaleByCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
 
             double total = 0.0;
             for (int i = 0; i <= LastDay; i++)

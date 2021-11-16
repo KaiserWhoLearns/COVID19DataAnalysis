@@ -39,7 +39,7 @@ namespace DataSeries {
 
         private static string HeaderString(int maxPeaks) {
             StringBuilder sb = new();
-            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population");
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population,CaseCount");
 
             for (int i = 1; i <= 2*maxPeaks + 1; i++) {
                 _ = sb.Append(",X" + i + ",Y" + i);

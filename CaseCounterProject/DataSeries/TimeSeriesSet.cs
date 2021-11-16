@@ -119,7 +119,7 @@ namespace DataSeries {
 
         private static string HeaderString(int lastDay) {
             StringBuilder sb = new();
-            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population");
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population,CaseCount");
 
             for (int i = 0; i <= lastDay; i++) {
                 _ = sb.Append(",Day " + i);
@@ -208,7 +208,7 @@ namespace DataSeries {
                 if (stateSeries.ContainsKey(seriesKey)) {
                     tsState = stateSeries[seriesKey]; 
                 } else {
-                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "");  
+                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Population, ts.CaseCount);  
                     stateSeries.Add(seriesKey, tsState);
                 }
                 tsState.AddCounts(ts);
@@ -232,7 +232,7 @@ namespace DataSeries {
                 if (nationalSeries.ContainsKey(seriesKey)) {
                     tsNational = nationalSeries[seriesKey];
                 } else {
-                    tsNational = new(ts.DataType, ts.Admin0, "", "");
+                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Population,ts.CaseCount);
                     nationalSeries.Add(seriesKey, tsNational);
                 }
                 tsNational.AddCounts(ts);
