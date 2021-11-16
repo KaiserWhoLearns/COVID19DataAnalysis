@@ -3,3 +3,4 @@ owid-covid-data.csv
 countries/*
 region_level/*
 *.pdf
+data/__pycache__/*
