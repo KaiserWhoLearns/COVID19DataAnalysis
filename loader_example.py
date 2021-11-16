@@ -14,3 +14,11 @@ if __name__ == '__main__':
         print(cases)
         print(deaths)
 
+    usa_state_and_county_cases, usa_state_and_county_deaths = loader.get_united_states_case_and_death_time_series_data()
+    usa_state_only_cases, usa_state_only_deaths = loader.get_united_states_case_and_death_time_series_data(county=False)
+
+    print(usa_state_and_county_cases)
+    print(usa_state_and_county_deaths)
+    print(usa_state_only_cases)
+    print(usa_state_only_deaths)
+

@@ -53,3 +53,23 @@ def get_continent_specific_case_and_deaths_time_series_data(continent=None):
 
 def get_available_and_supported_continents():
     return __available_continents
+
+
+def get_united_states_case_and_death_time_series_data(county=True):
+    """
+    Processes and returns the corresponding US COVID Cases and Deaths Time Series Data
+    :param county: True or False to indicate if the returned data needs to be at County level
+    per state or only at the state level.
+    :return: (cases, deaths) DataFrames for the United States
+    """
+    local_dir_path = r'UW time series/Global/United States by county/'
+    lookup_at = 'US'
+    if not county:
+        lookup_at = 'US_state'
+    case_file_name = f'{lookup_at}_confirmed_sm.csv'
+    death_file_name = f'{lookup_at}_deaths_sm.csv'
+    case_file_path = f'{local_dir_path}{case_file_name}'
+    death_file_path = f'{local_dir_path}{death_file_name}'
+    cases = __load_file(case_file_path)
+    deaths = __load_file(death_file_path)
+    return cases, deaths
