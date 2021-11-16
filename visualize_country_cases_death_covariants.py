@@ -101,10 +101,3 @@ if __name__ == '__main__':
     deaths = read_country_daily_timeline()
     cases = read_country_daily_timeline(filepath=r"data/UW time series/Global/World by country/World_confirmed_sm.csv")
     find_deaths_by_country(deaths, cases)
-    # world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
-    # cities = geopandas.read_file(geopandas.datasets.get_path('naturalearth_cities'))
-    # world = world[(world.pop_est > 0) & (world.name != "Antarctica")]
-    # world['gdp_per_cap'] = world.gdp_md_est / world.pop_est
-    # fig, ax = plt.subplots(1, 1)
-    # world.plot(column='gdp_per_cap')
-    # plt.show()
