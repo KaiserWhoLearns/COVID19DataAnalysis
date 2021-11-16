@@ -22,3 +22,9 @@ git pull origin main
 git submodule sync
 ```
 
+## Necessary Python Tooling
+
+We recommend using Anaconda (`conda`) as the easiest way to setup the Python environment necessary
+for reproducing the various results. Install it by downloading the individual version from [here](https://www.anaconda.com/products/individual).
+
+Once setup, ensure that `python` and `pip` are available on `PATH`.
