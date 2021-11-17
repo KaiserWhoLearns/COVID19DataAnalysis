@@ -65,6 +65,10 @@ namespace CaseCounter {
         }
 
         private void UpdatePeaks() {
+            if (peakCurve != null) {
+                wpfPlot2.Plot.Remove(peakCurve);
+            }
+
             (double[] dataX, double[] dataY) = peaks.BuildDataSeries();
             peakCurve = wpfPlot2.Plot.AddScatter(dataX, dataY);
             peakCurve.LineWidth = 3;
@@ -74,7 +78,7 @@ namespace CaseCounter {
         }
 
         private void RemovePeak_MW_Click(object sender, RoutedEventArgs e) {
-            wpfPlot2.Plot.Remove(peakCurve);
+
             peaks.RemoveSmallestValley();
             UpdatePeaks();
 

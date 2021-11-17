@@ -53,6 +53,7 @@
             <MenuItem Header="Analyze Curve">
                 <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
                 <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
+                <MenuItem Header="Display Segments" Click="DisplaySegments_Click"/>
                 <Separator/>
                 <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
                 <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>

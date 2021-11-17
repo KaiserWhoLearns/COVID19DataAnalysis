@@ -333,5 +333,15 @@ namespace CaseCounter {
  
         }
 
+        private void DisplaySegments_Click(object sender, RoutedEventArgs e) {
+            string tsKey = (string)timeSeriesListBox.SelectedItem;
+            if (!string.IsNullOrEmpty(tsKey)) {
+                TimeSeries ts = timeSeriesSet.GetSeries(tsKey);
+                SegmentWindow sw = new(ts);
+                sw.Show();
+            } else {
+                System.Windows.MessageBox.Show("No time series selected");
+            }
+        }
     }
 }
