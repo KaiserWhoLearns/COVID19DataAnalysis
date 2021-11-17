@@ -29,10 +29,10 @@ namespace DataSeries {
 
         public void WriteToFile(string path) {
             using (StreamWriter outputFile = new(path)) {
-;
-                outputFile.WriteLine(HeaderString(MaximumPeaks()));
+;               int mPeaks = MaximumPeaks();
+                outputFile.WriteLine(HeaderString(mPeaks));
                  foreach (PeakSet ps in peakSets.Values) {
-                    outputFile.WriteLine(ps.ToRowString());
+                    outputFile.WriteLine(ps.ToRowString(mPeaks));
                 }   
             }
         }

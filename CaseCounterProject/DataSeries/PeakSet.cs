@@ -202,7 +202,7 @@ namespace DataSeries {
             peaks.RemoveAt(minSoFar + 1);
         }
 
-        public string ToRowString() {
+        public string ToRowString(int nPeaks) {
 
             StringBuilder sb = new();
             _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population + "," + CaseCount);
@@ -213,6 +213,10 @@ namespace DataSeries {
                 _ = sb.Append("," + pk.Max.X + "," + pk.Max.Y.ToString("F2"));
             }
             _ = sb.Append("," + peaks[^1].RMin.X + "," + peaks[^1].RMin.Y.ToString("F2"));
+                                // Append nulls if we don't have enough peaks
+            for (int i = peaks.Count; i < nPeaks; i++) {
+                _ = sb.Append(",,,,");
+            }
 
             return sb.ToString();
         }
