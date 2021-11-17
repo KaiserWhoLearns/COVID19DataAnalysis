@@ -71,7 +71,7 @@ namespace CaseCounter {
                                                     "Greenland", "Macau", "Ivory Coast", "North Ireland", "Gibraltar", "UK", "Saint Barthelemy", "Saint Martin",
                                                     "Aruba", "Jersey", "Curacao", "Guam", "Puerto Rico", "East Timor"};
 
-        // Pairs of substitutions for Admin0.  Length must be even
+        // Pairs of removal for Admin1.  Length must be even
         private readonly string[] Admin1Remove = { "Australia", "From Diamond Princess", "US", "Wuhan Evacuee", "Canada", "Diamond Princess", "Canada", "Toronto, ON",
                                                     "Canada", "Recovered", "Canada", "Grand Princess", "Canada", "Montreal, QC", "United Kingdom", "United Kingdom",
                                                     "United Kingdom", "UK", "United Kingdom", "Unknown", "Israel", "From Diamond Princess", "Canada", " Montreal, QC",
