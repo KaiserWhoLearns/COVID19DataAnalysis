@@ -4,11 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read state data
-country = "Washington"
+country = "Arizona"
 algo = "kmeans"
 state_set = {"Arizona", "Oregon", "Washington"}
 country_set = {"UnitedStates", "Russia", "Canada", "Europe", "India"}
-peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/" + country +".csv")
+peak_data = pd.read_csv("data/UW time series/Global/Peak Sets/Peak4/" + country +".csv")
 
 if country in country_set:
     all_states = peak_data["Admin1"]
