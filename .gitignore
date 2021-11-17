@@ -4,3 +4,4 @@ countries/*
 region_level/*
 *.pdf
 data/__pycache__/*
+helpers/__pycache__/*

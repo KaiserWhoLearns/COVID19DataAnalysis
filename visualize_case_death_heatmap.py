@@ -4,24 +4,7 @@ import seaborn as sns
 from scipy.stats import pearsonr
 
 from data import loader
-
-__NON_TIME_SERIES_COLUMNS = ['DataType', 'Admin2', 'Admin1', 'Admin0', 'Population', 'CaseCount']
-__BAD_DATA_COUNTRIES = ['Guernsey']
-__NORMALIZED_PER_VALUE = 100000.0
-
-
-def process_heatmap_data(df):
-    country_wise_result = {}
-    for index, row in df.iterrows():
-        country_name = row['Admin0']
-        if country_name in __BAD_DATA_COUNTRIES:
-            continue
-        population = row['Population']
-        total_case_count = row['CaseCount']
-        day_wise_data = row[len(__NON_TIME_SERIES_COLUMNS):]
-        day_wise_data_proportion = [float(d)/float(population) * __NORMALIZED_PER_VALUE for d in day_wise_data]
-        country_wise_result[country_name] = day_wise_data_proportion
-    return country_wise_result
+from helpers import heatmap
 
 
 def plot_multi_covid_case_heatmap_data(multi_heatmap_result, days_counted):
@@ -46,8 +29,8 @@ def plot_multi_covid_case_heatmap_data(multi_heatmap_result, days_counted):
         death_heat_df = pandas.DataFrame(data=death_data_ordered, index=country_names, columns=day_sequence)
         sns.heatmap(case_heat_df, annot=False, ax=ax[0], rasterized=True, cbar_kws={"orientation": "horizontal"})
         sns.heatmap(death_heat_df, annot=False, ax=ax[1], rasterized=True, cbar_kws={"orientation": "horizontal"})
-        ax[0].set_title(f'Cases per {__NORMALIZED_PER_VALUE}')
-        ax[1].set_title(f'Deaths per {__NORMALIZED_PER_VALUE}')
+        ax[0].set_title('Cases per {}'.format(heatmap.get_normalized_per_population_value()))
+        ax[1].set_title('Deaths per {}'.format(heatmap.get_normalized_per_population_value()))
         plt.tight_layout()
         plt.savefig(f'results/{continent}_heatmap.png', bbox_inches='tight')
         plt.close('all')
@@ -88,8 +71,8 @@ def plot_case_and_death_correlation_per_country(multi_heatmap_result):
         sns.heatmap(case_corr_df, annot=False, ax=ax[0], rasterized=True, cbar_kws={"orientation": "horizontal"})
         sns.heatmap(death_corr_df, annot=False, ax=ax[1], rasterized=True, cbar_kws={"orientation": "horizontal"})
 
-        ax[0].set_title(f'Correlation of Cases per {__NORMALIZED_PER_VALUE}')
-        ax[1].set_title(f'Correlation of Deaths per {__NORMALIZED_PER_VALUE}')
+        ax[0].set_title('Correlation of Cases per {}'.format(heatmap.get_normalized_per_population_value()))
+        ax[1].set_title('Correlation of Deaths per {}'.format(heatmap.get_normalized_per_population_value()))
 
         plt.savefig(f'results/{continent}_correlation_heatmap.png', bbox_inches='tight')
         plt.close('all')
@@ -97,9 +80,9 @@ def plot_case_and_death_correlation_per_country(multi_heatmap_result):
 
 if __name__ == '__main__':
     cases, deaths = loader.get_global_case_and_deaths_time_series_data()
-    time_series_columns = cases.columns[len(__NON_TIME_SERIES_COLUMNS):]
-    cases_heatmap_data = process_heatmap_data(cases)
-    deaths_heatmap_data = process_heatmap_data(deaths)
+    time_series_columns = cases.columns[len(heatmap.get_non_time_series_columns()):]
+    cases_heatmap_data = heatmap.process_heatmap_data(cases)
+    deaths_heatmap_data = heatmap.process_heatmap_data(deaths)
     multi_heatmap_result = {
         'cases': cases_heatmap_data,
         'deaths': deaths_heatmap_data,
