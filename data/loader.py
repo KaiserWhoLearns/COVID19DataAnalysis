@@ -1,14 +1,24 @@
+from collections import defaultdict
+
 from pkg_resources import resource_filename
 
 import pandas
 
 __available_continents = ['Africa', 'Asia', 'Europe', 'NorthAmerica', 'SouthAmerica']
+__continent_wise_lookup_of_countries = defaultdict(list)
 
 
 def __load_file(filepath):
     local_ref_path = resource_filename(__name__, filepath)
     df = pandas.read_csv(local_ref_path)
     return df
+
+
+def __populate_continent_wise_country_lookup(cases, continent_name):
+    unique_countries_in_continent_df = list(cases['Admin0'].unique())
+    unique_countries_in_continent_df.sort()
+    __continent_wise_lookup_of_countries[continent_name] = unique_countries_in_continent_df
+    return __continent_wise_lookup_of_countries
 
 
 def get_global_case_and_deaths_time_series_data():
@@ -28,7 +38,15 @@ def get_global_case_and_deaths_time_series_data():
     death_file_path = f'{local_dir_path}{death_file_name}'
     cases = __load_file(case_file_path)
     deaths = __load_file(death_file_path)
+
+    for continent in __available_continents:
+        continent_cases, continent_deaths = get_continent_specific_case_and_deaths_time_series_data(continent=continent)
+        __populate_continent_wise_country_lookup(continent_cases, continent)
     return cases, deaths
+
+
+def get_continent_wise_countries():
+    return __continent_wise_lookup_of_countries
 
 
 def get_continent_specific_case_and_deaths_time_series_data(continent=None):
