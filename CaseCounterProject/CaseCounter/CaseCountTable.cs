@@ -88,10 +88,12 @@ namespace CaseCounter {
              *     AddToDeath TS
              */
 
+
             foreach (JhuCaseCountRecord jccr in cases) {
-                tss.AddConfirmed(jccr.Country, jccr.Province, jccr.District, jccr.Confirmed, Days);
-                tss.AddDeaths(jccr.Country, jccr.Province, jccr.District, jccr.Deaths, Days);
-                tss.UpdatePopulation(jccr.Country, jccr.Province, jccr.District, jccr.Confirmed, jccr.IncidentRate, Days);
+                int fips = jccr.FIPS ?? 0;
+                tss.AddConfirmed(jccr.Country, jccr.Province, jccr.District, fips, jccr.Confirmed, Days);
+                tss.AddDeaths(jccr.Country, jccr.Province, jccr.District, fips, jccr.Deaths, Days);
+                tss.UpdatePopulation(jccr.Country, jccr.Province, jccr.District, fips, jccr.Confirmed, jccr.IncidentRate, Days);
             }
 
         }
@@ -112,6 +114,8 @@ namespace CaseCounter {
             if (config.Admin0RemoveList.Contains(jccr.Country))
                 return true;
             if (config.Admin1RemoveList.Contains((jccr.Country, jccr.Province)))
+                return true;
+            if (config.Admin2RemoveList.Contains((jccr.Country, jccr.Province, jccr.District)))
                 return true;
             return false;
         }

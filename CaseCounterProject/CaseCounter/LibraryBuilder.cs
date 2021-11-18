@@ -11,6 +11,9 @@ using DataSeries;
 
 namespace CaseCounter {
     public class LibraryBuilder {
+
+        private readonly bool RemoveBulkUpdates = true;
+
         ListBox listBox;
         Config config;
 
@@ -52,6 +55,14 @@ namespace CaseCounter {
             dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Daily.csv"));
 
             ReportStep("Write TS_Daily");
+
+            // Removing bulk updates takes care of large submissions on a single day (probably due to reclassification)
+            // This is controversial - as we can either work with reported data - or work with the daily reported data.  Removing the
+            // updates distorts the countries overall data - but is necessary if we want to track the actual waves.
+            if (RemoveBulkUpdates) {
+                dailyCount_TSS = dailyCount_TSS.RemoveBulkUpdates();
+                dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Daily_Updated.csv"));
+            }
 
             // Filter US data to require Admin2 is non-empty.   This cleans up a lot of garbage
             TimeSeriesSet unitedStates_TSS = dailyCount_TSS.Filter((TimeSeries ts) => (ts.Admin0.Equals("US") && !string.IsNullOrEmpty(ts.Admin2)));

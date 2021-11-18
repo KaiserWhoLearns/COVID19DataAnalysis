@@ -22,32 +22,32 @@ namespace DataSeries {
         public int Count {
             get { return series.Count; }
         }
-        public void AddConfirmed(string admin0, string admin1, string admin2, int? confirmed, int index) {
-            AddCase(admin0, admin1, admin2, confirmed, DataType.Confirmed, index);
+        public void AddConfirmed(string admin0, string admin1, string admin2, int fips, int? confirmed, int index) {
+            AddCase(admin0, admin1, admin2, fips, confirmed, DataType.Confirmed, index);
         }
 
-        public void AddDeaths(string admin0, string admin1, string admin2, int? deaths, int index) {
-            AddCase(admin0, admin1, admin2, deaths, DataType.Deaths, index);
+        public void AddDeaths(string admin0, string admin1, string admin2, int fips, int? deaths, int index) {
+            AddCase(admin0, admin1, admin2, fips, deaths, DataType.Deaths, index);
         }
 
-        public void UpdatePopulation(string admin0, string admin1, string admin2, int? confirmed, double? incidence, int index) {
+        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, int? confirmed, double? incidence, int index) {
             double ir = incidence ?? 0.0;                                   // Annoying, clean this up
             int totalCases = confirmed ?? 0;
 
             if (ir == 0.0)
                 return;
 
-            UpdatePopulation(admin0, admin1, admin2, DataType.Confirmed, totalCases, ir, index);
-            UpdatePopulation(admin0, admin1, admin2, DataType.Deaths, totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Confirmed,  totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Deaths, totalCases, ir, index);
 
         }
 
-        public void UpdatePopulation(string admin0, string admin1, string admin2, DataType dataType, int totalCases, double incidence, int index) {
+        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, DataType dataType, int totalCases, double incidence, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
                                     // This probably never occurs due assigning counts prior to updating population
             if (!series.ContainsKey(key)) {
-                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2));
+                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips));
             }
 
             series[key].UpdatePopulation(index, totalCases, incidence);
@@ -55,11 +55,11 @@ namespace DataSeries {
 
 
 
-        public void AddCase(string admin0, string admin1, string admin2, int? count, DataType dataType, int index) {
+        public void AddCase(string admin0, string admin1, string admin2, int fips, int? count, DataType dataType, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
             if (!series.ContainsKey(key)) {
-                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2));
+                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips));
             }
 
             series[key].SetValue(index, count);
@@ -119,7 +119,7 @@ namespace DataSeries {
 
         private static string HeaderString(int lastDay) {
             StringBuilder sb = new();
-            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Population,CaseCount");
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Fips,Population,CaseCount");
 
             for (int i = 0; i <= lastDay; i++) {
                 _ = sb.Append(",Day " + i);
@@ -208,7 +208,7 @@ namespace DataSeries {
                 if (stateSeries.ContainsKey(seriesKey)) {
                     tsState = stateSeries[seriesKey]; 
                 } else {
-                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Population, ts.CaseCount);  
+                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population, ts.CaseCount);  
                     stateSeries.Add(seriesKey, tsState);
                 }
                 tsState.AddCounts(ts);
@@ -232,7 +232,7 @@ namespace DataSeries {
                 if (nationalSeries.ContainsKey(seriesKey)) {
                     tsNational = nationalSeries[seriesKey];
                 } else {
-                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Population,ts.CaseCount);
+                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Fips, ts.Population,ts.CaseCount);
                     nationalSeries.Add(seriesKey, tsNational);
                 }
                 tsNational.AddCounts(ts);
@@ -248,7 +248,7 @@ namespace DataSeries {
         public PeakSetCollection FindPeaks(int nPeaks) {
             PeakSetCollection psc = new();
             foreach (TimeSeries ts in series.Values) {
-                PeakSet ps = new PeakSet(ts);
+                PeakSet ps = new(ts);
                 while (ps.Count > nPeaks) {
                     ps.RemoveSmallestValley();
                 }
@@ -256,6 +256,10 @@ namespace DataSeries {
                 psc.AddPeakSet(ps);
             }
             return psc;
+        }
+
+        public TimeSeriesSet RemoveBulkUpdates() {
+            return this;
         }
 
     }

@@ -22,6 +22,8 @@ namespace DataSeries {
         public string Admin1 { get; }       // State or Province
         public string Admin2 { get; }       // District or County
 
+        public int Fips { get; }            // 5 digit  FIPS (Federal Information Processing System) codes for US Counties.  0 otherwise
+
         public DataType DataType { get; }
 
 
@@ -36,11 +38,12 @@ namespace DataSeries {
 
         private double[] data;
 
-        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, long population = -1, int caseCount = -1) {
+        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, int fips, long population = -1, int caseCount = -1) {
             DataType = dataType;
             Admin0 = admin0;
             Admin1 = admin1;
             Admin2 = admin2;
+            Fips = fips;
             Population = population;
             CaseCount = caseCount;
 
@@ -71,6 +74,9 @@ namespace DataSeries {
                         break;
                     case "Admin2":
                         Admin2 = val;
+                        break;
+                    case "Fips":
+                        Fips = int.Parse(val);
                         break;
                     case "DataType":
                         DataType = (DataType)Enum.Parse(typeof(DataType), val);
@@ -146,7 +152,7 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Population + "," + CaseCount);
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Fips + "," + Population + "," + CaseCount);
 
             for (int i = 0; i <= LastDay; i++) {
                 _ = sb.Append("," + data[i].ToString("F2"));
@@ -156,7 +162,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ToDailyCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
 
             ts.SetValue(0, data[0]);
             for (int i = 1; i <= LastDay; i++) {
@@ -185,7 +191,7 @@ namespace DataSeries {
             return Smooth(TimeSeriesSet.GaussianFilter);
         }
         public TimeSeries Smooth(double[] filter) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
             for (int i = 0; i <= LastDay; i++)
                 ts.SetValue(i, Smooth(i, filter));
 
@@ -230,7 +236,7 @@ namespace DataSeries {
 */
 
         public TimeSeries ScaleByPopulation() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
 
             for (int i = 0; i <= LastDay; i++) {
                 double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
@@ -241,7 +247,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ScaleByCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
 
             double total = 0.0;
             for (int i = 0; i <= LastDay; i++)

@@ -14,6 +14,9 @@ namespace CaseCounter {
 
         public List<(string, string)> Admin1RemoveList { get; }
 
+
+        public List<(string, string, string)> Admin2RemoveList { get; }
+
         public Dictionary<string, string> Admin0Substitutions { get; }
 
         public Dictionary<(string, string), (string, string)> Admin1Substitutions { get; }
@@ -47,6 +50,14 @@ namespace CaseCounter {
                 Admin1RemoveList.Add((Admin1Remove[i], Admin1Remove[i + 1]));
             }
 
+            Admin2RemoveList = new();
+            if (Admin2Remove.Length % 3 != 0) {
+                throw new ProgrammingException("Admin2Remove length needs to be divisible by three");
+            }
+            for (int i = 0; i < Admin2Remove.Length; i += 3) {
+                Admin2RemoveList.Add((Admin2Remove[i], Admin2Remove[i + 1], Admin2Remove[i + 2]));
+            }
+
             Admin0Substitutions = new();
             if (Admin0Subs.Length % 2 != 0) {
                 throw new ProgrammingException("Admin0Subs needs to be even length");
@@ -78,6 +89,9 @@ namespace CaseCounter {
                                                     "Canada", "London, ON", "Lebanon", "None", "Iraq", "None", "Austria", "None", "Canada", "Calgary, Alberta",
                                                     "Canada", "Edmonton, Alberta", "Germany", "Bavaria", "France", "Fench Guiana", "Cook Island", "New Zealand", "India",
                                                     "Dadar Nagar Haveli", "Brazil", "Unknown", "Australia", "External territories", "Australia", "Jervis Bay Territory"};
+
+        // Triples for removal by Admin2.  Length must be divisible by 3.  
+        private readonly string[] Admin2Remove = { "US", "Washington", "Walla Walla County", "US", "Washington", "Garfield County" };
 
         // Pairs of substitutions for Admin0.  Length must be even
         private readonly string[] Admin0Subs = { "Mainland China", "China", "Palestine", "West Bank and Gaza", "The Gambia", "Gambia",
