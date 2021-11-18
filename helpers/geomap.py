@@ -19,6 +19,7 @@ def get_usa_state_data(mainland_only=True):
     possible_drop_list = ['AK', 'HI', 'PR', 'RI', 'VI', 'AS', 'GU', 'MP']
     if mainland_only:
         mainland_usa = states[~states.STUSPS.isin(possible_drop_list)]
+        mainland_usa = mainland_usa.reset_index()
         return mainland_usa
     # Otherwise, return the data ready for an inset graph
     return states
