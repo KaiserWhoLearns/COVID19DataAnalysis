@@ -10,7 +10,7 @@ from helpers import geomap, heatmap
 import numpy
 
 
-__NUMBER_OF_FILMS_IN_STRIP = 6
+__NUMBER_OF_FILMS_IN_STRIP = 12
 
 
 def roundup(num, nearest_ten=True):
@@ -19,23 +19,22 @@ def roundup(num, nearest_ten=True):
     return int(math.ceil(num))
 
 
-def plot_filmstrip(world, cases, deaths):
-    countries_in_the_world = world['name'].to_list()
-    country_wise_normalized_case_result = heatmap.process_heatmap_data(cases)
-    country_wise_normalized_death_result = heatmap.process_heatmap_data(deaths)
+def plot_filmstrip(world, cases, deaths, name_column='name', filter_column='Admin0', q_name='world'):
+    countries_in_the_world = world[name_column].to_list()
+    country_wise_normalized_case_result = heatmap.process_heatmap_data(cases, filter_column)
+    country_wise_normalized_death_result = heatmap.process_heatmap_data(deaths, filter_column)
     case_matrix = []
     death_matrix = []
 
     case_matrix_columns = [f'CaseStripMean{d+1}' for d in range(__NUMBER_OF_FILMS_IN_STRIP)]
     death_matrix_columns = [f'DeathStripMean{d+1}' for d in range(__NUMBER_OF_FILMS_IN_STRIP)]
-    print(case_matrix_columns)
-    print(death_matrix_columns)
 
     for country in countries_in_the_world:
         case_res = [None] * __NUMBER_OF_FILMS_IN_STRIP
         death_res = [None] * __NUMBER_OF_FILMS_IN_STRIP
         if country not in country_wise_normalized_case_result:
             # Both case_result and death_result have the same countries
+            print(f"Ignoring {country}")
             case_matrix.append(case_res)
             death_matrix.append(death_res)
             continue
@@ -54,7 +53,6 @@ def plot_filmstrip(world, cases, deaths):
     deaths_matrix_df = pandas.DataFrame(data=death_matrix, columns=death_matrix_columns)
 
     lets_concat = pandas.concat([world, case_matrix_df, deaths_matrix_df], axis=1)
-    # lets_concat.drop('geometry', axis=1, inplace=True)
 
     calibrate_min = 0
     calibrate_case_max = roundup(case_matrix_df.max().max())
@@ -63,12 +61,6 @@ def plot_filmstrip(world, cases, deaths):
     print(f'Death: {calibrate_min} --> {calibrate_death_max}')
 
     fig, ax = plt.subplots(nrows=2, ncols=__NUMBER_OF_FILMS_IN_STRIP, figsize=(70, 20), sharex=True, sharey=True)
-    case_palette_cmap = ListedColormap([cm.YlOrRd(x) for x in range(calibrate_case_max)])
-    print(case_palette_cmap)
-    death_palette_cmap = ListedColormap([cm.YlOrRd(x) for x in range(calibrate_death_max)])
-    print(death_palette_cmap)
-    # palette =
-    # cmap = ListedColormap()
     # Plot all the cases first in the first row
     for column_index, filter_name in enumerate(case_matrix_columns):
         lets_concat.plot(
@@ -111,21 +103,28 @@ def plot_filmstrip(world, cases, deaths):
         )
         ax[1][column_index].set_axis_off()
     plt.tight_layout()
-    plt.savefig('results/filmstrip_world.pdf', bbox_inches='tight')
+    plt.savefig(f'results/filmstrip_{q_name}.pdf', bbox_inches='tight')
 
 
 if __name__ == '__main__':
-    cases, deaths = loader.get_global_case_and_deaths_time_series_data()
+    world_cases, world_deaths = loader.get_global_case_and_deaths_time_series_data()
     world = geomap.get_world_data()
     world = world[(world.pop_est > 0) & (world.name != "Antarctica")]
-    countries_in_the_world = set(world['name'].to_list())
-    countries_in_covid_data = set(cases['Admin0'].to_list())
-    print("Countries in GeoPandas: {}".format(len(countries_in_the_world)))
-    print("Countries in Dataset  : {}".format(len(countries_in_covid_data)))
-    common_countries = countries_in_covid_data.intersection(countries_in_the_world)
-    diff_countries = countries_in_covid_data.difference(countries_in_the_world)
-    print("Countries in Common: {}".format(len(common_countries)))
-    print("Countries Not in Common: {}".format(len(diff_countries)))
-    print(diff_countries)
 
-    plot_filmstrip(world, cases, deaths)
+    usa_cases, usa_deaths = loader.get_united_states_case_and_death_time_series_data(county=False)
+    usa = geomap.get_usa_state_data(mainland_only=True)
+
+    for (geodf, cases, deaths, main_filter, case_filter, name) in [
+        (world, world_cases, world_deaths, 'name', 'Admin0', 'world'),
+        (usa, usa_cases, usa_deaths, 'NAME', 'Admin1', 'usa'),
+    ]:
+        geo_data = set(geodf[main_filter].to_list())
+        cov_data = set(cases[case_filter].to_list())
+
+        common = cov_data.intersection(geo_data)
+        diff = cov_data.difference(geo_data)
+        print("Common: {}/{}".format(len(common), max(len(geo_data), len(cov_data))))
+        print("Diff: {}/{}".format(len(diff), max(len(geo_data), len(cov_data))))
+
+        print(diff)
+        plot_filmstrip(geodf, cases, deaths, main_filter, case_filter, name)

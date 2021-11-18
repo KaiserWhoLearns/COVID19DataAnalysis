@@ -6,10 +6,10 @@ __BAD_DATA_COUNTRIES = ['Guernsey']
 __NORMALIZED_PER_VALUE = 100000.0
 
 
-def process_heatmap_data(df):
+def process_heatmap_data(df, filter_column='Admin0'):
     country_wise_result = {}
     for index, row in df.iterrows():
-        country_name = row['Admin0']
+        country_name = row[filter_column]
         if country_name in __BAD_DATA_COUNTRIES:
             continue
         population = row['Population']
