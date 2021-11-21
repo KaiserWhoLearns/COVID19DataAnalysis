@@ -1,0 +1,533 @@
+Argentina+Deaths: <253,3351>
+Belgium/Antwerp+Confirmed: <295,60560><651,6336>
+Belgium/Brussels+Confirmed: <295,71270><651,2899>
+Belgium/East Flanders+Confirmed: <295,46386>
+Belgium/Flemish Brabant+Confirmed: <295,40227>
+Belgium/Hainaut+Confirmed: <295,83081>
+Belgium/Liege+Confirmed: <295,85034>
+Belgium/Limburg+Confirmed: <295,21384>
+Belgium/Luxembourg+Confirmed: <295,14394>
+Belgium/Namur+Confirmed: <295,29488>
+Belgium/Unknown+Confirmed: <295,8595>
+Belgium/Unknown+Deaths: <295,13891>
+Belgium/Walloon Brabant+Confirmed: <295,21252>
+Belgium/West Flanders+Confirmed: <295,38722>
+Belize+Confirmed: <316,1382>
+Benin+Confirmed: <574,1118><579,1838><588,2566><595,2160><601,1609><611,1508>
+Bolivia+Deaths: <229,1656>
+Botswana+Confirmed: <268,1328><288,1193><376,1445><397,1197><404,2356><425,2066><456,1153><530,2534><593,2869><603,6608><610,2639><635,2195><642,1066><653,5654>
+Brazil/Acre+Confirmed: <119,2817>
+Brazil/Alagoas+Confirmed: <119,4437>
+Brazil/Amapa+Confirmed: <119,4549>
+Brazil/Amazonas+Confirmed: <119,23704>
+Brazil/Amazonas+Deaths: <119,1561>
+Brazil/Bahia+Confirmed: <119,11197>
+Brazil/Ceara+Confirmed: <119,30560><226,10433><258,12823><392,11113><617,10647><659,3534>
+Brazil/Ceara+Deaths: <119,1900>
+Brazil/Distrito Federal+Confirmed: <119,5161>
+Brazil/Espirito Santo+Confirmed: <119,8092>
+Brazil/Goias+Confirmed: <119,1978>
+Brazil/Maranhao+Confirmed: <119,15114>
+Brazil/Mato Grosso+Confirmed: <119,1054>
+Brazil/Minas Gerais+Confirmed: <119,5286>
+Brazil/Para+Confirmed: <119,18135>
+Brazil/Para+Deaths: <119,1633>
+Brazil/Paraiba+Confirmed: <119,5838><605,3144><651,8425>
+Brazil/Parana+Confirmed: <119,2616>
+Brazil/Pernambuco+Confirmed: <119,22560>
+Brazil/Pernambuco+Deaths: <119,1834>
+Brazil/Piaui+Confirmed: <119,2637>
+Brazil/Rio Grande do Norte+Confirmed: <119,3796><202,2501><390,8341><518,36374>
+Brazil/Rio Grande do Sul+Confirmed: <119,4973><548,64036><605,5514>
+Brazil/Rio de Janeiro+Confirmed: <119,30372><596,17736><605,105700>
+Brazil/Rio de Janeiro+Deaths: <119,3237>
+Brazil/Rondonia+Confirmed: <119,2499><530,2477>
+Brazil/Roraima+Confirmed: <119,2067><599,2350>
+Brazil/Santa Catarina+Confirmed: <119,5499><222,30913><609,15081>
+Brazil/Sao Paulo+Confirmed: <119,69859>
+Brazil/Sao Paulo+Deaths: <119,5363>
+Brazil/Sergipe+Confirmed: <119,4277>
+Brazil/Tocantins+Confirmed: <119,1809>
+Burundi+Confirmed: <597,1462><609,2167><615,1149>
+Cameroon+Confirmed: <145,1183><167,2324><367,1607><381,1081><393,1651><400,1965><414,3828><429,7047><435,9668><442,4394><451,3078><457,1189><463,6252><470,2696><482,2483><602,1204><616,6889><623,3096><630,3003><636,1887><644,2210><651,1849><658,1371>
+Canada/British Columbia+Confirmed: <342,2206>
+Central African Republic+Confirmed: <566,4044>
+Chile/Antofagasta+Confirmed: <119,1731>
+Chile/Araucania+Confirmed: <119,1680>
+Chile/Biobio+Confirmed: <119,1224>
+Chile/Metropolitana+Confirmed: <119,41179>
+Chile/Metropolitana+Deaths: <134,1034>
+Chile/Nuble+Confirmed: <119,1011><466,1125>
+Chile/Tarapaca+Confirmed: <119,1139><343,1126>
+Chile/Unknown+Deaths: <132,1188>
+Chile/Valparaiso+Confirmed: <119,1770>
+China/Hubei+Deaths: <86,1290>
+Colombia/Amazonas+Confirmed: <127,1723>
+Colombia/Antioquia+Confirmed: <285,153566><289,1785>
+Colombia/Atlantico+Confirmed: <127,3114>
+Colombia/Bolivar+Confirmed: <127,2516>
+Colombia/Boyaca+Confirmed: <546,1453>
+Colombia/Caldas+Confirmed: <546,1037>
+Colombia/Capital District+Confirmed: <127,8045>
+Colombia/Caqueta+Confirmed: <285,2046>
+Colombia/Cauca+Confirmed: <285,1394>
+Colombia/Cordoba+Confirmed: <546,2337>
+Colombia/Cundinamarca+Confirmed: <546,4283>
+Colombia/Huila+Confirmed: <546,2045>
+Colombia/Magdalena+Confirmed: <546,1069>
+Colombia/Meta+Confirmed: <285,2995>
+Colombia/Narino+Confirmed: <285,2126>
+Colombia/Risaralda+Confirmed: <285,3104><546,1280>
+Colombia/San Andres y Providencia+Confirmed: <285,1035>
+Colombia/Santander+Confirmed: <285,42267><546,1728>
+Colombia/Sucre+Confirmed: <285,2533>
+Colombia/Unknown+Confirmed: <131,1087><286,302844><370,13606><409,3663><447,16377><496,25966><503,18586><508,28519><509,24376><510,24452><537,18650><543,18206><544,16447><545,11630><548,13164><571,3132><581,2448><602,1570><614,1015>
+Colombia/Valle del Cauca+Confirmed: <127,2828><285,88948>
+Costa Rica+Confirmed: <433,1586>
+Ecuador+Confirmed: <93,11536><231,1409><232,1040><554,4953><568,1936><575,1348><579,3613><606,1143><620,1381><636,1061><641,1519><652,2415><663,2232><668,2055>
+Ecuador+Deaths: <229,3852><545,8786>
+El Salvador+Confirmed: <522,1088><528,1024><546,1292><567,1758><574,2006><581,1374><588,2007><596,2055><600,1579><607,2323><614,2324><623,2987><631,2217><639,2102><643,1132><654,2836><658,1092>
+Equatorial Guinea+Confirmed: <162,1070><191,1750>
+Eswatini+Confirmed: <446,1017>
+France/French Polynesia+Confirmed: <61,19859><623,5003>
+France/Guadeloupe+Confirmed: <245,1061><252,1041><558,2812><566,5646><573,5523><579,2672><586,7438><595,4044><601,1970>
+France/Martinique+Confirmed: <279,1295><544,2157><551,2251><558,5224><590,2032>
+France/Reunion+Confirmed: <434,1025><461,1038><469,1070><476,1193><490,1335><497,1174><504,1160><511,1206><518,1061><524,1081><531,1262><539,1450><546,1320><553,2616><559,3014><567,3590><573,2919><581,1929><588,1663><595,1305><666,1308>
+France+Confirmed: <58,1741><62,22054><481,3350><482,16001><483,18128><485,12533><486,12383><487,8976>
+France+Deaths: <62,1100>
+Germany/Baden-Wurttemberg+Confirmed: <113,33804>
+Germany/Baden-Wurttemberg+Deaths: <113,1629>
+Germany/Bayern+Confirmed: <113,45352>
+Germany/Bayern+Deaths: <113,2250>
+Germany/Berlin+Confirmed: <113,6393>
+Germany/Brandenburg+Confirmed: <113,3173>
+Germany/Bremen+Confirmed: <113,1132>
+Germany/Hamburg+Confirmed: <113,4976>
+Germany/Hessen+Confirmed: <113,9169>
+Germany/Niedersachsen+Confirmed: <113,11075>
+Germany/Nordrhein-Westfalen+Confirmed: <113,35741>
+Germany/Nordrhein-Westfalen+Deaths: <113,1483>
+Germany/Rheinland-Pfalz+Confirmed: <113,6406>
+Germany/Saarland+Confirmed: <113,2705>
+Germany/Sachsen+Confirmed: <113,5046>
+Germany/Sachsen-Anhalt+Confirmed: <113,1668><316,2121>
+Germany/Schleswig-Holstein+Confirmed: <113,2988>
+Germany/Thuringen+Confirmed: <113,2663>
+Germany/Unknown+Confirmed: <113,1447><260,2999><264,2576><271,2917><275,7657><285,2381><295,1182><300,8722><301,1110><308,10543><313,1032><314,7394><318,8159><321,9050><323,3095><325,1033><328,8163><329,2596><331,1290><335,11169><336,1077><340,1418><341,1394><345,2102><351,14756><356,7626><362,4119><364,9202><367,8633><373,6910><382,2137><383,1270><390,3365><391,1012><396,1761><400,6634><403,1419><404,1277><413,7004><416,7755><418,1105><433,6589><438,2174><440,3384><442,1058><446,1592><447,7706><448,1755><453,1913><454,6549><456,3731><459,3484><461,3691><462,2100><463,1450><468,6110><474,1076><475,4825><478,2366><480,1616><484,1833><494,2474><548,1476><553,2253><564,1059><571,1615><580,5077><585,2081><587,5124><592,3350><594,5520><598,1204><599,1611><606,1957><611,1714><613,2256><620,1939><624,1040><630,8314><634,2738><636,5322><641,3307><642,6159><650,10293><656,1836><657,1612><663,2859><665,2994>
+India/Andhra Pradesh+Confirmed: <140,5070>
+India/Assam+Confirmed: <140,2937>
+India/Bihar+Confirmed: <140,5459>
+India/Bihar+Deaths: <505,3994>
+India/Chandigarh+Confirmed: <578,3004>
+India/Chhattisgarh+Confirmed: <140,1240><372,6451>
+India/Delhi+Confirmed: <140,31309>
+India/Gujarat+Confirmed: <140,21014>
+India/Gujarat+Deaths: <140,1313>
+India/Haryana+Confirmed: <140,5209>
+India/Jammu and Kashmir+Confirmed: <140,4346>
+India/Jharkhand+Confirmed: <140,1411>
+India/Karnataka+Confirmed: <140,5921>
+India/Kerala+Confirmed: <140,2096>
+India/Madhya Pradesh+Confirmed: <140,9849><537,1481>
+India/Madhya Pradesh+Deaths: <537,1481>
+India/Maharashtra+Confirmed: <140,90787>
+India/Maharashtra+Deaths: <140,3289><545,3656>
+India/Odisha+Confirmed: <140,3140>
+India/Punjab+Confirmed: <140,2719>
+India/Rajasthan+Confirmed: <140,11245>
+India/Tamil Nadu+Confirmed: <140,34914>
+India/Telangana+Confirmed: <140,3920>
+India/Unknown+Confirmed: <140,9227><344,20035>
+India/Uttar Pradesh+Confirmed: <140,11335>
+India/Uttarakhand+Confirmed: <140,1537>
+India/West Bengal+Confirmed: <140,8985>
+Italy/Abruzzo+Confirmed: <113,3136>
+Italy/Calabria+Confirmed: <113,1143>
+Italy/Campania+Confirmed: <113,4639>
+Italy/Emilia-Romagna+Confirmed: <113,27056>
+Italy/Emilia-Romagna+Deaths: <113,3930>
+Italy/Friuli Venezia Giulia+Confirmed: <113,3161>
+Italy/Lazio+Confirmed: <113,7291>
+Italy/Liguria+Confirmed: <113,8995>
+Italy/Liguria+Deaths: <113,1329>
+Italy/Lombardia+Confirmed: <113,83820>
+Italy/Lombardia+Deaths: <113,15296>
+Italy/Marche+Confirmed: <113,6603>
+Italy/P.A. Bolzano+Confirmed: <113,2578><425,10696>
+Italy/P.A. Trento+Confirmed: <113,4315>
+Italy/Piemonte+Confirmed: <113,29209>
+Italy/Piemonte+Deaths: <113,3493>
+Italy/Puglia+Confirmed: <113,4357>
+Italy/Sardegna+Confirmed: <113,1345>
+Italy/Sicilia+Confirmed: <113,3366>
+Italy/Toscana+Confirmed: <113,9859>
+Italy/Umbria+Confirmed: <113,1420>
+Italy/Valle d'Aosta+Confirmed: <113,1166>
+Italy/Veneto+Confirmed: <113,18845>
+Italy/Veneto+Deaths: <113,1743>
+Japan/Hokkaido+Confirmed: <127,1078>
+Japan/Kanagawa+Confirmed: <127,1347>
+Japan/Osaka+Confirmed: <127,1782>
+Japan/Tokyo+Confirmed: <127,5191>
+Jordan+Confirmed: <488,5004>
+Kazakhstan+Confirmed: <161,18757><548,66121><552,7249>
+Kazakhstan+Deaths: <424,2291><588,1077>
+Kosovo+Confirmed: <256,14236><422,1955><427,3877><440,3251><470,1976>
+Kyrgyzstan+Confirmed: <178,11505>
+Lesotho+Confirmed: <618,6925>
+Madagascar+Confirmed: <416,1201>
+Mauritius+Confirmed: <586,1529><594,1150>
+Mexico/Baja California+Confirmed: <119,3603><257,1900>
+Mexico/Chiapas+Confirmed: <257,1461>
+Mexico/Chihuahua+Confirmed: <119,1014>
+Mexico/Ciudad de Mexico+Confirmed: <119,15844>
+Mexico/Ciudad de Mexico+Deaths: <119,1618><257,1386><304,3916><310,4068><496,1003>
+Mexico/Hidalgo+Confirmed: <119,1034>
+Mexico/Mexico+Confirmed: <119,9346><496,2093>
+Mexico/Mexico+Deaths: <292,3401><305,3650><312,3741><496,1933>
+Mexico/Michoacan+Confirmed: <119,1094>
+Mexico/Morelos+Confirmed: <119,1115>
+Mexico/Nuevo Leon+Confirmed: <119,1016>
+Mexico/Puebla+Confirmed: <119,1702>
+Mexico/Quintana Roo+Confirmed: <119,1392>
+Mexico/Sinaloa+Confirmed: <119,2161>
+Mexico/Sonora+Confirmed: <119,1020><257,9609>
+Mexico/Tabasco+Confirmed: <119,2716>
+Mexico/Tamaulipas+Confirmed: <119,1077>
+Mexico/Veracruz+Confirmed: <119,2288>
+Mexico/Yucatan+Confirmed: <119,1244>
+Netherlands/Bonaire, Sint Eustatius and Saba+Confirmed: <463,1360>
+Netherlands/Gelderland+Confirmed: <177,6518>
+Netherlands/Limburg+Confirmed: <177,4885>
+Netherlands/Noord-Brabant+Confirmed: <177,9747>
+Netherlands/Noord-Brabant+Deaths: <177,1535>
+Netherlands/Noord-Holland+Confirmed: <177,7459>
+Netherlands/Overijssel+Confirmed: <177,3137>
+Netherlands/Unknown+Confirmed: <249,2334><251,3011><600,2090>
+Netherlands/Utrecht+Confirmed: <177,4137>
+Netherlands/Zuid-Holland+Confirmed: <177,11786>
+Netherlands/Zuid-Holland+Deaths: <177,1305>
+Oman+Confirmed: <550,4912>
+Pakistan/Balochistan+Confirmed: <140,7031>
+Pakistan/Islamabad+Confirmed: <140,5963>
+Pakistan/Khyber Pakhtunkhwa+Confirmed: <140,14527>
+Pakistan/Punjab+Confirmed: <140,43460>
+Pakistan/Sindh+Confirmed: <140,41303>
+Peru/Ancash+Confirmed: <127,3455><359,1240><530,1014>
+Peru/Ancash+Deaths: <498,3135>
+Peru/Arequipa+Confirmed: <127,2921><502,2534><512,2615><518,2703><530,5903><537,2937><551,1181>
+Peru/Arequipa+Deaths: <498,4612>
+Peru/Ayacucho+Deaths: <498,1034>
+Peru/Cajamarca+Confirmed: <530,1076>
+Peru/Cajamarca+Deaths: <498,2230>
+Peru/Callao+Confirmed: <127,9953>
+Peru/Callao+Deaths: <127,1467><498,6063>
+Peru/Cusco+Confirmed: <530,1710>
+Peru/Cusco+Deaths: <498,2722>
+Peru/Huanuco+Deaths: <498,1368>
+Peru/Ica+Confirmed: <127,2662>
+Peru/Ica+Deaths: <498,4521>
+Peru/Junin+Confirmed: <127,1675><359,1056><502,1196><530,1813>
+Peru/Junin+Deaths: <498,3601>
+Peru/La Libertad+Confirmed: <127,3818><502,1656><530,1525>
+Peru/La Libertad+Deaths: <498,5269>
+Peru/Lambayeque+Confirmed: <127,7020>
+Peru/Lambayeque+Deaths: <127,1511><498,5076>
+Peru/Lima+Confirmed: <127,87478><502,5293><512,5753><518,3802><530,8031><537,4464><551,2822><566,1758><572,2423><579,3213><591,4117><650,2436><656,1360><660,1822>
+Peru/Lima+Deaths: <127,9240><498,54559>
+Peru/Loreto+Confirmed: <127,3959>
+Peru/Loreto+Deaths: <127,1792><498,2562>
+Peru/Piura+Confirmed: <127,6942><530,1500>
+Peru/Piura+Deaths: <127,1995><498,7795>
+Peru/Puno+Confirmed: <530,1101>
+Peru/Puno+Deaths: <498,2332>
+Peru/San Martin+Confirmed: <127,1093>
+Peru/San Martin+Deaths: <498,1431>
+Peru/Tumbes+Confirmed: <127,1219>
+Peru/Ucayali+Confirmed: <127,3530>
+Peru/Ucayali+Deaths: <498,1946>
+Peru/Unknown+Confirmed: <178,11749><179,4090><355,1536><370,4444><373,5715><375,5217><378,8573><380,6715><384,5557><386,6724><394,9667><396,7410><404,5942><408,4878><410,6670><412,8847><418,4443><422,16047><429,11919><431,8909><434,8730><435,4186><437,5616><438,2790><445,7927><451,8575><453,3030><457,11049><459,7425><462,8277><467,3129><472,5591><476,4320><483,5715><486,5285><489,6966><497,9963><499,10734><500,4225><503,1429><505,4054><508,5569><510,3852><515,3550><516,3882><520,6813><529,7559><531,2374><532,2586><533,2549><535,4629><536,1962><538,2010><540,2260><542,1950><548,1617><549,1765><550,1490><552,1366><556,2798><557,1808><561,1993><563,1571><564,1217><569,1319><570,1497><573,2015><574,1468><575,1371><576,1396><577,1173><580,1538><581,1360><582,1118><589,2112><595,1085><598,1021><603,1068><616,1086><618,1978><622,1210><623,1034><631,1122><639,1927><647,1032><651,1121><653,1062><654,1070><658,2239><659,1237><666,1415><667,1537>
+Peru/Unknown+Deaths: <497,115600><536,1157>
+Russia/Altai Krai+Confirmed: <131,1915>
+Russia/Arkhangelsk Oblast+Confirmed: <131,2068>
+Russia/Astrakhan Oblast+Confirmed: <131,1883>
+Russia/Bashkortostan Republic+Confirmed: <131,3337>
+Russia/Belgorod Oblast+Confirmed: <131,2392>
+Russia/Bryansk Oblast+Confirmed: <131,3787>
+Russia/Buryatia Republic+Confirmed: <131,1513>
+Russia/Chechen Republic+Confirmed: <131,1247>
+Russia/Chelyabinsk Oblast+Confirmed: <131,2929>
+Russia/Chuvashia Republic+Confirmed: <131,2973>
+Russia/Dagestan Republic+Confirmed: <131,5096>
+Russia/Ingushetia Republic+Confirmed: <131,2127>
+Russia/Irkutsk Oblast+Confirmed: <131,1979>
+Russia/Ivanovo Oblast+Confirmed: <131,2057>
+Russia/Kabardino-Balkarian Republic+Confirmed: <131,2903>
+Russia/Kaliningrad Oblast+Confirmed: <131,1553>
+Russia/Kalmykia Republic+Confirmed: <131,1074>
+Russia/Kaluga Oblast+Confirmed: <131,4009>
+Russia/Karachay-Cherkess Republic+Confirmed: <131,1137>
+Russia/Khabarovsk Krai+Confirmed: <131,2142>
+Russia/Khanty-Mansi Autonomous Okrug+Confirmed: <131,2587>
+Russia/Kirov Oblast+Confirmed: <131,1751>
+Russia/Komi Republic+Confirmed: <131,1352>
+Russia/Krasnodar Krai+Confirmed: <131,3908>
+Russia/Krasnoyarsk Krai+Confirmed: <131,4380>
+Russia/Kursk Oblast+Confirmed: <131,3063>
+Russia/Leningrad Oblast+Confirmed: <131,2875>
+Russia/Lipetsk Oblast+Confirmed: <131,2194>
+Russia/Mari El Republic+Confirmed: <131,1815>
+Russia/Mordovia Republic+Confirmed: <131,1931>
+Russia/Moscow+Confirmed: <131,183088>
+Russia/Moscow+Deaths: <131,2553>
+Russia/Moscow Oblast+Confirmed: <131,39723>
+Russia/Murmansk Oblast+Confirmed: <131,3264>
+Russia/Nizhny Novgorod Oblast+Confirmed: <131,10149>
+Russia/North Ossetia - Alania Republic+Confirmed: <131,3005>
+Russia/Novgorod Oblast+Confirmed: <131,1353>
+Russia/Novosibirsk Oblast+Confirmed: <131,2914>
+Russia/Omsk Oblast+Confirmed: <131,1411>
+Russia/Orel Oblast+Confirmed: <131,2341>
+Russia/Orenburg Oblast+Confirmed: <131,1979>
+Russia/Penza Oblast+Confirmed: <131,2417>
+Russia/Perm Krai+Confirmed: <131,1782>
+Russia/Primorsky Krai+Confirmed: <131,2049>
+Russia/Rostov Oblast+Confirmed: <131,4942>
+Russia/Ryazan Oblast+Confirmed: <131,3581>
+Russia/Saint Petersburg+Confirmed: <131,16313>
+Russia/Sakha (Yakutiya) Republic+Confirmed: <131,2042>
+Russia/Samara Oblast+Confirmed: <131,2648>
+Russia/Saratov Oblast+Confirmed: <131,3174>
+Russia/Smolensk Oblast+Confirmed: <131,2299>
+Russia/Stavropol Krai+Confirmed: <131,2568>
+Russia/Sverdlovsk Oblast+Confirmed: <131,5732>
+Russia/Tambov Oblast+Confirmed: <131,3047>
+Russia/Tatarstan Republic+Confirmed: <131,3244>
+Russia/Tula Oblast+Confirmed: <131,3968>
+Russia/Tver Oblast+Confirmed: <131,1650>
+Russia/Tyumen Oblast+Confirmed: <131,1661>
+Russia/Tyva Republic+Confirmed: <131,1115>
+Russia/Ulyanovsk Oblast+Confirmed: <131,2567>
+Russia/Vladimir Oblast+Confirmed: <131,2735>
+Russia/Volgograd Oblast+Confirmed: <131,3215>
+Russia/Voronezh Oblast+Confirmed: <131,2139>
+Russia/Yamalo-Nenets Autonomous Okrug+Confirmed: <131,2415>
+Russia/Yaroslavl Oblast+Confirmed: <131,3210>
+Russia/Zabaykalsky Krai+Confirmed: <131,1136>
+Saudi Arabia+Confirmed: <562,5121><569,5439><583,1324><592,1925>
+Serbia+Confirmed: <99,2379>
+Spain/Andalusia+Confirmed: <113,12359>
+Spain/Andalusia+Deaths: <113,1336>
+Spain/Aragon+Confirmed: <113,5389><194,4764>
+Spain/Asturias+Confirmed: <113,2356>
+Spain/Baleares+Confirmed: <113,1958>
+Spain/C. Valenciana+Confirmed: <113,10784>
+Spain/C. Valenciana+Deaths: <113,1349>
+Spain/Canarias+Confirmed: <113,2275>
+Spain/Cantabria+Confirmed: <113,2256>
+Spain/Castilla - La Mancha+Confirmed: <113,16470>
+Spain/Castilla - La Mancha+Deaths: <113,2852>
+Spain/Castilla y Leon+Confirmed: <113,18173><468,1590>
+Spain/Castilla y Leon+Deaths: <113,1925>
+Spain/Catalonia+Confirmed: <113,55482><121,1148><404,4372><406,1623><407,1384><408,1266><505,10386>
+Spain/Catalonia+Deaths: <113,5823><287,1037>
+Spain/Extremadura+Confirmed: <113,2923>
+Spain/Galicia+Confirmed: <113,9317>
+Spain/La Rioja+Confirmed: <113,4014>
+Spain/Madrid+Confirmed: <113,65693>
+Spain/Madrid+Deaths: <113,8779>
+Spain/Murcia+Confirmed: <113,1532><236,1136>
+Spain/Navarra+Confirmed: <113,5105>
+Spain/Pais Vasco+Confirmed: <113,13219>
+Spain/Pais Vasco+Deaths: <113,1454>
+Sudan+Confirmed: <354,1215><448,1099>
+Sweden/Dalarna+Confirmed: <135,1277>
+Sweden/Gavleborg+Confirmed: <135,1435><335,1341><342,1404><349,1347>
+Sweden/Halland+Confirmed: <342,1424><349,1555>
+Sweden/Jonkoping+Confirmed: <135,1681>
+Sweden/Orebro+Confirmed: <135,1896>
+Sweden/Ostergotland+Confirmed: <135,2197><349,1252><440,1108>
+Sweden/Skane+Confirmed: <135,1928><335,5181><342,7707><349,7661>
+Sweden/Sormland+Confirmed: <135,1655>
+Sweden/Stockholm+Confirmed: <135,14366><335,4248><342,6098><489,1269><498,1544>
+Sweden/Stockholm+Deaths: <135,2136>
+Sweden/Uppsala+Confirmed: <135,2136><342,1079>
+Sweden/Vastmanland+Confirmed: <135,1434>
+Sweden/Vastra Gotaland+Confirmed: <135,7218><335,4738><342,6278><349,6352><498,1667>
+Tanzania+Confirmed: <618,24479>
+Tunisia+Confirmed: <658,1924>
+Turkey+Confirmed: <323,823225>
+US/Alabama/Lee+Confirmed: <644,1616>
+US/Alabama/Mobile+Confirmed: <274,2281><447,1164><454,1105>
+US/Alabama/Shelby+Confirmed: <478,1346>
+US/Alabama/Tuscaloosa+Confirmed: <246,1059>
+US/California/Los Angeles+Confirmed: <491,4032>
+US/California/Orange+Confirmed: <538,1226>
+US/California/Sacramento+Confirmed: <642,1417>
+US/California/San Joaquin+Confirmed: <337,5702>
+US/California/Stanislaus+Confirmed: <666,1126>
+US/Connecticut/Hartford+Confirmed: <341,2336>
+US/Connecticut/New Haven+Confirmed: <341,2103>
+US/Florida/Alachua+Confirmed: <555,1087><562,1412><569,1642><576,1505><583,1526><590,1460><597,1295>
+US/Florida/Bay+Confirmed: <555,1410><562,1620><569,1418><576,1074><583,1132>
+US/Florida/Brevard+Confirmed: <541,1441><548,2166><555,3519><562,3853><569,4357><576,4588><583,4510><590,3685><597,2589><604,2165><611,1207>
+US/Florida/Broward+Confirmed: <506,1215><520,1087><527,1470><534,2136><541,3828><548,6055><555,9081><562,12582><569,14666><576,13536><583,11655><590,8845><597,7059><604,5463><611,4188><618,3401><625,2464><632,1851><639,1472><646,1178><653,1038>
+US/Florida/Charlotte+Confirmed: <576,1131><583,1311><590,1263><597,1027>
+US/Florida/Citrus+Confirmed: <583,1107><590,1074>
+US/Florida/Clay+Confirmed: <548,1188><555,1588><562,1506><569,1498><576,1264><583,1168><590,1269>
+US/Florida/Collier+Confirmed: <555,1439><562,1958><569,2151><576,2288><583,2278><590,2156><597,1796><604,1331><611,1178>
+US/Florida/Columbia+Confirmed: <569,1066>
+US/Florida/Duval+Confirmed: <527,1403><534,2139><541,4438><548,6425><555,8343><562,8157><569,6375><576,5346><583,4873><590,4137><597,3054><604,2540><611,1709><618,1435>
+US/Florida/Escambia+Confirmed: <555,1630><562,1953><569,2218><576,2429><583,3064><590,2523><597,1726><604,1229>
+US/Florida/Hernando+Confirmed: <555,1153><562,1342><569,1513><576,1765><583,2005><590,1314><597,1143>
+US/Florida/Highlands+Confirmed: <583,1147><590,1072>
+US/Florida/Hillsborough+Confirmed: <534,1308><541,2959><548,5308><555,7198><562,8636><569,10981><576,11263><583,11887><590,9800><597,7986><604,5490><611,3874><618,2843><625,1970><632,1554><639,1347><667,1158>
+US/Florida/Indian River+Confirmed: <569,1012><576,1174><583,1295><590,1119>
+US/Florida/Lake+Confirmed: <548,1165><555,1962><562,2111><569,2491><576,2460><583,2550><590,2248><597,1739><604,1464><611,1219><618,1001>
+US/Florida/Lee+Confirmed: <541,1014><548,1646><555,2956><562,4183><569,5603><576,6653><583,7703><590,7583><597,4954><604,3227><611,2225><618,1292>
+US/Florida/Leon+Confirmed: <555,1517><562,1872><569,2446><576,1787><583,1800><590,1767><597,1688><604,1227>
+US/Florida/Manatee+Confirmed: <555,1547><562,1997><569,2646><576,3339><583,3483><590,3066><597,2459><604,1514><611,1135>
+US/Florida/Marion+Confirmed: <548,1046><555,1880><562,2396><569,2657><576,2860><583,3216><590,3052><597,2115><604,1555><611,1033>
+US/Florida/Miami-Dade+Confirmed: <496,1100><506,2102><513,1778><520,2036><527,2930><534,4371><541,6969><548,11087><555,15584><562,19709><569,21655><576,20033><583,16621><590,12080><597,9620><604,7366><611,7248><618,4825><625,3564><632,2731><639,2086><646,1968><653,1896><660,1961><667,1726>
+US/Florida/Okaloosa+Confirmed: <562,1203><569,1397><576,1511><583,1826><590,1719><597,1452>
+US/Florida/Orange+Confirmed: <527,1198><534,1882><541,3658><548,5351><555,7931><562,8826><569,9533><576,8946><583,9065><590,7317><597,5930><604,4669><611,3235><618,2359><625,1616><632,1315><639,1018>
+US/Florida/Osceola+Confirmed: <541,1002><548,1477><555,2160><562,2460><569,2974><576,2683><583,2538><590,2458><597,1758><604,1439><611,1075>
+US/Florida/Palm Beach+Confirmed: <534,1383><541,2488><548,3981><555,5958><562,7799><569,9170><576,9294><583,8608><590,6887><597,5563><604,4588><611,2929><618,2387><625,1712><632,1377>
+US/Florida/Pasco+Confirmed: <548,1636><555,2892><562,3406><569,3872><576,4242><583,4389><590,3821><597,3291><604,2659><611,1646><618,1086>
+US/Florida/Pinellas+Confirmed: <541,1358><548,2674><555,4145><562,5116><569,6418><576,6252><583,6799><590,5696><597,4393><604,3515><611,2133><618,1560><625,1070>
+US/Florida/Polk+Confirmed: <541,1445><548,2416><555,4127><562,5705><569,6512><576,6998><583,7520><590,6192><597,4767><604,3250><611,2369><618,1434>
+US/Florida/Santa Rosa+Confirmed: <562,1110><569,1340><576,1536><583,2106><590,2064><597,1433>
+US/Florida/Sarasota+Confirmed: <555,1417><562,1924><569,2383><576,2859><583,3371><590,2867><597,2139><604,1450><611,1008>
+US/Florida/Seminole+Confirmed: <541,1102><548,1579><555,2420><562,2677><569,2994><576,2923><583,2757><590,2537><597,1757><604,1451>
+US/Florida/St. Johns+Confirmed: <548,1279><555,1640><562,1760><569,1519><576,1261><583,1461><590,1593><597,1435><604,1210>
+US/Florida/St. Lucie+Confirmed: <548,1054><555,1601><562,1877><569,2053><576,2199><583,2314><590,2193><597,1766><604,1359>
+US/Florida/Unassigned+Confirmed: <566,13075><567,24753><568,20656><572,12680><573,21669><574,23335><575,15586><579,11244><580,21208><581,26203><582,21765><586,8597><587,18608><588,19048><589,21723><594,12547><595,13774><596,12386><602,10723><603,9760><610,4215>
+US/Florida/Unassigned+Deaths: <603,1554>
+US/Florida/Volusia+Confirmed: <541,1354><548,2169><555,3514><562,3265><569,3312><576,2786><583,2617><590,2196><597,1990><604,1876><611,1321>
+US/Georgia/Clarke+Confirmed: <286,1073>
+US/Georgia/Cobb+Confirmed: <286,2191>
+US/Georgia/Coweta+Confirmed: <286,1030>
+US/Georgia/Fulton+Confirmed: <286,2035>
+US/Georgia/Gwinnett+Confirmed: <286,2117>
+US/Georgia/Unassigned+Confirmed: <159,1242><292,1324>
+US/Georgia/Union+Confirmed: <286,1447>
+US/Illinois/Unassigned+Confirmed: <167,1124><275,1134><282,1554>
+US/Iowa/Polk+Confirmed: <581,1180><588,1427><595,1535><602,1880><609,2100><616,1668><623,1412><630,1177><644,1035><665,1175>
+US/Iowa/Unassigned+Confirmed: <566,3155><570,1950><573,1755><577,2197><580,2355><584,2643><587,2022><591,3187><594,3207><598,4016><601,4026><605,5161><608,3633><612,4485><615,3370><619,3522><622,3329><647,2396><657,3241><660,1195><661,3090><664,2974><666,1248><668,3876>
+US/Kansas/Johnson+Confirmed: <394,1070>
+US/Kansas/Sedgwick+Confirmed: <336,1252>
+US/Kentucky/Fayette+Confirmed: <259,1517>
+US/Louisiana/Unassigned+Confirmed: <293,5013>
+US/Massachusetts/Unassigned+Confirmed: <211,6650>
+US/Michigan/Oakland+Confirmed: <135,2421>
+US/Missouri/Boone+Confirmed: <414,1270>
+US/Missouri/Buchanan+Confirmed: <414,2155>
+US/Missouri/Cape Girardeau+Confirmed: <414,1286>
+US/Missouri/Cass+Confirmed: <414,1434>
+US/Missouri/Christian+Confirmed: <414,1244>
+US/Missouri/Clay+Confirmed: <414,1634>
+US/Missouri/Franklin+Confirmed: <414,1635>
+US/Missouri/Greene+Confirmed: <414,3692>
+US/Missouri/Jackson+Confirmed: <414,6161>
+US/Missouri/Jasper+Confirmed: <414,2835>
+US/Missouri/Jefferson+Confirmed: <414,2332>
+US/Missouri/Kansas City+Confirmed: <414,4831>
+US/Missouri/Lincoln+Confirmed: <414,1046>
+US/Missouri/Newton+Confirmed: <414,1057>
+US/Missouri/St. Charles+Confirmed: <414,6899>
+US/Missouri/St. Francois+Confirmed: <414,1085>
+US/Nebraska/Buffalo+Confirmed: <612,1260>
+US/Nebraska/Douglas+Confirmed: <612,10608><651,1045>
+US/Nebraska/Hall+Confirmed: <612,1391>
+US/Nebraska/Lancaster+Confirmed: <612,7775>
+US/Nebraska/Lincoln+Confirmed: <612,1063>
+US/Nebraska/Sarpy+Confirmed: <612,3773>
+US/Nebraska/Unassigned+Confirmed: <553,1009><608,2412><650,1607><653,1025><668,1131>
+US/New Hampshire/Hillsborough+Confirmed: <650,1347>
+US/New Hampshire/Unassigned+Confirmed: <345,1050><649,4334>
+US/New Jersey/Unassigned+Confirmed: <90,2488><311,1114>
+US/New Mexico/Unassigned+Confirmed: <315,1544>
+US/New York/Bronx+Confirmed: <222,53123><427,3716>
+US/New York/Bronx+Deaths: <222,4909>
+US/New York/Kings+Confirmed: <222,65927>
+US/New York/Kings+Deaths: <222,7290>
+US/New York/New York+Confirmed: <222,30874><427,5226>
+US/New York/New York+Deaths: <222,3170>
+US/New York/Queens+Confirmed: <222,71356><427,6769>
+US/New York/Queens+Deaths: <222,7222>
+US/New York/Richmond+Confirmed: <222,15355><427,1671>
+US/New York/Richmond+Deaths: <222,1083>
+US/North Carolina/Unassigned+Confirmed: <363,2401><374,6168><603,1275>
+US/North Carolina/Wake+Confirmed: <594,2341>
+US/Oklahoma/Cleveland+Confirmed: <574,1046><588,1338><595,1361><602,1125><609,1029>
+US/Oklahoma/Oklahoma+Confirmed: <448,1143><553,1085><560,1715><567,2350><574,2753><581,2873><588,3504><595,3365><602,2795><609,2535><616,2018><623,1838><630,1430><637,1465>
+US/Oklahoma/Tulsa+Confirmed: <546,1120><553,1862><560,2337><567,2542><574,2749><581,2412><588,2906><595,2849><602,2566><609,2232><616,1851><623,1471><630,1288><637,1067>
+US/Oklahoma/Unassigned+Confirmed: <531,1041><537,1211><544,2126><547,1581><551,3669><554,1806><558,5597><561,2342><562,2303><565,6328><566,1042><568,2468><569,2814><572,6967><575,2502><576,2851><579,6218><582,4152><583,3338><586,7827><587,1719><589,3274><590,3080><594,10073><596,2462><600,7650><603,2263><604,2124><607,5998><610,2361><611,1230><614,5346><617,1880><618,1452><621,3839><624,1501><628,4919><631,1181><632,1179><635,3571><638,1148><639,1049><642,2094><649,1374><663,2781><666,1056>
+US/Puerto Rico/San Juan+Confirmed: <178,1472>
+US/Puerto Rico/Unassigned+Confirmed: <290,1065><306,1010>
+US/Puerto Rico/Unassigned+Deaths: <551,1788>
+US/Rhode Island/Kent+Confirmed: <308,1028><322,1233><329,1094><357,1019>
+US/Rhode Island/Providence+Confirmed: <110,1536><273,1104><280,1777><287,1989><294,2499><301,3704><308,4468><315,4226><322,6007><329,5658><336,4051><343,3024><350,3900><357,4680><364,3646><371,3066><378,2489><385,1939><392,1598><399,1318><406,1526><413,1421><420,1559><427,1432><434,1267><441,1833><449,1868><455,1736><462,1413><469,1131><488,1084><574,1130><581,1242><588,1003><595,1296><602,1330><609,1632><616,1207><623,1099><630,1133><637,1168><644,1079><658,1012><665,1885>
+US/Rhode Island/Unassigned+Confirmed: <285,1246><292,1629><299,2394><302,1040><303,1050><306,2572><310,1637><313,2769><316,1717><320,3681><321,1249><324,1571><327,3253><328,1166><330,1081><334,2419><341,3536><342,1187><348,4759><355,2993><359,1057><363,2623><369,2019><376,1518><383,1213><425,1000><447,1677>
+US/Rhode Island/Washington+Confirmed: <610,1583>
+US/South Carolina/Aiken+Confirmed: <244,1318>
+US/South Carolina/Richland+Confirmed: <600,2108>
+US/Tennessee/Davidson+Confirmed: <594,2548>
+US/Tennessee/Hamilton+Confirmed: <594,1412>
+US/Tennessee/Knox+Confirmed: <594,2784>
+US/Tennessee/Montgomery+Confirmed: <594,1265>
+US/Tennessee/Out of TN+Confirmed: <594,1557><600,1248>
+US/Tennessee/Rutherford+Confirmed: <594,2135>
+US/Tennessee/Shelby+Confirmed: <594,3469><600,2749>
+US/Tennessee/Unassigned+Confirmed: <182,1326><594,1590><600,1205><622,1569>
+US/Texas/Anderson+Confirmed: <243,1051>
+US/Texas/Bastrop+Confirmed: <376,2459>
+US/Texas/Bell+Confirmed: <504,2253>
+US/Texas/Bexar+Confirmed: <235,1717><242,2581><244,3196><249,2850><270,2699><439,2172><446,1944><453,2255><460,1640><498,1186><525,1070><532,1164><539,1985><546,2544><594,5611><642,1301>
+US/Texas/Brazos+Confirmed: <429,2029>
+US/Texas/Burnet+Confirmed: <376,1357>
+US/Texas/Caldwell+Confirmed: <376,1836>
+US/Texas/Cameron+Confirmed: <562,7634>
+US/Texas/Collin+Confirmed: <255,1394><630,1181>
+US/Texas/Coryell+Confirmed: <376,2432>
+US/Texas/Denton+Confirmed: <258,1240>
+US/Texas/Grimes+Confirmed: <376,1164>
+US/Texas/Guadalupe+Confirmed: <243,1587>
+US/Texas/Harris+Confirmed: <243,14129>
+US/Texas/Henderson+Confirmed: <357,1679>
+US/Texas/Hill+Confirmed: <376,1498>
+US/Texas/McLennan+Confirmed: <577,1276>
+US/Texas/Midland+Confirmed: <329,1458><369,1349><537,1699>
+US/Texas/Montgomery+Confirmed: <342,2013><590,1895><595,2903>
+US/Texas/Potter+Confirmed: <251,1057>
+US/Texas/Smith+Confirmed: <284,2052><595,1635>
+US/Texas/Taylor+Confirmed: <284,2554><610,1711>
+US/Texas/Val Verde+Confirmed: <360,1053>
+US/Texas/Washington+Confirmed: <376,1535>
+US/Texas/Webb+Confirmed: <374,1069><504,2555><566,2333>
+US/Texas/Williamson+Confirmed: <295,1499><314,1079><404,1341>
+US/Washington/King+Confirmed: <60,1040><504,1230>
+US/Washington/Spokane+Confirmed: <547,1121>
+US/Washington/Unassigned+Confirmed: <502,1104>
+Uganda+Confirmed: <579,21324>
+Ukraine/Chernivtsi Oblast+Confirmed: <131,3377>
+Ukraine/Ivano-Frankivsk Oblast+Confirmed: <131,1420>
+Ukraine/Kharkiv Oblast+Confirmed: <131,1083>
+Ukraine/Kiev+Confirmed: <131,3043>
+Ukraine/Kiev Oblast+Confirmed: <131,1600>
+Ukraine/Lviv Oblast+Confirmed: <131,1700>
+Ukraine/Rivne Oblast+Confirmed: <131,1770>
+Ukraine/Ternopil Oblast+Confirmed: <131,1176>
+Ukraine/Vinnytsia Oblast+Confirmed: <131,1005>
+Ukraine/Zakarpattia Oblast+Confirmed: <131,1206>
+United Kingdom/England+Confirmed: <141,156018><162,83146>
+United Kingdom/England+Deaths: <141,36883>
+United Kingdom/Northern Ireland+Confirmed: <141,4822>
+United Kingdom/Scotland+Confirmed: <141,15682><162,2437><170,2482>
+United Kingdom/Scotland+Deaths: <141,2434>
+United Kingdom/Wales+Confirmed: <141,14581>
+United Kingdom/Wales+Deaths: <141,1425>
+West Bank and Gaza+Confirmed: <623,30356>
+Malaysia/Negeri Sembilan+Confirmed: <399,1392>
+Spain+Confirmed: <96,2793><97,2706><98,4771><101,3147>
+

@@ -1,0 +1,721 @@
+Belgium/Antwerp+Confirmed 295: 60560 -> 276  
+Belgium/Antwerp+Deaths 295: 0 -> 0  
+Belgium/Brussels+Confirmed 295: 71270 -> 220.33333333333334  
+Belgium/Brussels+Deaths 295: 0 -> 0  
+Belgium/East Flanders+Confirmed 295: 46386 -> 343  
+Belgium/East Flanders+Deaths 295: 0 -> 0  
+Belgium/Flemish Brabant+Confirmed 295: 40227 -> 156.33333333333334  
+Belgium/Flemish Brabant+Deaths 295: 0 -> 0  
+Belgium/Hainaut+Confirmed 295: 83081 -> 530.1666666666666  
+Belgium/Hainaut+Deaths 295: 0 -> 0  
+Belgium/Liege+Confirmed 295: 85034 -> 365.6666666666667  
+Belgium/Liege+Deaths 295: 0 -> 0  
+Belgium/Limburg+Confirmed 295: 21384 -> 105  
+Belgium/Limburg+Deaths 295: 0 -> 0  
+Belgium/Luxembourg+Confirmed 295: 14394 -> 80.5  
+Belgium/Luxembourg+Deaths 295: 0 -> 0  
+Belgium/Namur+Confirmed 295: 29488 -> 133.16666666666666  
+Belgium/Namur+Deaths 295: 0 -> 0  
+Belgium/Unknown+Confirmed 295: 8595 -> 43.666666666666664  
+Belgium/Unknown+Deaths 295: 13891 -> 88.33333333333333  
+Belgium/Walloon Brabant+Confirmed 295: 21252 -> 108.66666666666667  
+Belgium/Walloon Brabant+Deaths 295: 0 -> 0  
+Belgium/West Flanders+Confirmed 295: 38722 -> 228.5  
+Belgium/West Flanders+Deaths 295: 0 -> 0  
+Brazil/Acre+Confirmed 119: 2817 -> 175  
+Brazil/Acre+Deaths 119: 76 -> 1.8333333333333333  
+Brazil/Alagoas+Confirmed 119: 4437 -> 198.83333333333334  
+Brazil/Alagoas+Deaths 119: 251 -> 8.333333333333334  
+Brazil/Amapa+Confirmed 119: 4549 -> 257  
+Brazil/Amapa+Deaths 119: 142 -> 3.3333333333333335  
+Brazil/Amazonas+Confirmed 119: 23704 -> 849.6666666666666  
+Brazil/Amazonas+Deaths 119: 1561 -> 30.5  
+Brazil/Bahia+Confirmed 119: 11197 -> 300.5  
+Brazil/Bahia+Deaths 119: 362 -> 8.5  
+Brazil/Ceara+Confirmed 119: 30560 -> 760.3333333333334  
+Brazil/Ceara+Deaths 119: 1900 -> 68  
+Brazil/Distrito Federal+Confirmed 119: 5161 -> 181.66666666666666  
+Brazil/Distrito Federal+Deaths 119: 77 -> 3  
+Brazil/Espirito Santo+Confirmed 119: 8092 -> 304.3333333333333  
+Brazil/Espirito Santo+Deaths 119: 341 -> 12.666666666666666  
+Brazil/Goias+Confirmed 119: 1978 -> 66.5  
+Brazil/Goias+Deaths 119: 78 -> 2.8333333333333335  
+Brazil/Maranhao+Confirmed 119: 15114 -> 608.8333333333334  
+Brazil/Maranhao+Deaths 119: 634 -> 14.666666666666666  
+Brazil/Mato Grosso+Confirmed 119: 1054 -> 49.666666666666664  
+Brazil/Mato Grosso+Deaths 119: 32 -> 0.8333333333333334  
+Brazil/Mato Grosso do Sul+Confirmed 119: 693 -> 27.5  
+Brazil/Mato Grosso do Sul+Deaths 119: 17 -> 0  
+Brazil/Minas Gerais+Confirmed 119: 5286 -> 175.33333333333334  
+Brazil/Minas Gerais+Deaths 119: 177 -> 6.666666666666667  
+Brazil/Para+Confirmed 119: 18135 -> 760.3333333333334  
+Brazil/Para+Deaths 119: 1633 -> 61.333333333333336  
+Brazil/Paraiba+Confirmed 119: 5838 -> 278.3333333333333  
+Brazil/Paraiba+Deaths 119: 230 -> 4.666666666666667  
+Brazil/Parana+Confirmed 119: 2616 -> 80.5  
+Brazil/Parana+Deaths 119: 137 -> 2.1666666666666665  
+Brazil/Pernambuco+Confirmed 119: 22560 -> 704.3333333333334  
+Brazil/Pernambuco+Deaths 119: 1834 -> 51.666666666666664  
+Brazil/Piaui+Confirmed 119: 2637 -> 103.5  
+Brazil/Piaui+Deaths 119: 87 -> 2  
+Brazil/Rio Grande do Norte+Confirmed 119: 3796 -> 133.83333333333334  
+Brazil/Rio Grande do Norte+Deaths 119: 170 -> 2.3333333333333335  
+Brazil/Rio Grande do Sul+Confirmed 119: 4973 -> 227.16666666666666  
+Brazil/Rio Grande do Sul+Deaths 119: 161 -> 2.5  
+Brazil/Rio de Janeiro+Confirmed 119: 30372 -> 693.5  
+Brazil/Rio de Janeiro+Deaths 119: 3237 -> 111.33333333333333  
+Brazil/Rondonia+Confirmed 119: 2499 -> 101.66666666666667  
+Brazil/Rondonia+Deaths 119: 90 -> 4.166666666666667  
+Brazil/Roraima+Confirmed 119: 2067 -> 51.166666666666664  
+Brazil/Roraima+Deaths 119: 64 -> 2.8333333333333335  
+Brazil/Santa Catarina+Confirmed 119: 5499 -> 184.66666666666666  
+Brazil/Santa Catarina+Deaths 119: 94 -> 1.5  
+Brazil/Sao Paulo+Confirmed 119: 69859 -> 1783.1666666666667  
+Brazil/Sao Paulo+Deaths 119: 5363 -> 113.66666666666667  
+Brazil/Sergipe+Confirmed 119: 4277 -> 142.33333333333334  
+Brazil/Sergipe+Deaths 119: 69 -> 2.8333333333333335  
+Brazil/Tocantins+Confirmed 119: 1809 -> 103.5  
+Brazil/Tocantins+Deaths 119: 42 -> 1.5  
+Chile/Antofagasta+Confirmed 119: 1731 -> 27.666666666666668  
+Chile/Antofagasta+Deaths 119: 17 -> 0.6666666666666666  
+Chile/Araucania+Confirmed 119: 1680 -> 15.666666666666666  
+Chile/Araucania+Deaths 119: 44 -> 0.16666666666666666  
+Chile/Arica y Parinacota+Confirmed 119: 424 -> 9.666666666666666  
+Chile/Arica y Parinacota+Deaths 119: 7 -> 0  
+Chile/Atacama+Confirmed 119: 163 -> 3.1666666666666665  
+Chile/Atacama+Deaths 119: 0 -> 0  
+Chile/Aysen+Confirmed 119: 8 -> 0  
+Chile/Aysen+Deaths 119: 0 -> 0  
+Chile/Biobio+Confirmed 119: 1224 -> 21.666666666666668  
+Chile/Biobio+Deaths 119: 9 -> 0.16666666666666666  
+Chile/Coquimbo+Confirmed 119: 263 -> 5.166666666666667  
+Chile/Coquimbo+Deaths 119: 2 -> 0  
+Chile/Los Lagos+Confirmed 119: 666 -> 10.166666666666666  
+Chile/Los Lagos+Deaths 119: 12 -> 0.16666666666666666  
+Chile/Los Rios+Confirmed 119: 247 -> 4.5  
+Chile/Los Rios+Deaths 119: 6 -> 0  
+Chile/Magallanes+Confirmed 119: 977 -> 3.3333333333333335  
+Chile/Magallanes+Deaths 119: 18 -> 0  
+Chile/Maule+Confirmed 119: 680 -> 23.833333333333332  
+Chile/Maule+Deaths 119: 14 -> 0.16666666666666666  
+Chile/Metropolitana+Confirmed 119: 41179 -> 1703.3333333333333  
+Chile/Metropolitana+Deaths 119: 348 -> 17.833333333333332  
+Chile/Nuble+Confirmed 119: 1011 -> 11  
+Chile/Nuble+Deaths 119: 21 -> 0  
+Chile/OHiggins+Confirmed 119: 455 -> 10.5  
+Chile/OHiggins+Deaths 119: 7 -> 0.6666666666666666  
+Chile/Tarapaca+Confirmed 119: 1139 -> 55.333333333333336  
+Chile/Tarapaca+Deaths 119: 4 -> 0.16666666666666666  
+Chile/Unknown+Confirmed 119: 0 -> 0  
+Chile/Unknown+Deaths 119: 0 -> 0  
+Chile/Valparaiso+Confirmed 119: 1770 -> 57.666666666666664  
+Chile/Valparaiso+Deaths 119: 35 -> 1.5  
+France+Confirmed 484: -349116 -> 11895.166666666666  
+France+Deaths 484: 132 -> 135.33333333333334  
+Germany/Baden-Wurttemberg+Confirmed 113: 33804 -> 26.333333333333332  
+Germany/Baden-Wurttemberg+Deaths 113: 1629 -> 4  
+Germany/Bayern+Confirmed 113: 45352 -> 70.83333333333333  
+Germany/Bayern+Deaths 113: 2250 -> 7.833333333333333  
+Germany/Berlin+Confirmed 113: 6393 -> 10.166666666666666  
+Germany/Berlin+Deaths 113: 177 -> 0.8333333333333334  
+Germany/Brandenburg+Confirmed 113: 3173 -> 5.166666666666667  
+Germany/Brandenburg+Deaths 113: 162 -> 0.6666666666666666  
+Germany/Bremen+Confirmed 113: 1132 -> 7  
+Germany/Bremen+Deaths 113: 37 -> 0  
+Germany/Hamburg+Confirmed 113: 4976 -> 8.833333333333334  
+Germany/Hamburg+Deaths 113: 228 -> 0.6666666666666666  
+Germany/Hessen+Confirmed 113: 9169 -> 24.666666666666668  
+Germany/Hessen+Deaths 113: 423 -> 2  
+Germany/Mecklenburg-Vorpommern+Confirmed 113: 740 -> 1.8333333333333333  
+Germany/Mecklenburg-Vorpommern+Deaths 113: 20 -> 0  
+Germany/Niedersachsen+Confirmed 113: 11075 -> 14  
+Germany/Niedersachsen+Deaths 113: 537 -> 1.8333333333333333  
+Germany/Nordrhein-Westfalen+Confirmed 113: 35741 -> 90.83333333333333  
+Germany/Nordrhein-Westfalen+Deaths 113: 1483 -> 3.6666666666666665  
+Germany/Rheinland-Pfalz+Confirmed 113: 6406 -> 13.333333333333334  
+Germany/Rheinland-Pfalz+Deaths 113: 212 -> 0.8333333333333334  
+Germany/Saarland+Confirmed 113: 2705 -> 0.6666666666666666  
+Germany/Saarland+Deaths 113: 149 -> 1  
+Germany/Sachsen+Confirmed 113: 5046 -> 12.666666666666666  
+Germany/Sachsen+Deaths 113: 195 -> 0.3333333333333333  
+Germany/Sachsen-Anhalt+Confirmed 113: 1668 -> 1.6666666666666667  
+Germany/Sachsen-Anhalt+Deaths 113: 52 -> 0.3333333333333333  
+Germany/Schleswig-Holstein+Confirmed 113: 2988 -> 2  
+Germany/Schleswig-Holstein+Deaths 113: 125 -> 0.16666666666666666  
+Germany/Thuringen+Confirmed 113: 2663 -> 10.333333333333334  
+Germany/Thuringen+Deaths 113: 133 -> 0.8333333333333334  
+Germany/Unknown+Confirmed 113: 1447 -> 14.833333333333334  
+Germany/Unknown+Deaths 113: 72 -> -12  
+India/Andaman and Nicobar Islands+Confirmed 140: 33 -> 0.8333333333333334  
+India/Andaman and Nicobar Islands+Deaths 140: 0 -> 0  
+India/Andhra Pradesh+Confirmed 140: 5070 -> 101.66666666666667  
+India/Andhra Pradesh+Deaths 140: 77 -> 0.5  
+India/Arunachal Pradesh+Confirmed 140: 57 -> 1.6666666666666667  
+India/Arunachal Pradesh+Deaths 140: 0 -> 0  
+India/Assam+Confirmed 140: 2937 -> 93.5  
+India/Assam+Deaths 140: 4 -> 0.6666666666666666  
+India/Bihar+Confirmed 140: 5459 -> 107.33333333333333  
+India/Bihar+Deaths 140: 32 -> 0.6666666666666666  
+India/Chandigarh+Confirmed 140: 323 -> 1.8333333333333333  
+India/Chandigarh+Deaths 140: 5 -> 0  
+India/Chhattisgarh+Confirmed 140: 1240 -> 31.5  
+India/Chhattisgarh+Deaths 140: 6 -> 0  
+India/Dadra and Nagar Haveli and Daman and Diu+Confirmed 140: 0 -> 5  
+India/Dadra and Nagar Haveli and Daman and Diu+Deaths 140: 0 -> 0  
+India/Delhi+Confirmed 140: 31309 -> 919.1666666666666  
+India/Delhi+Deaths 140: 905 -> 51.5  
+India/Goa+Confirmed 140: 359 -> 17.333333333333332  
+India/Goa+Deaths 140: 0 -> 0  
+India/Gujarat+Confirmed 140: 21014 -> 252.16666666666666  
+India/Gujarat+Deaths 140: 1313 -> 17  
+India/Haryana+Confirmed 140: 5209 -> 187.5  
+India/Haryana+Deaths 140: 45 -> 4.166666666666667  
+India/Himachal Pradesh+Confirmed 140: 445 -> 6.833333333333333  
+India/Himachal Pradesh+Deaths 140: 5 -> 0.16666666666666666  
+India/Jammu and Kashmir+Confirmed 140: 4346 -> 64  
+India/Jammu and Kashmir+Deaths 140: 48 -> 0.8333333333333334  
+India/Jharkhand+Confirmed 140: 1411 -> 34.333333333333336  
+India/Jharkhand+Deaths 140: 8 -> 0  
+India/Karnataka+Confirmed 140: 5921 -> 99.16666666666667  
+India/Karnataka+Deaths 140: 66 -> 2.1666666666666665  
+India/Kerala+Confirmed 140: 2096 -> 37.666666666666664  
+India/Kerala+Deaths 140: 16 -> 0.5  
+India/Ladakh+Confirmed 140: 108 -> 21.833333333333332  
+India/Ladakh+Deaths 140: 1 -> 0  
+India/Lakshadweep+Confirmed 140: 0 -> 0  
+India/Lakshadweep+Deaths 140: 0 -> 0  
+India/Madhya Pradesh+Confirmed 140: 9849 -> 99  
+India/Madhya Pradesh+Deaths 140: 420 -> 3.3333333333333335  
+India/Maharashtra+Confirmed 140: 90787 -> 1725.6666666666667  
+India/Maharashtra+Deaths 140: 3289 -> 71.33333333333333  
+India/Manipur+Confirmed 140: 304 -> 13.5  
+India/Manipur+Deaths 140: 0 -> 0  
+India/Meghalaya+Confirmed 140: 43 -> 0.16666666666666666  
+India/Meghalaya+Deaths 140: 1 -> 0  
+India/Mizoram+Confirmed 140: 88 -> 2.6666666666666665  
+India/Mizoram+Deaths 140: 0 -> 0  
+India/Nagaland+Confirmed 140: 127 -> 4.833333333333333  
+India/Nagaland+Deaths 140: 0 -> 0  
+India/Odisha+Confirmed 140: 3140 -> 59.666666666666664  
+India/Odisha+Deaths 140: 9 -> 0.16666666666666666  
+India/Puducherry+Confirmed 140: 127 -> 5  
+India/Puducherry+Deaths 140: 0 -> 0.3333333333333333  
+India/Punjab+Confirmed 140: 2719 -> 44.5  
+India/Punjab+Deaths 140: 55 -> 1.3333333333333333  
+India/Rajasthan+Confirmed 140: 11245 -> 137.16666666666666  
+India/Rajasthan+Deaths 140: 255 -> 2.8333333333333335  
+India/Sikkim+Confirmed 140: 13 -> 8.333333333333334  
+India/Sikkim+Deaths 140: 0 -> 0  
+India/Tamil Nadu+Confirmed 140: 34914 -> 964  
+India/Tamil Nadu+Deaths 140: 307 -> 10  
+India/Telangana+Confirmed 140: 3920 -> 94  
+India/Telangana+Deaths 140: 148 -> 4.333333333333333  
+India/Tripura+Confirmed 140: 864 -> 16.166666666666668  
+India/Tripura+Deaths 140: 1 -> 0  
+India/Unknown+Confirmed 140: 9227 -> -207.16666666666666  
+India/Unknown+Deaths 140: 0 -> 0  
+India/Uttar Pradesh+Confirmed 140: 11335 -> 213.5  
+India/Uttar Pradesh+Deaths 140: 301 -> 10.666666666666666  
+India/Uttarakhand+Confirmed 140: 1537 -> 31.166666666666668  
+India/Uttarakhand+Deaths 140: 13 -> 1.3333333333333333  
+India/West Bengal+Confirmed 140: 8985 -> 209.83333333333334  
+India/West Bengal+Deaths 140: 415 -> 6  
+Italy/Abruzzo+Confirmed 113: 3136 -> 8.333333333333334  
+Italy/Abruzzo+Deaths 113: 379 -> 1  
+Italy/Basilicata+Confirmed 113: 389 -> 0.5  
+Italy/Basilicata+Deaths 113: 27 -> 0  
+Italy/Calabria+Confirmed 113: 1143 -> 1.3333333333333333  
+Italy/Calabria+Deaths 113: 95 -> 0  
+Italy/Campania+Confirmed 113: 4639 -> 7.5  
+Italy/Campania+Deaths 113: 394 -> 0.3333333333333333  
+Italy/Emilia-Romagna+Confirmed 113: 27056 -> 29.333333333333332  
+Italy/Emilia-Romagna+Deaths 113: 3930 -> 7.166666666666667  
+Italy/Friuli Venezia Giulia+Confirmed 113: 3161 -> 5  
+Italy/Friuli Venezia Giulia+Deaths 113: 317 -> 0.3333333333333333  
+Italy/Lazio+Confirmed 113: 7291 -> 25.833333333333332  
+Italy/Lazio+Deaths 113: 595 -> 4.5  
+Italy/Liguria+Confirmed 113: 8995 -> 27.333333333333332  
+Italy/Liguria+Deaths 113: 1329 -> 4.333333333333333  
+Italy/Lombardia+Confirmed 113: 83820 -> 170.66666666666666  
+Italy/Lombardia+Deaths 113: 15296 -> 37.166666666666664  
+Italy/Marche+Confirmed 113: 6603 -> 10.666666666666666  
+Italy/Marche+Deaths 113: 974 -> 1.6666666666666667  
+Italy/Molise+Confirmed 113: 403 -> 1.3333333333333333  
+Italy/Molise+Deaths 113: 22 -> 0  
+Italy/P.A. Bolzano+Confirmed 113: 2578 -> 0.5  
+Italy/P.A. Bolzano+Deaths 113: 290 -> 0  
+Italy/P.A. Trento+Confirmed 113: 4315 -> 3.8333333333333335  
+Italy/P.A. Trento+Deaths 113: 448 -> 0.8333333333333334  
+Italy/Piemonte+Confirmed 113: 29209 -> 56.333333333333336  
+Italy/Piemonte+Deaths 113: 3493 -> 19.833333333333332  
+Italy/Puglia+Confirmed 113: 4357 -> 3.6666666666666665  
+Italy/Puglia+Deaths 113: 461 -> 1.5  
+Italy/Sardegna+Confirmed 113: 1345 -> 1.3333333333333333  
+Italy/Sardegna+Deaths 113: 125 -> 0  
+Italy/Sicilia+Confirmed 113: 3366 -> 3.6666666666666665  
+Italy/Sicilia+Deaths 113: 263 -> 0.6666666666666666  
+Italy/Toscana+Confirmed 113: 9859 -> 14.833333333333334  
+Italy/Toscana+Deaths 113: 973 -> 1.8333333333333333  
+Italy/Umbria+Confirmed 113: 1420 -> 0.6666666666666666  
+Italy/Umbria+Deaths 113: 73 -> 0  
+Italy/Valle d'Aosta+Confirmed 113: 1166 -> 1.1666666666666667  
+Italy/Valle d'Aosta+Deaths 113: 141 -> 0.3333333333333333  
+Italy/Veneto+Confirmed 113: 18845 -> 16  
+Italy/Veneto+Deaths 113: 1743 -> 8.5  
+Mexico/Aguascalientes+Confirmed 119: 558 -> 9.333333333333334  
+Mexico/Aguascalientes+Deaths 119: 21 -> 0.8333333333333334  
+Mexico/Baja California+Confirmed 119: 3603 -> 82.33333333333333  
+Mexico/Baja California+Deaths 119: 606 -> 7.833333333333333  
+Mexico/Baja California Sur+Confirmed 119: 476 -> 7.5  
+Mexico/Baja California Sur+Deaths 119: 28 -> 0.5  
+Mexico/Campeche+Confirmed 119: 328 -> 13  
+Mexico/Campeche+Deaths 119: 48 -> 1  
+Mexico/Chiapas+Confirmed 119: 808 -> 40.333333333333336  
+Mexico/Chiapas+Deaths 119: 53 -> 2.5  
+Mexico/Chihuahua+Confirmed 119: 1014 -> 26  
+Mexico/Chihuahua+Deaths 119: 208 -> 6.333333333333333  
+Mexico/Ciudad de Mexico+Confirmed 119: 15844 -> 511.3333333333333  
+Mexico/Ciudad de Mexico+Deaths 119: 1618 -> 46.833333333333336  
+Mexico/Coahuila+Confirmed 119: 749 -> 11.166666666666666  
+Mexico/Coahuila+Deaths 119: 59 -> 0.8333333333333334  
+Mexico/Colima+Confirmed 119: 83 -> 2.8333333333333335  
+Mexico/Colima+Deaths 119: 10 -> 0.6666666666666666  
+Mexico/Durango+Confirmed 119: 189 -> 4.666666666666667  
+Mexico/Durango+Deaths 119: 20 -> 1  
+Mexico/Guanajuato+Confirmed 119: 821 -> 34.5  
+Mexico/Guanajuato+Deaths 119: 80 -> 0.8333333333333334  
+Mexico/Guerrero+Confirmed 119: 927 -> 26.5  
+Mexico/Guerrero+Deaths 119: 136 -> 4.5  
+Mexico/Hidalgo+Confirmed 119: 1034 -> 26.333333333333332  
+Mexico/Hidalgo+Deaths 119: 180 -> 5.333333333333333  
+Mexico/Jalisco+Confirmed 119: 967 -> 27.5  
+Mexico/Jalisco+Deaths 119: 95 -> 1.1666666666666667  
+Mexico/Mexico+Confirmed 119: 9346 -> 210  
+Mexico/Mexico+Deaths 119: 563 -> 46.5  
+Mexico/Michoacan+Confirmed 119: 1094 -> 39.333333333333336  
+Mexico/Michoacan+Deaths 119: 97 -> 3  
+Mexico/Morelos+Confirmed 119: 1115 -> 9.333333333333334  
+Mexico/Morelos+Deaths 119: 205 -> 5.5  
+Mexico/Nayarit+Confirmed 119: 349 -> 9.166666666666666  
+Mexico/Nayarit+Deaths 119: 37 -> 0.6666666666666666  
+Mexico/Nuevo Leon+Confirmed 119: 1016 -> 17.333333333333332  
+Mexico/Nuevo Leon+Deaths 119: 56 -> 1  
+Mexico/Oaxaca+Confirmed 119: 743 -> 36.833333333333336  
+Mexico/Oaxaca+Deaths 119: 84 -> 1.5  
+Mexico/Puebla+Confirmed 119: 1702 -> 52.166666666666664  
+Mexico/Puebla+Deaths 119: 231 -> 3.3333333333333335  
+Mexico/Queretaro+Confirmed 119: 544 -> 20.833333333333332  
+Mexico/Queretaro+Deaths 119: 58 -> 1.8333333333333333  
+Mexico/Quintana Roo+Confirmed 119: 1392 -> 31.333333333333332  
+Mexico/Quintana Roo+Deaths 119: 271 -> 2.8333333333333335  
+Mexico/San Luis Potosi+Confirmed 119: 524 -> 19.333333333333332  
+Mexico/San Luis Potosi+Deaths 119: 24 -> 0.3333333333333333  
+Mexico/Sinaloa+Confirmed 119: 2161 -> 46.166666666666664  
+Mexico/Sinaloa+Deaths 119: 326 -> 9  
+Mexico/Sonora+Confirmed 119: 1020 -> 40.666666666666664  
+Mexico/Sonora+Deaths 119: 49 -> 2.3333333333333335  
+Mexico/Tabasco+Confirmed 119: 2716 -> 54.666666666666664  
+Mexico/Tabasco+Deaths 119: 346 -> 6.833333333333333  
+Mexico/Tamaulipas+Confirmed 119: 1077 -> 17.666666666666668  
+Mexico/Tamaulipas+Deaths 119: 74 -> 1.3333333333333333  
+Mexico/Tlaxcala+Confirmed 119: 650 -> 16.5  
+Mexico/Tlaxcala+Deaths 119: 109 -> 2  
+Mexico/Unknown+Confirmed 119: 0 -> 0  
+Mexico/Unknown+Deaths 119: 0 -> 0  
+Mexico/Veracruz+Confirmed 119: 2288 -> 66.83333333333333  
+Mexico/Veracruz+Deaths 119: 274 -> 11.166666666666666  
+Mexico/Yucatan+Confirmed 119: 1244 -> 29.166666666666668  
+Mexico/Yucatan+Deaths 119: 97 -> 2.1666666666666665  
+Mexico/Zacatecas+Confirmed 119: 212 -> 3  
+Mexico/Zacatecas+Deaths 119: 27 -> 0  
+Netherlands/Aruba+Confirmed 177: 3 -> 1.1666666666666667  
+Netherlands/Aruba+Deaths 177: 0 -> 0  
+Netherlands/Bonaire, Sint Eustatius and Saba+Confirmed 177: 1 -> 0.3333333333333333  
+Netherlands/Bonaire, Sint Eustatius and Saba+Deaths 177: 0 -> 0  
+Netherlands/Curacao+Confirmed 177: 2 -> 0.16666666666666666  
+Netherlands/Curacao+Deaths 177: 0 -> 0  
+Netherlands/Drenthe+Confirmed 177: 536 -> 0.5  
+Netherlands/Drenthe+Deaths 177: 41 -> 0  
+Netherlands/Flevoland+Confirmed 177: 981 -> 0  
+Netherlands/Flevoland+Deaths 177: 92 -> 0  
+Netherlands/Friesland+Confirmed 177: 642 -> 0.16666666666666666  
+Netherlands/Friesland+Deaths 177: 69 -> 0  
+Netherlands/Gelderland+Confirmed 177: 6518 -> 1.5  
+Netherlands/Gelderland+Deaths 177: 684 -> 0  
+Netherlands/Groningen+Confirmed 177: 367 -> 0.16666666666666666  
+Netherlands/Groningen+Deaths 177: 17 -> 0  
+Netherlands/Limburg+Confirmed 177: 4885 -> 1  
+Netherlands/Limburg+Deaths 177: 751 -> 0.16666666666666666  
+Netherlands/Noord-Brabant+Confirmed 177: 9747 -> 5.833333333333333  
+Netherlands/Noord-Brabant+Deaths 177: 1535 -> 0  
+Netherlands/Noord-Holland+Confirmed 177: 7459 -> 10.666666666666666  
+Netherlands/Noord-Holland+Deaths 177: 817 -> -0.5  
+Netherlands/Overijssel+Confirmed 177: 3137 -> 1  
+Netherlands/Overijssel+Deaths 177: 311 -> 0  
+Netherlands/Sint Maarten+Confirmed 177: 1 -> 0  
+Netherlands/Sint Maarten+Deaths 177: 0 -> 0  
+Netherlands/Unknown+Confirmed 177: 488 -> 31  
+Netherlands/Unknown+Deaths 177: 18 -> 0  
+Netherlands/Utrecht+Confirmed 177: 4137 -> 4.166666666666667  
+Netherlands/Utrecht+Deaths 177: 429 -> 0  
+Netherlands/Zeeland+Confirmed 177: 771 -> 3.3333333333333335  
+Netherlands/Zeeland+Deaths 177: 69 -> 0  
+Netherlands/Zuid-Holland+Confirmed 177: 11786 -> 16.666666666666668  
+Netherlands/Zuid-Holland+Deaths 177: 1305 -> 0  
+Pakistan/Azad Jammu and Kashmir+Confirmed 140: 444 -> 21.666666666666668  
+Pakistan/Azad Jammu and Kashmir+Deaths 140: 9 -> 0.3333333333333333  
+Pakistan/Balochistan+Confirmed 140: 7031 -> 139.16666666666666  
+Pakistan/Balochistan+Deaths 140: 62 -> 3  
+Pakistan/Gilgit-Baltistan+Confirmed 140: 974 -> 11.666666666666666  
+Pakistan/Gilgit-Baltistan+Deaths 140: 14 -> 0.3333333333333333  
+Pakistan/Islamabad+Confirmed 140: 5963 -> 200  
+Pakistan/Islamabad+Deaths 140: 57 -> 2.3333333333333335  
+Pakistan/Khyber Pakhtunkhwa+Confirmed 140: 14527 -> 314.6666666666667  
+Pakistan/Khyber Pakhtunkhwa+Deaths 140: 610 -> 5.333333333333333  
+Pakistan/Punjab+Confirmed 140: 43460 -> 1104.5  
+Pakistan/Punjab+Deaths 140: 807 -> 21.833333333333332  
+Pakistan/Sindh+Confirmed 140: 41303 -> 1325.5  
+Pakistan/Sindh+Deaths 140: 696 -> 16.166666666666668  
+Russia/Adygea Republic+Confirmed 131: 874 -> 10.5  
+Russia/Adygea Republic+Deaths 131: 9 -> 0  
+Russia/Altai Krai+Confirmed 131: 1915 -> 36.666666666666664  
+Russia/Altai Krai+Deaths 131: 12 -> 0  
+Russia/Altai Republic+Confirmed 131: 132 -> 3.6666666666666665  
+Russia/Altai Republic+Deaths 131: 0 -> 0  
+Russia/Amur Oblast+Confirmed 131: 528 -> 10  
+Russia/Amur Oblast+Deaths 131: 5 -> 0  
+Russia/Arkhangelsk Oblast+Confirmed 131: 2068 -> 71.33333333333333  
+Russia/Arkhangelsk Oblast+Deaths 131: 5 -> 0.5  
+Russia/Astrakhan Oblast+Confirmed 131: 1883 -> 35.666666666666664  
+Russia/Astrakhan Oblast+Deaths 131: 16 -> 0.5  
+Russia/Bashkortostan Republic+Confirmed 131: 3337 -> 45.166666666666664  
+Russia/Bashkortostan Republic+Deaths 131: 18 -> 0  
+Russia/Belgorod Oblast+Confirmed 131: 2392 -> 38.666666666666664  
+Russia/Belgorod Oblast+Deaths 131: 19 -> 0.5  
+Russia/Bryansk Oblast+Confirmed 131: 3787 -> 48.5  
+Russia/Bryansk Oblast+Deaths 131: 31 -> 0  
+Russia/Buryatia Republic+Confirmed 131: 1513 -> 20  
+Russia/Buryatia Republic+Deaths 131: 10 -> 0  
+Russia/Chechen Republic+Confirmed 131: 1247 -> 7.333333333333333  
+Russia/Chechen Republic+Deaths 131: 13 -> 0.16666666666666666  
+Russia/Chelyabinsk Oblast+Confirmed 131: 2929 -> 55.666666666666664  
+Russia/Chelyabinsk Oblast+Deaths 131: 18 -> 0.5  
+Russia/Chukotka Autonomous Okrug+Confirmed 131: 80 -> 1.8333333333333333  
+Russia/Chukotka Autonomous Okrug+Deaths 131: 1 -> 0  
+Russia/Chuvashia Republic+Confirmed 131: 2973 -> 43  
+Russia/Chuvashia Republic+Deaths 131: 14 -> 0.16666666666666666  
+Russia/Dagestan Republic+Confirmed 131: 5096 -> 61.166666666666664  
+Russia/Dagestan Republic+Deaths 131: 260 -> 4.5  
+Russia/Ingushetia Republic+Confirmed 131: 2127 -> 16.833333333333332  
+Russia/Ingushetia Republic+Deaths 131: 50 -> 1.6666666666666667  
+Russia/Irkutsk Oblast+Confirmed 131: 1979 -> 78  
+Russia/Irkutsk Oblast+Deaths 131: 11 -> 0.6666666666666666  
+Russia/Ivanovo Oblast+Confirmed 131: 2057 -> 44.166666666666664  
+Russia/Ivanovo Oblast+Deaths 131: 18 -> 0.3333333333333333  
+Russia/Jewish Autonomous Okrug+Confirmed 131: 314 -> 1.5  
+Russia/Jewish Autonomous Okrug+Deaths 131: 3 -> 0.16666666666666666  
+Russia/Kabardino-Balkarian Republic+Confirmed 131: 2903 -> 37.166666666666664  
+Russia/Kabardino-Balkarian Republic+Deaths 131: 20 -> 0.8333333333333334  
+Russia/Kaliningrad Oblast+Confirmed 131: 1553 -> 18.666666666666668  
+Russia/Kaliningrad Oblast+Deaths 131: 24 -> 0  
+Russia/Kalmykia Republic+Confirmed 131: 1074 -> 8.833333333333334  
+Russia/Kalmykia Republic+Deaths 131: 15 -> 0.16666666666666666  
+Russia/Kaluga Oblast+Confirmed 131: 4009 -> 43.5  
+Russia/Kaluga Oblast+Deaths 131: 31 -> 0.5  
+Russia/Kamchatka Krai+Confirmed 131: 881 -> 17.166666666666668  
+Russia/Kamchatka Krai+Deaths 131: 8 -> 0  
+Russia/Karachay-Cherkess Republic+Confirmed 131: 1137 -> 36.166666666666664  
+Russia/Karachay-Cherkess Republic+Deaths 131: 5 -> 0.3333333333333333  
+Russia/Karelia Republic+Confirmed 131: 445 -> 12.5  
+Russia/Karelia Republic+Deaths 131: 1 -> 0.16666666666666666  
+Russia/Kemerovo Oblast+Confirmed 131: 545 -> 15.5  
+Russia/Kemerovo Oblast+Deaths 131: 7 -> 0  
+Russia/Khabarovsk Krai+Confirmed 131: 2142 -> 31.833333333333332  
+Russia/Khabarovsk Krai+Deaths 131: 12 -> 0.3333333333333333  
+Russia/Khakassia Republic+Confirmed 131: 985 -> 15.333333333333334  
+Russia/Khakassia Republic+Deaths 131: 10 -> 0  
+Russia/Khanty-Mansi Autonomous Okrug+Confirmed 131: 2587 -> 66.66666666666667  
+Russia/Khanty-Mansi Autonomous Okrug+Deaths 131: 18 -> 0  
+Russia/Kirov Oblast+Confirmed 131: 1751 -> 36  
+Russia/Kirov Oblast+Deaths 131: 17 -> 0  
+Russia/Komi Republic+Confirmed 131: 1352 -> 17.166666666666668  
+Russia/Komi Republic+Deaths 131: 24 -> 0.16666666666666666  
+Russia/Kostroma Oblast+Confirmed 131: 772 -> 11.666666666666666  
+Russia/Kostroma Oblast+Deaths 131: 11 -> 0  
+Russia/Krasnodar Krai+Confirmed 131: 3908 -> 40  
+Russia/Krasnodar Krai+Deaths 131: 33 -> 1.1666666666666667  
+Russia/Krasnoyarsk Krai+Confirmed 131: 4380 -> 69.16666666666667  
+Russia/Krasnoyarsk Krai+Deaths 131: 39 -> 1.1666666666666667  
+Russia/Kurgan Oblast+Confirmed 131: 245 -> 2.3333333333333335  
+Russia/Kurgan Oblast+Deaths 131: 0 -> 0  
+Russia/Kursk Oblast+Confirmed 131: 3063 -> 34.833333333333336  
+Russia/Kursk Oblast+Deaths 131: 13 -> 0.3333333333333333  
+Russia/Leningrad Oblast+Confirmed 131: 2875 -> 26.5  
+Russia/Leningrad Oblast+Deaths 131: 11 -> 0.6666666666666666  
+Russia/Lipetsk Oblast+Confirmed 131: 2194 -> 32.333333333333336  
+Russia/Lipetsk Oblast+Deaths 131: 6 -> 0.3333333333333333  
+Russia/Magadan Oblast+Confirmed 131: 246 -> 4.166666666666667  
+Russia/Magadan Oblast+Deaths 131: 3 -> 0  
+Russia/Mari El Republic+Confirmed 131: 1815 -> 19.666666666666668  
+Russia/Mari El Republic+Deaths 131: 13 -> 0  
+Russia/Mordovia Republic+Confirmed 131: 1931 -> 20  
+Russia/Mordovia Republic+Deaths 131: 12 -> 0.3333333333333333  
+Russia/Moscow+Confirmed 131: 183088 -> 1021  
+Russia/Moscow+Deaths 131: 2553 -> 32.666666666666664  
+Russia/Moscow Oblast+Confirmed 131: 39723 -> 372.5  
+Russia/Moscow Oblast+Deaths 131: 473 -> 10.166666666666666  
+Russia/Murmansk Oblast+Confirmed 131: 3264 -> 18.5  
+Russia/Murmansk Oblast+Deaths 131: 7 -> 0  
+Russia/Nenets Autonomous Okrug+Confirmed 131: 73 -> 0.3333333333333333  
+Russia/Nenets Autonomous Okrug+Deaths 131: 0 -> 0  
+Russia/Nizhny Novgorod Oblast+Confirmed 131: 10149 -> 170  
+Russia/Nizhny Novgorod Oblast+Deaths 131: 104 -> 3  
+Russia/North Ossetia - Alania Republic+Confirmed 131: 3005 -> 24.333333333333332  
+Russia/North Ossetia - Alania Republic+Deaths 131: 50 -> 1.1666666666666667  
+Russia/Novgorod Oblast+Confirmed 131: 1353 -> 32.166666666666664  
+Russia/Novgorod Oblast+Deaths 131: 8 -> 0  
+Russia/Novosibirsk Oblast+Confirmed 131: 2914 -> 52  
+Russia/Novosibirsk Oblast+Deaths 131: 33 -> 0.5  
+Russia/Omsk Oblast+Confirmed 131: 1411 -> 21.5  
+Russia/Omsk Oblast+Deaths 131: 18 -> 0  
+Russia/Orel Oblast+Confirmed 131: 2341 -> 31.166666666666668  
+Russia/Orel Oblast+Deaths 131: 25 -> 0.5  
+Russia/Orenburg Oblast+Confirmed 131: 1979 -> 27  
+Russia/Orenburg Oblast+Deaths 131: 6 -> 0.3333333333333333  
+Russia/Penza Oblast+Confirmed 131: 2417 -> 42  
+Russia/Penza Oblast+Deaths 131: 19 -> 0.8333333333333334  
+Russia/Perm Krai+Confirmed 131: 1782 -> 30  
+Russia/Perm Krai+Deaths 131: 20 -> 1  
+Russia/Primorsky Krai+Confirmed 131: 2049 -> 27  
+Russia/Primorsky Krai+Deaths 131: 19 -> 0.3333333333333333  
+Russia/Pskov Oblast+Confirmed 131: 887 -> 29.833333333333332  
+Russia/Pskov Oblast+Deaths 131: 10 -> 0  
+Russia/Rostov Oblast+Confirmed 131: 4942 -> 102.5  
+Russia/Rostov Oblast+Deaths 131: 38 -> 0.8333333333333334  
+Russia/Ryazan Oblast+Confirmed 131: 3581 -> 36.666666666666664  
+Russia/Ryazan Oblast+Deaths 131: 7 -> 0.5  
+Russia/Saint Petersburg+Confirmed 131: 16313 -> 188.5  
+Russia/Saint Petersburg+Deaths 131: 213 -> 8.5  
+Russia/Sakha (Yakutiya) Republic+Confirmed 131: 2042 -> 44.333333333333336  
+Russia/Sakha (Yakutiya) Republic+Deaths 131: 8 -> 0.5  
+Russia/Sakhalin Oblast+Confirmed 131: 118 -> 4.833333333333333  
+Russia/Sakhalin Oblast+Deaths 131: 0 -> 0  
+Russia/Samara Oblast+Confirmed 131: 2648 -> 30.833333333333332  
+Russia/Samara Oblast+Deaths 131: 20 -> 0.5  
+Russia/Saratov Oblast+Confirmed 131: 3174 -> 47.166666666666664  
+Russia/Saratov Oblast+Deaths 131: 34 -> 0.16666666666666666  
+Russia/Smolensk Oblast+Confirmed 131: 2299 -> 63.166666666666664  
+Russia/Smolensk Oblast+Deaths 131: 39 -> 0.3333333333333333  
+Russia/Stavropol Krai+Confirmed 131: 2568 -> 41.833333333333336  
+Russia/Stavropol Krai+Deaths 131: 47 -> 1  
+Russia/Sverdlovsk Oblast+Confirmed 131: 5732 -> 157.83333333333334  
+Russia/Sverdlovsk Oblast+Deaths 131: 29 -> 1  
+Russia/Tambov Oblast+Confirmed 131: 3047 -> 32.5  
+Russia/Tambov Oblast+Deaths 131: 7 -> 0.16666666666666666  
+Russia/Tatarstan Republic+Confirmed 131: 3244 -> 26.333333333333332  
+Russia/Tatarstan Republic+Deaths 131: 10 -> 0  
+Russia/Tomsk Oblast+Confirmed 131: 716 -> 13.5  
+Russia/Tomsk Oblast+Deaths 131: 11 -> 0  
+Russia/Tula Oblast+Confirmed 131: 3968 -> 54.166666666666664  
+Russia/Tula Oblast+Deaths 131: 36 -> 1.3333333333333333  
+Russia/Tver Oblast+Confirmed 131: 1650 -> 25.666666666666668  
+Russia/Tver Oblast+Deaths 131: 22 -> 2.5  
+Russia/Tyumen Oblast+Confirmed 131: 1661 -> 22.833333333333332  
+Russia/Tyumen Oblast+Deaths 131: 8 -> 0.16666666666666666  
+Russia/Tyva Republic+Confirmed 131: 1115 -> 30.333333333333332  
+Russia/Tyva Republic+Deaths 131: 2 -> 0  
+Russia/Udmurt Republic+Confirmed 131: 682 -> 23.333333333333332  
+Russia/Udmurt Republic+Deaths 131: 12 -> 0  
+Russia/Ulyanovsk Oblast+Confirmed 131: 2567 -> 50.5  
+Russia/Ulyanovsk Oblast+Deaths 131: 8 -> 0.6666666666666666  
+Russia/Vladimir Oblast+Confirmed 131: 2735 -> 28.833333333333332  
+Russia/Vladimir Oblast+Deaths 131: 21 -> 1  
+Russia/Volgograd Oblast+Confirmed 131: 3215 -> 54.333333333333336  
+Russia/Volgograd Oblast+Deaths 131: 20 -> 0.16666666666666666  
+Russia/Vologda Oblast+Confirmed 131: 952 -> 11  
+Russia/Vologda Oblast+Deaths 131: 7 -> 0.6666666666666666  
+Russia/Voronezh Oblast+Confirmed 131: 2139 -> 54.5  
+Russia/Voronezh Oblast+Deaths 131: 15 -> 0.16666666666666666  
+Russia/Yamalo-Nenets Autonomous Okrug+Confirmed 131: 2415 -> 19.833333333333332  
+Russia/Yamalo-Nenets Autonomous Okrug+Deaths 131: 10 -> 0.16666666666666666  
+Russia/Yaroslavl Oblast+Confirmed 131: 3210 -> 36.666666666666664  
+Russia/Yaroslavl Oblast+Deaths 131: 14 -> 0.16666666666666666  
+Russia/Zabaykalsky Krai+Confirmed 131: 1136 -> 20.166666666666668  
+Russia/Zabaykalsky Krai+Deaths 131: 20 -> 0.6666666666666666  
+Spain/Andalusia+Confirmed 113: 12359 -> 10.166666666666666  
+Spain/Andalusia+Deaths 113: 1336 -> 3.1666666666666665  
+Spain/Aragon+Confirmed 113: 5389 -> 11.166666666666666  
+Spain/Aragon+Deaths 113: 836 -> 0.3333333333333333  
+Spain/Asturias+Confirmed 113: 2356 -> 1.6666666666666667  
+Spain/Asturias+Deaths 113: 308 -> 0.8333333333333334  
+Spain/Baleares+Confirmed 113: 1958 -> 4  
+Spain/Baleares+Deaths 113: 216 -> 0  
+Spain/C. Valenciana+Confirmed 113: 10784 -> 11  
+Spain/C. Valenciana+Deaths 113: 1349 -> 2.6666666666666665  
+Spain/Canarias+Confirmed 113: 2275 -> 1.5  
+Spain/Canarias+Deaths 113: 151 -> 0  
+Spain/Cantabria+Confirmed 113: 2256 -> 1.5  
+Spain/Cantabria+Deaths 113: 205 -> 0.16666666666666666  
+Spain/Castilla - La Mancha+Confirmed 113: 16470 -> 19.5  
+Spain/Castilla - La Mancha+Deaths 113: 2852 -> 5.166666666666667  
+Spain/Castilla y Leon+Confirmed 113: 18173 -> 32.666666666666664  
+Spain/Castilla y Leon+Deaths 113: 1925 -> 2.5  
+Spain/Catalonia+Confirmed 113: 55482 -> 33.833333333333336  
+Spain/Catalonia+Deaths 113: 5823 -> 15.333333333333334  
+Spain/Ceuta+Confirmed 113: 116 -> 0  
+Spain/Ceuta+Deaths 113: 4 -> 0  
+Spain/Extremadura+Confirmed 113: 2923 -> 5.833333333333333  
+Spain/Extremadura+Deaths 113: 492 -> 0.8333333333333334  
+Spain/Galicia+Confirmed 113: 9317 -> -46  
+Spain/Galicia+Deaths 113: 601 -> 0.5  
+Spain/La Rioja+Confirmed 113: 4014 -> 1  
+Spain/La Rioja+Deaths 113: 348 -> 0  
+Spain/Madrid+Confirmed 113: 65693 -> 86.16666666666667  
+Spain/Madrid+Deaths 113: 8779 -> 7.833333333333333  
+Spain/Melilla+Confirmed 113: 119 -> 0  
+Spain/Melilla+Deaths 113: 2 -> 0  
+Spain/Murcia+Confirmed 113: 1532 -> 1.6666666666666667  
+Spain/Murcia+Deaths 113: 142 -> 0.3333333333333333  
+Spain/Navarra+Confirmed 113: 5105 -> 5.333333333333333  
+Spain/Navarra+Deaths 113: 498 -> 0.5  
+Spain/Pais Vasco+Confirmed 113: 13219 -> 12  
+Spain/Pais Vasco+Deaths 113: 1454 -> 0.16666666666666666  
+Spain/Unknown+Confirmed 113: 0 -> 0  
+Spain/Unknown+Deaths 113: 0 -> 0  
+Sweden/Blekinge+Confirmed 135: 264 -> 5.5  
+Sweden/Blekinge+Deaths 135: 5 -> 0  
+Sweden/Dalarna+Confirmed 135: 1277 -> 6.333333333333333  
+Sweden/Dalarna+Deaths 135: 147 -> 0  
+Sweden/Gavleborg+Confirmed 135: 1435 -> 13.5  
+Sweden/Gavleborg+Deaths 135: 111 -> 0.3333333333333333  
+Sweden/Gotland+Confirmed 135: 88 -> 0.3333333333333333  
+Sweden/Gotland+Deaths 135: 6 -> 0  
+Sweden/Halland+Confirmed 135: 870 -> 8.333333333333334  
+Sweden/Halland+Deaths 135: 56 -> 0.16666666666666666  
+Sweden/Jamtland Harjedalen+Confirmed 135: 774 -> 5.833333333333333  
+Sweden/Jamtland Harjedalen+Deaths 135: 33 -> 0.16666666666666666  
+Sweden/Jonkoping+Confirmed 135: 1681 -> 11.666666666666666  
+Sweden/Jonkoping+Deaths 135: 144 -> 0.3333333333333333  
+Sweden/Kalmar+Confirmed 135: 390 -> 3  
+Sweden/Kalmar+Deaths 135: 39 -> 0  
+Sweden/Kronoberg+Confirmed 135: 897 -> 5.5  
+Sweden/Kronoberg+Deaths 135: 76 -> 0.5  
+Sweden/Norrbotten+Confirmed 135: 481 -> 3.6666666666666665  
+Sweden/Norrbotten+Deaths 135: 48 -> 0  
+Sweden/Orebro+Confirmed 135: 1896 -> 13.166666666666666  
+Sweden/Orebro+Deaths 135: 139 -> 0.3333333333333333  
+Sweden/Ostergotland+Confirmed 135: 2197 -> 10.5  
+Sweden/Ostergotland+Deaths 135: 194 -> 0.6666666666666666  
+Sweden/Skane+Confirmed 135: 1928 -> 11.166666666666666  
+Sweden/Skane+Deaths 135: 192 -> 1.3333333333333333  
+Sweden/Sormland+Confirmed 135: 1655 -> 2.3333333333333335  
+Sweden/Sormland+Deaths 135: 228 -> 0.3333333333333333  
+Sweden/Stockholm+Confirmed 135: 14366 -> 72.83333333333333  
+Sweden/Stockholm+Deaths 135: 2136 -> 3.5  
+Sweden/Uppsala+Confirmed 135: 2136 -> 18  
+Sweden/Uppsala+Deaths 135: 184 -> 0  
+Sweden/Varmland+Confirmed 135: 599 -> 7  
+Sweden/Varmland+Deaths 135: 37 -> 0.6666666666666666  
+Sweden/Vasterbotten+Confirmed 135: 518 -> 2.8333333333333335  
+Sweden/Vasterbotten+Deaths 135: 28 -> 0.16666666666666666  
+Sweden/Vasternorrland+Confirmed 135: 835 -> 8.666666666666666  
+Sweden/Vasternorrland+Deaths 135: 88 -> 0.3333333333333333  
+Sweden/Vastmanland+Confirmed 135: 1434 -> 3.8333333333333335  
+Sweden/Vastmanland+Deaths 135: 148 -> 0  
+Sweden/Vastra Gotaland+Confirmed 135: 7218 -> 151.66666666666666  
+Sweden/Vastra Gotaland+Deaths 135: 600 -> 0.3333333333333333  
+US/New York/Bronx+Confirmed 222: 53123 -> 19  
+US/New York/Bronx+Deaths 222: 4909 -> 1.1666666666666667  
+US/New York/Kings+Confirmed 222: 65927 -> 40.5  
+US/New York/Kings+Deaths 222: 7290 -> -0.16666666666666666  
+US/New York/New York+Confirmed 222: 30874 -> 19.5  
+US/New York/New York+Deaths 222: 3170 -> 0  
+US/New York/Queens+Confirmed 222: 71356 -> 26.833333333333332  
+US/New York/Queens+Deaths 222: 7222 -> 1.3333333333333333  
+US/New York/Richmond+Confirmed 222: 15355 -> 9.166666666666666  
+US/New York/Richmond+Deaths 222: 1083 -> 0.3333333333333333  
+Ukraine/Cherkasy Oblast+Confirmed 131: 406 -> 3.8333333333333335  
+Ukraine/Cherkasy Oblast+Deaths 131: 16 -> 0  
+Ukraine/Chernihiv Oblast+Confirmed 131: 177 -> 10.166666666666666  
+Ukraine/Chernihiv Oblast+Deaths 131: 6 -> 0.16666666666666666  
+Ukraine/Chernivtsi Oblast+Confirmed 131: 3377 -> 17.333333333333332  
+Ukraine/Chernivtsi Oblast+Deaths 131: 144 -> 0.6666666666666666  
+Ukraine/Crimea Republic*+Confirmed 131: 385 -> 2.3333333333333335  
+Ukraine/Crimea Republic*+Deaths 131: 3 -> 0.3333333333333333  
+Ukraine/Dnipropetrovsk Oblast+Confirmed 131: 942 -> 2.5  
+Ukraine/Dnipropetrovsk Oblast+Deaths 131: 21 -> 0  
+Ukraine/Donetsk Oblast+Confirmed 131: 163 -> 1.8333333333333333  
+Ukraine/Donetsk Oblast+Deaths 131: 4 -> 0.16666666666666666  
+Ukraine/Ivano-Frankivsk Oblast+Confirmed 131: 1420 -> 11.833333333333334  
+Ukraine/Ivano-Frankivsk Oblast+Deaths 131: 81 -> 0.5  
+Ukraine/Kharkiv Oblast+Confirmed 131: 1083 -> 13.833333333333334  
+Ukraine/Kharkiv Oblast+Deaths 131: 47 -> 0.3333333333333333  
+Ukraine/Kherson Oblast+Confirmed 131: 178 -> 0.16666666666666666  
+Ukraine/Kherson Oblast+Deaths 131: 3 -> 0  
+Ukraine/Khmelnytskyi Oblast+Confirmed 131: 454 -> 7.166666666666667  
+Ukraine/Khmelnytskyi Oblast+Deaths 131: 11 -> 0  
+Ukraine/Kiev+Confirmed 131: 3043 -> 27.833333333333332  
+Ukraine/Kiev+Deaths 131: 68 -> 0.16666666666666666  
+Ukraine/Kiev Oblast+Confirmed 131: 1600 -> 12.166666666666666  
+Ukraine/Kiev Oblast+Deaths 131: 35 -> 0.3333333333333333  
+Ukraine/Kirovohrad Oblast+Confirmed 131: 514 -> 2  
+Ukraine/Kirovohrad Oblast+Deaths 131: 25 -> 0.16666666666666666  
+Ukraine/Luhansk Oblast+Confirmed 131: 47 -> 0.6666666666666666  
+Ukraine/Luhansk Oblast+Deaths 131: 0 -> 0  
+Ukraine/Lviv Oblast+Confirmed 131: 1700 -> 35.833333333333336  
+Ukraine/Lviv Oblast+Deaths 131: 55 -> 1.1666666666666667  
+Ukraine/Mykolaiv Oblast+Confirmed 131: 294 -> 0.16666666666666666  
+Ukraine/Mykolaiv Oblast+Deaths 131: 7 -> 0  
+Ukraine/Odessa Oblast+Confirmed 131: 896 -> 6.166666666666667  
+Ukraine/Odessa Oblast+Deaths 131: 17 -> 0.16666666666666666  
+Ukraine/Poltava Oblast+Confirmed 131: 270 -> 0.3333333333333333  
+Ukraine/Poltava Oblast+Deaths 131: 13 -> 0  
+Ukraine/Rivne Oblast+Confirmed 131: 1770 -> 22.5  
+Ukraine/Rivne Oblast+Deaths 131: 38 -> 0.3333333333333333  
+Ukraine/Sevastopol*+Confirmed 131: 165 -> 1  
+Ukraine/Sevastopol*+Deaths 131: 3 -> 0  
+Ukraine/Sumy Oblast+Confirmed 131: 170 -> 1.1666666666666667  
+Ukraine/Sumy Oblast+Deaths 131: 4 -> 0  
+Ukraine/Ternopil Oblast+Confirmed 131: 1176 -> 7.333333333333333  
+Ukraine/Ternopil Oblast+Deaths 131: 26 -> 0  
+Ukraine/Vinnytsia Oblast+Confirmed 131: 1005 -> 12  
+Ukraine/Vinnytsia Oblast+Deaths 131: 16 -> 0  
+Ukraine/Volyn Oblast+Confirmed 131: 932 -> 9  
+Ukraine/Volyn Oblast+Deaths 131: 26 -> 0.5  
+Ukraine/Zakarpattia Oblast+Confirmed 131: 1206 -> 8.5  
+Ukraine/Zakarpattia Oblast+Deaths 131: 28 -> 0  
+Ukraine/Zaporizhia Oblast+Confirmed 131: 447 -> 3.6666666666666665  
+Ukraine/Zaporizhia Oblast+Deaths 131: 13 -> 0.16666666666666666  
+Ukraine/Zhytomyr Oblast+Confirmed 131: 742 -> 15.166666666666666  
+Ukraine/Zhytomyr Oblast+Deaths 131: 14 -> 0  
+United Kingdom/Anguilla+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Anguilla+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Bermuda+Confirmed 141: 0 -> 0.16666666666666666   162: 0 -> 0  
+United Kingdom/Bermuda+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/British Virgin Islands+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/British Virgin Islands+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Cayman Islands+Confirmed 141: 6 -> 2.8333333333333335   162: 0 -> 0.8333333333333334  
+United Kingdom/Cayman Islands+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Channel Islands+Confirmed 141: 0 -> 0.3333333333333333   162: 0 -> 0  
+United Kingdom/Channel Islands+Deaths 141: 0 -> 0.3333333333333333   162: 0 -> 0  
+United Kingdom/England+Confirmed 141: 156018 -> 176   162: 83146 -> 340.8333333333333  
+United Kingdom/England+Deaths 141: 36883 -> 63.833333333333336   162: 80 -> 92  
+United Kingdom/Falkland Islands+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Falkland Islands+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Gibraltar+Confirmed 141: 0 -> 0   162: 0 -> 0.3333333333333333  
+United Kingdom/Gibraltar+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Isle of Man+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Isle of Man+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Montserrat+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Montserrat+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Northern Ireland+Confirmed 141: 4822 -> 4.333333333333333   162: 888 -> -3.1666666666666665  
+United Kingdom/Northern Ireland+Deaths 141: 537 -> 0.6666666666666666   162: 0 -> 0.8333333333333334  
+United Kingdom/Saint Helena, Ascension and Tristan da Cunha+Confirmed 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Saint Helena, Ascension and Tristan da Cunha+Deaths 141: 0 -> 0   162: 0 -> 0  
+United Kingdom/Scotland+Confirmed 141: 15682 -> 12.166666666666666   162: 2437 -> 7.333333333333333  
+United Kingdom/Scotland+Deaths 141: 2434 -> 2.1666666666666665   162: 1 -> 0.8333333333333334  
+United Kingdom/Turks and Caicos Islands+Confirmed 141: 0 -> 0   162: 2 -> 2.8333333333333335  
+United Kingdom/Turks and Caicos Islands+Deaths 141: 0 -> 0   162: 0 -> 0.16666666666666666  
+United Kingdom/Wales+Confirmed 141: 14581 -> 26.833333333333332   162: 40 -> 41.333333333333336  
+United Kingdom/Wales+Deaths 141: 1425 -> 3.1666666666666665   162: 8 -> 3.1666666666666665  
+
