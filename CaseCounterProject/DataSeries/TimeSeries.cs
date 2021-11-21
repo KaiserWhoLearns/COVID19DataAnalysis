@@ -102,6 +102,22 @@ namespace DataSeries {
 
         }
 
+        public TimeSeries(TimeSeries ts) {
+            DataType = ts.DataType;
+            Admin0 = ts.Admin0;
+            Admin1 = ts.Admin1;
+            Admin2 = ts.Admin2;
+            Fips = ts.Fips;
+            Population = ts.Population;
+            CaseCount = ts.CaseCount;
+            Key = ts.Key;
+            LastDay = ts.LastDay;
+            lastPopulationUpdate = ts.lastPopulationUpdate;
+            data = new double[ts.data.Length];
+            for (int i = 0; i < data.Length; i++) {
+                data[i] = ts.data[i];
+            }
+        }
         public void SetValue(int index, double? value) {
 
             if (index >= data.Length) {
@@ -264,6 +280,97 @@ namespace DataSeries {
 
         public PeakSet FindPeaks(int nPeaks) {
             return null;
+        }
+
+        public void DetectNegativeCounts(StringBuilder sb) {
+
+            bool negativeFound = false;
+            for (int i = 0; i <= LastDay; i++) {
+                if (data[i] < -999) {
+                    if (! negativeFound) {
+                        negativeFound = true;
+                        sb.Append($"{Key}: ");
+                    }
+                    sb.Append($"<{i},{data[i]}>");
+                }
+            }
+            if (negativeFound) {
+                sb.Append("\r\n");
+            }
+
+
+        }
+
+        public void DetectOutliers(StringBuilder sb) {
+
+            bool outlierFound = false;
+            for (int i = 0; i <= LastDay; i++) {
+                if (OutlierTest(i)) {
+                    if (!outlierFound) {
+                        outlierFound = true;
+                        sb.Append($"{Key}: ");
+                    }
+                    sb.Append($"<{i},{data[i]}>");
+                }
+            }
+            if (outlierFound) {
+                sb.Append("\r\n");
+            }
+
+        }
+
+        // An outlier is a value that is at least 100 and at least K times the daily average of three days before and after
+
+        private readonly int OutlierConstant = 1000;
+        private readonly int OutlierFactor = 10;
+        private bool OutlierTest(int i) {
+            if (data[i] < OutlierConstant) {
+                return false;
+            }
+
+            return data[i] > OutlierFactor * LocalAverage(i);
+        }
+
+        // average of 3 days before and 3 days after.  A pain because of boundary conditions
+        private  double LocalAverage(int i) {
+            double val = 0.0; 
+            double days = 0;
+
+            if (i >= 3) {
+                val = data[i - 1] + data[i - 2] + data[i - 3];
+                days = 3;
+            } else if (i == 2) {
+                val = data[1] + data[0];
+                days = 2;
+            } else if (i == 1) {
+                val = data[0];
+                days = 1;
+            }
+
+            if (i <= LastDay - 3) {
+                val += data[i + 1] + data[i + 2] + data[i + 3];
+                days += 3;
+            } else if (i == LastDay - 2) {
+                val += data[i + 1] + data[i + 2];
+                days += 2;
+            } else if (i == LastDay - 1) {
+                val += data[i + 1];
+                days += 1;
+            }
+
+            // Need to avoid the divide by zero case where there is only one data point
+            return days > 0 ? val / days : data[0];
+        }
+
+        public TimeSeries RemoveAnomalies(List<int> days, StringBuilder sb) {
+            TimeSeries ts = new(this);
+            sb.Append(Key);
+            foreach (int day in days) {
+                ts.data[day] = LocalAverage(day);
+                sb.Append($" {day}: {data[day]} -> {ts.data[day]}  ");
+            }
+            sb.Append("\r\n");
+            return ts;
         }
     }
 

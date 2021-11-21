@@ -21,6 +21,10 @@ namespace CaseCounter {
 
         public Dictionary<(string, string), (string, string)> Admin1Substitutions { get; }
 
+        public List<(string, int)> Admin0AnomalyList { get; }
+        public List<(string, int)> Admin0StarAnomalyList { get; }
+        public List<(string, string, string, int)> Admin2AnomalyList { get; }
+
         public List<string> UsStatesList { get; }
 
         public List<string> AfricaList { get; }
@@ -29,6 +33,8 @@ namespace CaseCounter {
         public List<string> NorthAmericaList { get; }
         public List<string> SouthAmericaList { get; }
         public List<string> CountriesWithProvincesList { get; }
+
+
 
 
         public Config() {
@@ -74,7 +80,33 @@ namespace CaseCounter {
                 Admin1Substitutions.Add((Admin1Subs[i], Admin1Subs[i + 1]), (Admin1Subs[i + 2], Admin1Subs[i + 3]));
             }
 
+            Admin0AnomalyList = new();
+            if (Admin0Anomalies.Length % 2 != 0) {
+                throw new ProgrammingException("Admin0Anomalies needs to be even length");
+            }
+            for (int i = 0; i < Admin0Anomalies.Length; i += 2) {
+                Admin0AnomalyList.Add((Admin0Anomalies[i], int.Parse(Admin0Anomalies[i + 1])));
+            }
+
+            Admin0StarAnomalyList = new();
+            if (Admin0StarAnomalies.Length % 2 != 0) {
+                throw new ProgrammingException("Admin0StarAnomalies needs to be even length");
+            }
+            for (int i = 0; i < Admin0StarAnomalies.Length; i += 2) {
+                Admin0StarAnomalyList.Add((Admin0StarAnomalies[i], int.Parse(Admin0StarAnomalies[i + 1])));
+            }
+
+            Admin2AnomalyList = new();
+            if (Admin2Anomalies.Length % 4 != 0) {
+                throw new ProgrammingException("Admin2Anomalies needs length divisible by 4");
+            }
+            for (int i = 0; i < Admin2Anomalies.Length; i += 4) {
+                Admin2AnomalyList.Add((Admin2Anomalies[i], Admin2Anomalies[i + 1], Admin2Anomalies[i + 2], int.Parse(Admin2Anomalies[i + 3])));
+            }
+
+
         }
+
 
         private readonly string[] Admin0Remove = { "Cruise Ship", "Summer Olympics 2020", "Others", "Taipei and environs", "occupied Palestinian territory",
                                                     "MS Zaandam", " Azerbaijan", "The Bahamas", "Bahamas, The", "Channel Islands", "Diamond Princess",
@@ -147,6 +179,17 @@ namespace CaseCounter {
                                                 "Italy", "Japan", "Malaysia", "Mexico", "Netherlands", "Pakistan", "Peru", "Russia",  "Spain", "Sweden", "Ukraine",
                                                 "United Kingdom", "US" };
 
+        // Country level anomalies
+        private readonly string[] Admin0Anomalies = { "France", "484" };
+
+        // Province level,  * indicates all provinces
+        private readonly string[] Admin0StarAnomalies = { "United Kingdom", "141", "United Kingdom", "162", "Ukraine", "131", "Sweden", "135", "Spain", "113",
+                                                          "Russia", "131", "Pakistan", "140", "Mexico", "119", "Netherlands", "177", "Italy", "113", "India", "140", 
+                                                          "Germany", "113", "Brazil", "119",  "Belgium", "295", "Chile", "119"};
+
+        // County level
+        private readonly string[] Admin2Anomalies = {"US", "New York", "Bronx", "222", "US", "New York", "Kings", "222", "US", "New York", "New York", "222",
+                                                     "US", "New York", "Queens", "222", "US", "New York", "Richmond", "222" };
 
     }
 }

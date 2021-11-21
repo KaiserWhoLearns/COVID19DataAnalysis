@@ -12,7 +12,9 @@ using DataSeries;
 namespace CaseCounter {
     public class LibraryBuilder {
 
-        private readonly bool RemoveBulkUpdates = true;
+        private readonly bool DetectOutliers = true;
+        private readonly bool DetectNegative = true;
+        private readonly bool RemoveAnomalies = true;
 
         ListBox listBox;
         Config config;
@@ -59,8 +61,15 @@ namespace CaseCounter {
             // Removing bulk updates takes care of large submissions on a single day (probably due to reclassification)
             // This is controversial - as we can either work with reported data - or work with the daily reported data.  Removing the
             // updates distorts the countries overall data - but is necessary if we want to track the actual waves.
-            if (RemoveBulkUpdates) {
-                dailyCount_TSS = dailyCount_TSS.RemoveBulkUpdates();
+            if (DetectOutliers) {
+                dailyCount_TSS.DetectOutliers(Path.Combine(topLevelOutputDir, idf));
+            }
+            if (DetectNegative) {  
+                dailyCount_TSS.DetectNegativeCounts(Path.Combine(topLevelOutputDir, idf));
+            }
+            if (RemoveAnomalies) {
+                dailyCount_TSS = dailyCount_TSS.RemoveAnomalies(config.Admin0AnomalyList, config.Admin0StarAnomalyList, config.Admin2AnomalyList,
+                    Path.Combine(topLevelOutputDir, idf));
                 dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Daily_Updated.csv"));
             }
 
@@ -282,5 +291,36 @@ namespace CaseCounter {
             _ = listBox.Items.Add(str);
 
         }
+
+        /*
+        private Dictionary<string, List<int>> BuildAnomalyDictionary(TimeSeriesSet tss) {
+            Dictionary<string, List<int>> aDict = new();
+
+            foreach ((string admin0, int day) in config.Admin0AnomalyList) {
+                UpdateDictionary(aDict, admin0, day);
+            }
+
+            foreach ((string admin0, string admin1, int day) in config.Admin1AnomalyList){
+
+            }
+            return aDict;
+        }
+
+        private void UpdateDictionary(Dictionary<string, List<int>> aDict, string admin0, int day) {
+            UpdateEntry(aDict, TimeSeries.BuildKey(DataType.Confirmed, admin0, "", ""), day);
+            UpdateEntry(aDict, TimeSeries.BuildKey(DataType.Deaths, admin0, "", ""), day);
+        }
+
+        private void UpdateEntry(Dictionary<string, List<int>> aDict, string key, int day) {
+            if (aDict.ContainsKey(key)) {
+                aDict[key].Add(day);
+            } else {
+                List<int> days = new();
+                days.Add(day);
+                aDict.Add(key, days);
+            }
+        }
+        */
+
     }
 }

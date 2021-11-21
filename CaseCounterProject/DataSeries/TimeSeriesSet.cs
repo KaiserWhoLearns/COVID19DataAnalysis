@@ -6,6 +6,7 @@ using CsvHelper;
 using System.Globalization;
 using System.Windows.Controls;
 using System.IO;
+using Utilities;
 
 namespace DataSeries {
     public class TimeSeriesSet {
@@ -258,8 +259,81 @@ namespace DataSeries {
             return psc;
         }
 
-        public TimeSeriesSet RemoveBulkUpdates() {
-            return this;
+        private readonly bool LogDataUpdates = true;
+
+        public void DetectNegativeCounts(string path) {
+
+            StringBuilder sb = new();
+
+            foreach (TimeSeries ts1 in series.Values) {
+                ts1.DetectNegativeCounts(sb);
+            }
+
+            if (LogDataUpdates) {
+                Util.WriteToFile(sb, Path.Combine(path, "NegativeCounts.txt"));
+            }
+
+        }
+
+        public void  DetectOutliers(string path) {
+
+            StringBuilder sb = new();
+
+            foreach (TimeSeries ts1 in series.Values) {
+                ts1.DetectOutliers(sb);
+            }
+
+            if (LogDataUpdates) {
+                Util.WriteToFile(sb, Path.Combine(path, "Outliers.txt"));
+            }
+        }
+
+        public TimeSeriesSet RemoveAnomalies(List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List, string path) {
+            TimeSeriesSet tss = new(SeriesType);
+            StringBuilder sb = new();
+
+            foreach (TimeSeries ts1 in series.Values) {
+                List<int> days = GetAnomalies(ts1, admin0List, admin0StarList, admin2List);
+                if (days != null) {
+                    TimeSeries ts2 = ts1.RemoveAnomalies(days, sb);
+                    tss.AddSeries(ts2);
+                } else {
+                    tss.AddSeries(ts1);
+                }
+
+            }
+
+            if (LogDataUpdates) {
+                Util.WriteToFile(sb, Path.Combine(path, "AnomaliesRemoved.txt"));
+            }
+
+            return tss;
+        }
+
+        private static List<int> GetAnomalies(TimeSeries ts, List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List ){
+            List<int> days = new();
+            if (string.IsNullOrEmpty(ts.Admin1)) {
+                foreach ((string admin0, int day) in admin0List) {
+                    if (ts.Admin0 == admin0) {
+                        days.Add(day);
+                    }
+                }
+
+            } else if (string.IsNullOrEmpty(ts.Admin2)) {
+                foreach ((string admin0, int day) in admin0StarList) {
+                    if (ts.Admin0 == admin0) {
+                        days.Add(day);
+                    }
+                }
+            } else {
+                foreach ((string admin0, string admin1, string admin2, int day) in admin2List) {
+                    if (ts.Admin0 == admin0 && ts.Admin1 == admin1 && ts.Admin2 == admin2) {
+                        days.Add(day);
+                    }
+                }
+            }
+
+            return (days.Count > 0) ? days : null;
         }
 
     }
