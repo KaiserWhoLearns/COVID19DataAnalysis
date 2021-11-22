@@ -9,14 +9,9 @@ from data import loader
 from helpers import geomap, heatmap
 import numpy
 
+from helpers.compute import roundup
 
 __NUMBER_OF_FILMS_IN_STRIP = 12
-
-
-def roundup(num, nearest_ten=True):
-    if nearest_ten:
-        return int(math.ceil(num / 10.0)) * 10
-    return int(math.ceil(num))
 
 
 def plot_filmstrip(world, cases, deaths, name_column='name', filter_column='Admin0', q_name='world'):

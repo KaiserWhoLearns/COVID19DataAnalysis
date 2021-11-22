@@ -3,6 +3,7 @@ import os.path
 
 import geopandas
 import pandas
+from pandas.errors import EmptyDataError
 from shapely.geometry import Point, Polygon
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -22,8 +23,11 @@ def read_country_daily_timeline(filepath=r"data/UW time series/Global/World by c
 def find_covariant_country_cluster(country='India'):
     try:
         out_dir = f'data/covariants_country_clusters/{country}.csv'
-        df = pandas.read_csv(out_dir)
-        return df
+        try:
+            df = pandas.read_csv(out_dir)
+            return df
+        except EmptyDataError:
+            print(f'File for {country} is empty.')
     except FileNotFoundError:
         print(f'No Covariant data available for {country}.')
 
@@ -46,7 +50,7 @@ def find_deaths_by_country(deaths, cases):
     output_figure_path = 'results/cases_deaths_and_variants/'
     if not os.path.exists(output_figure_path):
         os.makedirs(output_figure_path)
-    starting_column_headers = ['DataType', 'Admin2', 'Admin1', 'Admin0', 'Population', 'CaseCount']
+    starting_column_headers = ['DataType', 'Admin2', 'Admin1', 'Admin0', 'Fips', 'Population', 'CaseCount']
     deaths_by_country = deaths[deaths['DataType'] == 'Deaths']
     cases_by_country = cases[cases['DataType'] == 'Confirmed']
     all_columns = deaths_by_country.columns

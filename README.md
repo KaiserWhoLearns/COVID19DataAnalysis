@@ -28,3 +28,12 @@ We recommend using Anaconda (`conda`) as the easiest way to setup the Python env
 for reproducing the various results. Install it by downloading the individual version from [here](https://www.anaconda.com/products/individual).
 
 Once setup, ensure that `python` and `pip` are available on `PATH`.
+
+
+## Script Documentation
+
+| Script Name | Description |
+|-------------|-------------|
+| `prepare_covariants_data.py` | Uses the `data/covariants/` data to generate intermediate covariant data per country, area charts. |
+| `visualize_case_death_heatmap.py` |             |
+|             |             |
