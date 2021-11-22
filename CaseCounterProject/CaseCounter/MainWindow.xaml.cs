@@ -360,5 +360,19 @@ namespace CaseCounter {
             }
 
         }
+
+        private void ExportAllPeaks_Click(object sender, RoutedEventArgs e) {
+            colorCanvas.Background = Brushes.Yellow;
+
+            PeakExporter pe = new(caseListBox);
+            bool result = pe.Build();
+
+            if (result) {
+                colorCanvas.Background = Brushes.Green;
+            } else {
+                colorCanvas.Background = Brushes.Red; ;
+            }
+
+        }
     }
 }

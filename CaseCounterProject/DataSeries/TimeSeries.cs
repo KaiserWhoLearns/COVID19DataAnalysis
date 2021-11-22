@@ -34,18 +34,29 @@ namespace DataSeries {
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
-        public int CaseCount { get; set; }
+        public int CaseCount {
+            get {
+                if (data == null || LastDay < 0) {
+                    return 0;
+                }
+                double count = 0.0;
+                for (int i = 0; i < LastDay; i++) {
+                    count += data[i];
+                }
+
+                return (int)count;
+            }
+        }
 
         private double[] data;
 
-        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, int fips, long population = -1, int caseCount = -1) {
+        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, int fips, long population = -1) {
             DataType = dataType;
             Admin0 = admin0;
             Admin1 = admin1;
             Admin2 = admin2;
             Fips = fips;
             Population = population;
-            CaseCount = caseCount;
 
             Key = BuildKey(dataType, admin0, admin1, admin2);
 
@@ -84,8 +95,7 @@ namespace DataSeries {
                     case "Population":
                         Population = long.Parse(val);
                         break;
-                    case "CaseCount":
-                        CaseCount = int.Parse(val);
+                    case "CaseCount":           // CaseCount is a field for export, but generated when needed, so not read back in
                         break;
 
                     default:
@@ -109,7 +119,6 @@ namespace DataSeries {
             Admin2 = ts.Admin2;
             Fips = ts.Fips;
             Population = ts.Population;
-            CaseCount = ts.CaseCount;
             Key = ts.Key;
             LastDay = ts.LastDay;
             lastPopulationUpdate = ts.lastPopulationUpdate;
@@ -185,7 +194,6 @@ namespace DataSeries {
                 double dailyCount = data[i] - data[i - 1];
                 ts.SetValue(i, dailyCount);
             }
-            ts.CaseCount = (int) data[LastDay];
 
             return ts;
         }
@@ -207,7 +215,7 @@ namespace DataSeries {
             return Smooth(TimeSeriesSet.GaussianFilter);
         }
         public TimeSeries Smooth(double[] filter) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
             for (int i = 0; i <= LastDay; i++)
                 ts.SetValue(i, Smooth(i, filter));
 
@@ -240,7 +248,6 @@ namespace DataSeries {
             for (int i = 0; i <= ts.LastDay; i++)
                 data[i] += ts.data[i];
 
-            CaseCount += ts.CaseCount;
 
                                             // Slightly complicated to handle -1 as the no-population value
                                             // Possibly,  using 0 as the no-population value would make things easier
@@ -255,7 +262,7 @@ namespace DataSeries {
 */
 
         public TimeSeries ScaleByPopulation() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
 
             for (int i = 0; i <= LastDay; i++) {
                 double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
@@ -266,7 +273,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ScaleByCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population, CaseCount);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
 
             double total = 0.0;
             for (int i = 0; i <= LastDay; i++)
@@ -381,14 +388,8 @@ namespace DataSeries {
             if (LastDay != ts.LastDay)
                 return -1;
 
-            double count1 = 0.0;
-            for (int i = 0; i <= LastDay; i++)
-                count1 += data[i];
-
-            double count2 = 0.0;
-            for (int i = 0; i <= LastDay; i++)
-                count2 += ts.data[i];
-
+            double count1 = CaseCount;
+            double count2 = ts.CaseCount;
 
             double sum = 0.0;
 

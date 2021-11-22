@@ -209,7 +209,7 @@ namespace DataSeries {
                 if (stateSeries.ContainsKey(seriesKey)) {
                     tsState = stateSeries[seriesKey]; 
                 } else {
-                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population, ts.CaseCount);  
+                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population);  
                     stateSeries.Add(seriesKey, tsState);
                 }
                 tsState.AddCounts(ts);
@@ -233,7 +233,7 @@ namespace DataSeries {
                 if (nationalSeries.ContainsKey(seriesKey)) {
                     tsNational = nationalSeries[seriesKey];
                 } else {
-                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Fips, ts.Population,ts.CaseCount);
+                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Fips, ts.Population);
                     nationalSeries.Add(seriesKey, tsNational);
                 }
                 tsNational.AddCounts(ts);

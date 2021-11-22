@@ -208,7 +208,7 @@ namespace CaseCounter {
         private string usbc_d = "United States by county/Deaths";
         private string idf = "Intermediate data files";
 
-        private static string CreateOutputDirectories(string[] directories, out bool error) {
+        public static string CreateOutputDirectories(string[] directories, out bool error) {
             error = false;
 
             _ = MessageBox.Show("Select directory for output");
@@ -292,35 +292,7 @@ namespace CaseCounter {
 
         }
 
-        /*
-        private Dictionary<string, List<int>> BuildAnomalyDictionary(TimeSeriesSet tss) {
-            Dictionary<string, List<int>> aDict = new();
-
-            foreach ((string admin0, int day) in config.Admin0AnomalyList) {
-                UpdateDictionary(aDict, admin0, day);
-            }
-
-            foreach ((string admin0, string admin1, int day) in config.Admin1AnomalyList){
-
-            }
-            return aDict;
-        }
-
-        private void UpdateDictionary(Dictionary<string, List<int>> aDict, string admin0, int day) {
-            UpdateEntry(aDict, TimeSeries.BuildKey(DataType.Confirmed, admin0, "", ""), day);
-            UpdateEntry(aDict, TimeSeries.BuildKey(DataType.Deaths, admin0, "", ""), day);
-        }
-
-        private void UpdateEntry(Dictionary<string, List<int>> aDict, string key, int day) {
-            if (aDict.ContainsKey(key)) {
-                aDict[key].Add(day);
-            } else {
-                List<int> days = new();
-                days.Add(day);
-                aDict.Add(key, days);
-            }
-        }
-        */
+  
 
     }
 }
