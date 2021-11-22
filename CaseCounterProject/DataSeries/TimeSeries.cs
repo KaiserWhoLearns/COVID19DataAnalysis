@@ -239,6 +239,9 @@ namespace DataSeries {
 
             for (int i = 0; i <= ts.LastDay; i++)
                 data[i] += ts.data[i];
+
+            CaseCount += ts.CaseCount;
+
                                             // Slightly complicated to handle -1 as the no-population value
                                             // Possibly,  using 0 as the no-population value would make things easier
             if (ts.Population != -1)
@@ -371,6 +374,35 @@ namespace DataSeries {
             }
             sb.Append("\r\n");
             return ts;
+        }
+
+        // Compute the distance between normalized time series - using euclidean distance on the daily counts
+        public double NormalizedDistance(TimeSeries ts) {
+            if (LastDay != ts.LastDay)
+                return -1;
+
+            double count1 = 0.0;
+            for (int i = 0; i <= LastDay; i++)
+                count1 += data[i];
+
+            double count2 = 0.0;
+            for (int i = 0; i <= LastDay; i++)
+                count2 += ts.data[i];
+
+
+            double sum = 0.0;
+
+            for (int i = 0; i <= LastDay; i++) {
+                double diff = data[i] / count1 - ts.data[i] / count2;
+                sum += diff * diff;
+            }
+            return Math.Sqrt(sum);
+        }
+
+        public string ShortName {
+            get {
+                return string.IsNullOrEmpty(Admin2) ? (string.IsNullOrEmpty(Admin1) ? Admin0 : Admin1) : Admin2;
+            }
         }
     }
 

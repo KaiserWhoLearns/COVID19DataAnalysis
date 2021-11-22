@@ -58,6 +58,9 @@
                 <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
                 <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>
                 <MenuItem Header="Export Peakset (5 peaks)" Click="ExportPeaks5_Click"/>
+                <Separator/>
+                <MenuItem Header="Compute Distances" Click="ComputeDistances_Click"/>
+
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

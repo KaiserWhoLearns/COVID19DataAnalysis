@@ -343,5 +343,22 @@ namespace CaseCounter {
                 System.Windows.MessageBox.Show("No time series selected");
             }
         }
+
+        private void ComputeDistances_Click(object sender, RoutedEventArgs e) {
+            caseListBox.Items.Clear();
+
+            List<TimeSeries> tsList = new();
+            foreach (object tsKey in timeSeriesListBox.SelectedItems) {
+                tsList.Add(timeSeriesSet.GetSeries((string)tsKey));
+            }
+
+            for (int i = 0; i < tsList.Count - 1; i++) {
+                for (int j = i + 1; j < tsList.Count; j++) {
+                    string str = $"{tsList[i].ShortName} to {tsList[j].ShortName}: {tsList[i].NormalizedDistance(tsList[j])}";
+                    caseListBox.Items.Add(str);
+                }
+            }
+
+        }
     }
 }
