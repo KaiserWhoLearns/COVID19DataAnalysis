@@ -100,7 +100,7 @@ def plot_covariant_heatmaps_and_area_plots(output_dir='data/covariants_images/')
     weeks_data = list(variant_data.columns)[len(column_headers):]
 
     chosen_countries = list(totals['Country'].unique())
-    ignored_countries = ['Chile', 'South Africa', 'Bangladesh']
+    ignored_countries = ['Chile', 'South Africa', 'Bangladesh', 'Rwanda', 'Guadeloupe']
 
     for country in chosen_countries:
         if country in ignored_countries:
@@ -157,11 +157,14 @@ def plot_covariant_heatmaps_and_area_plots(output_dir='data/covariants_images/')
         s_df = pandas.DataFrame(data=stacked_data)
         s_df.to_csv(f'data/covariants_country_clusters/{country}.csv', header=True, index=False)
         s_df.index = weeks_data
-        ax = s_df.plot.area(stacked=True)
-        ax.legend(fancybox=True, ncol=5, bbox_to_anchor=(0, -0.5), loc='center left')
-        plt.xticks(rotation=90)
-        plt.savefig(f'{output_dir}{country}_area.png', bbox_inches='tight')
-        plt.close('all')
+        try:
+            ax = s_df.plot.area(stacked=True)
+            ax.legend(fancybox=True, ncol=5, bbox_to_anchor=(0, -0.5), loc='center left')
+            plt.xticks(rotation=90)
+            plt.savefig(f'{output_dir}{country}_area.png', bbox_inches='tight')
+            plt.close('all')
+        except TypeError:
+            print(f"Ignoring Plot for {country}")
 
 
 def pipeline():
@@ -180,5 +183,3 @@ def pipeline():
 
 if __name__ == '__main__':
     pipeline()
-
-
