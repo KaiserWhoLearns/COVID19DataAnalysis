@@ -354,7 +354,7 @@ namespace CaseCounter {
 
             for (int i = 0; i < tsList.Count - 1; i++) {
                 for (int j = i + 1; j < tsList.Count; j++) {
-                    string str = $"{tsList[i].ShortName} to {tsList[j].ShortName}: {tsList[i].NormalizedDistance(tsList[j])}";
+                    string str = $"{tsList[i].ShortName} to {tsList[j].ShortName}: {tsList[i].NormalizedDistance(tsList[j]):f4}";
                     caseListBox.Items.Add(str);
                 }
             }
@@ -371,6 +371,48 @@ namespace CaseCounter {
                 colorCanvas.Background = Brushes.Green;
             } else {
                 colorCanvas.Background = Brushes.Red; ;
+            }
+
+        }
+
+        private void ComputeCosines_Click(object sender, RoutedEventArgs e) {
+            caseListBox.Items.Clear();
+
+            List<TimeSeries> tsList = new();
+            foreach (object tsKey in timeSeriesListBox.SelectedItems) {
+                tsList.Add(timeSeriesSet.GetSeries((string)tsKey));
+            }
+
+            for (int i = 0; i < tsList.Count - 1; i++) {
+                for (int j = i + 1; j < tsList.Count; j++) {
+                    string str = $"{tsList[i].ShortName} to {tsList[j].ShortName}: {tsList[i].CosineDistance(tsList[j]):f4}";
+                    caseListBox.Items.Add(str);
+                }
+            }
+        }
+
+        private delegate List<(TimeSeries, double)> GetValueList(TimeSeriesSet tss, string key);
+        private void AllDistances_Click(object sender, RoutedEventArgs e) {
+
+            AllDistances((tss, key) => tss.GetDistanceList(key));
+        }
+
+        private void AllCosines_Click(object sender, RoutedEventArgs e) {
+            AllDistances((tss, key) => tss.GetCosineList(key));
+        }
+
+        private void AllDistances(GetValueList valueList) {
+            string tsKey = (string)timeSeriesListBox.SelectedItem;
+
+            if (!string.IsNullOrEmpty(tsKey)) {
+                List<(TimeSeries, double)> tsList = valueList(timeSeriesSet, tsKey); 
+
+                caseListBox.Items.Clear();
+                TimeSeries ts = timeSeriesSet.GetSeries(tsKey);
+                foreach ((TimeSeries ts1, double val) in tsList) {
+                    string str = $"{ts.ShortName} to {ts1.ShortName}: {val:f4}";
+                    caseListBox.Items.Add(str);
+                }
             }
 
         }

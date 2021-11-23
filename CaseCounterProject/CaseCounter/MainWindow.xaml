@@ -61,7 +61,10 @@
                 <MenuItem Header="Export All Peaksets" Click="ExportAllPeaks_Click"/>
                 <Separator/>
                 <MenuItem Header="Compute Distances" Click="ComputeDistances_Click"/>
-
+                <MenuItem Header="Compute Cosine Similarity" Click="ComputeCosines_Click"/>
+                <Separator/>
+                <MenuItem Header="Compute all distances" Click="AllDistances_Click"/>
+                <MenuItem Header="Compute all cosines" Click="AllCosines_Click"/>
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

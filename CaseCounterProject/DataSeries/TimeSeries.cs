@@ -40,11 +40,25 @@ namespace DataSeries {
                     return 0;
                 }
                 double count = 0.0;
-                for (int i = 0; i < LastDay; i++) {
+                for (int i = 0; i <= LastDay; i++) {
                     count += data[i];
                 }
 
                 return (int)count;
+            }
+        }
+
+        public double L2Norm {
+            get {
+                if (data == null || LastDay < 0) {
+                    return 0;
+                }
+                double count = 0.0;
+                for (int i = 0; i <= LastDay; i++) {
+                    count += data[i]*data[i];
+                }
+
+                return Math.Sqrt(count);
             }
         }
 
@@ -398,6 +412,21 @@ namespace DataSeries {
                 sum += diff * diff;
             }
             return Math.Sqrt(sum);
+        }
+
+        public double CosineDistance(TimeSeries ts) {
+            if (LastDay != ts.LastDay)
+                return -1;
+
+ 
+
+            double sum = 0.0;
+
+            for (int i = 0; i <= LastDay; i++) {
+                sum += data[i] * ts.data[i];
+            }
+
+            return sum / (L2Norm * ts.L2Norm);
         }
 
         public string ShortName {

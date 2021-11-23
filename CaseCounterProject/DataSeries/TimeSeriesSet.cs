@@ -38,7 +38,7 @@ namespace DataSeries {
             if (ir == 0.0)
                 return;
 
-            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Confirmed,  totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Confirmed, totalCases, ir, index);
             UpdatePopulation(admin0, admin1, admin2, fips, DataType.Deaths, totalCases, ir, index);
 
         }
@@ -46,7 +46,7 @@ namespace DataSeries {
         public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, DataType dataType, int totalCases, double incidence, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
-                                    // This probably never occurs due assigning counts prior to updating population
+            // This probably never occurs due assigning counts prior to updating population
             if (!series.ContainsKey(key)) {
                 series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips));
             }
@@ -71,7 +71,7 @@ namespace DataSeries {
             if (series.ContainsKey(ts.Key)) {
                 TimeSeries ts1 = series[ts.Key];
                 ts1.AddCounts(ts);
-              
+
             } else {
                 series.Add(ts.Key, ts);
             }
@@ -163,13 +163,13 @@ namespace DataSeries {
             foreach (TimeSeries ts in series.Values) {
                 tss.AddSeries(ts.ToDailyCount());
             }
- 
+
             return tss;
         }
 
-        public static readonly double[] WeekFilter = { 0.14286, 0.14286, 0.14286, 0.14286, 0.14286, 0.14286, 0.14286 }; 
+        public static readonly double[] WeekFilter = { 0.14286, 0.14286, 0.14286, 0.14286, 0.14286, 0.14286, 0.14286 };
 
-        public TimeSeriesSet WeeklySmoothing() {          
+        public TimeSeriesSet WeeklySmoothing() {
             return SmoothWithFilter(WeekFilter);
         }
 
@@ -207,9 +207,9 @@ namespace DataSeries {
                 TimeSeries tsState;
 
                 if (stateSeries.ContainsKey(seriesKey)) {
-                    tsState = stateSeries[seriesKey]; 
+                    tsState = stateSeries[seriesKey];
                 } else {
-                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population);  
+                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population);
                     stateSeries.Add(seriesKey, tsState);
                 }
                 tsState.AddCounts(ts);
@@ -233,7 +233,7 @@ namespace DataSeries {
                 if (nationalSeries.ContainsKey(seriesKey)) {
                     tsNational = nationalSeries[seriesKey];
                 } else {
-                    tsNational = new(ts.DataType, ts.Admin0, "", "",ts.Fips, ts.Population);
+                    tsNational = new(ts.DataType, ts.Admin0, "", "", ts.Fips, ts.Population);
                     nationalSeries.Add(seriesKey, tsNational);
                 }
                 tsNational.AddCounts(ts);
@@ -275,7 +275,7 @@ namespace DataSeries {
 
         }
 
-        public void  DetectOutliers(string path) {
+        public void DetectOutliers(string path) {
 
             StringBuilder sb = new();
 
@@ -310,7 +310,7 @@ namespace DataSeries {
             return tss;
         }
 
-        private static List<int> GetAnomalies(TimeSeries ts, List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List ){
+        private static List<int> GetAnomalies(TimeSeries ts, List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List) {
             List<int> days = new();
             if (string.IsNullOrEmpty(ts.Admin1)) {
                 foreach ((string admin0, int day) in admin0List) {
@@ -334,6 +334,29 @@ namespace DataSeries {
             }
 
             return (days.Count > 0) ? days : null;
+        }
+
+        private delegate double ComputeDistance(TimeSeries ts1, TimeSeries ts2);
+
+        public List<(TimeSeries, double)> GetDistanceList(string tsKey) {
+
+            return GetValueList((ts1, ts2) => ts1.NormalizedDistance(ts2), tsKey);
+        }
+        public List<(TimeSeries, double)> GetCosineList(string tsKey) {
+            return GetValueList((ts1, ts2) => ts1.CosineDistance(ts2), tsKey);
+        }
+
+        private List<(TimeSeries, double)> GetValueList(ComputeDistance distance, string tsKey) {
+            List<(TimeSeries, double)> tList = new();
+            TimeSeries ts = GetSeries(tsKey);
+
+            foreach (TimeSeries ts1 in series.Values) {
+                tList.Add((ts1, distance(ts, ts1)));
+            }
+
+            tList.Sort((x, y) => (x.Item2).CompareTo(y.Item2));
+
+            return tList;
         }
 
     }
