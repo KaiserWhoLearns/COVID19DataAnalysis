@@ -129,10 +129,41 @@ namespace CaseCounter {
                                                     "United Kingdom", "UK", "United Kingdom", "Unknown", "Israel", "From Diamond Princess", "Canada", " Montreal, QC",
                                                     "Canada", "London, ON", "Lebanon", "None", "Iraq", "None", "Austria", "None", "Canada", "Calgary, Alberta",
                                                     "Canada", "Edmonton, Alberta", "Germany", "Bavaria", "France", "Fench Guiana", "Cook Island", "New Zealand", "India",
-                                                    "Dadar Nagar Haveli", "Brazil", "Unknown", "Australia", "External territories", "Australia", "Jervis Bay Territory"};
+                                                    "Dadar Nagar Haveli", "Brazil", "Unknown", "Australia", "External territories", "Australia", "Jervis Bay Territory",
+                                                    "US","Chicago, IL","US","Boston, MA","US","Los Angeles, CA","US","Orange, CA","US","Santa Clara, CA","US","Seattle, WA",
+                                                    "US","Tempe, AZ","US","San Benito, CA","US","Madison, WI","US","San Diego County, CA","US","San Antonio, TX",
+                                                    "US","Ashland, NE","US","Travis, CA","US","Lackland, TX","US","Humboldt County, CA","US","Sacramento County, CA",
+                                                    "US","Omaha, NE (From Diamond Princess)","US","Travis, CA (From Diamond Princess)","US","Lackland, TX (From Diamond Princess)",
+                                                    "US","Unassigned Location (From Diamond Princess)","US","Portland, OR","US","Snohomish County, WA","US","Providence, RI",
+                                                    "US","King County, WA","US","Cook County, IL","US","Grafton County, NH","US","Hillsborough, FL","US","New York City, NY",
+                                                    "US","Placer County, CA","US","San Mateo, CA","US","Sarasota, FL","US","Sonoma County, CA","US","Umatilla, OR",
+                                                    "US","Fulton County, GA","US","Washington County, OR","US"," Norfolk County, MA","US","Berkeley, CA","US","Maricopa County, AZ",
+                                                    "US","Wake County, NC","US","Westchester County, NY","US","Orange County, CA","US","Contra Costa County, CA","US","Bergen County, NJ",
+                                                    "US","Harris County, TX","US","San Francisco County, CA","US","Clark County, NV","US","Fort Bend County, TX","US","Grant County, WA",
+                                                    "US","Queens County, NY","US","Santa Rosa County, FL","US","Williamson County, TN","US","New York County, NY",
+                                                    "US","Unassigned Location, WA","US","Montgomery County, MD","US","Suffolk County, MA","US","Denver County, CO",
+                                                    "US","Summit County, CO","US","Chatham County, NC","US","Delaware County, PA","US","Douglas County, NE","US","Fayette County, KY",
+                                                    "US","Floyd County, GA","US","Marion County, IN","US","Middlesex County, MA","US","Nassau County, NY","US","Norwell County, MA",
+                                                    "US","Ramsey County, MN","US","Washoe County, NV","US","Wayne County, PA","US","Yolo County, CA","US","Santa Clara County, CA",
+                                                    "US","Grand Princess Cruise Ship","US","Douglas County, CO","US","Providence County, RI","US","Alameda County, CA",
+                                                    "US","Broward County, FL","US","Fairfield County, CT","US","Lee County, FL","US","Pinal County, AZ","US","Rockland County, NY",
+                                                    "US","Saratoga County, NY","US","Charleston County, SC","US","Clark County, WA","US","Cobb County, GA","US","Davis County, UT",
+                                                    "US","El Paso County, CO","US","Honolulu County, HI","US","Jackson County, OR ","US","Jefferson County, WA","US","Kershaw County, SC",
+                                                    "US","Klamath County, OR","US","Madera County, CA","US","Pierce County, WA","US","Plymouth County, MA","US","Santa Cruz County, CA",
+                                                    "US","Tulsa County, OK","US","Montgomery County, TX","US","Norfolk County, MA","US","Montgomery County, PA","US","Fairfax County, VA",
+                                                    "US","Rockingham County, NH","US","Washington, D.C.","US","Berkshire County, MA","US","Davidson County, TN","US","Douglas County, OR",
+                                                    "US","Fresno County, CA","US","Harford County, MD","US","Hendricks County, IN","US","Hudson County, NJ","US","Johnson County, KS",
+                                                    "US","Kittitas County, WA","US","Manatee County, FL","US","Marion County, OR","US","Okaloosa County, FL","US","Polk County, GA",
+                                                    "US","Riverside County, CA","US","Shelby County, TN","US","Spokane County, WA","US","St. Louis County, MO",
+                                                    "US","Suffolk County, NY","US","Ulster County, NY","US","Unassigned Location, VT","US","Unknown Location, MA",
+                                                    "US","Volusia County, FL","US","Johnson County, IA","US","Harrison County, KY","US","Bennington County, VT","US","Carver County, MN",
+                                                    "US","Charlotte County, FL","US","Cherokee County, GA","US","Collin County, TX","US","Jefferson County, KY","US","Jefferson Parish, LA",
+                                                    "US","Shasta County, CA","US","Spartanburg County, SC"};
 
         // Triples for removal by Admin2.  Length must be divisible by 3.  
-        private readonly string[] Admin2Remove = { "US", "Washington", "Walla Walla County", "US", "Washington", "Garfield County" };
+        private readonly string[] Admin2Remove = { "US", "Washington", "Walla Walla County", "US", "Washington", "Garfield County", "US","Utah","Out of UT",
+                                                    "US", "Wyoming","unassigned", "US","Utah","Washington County", "US","Utah","unassigned", "US","Utah","Southwest",
+                                                    "US","California","Out of CA"};
 
         // Pairs of substitutions for Admin0.  Length must be even
         private readonly string[] Admin0Subs = { "Mainland China", "China", "Palestine", "West Bank and Gaza", "The Gambia", "Gambia",
@@ -196,11 +227,11 @@ namespace CaseCounter {
                                                           "Russia", "131", "Pakistan", "140", "Mexico", "119", "Netherlands", "177", "Italy", "113", "India", "140", 
                                                           "Germany", "113", "Brazil", "119",  "Belgium", "295", "Chile", "119"};
         // Province level,  remove all districts
-        private readonly string[] Admin1StarAnomalies = { "US", "Puerto Rico", "178", "US", "Puerto Rico", "292" };
+        private readonly string[] Admin1StarAnomalies = { "US", "Puerto Rico", "178", "US", "Puerto Rico", "292", "US", "Georgia", "286" };
 
         // County level
         private readonly string[] Admin2Anomalies = {"US", "New York", "Bronx", "222", "US", "New York", "Kings", "222", "US", "New York", "New York", "222",
-                                                     "US", "New York", "Queens", "222", "US", "New York", "Richmond", "222" };
+                                                     "US", "New York", "Queens", "222", "US", "New York", "Richmond", "222", "US", "Massachusetts", "Unassigned","225" };
 
     }
 }
