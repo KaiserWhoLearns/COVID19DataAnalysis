@@ -65,6 +65,7 @@
                 <Separator/>
                 <MenuItem Header="Compute all distances" Click="AllDistances_Click"/>
                 <MenuItem Header="Compute all cosines" Click="AllCosines_Click"/>
+                <MenuItem Header="Compute all with window" Click="WindowDistances_Click"/>
             </MenuItem>
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>

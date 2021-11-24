@@ -634,6 +634,166 @@ US/New York/Queens+Confirmed 222: 71356 -> 26.833333333333332
 US/New York/Queens+Deaths 222: 7222 -> 1.3333333333333333  
 US/New York/Richmond+Confirmed 222: 15355 -> 9.166666666666666  
 US/New York/Richmond+Deaths 222: 1083 -> 0.3333333333333333  
+US/Puerto Rico/Adjuntas+Confirmed 178: 68 -> 0.6666666666666666   292: -82 -> 1.5  
+US/Puerto Rico/Adjuntas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Aguada+Confirmed 178: 67 -> 1.3333333333333333   292: -204 -> 2.3333333333333335  
+US/Puerto Rico/Aguada+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Aguadilla+Confirmed 178: 102 -> 3   292: -355 -> 5.333333333333333  
+US/Puerto Rico/Aguadilla+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Aguas Buenas+Confirmed 178: 77 -> 0.8333333333333334   292: -178 -> 3.6666666666666665  
+US/Puerto Rico/Aguas Buenas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Aibonito+Confirmed 178: 55 -> 1.1666666666666667   292: -136 -> 1.6666666666666667  
+US/Puerto Rico/Aibonito+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Anasco+Confirmed 178: 85 -> 1.1666666666666667   292: -163 -> 4.333333333333333  
+US/Puerto Rico/Anasco+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Arecibo+Confirmed 178: 174 -> 2.5   292: -541 -> 10.833333333333334  
+US/Puerto Rico/Arecibo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Arroyo+Confirmed 178: 63 -> 0.3333333333333333   292: -155 -> 1  
+US/Puerto Rico/Arroyo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Barceloneta+Confirmed 178: 34 -> 1   292: -158 -> 4  
+US/Puerto Rico/Barceloneta+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Barranquitas+Confirmed 178: 119 -> 2.6666666666666665   292: -379 -> 7.166666666666667  
+US/Puerto Rico/Barranquitas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Bayamon+Confirmed 178: 697 -> 14.666666666666666   292: -2206 -> 35.166666666666664  
+US/Puerto Rico/Bayamon+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Cabo Rojo+Confirmed 178: 127 -> 2.1666666666666665   292: -350 -> 1.5  
+US/Puerto Rico/Cabo Rojo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Caguas+Confirmed 178: 379 -> 8.833333333333334   292: -972 -> 25.833333333333332  
+US/Puerto Rico/Caguas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Camuy+Confirmed 178: 65 -> 0.6666666666666666   292: -213 -> 6.666666666666667  
+US/Puerto Rico/Camuy+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Canovanas+Confirmed 178: 205 -> 3.3333333333333335   292: -421 -> 5.833333333333333  
+US/Puerto Rico/Canovanas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Carolina+Confirmed 178: 544 -> 15.333333333333334   292: -1555 -> 27.166666666666668  
+US/Puerto Rico/Carolina+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Catano+Confirmed 178: 82 -> 3.1666666666666665   292: -299 -> 6  
+US/Puerto Rico/Catano+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Cayey+Confirmed 178: 131 -> 1   292: -339 -> 3.1666666666666665  
+US/Puerto Rico/Cayey+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Ceiba+Confirmed 178: 40 -> 0.16666666666666666   292: -129 -> 0.8333333333333334  
+US/Puerto Rico/Ceiba+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Ciales+Confirmed 178: 76 -> 1   292: -151 -> 6  
+US/Puerto Rico/Ciales+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Cidra+Confirmed 178: 96 -> 1   292: -210 -> 5.166666666666667  
+US/Puerto Rico/Cidra+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Coamo+Confirmed 178: 61 -> 2.3333333333333335   292: -287 -> 3.6666666666666665  
+US/Puerto Rico/Coamo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Comerio+Confirmed 178: 76 -> 1.3333333333333333   292: -162 -> 0.8333333333333334  
+US/Puerto Rico/Comerio+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Corozal+Confirmed 178: 71 -> 3   292: -489 -> 5.333333333333333  
+US/Puerto Rico/Corozal+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Culebra+Confirmed 178: 10 -> 0.16666666666666666   292: 0 -> -0.6666666666666666  
+US/Puerto Rico/Culebra+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Dorado+Confirmed 178: 168 -> 2.8333333333333335   292: -616 -> 5.666666666666667  
+US/Puerto Rico/Dorado+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Fajardo+Confirmed 178: 117 -> 2.6666666666666665   292: -442 -> 1  
+US/Puerto Rico/Fajardo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Florida+Confirmed 178: 61 -> 4   292: -296 -> 2  
+US/Puerto Rico/Florida+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Guanica+Confirmed 178: 48 -> 0.5   292: -110 -> 0.3333333333333333  
+US/Puerto Rico/Guanica+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Guayama+Confirmed 178: 95 -> 1.3333333333333333   292: -240 -> 3  
+US/Puerto Rico/Guayama+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Guayanilla+Confirmed 178: 89 -> 0.6666666666666666   292: -190 -> 2  
+US/Puerto Rico/Guayanilla+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Guaynabo+Confirmed 178: 510 -> 7   292: -1001 -> 21.333333333333332  
+US/Puerto Rico/Guaynabo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Gurabo+Confirmed 178: 142 -> 2.3333333333333335   292: -324 -> 7.666666666666667  
+US/Puerto Rico/Gurabo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Hatillo+Confirmed 178: 59 -> 0.8333333333333334   292: -218 -> 3  
+US/Puerto Rico/Hatillo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Hormigueros+Confirmed 178: 57 -> 1.6666666666666667   292: -108 -> 2.8333333333333335  
+US/Puerto Rico/Hormigueros+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Humacao+Confirmed 178: 119 -> 0.6666666666666666   292: -430 -> 4.166666666666667  
+US/Puerto Rico/Humacao+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Isabela+Confirmed 178: 74 -> 1.5   292: -201 -> 6.166666666666667  
+US/Puerto Rico/Isabela+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Jayuya+Confirmed 178: 161 -> 1.3333333333333333   292: -221 -> 1.8333333333333333  
+US/Puerto Rico/Jayuya+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Juana Diaz+Confirmed 178: 123 -> 2   292: -248 -> 2.5  
+US/Puerto Rico/Juana Diaz+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Juncos+Confirmed 178: 66 -> 1.3333333333333333   292: -265 -> 7  
+US/Puerto Rico/Juncos+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Lajas+Confirmed 178: 57 -> 0.5   292: -160 -> 0.3333333333333333  
+US/Puerto Rico/Lajas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Lares+Confirmed 178: 100 -> 0.5   292: -326 -> 3.6666666666666665  
+US/Puerto Rico/Lares+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Las Marias+Confirmed 178: 32 -> 0.3333333333333333   292: -72 -> 0.5  
+US/Puerto Rico/Las Marias+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Las Piedras+Confirmed 178: 101 -> 1   292: -329 -> 1.8333333333333333  
+US/Puerto Rico/Las Piedras+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Loiza+Confirmed 178: 61 -> 0.6666666666666666   292: -163 -> 4.333333333333333  
+US/Puerto Rico/Loiza+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Luquillo+Confirmed 178: 67 -> 1   292: -176 -> 0.3333333333333333  
+US/Puerto Rico/Luquillo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Manati+Confirmed 178: 75 -> 3.6666666666666665   292: -473 -> 5.5  
+US/Puerto Rico/Manati+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Maricao+Confirmed 178: 35 -> 0.16666666666666666   292: 0 -> -7.833333333333333  
+US/Puerto Rico/Maricao+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Maunabo+Confirmed 178: 33 -> 1   292: -113 -> 1  
+US/Puerto Rico/Maunabo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Mayaguez+Confirmed 178: 291 -> 6.833333333333333   292: -549 -> 5.833333333333333  
+US/Puerto Rico/Mayaguez+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Moca+Confirmed 178: 87 -> 1.8333333333333333   292: -277 -> 9.166666666666666  
+US/Puerto Rico/Moca+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Morovis+Confirmed 178: 108 -> 4.166666666666667   292: -261 -> 4.333333333333333  
+US/Puerto Rico/Morovis+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Naguabo+Confirmed 178: 58 -> 1   292: -139 -> 0.5  
+US/Puerto Rico/Naguabo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Naranjito+Confirmed 178: 103 -> 3.5   292: -478 -> 3  
+US/Puerto Rico/Naranjito+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Orocovis+Confirmed 178: 103 -> 2.6666666666666665   292: -216 -> 5.5  
+US/Puerto Rico/Orocovis+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Out of PR+Confirmed 178: 431 -> 5.833333333333333   292: -635 -> 0  
+US/Puerto Rico/Out of PR+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Patillas+Confirmed 178: 70 -> 0.8333333333333334   292: -146 -> 0.8333333333333334  
+US/Puerto Rico/Patillas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Penuelas+Confirmed 178: 39 -> 1.3333333333333333   292: -96 -> 1.5  
+US/Puerto Rico/Penuelas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Ponce+Confirmed 178: 302 -> 3.5   292: -679 -> 5.333333333333333  
+US/Puerto Rico/Ponce+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Quebradillas+Confirmed 178: 50 -> 0.6666666666666666   292: -96 -> 3.6666666666666665  
+US/Puerto Rico/Quebradillas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Rincon+Confirmed 178: 56 -> 2   292: -127 -> 0.6666666666666666  
+US/Puerto Rico/Rincon+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Rio Grande+Confirmed 178: 160 -> 2   292: -394 -> 3.6666666666666665  
+US/Puerto Rico/Rio Grande+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Sabana Grande+Confirmed 178: 87 -> 1.1666666666666667   292: -153 -> 0.3333333333333333  
+US/Puerto Rico/Sabana Grande+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Salinas+Confirmed 178: 120 -> 0.6666666666666666   292: -457 -> 2.1666666666666665  
+US/Puerto Rico/Salinas+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/San German+Confirmed 178: 102 -> 1.6666666666666667   292: -207 -> 1.8333333333333333  
+US/Puerto Rico/San German+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/San Juan+Confirmed 178: 1472 -> 38.166666666666664   292: -4051 -> 58.333333333333336  
+US/Puerto Rico/San Juan+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/San Lorenzo+Confirmed 178: 82 -> 2.3333333333333335   292: -270 -> 5  
+US/Puerto Rico/San Lorenzo+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/San Sebastian+Confirmed 178: 123 -> 2.6666666666666665   292: -617 -> 17.833333333333332  
+US/Puerto Rico/San Sebastian+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Santa Isabel+Confirmed 178: 67 -> 1   292: -223 -> 1.1666666666666667  
+US/Puerto Rico/Santa Isabel+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Toa Alta+Confirmed 178: 246 -> 7   292: -777 -> 11.5  
+US/Puerto Rico/Toa Alta+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Toa Baja+Confirmed 178: 254 -> 5.5   292: -952 -> 16.666666666666668  
+US/Puerto Rico/Toa Baja+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Trujillo Alto+Confirmed 178: 251 -> 4   292: -652 -> 14.5  
+US/Puerto Rico/Trujillo Alto+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Unassigned+Confirmed 178: 238 -> 20.5   292: -2259 -> 308  
+US/Puerto Rico/Unassigned+Deaths 178: 178 -> 0.3333333333333333   292: 10 -> 7.333333333333333  
+US/Puerto Rico/Utuado+Confirmed 178: 39 -> 0.3333333333333333   292: -163 -> 5.166666666666667  
+US/Puerto Rico/Utuado+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Vega Alta+Confirmed 178: 115 -> 2.3333333333333335   292: -508 -> 6.5  
+US/Puerto Rico/Vega Alta+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Vega Baja+Confirmed 178: 167 -> 7.166666666666667   292: -489 -> 11.5  
+US/Puerto Rico/Vega Baja+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Vieques+Confirmed 178: 27 -> 0.5   292: -83 -> 0  
+US/Puerto Rico/Vieques+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Villalba+Confirmed 178: 61 -> 0.5   292: -99 -> 5  
+US/Puerto Rico/Villalba+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Yabucoa+Confirmed 178: 55 -> 1.5   292: -272 -> 2.6666666666666665  
+US/Puerto Rico/Yabucoa+Deaths 178: 0 -> 0   292: 0 -> 0  
+US/Puerto Rico/Yauco+Confirmed 178: 135 -> 2.3333333333333335   292: -404 -> 3.5  
+US/Puerto Rico/Yauco+Deaths 178: 0 -> 0   292: 0 -> 0  
 Ukraine/Cherkasy Oblast+Confirmed 131: 406 -> 3.8333333333333335  
 Ukraine/Cherkasy Oblast+Deaths 131: 16 -> 0  
 Ukraine/Chernihiv Oblast+Confirmed 131: 177 -> 10.166666666666666  

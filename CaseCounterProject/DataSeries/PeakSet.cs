@@ -99,7 +99,7 @@ namespace DataSeries {
             Admin1 = ts.Admin1;
             Admin2 = ts.Admin2;
             Population = ts.Population;
-            CaseCount = ts.CaseCount;
+            CaseCount = ts.CaseCount();
 
             Key = ts.Key;
 

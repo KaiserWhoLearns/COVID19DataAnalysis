@@ -288,12 +288,13 @@ namespace DataSeries {
             }
         }
 
-        public TimeSeriesSet RemoveAnomalies(List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List, string path) {
+        public TimeSeriesSet RemoveAnomalies(List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, int)> admin1StarList, 
+                                        List<(string, string, string, int)> admin2List, string path) {
             TimeSeriesSet tss = new(SeriesType);
             StringBuilder sb = new();
 
             foreach (TimeSeries ts1 in series.Values) {
-                List<int> days = GetAnomalies(ts1, admin0List, admin0StarList, admin2List);
+                List<int> days = GetAnomalies(ts1, admin0List, admin0StarList, admin1StarList, admin2List);
                 if (days != null) {
                     TimeSeries ts2 = ts1.RemoveAnomalies(days, sb);
                     tss.AddSeries(ts2);
@@ -310,7 +311,8 @@ namespace DataSeries {
             return tss;
         }
 
-        private static List<int> GetAnomalies(TimeSeries ts, List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, string, int)> admin2List) {
+        private static List<int> GetAnomalies(TimeSeries ts, List<(string, int)> admin0List, List<(string, int)> admin0StarList, 
+                                            List<(string, string, int)> admin1StarList, List<(string, string, string, int)> admin2List) {
             List<int> days = new();
             if (string.IsNullOrEmpty(ts.Admin1)) {
                 foreach ((string admin0, int day) in admin0List) {
@@ -326,6 +328,11 @@ namespace DataSeries {
                     }
                 }
             } else {
+                foreach ((string admin0, string admin1, int day) in admin1StarList) {
+                    if (ts.Admin0 == admin0 && ts.Admin1 == admin1) {
+                        days.Add(day);
+                    }
+                }
                 foreach ((string admin0, string admin1, string admin2, int day) in admin2List) {
                     if (ts.Admin0 == admin0 && ts.Admin1 == admin1 && ts.Admin2 == admin2) {
                         days.Add(day);
@@ -337,11 +344,18 @@ namespace DataSeries {
         }
 
         private delegate double ComputeDistance(TimeSeries ts1, TimeSeries ts2);
+        private delegate double ComputeDistance2(TimeSeries ts1, TimeSeries ts2, int start, int end);
 
         public List<(TimeSeries, double)> GetDistanceList(string tsKey) {
 
             return GetValueList((ts1, ts2) => ts1.NormalizedDistance(ts2), tsKey);
         }
+
+        public List<(TimeSeries, double)> GetDistanceList(string tsKey, int start, int end) {
+
+            return GetValueList2((ts1, ts2, start, end) => ts1.NormalizedDistance(ts2, start, end), tsKey, start, end);
+        }
+
         public List<(TimeSeries, double)> GetCosineList(string tsKey) {
             return GetValueList((ts1, ts2) => ts1.CosineDistance(ts2), tsKey);
         }
@@ -352,6 +366,19 @@ namespace DataSeries {
 
             foreach (TimeSeries ts1 in series.Values) {
                 tList.Add((ts1, distance(ts, ts1)));
+            }
+
+            tList.Sort((x, y) => (x.Item2).CompareTo(y.Item2));
+
+            return tList;
+        }
+
+        private List<(TimeSeries, double)> GetValueList2(ComputeDistance2 distance, string tsKey, int start, int end) {
+            List<(TimeSeries, double)> tList = new();
+            TimeSeries ts = GetSeries(tsKey);
+
+            foreach (TimeSeries ts1 in series.Values) {
+                tList.Add((ts1, distance(ts, ts1, start, end)));
             }
 
             tList.Sort((x, y) => (x.Item2).CompareTo(y.Item2));

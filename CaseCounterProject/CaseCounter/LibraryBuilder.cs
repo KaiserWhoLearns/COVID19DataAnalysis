@@ -68,7 +68,7 @@ namespace CaseCounter {
                 dailyCount_TSS.DetectNegativeCounts(Path.Combine(topLevelOutputDir, idf));
             }
             if (RemoveAnomalies) {
-                dailyCount_TSS = dailyCount_TSS.RemoveAnomalies(config.Admin0AnomalyList, config.Admin0StarAnomalyList, config.Admin2AnomalyList,
+                dailyCount_TSS = dailyCount_TSS.RemoveAnomalies(config.Admin0AnomalyList, config.Admin0StarAnomalyList, config.Admin1StarAnomalyList, config.Admin2AnomalyList,
                     Path.Combine(topLevelOutputDir, idf));
                 dailyCount_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "TS_Daily_Updated.csv"));
             }

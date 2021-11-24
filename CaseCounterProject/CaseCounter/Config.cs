@@ -23,6 +23,7 @@ namespace CaseCounter {
 
         public List<(string, int)> Admin0AnomalyList { get; }
         public List<(string, int)> Admin0StarAnomalyList { get; }
+        public List<(string, string, int)> Admin1StarAnomalyList { get; }
         public List<(string, string, string, int)> Admin2AnomalyList { get; }
 
         public List<string> UsStatesList { get; }
@@ -94,6 +95,14 @@ namespace CaseCounter {
             }
             for (int i = 0; i < Admin0StarAnomalies.Length; i += 2) {
                 Admin0StarAnomalyList.Add((Admin0StarAnomalies[i], int.Parse(Admin0StarAnomalies[i + 1])));
+            }
+
+            Admin1StarAnomalyList = new();
+            if (Admin1StarAnomalies.Length % 3 != 0) {
+                throw new ProgrammingException("Admin1StarAnomalies needs length divisible by 3");
+            }
+            for (int i = 0; i < Admin1StarAnomalies.Length; i += 3) {
+                Admin1StarAnomalyList.Add((Admin1StarAnomalies[i], Admin1StarAnomalies[i + 1], int.Parse(Admin1StarAnomalies[i + 2])));
             }
 
             Admin2AnomalyList = new();
@@ -182,10 +191,12 @@ namespace CaseCounter {
         // Country level anomalies
         private readonly string[] Admin0Anomalies = { "France", "484" };
 
-        // Province level,  * indicates all provinces
+        // Country level,  remove all provinces
         private readonly string[] Admin0StarAnomalies = { "United Kingdom", "141", "United Kingdom", "162", "Ukraine", "131", "Sweden", "135", "Spain", "113",
                                                           "Russia", "131", "Pakistan", "140", "Mexico", "119", "Netherlands", "177", "Italy", "113", "India", "140", 
                                                           "Germany", "113", "Brazil", "119",  "Belgium", "295", "Chile", "119"};
+        // Province level,  remove all districts
+        private readonly string[] Admin1StarAnomalies = { "US", "Puerto Rico", "178", "US", "Puerto Rico", "292" };
 
         // County level
         private readonly string[] Admin2Anomalies = {"US", "New York", "Bronx", "222", "US", "New York", "Kings", "222", "US", "New York", "New York", "222",

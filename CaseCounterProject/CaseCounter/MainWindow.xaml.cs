@@ -416,5 +416,9 @@ namespace CaseCounter {
             }
 
         }
+
+        private void WindowDistances_Click(object sender, RoutedEventArgs e) {
+            AllDistances((tss, key) => tss.GetDistanceList(key, 525, 640));
+        }
     }
 }

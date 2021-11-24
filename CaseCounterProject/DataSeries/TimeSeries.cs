@@ -34,18 +34,20 @@ namespace DataSeries {
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
-        public int CaseCount {
-            get {
-                if (data == null || LastDay < 0) {
-                    return 0;
-                }
-                double count = 0.0;
-                for (int i = 0; i <= LastDay; i++) {
-                    count += data[i];
-                }
+        public int CaseCount() {
+            return CaseCount(0, LastDay);
+        }
 
-                return (int)count;
+
+        public int CaseCount(int start, int end) {
+            if (data == null || LastDay < 0) {
+                return 0;
             }
+            double count = 0.0;
+            for (int i = start; i <= end; i++) {
+                count += data[i];
+            }
+            return (int)count;
         }
 
         public double L2Norm {
@@ -191,7 +193,7 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Fips + "," + Population + "," + CaseCount);
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Fips + "," + Population + "," + CaseCount());
 
             for (int i = 0; i <= LastDay; i++) {
                 _ = sb.Append("," + data[i].ToString("F2"));
@@ -402,12 +404,32 @@ namespace DataSeries {
             if (LastDay != ts.LastDay)
                 return -1;
 
-            double count1 = CaseCount;
-            double count2 = ts.CaseCount;
+            double count1 = CaseCount();
+            double count2 = ts.CaseCount();
 
             double sum = 0.0;
 
             for (int i = 0; i <= LastDay; i++) {
+                double diff = data[i] / count1 - ts.data[i] / count2;
+                sum += diff * diff;
+            }
+            return Math.Sqrt(sum);
+        }
+
+        public double NormalizedDistance(TimeSeries ts, int start, int end) {
+            if (LastDay != ts.LastDay)
+                return -1;
+            if (start < 0 || end > LastDay || start > end) {
+                throw new ProgrammingException("Invalid date range in Normalized Distance");
+            }
+                 
+
+            double count1 = CaseCount(start, end);
+            double count2 = ts.CaseCount(start, end);
+
+            double sum = 0.0;
+
+            for (int i = start; i <= end; i++) {
                 double diff = data[i] / count1 - ts.data[i] / count2;
                 sum += diff * diff;
             }
