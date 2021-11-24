@@ -11,6 +11,49 @@ from helpers.compute import roundup
 __NUMBER_OF_FILMS_IN_STRIP = 12
 
 
+def plot_group_neighbor_based_correlation(cases, deaths, case_vmax, death_vmax):
+    neighbor_map = loader.get_neighbor_map('USA', 'WA')
+
+    total_heatmaps_possible = len(neighbor_map)
+
+    for item, neighbors in neighbor_map.items():
+        print(f"Processing Neighbor Heatmaps for {item}")
+        updated_neighbors = [item] + neighbors
+        case_matrix = []
+        death_matrix = []
+        for i in updated_neighbors:
+            case_row = []
+            death_row = []
+            case_X = cases[i]
+            death_X = deaths[i]
+            for j in updated_neighbors:
+                case_Y = cases[j]
+                death_Y = deaths[j]
+
+                case_r, _case_p = pearsonr(case_X, case_Y)
+                death_r, death_p = pearsonr(death_X, death_Y)
+
+                case_row.append(case_r)
+                death_row.append(death_r)
+
+            case_matrix.append(case_row)
+            death_matrix.append(death_row)
+
+        fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(20, 15), sharey=True)
+
+        case_corr_df = pandas.DataFrame(data=case_matrix, index=updated_neighbors, columns=updated_neighbors)
+        death_corr_df = pandas.DataFrame(data=death_matrix, index=updated_neighbors, columns=updated_neighbors)
+
+        sns.heatmap(case_corr_df, annot=False, ax=ax[0], rasterized=True, cbar_kws={"orientation": "horizontal"})
+        sns.heatmap(death_corr_df, annot=False, ax=ax[1], rasterized=True, cbar_kws={"orientation": "horizontal"})
+
+        ax[0].set_title('Correlation of Cases per {}'.format(heatmap.get_normalized_per_population_value()))
+        ax[1].set_title('Correlation of Deaths per {}'.format(heatmap.get_normalized_per_population_value()))
+
+        plt.savefig(f'results/USA_Correlations/WA_{item}_correlation_heatmap.png', bbox_inches='tight')
+        plt.close()
+
+
 def plot_heatmap_case_death_correlation_pearson(cases, deaths, filter_items, name):
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(20, 15), sharey=True)
 
@@ -144,6 +187,13 @@ def plot_case_and_death_timeline_on_map(state_name='Washington', state_column_fi
     # print(f'Cases: {calibrate_min} --> {calibrate_case_max}')
     # print(f'Death: {calibrate_min} --> {calibrate_death_max}')
 
+    plot_group_neighbor_based_correlation(
+        state_case_heatmap,
+        state_death_heatmap,
+        calibrate_case_max,
+        calibrate_death_max,
+    )
+
     fig, ax = plt.subplots(nrows=2, ncols=__NUMBER_OF_FILMS_IN_STRIP, figsize=(70, 20), sharex=True, sharey=True)
     # Plot all the cases in the first row
     for plot_row_index, (columns, vmax_filter) in enumerate([(state_case_matrix_columns, calibrate_case_max),
@@ -173,7 +223,8 @@ def plot_case_and_death_timeline_on_map(state_name='Washington', state_column_fi
 
 
 if __name__ == '__main__':
-    states = ['Washington', 'California', 'Oregon', 'Florida', 'New York', 'Arizona', 'North Dakota', 'South Dakota']
+    # states = ['Washington', 'California', 'Oregon', 'Florida', 'New York', 'Arizona', 'North Dakota', 'South Dakota']
+    states = ['Washington']  # , 'California', 'Oregon', 'Florida', 'New York', 'Arizona', 'North Dakota', 'South Dakota']
     # Examples!
     for state in states:
         print(f"Plotting case and death timeline for {state}")

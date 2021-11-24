@@ -1,3 +1,4 @@
+import json
 from collections import defaultdict
 
 from pkg_resources import resource_filename
@@ -91,3 +92,23 @@ def get_united_states_case_and_death_time_series_data(county=True):
     cases = __load_file(case_file_path)
     deaths = __load_file(death_file_path)
     return cases, deaths
+
+
+def get_neighbor_map(country='USA', state='WA'):
+    filepath = f'neighbor_map/{country}/{state}.json'
+    local_ref_path = resource_filename(__name__, filepath)
+    with open(local_ref_path) as f:
+        x = json.load(f)
+        return x
+
+
+def generate_neighbor_map_from_census_data():
+    """
+    Processes census data about county boundaries and generates the data in a readable JSON format.
+    :return: json data written to a file.
+    """
+    census_file = resource_filename(__name__, 'neighbor_map/county_adjacency.txt')
+
+    with open(census_file) as f:
+        lines = f.readlines()
+    return lines
