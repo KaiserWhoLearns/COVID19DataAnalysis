@@ -280,8 +280,10 @@ namespace DataSeries {
         public TimeSeries ScaleByPopulation() {
             TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
 
+                            // Cases per 100K or deaths per 10M
+            double scaleFactor = (DataType == DataType.Confirmed) ? 100000 : 10000000;
             for (int i = 0; i <= LastDay; i++) {
-                double val = (Population >= 1) ? data[i] * 100000 / Population : 0;
+                double val = (Population >= 1) ? data[i] * scaleFactor / Population : 0;
                 ts.SetValue(i, val);
             }
 

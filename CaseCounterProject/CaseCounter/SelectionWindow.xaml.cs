@@ -17,7 +17,7 @@ namespace CaseCounter {
         }
 
         private void Initialize() {
-            TimeSeriesSet ts = ((MainWindow)Application.Current.MainWindow).TimeSeriesSet;
+            TimeSeriesSet ts = ((MainWindow)Application.Current.MainWindow).TimeSeriesSetOne;
 
         }
         private void SelectButtonClick(object sender, RoutedEventArgs e) {

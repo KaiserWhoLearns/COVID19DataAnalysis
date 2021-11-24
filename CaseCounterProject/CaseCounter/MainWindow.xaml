@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CaseCounter"
         xmlns:scottplot="clr-namespace:ScottPlot;assembly=ScottPlot"
         mc:Ignorable="d"
-        Title="Case Counter" Height="800" Width="1200">
+        Title="Case Counter" Height="800" Width="1600">
     
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -15,6 +15,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -27,7 +28,8 @@
                 <Separator/>
                 <MenuItem Header="Build Time Series" Click="BuildTimeSeries_Click"/>
                 <MenuItem Header="Save Time Series" Click="SaveTimeSeries_Click"/>
-                <MenuItem Header="Load Time Series" Click="LoadTimeSeries_Click"/>
+                <MenuItem Header="Load Time Series One" Click="LoadTimeSeries_Click"/>
+                <MenuItem Header="Load Time Series Two" Click="LoadTimeSeries2_Click"/>
                 <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
                 <Separator/>
                 <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
@@ -70,7 +72,19 @@
         </Menu>
         <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>
         <ListBox Grid.Row="2" Grid.Column ="1" x:Name="fileListBox"/>
-        <ListBox Grid.Row="2" Grid.Column ="2" x:Name="timeSeriesListBox" SelectionMode="Multiple"/>
-        <Canvas Grid.Row="0"  Grid.Column="2" Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
+        <ListBox Grid.Row="2" Grid.Column ="2" x:Name="timeSeries1ListBox" SelectionMode="Multiple"/>
+        <ListBox Grid.Row="2" Grid.Column ="3" x:Name="timeSeries2ListBox" SelectionMode="Multiple"/>
+        <Canvas Grid.Row="0"  Grid.Column="3" Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Label Width="40" HorizontalAlignment ="Left">Start</Label>
+            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="700" 
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Label Width="40" HorizontalAlignment ="Left">End</Label>
+            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="700" 
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+        </StackPanel>
+        
     </Grid>
 </Window>
