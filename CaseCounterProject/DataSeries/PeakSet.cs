@@ -106,6 +106,12 @@ namespace DataSeries {
             peaks = FindPeaks(ts.GetData(), ts.LastDay + 1);
         }
 
+        public PeakSet(TimeSeries ts, int n) : this(ts) {
+            while (peaks.Count > n) {
+                RemoveSmallestValley();
+            }
+        }
+
         public static List<Peak> FindPeaks(double[] data, int len) {
 
             List<Peak> peaks = new();

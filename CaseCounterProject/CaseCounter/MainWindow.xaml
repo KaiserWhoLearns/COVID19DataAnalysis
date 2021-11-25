@@ -77,7 +77,7 @@
         <Canvas Grid.Row="0"  Grid.Column="3" Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <Label Width="40" HorizontalAlignment ="Left">Start</Label>
-            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="700" 
+            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Label Width="40" HorizontalAlignment ="Left">End</Label>

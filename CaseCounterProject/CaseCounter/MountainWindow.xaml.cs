@@ -28,7 +28,10 @@ namespace CaseCounter {
         public MountainWindow(TimeSeries ts) {
             InitializeComponent();
             timeSeries = ts;
-            peaks = new(ts);
+            PeakSet peaks1 = new(ts);
+            numberOfPeaksSlider.Maximum = peaks1.Count;
+            peaks = peaks1;
+
             PlotSeries(ts);
         }
 
@@ -82,6 +85,16 @@ namespace CaseCounter {
             peaks.RemoveSmallestValley();
             UpdatePeaks();
 
+        }
+
+        private void NPeaks_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+            if (timeSeries == null) {
+                return;
+            }
+
+            int n = (int)numberOfPeaksSlider.Value;
+            peaks = new(timeSeries, n);
+            UpdatePeaks();
         }
     }
 }

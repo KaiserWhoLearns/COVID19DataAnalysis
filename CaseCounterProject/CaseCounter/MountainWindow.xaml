@@ -14,9 +14,13 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" HorizontalAlignment="Left">
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
         <Button  Grid.Row="0" Width="100" Click="FindPeaks_MW_Click">Find Peaks</Button>
         <Button  Grid.Row="0" Width="100" Click="RemovePeak_MW_Click">Remove Valley</Button>
+         <Label Width="40" HorizontalAlignment ="Left">Peaks</Label>
+         <Slider  Width="100" Height="20" x:Name="numberOfPeaksSlider"  Value="1" Minimum="1" Maximum="20" SmallChange="1"  ValueChanged="NPeaks_ValueChanged"
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=numberOfPeaksSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
         </StackPanel>
 
 
