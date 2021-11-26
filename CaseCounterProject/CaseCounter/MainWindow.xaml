@@ -7,75 +7,55 @@
         xmlns:scottplot="clr-namespace:ScottPlot;assembly=ScottPlot"
         mc:Ignorable="d"
         Title="Case Counter" Height="800" Width="1600">
-    
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <StackPanel Margin="10" Orientation="Vertical">
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
 
-        <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="Load Source Files" Click="LoadSourceFile_Click"/>
-                <MenuItem Header="Clear Source Files" Click="ClearSourceFile_Click"/>
-                <Separator/>
-                <MenuItem Header="Build Time Series" Click="BuildTimeSeries_Click"/>
-                <MenuItem Header="Save Time Series" Click="SaveTimeSeries_Click"/>
-                <MenuItem Header="Load Time Series One" Click="LoadTimeSeries_Click"/>
-                <MenuItem Header="Load Time Series Two" Click="LoadTimeSeries2_Click"/>
-                <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
-                <Separator/>
-                <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
-            </MenuItem>
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="Load Time Series One" Click="LoadTimeSeries_Click"/>
+                    <MenuItem Header="Load Time Series Two" Click="LoadTimeSeries2_Click"/>
+                    <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
+                </MenuItem>
+                <MenuItem Header="Chart Display">
+                    <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
+                    <MenuItem Header="Display Multiple, Normalize by population" Click="Display_MultipleByPop_Click" />
+                    <MenuItem Header="Display Multiple, Normalize by count" Click="Display_MultipleByCount_Click" />
+                </MenuItem>
+                <MenuItem Header="Analyze Curve">
+                    <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
+                    <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
+                    <MenuItem Header="Display Segments" Click="DisplaySegments_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
+                    <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>
+                    <MenuItem Header="Export Peakset (5 peaks)" Click="ExportPeaks5_Click"/>
+                    <MenuItem Header="Export All Peaksets" Click="ExportAllPeaks_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Compute Distances" Click="ComputeDistances_Click"/>
+                    <MenuItem Header="Compute Cosine Similarity" Click="ComputeCosines_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Compute all distances" Click="AllDistances_Click"/>
+                    <MenuItem Header="Compute all cosines" Click="AllCosines_Click"/>
+                    <MenuItem Header="Compute all with window" Click="WindowDistances_Click"/>
+                </MenuItem>
+                <MenuItem Header="Data processing">
+                    <MenuItem Header="To daily count" Click="DailyCount_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Weekly Smoothing" Click="WeekSmooth_Click"/>
+                    <MenuItem Header="Gaussian Smoothing" Click="GaussSmooth_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Load Source Files" Click="LoadSourceFile_Click"/>
+                    <MenuItem Header="Clear Source Files" Click="ClearSourceFile_Click"/>
+                    <MenuItem Header="Build Time Series" Click="BuildTimeSeries_Click"/>
+                    <MenuItem Header="Save Time Series" Click="SaveTimeSeries_Click"/>
+                    <Separator/>
+                </MenuItem>
+            </Menu>
+            <Canvas Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
 
-            <MenuItem Header="TimeSeries">
-                <MenuItem Header="To daily count" Click="DailyCount_Click"/>
-                <Separator/>
-                <MenuItem Header="Select from countries" Click="SelectCountries_Click"/>
-                <Separator/>
-                <MenuItem Header="Weekly Smoothing" Click="WeekSmooth_Click"/>
-                <MenuItem Header="Gaussian Smoothing" Click="GaussSmooth_Click"/>
-            </MenuItem>
-            <MenuItem Header="Chart Display">
-                <MenuItem Header="Display" Click="Display_Click"/>
-                <MenuItem Header="Display, Normalize by population" Click="DisplayByPop_Click"/>
-                <MenuItem Header="Display, Normalize by count" Click="DisplayByCount_Click"/>
-                <Separator/>
-                <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
-                <MenuItem Header="Display Multiple, Normalize by population" Click="Display_MultipleByPop_Click" />
-                <MenuItem Header="Display Multiple, Normalize by count" Click="Display_MultipleByCount_Click" />
-            </MenuItem>
-            <MenuItem Header="Analyze Curve">
-                <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
-                <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
-                <MenuItem Header="Display Segments" Click="DisplaySegments_Click"/>
-                <Separator/>
-                <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
-                <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>
-                <MenuItem Header="Export Peakset (5 peaks)" Click="ExportPeaks5_Click"/>
-                <MenuItem Header="Export All Peaksets" Click="ExportAllPeaks_Click"/>
-                <Separator/>
-                <MenuItem Header="Compute Distances" Click="ComputeDistances_Click"/>
-                <MenuItem Header="Compute Cosine Similarity" Click="ComputeCosines_Click"/>
-                <Separator/>
-                <MenuItem Header="Compute all distances" Click="AllDistances_Click"/>
-                <MenuItem Header="Compute all cosines" Click="AllCosines_Click"/>
-                <MenuItem Header="Compute all with window" Click="WindowDistances_Click"/>
-            </MenuItem>
-        </Menu>
-        <ListBox Grid.Row="2" Grid.Column ="0" x:Name="caseListBox"/>
-        <ListBox Grid.Row="2" Grid.Column ="1" x:Name="fileListBox"/>
-        <ListBox Grid.Row="2" Grid.Column ="2" x:Name="timeSeries1ListBox" SelectionMode="Multiple"/>
-        <ListBox Grid.Row="2" Grid.Column ="3" x:Name="timeSeries2ListBox" SelectionMode="Multiple"/>
-        <Canvas Grid.Row="0"  Grid.Column="3" Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
-        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <Label Width="40" HorizontalAlignment ="Left">Start</Label>
             <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
@@ -85,6 +65,20 @@
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
         </StackPanel>
-        
-    </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ListBox Grid.Column ="0" x:Name="caseListBox"/>
+            <ListBox Grid.Column ="1" x:Name="fileListBox"/>
+            <ListBox Grid.Column ="2" x:Name="timeSeries1ListBox" SelectionMode="Multiple"/>
+            <ListBox Grid.Column ="3" x:Name="timeSeries2ListBox" SelectionMode="Multiple"/>
+        </Grid>
+ 
+    </StackPanel>
 </Window>

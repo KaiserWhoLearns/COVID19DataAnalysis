@@ -39,90 +39,15 @@ namespace CaseCounter {
         }
 
 
+        /* Loading time series - the current usage model for the application is loading time series and then exploring the data,  so these routines
+         * are just loading a TimeSeriesSet from a file.   Currently,  two separate time series sets are maintained.
+         * */
 
-        private void LoadSourceFile_Click(object sender, RoutedEventArgs e) {
-            colorCanvas.Background = Brushes.Red;
-            Microsoft.Win32.OpenFileDialog openFileDialog = new();
-            openFileDialog.Multiselect = true;
-
-            CaseCountTable caseCountTable;
-
-            openFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-            openFileDialog.FilterIndex = 1;
-            openFileDialog.RestoreDirectory = true;
-
-            bool? result = openFileDialog.ShowDialog();
-
-            if (result == true) {
-                foreach (string filePath in openFileDialog.FileNames) {
-
-                    if (!CaseCountTable.ValidFileName(filePath, out _, out _)) {
-                        _ = System.Windows.MessageBox.Show(filePath + " is not a valid filename");
-                        continue;
-                    }
-                    try {
-                        caseCountTable = new CaseCountTable(filePath);
-                        caseCountTables.Add(caseCountTable);
-                        caseCountTable.ToListBox(caseListBox);
-                        _ = fileListBox.Items.Add(Util.ExtractFilename(filePath));
-
-                    } catch (Exception exception) {
-                        _ = System.Windows.MessageBox.Show(exception.Message);
-                    };
-                }
-            }
-            colorCanvas.Background = Brushes.Blue;
-        }
-
-
-        private void BuildTimeSeries_Click(object sender, RoutedEventArgs e) {
-            colorCanvas.Background = Brushes.Red;
-            foreach (CaseCountTable cct in caseCountTables) {
-                if (!filesInTSS.Contains(cct.FileName)) {
-                    filesInTSS.Add(cct.FileName);
-                    cct.AddToTSS(timeSeriesSetOne);
-                }
-            }
-            timeSeriesSetOne.ToListBox(timeSeries1ListBox);
-
-            colorCanvas.Background = Brushes.Aqua;
-        }
 
         private void ClearTimeSeries_Click(object sender, RoutedEventArgs e) {
             timeSeriesSetOne = new(SeriesType.Cummulative);
             filesInTSS = new List<string>();
             timeSeries1ListBox.Items.Clear();
-        }
-
-
-        private void ClearSourceFile_Click(object sender, RoutedEventArgs e) {
-            timeSeriesSetOne = new(SeriesType.Cummulative);
-            filesInTSS = new List<string>();
-            caseCountTables = new List<CaseCountTable>();
-            fileListBox.Items.Clear();
-            caseListBox.Items.Clear();
-        }
-
-        private void SaveTimeSeries_Click(object sender, RoutedEventArgs e) {
-            SaveTimeSeries(timeSeriesSetOne);
-        }
-
-        private void SaveTimeSeries(TimeSeriesSet tss) {
-            colorCanvas.Background = Brushes.Red;
-            Microsoft.Win32.SaveFileDialog saveFileDialog = new();
-
-
-            saveFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-            saveFileDialog.FilterIndex = 1;
-            saveFileDialog.RestoreDirectory = true;
-
-            bool? result = saveFileDialog.ShowDialog();
-
-
-            if (result == true) {
-                tss.WriteToFile(saveFileDialog.FileName);
-            }
-            colorCanvas.Background = Brushes.Green;
         }
 
         private void LoadTimeSeries_Click(object sender, RoutedEventArgs e) {
@@ -132,6 +57,14 @@ namespace CaseCounter {
                 timeSeriesSetOne = tss;
             }
         }
+
+        private void LoadTimeSeries2_Click(object sender, RoutedEventArgs e) {
+            TimeSeriesSet tss = LoadTimeSeries(timeSeries2ListBox, out bool result);
+            if (result) {
+                timeSeriesSetTwo = tss;
+            }
+        }
+
 
         private TimeSeriesSet LoadTimeSeries( ListBox listBox, out bool result ) {  
             colorCanvas.Background = Brushes.Red;
@@ -167,37 +100,33 @@ namespace CaseCounter {
             return tss;
         }
 
-        private void LoadTimeSeries2_Click(object sender, RoutedEventArgs e) {
-            TimeSeriesSet tss = LoadTimeSeries(timeSeries2ListBox, out bool result);
+        /* Call a routine that is essentially a long script that goes through the pipeline of converting source
+         * data files to a directory of processed time series sets.  
+         */
+        private void BuildLibrary_Click(object sender, RoutedEventArgs e) {
+
+            colorCanvas.Background = Brushes.Yellow;
+
+            LibraryBuilder lb = new(caseListBox);
+            bool result = lb.Build();
+
             if (result) {
-                timeSeriesSetTwo = tss;
+                colorCanvas.Background = Brushes.Green;
+            } else {
+                colorCanvas.Background = Brushes.Red; ;
             }
         }
 
-        private void SelectCountries_Click(object sender, RoutedEventArgs e) {
-            SelectionWindow sw = new SelectionWindow();
-            sw.Show();
-        }
 
+      //  private enum ChartOptions { Raw, Weekly, Gaussian };
+      
 
-
-        private void FilterTimeSeriesSet(Predicate<TimeSeries> filter) {
-            SaveTimeSeries(timeSeriesSetOne.Filter(filter));
-        }
-
-
-
-        private void DailyCount_Click(object sender, RoutedEventArgs e) {
-            SaveTimeSeries(timeSeriesSetOne.ToDailyCount());
-        }
-
-        private enum ChartOptions { Raw, Weekly, Gaussian };
-        private enum ScaleOptions { None, Population, Count };
-
+        /*
         private void Display_Click(object sender, RoutedEventArgs e) {
             DisplayChart(ChartOptions.Raw, ScaleOptions.None);
         }
-
+        */
+        /*
         private void DisplayChart(ChartOptions chartOptions, ScaleOptions scaleOptions) {  
             string tsKey = (string) timeSeries1ListBox.SelectedItem;
             if (!string.IsNullOrEmpty(tsKey)) {
@@ -223,80 +152,49 @@ namespace CaseCounter {
             }
         }
 
-        private void WeekSmooth_Click(object sender, RoutedEventArgs e) {
-            SaveTimeSeries(timeSeriesSetOne.WeeklySmoothing());
-        }
+        */
 
 
-
-        private void GaussSmooth_Click(object sender, RoutedEventArgs e) {
-            SaveTimeSeries(timeSeriesSetOne.GaussianSmoothing());
-        }
-
-        private void DisplayWs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Weekly, ScaleOptions.None);
-
-        }
-
-        private void DisplayGs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Gaussian, ScaleOptions.None);
-        }
-
-        private void BuildLibrary_Click(object sender, RoutedEventArgs e) {
-
-            colorCanvas.Background = Brushes.Yellow;
-
-            LibraryBuilder lb = new(caseListBox);
-            bool result = lb.Build();
-
-            if (result) {
-                colorCanvas.Background = Brushes.Green;
-            } else {
-                colorCanvas.Background = Brushes.Red; ;
-            }
- 
-
-        }
+        private enum ScaleOptions { None, Population, Count };
 
         private void Display_Multiple_Click(object sender, RoutedEventArgs e) {
-            List<TimeSeries> tsList = new();
-            foreach (object tsKey in timeSeries1ListBox.SelectedItems) {
-                tsList.Add(timeSeriesSetOne.GetSeries((string)tsKey));
-            }
-            foreach (object tsKey in timeSeries2ListBox.SelectedItems) {
-                tsList.Add(timeSeriesSetTwo.GetSeries((string)tsKey));
-            }
-
-            ChartWindow cw = new(tsList);
-            cw.Show();
+            DisplayMultiple(ScaleOptions.None);
         }
 
+        private void Display_MultipleByPop_Click(object sender, RoutedEventArgs e) {
+            DisplayMultiple(ScaleOptions.Population);
+        }
+
+        private void Display_MultipleByCount_Click(object sender, RoutedEventArgs e) {
+            DisplayMultiple(ScaleOptions.Count);
+        }
+
+        private readonly bool TruncateNegative = true;
+
         private void DisplayMultiple(ScaleOptions scaleOptions) {
-            List<TimeSeries> tsList = new();
+            List<(TimeSeries, int)> displayList = new();
 
-            foreach (object tsKey in timeSeries1ListBox.SelectedItems) {
-                TimeSeries ts = timeSeriesSetOne.GetSeries((string)tsKey);
+            AddToDisplayList(displayList, timeSeriesSetOne, timeSeries1ListBox, 0, scaleOptions, TruncateNegative);
+            AddToDisplayList(displayList, timeSeriesSetTwo, timeSeries2ListBox, 1, scaleOptions, TruncateNegative);
 
-                if (scaleOptions == ScaleOptions.Population) {
-                    ts = ts.ScaleByPopulation();
-                } else if (scaleOptions == ScaleOptions.Count) {
-                    ts = ts.ScaleByCount();
-                }
-                tsList.Add(ts);
-            }
-            foreach (object tsKey in timeSeries2ListBox.SelectedItems) {
-                TimeSeries ts = timeSeriesSetTwo.GetSeries((string)tsKey);
-
-                if (scaleOptions == ScaleOptions.Population) {
-                    ts = ts.ScaleByPopulation();
-                } else if (scaleOptions == ScaleOptions.Count) {
-                    ts = ts.ScaleByCount();
-                }
-                tsList.Add(ts);
-            }
-            ChartWindow cw = new(tsList);
+            ChartWindow cw = new(displayList);
             cw.Show();
 
+        }
+
+        private void AddToDisplayList(List<(TimeSeries, int)> displayList, TimeSeriesSet tss, ListBox listBox, int axisIndex, ScaleOptions scaleOptions, bool truncateNegative) {
+            foreach (object tsKey in listBox.SelectedItems) { 
+                TimeSeries ts = tss.GetSeries((string)tsKey);
+                if (truncateNegative) {
+                    ts = ts.TruncateNegative();
+                }
+                if (scaleOptions == ScaleOptions.Population) {
+                    ts = ts.ScaleByPopulation();
+                } else if (scaleOptions == ScaleOptions.Count) {
+                    ts = ts.ScaleByCount();
+                }
+                displayList.Add((ts, axisIndex));
+            }
         }
 
         private void CountPeaks_Click(object sender, RoutedEventArgs e) {
@@ -320,7 +218,7 @@ namespace CaseCounter {
                 System.Windows.MessageBox.Show("No time series selected");
             }
         }
-
+/*
         private void DisplayByPop_Click(object sender, RoutedEventArgs e) {
             DisplayChart(ChartOptions.Raw, ScaleOptions.Population);
         }
@@ -328,14 +226,9 @@ namespace CaseCounter {
         private void DisplayByCount_Click(object sender, RoutedEventArgs e) {
             DisplayChart(ChartOptions.Raw, ScaleOptions.Count);
         }
+*/
 
-        private void Display_MultipleByPop_Click(object sender, RoutedEventArgs e) {
-            DisplayMultiple(ScaleOptions.Population);
-        }
 
-        private void Display_MultipleByCount_Click(object sender, RoutedEventArgs e) {
-            DisplayMultiple(ScaleOptions.Count);
-        }
 
         private void ExportPeaks3_Click(object sender, RoutedEventArgs e) {
             PeakSetCollection peaks = timeSeriesSetOne.FindPeaks(3);
@@ -460,5 +353,120 @@ namespace CaseCounter {
             int endDay = (int)endDaySlider.Value;
             AllDistances((tss, key) => tss.GetDistanceList(key, startDay, endDay));
         }
+
+
+        /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into
+         * a set of cleaned files.  These were used during initial development - but no longer are needed.
+         */
+        private void LoadSourceFile_Click(object sender, RoutedEventArgs e) {
+            colorCanvas.Background = Brushes.Red;
+            Microsoft.Win32.OpenFileDialog openFileDialog = new();
+            openFileDialog.Multiselect = true;
+
+            CaseCountTable caseCountTable;
+
+            openFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.RestoreDirectory = true;
+
+            bool? result = openFileDialog.ShowDialog();
+
+            if (result == true) {
+                foreach (string filePath in openFileDialog.FileNames) {
+
+                    if (!CaseCountTable.ValidFileName(filePath, out _, out _)) {
+                        _ = System.Windows.MessageBox.Show(filePath + " is not a valid filename");
+                        continue;
+                    }
+                    try {
+                        caseCountTable = new CaseCountTable(filePath);
+                        caseCountTables.Add(caseCountTable);
+                        caseCountTable.ToListBox(caseListBox);
+                        _ = fileListBox.Items.Add(Util.ExtractFilename(filePath));
+
+                    } catch (Exception exception) {
+                        _ = System.Windows.MessageBox.Show(exception.Message);
+                    };
+                }
+            }
+            colorCanvas.Background = Brushes.Blue;
+        }
+
+
+        private void BuildTimeSeries_Click(object sender, RoutedEventArgs e) {
+            colorCanvas.Background = Brushes.Red;
+            foreach (CaseCountTable cct in caseCountTables) {
+                if (!filesInTSS.Contains(cct.FileName)) {
+                    filesInTSS.Add(cct.FileName);
+                    cct.AddToTSS(timeSeriesSetOne);
+                }
+            }
+            timeSeriesSetOne.ToListBox(timeSeries1ListBox);
+
+            colorCanvas.Background = Brushes.Aqua;
+        }
+
+        private void ClearSourceFile_Click(object sender, RoutedEventArgs e) {
+            timeSeriesSetOne = new(SeriesType.Cummulative);
+            filesInTSS = new List<string>();
+            caseCountTables = new List<CaseCountTable>();
+            fileListBox.Items.Clear();
+            caseListBox.Items.Clear();
+        }
+
+        private void SaveTimeSeries_Click(object sender, RoutedEventArgs e) {
+            SaveTimeSeries(timeSeriesSetOne);
+        }
+
+        private void SaveTimeSeries(TimeSeriesSet tss) {
+            colorCanvas.Background = Brushes.Red;
+            Microsoft.Win32.SaveFileDialog saveFileDialog = new();
+
+
+            saveFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;
+            saveFileDialog.RestoreDirectory = true;
+
+            bool? result = saveFileDialog.ShowDialog();
+
+
+            if (result == true) {
+                tss.WriteToFile(saveFileDialog.FileName);
+            }
+            colorCanvas.Background = Brushes.Green;
+        }
+
+        /* Time series conversion routines - this are now all done by calls from a script - so strictly useful for testing or debugging now */ 
+
+        private void DailyCount_Click(object sender, RoutedEventArgs e) {
+            SaveTimeSeries(timeSeriesSetOne.ToDailyCount());
+        }
+
+        private void FilterTimeSeriesSet(Predicate<TimeSeries> filter) {
+            SaveTimeSeries(timeSeriesSetOne.Filter(filter));
+        }
+
+        private void WeekSmooth_Click(object sender, RoutedEventArgs e) {
+            SaveTimeSeries(timeSeriesSetOne.WeeklySmoothing());
+        }
+
+
+
+        private void GaussSmooth_Click(object sender, RoutedEventArgs e) {
+            SaveTimeSeries(timeSeriesSetOne.GaussianSmoothing());
+        }
+        /*
+        private void DisplayWs_Click(object sender, RoutedEventArgs e) {
+            DisplayChart(ChartOptions.Weekly, ScaleOptions.None);
+
+        }
+
+        private void DisplayGs_Click(object sender, RoutedEventArgs e) {
+            DisplayChart(ChartOptions.Gaussian, ScaleOptions.None);
+        }
+        */
+
+
+
     }
 }

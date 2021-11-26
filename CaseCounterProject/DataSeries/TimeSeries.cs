@@ -306,6 +306,17 @@ namespace DataSeries {
 
         }
 
+        public TimeSeries TruncateNegative() {
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+
+            for (int i = 0; i <= LastDay; i++) {
+                ts.SetValue(i, Math.Max(data[i], 0.0));
+            }
+
+            return ts;
+
+        }
+
         public PeakSet FindPeaks(int nPeaks) {
             return null;
         }
