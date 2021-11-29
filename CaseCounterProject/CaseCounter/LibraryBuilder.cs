@@ -189,7 +189,7 @@ namespace CaseCounter {
         }
 
         private TimeSeriesSet BuildTimeSeriesSet(List<CaseCountTable> tables) {
-            TimeSeriesSet tss = new(SeriesType.Cummulative);
+            TimeSeriesSet tss = new();
 
             foreach (CaseCountTable cct in tables) {
                 cct.AddToTSS(tss);

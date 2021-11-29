@@ -1,0 +1,16 @@
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\WaveAnalyzer.deps.json
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\WaveAnalyzer.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\ref\WaveAnalyzer.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\WaveAnalyzer.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\DataSeries.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\Utilities.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\DataSeries.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\bin\Debug\net5.0-windows\Utilities.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.csproj.AssemblyReference.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.AssemblyInfoInputs.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.AssemblyInfo.cs
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\ref\WaveAnalyzer.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.pdb

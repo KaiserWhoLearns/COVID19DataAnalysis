@@ -7,9 +7,13 @@
         xmlns:scottplot="clr-namespace:ScottPlot;assembly=ScottPlot"
         mc:Ignorable="d"
         Title="Case Counter" Height="800" Width="1600">
-    <StackPanel Margin="10" Orientation="Vertical">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
 
             <Menu>
                 <MenuItem Header="File">
@@ -23,11 +27,13 @@
                     <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
                     <MenuItem Header="Display Multiple, Normalize by population" Click="Display_MultipleByPop_Click" />
                     <MenuItem Header="Display Multiple, Normalize by count" Click="Display_MultipleByCount_Click" />
+                    <Separator/>
+                    <MenuItem Header="Make Waves" Click="MakeWaves_Click" />
                 </MenuItem>
                 <MenuItem Header="Analyze Curve">
                     <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>
                     <MenuItem Header="Display Peaks" Click="DisplayPeaks_Click"/>
-                    <MenuItem Header="Display Segments" Click="DisplaySegments_Click"/>
+                    <MenuItem Header="Curve Explorer" Click="CurveExplorer_Click"/>
                     <Separator/>
                     <MenuItem Header="Export Peakset (3 peaks)" Click="ExportPeaks3_Click"/>
                     <MenuItem Header="Export Peakset (4 peaks)" Click="ExportPeaks4_Click"/>
@@ -66,7 +72,7 @@
             <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
         </StackPanel>
 
-        <Grid>
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -80,5 +86,5 @@
             <ListBox Grid.Column ="3" x:Name="timeSeries2ListBox" SelectionMode="Multiple"/>
         </Grid>
  
-    </StackPanel>
+    </Grid>
 </Window>

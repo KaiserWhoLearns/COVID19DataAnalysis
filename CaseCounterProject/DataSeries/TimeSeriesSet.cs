@@ -13,10 +13,9 @@ namespace DataSeries {
 
 
         private Dictionary<string, TimeSeries> series;
-        public SeriesType SeriesType { get; }
+ //       public SeriesType SeriesType { get; }
 
-        public TimeSeriesSet(SeriesType seriesType) {
-            SeriesType = seriesType;
+        public TimeSeriesSet() {
             series = new Dictionary<string, TimeSeries>();
         }
 
@@ -143,7 +142,7 @@ namespace DataSeries {
         }
 
         public TimeSeriesSet Filter(Predicate<TimeSeries> filter) {
-            TimeSeriesSet tss = new(SeriesType);
+            TimeSeriesSet tss = new();
 
             foreach (TimeSeries ts in series.Values) {
                 if (filter(ts)) {
@@ -159,7 +158,7 @@ namespace DataSeries {
 
 
         public TimeSeriesSet ToDailyCount() {
-            TimeSeriesSet tss = new(SeriesType.Discrete);
+            TimeSeriesSet tss = new();
             foreach (TimeSeries ts in series.Values) {
                 tss.AddSeries(ts.ToDailyCount());
             }
@@ -179,7 +178,7 @@ namespace DataSeries {
         }
 
         public TimeSeriesSet SmoothWithFilter(double[] filter) {
-            TimeSeriesSet tss = new(SeriesType);
+            TimeSeriesSet tss = new();
             foreach (TimeSeries ts in series.Values) {
                 tss.AddSeries(ts.Smooth(filter));
             }
@@ -215,7 +214,7 @@ namespace DataSeries {
                 tsState.AddCounts(ts);
             }
 
-            TimeSeriesSet tss = new(SeriesType);
+            TimeSeriesSet tss = new();
             foreach (TimeSeries ts in stateSeries.Values) {
                 tss.AddSeries(ts);
             }
@@ -239,7 +238,7 @@ namespace DataSeries {
                 tsNational.AddCounts(ts);
             }
 
-            TimeSeriesSet tss = new(SeriesType);
+            TimeSeriesSet tss = new();
             foreach (TimeSeries ts in nationalSeries.Values) {
                 tss.AddSeries(ts);
             }
@@ -290,7 +289,7 @@ namespace DataSeries {
 
         public TimeSeriesSet RemoveAnomalies(List<(string, int)> admin0List, List<(string, int)> admin0StarList, List<(string, string, int)> admin1StarList, 
                                         List<(string, string, string, int)> admin2List, string path) {
-            TimeSeriesSet tss = new(SeriesType);
+            TimeSeriesSet tss = new();
             StringBuilder sb = new();
 
             foreach (TimeSeries ts1 in series.Values) {

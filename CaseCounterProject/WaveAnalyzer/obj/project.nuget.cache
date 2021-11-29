@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eIGHuM8Y6NpNIR5MHlmVKdRfNNbPDNDSYk34iC9qJyxCjh5hLr78vuQ4EuXZxxCdhuh83KGTschrXfAIIXxkOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anderson\\Documents\\GitHub\\COVID19DataAnalysis\\CaseCounterProject\\WaveAnalyzer\\WaveAnalyzer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anderson\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

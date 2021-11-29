@@ -257,6 +257,46 @@ namespace DataSeries {
 
         }
 
+        // Average over +-d days.  This is done separately from smooth to make it more efficient.
+        public TimeSeries BlockSmooth(int d) {
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+
+            if (LastDay <= d) {
+                double val = CaseCount() / (d + 1);
+                for (int i = 0; i <= LastDay; i++) {
+                    ts.SetValue(i, val);
+                }
+                return ts;
+            }
+
+            double sum = 0;
+            for (int i = 0; i < d+1; i++) {
+                sum += data[i];
+            }
+            int len = d + 1;
+            ts.SetValue(0, sum / len);
+
+            for (int i = 1; i <= LastDay; i++) {
+                if (i > d) {
+                    sum -= data[i - d - 1];
+                }
+                else {
+                    len += 1;
+                }
+                if (i <= LastDay - d) {
+                    sum += data[i + d];
+                }
+                else {
+                    len -= 1;
+                }
+                ts.SetValue(i, sum / len);
+            }
+
+
+            return ts;
+        }
+
+
         public void AddCounts(TimeSeries ts) {
             if (ts.LastDay > LastDay)           //Ensure that the array is long enough
                 SetValue(ts.LastDay, 0);
@@ -468,6 +508,49 @@ namespace DataSeries {
             get {
                 return string.IsNullOrEmpty(Admin2) ? (string.IsNullOrEmpty(Admin1) ? Admin0 : Admin1) : Admin2;
             }
+        }
+
+        public TimeSeries ForwardArea() {
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+
+            for (int i = 0; i <= LastDay; i++) {
+                ts.SetValue(i, FindForwardArea(i));
+            }
+
+            return ts;
+        }
+
+        private double FindForwardArea(int i) {
+            double val = data[i];
+            int k = i;
+            while (k < LastDay && data[k + 1] >= val) {
+                k++;
+            }
+            return val * (k - i);
+        }
+
+        // Compute a discrete derivative.  Our derivative is two sided,  so we are returning f'(x) = (f(x+d) - f(x-d))/2d
+        public TimeSeries Derivative(int d) {
+
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+
+            for (int i = 0; i <= LastDay; i++) {
+                ts.SetValue(i, FindDerivative(i, d));
+            }
+
+            return ts;
+        }
+
+        private double FindDerivative(int i, int d) {
+            if (LastDay == 0) {
+                return 0;                   // Avoid the divide by zero on a one day data set
+            }
+
+            int startDay = Math.Max(0, i - d);
+            int endDay = Math.Min(LastDay, i + d);
+
+            return (data[endDay] - data[startDay]) / (endDay - startDay);
+
         }
     }
 

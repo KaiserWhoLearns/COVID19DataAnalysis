@@ -95,7 +95,7 @@ namespace CaseCounter {
         }
 
         private void MakePeaks(string tssFilePath, string fileName, string topLevelOutputDir) {
-            TimeSeriesSet tss = new(SeriesType.Discrete);
+            TimeSeriesSet tss = new();
             tss.LoadCsv(tssFilePath);
  
             for (int i = 0; i < resultWriters.Length; i++) {

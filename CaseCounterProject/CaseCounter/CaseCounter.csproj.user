@@ -16,7 +16,7 @@
     <Compile Update="MountainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SegmentWindow.xaml.cs">
+    <Compile Update="CurveExplorer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,7 +33,7 @@
     <Page Update="MountainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="SegmentWindow.xaml">
+    <Page Update="CurveExplorer.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

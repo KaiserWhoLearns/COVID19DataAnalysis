@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using DataSeries;
 using Utilities;
+using WaveAnalyzer;
 using System.Windows.Media;
 using System.Windows.Controls;
 
@@ -33,8 +34,8 @@ namespace CaseCounter {
 
         private void InitializeApplication() {
             caseCountTables = new List<CaseCountTable>();
-            timeSeriesSetOne = new(SeriesType.Cummulative);
-            timeSeriesSetTwo = new(SeriesType.Cummulative);
+            timeSeriesSetOne = new();
+            timeSeriesSetTwo = new();
             filesInTSS = new List<string>();
         }
 
@@ -45,7 +46,7 @@ namespace CaseCounter {
 
 
         private void ClearTimeSeries_Click(object sender, RoutedEventArgs e) {
-            timeSeriesSetOne = new(SeriesType.Cummulative);
+            timeSeriesSetOne = new();
             filesInTSS = new List<string>();
             timeSeries1ListBox.Items.Clear();
         }
@@ -69,7 +70,7 @@ namespace CaseCounter {
         private TimeSeriesSet LoadTimeSeries( ListBox listBox, out bool result ) {  
             colorCanvas.Background = Brushes.Red;
 
-            TimeSeriesSet tss = new(SeriesType.Cummulative);
+            TimeSeriesSet tss = new();
 
             Microsoft.Win32.OpenFileDialog openFileDialog = new();
 
@@ -116,43 +117,6 @@ namespace CaseCounter {
                 colorCanvas.Background = Brushes.Red; ;
             }
         }
-
-
-      //  private enum ChartOptions { Raw, Weekly, Gaussian };
-      
-
-        /*
-        private void Display_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Raw, ScaleOptions.None);
-        }
-        */
-        /*
-        private void DisplayChart(ChartOptions chartOptions, ScaleOptions scaleOptions) {  
-            string tsKey = (string) timeSeries1ListBox.SelectedItem;
-            if (!string.IsNullOrEmpty(tsKey)) {
-                TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
-                if (chartOptions == ChartOptions.Weekly) {
-                    ts = ts.WeeklySmoothing();
-                } else if (chartOptions == ChartOptions.Gaussian) {
-                    ts = ts.GaussianSmoothing();
-                }
-                if (scaleOptions == ScaleOptions.Population) {
-                    ts = ts.ScaleByPopulation();
-                } else if (scaleOptions == ScaleOptions.Count) {
-                    ts = ts.ScaleByCount();
-                }
-
-                List<TimeSeries> tsList = new();
-                tsList.Add(ts);
-
-                ChartWindow cw = new(tsList);
-                cw.Show();
-            } else {
-                _ = MessageBox.Show("No time series selected");
-            }
-        }
-
-        */
 
 
         private enum ScaleOptions { None, Population, Count };
@@ -218,16 +182,6 @@ namespace CaseCounter {
                 System.Windows.MessageBox.Show("No time series selected");
             }
         }
-/*
-        private void DisplayByPop_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Raw, ScaleOptions.Population);
-        }
-
-        private void DisplayByCount_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Raw, ScaleOptions.Count);
-        }
-*/
-
 
 
         private void ExportPeaks3_Click(object sender, RoutedEventArgs e) {
@@ -264,16 +218,17 @@ namespace CaseCounter {
  
         }
 
-        private void DisplaySegments_Click(object sender, RoutedEventArgs e) {
+        private void CurveExplorer_Click(object sender, RoutedEventArgs e) {
             string tsKey = (string)timeSeries1ListBox.SelectedItem;
             if (!string.IsNullOrEmpty(tsKey)) {
                 TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
-                SegmentWindow sw = new(ts);
-                sw.Show();
+                CurveExplorerWindow cw = new(ts);
+                cw.Show();
             } else {
                 System.Windows.MessageBox.Show("No time series selected");
             }
         }
+
 
         private void ComputeDistances_Click(object sender, RoutedEventArgs e) {
             caseListBox.Items.Clear();
@@ -354,6 +309,19 @@ namespace CaseCounter {
             AllDistances((tss, key) => tss.GetDistanceList(key, startDay, endDay));
         }
 
+        private void MakeWaves_Click(object sender, RoutedEventArgs e) {
+            fileListBox.Items.Clear();
+            WaveParameters wp = new();
+
+            foreach (string tsKey in timeSeries1ListBox.SelectedItems) {
+                TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
+                WaveSet ws = new(ts, wp);
+
+                fileListBox.Items.Add(ws.SummaryString());
+            }
+            // For each time series in selected set
+            // Write out to file list box
+        }
 
         /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into
          * a set of cleaned files.  These were used during initial development - but no longer are needed.
@@ -407,7 +375,7 @@ namespace CaseCounter {
         }
 
         private void ClearSourceFile_Click(object sender, RoutedEventArgs e) {
-            timeSeriesSetOne = new(SeriesType.Cummulative);
+            timeSeriesSetOne = new();
             filesInTSS = new List<string>();
             caseCountTables = new List<CaseCountTable>();
             fileListBox.Items.Clear();
@@ -455,16 +423,9 @@ namespace CaseCounter {
         private void GaussSmooth_Click(object sender, RoutedEventArgs e) {
             SaveTimeSeries(timeSeriesSetOne.GaussianSmoothing());
         }
-        /*
-        private void DisplayWs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Weekly, ScaleOptions.None);
 
-        }
 
-        private void DisplayGs_Click(object sender, RoutedEventArgs e) {
-            DisplayChart(ChartOptions.Gaussian, ScaleOptions.None);
-        }
-        */
+
 
 
 
