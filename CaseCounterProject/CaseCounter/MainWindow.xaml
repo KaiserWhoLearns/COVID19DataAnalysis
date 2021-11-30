@@ -70,12 +70,14 @@
             <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="700" 
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Button Margin="10,0" Click="ClearSelection_Click">Clear</Button>
+            <Button Margin="10,0" Click="SelectAll_Click">Select All</Button>
         </StackPanel>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>

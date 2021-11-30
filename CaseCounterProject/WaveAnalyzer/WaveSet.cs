@@ -40,8 +40,10 @@ namespace WaveAnalyzer {
             TimeSeries smoothed = ts.BlockSmooth(wp.ZeroSmoothing);
             List<Wave> wList = new();
 
-            if (ts.Population < 0)
-                throw new DataException("Unexpected zero population in RemoveZeroLevels");
+            if (ts.Population <= 0) {
+                _ = System.Windows.MessageBox.Show($"{ts.ShortName} has populations {ts.Population}");
+                return wList;
+            }
 
             double denormalizedZeroLevel = wp.ZeroLevel * ts.Population / 100000.0;
             bool inWave = false;
@@ -96,7 +98,7 @@ namespace WaveAnalyzer {
 
         public string SummaryString() {
             StringBuilder sb = new();
-            sb.Append(TimeSeries.ShortName);
+            sb.Append($"{waves.Count}.) {TimeSeries.ShortName}");
             foreach (Wave w in waves) {
                 sb.Append($"({w.Start}, {w.End})");
             }

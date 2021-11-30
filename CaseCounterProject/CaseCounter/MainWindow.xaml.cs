@@ -118,6 +118,13 @@ namespace CaseCounter {
             }
         }
 
+        private void ClearSelection_Click(object sender, RoutedEventArgs e) {
+            timeSeries1ListBox.SelectedItems.Clear();
+        }
+
+        private void SelectAll_Click(object sender, RoutedEventArgs e) {
+            timeSeries1ListBox.SelectAll();
+        }
 
         private enum ScaleOptions { None, Population, Count };
 
@@ -423,10 +430,6 @@ namespace CaseCounter {
         private void GaussSmooth_Click(object sender, RoutedEventArgs e) {
             SaveTimeSeries(timeSeriesSetOne.GaussianSmoothing());
         }
-
-
-
-
 
 
     }
