@@ -10,10 +10,11 @@ namespace WaveAnalyzer {
     public class WaveParameters {
         private readonly double zeroLevel = 0.5;
         private readonly int zeroSmoothing = 14;
+        private readonly int waveSmoothing = 21;
 
         public double ZeroLevel { get { return zeroLevel; } }
         public int ZeroSmoothing { get { return zeroSmoothing; } }
-
+        public int WaveSmoothing { get { return waveSmoothing; } }
         public WaveParameters() {
 
         }
@@ -26,7 +27,13 @@ namespace WaveAnalyzer {
 
         public WaveSet(TimeSeries ts, WaveParameters wp) {
             TimeSeries = ts;
-            waves = RemoveZeroLevels(ts, wp);
+            waves = new();           
+            
+            List<Wave> wList = RemoveZeroLevels(ts, wp);
+            foreach(Wave wave in wList) {
+                waves.AddRange(MakeWaves(wave, ts, wp));
+            }
+
         }
 
         private static List<Wave> RemoveZeroLevels(TimeSeries ts, WaveParameters wp) {
@@ -59,6 +66,31 @@ namespace WaveAnalyzer {
                 wList.Add(new(ts, waveStart, smoothed.LastDay));
             }
 
+            return wList;
+        }
+
+        public static List<Wave> MakeWaves(Wave wave, TimeSeries ts, WaveParameters wp) {
+            List<Wave> wList = new();
+            TimeSeries smoothed = ts.BlockSmooth(wp.WaveSmoothing);
+            double[] smData = smoothed.GetData();
+
+            int waveStart = wave.Start;
+            bool goingUp = true;
+
+            for (int i = wave.Start + 1; i <= wave.End; i++) {
+                if (goingUp) {
+                    if (smData[i] < smData[i - 1]) {
+                        goingUp = false;
+                    }
+                } else {
+                    if (smData[i] > smData[i - 1]) {
+                        wList.Add(new(ts, waveStart, i - 1));
+                        waveStart = i - 1;
+                        goingUp = true;
+                    }
+                }
+            }
+            wList.Add(new(ts, waveStart, wave.End));
             return wList;
         }
 
