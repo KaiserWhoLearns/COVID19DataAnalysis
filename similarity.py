@@ -6,6 +6,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+import matplotlib as mpl
+mpl.rcParams['figure.dpi'] = 1000
+
 # d1 = loader.get_global_case_and_deaths_time_series_data()
 # # d2 = loader.get_continent_specific_case_and_deaths_time_series_data(continent=<>)
 # d3 = loader.get_available_and_supported_continents()  # In case you want to see continents supported to pass into the call above
@@ -15,7 +18,7 @@ import matplotlib.pyplot as plt
 # case_count_data = d[0]
 
 
-countries = ["US", "Italy", "India"]
+countries = ["US", "Italy", "India", "Russia"]
 for country in countries:
     # Read state data
     confirm_by_state = pd.read_csv("data/UW time series/Global/World by province/" + country + "_confirmed_sm.csv")
@@ -56,7 +59,14 @@ for country in countries:
     print(case_similarity)
     #%%
     # Plotting
-    plt.imshow(death_similarity)
+
+    if len(all_states) > 35:
+        label_size = 5
+    else:
+        label_size = 6
+
+
+    plt.imshow(death_similarity, vmin=0, vmax=1)
     plt.colorbar()
 
     ax = plt.gca()
@@ -64,10 +74,17 @@ for country in countries:
     # yticks = all_states
     # ax.xaxis.set_xticks(xticks)
     # ax.xaxis.set_yticks(yticks)
+
+    ax.set_xticks([i for i in range(len(all_states))])
+    ax.set_xticklabels(all_states, Rotation=90)
+
+    ax.set_yticks([i for i in range(len(all_states))])
+    ax.set_yticklabels(all_states)
+    ax.tick_params(axis='both', which='major', labelsize=label_size)
     plt.title("Death cosine similarity for " + country)
     plt.show()
 
-    plt.imshow(case_similarity)
+    plt.imshow(case_similarity, vmin=0, vmax=1)
     plt.colorbar()
 
     ax = plt.gca()
@@ -75,8 +92,15 @@ for country in countries:
     # yticks = all_states
     # ax.xaxis.set_xticks(xticks)
     # ax.xaxis.set_yticks(yticks)
+
+    ax.set_xticks([i for i in range(len(all_states))])
+    ax.set_xticklabels(all_states, Rotation=90)
+
+    ax.set_yticks([i for i in range(len(all_states))])
+    ax.set_yticklabels(all_states)
+
+    ax.tick_params(axis='both', which='major', labelsize=label_size)
     plt.title("Case cosine similarity for " + country)
     plt.show()
-
 
 # %%
