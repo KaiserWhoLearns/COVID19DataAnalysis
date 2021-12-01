@@ -1,3 +1,5 @@
+import json
+
 from pkg_resources import resource_filename
 
 import geopandas
@@ -291,3 +293,33 @@ def get_usa_county_level_data(state_fips_code=None):
     filtered_data = states_and_counties[states_and_counties['STATEFP'] == state_fips_code]
     filtered_data = filtered_data.reset_index()
     return filtered_data
+
+
+def generate_us_state_neighbor_data(filename='usa_states.json'):
+    name_code = lookup_state_names_and_abbreviations()
+    code_name = { v: k for k, v in name_code.items() }
+    file_data = resource_filename(__name__, filename)
+    with open(file_data) as f:
+        data = json.load(f)
+    result = {}
+
+    for item in data:
+        code = item['code']
+        corresponding_name = code_name[code]
+        neighbors = item['Neighborcodes']
+        r = []
+        for n in neighbors:
+            r.append(code_name[n])
+        result[corresponding_name] = r
+
+    w_file = resource_filename(__name__, 'usa_neighbors.json')
+    with open(w_file, 'w') as w:
+        json.dump(result, w)
+
+
+def load_usa_state_neighbors():
+    file = 'usa_neighbors.json'
+    file_data = resource_filename(__name__, file)
+    with open(file_data) as f:
+        data = json.load(f)
+    return data
