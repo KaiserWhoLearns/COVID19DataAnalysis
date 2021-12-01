@@ -320,14 +320,15 @@ namespace CaseCounter {
             fileListBox.Items.Clear();
             WaveParameters wp = new();
 
+            wp.WaveSmoothing = int.Parse(waveSmoothTextBox.Text);
+
             foreach (string tsKey in timeSeries1ListBox.SelectedItems) {
                 TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
                 WaveSet ws = new(ts, wp);
 
                 fileListBox.Items.Add(ws.SummaryString());
             }
-            // For each time series in selected set
-            // Write out to file list box
+
         }
 
         /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into

@@ -296,7 +296,9 @@ namespace DataSeries {
             return ts;
         }
 
-
+        public TimeSeries DoubleSmooth(int d) {
+            return BlockSmooth(d).BlockSmooth(d);
+        }
         public void AddCounts(TimeSeries ts) {
             if (ts.LastDay > LastDay)           //Ensure that the array is long enough
                 SetValue(ts.LastDay, 0);
@@ -551,6 +553,39 @@ namespace DataSeries {
 
             return (data[endDay] - data[startDay]) / (endDay - startDay);
 
+        }
+
+        public (double[], double[]) FindCriticalPoints() {
+            List<int> xList = new();
+
+            xList.Add(0);
+            if (LastDay > 0) {
+                bool goingUp = (data[1] >= data[0]);
+
+                for (int i = 1; i < LastDay; i++) {
+                    if (goingUp) {
+                        if (data[i] > data[i + 1]) {
+                            goingUp = false;
+                            xList.Add(i);
+                        }
+                    } else {
+                        if (data[i] < data[i + 1]) {
+                            goingUp = true;
+                            xList.Add(i);
+                        }
+                    }
+                }
+                xList.Add(LastDay);
+            }
+
+            double[] yArray = new double[xList.Count];
+            double[] xArray = new double[xList.Count];
+            for (int i = 0; i < xList.Count; i++) {
+                yArray[i] = data[xList[i]];
+                xArray[i] = xList[i];
+            }
+
+            return (xArray, yArray);
         }
     }
 

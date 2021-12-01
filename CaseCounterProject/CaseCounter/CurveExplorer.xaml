@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CaseCounter"
         xmlns:ScottPlot="clr-namespace:ScottPlot;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
-        Title="Curve Explorer" Height="450" Width="800">
+        Title="Curve Explorer" Height="450" Width="1200">
 
     <Grid >
         <Grid.RowDefinitions>
@@ -31,6 +31,11 @@
             <Slider  Width="100" Height="20" x:Name="smoothingDaysSlider"  Value="7" Minimum="1" Maximum="100" SmallChange="1"  ValueChanged="Smoothing_ValueChanged"
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=smoothingDaysSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Button  Click="DoubleSmooth_Click">Double Smooth</Button>
+            <Label >Days</Label>
+            <Slider  Width="100" Height="20" x:Name="doubleSmoothingDaysSlider"  Value="7" Minimum="1" Maximum="100" SmallChange="1"  ValueChanged="DoubleSmoothing_ValueChanged"
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=doubleSmoothingDaysSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
         </StackPanel>
 
 

@@ -25,6 +25,7 @@ namespace CaseCounter {
         private SegmentSet segments;
         private ScottPlot.Plottable.ScatterPlot timeSeriesCurve;
         private ScottPlot.Plottable.ScatterPlot overlayCurve;
+        private ScottPlot.Plottable.ScatterPlot criticalPoints;
         private int nSegments;
 
 
@@ -151,21 +152,22 @@ namespace CaseCounter {
         }
 
         private void Smooth_Click(object sender, RoutedEventArgs e) {
-            UpdateSmoothing();
+            UpdateSmoothing(timeSeries.BlockSmooth((int)smoothingDaysSlider.Value));
         }
 
         private void Smoothing_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
             if (wpfPlot3 != null)
-                UpdateSmoothing();
+                UpdateSmoothing(timeSeries.BlockSmooth((int)smoothingDaysSlider.Value));
         }
 
-        private void UpdateSmoothing() {
-            TimeSeries ts1 = timeSeries.BlockSmooth((int) smoothingDaysSlider.Value);
+        private void UpdateSmoothing(TimeSeries ts1) {
             double[] dataX = new double[ts1.LastDay + 1];
             for (int i = 0; i < dataX.Length; i++) {
                 dataX[i] = i;
             }
             double[] dataY = ts1.GetData();
+
+            (double[] cpX, double[] cpY) = ts1.FindCriticalPoints();
 
             if (overlayCurve != null) {
                 wpfPlot3.Plot.Remove(overlayCurve);
@@ -183,8 +185,19 @@ namespace CaseCounter {
             overlayCurve.LineWidth = 3;
             overlayCurve.Color = System.Drawing.Color.Aqua;
 
+            criticalPoints = wpfPlot3.Plot.AddScatter(cpX, cpY, System.Drawing.Color.Red, markerSize: 10, lineWidth: 0, label: "Critical Points");
+ 
+
             wpfPlot3.Refresh();
         }
 
+        private void DoubleSmooth_Click(object sender, RoutedEventArgs e) {
+            UpdateSmoothing(timeSeries.DoubleSmooth((int)doubleSmoothingDaysSlider.Value));
+        }
+
+        private void DoubleSmoothing_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+            if (wpfPlot3 != null)
+                UpdateSmoothing(timeSeries.DoubleSmooth((int)doubleSmoothingDaysSlider.Value));
+        }
     }
 }
