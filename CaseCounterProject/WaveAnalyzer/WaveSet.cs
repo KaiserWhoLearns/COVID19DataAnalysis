@@ -10,11 +10,14 @@ namespace WaveAnalyzer {
     public class WaveParameters {
         private readonly double zeroLevel = 0.5;
         private readonly int zeroSmoothing = 14;
-        private readonly int waveSmoothing = 21;
+        private int waveSmoothing = 17;
 
         public double ZeroLevel { get { return zeroLevel; } }
         public int ZeroSmoothing { get { return zeroSmoothing; } }
-        public int WaveSmoothing { get { return waveSmoothing; } }
+        public int WaveSmoothing { 
+            get { return waveSmoothing; } 
+            set { waveSmoothing = value; }
+        }
         public WaveParameters() {
 
         }
@@ -73,7 +76,8 @@ namespace WaveAnalyzer {
 
         public static List<Wave> MakeWaves(Wave wave, TimeSeries ts, WaveParameters wp) {
             List<Wave> wList = new();
-            TimeSeries smoothed = ts.BlockSmooth(wp.WaveSmoothing);
+            //          TimeSeries smoothed = ts.BlockSmooth(wp.WaveSmoothing);
+            TimeSeries smoothed = ts.DoubleSmooth(wp.WaveSmoothing);
             double[] smData = smoothed.GetData();
 
             int waveStart = wave.Start;
