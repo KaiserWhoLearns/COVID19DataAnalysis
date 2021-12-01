@@ -1,0 +1,3235 @@
+StateCode,FIPS,County,RU_Detail,M_or_NM
+AL,1001.0,Autauga,2.0,M
+AL,1003.0,Baldwin,3.0,M
+AL,1005.0,Barbour,6.0,NM
+AL,1007.0,Bibb,1.0,M
+AL,1009.0,Blount,1.0,M
+AL,1011.0,Bullock,6.0,NM
+AL,1013.0,Butler,6.0,NM
+AL,1015.0,Calhoun,3.0,M
+AL,1017.0,Chambers,6.0,NM
+AL,1019.0,Cherokee,6.0,NM
+AL,1021.0,Chilton,1.0,M
+AL,1023.0,Choctaw,9.0,NM
+AL,1025.0,Clarke,7.0,NM
+AL,1027.0,Clay,9.0,NM
+AL,1029.0,Cleburne,8.0,NM
+AL,1031.0,Coffee,4.0,NM
+AL,1033.0,Colbert,3.0,M
+AL,1035.0,Conecuh,7.0,NM
+AL,1037.0,Coosa,8.0,NM
+AL,1039.0,Covington,6.0,NM
+AL,1041.0,Crenshaw,8.0,NM
+AL,1043.0,Cullman,4.0,NM
+AL,1045.0,Dale,4.0,NM
+AL,1047.0,Dallas,4.0,NM
+AL,1049.0,DeKalb,6.0,NM
+AL,1051.0,Elmore,2.0,M
+AL,1053.0,Escambia,6.0,NM
+AL,1055.0,Etowah,3.0,M
+AL,1057.0,Fayette,6.0,NM
+AL,1059.0,Franklin,6.0,NM
+AL,1061.0,Geneva,3.0,M
+AL,1063.0,Greene,8.0,NM
+AL,1065.0,Hale,3.0,M
+AL,1067.0,Henry,3.0,M
+AL,1069.0,Houston,3.0,M
+AL,1071.0,Jackson,6.0,NM
+AL,1073.0,Jefferson,1.0,M
+AL,1075.0,Lamar,8.0,NM
+AL,1077.0,Lauderdale,3.0,M
+AL,1079.0,Lawrence,3.0,M
+AL,1081.0,Lee,3.0,M
+AL,1083.0,Limestone,2.0,M
+AL,1085.0,Lowndes,2.0,M
+AL,1087.0,Macon,6.0,NM
+AL,1089.0,Madison,2.0,M
+AL,1091.0,Marengo,7.0,NM
+AL,1093.0,Marion,7.0,NM
+AL,1095.0,Marshall,4.0,NM
+AL,1097.0,Mobile,2.0,M
+AL,1099.0,Monroe,7.0,NM
+AL,1101.0,Montgomery,2.0,M
+AL,1103.0,Morgan,3.0,M
+AL,1105.0,Perry,8.0,NM
+AL,1107.0,Pickens,3.0,M
+AL,1109.0,Pike,6.0,NM
+AL,1111.0,Randolph,6.0,NM
+AL,1113.0,Russell,2.0,M
+AL,1115.0,St. Clair,1.0,M
+AL,1117.0,Shelby,1.0,M
+AL,1119.0,Sumter,8.0,NM
+AL,1121.0,Talladega,4.0,NM
+AL,1123.0,Tallapoosa,6.0,NM
+AL,1125.0,Tuscaloosa,3.0,M
+AL,1127.0,Walker,1.0,M
+AL,1129.0,Washington,8.0,NM
+AL,1131.0,Wilcox,9.0,NM
+AL,1133.0,Winston,6.0,NM
+AK,2013.0,Aleutians East,9.0,NM
+AK,2016.0,Aleutians West,9.0,NM
+AK,2020.0,Anchorage,2.0,M
+AK,2050.0,Bethel,7.0,NM
+AK,2060.0,Bristol Bay,9.0,NM
+AK,2068.0,Denali,8.0,NM
+AK,2070.0,Dillingham,9.0,NM
+AK,2090.0,Fairbanks North Star,3.0,M
+AK,2100.0,Haines,9.0,NM
+AK,2105.0,"Hoonah-Angoon, AK",9.0,NM
+AK,2110.0,Juneau,5.0,NM
+AK,2122.0,Kenai Peninsula,7.0,NM
+AK,2130.0,Ketchikan Gateway,7.0,NM
+AK,2150.0,Kodiak Island,7.0,NM
+AK,2164.0,Lake and Peninsula,9.0,NM
+AK,2170.0,Matanuska-Susitna,2.0,M
+AK,2180.0,Nome,7.0,NM
+AK,2185.0,North Slope,7.0,NM
+AK,2188.0,Northwest Arctic,7.0,NM
+AK,2195.0,Petersburg Census area,9.0,NM
+AK,2198.0,Price of Wales Hyder,9.0,NM
+AK,2220.0,Sitka,7.0,NM
+AK,2230.0,Skagway,9.0,NM
+AK,2240.0,Southeast Fairbanks,9.0,NM
+AK,2261.0,Valdez-Cordova,9.0,NM
+AK,2270.0,Wade Hampton,9.0,NM
+AK,2275.0,Wrangell,9.0,NM
+AK,2282.0,Yakutat,9.0,NM
+AK,2290.0,Yukon-Koyukuk,9.0,NM
+AZ,4001.0,Apache,6.0,NM
+AZ,4003.0,Cochise,3.0,M
+AZ,4005.0,Coconino,3.0,M
+AZ,4007.0,Gila,4.0,NM
+AZ,4009.0,Graham,7.0,NM
+AZ,4011.0,Greenlee,7.0,NM
+AZ,4012.0,La Paz,6.0,NM
+AZ,4013.0,Maricopa,1.0,M
+AZ,4015.0,Mohave,3.0,M
+AZ,4017.0,Navajo,4.0,NM
+AZ,4019.0,Pima,2.0,M
+AZ,4021.0,Pinal,1.0,M
+AZ,4023.0,Santa Cruz,4.0,NM
+AZ,4025.0,Yavapai,3.0,M
+AZ,4027.0,Yuma,3.0,M
+AR,5001.0,Arkansas,6.0,NM
+AR,5003.0,Ashley,7.0,NM
+AR,5005.0,Baxter,7.0,NM
+AR,5007.0,Benton,2.0,M
+AR,5009.0,Boone,7.0,NM
+AR,5011.0,Bradley,7.0,NM
+AR,5013.0,Calhoun,9.0,NM
+AR,5015.0,Carroll,6.0,NM
+AR,5017.0,Chicot,7.0,NM
+AR,5019.0,Clark,7.0,NM
+AR,5021.0,Clay,7.0,NM
+AR,5023.0,Cleburne,6.0,NM
+AR,5025.0,Cleveland,3.0,M
+AR,5027.0,Columbia,7.0,NM
+AR,5029.0,Conway,6.0,NM
+AR,5031.0,Craighead,3.0,M
+AR,5033.0,Crawford,2.0,M
+AR,5035.0,Crittenden,1.0,M
+AR,5037.0,Cross,6.0,NM
+AR,5039.0,Dallas,6.0,NM
+AR,5041.0,Desha,6.0,NM
+AR,5043.0,Drew,6.0,NM
+AR,5045.0,Faulkner,2.0,M
+AR,5047.0,Franklin,6.0,NM
+AR,5049.0,Fulton,9.0,NM
+AR,5051.0,Garland,3.0,M
+AR,5053.0,Grant,2.0,M
+AR,5055.0,Greene,4.0,NM
+AR,5057.0,Hempstead,6.0,NM
+AR,5059.0,Hot Spring,6.0,NM
+AR,5061.0,Howard,6.0,NM
+AR,5063.0,Independence,7.0,NM
+AR,5065.0,Izard,9.0,NM
+AR,5067.0,Jackson,6.0,NM
+AR,5069.0,Jefferson,3.0,M
+AR,5071.0,Johnson,7.0,NM
+AR,5073.0,Lafayette,8.0,NM
+AR,5075.0,Lawrence,6.0,NM
+AR,5077.0,Lee,7.0,NM
+AR,5079.0,Lincoln,3.0,M
+AR,5081.0,Little River,3.0,M
+AR,5083.0,Logan,6.0,NM
+AR,5085.0,Lonoke,2.0,M
+AR,5087.0,Madison,2.0,M
+AR,5089.0,Marion,9.0,NM
+AR,5091.0,Miller,3.0,M
+AR,5093.0,Mississippi,4.0,NM
+AR,5095.0,Monroe,7.0,NM
+AR,5097.0,Montgomery,8.0,NM
+AR,5099.0,Nevada,7.0,NM
+AR,5101.0,Newton,9.0,NM
+AR,5103.0,Ouachita,7.0,NM
+AR,5105.0,Perry,2.0,M
+AR,5107.0,Phillips,6.0,NM
+AR,5109.0,Pike,9.0,NM
+AR,5111.0,Poinsett,3.0,M
+AR,5113.0,Polk,7.0,NM
+AR,5115.0,Pope,5.0,NM
+AR,5117.0,Prairie,8.0,NM
+AR,5119.0,Pulaski,2.0,M
+AR,5121.0,Randolph,7.0,NM
+AR,5123.0,St. Francis,6.0,NM
+AR,5125.0,Saline,2.0,M
+AR,5127.0,Scott,6.0,NM
+AR,5129.0,Searcy,9.0,NM
+AR,5131.0,Sebastian,2.0,M
+AR,5133.0,Sevier,6.0,NM
+AR,5135.0,Sharp,7.0,NM
+AR,5137.0,Stone,9.0,NM
+AR,5139.0,Union,7.0,NM
+AR,5141.0,Van Buren,8.0,NM
+AR,5143.0,Washington,2.0,M
+AR,5145.0,White,4.0,NM
+AR,5147.0,Woodruff,9.0,NM
+AR,5149.0,Yell,6.0,NM
+CA,6001.0,Alameda,1.0,M
+CA,6003.0,Alpine,8.0,NM
+CA,6005.0,Amador,6.0,NM
+CA,6007.0,Butte,3.0,M
+CA,6009.0,Calaveras,6.0,NM
+CA,6011.0,Colusa,6.0,NM
+CA,6013.0,Contra Costa,1.0,M
+CA,6015.0,Del Norte,7.0,NM
+CA,6017.0,El Dorado,1.0,M
+CA,6019.0,Fresno,2.0,M
+CA,6021.0,Glenn,6.0,NM
+CA,6023.0,Humboldt,5.0,NM
+CA,6025.0,Imperial,3.0,M
+CA,6027.0,Inyo,7.0,NM
+CA,6029.0,Kern,2.0,M
+CA,6031.0,Kings,3.0,M
+CA,6033.0,Lake,4.0,NM
+CA,6035.0,Lassen,7.0,NM
+CA,6037.0,Los Angeles,1.0,M
+CA,6039.0,Madera,3.0,M
+CA,6041.0,Marin,1.0,M
+CA,6043.0,Mariposa,8.0,NM
+CA,6045.0,Mendocino,4.0,NM
+CA,6047.0,Merced,2.0,M
+CA,6049.0,Modoc,6.0,NM
+CA,6051.0,Mono,7.0,NM
+CA,6053.0,Monterey,2.0,M
+CA,6055.0,Napa,3.0,M
+CA,6057.0,Nevada,4.0,NM
+CA,6059.0,Orange,1.0,M
+CA,6061.0,Placer,1.0,M
+CA,6063.0,Plumas,7.0,NM
+CA,6065.0,Riverside,1.0,M
+CA,6067.0,Sacramento,1.0,M
+CA,6069.0,San Benito,1.0,M
+CA,6071.0,San Bernardino,1.0,M
+CA,6073.0,San Diego,1.0,M
+CA,6075.0,San Francisco,1.0,M
+CA,6077.0,San Joaquin,2.0,M
+CA,6079.0,San Luis Obispo,2.0,M
+CA,6081.0,San Mateo,1.0,M
+CA,6083.0,Santa Barbara,2.0,M
+CA,6085.0,Santa Clara,1.0,M
+CA,6087.0,Santa Cruz,2.0,M
+CA,6089.0,Shasta,3.0,M
+CA,6091.0,Sierra,8.0,NM
+CA,6093.0,Siskiyou,6.0,NM
+CA,6095.0,Solano,2.0,M
+CA,6097.0,Sonoma,2.0,M
+CA,6099.0,Stanislaus,2.0,M
+CA,6101.0,Sutter,3.0,M
+CA,6103.0,Tehama,4.0,NM
+CA,6105.0,Trinity,8.0,NM
+CA,6107.0,Tulare,2.0,M
+CA,6109.0,Tuolumne,4.0,NM
+CA,6111.0,Ventura,2.0,M
+CA,6113.0,Yolo,1.0,M
+CA,6115.0,Yuba,3.0,M
+CO,8001.0,Adams,1.0,M
+CO,8003.0,Alamosa,7.0,NM
+CO,8005.0,Arapahoe,1.0,M
+CO,8007.0,Archuleta,7.0,NM
+CO,8009.0,Baca,9.0,NM
+CO,8011.0,Bent,7.0,NM
+CO,8013.0,Boulder,2.0,M
+CO,8014.0,Broomfield,1.0,M
+CO,8015.0,Chaffee,7.0,NM
+CO,8017.0,Cheyenne,9.0,NM
+CO,8019.0,Clear Creek,1.0,M
+CO,8021.0,Conejos,9.0,NM
+CO,8023.0,Costilla,9.0,NM
+CO,8025.0,Crowley,8.0,NM
+CO,8027.0,Custer,8.0,NM
+CO,8029.0,Delta,6.0,NM
+CO,8031.0,Denver,1.0,M
+CO,8033.0,Dolores,9.0,NM
+CO,8035.0,Douglas,1.0,M
+CO,8037.0,Eagle,5.0,NM
+CO,8039.0,Elbert,1.0,M
+CO,8041.0,El Paso,2.0,M
+CO,8043.0,Fremont,4.0,NM
+CO,8045.0,Garfield,5.0,NM
+CO,8047.0,Gilpin,1.0,M
+CO,8049.0,Grand,7.0,NM
+CO,8051.0,Gunnison,7.0,NM
+CO,8053.0,Hinsdale,9.0,NM
+CO,8055.0,Huerfano,6.0,NM
+CO,8057.0,Jackson,9.0,NM
+CO,8059.0,Jefferson,1.0,M
+CO,8061.0,Kiowa,9.0,NM
+CO,8063.0,Kit Carson,7.0,NM
+CO,8065.0,Lake,6.0,NM
+CO,8067.0,La Plata,4.0,NM
+CO,8069.0,Larimer,2.0,M
+CO,8071.0,Las Animas,7.0,NM
+CO,8073.0,Lincoln,8.0,NM
+CO,8075.0,Logan,7.0,NM
+CO,8077.0,Mesa,3.0,M
+CO,8079.0,Mineral,9.0,NM
+CO,8081.0,Moffat,7.0,NM
+CO,8083.0,Montezuma,6.0,NM
+CO,8085.0,Montrose,4.0,NM
+CO,8087.0,Morgan,6.0,NM
+CO,8089.0,Otero,6.0,NM
+CO,8091.0,Ouray,9.0,NM
+CO,8093.0,Park,1.0,M
+CO,8095.0,Phillips,9.0,NM
+CO,8097.0,Pitkin,7.0,NM
+CO,8099.0,Prowers,7.0,NM
+CO,8101.0,Pueblo,3.0,M
+CO,8103.0,Rio Blanco,9.0,NM
+CO,8105.0,Rio Grande,7.0,NM
+CO,8107.0,Routt,7.0,NM
+CO,8109.0,Saguache,9.0,NM
+CO,8111.0,San Juan,9.0,NM
+CO,8113.0,San Miguel,9.0,NM
+CO,8115.0,Sedgwick,9.0,NM
+CO,8117.0,Summit,5.0,NM
+CO,8119.0,Teller,2.0,M
+CO,8121.0,Washington,9.0,NM
+CO,8123.0,Weld,2.0,M
+CO,8125.0,Yuma,7.0,NM
+CT,9001.0,Fairfield,2.0,M
+CT,9003.0,Hartford,1.0,M
+CT,9005.0,Litchfield,4.0,NM
+CT,9007.0,Middlesex,1.0,M
+CT,9009.0,New Haven,2.0,M
+CT,9011.0,New London,2.0,M
+CT,9013.0,Tolland,1.0,M
+CT,9015.0,Windham,2.0,M
+DE,10001.0,Kent,3.0,M
+DE,10003.0,New Castle,1.0,M
+DE,10005.0,Sussex,2.0,M
+DC,11001.0,District of Columbia,1.0,M
+FL,12001.0,Alachua,2.0,M
+FL,12003.0,Baker,1.0,M
+FL,12005.0,Bay,3.0,M
+FL,12007.0,Bradford,6.0,NM
+FL,12009.0,Brevard,2.0,M
+FL,12011.0,Broward,1.0,M
+FL,12013.0,Calhoun,6.0,NM
+FL,12015.0,Charlotte,3.0,M
+FL,12017.0,Citrus,3.0,M
+FL,12019.0,Clay,1.0,M
+FL,12021.0,Collier,2.0,M
+FL,12023.0,Columbia,4.0,NM
+FL,12027.0,DeSoto,6.0,NM
+FL,12029.0,Dixie,6.0,NM
+FL,12031.0,Duval,1.0,M
+FL,12033.0,Escambia,2.0,M
+FL,12035.0,Flagler,2.0,M
+FL,12037.0,Franklin,6.0,NM
+FL,12039.0,Gadsden,2.0,M
+FL,12041.0,Gilchrist,2.0,M
+FL,12043.0,Glades,6.0,NM
+FL,12045.0,Gulf,3.0,M
+FL,12047.0,Hamilton,6.0,NM
+FL,12049.0,Hardee,6.0,NM
+FL,12051.0,Hendry,4.0,NM
+FL,12053.0,Hernando,1.0,M
+FL,12055.0,Highlands,3.0,M
+FL,12057.0,Hillsborough,1.0,M
+FL,12059.0,Holmes,6.0,NM
+FL,12061.0,Indian River,3.0,M
+FL,12063.0,Jackson,6.0,NM
+FL,12065.0,Jefferson,2.0,M
+FL,12067.0,Lafayette,9.0,NM
+FL,12069.0,Lake,1.0,M
+FL,12071.0,Lee,2.0,M
+FL,12073.0,Leon,2.0,M
+FL,12075.0,Levy,6.0,NM
+FL,12077.0,Liberty,8.0,NM
+FL,12079.0,Madison,6.0,NM
+FL,12081.0,Manatee,2.0,M
+FL,12083.0,Marion,2.0,M
+FL,12085.0,Martin,2.0,M
+FL,12086.0,Miami-Dade,1.0,M
+FL,12087.0,Monroe,4.0,NM
+FL,12089.0,Nassau,1.0,M
+FL,12091.0,Okaloosa,3.0,M
+FL,12093.0,Okeechobee,4.0,NM
+FL,12095.0,Orange,1.0,M
+FL,12097.0,Osceola,1.0,M
+FL,12099.0,Palm Beach,1.0,M
+FL,12101.0,Pasco,1.0,M
+FL,12103.0,Pinellas,1.0,M
+FL,12105.0,Polk,2.0,M
+FL,12107.0,Putnam,4.0,NM
+FL,12109.0,St. Johns,1.0,M
+FL,12111.0,St. Lucie,2.0,M
+FL,12113.0,Santa Rosa,2.0,M
+FL,12115.0,Sarasota,2.0,M
+FL,12117.0,Seminole,1.0,M
+FL,12119.0,Sumter,3.0,M
+FL,12121.0,Suwannee,6.0,NM
+FL,12123.0,Taylor,6.0,NM
+FL,12125.0,Union,6.0,NM
+FL,12127.0,Volusia,2.0,M
+FL,12129.0,Wakulla,2.0,M
+FL,12131.0,Walton,3.0,M
+FL,12133.0,Washington,6.0,NM
+GA,13001.0,Appling,7.0,NM
+GA,13003.0,Atkinson,9.0,NM
+GA,13005.0,Bacon,7.0,NM
+GA,13007.0,Baker,3.0,M
+GA,13009.0,Baldwin,4.0,NM
+GA,13011.0,Banks,8.0,NM
+GA,13013.0,Barrow,1.0,M
+GA,13015.0,Bartow,1.0,M
+GA,13017.0,Ben Hill,7.0,NM
+GA,13019.0,Berrien,6.0,NM
+GA,13021.0,Bibb,3.0,M
+GA,13023.0,Bleckley,6.0,NM
+GA,13025.0,Brantley,3.0,M
+GA,13027.0,Brooks,3.0,M
+GA,13029.0,Bryan,2.0,M
+GA,13031.0,Bulloch,4.0,NM
+GA,13033.0,Burke,2.0,M
+GA,13035.0,Butts,1.0,M
+GA,13037.0,Calhoun,8.0,NM
+GA,13039.0,Camden,4.0,NM
+GA,13043.0,Candler,7.0,NM
+GA,13045.0,Carroll,1.0,M
+GA,13047.0,Catoosa,2.0,M
+GA,13049.0,Charlton,6.0,NM
+GA,13051.0,Chatham,2.0,M
+GA,13053.0,Chattahoochee,2.0,M
+GA,13055.0,Chattooga,6.0,NM
+GA,13057.0,Cherokee,1.0,M
+GA,13059.0,Clarke,3.0,M
+GA,13061.0,Clay,9.0,NM
+GA,13063.0,Clayton,1.0,M
+GA,13065.0,Clinch,6.0,NM
+GA,13067.0,Cobb,1.0,M
+GA,13069.0,Coffee,7.0,NM
+GA,13071.0,Colquitt,6.0,NM
+GA,13073.0,Columbia,2.0,M
+GA,13075.0,Cook,6.0,NM
+GA,13077.0,Coweta,1.0,M
+GA,13079.0,Crawford,3.0,M
+GA,13081.0,Crisp,6.0,NM
+GA,13083.0,Dade,2.0,M
+GA,13085.0,Dawson,1.0,M
+GA,13087.0,Decatur,6.0,NM
+GA,13089.0,DeKalb,1.0,M
+GA,13091.0,Dodge,6.0,NM
+GA,13093.0,Dooly,6.0,NM
+GA,13095.0,Dougherty,3.0,M
+GA,13097.0,Douglas,1.0,M
+GA,13099.0,Early,6.0,NM
+GA,13101.0,Echols,3.0,M
+GA,13103.0,Effingham,2.0,M
+GA,13105.0,Elbert,6.0,NM
+GA,13107.0,Emanuel,7.0,NM
+GA,13109.0,Evans,6.0,NM
+GA,13111.0,Fannin,8.0,NM
+GA,13113.0,Fayette,1.0,M
+GA,13115.0,Floyd,3.0,M
+GA,13117.0,Forsyth,1.0,M
+GA,13119.0,Franklin,8.0,NM
+GA,13121.0,Fulton,1.0,M
+GA,13123.0,Gilmer,6.0,NM
+GA,13125.0,Glascock,9.0,NM
+GA,13127.0,Glynn,3.0,M
+GA,13129.0,Gordon,4.0,NM
+GA,13131.0,Grady,6.0,NM
+GA,13133.0,Greene,6.0,NM
+GA,13135.0,Gwinnett,1.0,M
+GA,13137.0,Habersham,6.0,NM
+GA,13139.0,Hall,3.0,M
+GA,13141.0,Hancock,7.0,NM
+GA,13143.0,Haralson,1.0,M
+GA,13145.0,Harris,2.0,M
+GA,13147.0,Hart,6.0,NM
+GA,13149.0,Heard,1.0,M
+GA,13151.0,Henry,1.0,M
+GA,13153.0,Houston,3.0,M
+GA,13155.0,Irwin,7.0,NM
+GA,13157.0,Jackson,4.0,NM
+GA,13159.0,Jasper,1.0,M
+GA,13161.0,Jeff Davis,7.0,NM
+GA,13163.0,Jefferson,6.0,NM
+GA,13165.0,Jenkins,6.0,NM
+GA,13167.0,Johnson,7.0,NM
+GA,13169.0,Jones,3.0,M
+GA,13171.0,Lamar,1.0,M
+GA,13173.0,Lanier,3.0,M
+GA,13175.0,Laurens,5.0,NM
+GA,13177.0,Lee,3.0,M
+GA,13179.0,Liberty,3.0,M
+GA,13181.0,Lincoln,2.0,M
+GA,13183.0,Long,3.0,M
+GA,13185.0,Lowndes,3.0,M
+GA,13187.0,Lumpkin,6.0,NM
+GA,13189.0,McDuffie,2.0,M
+GA,13191.0,McIntosh,3.0,M
+GA,13193.0,Macon,6.0,NM
+GA,13195.0,Madison,3.0,M
+GA,13197.0,Marion,2.0,M
+GA,13199.0,Meriwether,1.0,M
+GA,13201.0,Miller,8.0,NM
+GA,13205.0,Mitchell,6.0,NM
+GA,13207.0,Monroe,3.0,M
+GA,13209.0,Montgomery,9.0,NM
+GA,13211.0,Morgan,1.0,M
+GA,13213.0,Murray,3.0,M
+GA,13215.0,Muscogee,2.0,M
+GA,13217.0,Newton,1.0,M
+GA,13219.0,Oconee,3.0,M
+GA,13221.0,Oglethorpe,3.0,M
+GA,13223.0,Paulding,1.0,M
+GA,13225.0,Peach,3.0,M
+GA,13227.0,Pickens,1.0,M
+GA,13229.0,Pierce,6.0,NM
+GA,13231.0,Pike,1.0,M
+GA,13233.0,Polk,4.0,NM
+GA,13235.0,Pulaski,3.0,M
+GA,13237.0,Putnam,6.0,NM
+GA,13239.0,Quitman,9.0,NM
+GA,13241.0,Rabun,7.0,NM
+GA,13243.0,Randolph,6.0,NM
+GA,13245.0,Richmond,2.0,M
+GA,13247.0,Rockdale,1.0,M
+GA,13249.0,Schley,8.0,NM
+GA,13251.0,Screven,6.0,NM
+GA,13253.0,Seminole,6.0,NM
+GA,13255.0,Spalding,1.0,M
+GA,13257.0,Stephens,7.0,NM
+GA,13259.0,Stewart,8.0,NM
+GA,13261.0,Sumter,6.0,NM
+GA,13263.0,Talbot,8.0,NM
+GA,13265.0,Taliaferro,8.0,NM
+GA,13267.0,Tattnall,6.0,NM
+GA,13269.0,Taylor,8.0,NM
+GA,13271.0,Telfair,7.0,NM
+GA,13273.0,Terrell,3.0,M
+GA,13275.0,Thomas,4.0,NM
+GA,13277.0,Tift,5.0,NM
+GA,13279.0,Toombs,7.0,NM
+GA,13281.0,Towns,9.0,NM
+GA,13283.0,Treutlen,7.0,NM
+GA,13285.0,Troup,4.0,NM
+GA,13287.0,Turner,6.0,NM
+GA,13289.0,Twiggs,3.0,M
+GA,13291.0,Union,9.0,NM
+GA,13293.0,Upson,6.0,NM
+GA,13295.0,Walker,2.0,M
+GA,13297.0,Walton,1.0,M
+GA,13299.0,Ware,5.0,NM
+GA,13301.0,Warren,8.0,NM
+GA,13303.0,Washington,7.0,NM
+GA,13305.0,Wayne,6.0,NM
+GA,13307.0,Webster,8.0,NM
+GA,13309.0,Wheeler,9.0,NM
+GA,13311.0,White,6.0,NM
+GA,13313.0,Whitfield,3.0,M
+GA,13315.0,Wilcox,8.0,NM
+GA,13317.0,Wilkes,6.0,NM
+GA,13319.0,Wilkinson,8.0,NM
+GA,13321.0,Worth,3.0,M
+HI,15001.0,Hawaii,5.0,NM
+HI,15003.0,Honolulu,2.0,M
+HI,15005.0,Kalawao,3.0,M
+HI,15007.0,Kauai,5.0,NM
+HI,15009.0,Maui,3.0,M
+ID,16001.0,Ada,2.0,M
+ID,16003.0,Adams,9.0,NM
+ID,16005.0,Bannock,3.0,M
+ID,16007.0,Bear Lake,9.0,NM
+ID,16009.0,Benewah,6.0,NM
+ID,16011.0,Bingham,4.0,NM
+ID,16013.0,Blaine,7.0,NM
+ID,16015.0,Boise,2.0,M
+ID,16017.0,Bonner,6.0,NM
+ID,16019.0,Bonneville,3.0,M
+ID,16021.0,Boundary,7.0,NM
+ID,16023.0,Butte,3.0,M
+ID,16025.0,Camas,9.0,NM
+ID,16027.0,Canyon,2.0,M
+ID,16029.0,Caribou,6.0,NM
+ID,16031.0,Cassia,7.0,NM
+ID,16033.0,Clark,9.0,NM
+ID,16035.0,Clearwater,6.0,NM
+ID,16037.0,Custer,8.0,NM
+ID,16039.0,Elmore,6.0,NM
+ID,16041.0,Franklin,3.0,M
+ID,16043.0,Fremont,6.0,NM
+ID,16045.0,Gem,2.0,M
+ID,16047.0,Gooding,7.0,NM
+ID,16049.0,Idaho,6.0,NM
+ID,16051.0,Jefferson,3.0,M
+ID,16053.0,Jerome,7.0,NM
+ID,16055.0,Kootenai,3.0,M
+ID,16057.0,Latah,4.0,NM
+ID,16059.0,Lemhi,7.0,NM
+ID,16061.0,Lewis,8.0,NM
+ID,16063.0,Lincoln,9.0,NM
+ID,16065.0,Madison,4.0,NM
+ID,16067.0,Minidoka,7.0,NM
+ID,16069.0,Nez Perce,3.0,M
+ID,16071.0,Oneida,8.0,NM
+ID,16073.0,Owyhee,2.0,M
+ID,16075.0,Payette,6.0,NM
+ID,16077.0,Power,6.0,NM
+ID,16079.0,Shoshone,6.0,NM
+ID,16081.0,Teton,9.0,NM
+ID,16083.0,Twin Falls,5.0,NM
+ID,16085.0,Valley,8.0,NM
+ID,16087.0,Washington,6.0,NM
+IL,17001.0,Adams,5.0,NM
+IL,17003.0,Alexander,3.0,M
+IL,17005.0,Bond,1.0,M
+IL,17007.0,Boone,2.0,M
+IL,17009.0,Brown,7.0,NM
+IL,17011.0,Bureau,7.0,NM
+IL,17013.0,Calhoun,1.0,M
+IL,17015.0,Carroll,7.0,NM
+IL,17017.0,Cass,6.0,NM
+IL,17019.0,Champaign,3.0,M
+IL,17021.0,Christian,6.0,NM
+IL,17023.0,Clark,6.0,NM
+IL,17025.0,Clay,7.0,NM
+IL,17027.0,Clinton,1.0,M
+IL,17029.0,Coles,5.0,NM
+IL,17031.0,Cook,1.0,M
+IL,17033.0,Crawford,7.0,NM
+IL,17035.0,Cumberland,9.0,NM
+IL,17037.0,DeKalb,1.0,M
+IL,17039.0,De Witt,3.0,M
+IL,17041.0,Douglas,6.0,NM
+IL,17043.0,DuPage,1.0,M
+IL,17045.0,Edgar,6.0,NM
+IL,17047.0,Edwards,9.0,NM
+IL,17049.0,Effingham,7.0,NM
+IL,17051.0,Fayette,6.0,NM
+IL,17053.0,Ford,3.0,M
+IL,17055.0,Franklin,4.0,NM
+IL,17057.0,Fulton,6.0,NM
+IL,17059.0,Gallatin,8.0,NM
+IL,17061.0,Greene,6.0,NM
+IL,17063.0,Grundy,1.0,M
+IL,17065.0,Hamilton,7.0,NM
+IL,17067.0,Hancock,7.0,NM
+IL,17069.0,Hardin,9.0,NM
+IL,17071.0,Henderson,9.0,NM
+IL,17073.0,Henry,2.0,M
+IL,17075.0,Iroquois,6.0,NM
+IL,17077.0,Jackson,3.0,M
+IL,17079.0,Jasper,7.0,NM
+IL,17081.0,Jefferson,7.0,NM
+IL,17083.0,Jersey,1.0,M
+IL,17085.0,Jo Daviess,6.0,NM
+IL,17087.0,Johnson,8.0,NM
+IL,17089.0,Kane,1.0,M
+IL,17091.0,Kankakee,3.0,M
+IL,17093.0,Kendall,1.0,M
+IL,17095.0,Knox,4.0,NM
+IL,17097.0,Lake,1.0,M
+IL,17099.0,La Salle,4.0,NM
+IL,17101.0,Lawrence,7.0,NM
+IL,17103.0,Lee,6.0,NM
+IL,17105.0,Livingston,4.0,NM
+IL,17107.0,Logan,6.0,NM
+IL,17109.0,McDonough,5.0,NM
+IL,17111.0,McHenry,1.0,M
+IL,17113.0,McLean,3.0,M
+IL,17115.0,Macon,3.0,M
+IL,17117.0,Macoupin,1.0,M
+IL,17119.0,Madison,1.0,M
+IL,17121.0,Marion,4.0,NM
+IL,17123.0,Marshall,2.0,M
+IL,17125.0,Mason,6.0,NM
+IL,17127.0,Massac,7.0,NM
+IL,17129.0,Menard,3.0,M
+IL,17131.0,Mercer,2.0,M
+IL,17133.0,Monroe,1.0,M
+IL,17135.0,Montgomery,6.0,NM
+IL,17137.0,Morgan,4.0,NM
+IL,17139.0,Moultrie,6.0,NM
+IL,17141.0,Ogle,4.0,NM
+IL,17143.0,Peoria,2.0,M
+IL,17145.0,Perry,6.0,NM
+IL,17147.0,Piatt,3.0,M
+IL,17149.0,Pike,7.0,NM
+IL,17151.0,Pope,8.0,NM
+IL,17153.0,Pulaski,8.0,NM
+IL,17155.0,Putnam,8.0,NM
+IL,17157.0,Randolph,6.0,NM
+IL,17159.0,Richland,7.0,NM
+IL,17161.0,Rock Island,2.0,M
+IL,17163.0,St. Clair,1.0,M
+IL,17165.0,Saline,6.0,NM
+IL,17167.0,Sangamon,3.0,M
+IL,17169.0,Schuyler,7.0,NM
+IL,17171.0,Scott,9.0,NM
+IL,17173.0,Shelby,6.0,NM
+IL,17175.0,Stark,2.0,M
+IL,17177.0,Stephenson,4.0,NM
+IL,17179.0,Tazewell,2.0,M
+IL,17181.0,Union,6.0,NM
+IL,17183.0,Vermilion,3.0,M
+IL,17185.0,Wabash,7.0,NM
+IL,17187.0,Warren,6.0,NM
+IL,17189.0,Washington,6.0,NM
+IL,17191.0,Wayne,7.0,NM
+IL,17193.0,White,6.0,NM
+IL,17195.0,Whiteside,4.0,NM
+IL,17197.0,Will,1.0,M
+IL,17199.0,Williamson,3.0,M
+IL,17201.0,Winnebago,2.0,M
+IL,17203.0,Woodford,2.0,M
+IN,18001.0,Adams,6.0,NM
+IN,18003.0,Allen,2.0,M
+IN,18005.0,Bartholomew,3.0,M
+IN,18007.0,Benton,3.0,M
+IN,18009.0,Blackford,6.0,NM
+IN,18011.0,Boone,1.0,M
+IN,18013.0,Brown,1.0,M
+IN,18015.0,Carroll,3.0,M
+IN,18017.0,Cass,4.0,NM
+IN,18019.0,Clark,1.0,M
+IN,18021.0,Clay,3.0,M
+IN,18023.0,Clinton,6.0,NM
+IN,18025.0,Crawford,8.0,NM
+IN,18027.0,Daviess,7.0,NM
+IN,18029.0,Dearborn,1.0,M
+IN,18031.0,Decatur,6.0,NM
+IN,18033.0,DeKalb,4.0,NM
+IN,18035.0,Delaware,3.0,M
+IN,18037.0,Dubois,5.0,NM
+IN,18039.0,Elkhart,3.0,M
+IN,18041.0,Fayette,6.0,NM
+IN,18043.0,Floyd,1.0,M
+IN,18045.0,Fountain,6.0,NM
+IN,18047.0,Franklin,6.0,NM
+IN,18049.0,Fulton,7.0,NM
+IN,18051.0,Gibson,6.0,NM
+IN,18053.0,Grant,4.0,NM
+IN,18055.0,Greene,6.0,NM
+IN,18057.0,Hamilton,1.0,M
+IN,18059.0,Hancock,1.0,M
+IN,18061.0,Harrison,1.0,M
+IN,18063.0,Hendricks,1.0,M
+IN,18065.0,Henry,4.0,NM
+IN,18067.0,Howard,3.0,M
+IN,18069.0,Huntington,6.0,NM
+IN,18071.0,Jackson,4.0,NM
+IN,18073.0,Jasper,1.0,M
+IN,18075.0,Jay,6.0,NM
+IN,18077.0,Jefferson,6.0,NM
+IN,18079.0,Jennings,6.0,NM
+IN,18081.0,Johnson,1.0,M
+IN,18083.0,Knox,5.0,NM
+IN,18085.0,Kosciusko,4.0,NM
+IN,18087.0,LaGrange,6.0,NM
+IN,18089.0,Lake,1.0,M
+IN,18091.0,LaPorte,3.0,M
+IN,18093.0,Lawrence,6.0,NM
+IN,18095.0,Madison,1.0,M
+IN,18097.0,Marion,1.0,M
+IN,18099.0,Marshall,6.0,NM
+IN,18101.0,Martin,7.0,NM
+IN,18103.0,Miami,6.0,NM
+IN,18105.0,Monroe,3.0,M
+IN,18107.0,Montgomery,6.0,NM
+IN,18109.0,Morgan,1.0,M
+IN,18111.0,Newton,1.0,M
+IN,18113.0,Noble,6.0,NM
+IN,18115.0,Ohio,1.0,M
+IN,18117.0,Orange,6.0,NM
+IN,18119.0,Owen,3.0,M
+IN,18121.0,Parke,6.0,NM
+IN,18123.0,Perry,6.0,NM
+IN,18125.0,Pike,8.0,NM
+IN,18127.0,Porter,1.0,M
+IN,18129.0,Posey,2.0,M
+IN,18131.0,Pulaski,6.0,NM
+IN,18133.0,Putnam,1.0,M
+IN,18135.0,Randolph,6.0,NM
+IN,18137.0,Ripley,6.0,NM
+IN,18139.0,Rush,6.0,NM
+IN,18141.0,St. Joseph,2.0,M
+IN,18143.0,Scott,1.0,M
+IN,18145.0,Shelby,1.0,M
+IN,18147.0,Spencer,8.0,NM
+IN,18149.0,Starke,6.0,NM
+IN,18151.0,Steuben,7.0,NM
+IN,18153.0,Sullivan,3.0,M
+IN,18155.0,Switzerland,8.0,NM
+IN,18157.0,Tippecanoe,3.0,M
+IN,18159.0,Tipton,6.0,NM
+IN,18161.0,Union,1.0,M
+IN,18163.0,Vanderburgh,2.0,M
+IN,18165.0,Vermillion,3.0,M
+IN,18167.0,Vigo,3.0,M
+IN,18169.0,Wabash,6.0,NM
+IN,18171.0,Warren,8.0,NM
+IN,18173.0,Warrick,2.0,M
+IN,18175.0,Washington,1.0,M
+IN,18177.0,Wayne,5.0,NM
+IN,18179.0,Wells,2.0,M
+IN,18181.0,White,6.0,NM
+IN,18183.0,Whitley,2.0,M
+IA,19001.0,Adair,8.0,NM
+IA,19003.0,Adams,9.0,NM
+IA,19005.0,Allamakee,6.0,NM
+IA,19007.0,Appanoose,7.0,NM
+IA,19009.0,Audubon,8.0,NM
+IA,19011.0,Benton,2.0,M
+IA,19013.0,Black Hawk,3.0,M
+IA,19015.0,Boone,6.0,NM
+IA,19017.0,Bremer,3.0,M
+IA,19019.0,Buchanan,6.0,NM
+IA,19021.0,Buena Vista,7.0,NM
+IA,19023.0,Butler,8.0,NM
+IA,19025.0,Calhoun,9.0,NM
+IA,19027.0,Carroll,7.0,NM
+IA,19029.0,Cass,6.0,NM
+IA,19031.0,Cedar,6.0,NM
+IA,19033.0,Cerro Gordo,5.0,NM
+IA,19035.0,Cherokee,6.0,NM
+IA,19037.0,Chickasaw,6.0,NM
+IA,19039.0,Clarke,6.0,NM
+IA,19041.0,Clay,7.0,NM
+IA,19043.0,Clayton,8.0,NM
+IA,19045.0,Clinton,4.0,NM
+IA,19047.0,Crawford,7.0,NM
+IA,19049.0,Dallas,2.0,M
+IA,19051.0,Davis,9.0,NM
+IA,19053.0,Decatur,9.0,NM
+IA,19055.0,Delaware,6.0,NM
+IA,19057.0,Des Moines,5.0,NM
+IA,19059.0,Dickinson,7.0,NM
+IA,19061.0,Dubuque,3.0,M
+IA,19063.0,Emmet,7.0,NM
+IA,19065.0,Fayette,6.0,NM
+IA,19067.0,Floyd,7.0,NM
+IA,19069.0,Franklin,7.0,NM
+IA,19071.0,Fremont,8.0,NM
+IA,19073.0,Greene,6.0,NM
+IA,19075.0,Grundy,3.0,M
+IA,19077.0,Guthrie,2.0,M
+IA,19079.0,Hamilton,6.0,NM
+IA,19081.0,Hancock,7.0,NM
+IA,19083.0,Hardin,6.0,NM
+IA,19085.0,Harrison,2.0,M
+IA,19087.0,Henry,6.0,NM
+IA,19089.0,Howard,6.0,NM
+IA,19091.0,Humboldt,7.0,NM
+IA,19093.0,Ida,8.0,NM
+IA,19095.0,Iowa,6.0,NM
+IA,19097.0,Jackson,6.0,NM
+IA,19099.0,Jasper,6.0,NM
+IA,19101.0,Jefferson,7.0,NM
+IA,19103.0,Johnson,3.0,M
+IA,19105.0,Jones,2.0,M
+IA,19107.0,Keokuk,8.0,NM
+IA,19109.0,Kossuth,7.0,NM
+IA,19111.0,Lee,5.0,NM
+IA,19113.0,Linn,2.0,M
+IA,19115.0,Louisa,8.0,NM
+IA,19117.0,Lucas,6.0,NM
+IA,19119.0,Lyon,8.0,NM
+IA,19121.0,Madison,2.0,M
+IA,19123.0,Mahaska,7.0,NM
+IA,19125.0,Marion,6.0,NM
+IA,19127.0,Marshall,4.0,NM
+IA,19129.0,Mills,2.0,M
+IA,19131.0,Mitchell,7.0,NM
+IA,19133.0,Monona,6.0,NM
+IA,19135.0,Monroe,7.0,NM
+IA,19137.0,Montgomery,6.0,NM
+IA,19139.0,Muscatine,4.0,NM
+IA,19141.0,O'Brien,7.0,NM
+IA,19143.0,Osceola,7.0,NM
+IA,19145.0,Page,6.0,NM
+IA,19147.0,Palo Alto,7.0,NM
+IA,19149.0,Plymouth,3.0,M
+IA,19151.0,Pocahontas,9.0,NM
+IA,19153.0,Polk,2.0,M
+IA,19155.0,Pottawattamie,2.0,M
+IA,19157.0,Poweshiek,7.0,NM
+IA,19159.0,Ringgold,9.0,NM
+IA,19161.0,Sac,9.0,NM
+IA,19163.0,Scott,2.0,M
+IA,19165.0,Shelby,6.0,NM
+IA,19167.0,Sioux,7.0,NM
+IA,19169.0,Story,3.0,M
+IA,19171.0,Tama,6.0,NM
+IA,19173.0,Taylor,9.0,NM
+IA,19175.0,Union,6.0,NM
+IA,19177.0,Van Buren,9.0,NM
+IA,19179.0,Wapello,5.0,NM
+IA,19181.0,Warren,2.0,M
+IA,19183.0,Washington,3.0,M
+IA,19185.0,Wayne,9.0,NM
+IA,19187.0,Webster,5.0,NM
+IA,19189.0,Winnebago,7.0,NM
+IA,19191.0,Winneshiek,7.0,NM
+IA,19193.0,Woodbury,3.0,M
+IA,19195.0,Worth,9.0,NM
+IA,19197.0,Wright,7.0,NM
+KS,20001.0,Allen,7.0,NM
+KS,20003.0,Anderson,6.0,NM
+KS,20005.0,Atchison,6.0,NM
+KS,20007.0,Barber,9.0,NM
+KS,20009.0,Barton,7.0,NM
+KS,20011.0,Bourbon,6.0,NM
+KS,20013.0,Brown,6.0,NM
+KS,20015.0,Butler,2.0,M
+KS,20017.0,Chase,9.0,NM
+KS,20019.0,Chautauqua,8.0,NM
+KS,20021.0,Cherokee,6.0,NM
+KS,20023.0,Cheyenne,9.0,NM
+KS,20025.0,Clark,9.0,NM
+KS,20027.0,Clay,6.0,NM
+KS,20029.0,Cloud,7.0,NM
+KS,20031.0,Coffey,6.0,NM
+KS,20033.0,Comanche,9.0,NM
+KS,20035.0,Cowley,4.0,NM
+KS,20037.0,Crawford,4.0,NM
+KS,20039.0,Decatur,9.0,NM
+KS,20041.0,Dickinson,7.0,NM
+KS,20043.0,Doniphan,3.0,M
+KS,20045.0,Douglas,3.0,M
+KS,20047.0,Edwards,9.0,NM
+KS,20049.0,Elk,8.0,NM
+KS,20051.0,Ellis,5.0,NM
+KS,20053.0,Ellsworth,7.0,NM
+KS,20055.0,Finney,5.0,NM
+KS,20057.0,Ford,5.0,NM
+KS,20059.0,Franklin,6.0,NM
+KS,20061.0,Geary,4.0,NM
+KS,20063.0,Gove,9.0,NM
+KS,20065.0,Graham,9.0,NM
+KS,20067.0,Grant,7.0,NM
+KS,20069.0,Gray,9.0,NM
+KS,20071.0,Greeley,9.0,NM
+KS,20073.0,Greenwood,6.0,NM
+KS,20075.0,Hamilton,9.0,NM
+KS,20077.0,Harper,8.0,NM
+KS,20079.0,Harvey,2.0,M
+KS,20081.0,Haskell,9.0,NM
+KS,20083.0,Hodgeman,9.0,NM
+KS,20085.0,Jackson,3.0,M
+KS,20087.0,Jefferson,3.0,M
+KS,20089.0,Jewell,9.0,NM
+KS,20091.0,Johnson,1.0,M
+KS,20093.0,Kearny,9.0,NM
+KS,20095.0,Kingman,2.0,M
+KS,20097.0,Kiowa,9.0,NM
+KS,20099.0,Labette,7.0,NM
+KS,20101.0,Lane,9.0,NM
+KS,20103.0,Leavenworth,1.0,M
+KS,20105.0,Lincoln,9.0,NM
+KS,20107.0,Linn,1.0,M
+KS,20109.0,Logan,9.0,NM
+KS,20111.0,Lyon,4.0,NM
+KS,20113.0,McPherson,7.0,NM
+KS,20115.0,Marion,6.0,NM
+KS,20117.0,Marshall,6.0,NM
+KS,20119.0,Meade,9.0,NM
+KS,20121.0,Miami,1.0,M
+KS,20123.0,Mitchell,7.0,NM
+KS,20125.0,Montgomery,5.0,NM
+KS,20127.0,Morris,8.0,NM
+KS,20129.0,Morton,9.0,NM
+KS,20131.0,Nemaha,6.0,NM
+KS,20133.0,Neosho,7.0,NM
+KS,20135.0,Ness,9.0,NM
+KS,20137.0,Norton,7.0,NM
+KS,20139.0,Osage,3.0,M
+KS,20141.0,Osborne,9.0,NM
+KS,20143.0,Ottawa,9.0,NM
+KS,20145.0,Pawnee,7.0,NM
+KS,20147.0,Phillips,7.0,NM
+KS,20149.0,Pottawatomie,3.0,M
+KS,20151.0,Pratt,7.0,NM
+KS,20153.0,Rawlins,9.0,NM
+KS,20155.0,Reno,4.0,NM
+KS,20157.0,Republic,9.0,NM
+KS,20159.0,Rice,7.0,NM
+KS,20161.0,Riley,3.0,M
+KS,20163.0,Rooks,9.0,NM
+KS,20165.0,Rush,9.0,NM
+KS,20167.0,Russell,7.0,NM
+KS,20169.0,Saline,5.0,NM
+KS,20171.0,Scott,7.0,NM
+KS,20173.0,Sedgwick,2.0,M
+KS,20175.0,Seward,5.0,NM
+KS,20177.0,Shawnee,3.0,M
+KS,20179.0,Sheridan,9.0,NM
+KS,20181.0,Sherman,7.0,NM
+KS,20183.0,Smith,9.0,NM
+KS,20185.0,Stafford,9.0,NM
+KS,20187.0,Stanton,9.0,NM
+KS,20189.0,Stevens,7.0,NM
+KS,20191.0,Sumner,2.0,M
+KS,20193.0,Thomas,7.0,NM
+KS,20195.0,Trego,9.0,NM
+KS,20197.0,Wabaunsee,3.0,M
+KS,20199.0,Wallace,9.0,NM
+KS,20201.0,Washington,9.0,NM
+KS,20203.0,Wichita,9.0,NM
+KS,20205.0,Wilson,7.0,NM
+KS,20207.0,Woodson,9.0,NM
+KS,20209.0,Wyandotte,1.0,M
+KY,21001.0,Adair,7.0,NM
+KY,21003.0,Allen,3.0,M
+KY,21005.0,Anderson,6.0,NM
+KY,21007.0,Ballard,9.0,NM
+KY,21009.0,Barren,6.0,NM
+KY,21011.0,Bath,8.0,NM
+KY,21013.0,Bell,7.0,NM
+KY,21015.0,Boone,1.0,M
+KY,21017.0,Bourbon,2.0,M
+KY,21019.0,Boyd,2.0,M
+KY,21021.0,Boyle,7.0,NM
+KY,21023.0,Bracken,1.0,M
+KY,21025.0,Breathitt,7.0,NM
+KY,21027.0,Breckinridge,8.0,NM
+KY,21029.0,Bullitt,1.0,M
+KY,21031.0,Butler,3.0,M
+KY,21033.0,Caldwell,7.0,NM
+KY,21035.0,Calloway,7.0,NM
+KY,21037.0,Campbell,1.0,M
+KY,21039.0,Carlisle,9.0,NM
+KY,21041.0,Carroll,6.0,NM
+KY,21043.0,Carter,6.0,NM
+KY,21045.0,Casey,9.0,NM
+KY,21047.0,Christian,2.0,M
+KY,21049.0,Clark,2.0,M
+KY,21051.0,Clay,7.0,NM
+KY,21053.0,Clinton,9.0,NM
+KY,21055.0,Crittenden,7.0,NM
+KY,21057.0,Cumberland,9.0,NM
+KY,21059.0,Daviess,3.0,M
+KY,21061.0,Edmonson,3.0,M
+KY,21063.0,Elliott,9.0,NM
+KY,21065.0,Estill,6.0,NM
+KY,21067.0,Fayette,2.0,M
+KY,21069.0,Fleming,7.0,NM
+KY,21071.0,Floyd,7.0,NM
+KY,21073.0,Franklin,4.0,NM
+KY,21075.0,Fulton,9.0,NM
+KY,21077.0,Gallatin,1.0,M
+KY,21079.0,Garrard,6.0,NM
+KY,21081.0,Grant,1.0,M
+KY,21083.0,Graves,7.0,NM
+KY,21085.0,Grayson,6.0,NM
+KY,21087.0,Green,8.0,NM
+KY,21089.0,Greenup,2.0,M
+KY,21091.0,Hancock,3.0,M
+KY,21093.0,Hardin,3.0,M
+KY,21095.0,Harlan,7.0,NM
+KY,21097.0,Harrison,6.0,NM
+KY,21099.0,Hart,8.0,NM
+KY,21101.0,Henderson,2.0,M
+KY,21103.0,Henry,1.0,M
+KY,21105.0,Hickman,9.0,NM
+KY,21107.0,Hopkins,5.0,NM
+KY,21109.0,Jackson,9.0,NM
+KY,21111.0,Jefferson,1.0,M
+KY,21113.0,Jessamine,2.0,M
+KY,21115.0,Johnson,7.0,NM
+KY,21117.0,Kenton,1.0,M
+KY,21119.0,Knott,9.0,NM
+KY,21121.0,Knox,7.0,NM
+KY,21123.0,Larue,3.0,M
+KY,21125.0,Laurel,5.0,NM
+KY,21127.0,Lawrence,6.0,NM
+KY,21129.0,Lee,9.0,NM
+KY,21131.0,Leslie,9.0,NM
+KY,21133.0,Letcher,9.0,NM
+KY,21135.0,Lewis,8.0,NM
+KY,21137.0,Lincoln,7.0,NM
+KY,21139.0,Livingston,9.0,NM
+KY,21141.0,Logan,6.0,NM
+KY,21143.0,Lyon,9.0,NM
+KY,21145.0,McCracken,5.0,NM
+KY,21147.0,McCreary,9.0,NM
+KY,21149.0,McLean,3.0,M
+KY,21151.0,Madison,4.0,NM
+KY,21153.0,Magoffin,9.0,NM
+KY,21155.0,Marion,7.0,NM
+KY,21157.0,Marshall,7.0,NM
+KY,21159.0,Martin,9.0,NM
+KY,21161.0,Mason,6.0,NM
+KY,21163.0,Meade,3.0,M
+KY,21165.0,Menifee,9.0,NM
+KY,21167.0,Mercer,6.0,NM
+KY,21169.0,Metcalfe,9.0,NM
+KY,21171.0,Monroe,8.0,NM
+KY,21173.0,Montgomery,6.0,NM
+KY,21175.0,Morgan,9.0,NM
+KY,21177.0,Muhlenberg,6.0,NM
+KY,21179.0,Nelson,6.0,NM
+KY,21181.0,Nicholas,8.0,NM
+KY,21183.0,Ohio,6.0,NM
+KY,21185.0,Oldham,1.0,M
+KY,21187.0,Owen,8.0,NM
+KY,21189.0,Owsley,9.0,NM
+KY,21191.0,Pendleton,1.0,M
+KY,21193.0,Perry,7.0,NM
+KY,21195.0,Pike,7.0,NM
+KY,21197.0,Powell,6.0,NM
+KY,21199.0,Pulaski,5.0,NM
+KY,21201.0,Robertson,8.0,NM
+KY,21203.0,Rockcastle,7.0,NM
+KY,21205.0,Rowan,7.0,NM
+KY,21207.0,Russell,9.0,NM
+KY,21209.0,Scott,2.0,M
+KY,21211.0,Shelby,1.0,M
+KY,21213.0,Simpson,6.0,NM
+KY,21215.0,Spencer,1.0,M
+KY,21217.0,Taylor,7.0,NM
+KY,21219.0,Todd,8.0,NM
+KY,21221.0,Trigg,2.0,M
+KY,21223.0,Trimble,1.0,M
+KY,21225.0,Union,6.0,NM
+KY,21227.0,Warren,3.0,M
+KY,21229.0,Washington,9.0,NM
+KY,21231.0,Wayne,7.0,NM
+KY,21233.0,Webster,8.0,NM
+KY,21235.0,Whitley,7.0,NM
+KY,21237.0,Wolfe,9.0,NM
+KY,21239.0,Woodford,2.0,M
+LA,22001.0,Acadia,2.0,M
+LA,22003.0,Allen,6.0,NM
+LA,22005.0,Ascension,2.0,M
+LA,22007.0,Assumption,6.0,NM
+LA,22009.0,Avoyelles,6.0,NM
+LA,22011.0,Beauregard,6.0,NM
+LA,22013.0,Bienville,6.0,NM
+LA,22015.0,Bossier,2.0,M
+LA,22017.0,Caddo,2.0,M
+LA,22019.0,Calcasieu,3.0,M
+LA,22021.0,Caldwell,8.0,NM
+LA,22023.0,Cameron,3.0,M
+LA,22025.0,Catahoula,9.0,NM
+LA,22027.0,Claiborne,6.0,NM
+LA,22029.0,Concordia,7.0,NM
+LA,22031.0,De Soto,2.0,M
+LA,22033.0,East Baton Rouge,2.0,M
+LA,22035.0,East Carroll,7.0,NM
+LA,22037.0,East Feliciana,2.0,M
+LA,22039.0,Evangeline,6.0,NM
+LA,22041.0,Franklin,7.0,NM
+LA,22043.0,Grant,3.0,M
+LA,22045.0,Iberia,2.0,M
+LA,22047.0,Iberville,2.0,M
+LA,22049.0,Jackson,6.0,NM
+LA,22051.0,Jefferson,1.0,M
+LA,22053.0,Jefferson Davis,6.0,NM
+LA,22055.0,Lafayette,2.0,M
+LA,22057.0,Lafourche,3.0,M
+LA,22059.0,La Salle,6.0,NM
+LA,22061.0,Lincoln,4.0,NM
+LA,22063.0,Livingston,2.0,M
+LA,22065.0,Madison,7.0,NM
+LA,22067.0,Morehouse,6.0,NM
+LA,22069.0,Natchitoches,6.0,NM
+LA,22071.0,Orleans,1.0,M
+LA,22073.0,Ouachita,3.0,M
+LA,22075.0,Plaquemines,1.0,M
+LA,22077.0,Pointe Coupee,2.0,M
+LA,22079.0,Rapides,3.0,M
+LA,22081.0,Red River,8.0,NM
+LA,22083.0,Richland,6.0,NM
+LA,22085.0,Sabine,6.0,NM
+LA,22087.0,St. Bernard,1.0,M
+LA,22089.0,St. Charles,1.0,M
+LA,22091.0,St. Helena,2.0,M
+LA,22093.0,St. James,1.0,M
+LA,22095.0,St. John the Baptist,1.0,M
+LA,22097.0,St. Landry,4.0,NM
+LA,22099.0,St. Martin,2.0,M
+LA,22101.0,St. Mary,4.0,NM
+LA,22103.0,St. Tammany,1.0,M
+LA,22105.0,Tangipahoa,3.0,M
+LA,22107.0,Tensas,9.0,NM
+LA,22109.0,Terrebonne,3.0,M
+LA,22111.0,Union,3.0,M
+LA,22113.0,Vermilion,2.0,M
+LA,22115.0,Vernon,5.0,NM
+LA,22117.0,Washington,6.0,NM
+LA,22119.0,Webster,2.0,M
+LA,22121.0,West Baton Rouge,2.0,M
+LA,22123.0,West Carroll,9.0,NM
+LA,22125.0,West Feliciana,2.0,M
+LA,22127.0,Winn,6.0,NM
+ME,23001.0,Androscoggin,3.0,M
+ME,23003.0,Aroostook,7.0,NM
+ME,23005.0,Cumberland,2.0,M
+ME,23007.0,Franklin,6.0,NM
+ME,23009.0,Hancock,6.0,NM
+ME,23011.0,Kennebec,4.0,NM
+ME,23013.0,Knox,7.0,NM
+ME,23015.0,Lincoln,8.0,NM
+ME,23017.0,Oxford,6.0,NM
+ME,23019.0,Penobscot,3.0,M
+ME,23021.0,Piscataquis,8.0,NM
+ME,23023.0,Sagadahoc,2.0,M
+ME,23025.0,Somerset,6.0,NM
+ME,23027.0,Waldo,6.0,NM
+ME,23029.0,Washington,7.0,NM
+ME,23031.0,York,2.0,M
+MD,24001.0,Allegany,3.0,M
+MD,24003.0,Anne Arundel,1.0,M
+MD,24005.0,Baltimore,1.0,M
+MD,24009.0,Calvert,1.0,M
+MD,24011.0,Caroline,6.0,NM
+MD,24013.0,Carroll,1.0,M
+MD,24015.0,Cecil,1.0,M
+MD,24017.0,Charles,1.0,M
+MD,24019.0,Dorchester,6.0,NM
+MD,24021.0,Frederick,1.0,M
+MD,24023.0,Garrett,6.0,NM
+MD,24025.0,Harford,1.0,M
+MD,24027.0,Howard,1.0,M
+MD,24029.0,Kent,6.0,NM
+MD,24031.0,Montgomery,1.0,M
+MD,24033.0,Prince George's,1.0,M
+MD,24035.0,Queen Anne's,1.0,M
+MD,24037.0,St. Mary's,3.0,M
+MD,24039.0,Somerset,2.0,M
+MD,24041.0,Talbot,6.0,NM
+MD,24043.0,Washington,2.0,M
+MD,24045.0,Wicomico,2.0,M
+MD,24047.0,Worcester,2.0,M
+MD,24510.0,Baltimore city,1.0,M
+MA,25001.0,Barnstable,3.0,M
+MA,25003.0,Berkshire,3.0,M
+MA,25005.0,Bristol,1.0,M
+MA,25007.0,Dukes,7.0,NM
+MA,25009.0,Essex,1.0,M
+MA,25011.0,Franklin,4.0,NM
+MA,25013.0,Hampden,2.0,M
+MA,25015.0,Hampshire,2.0,M
+MA,25017.0,Middlesex,1.0,M
+MA,25019.0,Nantucket,7.0,NM
+MA,25021.0,Norfolk,1.0,M
+MA,25023.0,Plymouth,1.0,M
+MA,25025.0,Suffolk,1.0,M
+MA,25027.0,Worcester,2.0,M
+MI,26001.0,Alcona,9.0,NM
+MI,26003.0,Alger,7.0,NM
+MI,26005.0,Allegan,4.0,NM
+MI,26007.0,Alpena,7.0,NM
+MI,26009.0,Antrim,9.0,NM
+MI,26011.0,Arenac,8.0,NM
+MI,26013.0,Baraga,9.0,NM
+MI,26015.0,Barry,2.0,M
+MI,26017.0,Bay,3.0,M
+MI,26019.0,Benzie,9.0,NM
+MI,26021.0,Berrien,3.0,M
+MI,26023.0,Branch,6.0,NM
+MI,26025.0,Calhoun,3.0,M
+MI,26027.0,Cass,2.0,M
+MI,26029.0,Charlevoix,7.0,NM
+MI,26031.0,Cheboygan,7.0,NM
+MI,26033.0,Chippewa,7.0,NM
+MI,26035.0,Clare,6.0,NM
+MI,26037.0,Clinton,2.0,M
+MI,26039.0,Crawford,7.0,NM
+MI,26041.0,Delta,5.0,NM
+MI,26043.0,Dickinson,7.0,NM
+MI,26045.0,Eaton,2.0,M
+MI,26047.0,Emmet,7.0,NM
+MI,26049.0,Genesee,2.0,M
+MI,26051.0,Gladwin,6.0,NM
+MI,26053.0,Gogebic,7.0,NM
+MI,26055.0,Grand Traverse,5.0,NM
+MI,26057.0,Gratiot,6.0,NM
+MI,26059.0,Hillsdale,6.0,NM
+MI,26061.0,Houghton,5.0,NM
+MI,26063.0,Huron,7.0,NM
+MI,26065.0,Ingham,2.0,M
+MI,26067.0,Ionia,4.0,NM
+MI,26069.0,Iosco,7.0,NM
+MI,26071.0,Iron,7.0,NM
+MI,26073.0,Isabella,4.0,NM
+MI,26075.0,Jackson,3.0,M
+MI,26077.0,Kalamazoo,2.0,M
+MI,26079.0,Kalkaska,7.0,NM
+MI,26081.0,Kent,2.0,M
+MI,26083.0,Keweenaw,9.0,NM
+MI,26085.0,Lake,9.0,NM
+MI,26087.0,Lapeer,1.0,M
+MI,26089.0,Leelanau,9.0,NM
+MI,26091.0,Lenawee,4.0,NM
+MI,26093.0,Livingston,1.0,M
+MI,26095.0,Luce,7.0,NM
+MI,26097.0,Mackinac,7.0,NM
+MI,26099.0,Macomb,1.0,M
+MI,26101.0,Manistee,7.0,NM
+MI,26103.0,Marquette,5.0,NM
+MI,26105.0,Mason,7.0,NM
+MI,26107.0,Mecosta,6.0,NM
+MI,26109.0,Menominee,7.0,NM
+MI,26111.0,Midland,3.0,M
+MI,26113.0,Missaukee,9.0,NM
+MI,26115.0,Monroe,3.0,M
+MI,26117.0,Montcalm,2.0,M
+MI,26119.0,Montmorency,9.0,NM
+MI,26121.0,Muskegon,3.0,M
+MI,26123.0,Newaygo,6.0,NM
+MI,26125.0,Oakland,1.0,M
+MI,26127.0,Oceana,6.0,NM
+MI,26129.0,Ogemaw,9.0,NM
+MI,26131.0,Ontonagon,9.0,NM
+MI,26133.0,Osceola,9.0,NM
+MI,26135.0,Oscoda,9.0,NM
+MI,26137.0,Otsego,7.0,NM
+MI,26139.0,Ottawa,2.0,M
+MI,26141.0,Presque Isle,7.0,NM
+MI,26143.0,Roscommon,7.0,NM
+MI,26145.0,Saginaw,3.0,M
+MI,26147.0,St. Clair,1.0,M
+MI,26149.0,St. Joseph,4.0,NM
+MI,26151.0,Sanilac,6.0,NM
+MI,26153.0,Schoolcraft,7.0,NM
+MI,26155.0,Shiawassee,4.0,NM
+MI,26157.0,Tuscola,6.0,NM
+MI,26159.0,Van Buren,2.0,M
+MI,26161.0,Washtenaw,2.0,M
+MI,26163.0,Wayne,1.0,M
+MI,26165.0,Wexford,7.0,NM
+MN,27001.0,Aitkin,8.0,NM
+MN,27003.0,Anoka,1.0,M
+MN,27005.0,Becker,6.0,NM
+MN,27007.0,Beltrami,7.0,NM
+MN,27009.0,Benton,3.0,M
+MN,27011.0,Big Stone,9.0,NM
+MN,27013.0,Blue Earth,3.0,M
+MN,27015.0,Brown,6.0,NM
+MN,27017.0,Carlton,2.0,M
+MN,27019.0,Carver,1.0,M
+MN,27021.0,Cass,9.0,NM
+MN,27023.0,Chippewa,7.0,NM
+MN,27025.0,Chisago,1.0,M
+MN,27027.0,Clay,3.0,M
+MN,27029.0,Clearwater,8.0,NM
+MN,27031.0,Cook,9.0,NM
+MN,27033.0,Cottonwood,7.0,NM
+MN,27035.0,Crow Wing,4.0,NM
+MN,27037.0,Dakota,1.0,M
+MN,27039.0,Dodge,3.0,M
+MN,27041.0,Douglas,6.0,NM
+MN,27043.0,Faribault,6.0,NM
+MN,27045.0,Fillmore,3.0,M
+MN,27047.0,Freeborn,7.0,NM
+MN,27049.0,Goodhue,4.0,NM
+MN,27051.0,Grant,9.0,NM
+MN,27053.0,Hennepin,1.0,M
+MN,27055.0,Houston,3.0,M
+MN,27057.0,Hubbard,7.0,NM
+MN,27059.0,Isanti,1.0,M
+MN,27061.0,Itasca,6.0,NM
+MN,27063.0,Jackson,7.0,NM
+MN,27065.0,Kanabec,6.0,NM
+MN,27067.0,Kandiyohi,4.0,NM
+MN,27069.0,Kittson,9.0,NM
+MN,27071.0,Koochiching,6.0,NM
+MN,27073.0,Lac qui Parle,9.0,NM
+MN,27075.0,Lake,6.0,NM
+MN,27077.0,Lake of the Woods,9.0,NM
+MN,27079.0,Le Sueur,1.0,M
+MN,27081.0,Lincoln,9.0,NM
+MN,27083.0,Lyon,7.0,NM
+MN,27085.0,McLeod,6.0,NM
+MN,27087.0,Mahnomen,8.0,NM
+MN,27089.0,Marshall,8.0,NM
+MN,27091.0,Martin,7.0,NM
+MN,27093.0,Meeker,6.0,NM
+MN,27095.0,Mille Lacs,1.0,M
+MN,27097.0,Morrison,6.0,NM
+MN,27099.0,Mower,4.0,NM
+MN,27101.0,Murray,9.0,NM
+MN,27103.0,Nicollet,3.0,M
+MN,27105.0,Nobles,7.0,NM
+MN,27107.0,Norman,8.0,NM
+MN,27109.0,Olmsted,3.0,M
+MN,27111.0,Otter Tail,6.0,NM
+MN,27113.0,Pennington,6.0,NM
+MN,27115.0,Pine,6.0,NM
+MN,27117.0,Pipestone,6.0,NM
+MN,27119.0,Polk,3.0,M
+MN,27121.0,Pope,8.0,NM
+MN,27123.0,Ramsey,1.0,M
+MN,27125.0,Red Lake,8.0,NM
+MN,27127.0,Redwood,7.0,NM
+MN,27129.0,Renville,8.0,NM
+MN,27131.0,Rice,4.0,NM
+MN,27133.0,Rock,6.0,NM
+MN,27135.0,Roseau,7.0,NM
+MN,27137.0,St. Louis,2.0,M
+MN,27139.0,Scott,1.0,M
+MN,27141.0,Sherburne,1.0,M
+MN,27143.0,Sibley,1.0,M
+MN,27145.0,Stearns,3.0,M
+MN,27147.0,Steele,5.0,NM
+MN,27149.0,Stevens,7.0,NM
+MN,27151.0,Swift,7.0,NM
+MN,27153.0,Todd,6.0,NM
+MN,27155.0,Traverse,9.0,NM
+MN,27157.0,Wabasha,3.0,M
+MN,27159.0,Wadena,7.0,NM
+MN,27161.0,Waseca,6.0,NM
+MN,27163.0,Washington,1.0,M
+MN,27165.0,Watonwan,6.0,NM
+MN,27167.0,Wilkin,6.0,NM
+MN,27169.0,Winona,4.0,NM
+MN,27171.0,Wright,1.0,M
+MN,27173.0,Yellow Medicine,9.0,NM
+MS,28001.0,Adams,5.0,NM
+MS,28003.0,Alcorn,7.0,NM
+MS,28005.0,Amite,8.0,NM
+MS,28007.0,Attala,6.0,NM
+MS,28009.0,Benton,1.0,M
+MS,28011.0,Bolivar,7.0,NM
+MS,28013.0,Calhoun,9.0,NM
+MS,28015.0,Carroll,9.0,NM
+MS,28017.0,Chickasaw,7.0,NM
+MS,28019.0,Choctaw,9.0,NM
+MS,28021.0,Claiborne,8.0,NM
+MS,28023.0,Clarke,9.0,NM
+MS,28025.0,Clay,7.0,NM
+MS,28027.0,Coahoma,7.0,NM
+MS,28029.0,Copiah,2.0,M
+MS,28031.0,Covington,8.0,NM
+MS,28033.0,DeSoto,1.0,M
+MS,28035.0,Forrest,3.0,M
+MS,28037.0,Franklin,9.0,NM
+MS,28039.0,George,6.0,NM
+MS,28041.0,Greene,8.0,NM
+MS,28043.0,Grenada,7.0,NM
+MS,28045.0,Hancock,2.0,M
+MS,28047.0,Harrison,2.0,M
+MS,28049.0,Hinds,2.0,M
+MS,28051.0,Holmes,6.0,NM
+MS,28053.0,Humphreys,6.0,NM
+MS,28055.0,Issaquena,8.0,NM
+MS,28057.0,Itawamba,7.0,NM
+MS,28059.0,Jackson,2.0,M
+MS,28061.0,Jasper,9.0,NM
+MS,28063.0,Jefferson,8.0,NM
+MS,28065.0,Jefferson Davis,8.0,NM
+MS,28067.0,Jones,4.0,NM
+MS,28069.0,Kemper,9.0,NM
+MS,28071.0,Lafayette,4.0,NM
+MS,28073.0,Lamar,3.0,M
+MS,28075.0,Lauderdale,5.0,NM
+MS,28077.0,Lawrence,8.0,NM
+MS,28079.0,Leake,6.0,NM
+MS,28081.0,Lee,5.0,NM
+MS,28083.0,Leflore,5.0,NM
+MS,28085.0,Lincoln,6.0,NM
+MS,28087.0,Lowndes,5.0,NM
+MS,28089.0,Madison,2.0,M
+MS,28091.0,Marion,6.0,NM
+MS,28093.0,Marshall,1.0,M
+MS,28095.0,Monroe,7.0,NM
+MS,28097.0,Montgomery,7.0,NM
+MS,28099.0,Neshoba,7.0,NM
+MS,28101.0,Newton,7.0,NM
+MS,28103.0,Noxubee,7.0,NM
+MS,28105.0,Oktibbeha,5.0,NM
+MS,28107.0,Panola,6.0,NM
+MS,28109.0,Pearl River,6.0,NM
+MS,28111.0,Perry,3.0,M
+MS,28113.0,Pike,6.0,NM
+MS,28115.0,Pontotoc,7.0,NM
+MS,28117.0,Prentiss,7.0,NM
+MS,28119.0,Quitman,6.0,NM
+MS,28121.0,Rankin,2.0,M
+MS,28123.0,Scott,6.0,NM
+MS,28125.0,Sharkey,8.0,NM
+MS,28127.0,Simpson,2.0,M
+MS,28129.0,Smith,8.0,NM
+MS,28131.0,Stone,6.0,NM
+MS,28133.0,Sunflower,7.0,NM
+MS,28135.0,Tallahatchie,7.0,NM
+MS,28137.0,Tate,1.0,M
+MS,28139.0,Tippah,6.0,NM
+MS,28141.0,Tishomingo,8.0,NM
+MS,28143.0,Tunica,1.0,M
+MS,28145.0,Union,6.0,NM
+MS,28147.0,Walthall,9.0,NM
+MS,28149.0,Warren,4.0,NM
+MS,28151.0,Washington,5.0,NM
+MS,28153.0,Wayne,7.0,NM
+MS,28155.0,Webster,9.0,NM
+MS,28157.0,Wilkinson,8.0,NM
+MS,28159.0,Winston,7.0,NM
+MS,28161.0,Yalobusha,7.0,NM
+MS,28163.0,Yazoo,2.0,M
+MO,29001.0,Adair,7.0,NM
+MO,29003.0,Andrew,3.0,M
+MO,29005.0,Atchison,9.0,NM
+MO,29007.0,Audrain,6.0,NM
+MO,29009.0,Barry,6.0,NM
+MO,29011.0,Barton,6.0,NM
+MO,29013.0,Bates,1.0,M
+MO,29015.0,Benton,7.0,NM
+MO,29017.0,Bollinger,3.0,M
+MO,29019.0,Boone,3.0,M
+MO,29021.0,Buchanan,3.0,M
+MO,29023.0,Butler,5.0,NM
+MO,29025.0,Caldwell,1.0,M
+MO,29027.0,Callaway,3.0,M
+MO,29029.0,Camden,7.0,NM
+MO,29031.0,Cape Girardeau,3.0,M
+MO,29033.0,Carroll,6.0,NM
+MO,29035.0,Carter,9.0,NM
+MO,29037.0,Cass,1.0,M
+MO,29039.0,Cedar,6.0,NM
+MO,29041.0,Chariton,9.0,NM
+MO,29043.0,Christian,2.0,M
+MO,29045.0,Clark,9.0,NM
+MO,29047.0,Clay,1.0,M
+MO,29049.0,Clinton,1.0,M
+MO,29051.0,Cole,3.0,M
+MO,29053.0,Cooper,6.0,NM
+MO,29055.0,Crawford,6.0,NM
+MO,29057.0,Dade,8.0,NM
+MO,29059.0,Dallas,2.0,M
+MO,29061.0,Daviess,8.0,NM
+MO,29063.0,DeKalb,3.0,M
+MO,29065.0,Dent,7.0,NM
+MO,29067.0,Douglas,6.0,NM
+MO,29069.0,Dunklin,7.0,NM
+MO,29071.0,Franklin,1.0,M
+MO,29073.0,Gasconade,6.0,NM
+MO,29075.0,Gentry,8.0,NM
+MO,29077.0,Greene,2.0,M
+MO,29079.0,Grundy,7.0,NM
+MO,29081.0,Harrison,7.0,NM
+MO,29083.0,Henry,6.0,NM
+MO,29085.0,Hickory,8.0,NM
+MO,29087.0,Holt,8.0,NM
+MO,29089.0,Howard,6.0,NM
+MO,29091.0,Howell,7.0,NM
+MO,29093.0,Iron,7.0,NM
+MO,29095.0,Jackson,1.0,M
+MO,29097.0,Jasper,3.0,M
+MO,29099.0,Jefferson,1.0,M
+MO,29101.0,Johnson,4.0,NM
+MO,29103.0,Knox,9.0,NM
+MO,29105.0,Laclede,6.0,NM
+MO,29107.0,Lafayette,1.0,M
+MO,29109.0,Lawrence,6.0,NM
+MO,29111.0,Lewis,9.0,NM
+MO,29113.0,Lincoln,1.0,M
+MO,29115.0,Linn,7.0,NM
+MO,29117.0,Livingston,6.0,NM
+MO,29119.0,McDonald,2.0,M
+MO,29121.0,Macon,7.0,NM
+MO,29123.0,Madison,6.0,NM
+MO,29125.0,Maries,8.0,NM
+MO,29127.0,Marion,5.0,NM
+MO,29129.0,Mercer,9.0,NM
+MO,29131.0,Miller,6.0,NM
+MO,29133.0,Mississippi,6.0,NM
+MO,29135.0,Moniteau,3.0,M
+MO,29137.0,Monroe,9.0,NM
+MO,29139.0,Montgomery,6.0,NM
+MO,29141.0,Morgan,8.0,NM
+MO,29143.0,New Madrid,7.0,NM
+MO,29145.0,Newton,3.0,M
+MO,29147.0,Nodaway,6.0,NM
+MO,29149.0,Oregon,9.0,NM
+MO,29151.0,Osage,3.0,M
+MO,29153.0,Ozark,9.0,NM
+MO,29155.0,Pemiscot,7.0,NM
+MO,29157.0,Perry,6.0,NM
+MO,29159.0,Pettis,4.0,NM
+MO,29161.0,Phelps,5.0,NM
+MO,29163.0,Pike,6.0,NM
+MO,29165.0,Platte,1.0,M
+MO,29167.0,Polk,2.0,M
+MO,29169.0,Pulaski,5.0,NM
+MO,29171.0,Putnam,9.0,NM
+MO,29173.0,Ralls,9.0,NM
+MO,29175.0,Randolph,6.0,NM
+MO,29177.0,Ray,1.0,M
+MO,29179.0,Reynolds,9.0,NM
+MO,29181.0,Ripley,9.0,NM
+MO,29183.0,St. Charles,1.0,M
+MO,29185.0,St. Clair,8.0,NM
+MO,29186.0,Ste. Genevieve,6.0,NM
+MO,29187.0,St. Francois,4.0,NM
+MO,29189.0,St. Louis,1.0,M
+MO,29195.0,Saline,6.0,NM
+MO,29197.0,Schuyler,9.0,NM
+MO,29199.0,Scotland,9.0,NM
+MO,29201.0,Scott,4.0,NM
+MO,29203.0,Shannon,9.0,NM
+MO,29205.0,Shelby,9.0,NM
+MO,29207.0,Stoddard,6.0,NM
+MO,29209.0,Stone,6.0,NM
+MO,29211.0,Sullivan,9.0,NM
+MO,29213.0,Taney,4.0,NM
+MO,29215.0,Texas,9.0,NM
+MO,29217.0,Vernon,7.0,NM
+MO,29219.0,Warren,1.0,M
+MO,29221.0,Washington,6.0,NM
+MO,29223.0,Wayne,9.0,NM
+MO,29225.0,Webster,2.0,M
+MO,29227.0,Worth,9.0,NM
+MO,29229.0,Wright,6.0,NM
+MO,29510.0,St. Louis city,1.0,M
+MT,30001.0,Beaverhead,7.0,NM
+MT,30003.0,Big Horn,6.0,NM
+MT,30005.0,Blaine,9.0,NM
+MT,30007.0,Broadwater,9.0,NM
+MT,30009.0,Carbon,3.0,M
+MT,30011.0,Carter,9.0,NM
+MT,30013.0,Cascade,3.0,M
+MT,30015.0,Chouteau,8.0,NM
+MT,30017.0,Custer,7.0,NM
+MT,30019.0,Daniels,9.0,NM
+MT,30021.0,Dawson,7.0,NM
+MT,30023.0,Deer Lodge,7.0,NM
+MT,30025.0,Fallon,9.0,NM
+MT,30027.0,Fergus,7.0,NM
+MT,30029.0,Flathead,5.0,NM
+MT,30031.0,Gallatin,5.0,NM
+MT,30033.0,Garfield,9.0,NM
+MT,30035.0,Glacier,7.0,NM
+MT,30037.0,Golden Valley,3.0,M
+MT,30039.0,Granite,8.0,NM
+MT,30041.0,Hill,7.0,NM
+MT,30043.0,Jefferson,9.0,NM
+MT,30045.0,Judith Basin,8.0,NM
+MT,30047.0,Lake,6.0,NM
+MT,30049.0,Lewis and Clark,5.0,NM
+MT,30051.0,Liberty,9.0,NM
+MT,30053.0,Lincoln,7.0,NM
+MT,30055.0,McCone,9.0,NM
+MT,30057.0,Madison,9.0,NM
+MT,30059.0,Meagher,9.0,NM
+MT,30061.0,Mineral,8.0,NM
+MT,30063.0,Missoula,3.0,M
+MT,30065.0,Musselshell,8.0,NM
+MT,30067.0,Park,7.0,NM
+MT,30069.0,Petroleum,9.0,NM
+MT,30071.0,Phillips,9.0,NM
+MT,30073.0,Pondera,7.0,NM
+MT,30075.0,Powder River,9.0,NM
+MT,30077.0,Powell,6.0,NM
+MT,30079.0,Prairie,9.0,NM
+MT,30081.0,Ravalli,6.0,NM
+MT,30083.0,Richland,7.0,NM
+MT,30085.0,Roosevelt,7.0,NM
+MT,30087.0,Rosebud,9.0,NM
+MT,30089.0,Sanders,8.0,NM
+MT,30091.0,Sheridan,9.0,NM
+MT,30093.0,Silver Bow,5.0,NM
+MT,30095.0,Stillwater,8.0,NM
+MT,30097.0,Sweet Grass,9.0,NM
+MT,30099.0,Teton,8.0,NM
+MT,30101.0,Toole,7.0,NM
+MT,30103.0,Treasure,8.0,NM
+MT,30105.0,Valley,7.0,NM
+MT,30107.0,Wheatland,9.0,NM
+MT,30109.0,Wibaux,9.0,NM
+MT,30111.0,Yellowstone,3.0,M
+NE,31001.0,Adams,4.0,NM
+NE,31003.0,Antelope,9.0,NM
+NE,31005.0,Arthur,9.0,NM
+NE,31007.0,Banner,9.0,NM
+NE,31009.0,Blaine,9.0,NM
+NE,31011.0,Boone,9.0,NM
+NE,31013.0,Box Butte,7.0,NM
+NE,31015.0,Boyd,9.0,NM
+NE,31017.0,Brown,9.0,NM
+NE,31019.0,Buffalo,4.0,NM
+NE,31021.0,Burt,8.0,NM
+NE,31023.0,Butler,6.0,NM
+NE,31025.0,Cass,2.0,M
+NE,31027.0,Cedar,9.0,NM
+NE,31029.0,Chase,9.0,NM
+NE,31031.0,Cherry,7.0,NM
+NE,31033.0,Cheyenne,7.0,NM
+NE,31035.0,Clay,8.0,NM
+NE,31037.0,Colfax,7.0,NM
+NE,31039.0,Cuming,7.0,NM
+NE,31041.0,Custer,7.0,NM
+NE,31043.0,Dakota,3.0,M
+NE,31045.0,Dawes,7.0,NM
+NE,31047.0,Dawson,7.0,NM
+NE,31049.0,Deuel,9.0,NM
+NE,31051.0,Dixon,3.0,M
+NE,31053.0,Dodge,4.0,NM
+NE,31055.0,Douglas,2.0,M
+NE,31057.0,Dundy,9.0,NM
+NE,31059.0,Fillmore,8.0,NM
+NE,31061.0,Franklin,9.0,NM
+NE,31063.0,Frontier,9.0,NM
+NE,31065.0,Furnas,9.0,NM
+NE,31067.0,Gage,6.0,NM
+NE,31069.0,Garden,9.0,NM
+NE,31071.0,Garfield,9.0,NM
+NE,31073.0,Gosper,9.0,NM
+NE,31075.0,Grant,9.0,NM
+NE,31077.0,Greeley,8.0,NM
+NE,31079.0,Hall,3.0,M
+NE,31081.0,Hamilton,3.0,M
+NE,31083.0,Harlan,9.0,NM
+NE,31085.0,Hayes,9.0,NM
+NE,31087.0,Hitchcock,9.0,NM
+NE,31089.0,Holt,7.0,NM
+NE,31091.0,Hooker,9.0,NM
+NE,31093.0,Howard,3.0,M
+NE,31095.0,Jefferson,7.0,NM
+NE,31097.0,Johnson,8.0,NM
+NE,31099.0,Kearney,7.0,NM
+NE,31101.0,Keith,7.0,NM
+NE,31103.0,Keya Paha,9.0,NM
+NE,31105.0,Kimball,8.0,NM
+NE,31107.0,Knox,9.0,NM
+NE,31109.0,Lancaster,2.0,M
+NE,31111.0,Lincoln,5.0,NM
+NE,31113.0,Logan,9.0,NM
+NE,31115.0,Loup,9.0,NM
+NE,31117.0,McPherson,9.0,NM
+NE,31119.0,Madison,5.0,NM
+NE,31121.0,Merrick,3.0,M
+NE,31123.0,Morrill,9.0,NM
+NE,31125.0,Nance,8.0,NM
+NE,31127.0,Nemaha,7.0,NM
+NE,31129.0,Nuckolls,9.0,NM
+NE,31131.0,Otoe,6.0,NM
+NE,31133.0,Pawnee,9.0,NM
+NE,31135.0,Perkins,9.0,NM
+NE,31137.0,Phelps,7.0,NM
+NE,31139.0,Pierce,9.0,NM
+NE,31141.0,Platte,5.0,NM
+NE,31143.0,Polk,9.0,NM
+NE,31145.0,Red Willow,7.0,NM
+NE,31147.0,Richardson,7.0,NM
+NE,31149.0,Rock,9.0,NM
+NE,31151.0,Saline,6.0,NM
+NE,31153.0,Sarpy,2.0,M
+NE,31155.0,Saunders,2.0,M
+NE,31157.0,Scotts Bluff,5.0,NM
+NE,31159.0,Seward,2.0,M
+NE,31161.0,Sheridan,9.0,NM
+NE,31163.0,Sherman,8.0,NM
+NE,31165.0,Sioux,9.0,NM
+NE,31167.0,Stanton,9.0,NM
+NE,31169.0,Thayer,9.0,NM
+NE,31171.0,Thomas,9.0,NM
+NE,31173.0,Thurston,8.0,NM
+NE,31175.0,Valley,9.0,NM
+NE,31177.0,Washington,2.0,M
+NE,31179.0,Wayne,6.0,NM
+NE,31181.0,Webster,9.0,NM
+NE,31183.0,Wheeler,9.0,NM
+NE,31185.0,York,6.0,NM
+NV,32001.0,Churchill,6.0,NM
+NV,32003.0,Clark,1.0,M
+NV,32005.0,Douglas,4.0,NM
+NV,32007.0,Elko,5.0,NM
+NV,32009.0,Esmeralda,9.0,NM
+NV,32011.0,Eureka,9.0,NM
+NV,32013.0,Humboldt,7.0,NM
+NV,32015.0,Lander,7.0,NM
+NV,32017.0,Lincoln,8.0,NM
+NV,32019.0,Lyon,4.0,NM
+NV,32021.0,Mineral,7.0,NM
+NV,32023.0,Nye,4.0,NM
+NV,32027.0,Pershing,9.0,NM
+NV,32029.0,Storey,2.0,M
+NV,32031.0,Washoe,2.0,M
+NV,32033.0,White Pine,7.0,NM
+NV,32510.0,Carson City,3.0,M
+NH,33001.0,Belknap,4.0,NM
+NH,33003.0,Carroll,6.0,NM
+NH,33005.0,Cheshire,4.0,NM
+NH,33007.0,Coos,7.0,NM
+NH,33009.0,Grafton,5.0,NM
+NH,33011.0,Hillsborough,2.0,M
+NH,33013.0,Merrimack,4.0,NM
+NH,33015.0,Rockingham,1.0,M
+NH,33017.0,Strafford,1.0,M
+NH,33019.0,Sullivan,7.0,NM
+NJ,34001.0,Atlantic,2.0,M
+NJ,34003.0,Bergen,1.0,M
+NJ,34005.0,Burlington,1.0,M
+NJ,34007.0,Camden,1.0,M
+NJ,34009.0,Cape May,3.0,M
+NJ,34011.0,Cumberland,3.0,M
+NJ,34013.0,Essex,1.0,M
+NJ,34015.0,Gloucester,1.0,M
+NJ,34017.0,Hudson,1.0,M
+NJ,34019.0,Hunterdon,1.0,M
+NJ,34021.0,Mercer,2.0,M
+NJ,34023.0,Middlesex,1.0,M
+NJ,34025.0,Monmouth,1.0,M
+NJ,34027.0,Morris,1.0,M
+NJ,34029.0,Ocean,1.0,M
+NJ,34031.0,Passaic,1.0,M
+NJ,34033.0,Salem,1.0,M
+NJ,34035.0,Somerset,1.0,M
+NJ,34037.0,Sussex,1.0,M
+NJ,34039.0,Union,1.0,M
+NJ,34041.0,Warren,2.0,M
+NM,35001.0,Bernalillo,2.0,M
+NM,35003.0,Catron,9.0,NM
+NM,35005.0,Chaves,5.0,NM
+NM,35006.0,Cibola,6.0,NM
+NM,35007.0,Colfax,7.0,NM
+NM,35009.0,Curry,5.0,NM
+NM,35011.0,De Baca,9.0,NM
+NM,35013.0,Dona Ana,3.0,M
+NM,35015.0,Eddy,5.0,NM
+NM,35017.0,Grant,7.0,NM
+NM,35019.0,Guadalupe,7.0,NM
+NM,35021.0,Harding,9.0,NM
+NM,35023.0,Hidalgo,9.0,NM
+NM,35025.0,Lea,5.0,NM
+NM,35027.0,Lincoln,7.0,NM
+NM,35028.0,Los Alamos,6.0,NM
+NM,35029.0,Luna,6.0,NM
+NM,35031.0,McKinley,5.0,NM
+NM,35033.0,Mora,9.0,NM
+NM,35035.0,Otero,4.0,NM
+NM,35037.0,Quay,7.0,NM
+NM,35039.0,Rio Arriba,4.0,NM
+NM,35041.0,Roosevelt,7.0,NM
+NM,35043.0,Sandoval,2.0,M
+NM,35045.0,San Juan,3.0,M
+NM,35047.0,San Miguel,6.0,NM
+NM,35049.0,Santa Fe,3.0,M
+NM,35051.0,Sierra,6.0,NM
+NM,35053.0,Socorro,6.0,NM
+NM,35055.0,Taos,7.0,NM
+NM,35057.0,Torrance,2.0,M
+NM,35059.0,Union,9.0,NM
+NM,35061.0,Valencia,2.0,M
+NY,36001.0,Albany,2.0,M
+NY,36003.0,Allegany,7.0,NM
+NY,36005.0,Bronx,1.0,M
+NY,36007.0,Broome,2.0,M
+NY,36009.0,Cattaraugus,4.0,NM
+NY,36011.0,Cayuga,4.0,NM
+NY,36013.0,Chautauqua,4.0,NM
+NY,36015.0,Chemung,3.0,M
+NY,36017.0,Chenango,6.0,NM
+NY,36019.0,Clinton,5.0,NM
+NY,36021.0,Columbia,6.0,NM
+NY,36023.0,Cortland,4.0,NM
+NY,36025.0,Delaware,6.0,NM
+NY,36027.0,Dutchess,1.0,M
+NY,36029.0,Erie,1.0,M
+NY,36031.0,Essex,6.0,NM
+NY,36033.0,Franklin,7.0,NM
+NY,36035.0,Fulton,4.0,NM
+NY,36037.0,Genesee,4.0,NM
+NY,36039.0,Greene,6.0,NM
+NY,36041.0,Hamilton,8.0,NM
+NY,36043.0,Herkimer,2.0,M
+NY,36045.0,Jefferson,3.0,M
+NY,36047.0,Kings,1.0,M
+NY,36049.0,Lewis,6.0,NM
+NY,36051.0,Livingston,1.0,M
+NY,36053.0,Madison,2.0,M
+NY,36055.0,Monroe,1.0,M
+NY,36057.0,Montgomery,4.0,NM
+NY,36059.0,Nassau,1.0,M
+NY,36061.0,New York,1.0,M
+NY,36063.0,Niagara,1.0,M
+NY,36065.0,Oneida,2.0,M
+NY,36067.0,Onondaga,2.0,M
+NY,36069.0,Ontario,1.0,M
+NY,36071.0,Orange,1.0,M
+NY,36073.0,Orleans,1.0,M
+NY,36075.0,Oswego,2.0,M
+NY,36077.0,Otsego,7.0,NM
+NY,36079.0,Putnam,1.0,M
+NY,36081.0,Queens,1.0,M
+NY,36083.0,Rensselaer,2.0,M
+NY,36085.0,Richmond,1.0,M
+NY,36087.0,Rockland,1.0,M
+NY,36089.0,St. Lawrence,4.0,NM
+NY,36091.0,Saratoga,2.0,M
+NY,36093.0,Schenectady,2.0,M
+NY,36095.0,Schoharie,2.0,M
+NY,36097.0,Schuyler,6.0,NM
+NY,36099.0,Seneca,6.0,NM
+NY,36101.0,Steuben,4.0,NM
+NY,36103.0,Suffolk,1.0,M
+NY,36105.0,Sullivan,4.0,NM
+NY,36107.0,Tioga,2.0,M
+NY,36109.0,Tompkins,3.0,M
+NY,36111.0,Ulster,3.0,M
+NY,36113.0,Warren,3.0,M
+NY,36115.0,Washington,3.0,M
+NY,36117.0,Wayne,1.0,M
+NY,36119.0,Westchester,1.0,M
+NY,36121.0,Wyoming,6.0,NM
+NY,36123.0,Yates,1.0,M
+NC,37001.0,Alamance,3.0,M
+NC,37003.0,Alexander,2.0,M
+NC,37005.0,Alleghany,9.0,NM
+NC,37007.0,Anson,6.0,NM
+NC,37009.0,Ashe,7.0,NM
+NC,37011.0,Avery,8.0,NM
+NC,37013.0,Beaufort,6.0,NM
+NC,37015.0,Bertie,7.0,NM
+NC,37017.0,Bladen,6.0,NM
+NC,37019.0,Brunswick,2.0,M
+NC,37021.0,Buncombe,2.0,M
+NC,37023.0,Burke,2.0,M
+NC,37025.0,Cabarrus,1.0,M
+NC,37027.0,Caldwell,2.0,M
+NC,37029.0,Camden,8.0,NM
+NC,37031.0,Carteret,4.0,NM
+NC,37033.0,Caswell,8.0,NM
+NC,37035.0,Catawba,2.0,M
+NC,37037.0,Chatham,2.0,M
+NC,37039.0,Cherokee,9.0,NM
+NC,37041.0,Chowan,6.0,NM
+NC,37043.0,Clay,9.0,NM
+NC,37045.0,Cleveland,4.0,NM
+NC,37047.0,Columbus,6.0,NM
+NC,37049.0,Craven,3.0,M
+NC,37051.0,Cumberland,2.0,M
+NC,37053.0,Currituck,1.0,M
+NC,37055.0,Dare,4.0,NM
+NC,37057.0,Davidson,2.0,M
+NC,37059.0,Davie,2.0,M
+NC,37061.0,Duplin,6.0,NM
+NC,37063.0,Durham,2.0,M
+NC,37065.0,Edgecombe,3.0,M
+NC,37067.0,Forsyth,2.0,M
+NC,37069.0,Franklin,1.0,M
+NC,37071.0,Gaston,1.0,M
+NC,37073.0,Gates,1.0,M
+NC,37075.0,Graham,9.0,NM
+NC,37077.0,Granville,4.0,NM
+NC,37079.0,Greene,8.0,NM
+NC,37081.0,Guilford,2.0,M
+NC,37083.0,Halifax,4.0,NM
+NC,37085.0,Harnett,4.0,NM
+NC,37087.0,Haywood,2.0,M
+NC,37089.0,Henderson,2.0,M
+NC,37091.0,Hertford,6.0,NM
+NC,37093.0,Hoke,2.0,M
+NC,37095.0,Hyde,9.0,NM
+NC,37097.0,Iredell,1.0,M
+NC,37099.0,Jackson,6.0,NM
+NC,37101.0,Johnston,1.0,M
+NC,37103.0,Jones,3.0,M
+NC,37105.0,Lee,4.0,NM
+NC,37107.0,Lenoir,4.0,NM
+NC,37109.0,Lincoln,1.0,M
+NC,37111.0,McDowell,6.0,NM
+NC,37113.0,Macon,7.0,NM
+NC,37115.0,Madison,2.0,M
+NC,37117.0,Martin,6.0,NM
+NC,37119.0,Mecklenburg,1.0,M
+NC,37121.0,Mitchell,7.0,NM
+NC,37123.0,Montgomery,6.0,NM
+NC,37125.0,Moore,4.0,NM
+NC,37127.0,Nash,3.0,M
+NC,37129.0,New Hanover,2.0,M
+NC,37131.0,Northampton,9.0,NM
+NC,37133.0,Onslow,3.0,M
+NC,37135.0,Orange,2.0,M
+NC,37137.0,Pamlico,3.0,M
+NC,37139.0,Pasquotank,4.0,NM
+NC,37141.0,Pender,2.0,M
+NC,37143.0,Perquimans,8.0,NM
+NC,37145.0,Person,2.0,M
+NC,37147.0,Pitt,3.0,M
+NC,37149.0,Polk,8.0,NM
+NC,37151.0,Randolph,2.0,M
+NC,37153.0,Richmond,5.0,NM
+NC,37155.0,Robeson,4.0,NM
+NC,37157.0,Rockingham,2.0,M
+NC,37159.0,Rowan,1.0,M
+NC,37161.0,Rutherford,4.0,NM
+NC,37163.0,Sampson,6.0,NM
+NC,37165.0,Scotland,6.0,NM
+NC,37167.0,Stanly,6.0,NM
+NC,37169.0,Stokes,2.0,M
+NC,37171.0,Surry,4.0,NM
+NC,37173.0,Swain,8.0,NM
+NC,37175.0,Transylvania,6.0,NM
+NC,37177.0,Tyrrell,9.0,NM
+NC,37179.0,Union,1.0,M
+NC,37181.0,Vance,4.0,NM
+NC,37183.0,Wake,1.0,M
+NC,37185.0,Warren,8.0,NM
+NC,37187.0,Washington,7.0,NM
+NC,37189.0,Watauga,5.0,NM
+NC,37191.0,Wayne,3.0,M
+NC,37193.0,Wilkes,6.0,NM
+NC,37195.0,Wilson,4.0,NM
+NC,37197.0,Yadkin,2.0,M
+NC,37199.0,Yancey,8.0,NM
+ND,38001.0,Adams,9.0,NM
+ND,38003.0,Barnes,6.0,NM
+ND,38005.0,Benson,9.0,NM
+ND,38007.0,Billings,9.0,NM
+ND,38009.0,Bottineau,9.0,NM
+ND,38011.0,Bowman,9.0,NM
+ND,38013.0,Burke,9.0,NM
+ND,38015.0,Burleigh,3.0,M
+ND,38017.0,Cass,3.0,M
+ND,38019.0,Cavalier,9.0,NM
+ND,38021.0,Dickey,9.0,NM
+ND,38023.0,Divide,9.0,NM
+ND,38025.0,Dunn,9.0,NM
+ND,38027.0,Eddy,9.0,NM
+ND,38029.0,Emmons,8.0,NM
+ND,38031.0,Foster,9.0,NM
+ND,38033.0,Golden Valley,9.0,NM
+ND,38035.0,Grand Forks,3.0,M
+ND,38037.0,Grant,8.0,NM
+ND,38039.0,Griggs,9.0,NM
+ND,38041.0,Hettinger,9.0,NM
+ND,38043.0,Kidder,8.0,NM
+ND,38045.0,LaMoure,9.0,NM
+ND,38047.0,Logan,9.0,NM
+ND,38049.0,McHenry,9.0,NM
+ND,38051.0,McIntosh,9.0,NM
+ND,38053.0,McKenzie,9.0,NM
+ND,38055.0,McLean,8.0,NM
+ND,38057.0,Mercer,7.0,NM
+ND,38059.0,Morton,3.0,M
+ND,38061.0,Mountrail,9.0,NM
+ND,38063.0,Nelson,8.0,NM
+ND,38065.0,Oliver,3.0,M
+ND,38067.0,Pembina,9.0,NM
+ND,38069.0,Pierce,7.0,NM
+ND,38071.0,Ramsey,7.0,NM
+ND,38073.0,Ransom,8.0,NM
+ND,38075.0,Renville,9.0,NM
+ND,38077.0,Richland,6.0,NM
+ND,38079.0,Rolette,9.0,NM
+ND,38081.0,Sargent,9.0,NM
+ND,38083.0,Sheridan,9.0,NM
+ND,38085.0,Sioux,3.0,M
+ND,38087.0,Slope,9.0,NM
+ND,38089.0,Stark,7.0,NM
+ND,38091.0,Steele,8.0,NM
+ND,38093.0,Stutsman,7.0,NM
+ND,38095.0,Towner,9.0,NM
+ND,38097.0,Traill,8.0,NM
+ND,38099.0,Walsh,6.0,NM
+ND,38101.0,Ward,5.0,NM
+ND,38103.0,Wells,9.0,NM
+ND,38105.0,Williams,7.0,NM
+OH,39001.0,Adams,6.0,NM
+OH,39003.0,Allen,3.0,M
+OH,39005.0,Ashland,4.0,NM
+OH,39007.0,Ashtabula,4.0,NM
+OH,39009.0,Athens,4.0,NM
+OH,39011.0,Auglaize,4.0,NM
+OH,39013.0,Belmont,3.0,M
+OH,39015.0,Brown,1.0,M
+OH,39017.0,Butler,1.0,M
+OH,39019.0,Carroll,2.0,M
+OH,39021.0,Champaign,6.0,NM
+OH,39023.0,Clark,3.0,M
+OH,39025.0,Clermont,1.0,M
+OH,39027.0,Clinton,6.0,NM
+OH,39029.0,Columbiana,4.0,NM
+OH,39031.0,Coshocton,6.0,NM
+OH,39033.0,Crawford,4.0,NM
+OH,39035.0,Cuyahoga,1.0,M
+OH,39037.0,Darke,6.0,NM
+OH,39039.0,Defiance,4.0,NM
+OH,39041.0,Delaware,1.0,M
+OH,39043.0,Erie,4.0,NM
+OH,39045.0,Fairfield,1.0,M
+OH,39047.0,Fayette,6.0,NM
+OH,39049.0,Franklin,1.0,M
+OH,39051.0,Fulton,2.0,M
+OH,39053.0,Gallia,6.0,NM
+OH,39055.0,Geauga,1.0,M
+OH,39057.0,Greene,2.0,M
+OH,39059.0,Guernsey,6.0,NM
+OH,39061.0,Hamilton,1.0,M
+OH,39063.0,Hancock,4.0,NM
+OH,39065.0,Hardin,6.0,NM
+OH,39067.0,Harrison,6.0,NM
+OH,39069.0,Henry,6.0,NM
+OH,39071.0,Highland,6.0,NM
+OH,39073.0,Hocking,1.0,M
+OH,39075.0,Holmes,7.0,NM
+OH,39077.0,Huron,4.0,NM
+OH,39079.0,Jackson,7.0,NM
+OH,39081.0,Jefferson,3.0,M
+OH,39083.0,Knox,4.0,NM
+OH,39085.0,Lake,1.0,M
+OH,39087.0,Lawrence,2.0,M
+OH,39089.0,Licking,1.0,M
+OH,39091.0,Logan,6.0,NM
+OH,39093.0,Lorain,1.0,M
+OH,39095.0,Lucas,2.0,M
+OH,39097.0,Madison,1.0,M
+OH,39099.0,Mahoning,2.0,M
+OH,39101.0,Marion,4.0,NM
+OH,39103.0,Medina,1.0,M
+OH,39105.0,Meigs,6.0,NM
+OH,39107.0,Mercer,7.0,NM
+OH,39109.0,Miami,2.0,M
+OH,39111.0,Monroe,8.0,NM
+OH,39113.0,Montgomery,2.0,M
+OH,39115.0,Morgan,6.0,NM
+OH,39117.0,Morrow,1.0,M
+OH,39119.0,Muskingum,4.0,NM
+OH,39121.0,Noble,7.0,NM
+OH,39123.0,Ottawa,4.0,NM
+OH,39125.0,Paulding,6.0,NM
+OH,39127.0,Perry,1.0,M
+OH,39129.0,Pickaway,1.0,M
+OH,39131.0,Pike,7.0,NM
+OH,39133.0,Portage,2.0,M
+OH,39135.0,Preble,6.0,NM
+OH,39137.0,Putnam,6.0,NM
+OH,39139.0,Richland,3.0,M
+OH,39141.0,Ross,4.0,NM
+OH,39143.0,Sandusky,4.0,NM
+OH,39145.0,Scioto,4.0,NM
+OH,39147.0,Seneca,4.0,NM
+OH,39149.0,Shelby,4.0,NM
+OH,39151.0,Stark,2.0,M
+OH,39153.0,Summit,2.0,M
+OH,39155.0,Trumbull,2.0,M
+OH,39157.0,Tuscarawas,4.0,NM
+OH,39159.0,Union,1.0,M
+OH,39161.0,Van Wert,6.0,NM
+OH,39163.0,Vinton,8.0,NM
+OH,39165.0,Warren,1.0,M
+OH,39167.0,Washington,4.0,NM
+OH,39169.0,Wayne,4.0,NM
+OH,39171.0,Williams,6.0,NM
+OH,39173.0,Wood,2.0,M
+OH,39175.0,Wyandot,7.0,NM
+OK,40001.0,Adair,6.0,NM
+OK,40003.0,Alfalfa,9.0,NM
+OK,40005.0,Atoka,9.0,NM
+OK,40007.0,Beaver,9.0,NM
+OK,40009.0,Beckham,7.0,NM
+OK,40011.0,Blaine,6.0,NM
+OK,40013.0,Bryan,6.0,NM
+OK,40015.0,Caddo,6.0,NM
+OK,40017.0,Canadian,1.0,M
+OK,40019.0,Carter,5.0,NM
+OK,40021.0,Cherokee,6.0,NM
+OK,40023.0,Choctaw,7.0,NM
+OK,40025.0,Cimarron,9.0,NM
+OK,40027.0,Cleveland,1.0,M
+OK,40029.0,Coal,9.0,NM
+OK,40031.0,Comanche,3.0,M
+OK,40033.0,Cotton,3.0,M
+OK,40035.0,Craig,6.0,NM
+OK,40037.0,Creek,2.0,M
+OK,40039.0,Custer,7.0,NM
+OK,40041.0,Delaware,6.0,NM
+OK,40043.0,Dewey,9.0,NM
+OK,40045.0,Ellis,9.0,NM
+OK,40047.0,Garfield,5.0,NM
+OK,40049.0,Garvin,6.0,NM
+OK,40051.0,Grady,1.0,M
+OK,40053.0,Grant,9.0,NM
+OK,40055.0,Greer,7.0,NM
+OK,40057.0,Harmon,9.0,NM
+OK,40059.0,Harper,9.0,NM
+OK,40061.0,Haskell,6.0,NM
+OK,40063.0,Hughes,7.0,NM
+OK,40065.0,Jackson,7.0,NM
+OK,40067.0,Jefferson,8.0,NM
+OK,40069.0,Johnston,9.0,NM
+OK,40071.0,Kay,5.0,NM
+OK,40073.0,Kingfisher,6.0,NM
+OK,40075.0,Kiowa,6.0,NM
+OK,40077.0,Latimer,7.0,NM
+OK,40079.0,Le Flore,2.0,M
+OK,40081.0,Lincoln,1.0,M
+OK,40083.0,Logan,1.0,M
+OK,40085.0,Love,9.0,NM
+OK,40087.0,McClain,1.0,M
+OK,40089.0,McCurtain,7.0,NM
+OK,40091.0,McIntosh,6.0,NM
+OK,40093.0,Major,9.0,NM
+OK,40095.0,Marshall,6.0,NM
+OK,40097.0,Mayes,6.0,NM
+OK,40099.0,Murray,7.0,NM
+OK,40101.0,Muskogee,4.0,NM
+OK,40103.0,Noble,6.0,NM
+OK,40105.0,Nowata,6.0,NM
+OK,40107.0,Okfuskee,6.0,NM
+OK,40109.0,Oklahoma,1.0,M
+OK,40111.0,Okmulgee,2.0,M
+OK,40113.0,Osage,2.0,M
+OK,40115.0,Ottawa,6.0,NM
+OK,40117.0,Pawnee,2.0,M
+OK,40119.0,Payne,4.0,NM
+OK,40121.0,Pittsburg,5.0,NM
+OK,40123.0,Pontotoc,7.0,NM
+OK,40125.0,Pottawatomie,4.0,NM
+OK,40127.0,Pushmataha,9.0,NM
+OK,40129.0,Roger Mills,9.0,NM
+OK,40131.0,Rogers,2.0,M
+OK,40133.0,Seminole,7.0,NM
+OK,40135.0,Sequoyah,2.0,M
+OK,40137.0,Stephens,4.0,NM
+OK,40139.0,Texas,7.0,NM
+OK,40141.0,Tillman,6.0,NM
+OK,40143.0,Tulsa,2.0,M
+OK,40145.0,Wagoner,2.0,M
+OK,40147.0,Washington,4.0,NM
+OK,40149.0,Washita,7.0,NM
+OK,40151.0,Woods,7.0,NM
+OK,40153.0,Woodward,7.0,NM
+OR,41001.0,Baker,7.0,NM
+OR,41003.0,Benton,3.0,M
+OR,41005.0,Clackamas,1.0,M
+OR,41007.0,Clatsop,4.0,NM
+OR,41009.0,Columbia,1.0,M
+OR,41011.0,Coos,5.0,NM
+OR,41013.0,Crook,6.0,NM
+OR,41015.0,Curry,7.0,NM
+OR,41017.0,Deschutes,3.0,M
+OR,41019.0,Douglas,4.0,NM
+OR,41021.0,Gilliam,9.0,NM
+OR,41023.0,Grant,9.0,NM
+OR,41025.0,Harney,7.0,NM
+OR,41027.0,Hood River,6.0,NM
+OR,41029.0,Jackson,3.0,M
+OR,41031.0,Jefferson,6.0,NM
+OR,41033.0,Josephine,3.0,M
+OR,41035.0,Klamath,5.0,NM
+OR,41037.0,Lake,7.0,NM
+OR,41039.0,Lane,2.0,M
+OR,41041.0,Lincoln,5.0,NM
+OR,41043.0,Linn,3.0,M
+OR,41045.0,Malheur,6.0,NM
+OR,41047.0,Marion,2.0,M
+OR,41049.0,Morrow,6.0,NM
+OR,41051.0,Multnomah,1.0,M
+OR,41053.0,Polk,2.0,M
+OR,41055.0,Sherman,9.0,NM
+OR,41057.0,Tillamook,6.0,NM
+OR,41059.0,Umatilla,4.0,NM
+OR,41061.0,Union,7.0,NM
+OR,41063.0,Wallowa,9.0,NM
+OR,41065.0,Wasco,6.0,NM
+OR,41067.0,Washington,1.0,M
+OR,41069.0,Wheeler,9.0,NM
+OR,41071.0,Yamhill,1.0,M
+PA,42001.0,Adams,3.0,M
+PA,42003.0,Allegheny,1.0,M
+PA,42005.0,Armstrong,1.0,M
+PA,42007.0,Beaver,1.0,M
+PA,42009.0,Bedford,6.0,NM
+PA,42011.0,Berks,2.0,M
+PA,42013.0,Blair,3.0,M
+PA,42015.0,Bradford,6.0,NM
+PA,42017.0,Bucks,1.0,M
+PA,42019.0,Butler,1.0,M
+PA,42021.0,Cambria,3.0,M
+PA,42023.0,Cameron,7.0,NM
+PA,42025.0,Carbon,2.0,M
+PA,42027.0,Centre,3.0,M
+PA,42029.0,Chester,1.0,M
+PA,42031.0,Clarion,6.0,NM
+PA,42033.0,Clearfield,4.0,NM
+PA,42035.0,Clinton,4.0,NM
+PA,42037.0,Columbia,3.0,M
+PA,42039.0,Crawford,4.0,NM
+PA,42041.0,Cumberland,2.0,M
+PA,42043.0,Dauphin,2.0,M
+PA,42045.0,Delaware,1.0,M
+PA,42047.0,Elk,7.0,NM
+PA,42049.0,Erie,2.0,M
+PA,42051.0,Fayette,1.0,M
+PA,42053.0,Forest,9.0,NM
+PA,42055.0,Franklin,3.0,M
+PA,42057.0,Fulton,8.0,NM
+PA,42059.0,Greene,6.0,NM
+PA,42061.0,Huntingdon,6.0,NM
+PA,42063.0,Indiana,4.0,NM
+PA,42065.0,Jefferson,7.0,NM
+PA,42067.0,Juniata,6.0,NM
+PA,42069.0,Lackawanna,2.0,M
+PA,42071.0,Lancaster,2.0,M
+PA,42073.0,Lawrence,4.0,NM
+PA,42075.0,Lebanon,3.0,M
+PA,42077.0,Lehigh,2.0,M
+PA,42079.0,Luzerne,2.0,M
+PA,42081.0,Lycoming,3.0,M
+PA,42083.0,McKean,7.0,NM
+PA,42085.0,Mercer,2.0,M
+PA,42087.0,Mifflin,4.0,NM
+PA,42089.0,Monroe,3.0,M
+PA,42091.0,Montgomery,1.0,M
+PA,42093.0,Montour,3.0,M
+PA,42095.0,Northampton,2.0,M
+PA,42097.0,Northumberland,4.0,NM
+PA,42099.0,Perry,2.0,M
+PA,42101.0,Philadelphia,1.0,M
+PA,42103.0,Pike,1.0,M
+PA,42105.0,Potter,9.0,NM
+PA,42107.0,Schuylkill,4.0,NM
+PA,42109.0,Snyder,7.0,NM
+PA,42111.0,Somerset,4.0,NM
+PA,42113.0,Sullivan,8.0,NM
+PA,42115.0,Susquehanna,6.0,NM
+PA,42117.0,Tioga,6.0,NM
+PA,42119.0,Union,4.0,NM
+PA,42121.0,Venango,4.0,NM
+PA,42123.0,Warren,6.0,NM
+PA,42125.0,Washington,1.0,M
+PA,42127.0,Wayne,6.0,NM
+PA,42129.0,Westmoreland,1.0,M
+PA,42131.0,Wyoming,2.0,M
+PA,42133.0,York,2.0,M
+RI,44001.0,Bristol,1.0,M
+RI,44003.0,Kent,1.0,M
+RI,44005.0,Newport,1.0,M
+RI,44007.0,Providence,1.0,M
+RI,44009.0,Washington,1.0,M
+SC,45001.0,Abbeville,6.0,NM
+SC,45003.0,Aiken,2.0,M
+SC,45005.0,Allendale,6.0,NM
+SC,45007.0,Anderson,2.0,M
+SC,45009.0,Bamberg,7.0,NM
+SC,45011.0,Barnwell,6.0,NM
+SC,45013.0,Beaufort,3.0,M
+SC,45015.0,Berkeley,2.0,M
+SC,45017.0,Calhoun,2.0,M
+SC,45019.0,Charleston,2.0,M
+SC,45021.0,Cherokee,4.0,NM
+SC,45023.0,Chester,1.0,M
+SC,45025.0,Chesterfield,6.0,NM
+SC,45027.0,Clarendon,6.0,NM
+SC,45029.0,Colleton,6.0,NM
+SC,45031.0,Darlington,3.0,M
+SC,45033.0,Dillon,6.0,NM
+SC,45035.0,Dorchester,2.0,M
+SC,45037.0,Edgefield,2.0,M
+SC,45039.0,Fairfield,2.0,M
+SC,45041.0,Florence,3.0,M
+SC,45043.0,Georgetown,4.0,NM
+SC,45045.0,Greenville,2.0,M
+SC,45047.0,Greenwood,4.0,NM
+SC,45049.0,Hampton,6.0,NM
+SC,45051.0,Horry,2.0,M
+SC,45053.0,Jasper,3.0,M
+SC,45055.0,Kershaw,2.0,M
+SC,45057.0,Lancaster,1.0,M
+SC,45059.0,Laurens,2.0,M
+SC,45061.0,Lee,6.0,NM
+SC,45063.0,Lexington,2.0,M
+SC,45065.0,McCormick,8.0,NM
+SC,45067.0,Marion,6.0,NM
+SC,45069.0,Marlboro,6.0,NM
+SC,45071.0,Newberry,6.0,NM
+SC,45073.0,Oconee,4.0,NM
+SC,45075.0,Orangeburg,4.0,NM
+SC,45077.0,Pickens,2.0,M
+SC,45079.0,Richland,2.0,M
+SC,45081.0,Saluda,2.0,M
+SC,45083.0,Spartanburg,2.0,M
+SC,45085.0,Sumter,3.0,M
+SC,45087.0,Union,2.0,M
+SC,45089.0,Williamsburg,6.0,NM
+SC,45091.0,York,1.0,M
+SD,46003.0,Aurora,9.0,NM
+SD,46005.0,Beadle,7.0,NM
+SD,46007.0,Bennett,9.0,NM
+SD,46009.0,Bon Homme,9.0,NM
+SD,46011.0,Brookings,5.0,NM
+SD,46013.0,Brown,5.0,NM
+SD,46015.0,Brule,9.0,NM
+SD,46017.0,Buffalo,9.0,NM
+SD,46019.0,Butte,6.0,NM
+SD,46021.0,Campbell,9.0,NM
+SD,46023.0,Charles Mix,9.0,NM
+SD,46025.0,Clark,9.0,NM
+SD,46027.0,Clay,6.0,NM
+SD,46029.0,Codington,5.0,NM
+SD,46031.0,Corson,9.0,NM
+SD,46033.0,Custer,3.0,M
+SD,46035.0,Davison,7.0,NM
+SD,46037.0,Day,9.0,NM
+SD,46039.0,Deuel,9.0,NM
+SD,46041.0,Dewey,9.0,NM
+SD,46043.0,Douglas,9.0,NM
+SD,46045.0,Edmunds,9.0,NM
+SD,46047.0,Fall River,6.0,NM
+SD,46049.0,Faulk,9.0,NM
+SD,46051.0,Grant,7.0,NM
+SD,46053.0,Gregory,9.0,NM
+SD,46055.0,Haakon,8.0,NM
+SD,46057.0,Hamlin,9.0,NM
+SD,46059.0,Hand,9.0,NM
+SD,46061.0,Hanson,8.0,NM
+SD,46063.0,Harding,9.0,NM
+SD,46065.0,Hughes,7.0,NM
+SD,46067.0,Hutchinson,8.0,NM
+SD,46069.0,Hyde,9.0,NM
+SD,46071.0,Jackson,8.0,NM
+SD,46073.0,Jerauld,9.0,NM
+SD,46075.0,Jones,9.0,NM
+SD,46077.0,Kingsbury,9.0,NM
+SD,46079.0,Lake,6.0,NM
+SD,46081.0,Lawrence,6.0,NM
+SD,46083.0,Lincoln,3.0,M
+SD,46085.0,Lyman,9.0,NM
+SD,46087.0,McCook,3.0,M
+SD,46089.0,McPherson,9.0,NM
+SD,46091.0,Marshall,9.0,NM
+SD,46093.0,Meade,3.0,M
+SD,46095.0,Mellette,9.0,NM
+SD,46097.0,Miner,8.0,NM
+SD,46099.0,Minnehaha,3.0,M
+SD,46101.0,Moody,8.0,NM
+SD,46103.0,Pennington,3.0,M
+SD,46105.0,Perkins,8.0,NM
+SD,46107.0,Potter,9.0,NM
+SD,46109.0,Roberts,9.0,NM
+SD,46111.0,Sanborn,9.0,NM
+SD,46113.0,Shannon,6.0,NM
+SD,46115.0,Spink,9.0,NM
+SD,46117.0,Stanley,9.0,NM
+SD,46119.0,Sully,9.0,NM
+SD,46121.0,Todd,9.0,NM
+SD,46123.0,Tripp,7.0,NM
+SD,46125.0,Turner,3.0,M
+SD,46127.0,Union,3.0,M
+SD,46129.0,Walworth,7.0,NM
+SD,46135.0,Yankton,7.0,NM
+SD,46137.0,Ziebach,8.0,NM
+TN,47001.0,Anderson,2.0,M
+TN,47003.0,Bedford,4.0,NM
+TN,47005.0,Benton,7.0,NM
+TN,47007.0,Bledsoe,8.0,NM
+TN,47009.0,Blount,2.0,M
+TN,47011.0,Bradley,3.0,M
+TN,47013.0,Campbell,2.0,M
+TN,47015.0,Cannon,1.0,M
+TN,47017.0,Carroll,6.0,NM
+TN,47019.0,Carter,3.0,M
+TN,47021.0,Cheatham,1.0,M
+TN,47023.0,Chester,3.0,M
+TN,47025.0,Claiborne,6.0,NM
+TN,47027.0,Clay,9.0,NM
+TN,47029.0,Cocke,6.0,NM
+TN,47031.0,Coffee,4.0,NM
+TN,47033.0,Crockett,3.0,M
+TN,47035.0,Cumberland,4.0,NM
+TN,47037.0,Davidson,1.0,M
+TN,47039.0,Decatur,9.0,NM
+TN,47041.0,DeKalb,6.0,NM
+TN,47043.0,Dickson,1.0,M
+TN,47045.0,Dyer,5.0,NM
+TN,47047.0,Fayette,1.0,M
+TN,47049.0,Fentress,9.0,NM
+TN,47051.0,Franklin,6.0,NM
+TN,47053.0,Gibson,4.0,NM
+TN,47055.0,Giles,6.0,NM
+TN,47057.0,Grainger,2.0,M
+TN,47059.0,Greene,4.0,NM
+TN,47061.0,Grundy,8.0,NM
+TN,47063.0,Hamblen,3.0,M
+TN,47065.0,Hamilton,2.0,M
+TN,47067.0,Hancock,8.0,NM
+TN,47069.0,Hardeman,6.0,NM
+TN,47071.0,Hardin,6.0,NM
+TN,47073.0,Hawkins,2.0,M
+TN,47075.0,Haywood,6.0,NM
+TN,47077.0,Henderson,6.0,NM
+TN,47079.0,Henry,7.0,NM
+TN,47081.0,Hickman,1.0,M
+TN,47083.0,Houston,8.0,NM
+TN,47085.0,Humphreys,6.0,NM
+TN,47087.0,Jackson,8.0,NM
+TN,47089.0,Jefferson,3.0,M
+TN,47091.0,Johnson,6.0,NM
+TN,47093.0,Knox,2.0,M
+TN,47095.0,Lake,9.0,NM
+TN,47097.0,Lauderdale,6.0,NM
+TN,47099.0,Lawrence,6.0,NM
+TN,47101.0,Lewis,6.0,NM
+TN,47103.0,Lincoln,6.0,NM
+TN,47105.0,Loudon,2.0,M
+TN,47107.0,McMinn,4.0,NM
+TN,47109.0,McNairy,6.0,NM
+TN,47111.0,Macon,1.0,M
+TN,47113.0,Madison,3.0,M
+TN,47115.0,Marion,2.0,M
+TN,47117.0,Marshall,6.0,NM
+TN,47119.0,Maury,1.0,M
+TN,47121.0,Meigs,8.0,NM
+TN,47123.0,Monroe,6.0,NM
+TN,47125.0,Montgomery,2.0,M
+TN,47127.0,Moore,9.0,NM
+TN,47129.0,Morgan,2.0,M
+TN,47131.0,Obion,7.0,NM
+TN,47133.0,Overton,7.0,NM
+TN,47135.0,Perry,8.0,NM
+TN,47137.0,Pickett,9.0,NM
+TN,47139.0,Polk,3.0,M
+TN,47141.0,Putnam,4.0,NM
+TN,47143.0,Rhea,6.0,NM
+TN,47145.0,Roane,2.0,M
+TN,47147.0,Robertson,1.0,M
+TN,47149.0,Rutherford,1.0,M
+TN,47151.0,Scott,6.0,NM
+TN,47153.0,Sequatchie,2.0,M
+TN,47155.0,Sevier,4.0,NM
+TN,47157.0,Shelby,1.0,M
+TN,47159.0,Smith,1.0,M
+TN,47161.0,Stewart,8.0,NM
+TN,47163.0,Sullivan,2.0,M
+TN,47165.0,Sumner,1.0,M
+TN,47167.0,Tipton,1.0,M
+TN,47169.0,Trousdale,1.0,M
+TN,47171.0,Unicoi,3.0,M
+TN,47173.0,Union,2.0,M
+TN,47175.0,Van Buren,9.0,NM
+TN,47177.0,Warren,6.0,NM
+TN,47179.0,Washington,3.0,M
+TN,47181.0,Wayne,8.0,NM
+TN,47183.0,Weakley,7.0,NM
+TN,47185.0,White,7.0,NM
+TN,47187.0,Williamson,1.0,M
+TN,47189.0,Wilson,1.0,M
+TX,48001.0,Anderson,7.0,NM
+TX,48003.0,Andrews,6.0,NM
+TX,48005.0,Angelina,5.0,NM
+TX,48007.0,Aransas,2.0,M
+TX,48009.0,Archer,3.0,M
+TX,48011.0,Armstrong,2.0,M
+TX,48013.0,Atascosa,1.0,M
+TX,48015.0,Austin,1.0,M
+TX,48017.0,Bailey,7.0,NM
+TX,48019.0,Bandera,1.0,M
+TX,48021.0,Bastrop,1.0,M
+TX,48023.0,Baylor,8.0,NM
+TX,48025.0,Bee,6.0,NM
+TX,48027.0,Bell,2.0,M
+TX,48029.0,Bexar,1.0,M
+TX,48031.0,Blanco,8.0,NM
+TX,48033.0,Borden,8.0,NM
+TX,48035.0,Bosque,6.0,NM
+TX,48037.0,Bowie,3.0,M
+TX,48039.0,Brazoria,1.0,M
+TX,48041.0,Brazos,3.0,M
+TX,48043.0,Brewster,7.0,NM
+TX,48045.0,Briscoe,9.0,NM
+TX,48047.0,Brooks,7.0,NM
+TX,48049.0,Brown,5.0,NM
+TX,48051.0,Burleson,3.0,M
+TX,48053.0,Burnet,6.0,NM
+TX,48055.0,Caldwell,1.0,M
+TX,48057.0,Calhoun,6.0,NM
+TX,48059.0,Callahan,3.0,M
+TX,48061.0,Cameron,2.0,M
+TX,48063.0,Camp,6.0,NM
+TX,48065.0,Carson,2.0,M
+TX,48067.0,Cass,6.0,NM
+TX,48069.0,Castro,6.0,NM
+TX,48071.0,Chambers,1.0,M
+TX,48073.0,Cherokee,6.0,NM
+TX,48075.0,Childress,7.0,NM
+TX,48077.0,Clay,3.0,M
+TX,48079.0,Cochran,9.0,NM
+TX,48081.0,Coke,8.0,NM
+TX,48083.0,Coleman,6.0,NM
+TX,48085.0,Collin,1.0,M
+TX,48087.0,Collingsworth,9.0,NM
+TX,48089.0,Colorado,6.0,NM
+TX,48091.0,Comal,1.0,M
+TX,48093.0,Comanche,7.0,NM
+TX,48095.0,Concho,8.0,NM
+TX,48097.0,Cooke,6.0,NM
+TX,48099.0,Coryell,2.0,M
+TX,48101.0,Cottle,9.0,NM
+TX,48103.0,Crane,6.0,NM
+TX,48105.0,Crockett,7.0,NM
+TX,48107.0,Crosby,2.0,M
+TX,48109.0,Culberson,9.0,NM
+TX,48111.0,Dallam,7.0,NM
+TX,48113.0,Dallas,1.0,M
+TX,48115.0,Dawson,7.0,NM
+TX,48117.0,Deaf Smith,6.0,NM
+TX,48119.0,Delta,8.0,NM
+TX,48121.0,Denton,1.0,M
+TX,48123.0,DeWitt,6.0,NM
+TX,48125.0,Dickens,8.0,NM
+TX,48127.0,Dimmit,6.0,NM
+TX,48129.0,Donley,8.0,NM
+TX,48131.0,Duval,7.0,NM
+TX,48133.0,Eastland,6.0,NM
+TX,48135.0,Ector,3.0,M
+TX,48137.0,Edwards,9.0,NM
+TX,48139.0,Ellis,1.0,M
+TX,48141.0,El Paso,2.0,M
+TX,48143.0,Erath,4.0,NM
+TX,48145.0,Falls,2.0,M
+TX,48147.0,Fannin,6.0,NM
+TX,48149.0,Fayette,6.0,NM
+TX,48151.0,Fisher,8.0,NM
+TX,48153.0,Floyd,6.0,NM
+TX,48155.0,Foard,9.0,NM
+TX,48157.0,Fort Bend,1.0,M
+TX,48159.0,Franklin,7.0,NM
+TX,48161.0,Freestone,7.0,NM
+TX,48163.0,Frio,6.0,NM
+TX,48165.0,Gaines,7.0,NM
+TX,48167.0,Galveston,1.0,M
+TX,48169.0,Garza,6.0,NM
+TX,48171.0,Gillespie,7.0,NM
+TX,48173.0,Glasscock,8.0,NM
+TX,48175.0,Goliad,3.0,M
+TX,48177.0,Gonzales,6.0,NM
+TX,48179.0,Gray,6.0,NM
+TX,48181.0,Grayson,3.0,M
+TX,48183.0,Gregg,3.0,M
+TX,48185.0,Grimes,6.0,NM
+TX,48187.0,Guadalupe,1.0,M
+TX,48189.0,Hale,4.0,NM
+TX,48191.0,Hall,9.0,NM
+TX,48193.0,Hamilton,6.0,NM
+TX,48195.0,Hansford,7.0,NM
+TX,48197.0,Hardeman,9.0,NM
+TX,48199.0,Hardin,2.0,M
+TX,48201.0,Harris,1.0,M
+TX,48203.0,Harrison,4.0,NM
+TX,48205.0,Hartley,7.0,NM
+TX,48207.0,Haskell,6.0,NM
+TX,48209.0,Hays,1.0,M
+TX,48211.0,Hemphill,7.0,NM
+TX,48213.0,Henderson,4.0,NM
+TX,48215.0,Hidalgo,2.0,M
+TX,48217.0,Hill,6.0,NM
+TX,48219.0,Hockley,6.0,NM
+TX,48221.0,Hood,1.0,M
+TX,48223.0,Hopkins,6.0,NM
+TX,48225.0,Houston,7.0,NM
+TX,48227.0,Howard,4.0,NM
+TX,48229.0,Hudspeth,2.0,M
+TX,48231.0,Hunt,1.0,M
+TX,48233.0,Hutchinson,6.0,NM
+TX,48235.0,Irion,3.0,M
+TX,48237.0,Jack,6.0,NM
+TX,48239.0,Jackson,6.0,NM
+TX,48241.0,Jasper,6.0,NM
+TX,48243.0,Jeff Davis,9.0,NM
+TX,48245.0,Jefferson,2.0,M
+TX,48247.0,Jim Hogg,6.0,NM
+TX,48249.0,Jim Wells,4.0,NM
+TX,48251.0,Johnson,1.0,M
+TX,48253.0,Jones,3.0,M
+TX,48255.0,Karnes,6.0,NM
+TX,48257.0,Kaufman,1.0,M
+TX,48259.0,Kendall,1.0,M
+TX,48261.0,Kenedy,9.0,NM
+TX,48263.0,Kent,9.0,NM
+TX,48265.0,Kerr,4.0,NM
+TX,48267.0,Kimble,7.0,NM
+TX,48269.0,King,9.0,NM
+TX,48271.0,Kinney,7.0,NM
+TX,48273.0,Kleberg,4.0,NM
+TX,48275.0,Knox,9.0,NM
+TX,48277.0,Lamar,5.0,NM
+TX,48279.0,Lamb,6.0,NM
+TX,48281.0,Lampasas,2.0,M
+TX,48283.0,La Salle,6.0,NM
+TX,48285.0,Lavaca,6.0,NM
+TX,48287.0,Lee,6.0,NM
+TX,48289.0,Leon,8.0,NM
+TX,48291.0,Liberty,1.0,M
+TX,48293.0,Limestone,6.0,NM
+TX,48295.0,Lipscomb,9.0,NM
+TX,48297.0,Live Oak,8.0,NM
+TX,48299.0,Llano,7.0,NM
+TX,48301.0,Loving,9.0,NM
+TX,48303.0,Lubbock,2.0,M
+TX,48305.0,Lynn,2.0,M
+TX,48307.0,McCulloch,7.0,NM
+TX,48309.0,McLennan,2.0,M
+TX,48311.0,McMullen,9.0,NM
+TX,48313.0,Madison,6.0,NM
+TX,48315.0,Marion,8.0,NM
+TX,48317.0,Martin,3.0,M
+TX,48319.0,Mason,9.0,NM
+TX,48321.0,Matagorda,4.0,NM
+TX,48323.0,Maverick,5.0,NM
+TX,48325.0,Medina,1.0,M
+TX,48327.0,Menard,9.0,NM
+TX,48329.0,Midland,3.0,M
+TX,48331.0,Milam,6.0,NM
+TX,48333.0,Mills,9.0,NM
+TX,48335.0,Mitchell,7.0,NM
+TX,48337.0,Montague,6.0,NM
+TX,48339.0,Montgomery,1.0,M
+TX,48341.0,Moore,7.0,NM
+TX,48343.0,Morris,6.0,NM
+TX,48345.0,Motley,9.0,NM
+TX,48347.0,Nacogdoches,5.0,NM
+TX,48349.0,Navarro,4.0,NM
+TX,48351.0,Newton,2.0,M
+TX,48353.0,Nolan,6.0,NM
+TX,48355.0,Nueces,2.0,M
+TX,48357.0,Ochiltree,7.0,NM
+TX,48359.0,Oldham,2.0,M
+TX,48361.0,Orange,2.0,M
+TX,48363.0,Palo Pinto,6.0,NM
+TX,48365.0,Panola,6.0,NM
+TX,48367.0,Parker,1.0,M
+TX,48369.0,Parmer,7.0,NM
+TX,48371.0,Pecos,7.0,NM
+TX,48373.0,Polk,6.0,NM
+TX,48375.0,Potter,2.0,M
+TX,48377.0,Presidio,7.0,NM
+TX,48379.0,Rains,8.0,NM
+TX,48381.0,Randall,2.0,M
+TX,48383.0,Reagan,6.0,NM
+TX,48385.0,Real,9.0,NM
+TX,48387.0,Red River,6.0,NM
+TX,48389.0,Reeves,7.0,NM
+TX,48391.0,Refugio,6.0,NM
+TX,48393.0,Roberts,9.0,NM
+TX,48395.0,Robertson,3.0,M
+TX,48397.0,Rockwall,1.0,M
+TX,48399.0,Runnels,6.0,NM
+TX,48401.0,Rusk,3.0,M
+TX,48403.0,Sabine,8.0,NM
+TX,48405.0,San Augustine,9.0,NM
+TX,48407.0,San Jacinto,8.0,NM
+TX,48409.0,San Patricio,2.0,M
+TX,48411.0,San Saba,7.0,NM
+TX,48413.0,Schleicher,8.0,NM
+TX,48415.0,Scurry,7.0,NM
+TX,48417.0,Shackelford,8.0,NM
+TX,48419.0,Shelby,7.0,NM
+TX,48421.0,Sherman,9.0,NM
+TX,48423.0,Smith,3.0,M
+TX,48425.0,Somervell,1.0,M
+TX,48427.0,Starr,4.0,NM
+TX,48429.0,Stephens,7.0,NM
+TX,48431.0,Sterling,8.0,NM
+TX,48433.0,Stonewall,9.0,NM
+TX,48435.0,Sutton,7.0,NM
+TX,48437.0,Swisher,6.0,NM
+TX,48439.0,Tarrant,1.0,M
+TX,48441.0,Taylor,3.0,M
+TX,48443.0,Terrell,9.0,NM
+TX,48445.0,Terry,6.0,NM
+TX,48447.0,Throckmorton,9.0,NM
+TX,48449.0,Titus,7.0,NM
+TX,48451.0,Tom Green,3.0,M
+TX,48453.0,Travis,1.0,M
+TX,48455.0,Trinity,7.0,NM
+TX,48457.0,Tyler,6.0,NM
+TX,48459.0,Upshur,3.0,M
+TX,48461.0,Upton,8.0,NM
+TX,48463.0,Uvalde,6.0,NM
+TX,48465.0,Val Verde,5.0,NM
+TX,48467.0,Van Zandt,6.0,NM
+TX,48469.0,Victoria,3.0,M
+TX,48471.0,Walker,4.0,NM
+TX,48473.0,Waller,1.0,M
+TX,48475.0,Ward,6.0,NM
+TX,48477.0,Washington,6.0,NM
+TX,48479.0,Webb,2.0,M
+TX,48481.0,Wharton,4.0,NM
+TX,48483.0,Wheeler,9.0,NM
+TX,48485.0,Wichita,3.0,M
+TX,48487.0,Wilbarger,6.0,NM
+TX,48489.0,Willacy,6.0,NM
+TX,48491.0,Williamson,1.0,M
+TX,48493.0,Wilson,1.0,M
+TX,48495.0,Winkler,6.0,NM
+TX,48497.0,Wise,1.0,M
+TX,48499.0,Wood,6.0,NM
+TX,48501.0,Yoakum,7.0,NM
+TX,48503.0,Young,7.0,NM
+TX,48505.0,Zapata,6.0,NM
+TX,48507.0,Zavala,7.0,NM
+UT,49001.0,Beaver,7.0,NM
+UT,49003.0,Box Elder,2.0,M
+UT,49005.0,Cache,3.0,M
+UT,49007.0,Carbon,7.0,NM
+UT,49009.0,Daggett,9.0,NM
+UT,49011.0,Davis,2.0,M
+UT,49013.0,Duchesne,7.0,NM
+UT,49015.0,Emery,7.0,NM
+UT,49017.0,Garfield,9.0,NM
+UT,49019.0,Grand,7.0,NM
+UT,49021.0,Iron,4.0,NM
+UT,49023.0,Juab,2.0,M
+UT,49025.0,Kane,6.0,NM
+UT,49027.0,Millard,7.0,NM
+UT,49029.0,Morgan,2.0,M
+UT,49031.0,Piute,9.0,NM
+UT,49033.0,Rich,8.0,NM
+UT,49035.0,Salt Lake,1.0,M
+UT,49037.0,San Juan,7.0,NM
+UT,49039.0,Sanpete,6.0,NM
+UT,49041.0,Sevier,7.0,NM
+UT,49043.0,Summit,4.0,NM
+UT,49045.0,Tooele,1.0,M
+UT,49047.0,Uintah,7.0,NM
+UT,49049.0,Utah,2.0,M
+UT,49051.0,Wasatch,6.0,NM
+UT,49053.0,Washington,3.0,M
+UT,49055.0,Wayne,9.0,NM
+UT,49057.0,Weber,2.0,M
+VT,50001.0,Addison,6.0,NM
+VT,50003.0,Bennington,6.0,NM
+VT,50005.0,Caledonia,7.0,NM
+VT,50007.0,Chittenden,3.0,M
+VT,50009.0,Essex,9.0,NM
+VT,50011.0,Franklin,3.0,M
+VT,50013.0,Grand Isle,3.0,M
+VT,50015.0,Lamoille,8.0,NM
+VT,50017.0,Orange,9.0,NM
+VT,50019.0,Orleans,7.0,NM
+VT,50021.0,Rutland,4.0,NM
+VT,50023.0,Washington,4.0,NM
+VT,50025.0,Windham,7.0,NM
+VT,50027.0,Windsor,7.0,NM
+VA,51001.0,Accomack,8.0,NM
+VA,51003.0,Albemarle,3.0,M
+VA,51005.0,Alleghany,6.0,NM
+VA,51007.0,Amelia,1.0,M
+VA,51009.0,Amherst,2.0,M
+VA,51011.0,Appomattox,2.0,M
+VA,51013.0,Arlington,1.0,M
+VA,51015.0,Augusta,3.0,M
+VA,51017.0,Bath,8.0,NM
+VA,51019.0,Bedford,2.0,M
+VA,51021.0,Bland,8.0,NM
+VA,51023.0,Botetourt,2.0,M
+VA,51025.0,Brunswick,6.0,NM
+VA,51027.0,Buchanan,9.0,NM
+VA,51029.0,Buckingham,3.0,M
+VA,51031.0,Campbell,2.0,M
+VA,51033.0,Caroline,1.0,M
+VA,51035.0,Carroll,7.0,NM
+VA,51036.0,Charles City,1.0,M
+VA,51037.0,Charlotte,8.0,NM
+VA,51041.0,Chesterfield,1.0,M
+VA,51043.0,Clarke,1.0,M
+VA,51045.0,Craig,2.0,M
+VA,51047.0,Culpeper,1.0,M
+VA,51049.0,Cumberland,8.0,NM
+VA,51051.0,Dickenson,9.0,NM
+VA,51053.0,Dinwiddie,1.0,M
+VA,51057.0,Essex,6.0,NM
+VA,51059.0,Fairfax,1.0,M
+VA,51061.0,Fauquier,1.0,M
+VA,51063.0,Floyd,3.0,M
+VA,51065.0,Fluvanna,3.0,M
+VA,51067.0,Franklin,2.0,M
+VA,51069.0,Frederick,3.0,M
+VA,51071.0,Giles,3.0,M
+VA,51073.0,Gloucester,1.0,M
+VA,51075.0,Goochland,1.0,M
+VA,51077.0,Grayson,9.0,NM
+VA,51079.0,Greene,3.0,M
+VA,51081.0,Greensville,6.0,NM
+VA,51083.0,Halifax,6.0,NM
+VA,51085.0,Hanover,1.0,M
+VA,51087.0,Henrico,1.0,M
+VA,51089.0,Henry,4.0,NM
+VA,51091.0,Highland,8.0,NM
+VA,51093.0,Isle of Wight,1.0,M
+VA,51095.0,James City,1.0,M
+VA,51097.0,King and Queen,8.0,NM
+VA,51099.0,King George,6.0,NM
+VA,51101.0,King William,1.0,M
+VA,51103.0,Lancaster,9.0,NM
+VA,51105.0,Lee,8.0,NM
+VA,51107.0,Loudoun,1.0,M
+VA,51109.0,Louisa,8.0,NM
+VA,51111.0,Lunenburg,9.0,NM
+VA,51113.0,Madison,8.0,NM
+VA,51115.0,Mathews,1.0,M
+VA,51117.0,Mecklenburg,7.0,NM
+VA,51119.0,Middlesex,8.0,NM
+VA,51121.0,Montgomery,3.0,M
+VA,51125.0,Nelson,3.0,M
+VA,51127.0,New Kent,1.0,M
+VA,51131.0,Northampton,8.0,NM
+VA,51133.0,Northumberland,9.0,NM
+VA,51135.0,Nottoway,6.0,NM
+VA,51137.0,Orange,6.0,NM
+VA,51139.0,Page,6.0,NM
+VA,51141.0,Patrick,8.0,NM
+VA,51143.0,Pittsylvania,4.0,NM
+VA,51145.0,Powhatan,1.0,M
+VA,51147.0,Prince Edward,6.0,NM
+VA,51149.0,Prince George,1.0,M
+VA,51153.0,Prince William,1.0,M
+VA,51155.0,Pulaski,3.0,M
+VA,51157.0,Rappahannock,1.0,M
+VA,51159.0,Richmond,9.0,NM
+VA,51161.0,Roanoke,2.0,M
+VA,51163.0,Rockbridge,6.0,NM
+VA,51165.0,Rockingham,3.0,M
+VA,51167.0,Russell,7.0,NM
+VA,51169.0,Scott,2.0,M
+VA,51171.0,Shenandoah,6.0,NM
+VA,51173.0,Smyth,7.0,NM
+VA,51175.0,Southampton,6.0,NM
+VA,51177.0,Spotsylvania,1.0,M
+VA,51179.0,Stafford,1.0,M
+VA,51181.0,Surry,8.0,NM
+VA,51183.0,Sussex,1.0,M
+VA,51185.0,Tazewell,5.0,NM
+VA,51187.0,Warren,1.0,M
+VA,51191.0,Washington,2.0,M
+VA,51193.0,Westmoreland,6.0,NM
+VA,51195.0,Wise,7.0,NM
+VA,51197.0,Wythe,6.0,NM
+VA,51199.0,York,1.0,M
+VA,51510.0,Alexandria city,1.0,M
+VA,51515.0,Bedford city,2.0,M
+VA,51520.0,Bristol city,2.0,M
+VA,51530.0,Buena Vista city,6.0,NM
+VA,51540.0,Charlottesville city,3.0,M
+VA,51550.0,Chesapeake city,1.0,M
+VA,51570.0,Colonial Heights city,1.0,M
+VA,51580.0,Covington city,6.0,NM
+VA,51590.0,Danville city,4.0,NM
+VA,51595.0,Emporia city,6.0,NM
+VA,51600.0,Fairfax city,1.0,M
+VA,51610.0,Falls Church city,1.0,M
+VA,51620.0,Franklin city,6.0,NM
+VA,51630.0,Fredericksburg city,1.0,M
+VA,51640.0,Galax city,7.0,NM
+VA,51650.0,Hampton city,1.0,M
+VA,51660.0,Harrisonburg city,3.0,M
+VA,51670.0,Hopewell city,1.0,M
+VA,51678.0,Lexington city,6.0,NM
+VA,51680.0,Lynchburg city,2.0,M
+VA,51683.0,Manassas city,1.0,M
+VA,51685.0,Manassas Park city,1.0,M
+VA,51690.0,Martinsville city,4.0,NM
+VA,51700.0,Newport News city,1.0,M
+VA,51710.0,Norfolk city,1.0,M
+VA,51720.0,Norton city,7.0,NM
+VA,51730.0,Petersburg city,1.0,M
+VA,51735.0,Poquoson city,1.0,M
+VA,51740.0,Portsmouth city,1.0,M
+VA,51750.0,Radford city,3.0,M
+VA,51760.0,Richmond city,1.0,M
+VA,51770.0,Roanoke city,2.0,M
+VA,51775.0,Salem city,2.0,M
+VA,51790.0,Staunton city,3.0,M
+VA,51800.0,Suffolk city,1.0,M
+VA,51810.0,Virginia Beach city,1.0,M
+VA,51820.0,Waynesboro city,3.0,M
+VA,51830.0,Williamsburg city,1.0,M
+VA,51840.0,Winchester city,3.0,M
+WA,53001.0,Adams,6.0,NM
+WA,53003.0,Asotin,3.0,M
+WA,53005.0,Benton,2.0,M
+WA,53007.0,Chelan,3.0,M
+WA,53009.0,Clallam,5.0,NM
+WA,53011.0,Clark,1.0,M
+WA,53013.0,Columbia,3.0,M
+WA,53015.0,Cowlitz,3.0,M
+WA,53017.0,Douglas,3.0,M
+WA,53019.0,Ferry,9.0,NM
+WA,53021.0,Franklin,2.0,M
+WA,53023.0,Garfield,8.0,NM
+WA,53025.0,Grant,5.0,NM
+WA,53027.0,Grays Harbor,4.0,NM
+WA,53029.0,Island,4.0,NM
+WA,53031.0,Jefferson,6.0,NM
+WA,53033.0,King,1.0,M
+WA,53035.0,Kitsap,2.0,M
+WA,53037.0,Kittitas,4.0,NM
+WA,53039.0,Klickitat,6.0,NM
+WA,53041.0,Lewis,4.0,NM
+WA,53043.0,Lincoln,8.0,NM
+WA,53045.0,Mason,4.0,NM
+WA,53047.0,Okanogan,6.0,NM
+WA,53049.0,Pacific,7.0,NM
+WA,53051.0,Pend Oreille,2.0,M
+WA,53053.0,Pierce,1.0,M
+WA,53055.0,San Juan,9.0,NM
+WA,53057.0,Skagit,3.0,M
+WA,53059.0,Skamania,1.0,M
+WA,53061.0,Snohomish,1.0,M
+WA,53063.0,Spokane,2.0,M
+WA,53065.0,Stevens,2.0,M
+WA,53067.0,Thurston,2.0,M
+WA,53069.0,Wahkiakum,8.0,NM
+WA,53071.0,Walla Walla,3.0,M
+WA,53073.0,Whatcom,3.0,M
+WA,53075.0,Whitman,4.0,NM
+WA,53077.0,Yakima,3.0,M
+WV,54001.0,Barbour,6.0,NM
+WV,54003.0,Berkeley,2.0,M
+WV,54005.0,Boone,3.0,M
+WV,54007.0,Braxton,8.0,NM
+WV,54009.0,Brooke,3.0,M
+WV,54011.0,Cabell,2.0,M
+WV,54013.0,Calhoun,8.0,NM
+WV,54015.0,Clay,3.0,M
+WV,54017.0,Doddridge,9.0,NM
+WV,54019.0,Fayette,3.0,M
+WV,54021.0,Gilmer,7.0,NM
+WV,54023.0,Grant,7.0,NM
+WV,54025.0,Greenbrier,6.0,NM
+WV,54027.0,Hampshire,3.0,M
+WV,54029.0,Hancock,3.0,M
+WV,54031.0,Hardy,6.0,NM
+WV,54033.0,Harrison,5.0,NM
+WV,54035.0,Jackson,6.0,NM
+WV,54037.0,Jefferson,1.0,M
+WV,54039.0,Kanawha,3.0,M
+WV,54041.0,Lewis,7.0,NM
+WV,54043.0,Lincoln,2.0,M
+WV,54045.0,Logan,6.0,NM
+WV,54047.0,McDowell,7.0,NM
+WV,54049.0,Marion,4.0,NM
+WV,54051.0,Marshall,3.0,M
+WV,54053.0,Mason,6.0,NM
+WV,54055.0,Mercer,4.0,NM
+WV,54057.0,Mineral,3.0,M
+WV,54059.0,Mingo,7.0,NM
+WV,54061.0,Monongalia,3.0,M
+WV,54063.0,Monroe,8.0,NM
+WV,54065.0,Morgan,8.0,NM
+WV,54067.0,Nicholas,6.0,NM
+WV,54069.0,Ohio,3.0,M
+WV,54071.0,Pendleton,8.0,NM
+WV,54073.0,Pleasants,6.0,NM
+WV,54075.0,Pocahontas,9.0,NM
+WV,54077.0,Preston,3.0,M
+WV,54079.0,Putnam,2.0,M
+WV,54081.0,Raleigh,3.0,M
+WV,54083.0,Randolph,7.0,NM
+WV,54085.0,Ritchie,8.0,NM
+WV,54087.0,Roane,6.0,NM
+WV,54089.0,Summers,6.0,NM
+WV,54091.0,Taylor,6.0,NM
+WV,54093.0,Tucker,8.0,NM
+WV,54095.0,Tyler,9.0,NM
+WV,54097.0,Upshur,7.0,NM
+WV,54099.0,Wayne,2.0,M
+WV,54101.0,Webster,9.0,NM
+WV,54103.0,Wetzel,6.0,NM
+WV,54105.0,Wirt,3.0,M
+WV,54107.0,Wood,3.0,M
+WV,54109.0,Wyoming,6.0,NM
+WI,55001.0,Adams,8.0,NM
+WI,55003.0,Ashland,7.0,NM
+WI,55005.0,Barron,6.0,NM
+WI,55007.0,Bayfield,8.0,NM
+WI,55009.0,Brown,2.0,M
+WI,55011.0,Buffalo,8.0,NM
+WI,55013.0,Burnett,8.0,NM
+WI,55015.0,Calumet,3.0,M
+WI,55017.0,Chippewa,3.0,M
+WI,55019.0,Clark,6.0,NM
+WI,55021.0,Columbia,2.0,M
+WI,55023.0,Crawford,7.0,NM
+WI,55025.0,Dane,2.0,M
+WI,55027.0,Dodge,4.0,NM
+WI,55029.0,Door,6.0,NM
+WI,55031.0,Douglas,2.0,M
+WI,55033.0,Dunn,6.0,NM
+WI,55035.0,Eau Claire,3.0,M
+WI,55037.0,Florence,9.0,NM
+WI,55039.0,Fond du Lac,3.0,M
+WI,55041.0,Forest,9.0,NM
+WI,55043.0,Grant,6.0,NM
+WI,55045.0,Green,2.0,M
+WI,55047.0,Green Lake,6.0,NM
+WI,55049.0,Iowa,2.0,M
+WI,55051.0,Iron,9.0,NM
+WI,55053.0,Jackson,6.0,NM
+WI,55055.0,Jefferson,4.0,NM
+WI,55057.0,Juneau,7.0,NM
+WI,55059.0,Kenosha,1.0,M
+WI,55061.0,Kewaunee,2.0,M
+WI,55063.0,La Crosse,3.0,M
+WI,55065.0,Lafayette,8.0,NM
+WI,55067.0,Langlade,6.0,NM
+WI,55069.0,Lincoln,6.0,NM
+WI,55071.0,Manitowoc,4.0,NM
+WI,55073.0,Marathon,3.0,M
+WI,55075.0,Marinette,6.0,NM
+WI,55077.0,Marquette,8.0,NM
+WI,55078.0,Menominee,8.0,NM
+WI,55079.0,Milwaukee,1.0,M
+WI,55081.0,Monroe,6.0,NM
+WI,55083.0,Oconto,2.0,M
+WI,55085.0,Oneida,7.0,NM
+WI,55087.0,Outagamie,3.0,M
+WI,55089.0,Ozaukee,1.0,M
+WI,55091.0,Pepin,8.0,NM
+WI,55093.0,Pierce,1.0,M
+WI,55095.0,Polk,6.0,NM
+WI,55097.0,Portage,4.0,NM
+WI,55099.0,Price,9.0,NM
+WI,55101.0,Racine,3.0,M
+WI,55103.0,Richland,6.0,NM
+WI,55105.0,Rock,3.0,M
+WI,55107.0,Rusk,6.0,NM
+WI,55109.0,St. Croix,1.0,M
+WI,55111.0,Sauk,4.0,NM
+WI,55113.0,Sawyer,7.0,NM
+WI,55115.0,Shawano,6.0,NM
+WI,55117.0,Sheboygan,3.0,M
+WI,55119.0,Taylor,6.0,NM
+WI,55121.0,Trempealeau,6.0,NM
+WI,55123.0,Vernon,6.0,NM
+WI,55125.0,Vilas,9.0,NM
+WI,55127.0,Walworth,4.0,NM
+WI,55129.0,Washburn,7.0,NM
+WI,55131.0,Washington,1.0,M
+WI,55133.0,Waukesha,1.0,M
+WI,55135.0,Waupaca,6.0,NM
+WI,55137.0,Waushara,6.0,NM
+WI,55139.0,Winnebago,3.0,M
+WI,55141.0,Wood,4.0,NM
+WY,56001.0,Albany,4.0,NM
+WY,56003.0,Big Horn,9.0,NM
+WY,56005.0,Campbell,5.0,NM
+WY,56007.0,Carbon,7.0,NM
+WY,56009.0,Converse,6.0,NM
+WY,56011.0,Crook,9.0,NM
+WY,56013.0,Fremont,7.0,NM
+WY,56015.0,Goshen,7.0,NM
+WY,56017.0,Hot Springs,7.0,NM
+WY,56019.0,Johnson,7.0,NM
+WY,56021.0,Laramie,3.0,M
+WY,56023.0,Lincoln,7.0,NM
+WY,56025.0,Natrona,3.0,M
+WY,56027.0,Niobrara,9.0,NM
+WY,56029.0,Park,7.0,NM
+WY,56031.0,Platte,7.0,NM
+WY,56033.0,Sheridan,7.0,NM
+WY,56035.0,Sublette,9.0,NM
+WY,56037.0,Sweetwater,5.0,NM
+WY,56039.0,Teton,7.0,NM
+WY,56041.0,Uinta,7.0,NM
+WY,56043.0,Washakie,7.0,NM
+WY,56045.0,Weston,7.0,NM
+AS,60010.0,Eastern District,5.0,NM
+AS,60020.0,Manu'a District,9.0,NM
+AS,60030.0,Rose Island,,NM
+AS,60040.0,Swains Island,9.0,NM
+AS,60050.0,Western District,5.0,NM
+GU,66010.0,Guam,5.0,NM
+MP,69085.0,Northern Islands Municipality,,NM
+MP,69100.0,Rota Municipality,9.0,NM
+MP,69110.0,Saipan Municipality,5.0,NM
+MP,69120.0,Tinian Municipality,7.0,NM
+PR,72001.0,Adjuntas Municipio,6.0,NM
+PR,72003.0,Aguada Municipio,2.0,M
+PR,72005.0,Aguadilla Municipio,2.0,M
+PR,72007.0,Aguas Buenas Municipio,1.0,M
+PR,72009.0,Aibonito Municipio,1.0,M
+PR,72011.0,Anasco Municipio,2.0,M
+PR,72013.0,Arecibo Municipio,3.0,M
+PR,72015.0,Arroyo Municipio,3.0,M
+PR,72017.0,Barceloneta Municipio,1.0,M
+PR,72019.0,Barranquitas Municipio,1.0,M
+PR,72021.0,Bayamon Municipio,1.0,M
+PR,72023.0,Cabo Rojo Municipio,3.0,M
+PR,72025.0,Caguas Municipio,1.0,M
+PR,72027.0,Camuy Municipio,3.0,M
+PR,72029.0,Canovanas Municipio,1.0,M
+PR,72031.0,Carolina Municipio,1.0,M
+PR,72033.0,Catano Municipio,1.0,M
+PR,72035.0,Cayey Municipio,1.0,M
+PR,72037.0,Ceiba Municipio,1.0,M
+PR,72039.0,Ciales Municipio,1.0,M
+PR,72041.0,Cidra Municipio,1.0,M
+PR,72043.0,Coamo Municipio,4.0,NM
+PR,72045.0,Comerio Municipio,1.0,M
+PR,72047.0,Corozal Municipio,1.0,M
+PR,72049.0,Culebra Municipio,9.0,NM
+PR,72051.0,Dorado Municipio,1.0,M
+PR,72053.0,Fajardo Municipio,1.0,M
+PR,72054.0,Florida Municipio,1.0,M
+PR,72055.0,Guanica Municipio,2.0,M
+PR,72057.0,Guayama Municipio,3.0,M
+PR,72059.0,Guayanilla Municipio,2.0,M
+PR,72061.0,Guaynabo Municipio,1.0,M
+PR,72063.0,Gurabo Municipio,1.0,M
+PR,72065.0,Hatillo Municipio,3.0,M
+PR,72067.0,Hormigueros Municipio,3.0,M
+PR,72069.0,Humacao Municipio,1.0,M
+PR,72071.0,Isabela Municipio,2.0,M
+PR,72073.0,Jayuya Municipio,6.0,NM
+PR,72075.0,Juana Diaz Municipio,2.0,M
+PR,72077.0,Juncos Municipio,1.0,M
+PR,72079.0,Lajas Municipio,3.0,M
+PR,72081.0,Lares Municipio,2.0,M
+PR,72083.0,Las Marias Municipio,6.0,NM
+PR,72085.0,Las Piedras Municipio,1.0,M
+PR,72087.0,Loiza Municipio,1.0,M
+PR,72089.0,Luquillo Municipio,1.0,M
+PR,72091.0,Manati Municipio,1.0,M
+PR,72093.0,Maricao Municipio,6.0,NM
+PR,72095.0,Maunabo Municipio,1.0,M
+PR,72097.0,Mayaguez Municipio,3.0,M
+PR,72099.0,Moca Municipio,2.0,M
+PR,72101.0,Morovis Municipio,1.0,M
+PR,72103.0,Naguabo Municipio,1.0,M
+PR,72105.0,Naranjito Municipio,1.0,M
+PR,72107.0,Orocovis Municipio,1.0,M
+PR,72109.0,Patillas Municipio,3.0,M
+PR,72111.0,Penuelas Municipio,2.0,M
+PR,72113.0,Ponce Municipio,2.0,M
+PR,72115.0,Quebradillas Municipio,3.0,M
+PR,72117.0,Rincon Municipio,2.0,M
+PR,72119.0,Rio Grande Municipio,1.0,M
+PR,72121.0,Sabana Grande Municipio,3.0,M
+PR,72123.0,Salinas Municipio,4.0,NM
+PR,72125.0,San German Municipio,3.0,M
+PR,72127.0,San Juan Municipio,1.0,M
+PR,72129.0,San Lorenzo Municipio,1.0,M
+PR,72131.0,San Sebastian Municipio,2.0,M
+PR,72133.0,Santa Isabel Municipio,4.0,NM
+PR,72135.0,Toa Alta Municipio,1.0,M
+PR,72137.0,Toa Baja Municipio,1.0,M
+PR,72139.0,Trujillo Alto Municipio,1.0,M
+PR,72141.0,Utuado Municipio,2.0,M
+PR,72143.0,Vega Alta Municipio,1.0,M
+PR,72145.0,Vega Baja Municipio,1.0,M
+PR,72147.0,Vieques Municipio,7.0,NM
+PR,72149.0,Villalba Municipio,2.0,M
+PR,72151.0,Yabucoa Municipio,1.0,M
+PR,72153.0,Yauco Municipio,2.0,M
+VI,78010.0,St. Croix Island,5.0,NM
+VI,78020.0,St. John Island,7.0,NM
+VI,78030.0,St. Thomas Island,5.0,NM
