@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DataSeries;
 using Utilities;
+using System.Windows.Controls;
 
 
 namespace WaveAnalyzer {
@@ -108,6 +109,17 @@ namespace WaveAnalyzer {
             }
 
             return sb.ToString();
+        }
+
+        public void AddToListBox(ListBox listBox) {
+            StringBuilder sb = new();
+
+            sb.Append(TimeSeries.ShortName + "\r\n");
+            foreach (Wave wave in waves) {
+                sb.Append(wave.ToLongString());
+            }
+
+            listBox.Items.Add(sb.ToString());
         }
     }
 }

@@ -331,6 +331,20 @@ namespace CaseCounter {
 
         }
 
+        private void WaveDetails_Click(object sender, RoutedEventArgs e) {
+            if (timeSeries1ListBox.SelectedItems.Count == 0) {
+                _ = MessageBox.Show("Item not selected");
+            }
+            else {
+                string tsKey = (string) timeSeries1ListBox.SelectedItem;
+                TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
+                WaveSet ws = new(ts, new());
+                caseListBox.Items.Clear();
+                ws.AddToListBox(caseListBox);
+            }
+        }
+
+
         /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into
          * a set of cleaned files.  These were used during initial development - but no longer are needed.
          */
