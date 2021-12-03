@@ -7,12 +7,18 @@ using DataSeries;
 
 namespace WaveAnalyzer {
     public class Wave {
+
+        private readonly int derivSpan = 7;
+
         public TimeSeries timeSeries { get; }
         public int Start { get; }
         public int End { get; }
 
         private double caseCount;
         public double CaseCount { get { return caseCount; } }
+
+        private double normalizedCount;
+        public double NormalizedCount { get { return normalizedCount; } }
 
         private double weight;
         public double Weight { get { return weight; } }
@@ -32,7 +38,17 @@ namespace WaveAnalyzer {
         private double maxValue;
         public double MaxValue { get { return maxValue; } }
 
+        private double maxDeriv;
+        public double MaxDeriv { get { return maxDeriv; } }
 
+        private int maxDerivPos;
+        public double MaxDerivPos { get { return maxDerivPos; } }
+
+        private double minDeriv;
+        public double MinDeriv { get { return minDeriv; } }
+
+        private int minDerivPos;
+        public double MinDerivPos { get { return minDerivPos; } }
 
         public Wave(TimeSeries ts) {
             timeSeries = ts;
@@ -58,6 +74,8 @@ namespace WaveAnalyzer {
                 count += data[i];
             }
             caseCount = count;
+
+            normalizedCount = count / timeSeries.Population;
 
             weight = caseCount / timeSeries.CaseCount();
             
@@ -94,18 +112,29 @@ namespace WaveAnalyzer {
             }
             sigma = Math.Sqrt(sum / caseCount);
 
+  
+            (int pos, double deriv) = timeSeries.MaximumDerivative(derivSpan, Start, End);
+            maxDerivPos = pos;
+            maxDeriv = (normalization > 0) ? deriv / normalization : 0.0;
+
+            (pos, deriv) = timeSeries.MinimumDerivative(derivSpan, Start, End);
+            minDerivPos = pos;
+            minDeriv = (normalization > 0) ? deriv / normalization : 0.0;
         }
 
         public string ToLongString() {
             StringBuilder sb = new();
             sb.Append($"<{Start}, {End}>\r\n");
             sb.Append($"  Cases: {CaseCount:F2}\r\n");
-            sb.Append($"  Weight: {Weight:F2}\r\n");
+            sb.Append($"  Normalized Cases: {NormalizedCount:F2}\r\n");
+            sb.Append($"  Weight: {100 * Weight:F2}%\r\n");
             sb.Append($"  Maximum: {Maximum}\r\n");
             sb.Append($"  MaxValue: {MaxValue:F2}\r\n");
             sb.Append($"  Median: {Median}\r\n");
             sb.Append($"  Mean: {Mean:F2}\r\n");
             sb.Append($"  Sigma: {Sigma:F2}\r\n");
+            sb.Append($"  Max Derivative {MaxDeriv:F2} at {MaxDerivPos}\r\n");
+            sb.Append($"  Min Derivative {MinDeriv:F2} at {MinDerivPos}\r\n");
             return sb.ToString();
         }
     }

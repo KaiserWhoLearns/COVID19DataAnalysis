@@ -555,6 +555,40 @@ namespace DataSeries {
 
         }
 
+        public (int, double) MaximumDerivative(int d, int start, int end) {
+            if (end - start < 2 * d) {
+                return ((start + end) / 2, 0.0);
+            }
+
+            int maxPos = start + d;
+            double maxSoFar = FindDerivative(maxPos, d);
+            for (int i = start + d; i <= end - d; i++) {
+                double deriv = FindDerivative(i, d);
+                if (deriv > maxSoFar) {
+                    maxSoFar = deriv;
+                    maxPos = i;
+                }
+            }
+            return (maxPos, maxSoFar);  
+        }
+
+        public (int, double) MinimumDerivative(int d, int start, int end) {
+            if (end - start < 2 * d) {
+                return ((start + end) / 2, 0.0);
+            }
+
+            int minPos = start + d;
+            double minSoFar = FindDerivative(minPos, d);
+            for (int i = start + d; i <= end - d; i++) {
+                double deriv = FindDerivative(i, d);
+                if (deriv < minSoFar) {
+                    minSoFar = deriv;
+                    minPos = i;
+                }
+            }
+            return (minPos, minSoFar);
+        }
+
         public (double[], double[]) FindCriticalPoints() {
             List<int> xList = new();
 
