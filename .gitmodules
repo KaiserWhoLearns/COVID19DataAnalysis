@@ -4,3 +4,6 @@
 [submodule "data/covariants"]
 	path = data/covariants
 	url = https://github.com/hodcroftlab/covariants
+[submodule "data/COVID-19-Vaccination"]
+	path = data/COVID-19-Vaccination
+	url = https://github.com/govex/COVID-19
