@@ -17,11 +17,20 @@ namespace WaveAnalyzer {
         private double caseCount;
         public double CaseCount { get { return caseCount; } }
 
+        private double deaths;
+        public double Deaths { get { return deaths; } }
+
         private double normalizedCount;
         public double NormalizedCount { get { return normalizedCount; } }
 
         private double weight;
         public double Weight { get { return weight; } }
+
+        private double deathWeight;
+        public double DeathWeight { get { return deathWeight;  } }
+
+        private double fatalityRate;
+        public double FatalityRate { get { return fatalityRate; } }
 
         private int median;
         public int Median {  get { return median; } }
@@ -125,17 +134,34 @@ namespace WaveAnalyzer {
         public string ToLongString() {
             StringBuilder sb = new();
             sb.Append($"<{Start}, {End}>\r\n");
-            sb.Append($"  Cases: {CaseCount:F2}\r\n");
+            sb.Append($"  Cases: {CaseCount:F2} ");
             sb.Append($"  Normalized Cases: {NormalizedCount:F2}\r\n");
-            sb.Append($"  Weight: {100 * Weight:F2}%\r\n");
-            sb.Append($"  Maximum: {Maximum}\r\n");
+            sb.Append($"  Percentage: {100 * Weight:F2}%\r\n");
+            sb.Append($"  Deaths: {Deaths:F2} Pecentatge {100 * DeathWeight:F2}%\r\n");
+            sb.Append($"  Fatality rate {FatalityRate:F4} \r\n");
+            sb.Append($"  Maximum: {Maximum}");
             sb.Append($"  MaxValue: {MaxValue:F2}\r\n");
-            sb.Append($"  Median: {Median}\r\n");
-            sb.Append($"  Mean: {Mean:F2}\r\n");
+            sb.Append($"  Median: {Median}");
+            sb.Append($"  Mean: {Mean:F2}");
             sb.Append($"  Sigma: {Sigma:F2}\r\n");
             sb.Append($"  Max Derivative {MaxDeriv:F2} at {MaxDerivPos}\r\n");
             sb.Append($"  Min Derivative {MinDeriv:F2} at {MinDerivPos}\r\n");
             return sb.ToString();
+        }
+
+        public void AddDeath(TimeSeries ts) {
+            double deathCount = 0.0;
+            double[] ddata = ts.GetData();
+
+            for (int i = Start; i <= End; i++) {
+                deathCount += ddata[i];
+            }
+            deaths = deathCount;
+
+            double totalDeaths = ts.CaseCount();
+            deathWeight = (totalDeaths > 0) ? deathCount / totalDeaths : 0.0;
+
+            fatalityRate = (caseCount > 0) ? deathCount / caseCount : 0.0;
         }
     }
 }

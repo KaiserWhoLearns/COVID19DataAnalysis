@@ -13,7 +13,7 @@ namespace DataSeries {
 
 
         private Dictionary<string, TimeSeries> series;
- //       public SeriesType SeriesType { get; }
+  
 
         public TimeSeriesSet() {
             series = new Dictionary<string, TimeSeries>();
@@ -383,6 +383,16 @@ namespace DataSeries {
             tList.Sort((x, y) => (x.Item2).CompareTo(y.Item2));
 
             return tList;
+        }
+
+        // Find a matching time series that the other count (case count versus death)
+        public TimeSeries LookupCorrespondingSeries(TimeSeries ts) {
+            foreach (TimeSeries ts1 in series.Values) {
+                if (ts1.Admin0 == ts.Admin0 && ts1.Admin1 == ts.Admin1 && ts1.Admin2 == ts.Admin2 && ts1.DataType != ts.DataType) {
+                    return ts1;
+                }
+            }
+            return null;
         }
 
     }

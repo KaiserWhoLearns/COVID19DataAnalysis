@@ -339,6 +339,12 @@ namespace CaseCounter {
                 string tsKey = (string) timeSeries1ListBox.SelectedItem;
                 TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
                 WaveSet ws = new(ts, new());
+                if (timeSeriesSetTwo != null) {         // If there is a matching file of deaths,  add deaths to waveset
+                    TimeSeries ts1 = timeSeriesSetTwo.LookupCorrespondingSeries(ts);
+                    if (ts1 != null) {
+                        ws.AddDeath(ts1);
+                    }
+                }
                 caseListBox.Items.Clear();
                 ws.AddToListBox(caseListBox);
             }

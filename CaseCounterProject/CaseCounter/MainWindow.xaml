@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CaseCounter"
         xmlns:scottplot="clr-namespace:ScottPlot;assembly=ScottPlot"
         mc:Ignorable="d"
-        Title="Case Counter" Height="800" Width="1600">
+        Title="Case Counter" Height="1200" Width="2000">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -80,10 +80,10 @@
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
             <ListBox Grid.Column ="0" x:Name="caseListBox"/>

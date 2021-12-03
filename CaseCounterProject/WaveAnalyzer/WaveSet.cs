@@ -121,5 +121,15 @@ namespace WaveAnalyzer {
 
             listBox.Items.Add(sb.ToString());
         }
+
+        // Add death data - time series is assumed to match at the admin level
+        public void AddDeath(TimeSeries ts) {
+            if (ts.DataType != DataType.Deaths) {
+                return;
+            }
+            foreach (Wave wave in waves) {
+                wave.AddDeath(ts);
+            }
+        }
     }
 }
