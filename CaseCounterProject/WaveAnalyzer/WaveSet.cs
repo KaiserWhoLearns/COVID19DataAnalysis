@@ -111,6 +111,19 @@ namespace WaveAnalyzer {
             return sb.ToString();
         }
 
+        public string MainPeaks(double cutOff) {
+            StringBuilder sb = new();
+            sb.Append($"{TimeSeries.ShortName}");
+            foreach (Wave w in waves) {
+                if (w.Weight >= cutOff) {
+                    sb.Append($"({w.Maximum}, {w.MaxValue:F2}, {w.Weight*100:F1}%)");
+                }
+            }
+
+            return sb.ToString();
+        }
+
+
         public void AddToListBox(ListBox listBox) {
             StringBuilder sb = new();
 

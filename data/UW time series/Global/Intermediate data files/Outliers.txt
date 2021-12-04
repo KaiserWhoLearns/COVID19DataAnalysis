@@ -22,7 +22,7 @@ Brazil/Amapa+Confirmed: <119,4549>
 Brazil/Amazonas+Confirmed: <119,23704>
 Brazil/Amazonas+Deaths: <119,1561>
 Brazil/Bahia+Confirmed: <119,11197>
-Brazil/Ceara+Confirmed: <119,30560><226,10433><258,12823><392,11113><617,10647><659,3534><679,1341>
+Brazil/Ceara+Confirmed: <119,30560><226,10433><258,12823><392,11113><617,10647><659,3534>
 Brazil/Ceara+Deaths: <119,1900>
 Brazil/Distrito Federal+Confirmed: <119,5161>
 Brazil/Espirito Santo+Confirmed: <119,8092>
@@ -246,7 +246,7 @@ Peru/San Martin+Deaths: <498,1431>
 Peru/Tumbes+Confirmed: <127,1219>
 Peru/Ucayali+Confirmed: <127,3530>
 Peru/Ucayali+Deaths: <498,1946>
-Peru/Unknown+Confirmed: <178,11749><179,4090><355,1536><370,4444><373,5715><375,5217><378,8573><380,6715><384,5557><386,6724><394,9667><396,7410><404,5942><408,4878><410,6670><412,8847><418,4443><422,16047><429,11919><431,8909><434,8730><435,4186><437,5616><438,2790><445,7927><451,8575><453,3030><457,11049><459,7425><462,8277><467,3129><472,5591><476,4320><483,5715><486,5285><489,6966><497,9963><499,10734><500,4225><503,1429><505,4054><508,5569><510,3852><515,3550><516,3882><520,6813><529,7559><531,2374><532,2586><533,2549><535,4629><536,1962><538,2010><540,2260><542,1950><548,1617><549,1765><550,1490><552,1366><556,2798><557,1808><561,1993><563,1571><564,1217><569,1319><570,1497><573,2015><574,1468><575,1371><576,1396><577,1173><580,1538><581,1360><582,1118><589,2112><595,1085><598,1021><603,1068><616,1086><618,1978><622,1210><623,1034><631,1122><639,1927><647,1032><651,1121><653,1062><654,1070><658,2239><659,1237><666,1415><667,1537><671,1539><674,1434><675,1574><676,1326><678,1381>
+Peru/Unknown+Confirmed: <178,11749><179,4090><355,1536><370,4444><373,5715><375,5217><378,8573><380,6715><384,5557><386,6724><394,9667><396,7410><404,5942><408,4878><410,6670><412,8847><418,4443><422,16047><429,11919><431,8909><434,8730><435,4186><437,5616><438,2790><445,7927><451,8575><453,3030><457,11049><459,7425><462,8277><467,3129><472,5591><476,4320><483,5715><486,5285><489,6966><497,9963><499,10734><500,4225><503,1429><505,4054><508,5569><510,3852><515,3550><516,3882><520,6813><529,7559><531,2374><532,2586><533,2549><535,4629><536,1962><538,2010><540,2260><542,1950><548,1617><549,1765><550,1490><552,1366><556,2798><557,1808><561,1993><563,1571><564,1217><569,1319><570,1497><573,2015><574,1468><575,1371><576,1396><577,1173><580,1538><581,1360><582,1118><589,2112><595,1085><598,1021><603,1068><616,1086><618,1978><622,1210><623,1034><631,1122><639,1927><647,1032><651,1121><653,1062><654,1070><658,2239><659,1237><666,1415><667,1537><671,1539><674,1434><675,1574><676,1326><679,1491><680,1579>
 Peru/Unknown+Deaths: <497,115600><536,1157>
 Russia/Altai Krai+Confirmed: <131,1915>
 Russia/Arkhangelsk Oblast+Confirmed: <131,2068>
@@ -350,7 +350,7 @@ Sweden/Orebro+Confirmed: <135,1896>
 Sweden/Ostergotland+Confirmed: <135,2197><349,1252><440,1108>
 Sweden/Skane+Confirmed: <135,1928><335,5181><342,7707><349,7661>
 Sweden/Sormland+Confirmed: <135,1655>
-Sweden/Stockholm+Confirmed: <135,14366><335,4248><342,6098><489,1269><498,1544><678,1908>
+Sweden/Stockholm+Confirmed: <135,14366><335,4248><342,6098><489,1269><498,1544>
 Sweden/Stockholm+Deaths: <135,2136>
 Sweden/Uppsala+Confirmed: <135,2136><342,1079>
 Sweden/Vastmanland+Confirmed: <135,1434>
@@ -364,11 +364,12 @@ US/Alabama/Shelby+Confirmed: <478,1346>
 US/Alabama/Tuscaloosa+Confirmed: <246,1059>
 US/California/Kern+Confirmed: <677,1008>
 US/California/Los Angeles+Confirmed: <491,4032>
-US/California/Orange+Confirmed: <538,1226><677,1226>
+US/California/Orange+Confirmed: <538,1226>
 US/California/Riverside+Confirmed: <676,2450>
 US/California/Sacramento+Confirmed: <642,1415>
 US/California/San Bernardino+Confirmed: <676,2374>
 US/California/San Joaquin+Confirmed: <337,5702>
+US/California/Stanislaus+Confirmed: <680,1298>
 US/Connecticut/Hartford+Confirmed: <341,2336>
 US/Connecticut/New Haven+Confirmed: <341,2103>
 US/Florida/Alachua+Confirmed: <555,1087><562,1412><569,1642><576,1505><583,1526><590,1460><597,1295>
@@ -414,10 +415,9 @@ US/Georgia/Fulton+Confirmed: <286,2035>
 US/Georgia/Gwinnett+Confirmed: <286,2117>
 US/Georgia/Unassigned+Confirmed: <159,1242><292,1324>
 US/Georgia/Union+Confirmed: <286,1447>
-US/Illinois/Cook+Confirmed: <677,6320>
 US/Illinois/Unassigned+Confirmed: <167,1124><275,1134><282,1554>
 US/Iowa/Polk+Confirmed: <581,1180><588,1427><595,1535><602,1880><609,2100><616,1668><623,1412><630,1177><644,1035><665,1175><672,1521><679,1358>
-US/Iowa/Unassigned+Confirmed: <566,3155><570,1950><573,1755><577,2197><580,2355><584,2643><587,2022><591,3187><594,3207><598,4016><601,4026><605,5161><608,3633><612,4485><615,3370><619,3522><622,3329><647,2396><657,3241><660,1195><661,3090><664,2974><666,1248><668,3876><671,3270><676,3999><678,2600>
+US/Iowa/Unassigned+Confirmed: <566,3155><570,1950><573,1755><577,2197><580,2355><584,2643><587,2022><591,3187><594,3207><598,4016><601,4026><605,5161><608,3633><612,4485><615,3370><619,3522><622,3329><647,2396><657,3241><660,1195><661,3090><664,2974><666,1248><668,3876><671,3270><676,3999><678,2600><680,1839>
 US/Kansas/Johnson+Confirmed: <394,1070>
 US/Kansas/Sedgwick+Confirmed: <336,1252>
 US/Kentucky/Fayette+Confirmed: <259,1517>
@@ -440,6 +440,7 @@ US/Missouri/Lincoln+Confirmed: <414,1046>
 US/Missouri/Newton+Confirmed: <414,1057>
 US/Missouri/St. Charles+Confirmed: <414,6899>
 US/Missouri/St. Francois+Confirmed: <414,1085>
+US/Missouri/St. Louis City+Confirmed: <680,1631>
 US/Nebraska/Buffalo+Confirmed: <612,1260>
 US/Nebraska/Douglas+Confirmed: <612,10608><651,1045>
 US/Nebraska/Hall+Confirmed: <612,1391>
@@ -447,7 +448,7 @@ US/Nebraska/Lancaster+Confirmed: <612,7775>
 US/Nebraska/Lincoln+Confirmed: <612,1063>
 US/Nebraska/Sarpy+Confirmed: <612,3773>
 US/Nebraska/Unassigned+Confirmed: <553,1009><608,2412><650,1607><653,1025><668,1131><676,2538>
-US/New Hampshire/Hillsborough+Confirmed: <650,1347><677,1393>
+US/New Hampshire/Hillsborough+Confirmed: <650,1347>
 US/New Hampshire/Unassigned+Confirmed: <345,1050><649,4334>
 US/New Jersey/Unassigned+Confirmed: <90,2488><311,1114>
 US/New Mexico/Unassigned+Confirmed: <315,1544>
@@ -499,7 +500,7 @@ US/Texas/Denton+Confirmed: <258,1240>
 US/Texas/El Paso+Confirmed: <677,2170>
 US/Texas/Grimes+Confirmed: <376,1164>
 US/Texas/Guadalupe+Confirmed: <243,1587>
-US/Texas/Harris+Confirmed: <243,14129><679,1066>
+US/Texas/Harris+Confirmed: <243,14129>
 US/Texas/Henderson+Confirmed: <357,1679>
 US/Texas/Hill+Confirmed: <376,1498>
 US/Texas/McLennan+Confirmed: <577,1276>
@@ -512,7 +513,7 @@ US/Texas/Val Verde+Confirmed: <360,1053>
 US/Texas/Washington+Confirmed: <376,1535>
 US/Texas/Webb+Confirmed: <374,1069><504,2555><566,2333>
 US/Texas/Williamson+Confirmed: <295,1499><314,1079><404,1341>
-US/Washington/King+Confirmed: <60,1040><504,1230><677,1065>
+US/Washington/King+Confirmed: <60,1040><504,1230>
 US/Washington/Spokane+Confirmed: <547,1121>
 US/Washington/Unassigned+Confirmed: <502,1104>
 Uganda+Confirmed: <579,21324>

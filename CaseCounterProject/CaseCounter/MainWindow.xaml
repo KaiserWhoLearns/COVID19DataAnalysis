@@ -29,6 +29,7 @@
                     <MenuItem Header="Display Multiple, Normalize by count" Click="Display_MultipleByCount_Click" />
                     <Separator/>
                     <MenuItem Header="Make Waves" Click="MakeWaves_Click" />
+                    <MenuItem Header="Summarize" Click="Summarize_Click" />
                 </MenuItem>
                 <MenuItem Header="Analyze Curve">
                     <MenuItem Header="Count Peaks" Click="CountPeaks_Click"/>

@@ -350,6 +350,15 @@ namespace CaseCounter {
             }
         }
 
+        private void Summarize_Click(object sender, RoutedEventArgs e) {
+            fileListBox.Items.Clear();
+            foreach (string tsKey in timeSeries1ListBox.SelectedItems) {
+                TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
+                WaveSet ws = new(ts, new());
+                fileListBox.Items.Add(ws.MainPeaks(0.10));
+            } 
+        }
+
 
         /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into
          * a set of cleaned files.  These were used during initial development - but no longer are needed.
