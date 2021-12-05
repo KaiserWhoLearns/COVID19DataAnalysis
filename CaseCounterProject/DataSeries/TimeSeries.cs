@@ -589,6 +589,7 @@ namespace DataSeries {
             return (minPos, minSoFar);
         }
 
+
         public (double[], double[]) FindCriticalPoints() {
             List<int> xList = new();
 
@@ -621,7 +622,18 @@ namespace DataSeries {
 
             return (xArray, yArray);
         }
+
+        public (double[], double[]) FindInflectionPoints(int d) {
+            TimeSeries derivTS = Derivative(d);
+            (double[] xArray, double[] yArray) =  derivTS.FindCriticalPoints();
+
+            for (int i = 0; i < xArray.Length; i++) {           // Move the inflection points to the original curve
+                yArray[i] = data[(int)xArray[i]];
+            }
+
+            return (xArray, yArray);
+        }
+
     }
 
- 
 }

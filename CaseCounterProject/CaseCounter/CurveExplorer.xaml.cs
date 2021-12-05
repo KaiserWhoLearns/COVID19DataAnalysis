@@ -26,6 +26,7 @@ namespace CaseCounter {
         private ScottPlot.Plottable.ScatterPlot timeSeriesCurve;
         private ScottPlot.Plottable.ScatterPlot overlayCurve;
         private ScottPlot.Plottable.ScatterPlot criticalPoints;
+        private ScottPlot.Plottable.ScatterPlot inflectionPoints;
         private int nSegments;
 
 
@@ -151,16 +152,21 @@ namespace CaseCounter {
             wpfPlot3.Refresh();
         }
 
+        delegate TimeSeries Smooth(TimeSeries ts, int d);
+
         private void Smooth_Click(object sender, RoutedEventArgs e) {
-            UpdateSmoothing(timeSeries.BlockSmooth((int)smoothingDaysSlider.Value));
+            UpdateSmoothing((ts, d) => ts.BlockSmooth(d));  
         }
 
         private void Smoothing_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
             if (wpfPlot3 != null)
-                UpdateSmoothing(timeSeries.BlockSmooth((int)smoothingDaysSlider.Value));
+                UpdateSmoothing((ts, d) => ts.BlockSmooth(d));
         }
 
-        private void UpdateSmoothing(TimeSeries ts1) {
+        private void UpdateSmoothing(Smooth smoother) {
+            int d = (int)doubleSmoothingDaysSlider.Value;
+            TimeSeries ts1 = smoother(timeSeries, d);
+
             double[] dataX = new double[ts1.LastDay + 1];
             for (int i = 0; i < dataX.Length; i++) {
                 dataX[i] = i;
@@ -168,6 +174,7 @@ namespace CaseCounter {
             double[] dataY = ts1.GetData();
 
             (double[] cpX, double[] cpY) = ts1.FindCriticalPoints();
+            (double[] ipX, double[] ipY) = ts1.FindInflectionPoints(d);  
 
             if (overlayCurve != null) {
                 wpfPlot3.Plot.Remove(overlayCurve);
@@ -186,18 +193,19 @@ namespace CaseCounter {
             overlayCurve.Color = System.Drawing.Color.Aqua;
 
             criticalPoints = wpfPlot3.Plot.AddScatter(cpX, cpY, System.Drawing.Color.Red, markerSize: 10, lineWidth: 0, label: "Critical Points");
- 
+            inflectionPoints = wpfPlot3.Plot.AddScatter(ipX, ipY, System.Drawing.Color.Lime, markerSize: 10, lineWidth: 0, label: "Inflection Points");
+
 
             wpfPlot3.Refresh();
         }
 
         private void DoubleSmooth_Click(object sender, RoutedEventArgs e) {
-            UpdateSmoothing(timeSeries.DoubleSmooth((int)doubleSmoothingDaysSlider.Value));
+            UpdateSmoothing((ts, d) => ts.DoubleSmooth(d));
         }
 
         private void DoubleSmoothing_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
             if (wpfPlot3 != null)
-                UpdateSmoothing(timeSeries.DoubleSmooth((int)doubleSmoothingDaysSlider.Value));
+                UpdateSmoothing((ts, d) => ts.DoubleSmooth(d));  
         }
     }
 }
