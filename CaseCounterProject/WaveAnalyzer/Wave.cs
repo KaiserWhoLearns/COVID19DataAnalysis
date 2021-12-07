@@ -135,16 +135,16 @@ namespace WaveAnalyzer {
             StringBuilder sb = new();
             sb.Append($"<{Start}, {End}>\r\n");
             sb.Append($"  Cases: {CaseCount:F2} ");
-            sb.Append($"  Normalized Cases: {NormalizedCount:F2}\r\n");
-            sb.Append($"  Percentage: {100 * Weight:F2}%\r\n");
-            sb.Append($"  Deaths: {Deaths:F2} Pecentatge {100 * DeathWeight:F2}%\r\n");
+            sb.Append($"  {100 * NormalizedCount:F2}% of Population, ");
+            sb.Append($"  {100 * Weight:F2}% of cases\r\n");
+            sb.Append($"  Deaths: {Deaths:F2} {100 * DeathWeight:F2}% of deaths, ");
             sb.Append($"  Fatality rate {FatalityRate:F4} \r\n");
             sb.Append($"  Maximum: {Maximum}");
             sb.Append($"  MaxValue: {MaxValue:F2}\r\n");
             sb.Append($"  Median: {Median}");
             sb.Append($"  Mean: {Mean:F2}");
             sb.Append($"  Sigma: {Sigma:F2}\r\n");
-            sb.Append($"  Max Derivative {MaxDeriv:F2} at {MaxDerivPos}\r\n");
+            sb.Append($"  Max Derivative {MaxDeriv:F2} at {MaxDerivPos}");
             sb.Append($"  Min Derivative {MinDeriv:F2} at {MinDerivPos}\r\n");
             return sb.ToString();
         }

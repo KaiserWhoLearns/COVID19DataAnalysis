@@ -19,6 +19,10 @@ namespace DataSeries {
             series = new Dictionary<string, TimeSeries>();
         }
 
+        public TimeSeriesSet(string filePath) : this() {
+            LoadCsv(filePath);
+        }
+
         public int Count {
             get { return series.Count; }
         }

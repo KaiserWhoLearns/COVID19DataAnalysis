@@ -10,22 +10,27 @@ using DataSeries;
 
 
 namespace CaseCounter {
-    public class LibraryBuilder {
+    public class LibraryBuilder  : TaskScript {
 
         private readonly bool DetectOutliers = true;
         private readonly bool DetectNegative = true;
         private readonly bool RemoveAnomalies = true;
 
-        ListBox listBox;
-        Config config;
+        private string[] directoryList = { "World by country", "World by province", "United States by county", "United States by county/Confirmed",
+            "United States by county/Deaths", "Intermediate data files" };
+        private string wbc = "World by country";
+        private string wbp = "World by province";
+        private string usbc = "United States by county";
+        private string usbc_c = "United States by county/Confirmed";
+        private string usbc_d = "United States by county/Deaths";
+        private string idf = "Intermediate data files";
 
-        public LibraryBuilder(ListBox listBox) {
-            this.listBox = listBox;
-            config = new();
+
+        public LibraryBuilder(ListBox listBox) : base(listBox) {
         }
 
-        public bool Build() {
-            listBox.Items.Clear();
+        public override bool Build() {
+
             ReportStep("Build Libary");
             bool error;
 
@@ -159,7 +164,7 @@ namespace CaseCounter {
 
             error = false;
 
-            System.Windows.Forms.FolderBrowserDialog folderDialog = new System.Windows.Forms.FolderBrowserDialog();
+            System.Windows.Forms.FolderBrowserDialog folderDialog = new();
             System.Windows.Forms.DialogResult result = folderDialog.ShowDialog();
 
 
@@ -199,35 +204,9 @@ namespace CaseCounter {
 
 
 
-        private string[] directoryList = { "World by country", "World by province", "United States by county", "United States by county/Confirmed",
-            "United States by county/Deaths", "Intermediate data files" };
-        private string wbc = "World by country";
-        private string wbp = "World by province";
-        private string usbc = "United States by county";
-        private string usbc_c = "United States by county/Confirmed";
-        private string usbc_d = "United States by county/Deaths";
-        private string idf = "Intermediate data files";
 
-        public static string CreateOutputDirectories(string[] directories, out bool error) {
-            error = false;
 
-            _ = MessageBox.Show("Select directory for output");
-            System.Windows.Forms.FolderBrowserDialog folderDialog = new System.Windows.Forms.FolderBrowserDialog();
-            System.Windows.Forms.DialogResult result = folderDialog.ShowDialog();
-            string path = folderDialog.SelectedPath;
-            if (result == System.Windows.Forms.DialogResult.OK) {
 
-                foreach (string dir in directories) {
-                    string path1 = Path.Combine(path, dir);
-                    _ = Directory.CreateDirectory(path1);
-                }
-            } else {
-                error = true;
-                return "";
-            }
-            return path;
-
-        }
 
         TimeSeriesSet ExtractUSStates(TimeSeriesSet unitedStatesTSS, string dirPath) {
             TimeSeriesSet stateSet = unitedStatesTSS.CombineAdmin1();
@@ -287,10 +266,6 @@ namespace CaseCounter {
             tss.WriteToFile(Path.Combine(path, fileName));
         }
 
-        private void ReportStep(string str) {
-            _ = listBox.Items.Add(str);
-
-        }
 
   
 

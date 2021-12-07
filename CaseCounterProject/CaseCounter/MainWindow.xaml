@@ -22,6 +22,7 @@
                     <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
                     <Separator/>
                     <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
+                    <MenuItem Header="Export Summaries" Click="ExportSummaries_Click"/>
                 </MenuItem>
                 <MenuItem Header="Chart Display">
                     <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />

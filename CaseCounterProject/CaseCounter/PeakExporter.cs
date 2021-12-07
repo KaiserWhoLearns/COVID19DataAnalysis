@@ -11,9 +11,9 @@ using Utilities;
 
 
 namespace CaseCounter {
-    public class PeakExporter {
+    public class PeakExporter : TaskScript {
 
-        ListBox listBox;
+
 
         private delegate void ResultWriter(TimeSeriesSet tss, string path);
 
@@ -29,8 +29,8 @@ namespace CaseCounter {
                                     WBP + "\\Russia_confirmed_sm.csv", WBP + "\\US_confirmed_sm.csv"};
         private string[] outputFileNames = { "Oregon.csv", "Washington.csv", "Arizona.csv", "Africa.csv", "Europe.csv", "Asia.csv", "Canada.csv", "India.csv", "Russia.csv", "UnitedStates.csv" };
 
-        public PeakExporter(ListBox listBox) {
-            this.listBox = listBox;
+        public PeakExporter(ListBox listBox) : base(listBox) {
+
         }
 
         static void ExportPeaks(TimeSeriesSet tss, string filePath, int nPeaks) {
@@ -38,16 +38,15 @@ namespace CaseCounter {
             psc.WriteToFile(filePath);
         }
 
-        public bool Build() {
+        public override bool Build() {
             if (subDirectoryList.Length != resultWriters.Length) {
                 throw new ProgrammingException("directoryList and resultWriters need to be the same length"); 
             }
             if (tssFiles.Length != outputFileNames.Length) {
-                throw new ProgrammingException("tssFiles and outputFileNames ned to be the same length");
+                throw new ProgrammingException("tssFiles and outputFileNames need to be the same length");
             }
 
-            listBox.Items.Clear();
-            _ = listBox.Items.Add("Build Peak Files");
+            ReportStep("Build Peak Files");
             bool error;
 
 
@@ -57,42 +56,24 @@ namespace CaseCounter {
                 return false;
             }
 
-            _ = listBox.Items.Add("Get Input Directory");
+            ReportStep("Get Input Directory");
 
-            string topLevelOutputDir = LibraryBuilder.CreateOutputDirectories(subDirectoryList, out error);
+            string topLevelOutputDir = CreateOutputDirectories(subDirectoryList, out error);
 
             if (error) {
                 return false;
             }
 
-            _ = listBox.Items.Add("Create Output Directories");
+            ReportStep("Create Output Directories");
 
             for (int i = 0; i < tssFiles.Length; i++) {
                 MakePeaks(Path.Combine(topLevelInputDir, tssFiles[i]), outputFileNames[i], topLevelOutputDir);
-                _ = listBox.Items.Add("Exported " + outputFileNames[i]);
+                ReportStep("Exported " + outputFileNames[i]);
             }
 
             return true;
         }
 
-        private string GetTopLevelInputDirectory(out bool error) {
-
-            _ = MessageBox.Show("Select directory for input files");
-
-            string path = "";
-            error = false;
-
-            System.Windows.Forms.FolderBrowserDialog folderDialog = new System.Windows.Forms.FolderBrowserDialog();
-            System.Windows.Forms.DialogResult result = folderDialog.ShowDialog();
-
-
-            if (result == System.Windows.Forms.DialogResult.OK) {
-                path = folderDialog.SelectedPath;
-            } else {
-                error = true;
-            }
-            return path;
-        }
 
         private void MakePeaks(string tssFilePath, string fileName, string topLevelOutputDir) {
             TimeSeriesSet tss = new();

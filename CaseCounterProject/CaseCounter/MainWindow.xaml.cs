@@ -118,6 +118,22 @@ namespace CaseCounter {
             }
         }
 
+        /* Call a routine that is a script to print out summary information
+         */
+
+        private void ExportSummaries_Click(object sender, RoutedEventArgs e) {
+            colorCanvas.Background = Brushes.Yellow;
+
+            ResultExporter re = new(caseListBox);
+            bool result = re.Build();
+
+            if (result) {
+                colorCanvas.Background = Brushes.Green;
+            } else {
+                colorCanvas.Background = Brushes.Red; ;
+            }
+        }
+
         private void ClearSelection_Click(object sender, RoutedEventArgs e) {
             timeSeries1ListBox.SelectedItems.Clear();
         }
