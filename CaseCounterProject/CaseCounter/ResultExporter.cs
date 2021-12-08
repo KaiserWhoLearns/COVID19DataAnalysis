@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.IO;
 using DataSeries;
+using WaveAnalyzer;
 
 namespace CaseCounter {
     public class ResultExporter : TaskScript {
@@ -15,6 +16,8 @@ namespace CaseCounter {
         private static string WBP = "World by province";
 
         private string[] subDirectoryList = { "Country Summary", "Res2" };
+        public static string CS = "Country Summary";
+
         string topLevelInputDir;
         string topLevelOutputDir;
 
@@ -42,7 +45,10 @@ namespace CaseCounter {
         }
 
         private void CountrySummaries() {
-            ContinentSummary("Africa");
+            foreach (string continent in config.ContinentList) {
+                ContinentSummary(continent);
+            }
+
             // For each continent
             //      Summary Header
             //      Read in confirmed / deaths
@@ -56,9 +62,22 @@ namespace CaseCounter {
         private void ContinentSummary(string continent) {
             string confFilePath = Path.Combine(topLevelInputDir, WBC, continent + "_confirmed_sm.csv");
             string deathFilePath = Path.Combine(topLevelInputDir, WBC, continent + "_deaths_sm.csv");
+            string outputFilePath = Path.Combine(topLevelOutputDir, CS, continent + "_summary.csv");
+
+            WaveSummary summary = new BasicSummary();
 
             TimeSeriesSet tssConf = new(confFilePath);
             TimeSeriesSet tssDeaths = new(deathFilePath);
+
+            using (StreamWriter outputFile = new(outputFilePath)) {
+                outputFile.WriteLine(summary.HeaderString());
+
+                foreach (TimeSeries ts in tssConf) {
+                    string tsKey = TimeSeries.BuildKey(DataType.Deaths, ts.Admin0, ts.Admin1, ts.Admin2);
+                    TimeSeries ts2 = tssDeaths.GetSeries(tsKey);
+                    outputFile.WriteLine(summary.Summarize(ts, ts2));
+                }
+            }
         }
 
 

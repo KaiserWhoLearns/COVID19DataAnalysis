@@ -33,6 +33,7 @@ namespace CaseCounter {
         public List<string> AsiaList { get; }
         public List<string> NorthAmericaList { get; }
         public List<string> SouthAmericaList { get; }
+        public List<string> ContinentList { get; }
         public List<string> CountriesWithProvincesList { get; }
 
 
@@ -46,6 +47,7 @@ namespace CaseCounter {
             NorthAmericaList = NorthAmerican_countries.ToList();
             SouthAmericaList = SouthAmerican_countries.ToList();
             CountriesWithProvincesList = CountriesWithProvinces.ToList();
+            ContinentList = Continents.ToList();
 
             Admin0RemoveList = Admin0Remove.ToList();
 
@@ -185,6 +187,8 @@ namespace CaseCounter {
                                                 "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
                                                 "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                 "Washington", "West Virginia","Wisconsin","Wyoming" };
+
+        private readonly string[] Continents = { "Africa", "Asia", "Europe", "NorthAmerica", "SouthAmerica" };
 
         private readonly string[] African_countries = { "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde",
                                                 "Cameroon", "Central African Republic", "Chad", "Comoros", "Congo (Brazzaville)",

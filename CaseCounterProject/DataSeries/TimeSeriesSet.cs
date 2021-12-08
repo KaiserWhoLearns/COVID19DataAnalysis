@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using CsvHelper;
@@ -9,7 +10,7 @@ using System.IO;
 using Utilities;
 
 namespace DataSeries {
-    public class TimeSeriesSet {
+    public class TimeSeriesSet : IEnumerable<TimeSeries> {
 
 
         private Dictionary<string, TimeSeries> series;
@@ -26,6 +27,16 @@ namespace DataSeries {
         public int Count {
             get { return series.Count; }
         }
+
+        public IEnumerator<TimeSeries> GetEnumerator() {
+            return series.Values.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() {
+            return series.Values.GetEnumerator();
+
+        }
+
         public void AddConfirmed(string admin0, string admin1, string admin2, int fips, int? confirmed, int index) {
             AddCase(admin0, admin1, admin2, fips, confirmed, DataType.Confirmed, index);
         }
