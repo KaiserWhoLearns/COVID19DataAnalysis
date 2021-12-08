@@ -23,7 +23,7 @@ namespace WaveAnalyzer {
         }
         protected string SummaryData(TimeSeries caseSeries, TimeSeries deathSeries) {
             StringBuilder sb = new();
-            sb.Append($"{caseSeries.Admin0},{caseSeries.Admin1},{caseSeries.Admin2},{caseSeries.Fips},");
+            sb.Append($"\"{caseSeries.Admin0}\",\"{caseSeries.Admin1}\",\"{caseSeries.Admin2}\",{caseSeries.Fips},");
 
             double population = caseSeries.Population;
             double caseCount = caseSeries.CaseCount();

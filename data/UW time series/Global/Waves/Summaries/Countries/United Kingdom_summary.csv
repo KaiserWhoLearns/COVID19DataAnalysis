@@ -1,16 +1,16 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-United Kingdom,Anguilla,,0,15002,1460,3,9732.04,199.97,0.0021
-United Kingdom,Bermuda,,0,62272,5752,106,9236.90,1702.21,0.0184
-United Kingdom,British Virgin Islands,,0,30237,2817,37,9316.40,1223.67,0.0131
-United Kingdom,Cayman Islands,,0,65720,7685,8,11693.55,121.73,0.0010
-United Kingdom,Channel Islands,,0,170498,19434,105,11398.37,615.84,0.0054
-United Kingdom,England,,0,55977200,8679581,89873,15505.56,1605.53,0.0104
-United Kingdom,Falkland Islands,,0,3483,83,0,2383.00,0.00,0.0000
-United Kingdom,Gibraltar,,0,33691,7386,99,21922.77,2938.47,0.0134
-United Kingdom,Isle of Man,,0,85032,12041,67,14160.55,787.94,0.0056
-United Kingdom,Montserrat,,0,4999,44,1,880.18,200.04,0.0227
-United Kingdom,Northern Ireland,,0,1881600,324189,2366,17229.43,1257.44,0.0073
-United Kingdom,Saint Helena, Ascension and Tristan da Cunha,,0,5661,3,0,52.99,0.00,0.0000
-United Kingdom,Scotland,,0,5463300,725119,7222,13272.55,1321.91,0.0100
-United Kingdom,Turks and Caicos Islands,,0,38718,3107,25,8024.69,645.69,0.0080
-United Kingdom,Wales,,0,3138599,508113,5013,16189.17,1597.21,0.0099
+"United Kingdom","Anguilla","",0,15002,1460,3,9732.04,199.97,0.0021
+"United Kingdom","Bermuda","",0,62272,5752,106,9236.90,1702.21,0.0184
+"United Kingdom","British Virgin Islands","",0,30237,2817,37,9316.40,1223.67,0.0131
+"United Kingdom","Cayman Islands","",0,65720,7685,8,11693.55,121.73,0.0010
+"United Kingdom","Channel Islands","",0,170498,19434,105,11398.37,615.84,0.0054
+"United Kingdom","England","",0,55977200,8679581,89873,15505.56,1605.53,0.0104
+"United Kingdom","Falkland Islands","",0,3483,83,0,2383.00,0.00,0.0000
+"United Kingdom","Gibraltar","",0,33691,7386,99,21922.77,2938.47,0.0134
+"United Kingdom","Isle of Man","",0,85032,12041,67,14160.55,787.94,0.0056
+"United Kingdom","Montserrat","",0,4999,44,1,880.18,200.04,0.0227
+"United Kingdom","Northern Ireland","",0,1881600,324189,2366,17229.43,1257.44,0.0073
+"United Kingdom","Saint Helena, Ascension and Tristan da Cunha","",0,5661,3,0,52.99,0.00,0.0000
+"United Kingdom","Scotland","",0,5463300,725119,7222,13272.55,1321.91,0.0100
+"United Kingdom","Turks and Caicos Islands","",0,38718,3107,25,8024.69,645.69,0.0080
+"United Kingdom","Wales","",0,3138599,508113,5013,16189.17,1597.21,0.0099
