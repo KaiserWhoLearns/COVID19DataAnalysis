@@ -11,12 +11,13 @@ using WaveAnalyzer;
 namespace CaseCounter {
     public class ResultExporter : TaskScript {
 
-        private static string USBC = "United States by county";
+        private static string USBC_C = "United States by county\\Confirmed";
+        private static string USBC_D = "United States by county\\Deaths";
         private static string WBC = "World by country";
         private static string WBP = "World by province";
 
-        private string[] subDirectoryList = { "Country Summary", "Res2" };
-        public static string CS = "Country Summary";
+        private string[] subDirectoryList = { "Summaries\\Continents","Summaries\\Countries", "Summaries\\States",
+                                              "TopWaves\\Continents","TopWaves\\Countries", "TopWaves\\States"};
 
         string topLevelInputDir;
         string topLevelOutputDir;
@@ -40,31 +41,64 @@ namespace CaseCounter {
             }
 
             ReportStep("Create Output Directories");
-            CountrySummaries();
+
+            BasicSummaries();
+
+            ReportStep("Basic Summaries");
+
+            WaveSummaries();
+
+            ReportStep("Wave Summaries");
             return true;
         }
 
-        private void CountrySummaries() {
-            foreach (string continent in config.ContinentList) {
-                ContinentSummary(continent);
-            }
-
-            // For each continent
-            //      Summary Header
-            //      Read in confirmed / deaths
-            //      For each confirmed
-            //          Find matching death
-            //          Create summary string
-            //      Make file name
-            //      Write CSV
+        private void BasicSummaries() {
+            WaveSummary summary = new BasicSummary();
+            ContinentSummaries("Summaries", summary);
+            CountrySummaries("Summaries", summary);
+            StateSummaries("Summaries", summary);
         }
 
-        private void ContinentSummary(string continent) {
-            string confFilePath = Path.Combine(topLevelInputDir, WBC, continent + "_confirmed_sm.csv");
-            string deathFilePath = Path.Combine(topLevelInputDir, WBC, continent + "_deaths_sm.csv");
-            string outputFilePath = Path.Combine(topLevelOutputDir, CS, continent + "_summary.csv");
+        private void WaveSummaries() {
+            WaveSummary summary = new TopWavesSummary();
+            ContinentSummaries("TopWaves", summary);
+            CountrySummaries("TopWaves", summary);
+            StateSummaries("TopWaves", summary);
+        }
 
-            WaveSummary summary = new BasicSummary();
+        private void ContinentSummaries(string subdirectory, WaveSummary summary) {
+            string inputCasePath = Path.Combine(topLevelInputDir, WBC);
+            string inputDeathPath = Path.Combine(topLevelInputDir, WBC);
+            string outputPath = Path.Combine(topLevelOutputDir, subdirectory, "Continents");
+            Summaries(config.ContinentList, inputCasePath, inputDeathPath, outputPath, summary);
+        }
+
+        private void CountrySummaries(string subdirectory, WaveSummary summary) {
+            string inputCasePath = Path.Combine(topLevelInputDir, WBP);
+            string inputDeathPath = Path.Combine(topLevelInputDir, WBP);
+            string outputPath = Path.Combine(topLevelOutputDir, subdirectory, "Countries");
+            Summaries(config.CountriesWithProvincesList, inputCasePath, inputDeathPath, outputPath, summary);
+
+        }
+
+        private void StateSummaries(string subdirectory, WaveSummary summary) {
+            string inputCasePath = Path.Combine(topLevelInputDir, USBC_C);
+            string inputDeathPath = Path.Combine(topLevelInputDir, USBC_D);
+            string outputPath = Path.Combine(topLevelOutputDir, subdirectory, "States");
+            Summaries(config.UsStatesList, inputCasePath, inputDeathPath, outputPath, summary);
+
+        }
+
+        private void Summaries(List<string> regionList, string inputCasePath, string inputDeathPath, string outputPath, WaveSummary summary) {
+            foreach (string region in regionList) {
+                Summary(region, inputCasePath, inputDeathPath, outputPath, summary);
+            }
+        }
+
+        private void Summary(string region, string inputCasePath, string inputDeathPath, string outputPath, WaveSummary summary) {
+            string confFilePath = Path.Combine(inputCasePath, region + "_confirmed_sm.csv");
+            string deathFilePath = Path.Combine(inputDeathPath, region + "_deaths_sm.csv");
+            string outputFilePath = Path.Combine(outputPath,region + "_summary.csv");
 
             TimeSeriesSet tssConf = new(confFilePath);
             TimeSeriesSet tssDeaths = new(deathFilePath);
