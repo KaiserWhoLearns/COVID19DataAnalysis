@@ -73,7 +73,7 @@ US/Massachusetts/Norfolk+Confirmed: <211,-1371>
 US/Massachusetts/Unassigned+Confirmed: <225,-8023>
 US/Missouri/Unassigned+Confirmed: <414,-69028>
 US/Nebraska/Unassigned+Confirmed: <612,-37761><651,-4053><656,-1933><670,-1117><677,-2517>
-US/New Hampshire/Unassigned+Confirmed: <363,-1221><650,-4212>
+US/New Hampshire/Unassigned+Confirmed: <363,-1221><650,-4212><685,-1845>
 US/New Jersey/Essex+Confirmed: <460,-2825>
 US/New Jersey/Hudson+Confirmed: <460,-1329>
 US/New Jersey/Middlesex+Confirmed: <460,-1720>

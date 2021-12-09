@@ -10,6 +10,7 @@ using WaveAnalyzer;
 
 namespace CaseCounter {
     public class ResultExporter : TaskScript {
+        private static readonly int maxWaves = 5;
 
         private static string USBC_C = "United States by county\\Confirmed";
         private static string USBC_D = "United States by county\\Deaths";
@@ -104,12 +105,12 @@ namespace CaseCounter {
             TimeSeriesSet tssDeaths = new(deathFilePath);
 
             using (StreamWriter outputFile = new(outputFilePath)) {
-                outputFile.WriteLine(summary.HeaderString());
+                outputFile.WriteLine(summary.HeaderString(maxWaves));
 
                 foreach (TimeSeries ts in tssConf) {
                     string tsKey = TimeSeries.BuildKey(DataType.Deaths, ts.Admin0, ts.Admin1, ts.Admin2);
                     TimeSeries ts2 = tssDeaths.GetSeries(tsKey);
-                    outputFile.WriteLine(summary.Summarize(ts, ts2));
+                    outputFile.WriteLine(summary.Summarize(ts, ts2, maxWaves));
                 }
             }
         }

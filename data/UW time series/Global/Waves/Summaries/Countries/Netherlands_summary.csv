@@ -1,18 +1,18 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"Netherlands","Aruba","",0,106766,16452,174,15409.40,1629.73,0.0106
-"Netherlands","Bonaire, Sint Eustatius and Saba","",0,26221,3061,22,11673.85,839.02,0.0072
-"Netherlands","Curacao","",0,164099,17486,179,10655.76,1090.80,0.0102
-"Netherlands","Drenthe","",0,493682,54745,355,11089.12,719.09,0.0065
-"Netherlands","Flevoland","",0,423021,62334,190,14735.44,449.15,0.0030
-"Netherlands","Friesland","",0,649957,82724,457,12727.61,703.12,0.0055
-"Netherlands","Gelderland","",0,2085952,311737,1712,14944.59,820.73,0.0055
-"Netherlands","Groningen","",0,585866,66083,290,11279.54,494.99,0.0044
-"Netherlands","Limburg","",0,1117201,199698,1171,17874.85,1048.16,0.0059
-"Netherlands","Noord-Brabant","",0,2562955,416633,1854,16255.96,723.38,0.0044
-"Netherlands","Noord-Holland","",0,2879527,447915,2092,15555.16,726.51,0.0047
-"Netherlands","Overijssel","",0,1162405,177476,954,15268.00,820.71,0.0054
-"Netherlands","Sint Maarten","",0,42882,4606,75,10741.10,1748.99,0.0163
-"Netherlands","Unknown","",0,-1,11592,-2,0.00,0.00,-0.0002
-"Netherlands","Utrecht","",0,1354834,212859,939,15711.08,693.07,0.0044
-"Netherlands","Zeeland","",0,383488,54437,213,14195.23,555.43,0.0039
-"Netherlands","Zuid-Holland","",0,3708696,623182,3345,16803.26,901.93,0.0054
+"Netherlands","Aruba","",0,106766,16480,175,15435.63,1639.10,0.0106
+"Netherlands","Bonaire, Sint Eustatius and Saba","",0,26221,3076,22,11731.06,839.02,0.0072
+"Netherlands","Curacao","",0,164100,17500,180,10664.23,1096.89,0.0103
+"Netherlands","Drenthe","",0,493682,55203,357,11181.89,723.14,0.0065
+"Netherlands","Flevoland","",0,423021,62789,191,14843.00,451.51,0.0030
+"Netherlands","Friesland","",0,649957,83554,458,12855.31,704.66,0.0055
+"Netherlands","Gelderland","",0,2085952,313759,1716,15041.53,822.65,0.0055
+"Netherlands","Groningen","",0,585866,66536,293,11356.86,500.11,0.0044
+"Netherlands","Limburg","",0,1117201,201451,1183,18031.76,1058.90,0.0059
+"Netherlands","Noord-Brabant","",0,2562955,419888,1864,16382.96,727.29,0.0044
+"Netherlands","Noord-Holland","",0,2879527,450822,2099,15656.11,728.94,0.0047
+"Netherlands","Overijssel","",0,1162406,178542,958,15359.69,824.15,0.0054
+"Netherlands","Sint Maarten","",0,42881,4611,75,10753.01,1749.03,0.0163
+"Netherlands","Unknown","",0,-1,11760,-2,0.00,0.00,-0.0002
+"Netherlands","Utrecht","",0,1354834,214324,942,15819.21,695.29,0.0044
+"Netherlands","Zeeland","",0,383487,54957,215,14330.86,560.64,0.0039
+"Netherlands","Zuid-Holland","",0,3708696,626769,3354,16899.98,904.36,0.0054

@@ -13,9 +13,9 @@ namespace WaveAnalyzer {
 
         }
 
-        public abstract string HeaderString(int waves = 0);
+        public abstract string HeaderString(int maxWaves);
 
-        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int waves = 0);
+        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves);
 
 
         protected string SummaryHeader() {
@@ -44,11 +44,11 @@ namespace WaveAnalyzer {
 
         }
 
-        public override string HeaderString(int waves = 0) {
+        public override string HeaderString(int maxWaves) {
             return SummaryHeader();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int waves = 0) {
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves) {
             return SummaryData(caseSeries, deathSeries);
         }
     }
@@ -58,19 +58,35 @@ namespace WaveAnalyzer {
 
         }
 
-        public override string HeaderString(int waves = 0) {
+        public override string HeaderString(int maxWaves) {
             StringBuilder sb = new();
             sb.Append(SummaryHeader());
+            sb.Append(",Waves");
+            for (int i = 0; i < maxWaves; i++) {
+                sb.Append("," + Wave.ToCSVHeaderString());  
+            }
 
             return sb.ToString();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int waves = 0) {
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves) {
             StringBuilder sb = new();
             sb.Append(SummaryData(caseSeries, deathSeries));
 
+            WaveSet waves = new(caseSeries, new WaveParameters());
+            waves.Trim(maxWaves);
+            if (deathSeries != null) {
+                waves.AddDeath(deathSeries);
+            }
 
+            sb.Append("," + waves.Count());
 
+            foreach(Wave wave in waves) {
+                sb.Append("," + wave.ToCSVString());
+            }
+            for (int i = waves.Count(); i < maxWaves; i++) {
+                sb.Append("," + Wave.ToCSVEmptyString());
+            }
             return sb.ToString();
         }
     }

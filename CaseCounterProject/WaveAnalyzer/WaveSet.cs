@@ -23,7 +23,7 @@ namespace WaveAnalyzer {
 
         }
     }
-    public class WaveSet {
+    public class WaveSet : IEnumerable<Wave> {
         public TimeSeries TimeSeries { get; }
         public List<Wave> Waves { get { return waves; } }
 
@@ -37,7 +37,6 @@ namespace WaveAnalyzer {
             foreach(Wave wave in wList) {
                 waves.AddRange(MakeWaves(wave, ts, wp));
             }
-
         }
 
         private static List<Wave> RemoveZeroLevels(TimeSeries ts, WaveParameters wp) {
@@ -45,7 +44,7 @@ namespace WaveAnalyzer {
             List<Wave> wList = new();
 
             if (ts.Population <= 0) {
-                _ = System.Windows.MessageBox.Show($"{ts.ShortName} has populations {ts.Population}");
+ //               _ = System.Windows.MessageBox.Show($"{ts.ShortName} has population {ts.Population}");
                 return wList;
             }
 
@@ -74,6 +73,16 @@ namespace WaveAnalyzer {
 
             return wList;
         }
+
+        public IEnumerator<Wave> GetEnumerator() {
+            return waves.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() {
+            return waves.GetEnumerator();
+
+        }
+
 
         public static List<Wave> MakeWaves(Wave wave, TimeSeries ts, WaveParameters wp) {
             List<Wave> wList = new();
@@ -143,6 +152,27 @@ namespace WaveAnalyzer {
             foreach (Wave wave in waves) {
                 wave.AddDeath(ts);
             }
+        }
+
+        public void Trim(int maxWaves) {
+            while (waves.Count > maxWaves) {
+                RemoveSmallestWave();
+            }
+        }
+
+        public void RemoveSmallestWave() {
+            if (waves.Count == 0)
+                return;
+
+            int smallest = 0;
+            double val = waves[0].Weight;
+            for (int i = 1; i < waves.Count; i++) {
+                if (waves[i].Weight < val) {
+                    val = waves[i].Weight;
+                    smallest = i;
+                }
+            }
+            waves.RemoveAt(smallest);
         }
     }
 }

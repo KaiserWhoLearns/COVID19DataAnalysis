@@ -27,13 +27,13 @@ namespace WaveAnalyzer {
         public double Weight { get { return weight; } }
 
         private double deathWeight;
-        public double DeathWeight { get { return deathWeight;  } }
+        public double DeathWeight { get { return deathWeight; } }
 
         private double fatalityRate;
         public double FatalityRate { get { return fatalityRate; } }
 
         private int median;
-        public int Median {  get { return median; } }
+        public int Median { get { return median; } }
 
         private double mean;
         public double Mean { get { return mean; } }
@@ -87,9 +87,9 @@ namespace WaveAnalyzer {
             normalizedCount = count / timeSeries.Population;
 
             weight = caseCount / timeSeries.CaseCount();
-            
+
             int j = Start;
-            count = data[j]; 
+            count = data[j];
 
             while (count < caseCount / 2) {
                 j++;
@@ -121,7 +121,7 @@ namespace WaveAnalyzer {
             }
             sigma = Math.Sqrt(sum / caseCount);
 
-  
+
             (int pos, double deriv) = timeSeries.MaximumDerivative(derivSpan, Start, End);
             maxDerivPos = pos;
             maxDeriv = (normalization > 0) ? deriv / normalization : 0.0;
@@ -162,6 +162,17 @@ namespace WaveAnalyzer {
             deathWeight = (totalDeaths > 0) ? deathCount / totalDeaths : 0.0;
 
             fatalityRate = (caseCount > 0) ? deathCount / caseCount : 0.0;
+        }
+
+        public string ToCSVString() {
+            return $"{Start},{End},{Maximum},{MaxValue:F2},{CaseCount:F0},{Deaths:F0},{Weight:F3},{DeathWeight:F3},{FatalityRate:F4}";
+        }
+        public static string ToCSVHeaderString() {
+            return "Start,End,Peak,NormalizedPeakValue,CaseCount,DeathCount,Weight,DeathWeight,CFR";
+        }
+
+        public static string ToCSVEmptyString() {
+            return ",,,,,,,,";
         }
     }
 }
