@@ -1,16 +1,16 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"United Kingdom","Anguilla","",0,15002,1466,3,9772.03,199.97,0.0020
-"United Kingdom","Bermuda","",0,62272,5753,106,9238.50,1702.21,0.0184
-"United Kingdom","British Virgin Islands","",0,30237,2817,37,9316.40,1223.67,0.0131
-"United Kingdom","Cayman Islands","",0,65720,7699,8,11714.85,121.73,0.0010
-"United Kingdom","Channel Islands","",0,170499,19671,105,11537.31,615.84,0.0053
-"United Kingdom","England","",0,55977200,8718517,90007,15575.12,1607.92,0.0103
+"United Kingdom","Anguilla","",0,15001,1525,4,10165.99,266.65,0.0026
+"United Kingdom","Bermuda","",0,62273,5765,106,9257.62,1702.18,0.0184
+"United Kingdom","British Virgin Islands","",0,30237,2816,37,9313.09,1223.67,0.0131
+"United Kingdom","Cayman Islands","",0,65720,7891,9,12007.00,136.94,0.0011
+"United Kingdom","Channel Islands","",0,170498,20416,107,11974.33,627.57,0.0052
+"United Kingdom","England","",0,55977200,8939067,90520,15969.12,1617.09,0.0101
 "United Kingdom","Falkland Islands","",0,3483,83,0,2383.00,0.00,0.0000
-"United Kingdom","Gibraltar","",0,33690,7407,99,21985.75,2938.56,0.0134
-"United Kingdom","Isle of Man","",0,85031,12151,67,14290.08,787.95,0.0055
+"United Kingdom","Gibraltar","",0,33690,7526,100,22338.97,2968.24,0.0133
+"United Kingdom","Isle of Man","",0,85032,12593,67,14809.72,787.94,0.0053
 "United Kingdom","Montserrat","",0,4999,44,1,880.18,200.04,0.0227
-"United Kingdom","Northern Ireland","",0,1881600,325842,2371,17317.28,1260.10,0.0073
+"United Kingdom","Northern Ireland","",0,1881599,334394,2389,17771.80,1269.66,0.0071
 "United Kingdom","Saint Helena, Ascension and Tristan da Cunha","",0,5661,3,0,52.99,0.00,0.0000
-"United Kingdom","Scotland","",0,5463300,728139,7232,13327.82,1323.74,0.0099
-"United Kingdom","Turks and Caicos Islands","",0,38718,3108,25,8027.27,645.69,0.0080
-"United Kingdom","Wales","",0,3138600,510408,5015,16262.28,1597.85,0.0098
+"United Kingdom","Scotland","",0,5463299,747302,7289,13678.59,1334.18,0.0098
+"United Kingdom","Turks and Caicos Islands","",0,38718,3135,25,8097.01,645.69,0.0080
+"United Kingdom","Wales","",0,3138599,520613,5055,16587.43,1610.59,0.0097
