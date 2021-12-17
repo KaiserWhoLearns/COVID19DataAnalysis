@@ -27,6 +27,7 @@ namespace CaseCounter {
             PlotSeries(tsList);
         }
 
+        // meaningless comment
         private static List<Point> LatLongList(List<TimeSeries> tsList) {
             List<Point> pointList = new();
 
