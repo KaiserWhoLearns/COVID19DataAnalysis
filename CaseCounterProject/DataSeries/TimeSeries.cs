@@ -24,6 +24,9 @@ namespace DataSeries {
 
         public int Fips { get; }            // 5 digit  FIPS (Federal Information Processing System) codes for US Counties.  0 otherwise
 
+        public double Latitude { get; }
+        public double Longitude { get; }
+
         public DataType DataType { get; }
 
 
@@ -66,12 +69,15 @@ namespace DataSeries {
 
         private double[] data;
 
-        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, int fips, long population = -1) {
+        public TimeSeries(DataType dataType, string admin0, string admin1, string admin2, int fips, double latitude, double longitude, long population = -1) {
             DataType = dataType;
             Admin0 = admin0;
             Admin1 = admin1;
             Admin2 = admin2;
             Fips = fips;
+            Latitude = latitude;
+            Longitude = longitude;
+
             Population = population;
 
             Key = BuildKey(dataType, admin0, admin1, admin2);
@@ -105,6 +111,12 @@ namespace DataSeries {
                     case "Fips":
                         Fips = int.Parse(val);
                         break;
+                    case "Latitude":
+                        Latitude = double.Parse(val);
+                        break;
+                    case "Longitude":
+                        Longitude = double.Parse(val);
+                        break;
                     case "DataType":
                         DataType = (DataType)Enum.Parse(typeof(DataType), val);
                         break;
@@ -134,6 +146,8 @@ namespace DataSeries {
             Admin1 = ts.Admin1;
             Admin2 = ts.Admin2;
             Fips = ts.Fips;
+            Latitude = ts.Latitude;
+            Longitude = ts.Longitude;
             Population = ts.Population;
             Key = ts.Key;
             LastDay = ts.LastDay;
@@ -193,7 +207,10 @@ namespace DataSeries {
         public string ToRowString() {
 
             StringBuilder sb = new();
-            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Fips + "," + Population + "," + CaseCount());
+            _ = sb.Append(DataType + ",\"" + Admin2 + "\",\"" + Admin1 + "\",\"" + Admin0 + "\"," + Fips + "," + Latitude.ToString("F2") 
+                +"," + Longitude.ToString("F2") +"," + Population + "," + CaseCount());
+
+         
 
             for (int i = 0; i <= LastDay; i++) {
                 _ = sb.Append("," + data[i].ToString("F2"));
@@ -203,7 +220,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ToDailyCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             ts.SetValue(0, data[0]);
             for (int i = 1; i <= LastDay; i++) {
@@ -231,7 +248,7 @@ namespace DataSeries {
             return Smooth(TimeSeriesSet.GaussianFilter);
         }
         public TimeSeries Smooth(double[] filter) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
             for (int i = 0; i <= LastDay; i++)
                 ts.SetValue(i, Smooth(i, filter));
 
@@ -259,7 +276,7 @@ namespace DataSeries {
 
         // Average over +-d days.  This is done separately from smooth to make it more efficient.
         public TimeSeries BlockSmooth(int d) {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             if (LastDay <= d) {
                 double val = CaseCount() / (d + 1);
@@ -320,7 +337,7 @@ namespace DataSeries {
 */
 
         public TimeSeries ScaleByPopulation() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
                             // Cases per 100K or deaths per 10M
             double scaleFactor = (DataType == DataType.Confirmed) ? 100000 : 10000000;
@@ -333,7 +350,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ScaleByCount() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             double total = 0.0;
             for (int i = 0; i <= LastDay; i++)
@@ -349,7 +366,7 @@ namespace DataSeries {
         }
 
         public TimeSeries TruncateNegative() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             for (int i = 0; i <= LastDay; i++) {
                 ts.SetValue(i, Math.Max(data[i], 0.0));
@@ -513,7 +530,7 @@ namespace DataSeries {
         }
 
         public TimeSeries ForwardArea() {
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             for (int i = 0; i <= LastDay; i++) {
                 ts.SetValue(i, FindForwardArea(i));
@@ -534,7 +551,7 @@ namespace DataSeries {
         // Compute a discrete derivative.  Our derivative is two sided,  so we are returning f'(x) = (f(x+d) - f(x-d))/2d
         public TimeSeries Derivative(int d) {
 
-            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Population);
+            TimeSeries ts = new(DataType, Admin0, Admin1, Admin2, Fips, Latitude, Longitude, Population);
 
             for (int i = 0; i <= LastDay; i++) {
                 ts.SetValue(i, FindDerivative(i, d));

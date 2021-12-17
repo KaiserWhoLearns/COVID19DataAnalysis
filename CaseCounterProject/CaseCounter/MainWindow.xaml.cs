@@ -375,6 +375,23 @@ namespace CaseCounter {
             } 
         }
 
+        DrawingWindow drawingWindow;
+
+        private void Drawing_Click(object sender, RoutedEventArgs e) {
+
+            List<TimeSeries> tsList = new();
+
+            foreach (object tsKey in timeSeries1ListBox.SelectedItems) {
+                TimeSeries ts = timeSeriesSetOne.GetSeries((string)tsKey);
+                tsList.Add(ts);
+            }
+
+            if (tsList.Count > 0) {
+                drawingWindow = new(tsList);
+                drawingWindow.Show();
+            }
+        }
+
 
         /* Data processing and cleaning routines - these have been replaced by the single script, Build Library which converts the input data sources into
          * a set of cleaned files.  These were used during initial development - but no longer are needed.

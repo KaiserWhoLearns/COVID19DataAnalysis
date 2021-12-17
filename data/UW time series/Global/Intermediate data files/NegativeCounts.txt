@@ -66,7 +66,7 @@ US/Florida/Unassigned+Confirmed: <569,-58485><576,-73266><583,-80420><590,-67980
 US/Georgia/Union+Confirmed: <292,-1361>
 US/Idaho/Unassigned+Confirmed: <232,-1052>
 US/Illinois/Unassigned+Confirmed: <289,-6222>
-US/Iowa/Unassigned+Confirmed: <567,-3148><574,-3712><581,-4553><588,-4664><595,-6379><602,-8046><609,-9347><616,-8372><623,-7417><650,-1639><651,-1060><658,-6656><665,-7250><672,-8391><679,-6597><686,-10519><688,-1412>
+US/Iowa/Unassigned+Confirmed: <567,-3148><574,-3712><581,-4553><588,-4664><595,-6379><602,-8046><609,-9347><616,-8372><623,-7417><650,-1639><651,-1060><658,-6656><665,-7250><672,-8391><679,-6597><686,-10519><688,-1412><693,-3837>
 US/Louisiana/Unassigned+Confirmed: <299,-7590>
 US/Massachusetts/Middlesex+Confirmed: <211,-1969>
 US/Massachusetts/Norfolk+Confirmed: <211,-1371>
@@ -80,7 +80,7 @@ US/New Jersey/Middlesex+Confirmed: <460,-1720>
 US/New Jersey/Unassigned+Confirmed: <76,-1314><91,-2028>
 US/New Mexico/Unassigned+Confirmed: <316,-1502>
 US/North Carolina/Unassigned+Confirmed: <364,-2244><375,-7059><604,-1051>
-US/Oklahoma/Unassigned+Confirmed: <427,-2153><434,-2009><440,-1294><448,-3387><455,-1637><462,-1401><469,-1368><476,-1300><525,-1228><532,-1564><539,-1421><546,-3639><553,-6588><560,-9180><567,-11856><574,-13137><581,-12196><588,-17031><595,-17264><602,-13883><609,-11196><616,-10158><623,-8202><630,-7434><637,-6910><644,-4767><651,-3756><660,-3302><665,-5157><672,-4179><679,-4180><686,-7550>
+US/Oklahoma/Unassigned+Confirmed: <427,-2153><434,-2009><440,-1294><448,-3387><455,-1637><462,-1401><469,-1368><476,-1300><525,-1228><532,-1564><539,-1421><546,-3639><553,-6588><560,-9180><567,-11856><574,-13137><581,-12196><588,-17031><595,-17264><602,-13883><609,-11196><616,-10158><623,-8202><630,-7434><637,-6910><644,-4767><651,-3756><660,-3302><665,-5157><672,-4179><679,-4180><686,-7550><693,-6694>
 US/Puerto Rico/Bayamon+Confirmed: <292,-2206>
 US/Puerto Rico/Carolina+Confirmed: <292,-1555>
 US/Puerto Rico/Guaynabo+Confirmed: <292,-1001>
@@ -93,6 +93,7 @@ US/Texas/Anderson+Confirmed: <240,-1068>
 US/Texas/Bexar+Confirmed: <245,-2845>
 US/Texas/Henderson+Confirmed: <358,-1365>
 US/Texas/Scurry+Confirmed: <405,-1041>
+US/Virgin Islands+Confirmed: <693,-2212>
 US/Washington/Unassigned+Confirmed: <504,-1142>
 United Kingdom/England+Confirmed: <443,-5372><482,-2768>
 United Kingdom/England+Deaths: <208,-5341>

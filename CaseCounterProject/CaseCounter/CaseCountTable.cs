@@ -91,9 +91,11 @@ namespace CaseCounter {
 
             foreach (JhuCaseCountRecord jccr in cases) {
                 int fips = jccr.FIPS ?? 0;
-                tss.AddConfirmed(jccr.Country, jccr.Province, jccr.District, fips, jccr.Confirmed, Days);
-                tss.AddDeaths(jccr.Country, jccr.Province, jccr.District, fips, jccr.Deaths, Days);
-                tss.UpdatePopulation(jccr.Country, jccr.Province, jccr.District, fips, jccr.Confirmed, jccr.IncidentRate, Days);
+                double latitude = jccr.Latitude ?? 0.0;
+                double longitude = jccr.Longitude ?? 0.0;
+                tss.AddConfirmed(jccr.Country, jccr.Province, jccr.District, fips, latitude, longitude, jccr.Confirmed, Days);
+                tss.AddDeaths(jccr.Country, jccr.Province, jccr.District, fips, latitude, longitude, jccr.Deaths, Days);
+                tss.UpdatePopulation(jccr.Country, jccr.Province, jccr.District, fips, latitude, longitude, jccr.Confirmed, jccr.IncidentRate, Days);
             }
 
         }

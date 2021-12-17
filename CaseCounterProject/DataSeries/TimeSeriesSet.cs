@@ -37,32 +37,34 @@ namespace DataSeries {
 
         }
 
-        public void AddConfirmed(string admin0, string admin1, string admin2, int fips, int? confirmed, int index) {
-            AddCase(admin0, admin1, admin2, fips, confirmed, DataType.Confirmed, index);
+        public void AddConfirmed(string admin0, string admin1, string admin2, int fips, double latitude, double longitude, int? confirmed, int index) {
+            AddCase(admin0, admin1, admin2, fips, latitude, longitude, confirmed, DataType.Confirmed, index);
         }
 
-        public void AddDeaths(string admin0, string admin1, string admin2, int fips, int? deaths, int index) {
-            AddCase(admin0, admin1, admin2, fips, deaths, DataType.Deaths, index);
+        public void AddDeaths(string admin0, string admin1, string admin2, int fips, double latitude, double longitude, int? deaths, int index) {
+            AddCase(admin0, admin1, admin2, fips, latitude, longitude, deaths, DataType.Deaths, index);
         }
 
-        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, int? confirmed, double? incidence, int index) {
+        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, double latitude, double longitude, 
+            int? confirmed, double? incidence, int index) {
             double ir = incidence ?? 0.0;                                   // Annoying, clean this up
             int totalCases = confirmed ?? 0;
 
             if (ir == 0.0)
                 return;
 
-            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Confirmed, totalCases, ir, index);
-            UpdatePopulation(admin0, admin1, admin2, fips, DataType.Deaths, totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, fips, latitude, longitude, DataType.Confirmed, totalCases, ir, index);
+            UpdatePopulation(admin0, admin1, admin2, fips, latitude, longitude, DataType.Deaths, totalCases, ir, index);
 
         }
 
-        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, DataType dataType, int totalCases, double incidence, int index) {
+        public void UpdatePopulation(string admin0, string admin1, string admin2, int fips, double latitude, double longitude, 
+            DataType dataType, int totalCases, double incidence, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
             // This probably never occurs due assigning counts prior to updating population
             if (!series.ContainsKey(key)) {
-                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips));
+                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips, latitude, longitude));
             }
 
             series[key].UpdatePopulation(index, totalCases, incidence);
@@ -70,11 +72,11 @@ namespace DataSeries {
 
 
 
-        public void AddCase(string admin0, string admin1, string admin2, int fips, int? count, DataType dataType, int index) {
+        public void AddCase(string admin0, string admin1, string admin2, int fips, double latitude, double longitude, int? count, DataType dataType, int index) {
             string key = TimeSeries.BuildKey(dataType, admin0, admin1, admin2);
 
             if (!series.ContainsKey(key)) {
-                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips));
+                series.Add(key, new TimeSeries(dataType, admin0, admin1, admin2, fips, latitude, longitude));
             }
 
             series[key].SetValue(index, count);
@@ -134,7 +136,7 @@ namespace DataSeries {
 
         private static string HeaderString(int lastDay) {
             StringBuilder sb = new();
-            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Fips,Population,CaseCount");
+            _ = sb.Append("DataType,Admin2,Admin1,Admin0,Fips,Latitude,Longitude,Population,CaseCount");
 
             for (int i = 0; i <= lastDay; i++) {
                 _ = sb.Append(",Day " + i);
@@ -223,7 +225,7 @@ namespace DataSeries {
                 if (stateSeries.ContainsKey(seriesKey)) {
                     tsState = stateSeries[seriesKey];
                 } else {
-                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Population);
+                    tsState = new(ts.DataType, ts.Admin0, ts.Admin1, "", ts.Fips, ts.Latitude, ts.Longitude, ts.Population);
                     stateSeries.Add(seriesKey, tsState);
                 }
                 tsState.AddCounts(ts);
@@ -247,7 +249,7 @@ namespace DataSeries {
                 if (nationalSeries.ContainsKey(seriesKey)) {
                     tsNational = nationalSeries[seriesKey];
                 } else {
-                    tsNational = new(ts.DataType, ts.Admin0, "", "", ts.Fips, ts.Population);
+                    tsNational = new(ts.DataType, ts.Admin0, "", "", ts.Fips, ts.Latitude, ts.Longitude, ts.Population);
                     nationalSeries.Add(seriesKey, tsNational);
                 }
                 tsNational.AddCounts(ts);

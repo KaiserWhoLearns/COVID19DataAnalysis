@@ -1,0 +1,15 @@
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\DrawingManager.deps.json
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\DrawingManager.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\ref\DrawingManager.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\DrawingManager.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\Utilities.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\bin\Debug\net5.0-windows\Utilities.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.csproj.AssemblyReference.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.AssemblyInfoInputs.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.AssemblyInfo.cs
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.csproj.CoreCompileInputs.cache
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.csproj.CopyComplete
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\ref\DrawingManager.dll
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\DrawingManager\obj\Debug\net5.0-windows\DrawingManager.pdb
