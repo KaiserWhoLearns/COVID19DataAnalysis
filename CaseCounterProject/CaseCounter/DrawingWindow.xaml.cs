@@ -27,7 +27,7 @@ namespace CaseCounter {
             PlotSeries(tsList);
         }
 
-        // meaningless comment
+
         private static List<Point> LatLongList(List<TimeSeries> tsList) {
             List<Point> pointList = new();
 
@@ -42,7 +42,7 @@ namespace CaseCounter {
             drawingCanvas.Background = Brushes.BlanchedAlmond;
 
             List<Point> pointList = LatLongList(tsList);
-            scatterPlot.PlotPoints(pointList, 10);
+            scatterPlot.PlotPoints(pointList, 20);
         }
     }
 }

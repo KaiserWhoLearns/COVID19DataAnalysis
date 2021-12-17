@@ -383,7 +383,9 @@ namespace CaseCounter {
 
             foreach (object tsKey in timeSeries1ListBox.SelectedItems) {
                 TimeSeries ts = timeSeriesSetOne.GetSeries((string)tsKey);
-                tsList.Add(ts);
+                if (ts.ValidGIS) {
+                    tsList.Add(ts);
+                }
             }
 
             if (tsList.Count > 0) {

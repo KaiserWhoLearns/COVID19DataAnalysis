@@ -37,14 +37,14 @@ namespace DrawingManager {
             sourceH = h;
         }
 
-        public int PlotPoint(double x, double y) {
+        public int PlotPoint(double x, double y, double boundaryWidth) {
 
             Ellipse point = new(); 
  
             point.Fill = Brushes.Black;
             point.Width = 10;
             point.Height = 10;
-            (double posX, double posY) = Translate(x, y);
+            (double posX, double posY) = Translate(x, y, boundaryWidth);
 
             Canvas.SetLeft(point, posX - 5);
             Canvas.SetTop(point, posY - 5);
@@ -55,27 +55,27 @@ namespace DrawingManager {
 
         public void PlotPoints(List<Point> pointList, double boundaryWidth) {
             (Point lowerLeft, Point upperRight) = Util.BoundingBox(pointList);
-            double x = lowerLeft.X - boundaryWidth;
-            double y = lowerLeft.Y - boundaryWidth;
-            double w = upperRight.X - lowerLeft.X + 2 * boundaryWidth;
-            double h = upperRight.Y - lowerLeft.Y + 2 * boundaryWidth;
+            double x = lowerLeft.X;
+            double y = lowerLeft.Y;
+            double w = upperRight.X - lowerLeft.X;
+            double h = upperRight.Y - lowerLeft.Y;
             SetBounds(x, y, w, h);
 
             foreach (Point p in pointList) {
-                PlotPoint(p.X, p.Y);
+                PlotPoint(p.X, p.Y, boundaryWidth);
             }
         }
 
 
 
-        public (double, double) Translate(double x, double y) {
-            double canvasW = canvas.Width;
-            double canvasH = canvas.Height;
+        public (double, double) Translate(double x, double y, double boundaryWidth) {
+            double canvasW = canvas.Width - 2*boundaryWidth;
+            double canvasH = canvas.Height -2*boundaryWidth;
 
 
             double scaleFactor = Math.Min(canvasW / sourceW, canvasH / sourceH);
 
-            return ((x - sourceX) * scaleFactor, canvasH - (y - sourceY) * scaleFactor);
+            return ((x - sourceX) * scaleFactor + boundaryWidth, canvasH - (y - sourceY) * scaleFactor + boundaryWidth);
         }
 
         public int Add(System.Windows.UIElement element) {
