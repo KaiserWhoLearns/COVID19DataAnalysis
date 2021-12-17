@@ -1,3 +1,4 @@
+import datetime
 from collections import defaultdict
 
 import numpy
@@ -137,3 +138,17 @@ def merge_timeseries_mappings():
     r.to_csv(resource_filename(__name__, out_path), header=True, index=False)
     return r
 
+
+def read_timeseries_cdc_data():
+    out_file = 'daily_timeseries_fully_vaccinated.csv'
+    out_path = fr'CDC Vaccination Data/Timeseries/{out_file}'
+    f_p = resource_filename(__name__, out_path)
+    df = pandas.read_csv(f_p)
+    return df
+
+
+def get_case_to_vaccine_date_difference():
+    case_start_date = datetime.datetime(year=2020, month=1, day=22)
+    vaccine_start_date = datetime.datetime(year=2020, month=12, day=13)
+    days_since_cases = case_start_date - vaccine_start_date
+    return days_since_cases.days

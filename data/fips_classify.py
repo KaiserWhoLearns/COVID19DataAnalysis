@@ -46,3 +46,11 @@ def generate_fips_classification_rural_urban(out_file='county_classification.csv
     out_f = resource_filename(__name__, out_file_path)
     f_df.to_csv(out_f, header=True, index=False)
     return f_df
+
+
+def get_usa_counties_classification():
+    base_file_path = 'County Urban Rural/'
+    file_name = 'county_classification.csv'
+    file_path = f'{base_file_path}{file_name}'
+    df = __load_file(file_path)
+    return df
