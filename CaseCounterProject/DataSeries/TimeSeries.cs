@@ -37,10 +37,15 @@ namespace DataSeries {
 
         // Popluation comes from JHU data by Confirmed/Incidence * 100,000.  We will use the value from the latest date.
         public long Population { get; set; }
+
+        public bool ValidGIS {
+            get {
+                return Latitude >= -90 && Latitude <= 90 && Longitude >= -180 && Longitude <= 180;
+            }
+        }
         public int CaseCount() {
             return CaseCount(0, LastDay);
         }
-
 
         public int CaseCount(int start, int end) {
             if (data == null || LastDay < 0) {

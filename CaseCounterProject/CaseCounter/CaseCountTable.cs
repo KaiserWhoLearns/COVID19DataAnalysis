@@ -165,8 +165,8 @@ namespace CaseCounter {
             ccr.Province = Province;
             ccr.Country = Country;
             ccr.LastUpdate = LastUpdate;
-            ccr.Latitude = Latitude ?? 0.0;
-            ccr.Longitude = Longitude ?? 0.0;
+            ccr.Latitude = Latitude ?? -999.0;
+            ccr.Longitude = Longitude ?? -999.0;
             ccr.Confirmed = Confirmed ?? 0;
             ccr.Deaths = Deaths ?? 0;
             ccr.Recovered = Recovered;
