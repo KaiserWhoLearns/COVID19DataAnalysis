@@ -18,16 +18,16 @@ namespace DrawingManager {
         private double sourceH;
         private double sourceW;
 
+        Random random;
+
         public ScatterPlot(double x, double y, double w, double h, Canvas canvas) {
             SetBounds(x, y, w, h);
+            random = new();
 
             this.canvas = canvas;
         }
 
-        public ScatterPlot(Canvas canvas) {
-            SetBounds(0, 0, 0, 0);
-
-            this.canvas = canvas;
+        public ScatterPlot(Canvas canvas) : this(0, 0, 0, 0, canvas) {
         }
 
         private void SetBounds(double x, double y, double w, double h) {
@@ -37,23 +37,30 @@ namespace DrawingManager {
             sourceH = h;
         }
 
-        public int PlotPoint(double x, double y, double boundaryWidth) {
+        public int PlotPoint(double x, double y, double val, double boundaryWidth) {
 
-            Ellipse point = new(); 
- 
-            point.Fill = Brushes.Black;
-            point.Width = 10;
-            point.Height = 10;
+            Ellipse point = new();
+
+            SolidColorBrush brush = new();
+            byte green = (byte)(256 * val);
+            brush.Color = Color.FromArgb(255, (byte)(255 - green), green, 0);
+
+            point.Fill = brush;
+            point.StrokeThickness = 1;
+            point.Stroke = Brushes.Black;
+
+            point.Width = 20;
+            point.Height = 20;
             (double posX, double posY) = Translate(x, y, boundaryWidth);
 
-            Canvas.SetLeft(point, posX - 5);
-            Canvas.SetTop(point, posY - 5);
+            Canvas.SetLeft(point, posX - 10);
+            Canvas.SetTop(point, posY - 10);
 
 
             return canvas.Children.Add(point);
         }
 
-        public void PlotPoints(List<Point> pointList, double boundaryWidth) {
+        public void PlotPoints(List<Point> pointList, List<double> valueList, double boundaryWidth) {
             (Point lowerLeft, Point upperRight) = Util.BoundingBox(pointList);
             double x = lowerLeft.X;
             double y = lowerLeft.Y;
@@ -61,8 +68,9 @@ namespace DrawingManager {
             double h = upperRight.Y - lowerLeft.Y;
             SetBounds(x, y, w, h);
 
-            foreach (Point p in pointList) {
-                PlotPoint(p.X, p.Y, boundaryWidth);
+            for (int i = 0; i < pointList.Count; i++) {
+                double val = (valueList != null) ? valueList[i] : 0.0;
+                PlotPoint(pointList[i].X, pointList[i].Y, val,  boundaryWidth);
             }
         }
 

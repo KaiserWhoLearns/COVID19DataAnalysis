@@ -22,27 +22,29 @@ namespace CaseCounter {
 
         private ScatterPlot scatterPlot;
 
-        public DrawingWindow(List<TimeSeries> tsList) {
+        public DrawingWindow(List<TimeSeries> tsList, List<double> valueList) {
             InitializeComponent();
-            PlotSeries(tsList);
+            PlotSeries(tsList, valueList);
         }
 
+        public DrawingWindow(List<TimeSeries> tsList) : this(tsList, null) {
+        }
 
         private static List<Point> LatLongList(List<TimeSeries> tsList) {
             List<Point> pointList = new();
 
-            foreach (TimeSeries ts in tsList) {
+            foreach ( TimeSeries ts  in tsList) {
                 pointList.Add(new(ts.Longitude, ts.Latitude));
             }
             return pointList;
         }
 
-        public void PlotSeries(List<TimeSeries> tsList) {
+        public void PlotSeries(List<TimeSeries> tsList, List<double> valueList) {
             scatterPlot = new(drawingCanvas);
             drawingCanvas.Background = Brushes.BlanchedAlmond;
 
             List<Point> pointList = LatLongList(tsList);
-            scatterPlot.PlotPoints(pointList, 20);
+            scatterPlot.PlotPoints(pointList, valueList, 20);
         }
     }
 }
