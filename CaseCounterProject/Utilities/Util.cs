@@ -37,6 +37,14 @@ namespace Utilities {
             return (new Point(minX, minY), new Point(maxX, maxY));
 
         }
+
+        // Y-coordinate for mapping lat/long to a Mercator projection.  The original coordinates are in degrees, so map width is 360.
+        public static double Mercator(double latitude) {
+            double latRad = Math.PI * latitude / 180;
+            double mercN = Math.Log(Math.Tan(Math.PI / 4 + latRad / 2));
+            double result = 180 * mercN / Math.PI;
+            return result;
+        }
     }
 
 

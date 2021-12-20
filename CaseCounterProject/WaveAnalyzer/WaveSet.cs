@@ -29,7 +29,10 @@ namespace WaveAnalyzer {
 
         private List<Wave> waves;
 
+        private Random random;  // For testing
+
         public WaveSet(TimeSeries ts, WaveParameters wp) {
+            random = new();
             TimeSeries = ts;
             waves = new();           
             
@@ -173,6 +176,54 @@ namespace WaveAnalyzer {
                 }
             }
             waves.RemoveAt(smallest);
+        }
+
+        public Wave GetWaveByDate(int date) {
+            foreach (Wave wave in waves) {
+                if (wave.Start <= date && wave.End >= date) {
+                    return wave;
+                }
+            }
+            return null;
+        }
+
+        public double? Query(int date) {
+
+            Wave wave = GetWaveByDate(date);
+
+            if (wave == null) {
+                return null;
+            }
+
+            return wave.Weight;
+
+
+        }
+
+        public double? Query2(int date) {
+
+            Wave wave = GetWaveByDate(date);
+
+            if (wave == null) {
+                return null;
+            }
+
+            return wave.Maximum;
+
+
+        }
+
+        public double? Query3(int date) {
+
+            Wave wave = GetWaveByDate(date);
+
+            if (wave == null) {
+                return null;
+            }
+
+            return wave.MaxValue;
+
+
         }
     }
 }

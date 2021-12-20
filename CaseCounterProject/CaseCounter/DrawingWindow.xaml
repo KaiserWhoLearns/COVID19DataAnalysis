@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CaseCounter"
         mc:Ignorable="d"
-        Title="DrawingWindow" Height="700" Width="800">
+        Title="DrawingWindow" Height="1300" Width="2600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,8 +13,17 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Margin="10,0,0,0" Click="Query1_Click">Query 1</Button>
+            <Button Margin="10,0,0,0" Click="Query2_Click">Query 2</Button>
+            <Button Margin="10,0,0,0" Click="Query3_Click">Query 3</Button>
+            <Button Margin="10,0,0,0" Click="Query4_Click">Query 4</Button>
+            <Button Margin="10,0,0,0" Click="Query5_Click">Query 5</Button>
+            <Button Margin="10,0,0,0" Click="Query6_Click">Query 6</Button>
+            <Button Margin="10,0,0,0" Click="Query7_Click">Query 7</Button>
+            <Button Margin="10,0,0,0" Click="Query8_Click">Query 8</Button>
+            <Button Margin="10,0,0,0" Click="Query9_Click">Query 9</Button>
         </StackPanel>
 
-        <Canvas Grid.Row="1"  Width="800" Height="600" x:Name="drawingCanvas"/>
+        <Canvas Grid.Row="1"  Width="2400" Height="1200" x:Name="drawingCanvas"/>
     </Grid>
 </Window>

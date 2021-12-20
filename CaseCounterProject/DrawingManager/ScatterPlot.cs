@@ -37,13 +37,21 @@ namespace DrawingManager {
             sourceH = h;
         }
 
-        public int PlotPoint(double x, double y, double val, double boundaryWidth) {
+        // val should be in the range 0 <= val < 1 (or null)
+        public int PlotPoint(double x, double y, double? val, double boundaryWidth) {
 
             Ellipse point = new();
 
             SolidColorBrush brush = new();
-            byte green = (byte)(256 * val);
-            brush.Color = Color.FromArgb(255, (byte)(255 - green), green, 0);
+
+            if (val == null) {
+                brush.Color = Color.FromArgb(255, 255, 255, 255);
+            } else {
+                double val2 = (double)val;
+                byte green = (val2 < 0) ? (byte) 0 : ((val2 >= 1) ? (byte) 255 : (byte)(256 * val));
+                
+                brush.Color = Color.FromArgb(255, (byte)(255 - green), green, 0);
+            }
 
             point.Fill = brush;
             point.StrokeThickness = 1;
@@ -60,7 +68,7 @@ namespace DrawingManager {
             return canvas.Children.Add(point);
         }
 
-        public void PlotPoints(List<Point> pointList, List<double> valueList, double boundaryWidth) {
+        public void PlotPoints(List<Point> pointList, List<double?> valueList, double boundaryWidth) {
             (Point lowerLeft, Point upperRight) = Util.BoundingBox(pointList);
             double x = lowerLeft.X;
             double y = lowerLeft.Y;
@@ -69,7 +77,7 @@ namespace DrawingManager {
             SetBounds(x, y, w, h);
 
             for (int i = 0; i < pointList.Count; i++) {
-                double val = (valueList != null) ? valueList[i] : 0.0;
+                double? val = (valueList != null) ? valueList[i] : 0.0;
                 PlotPoint(pointList[i].X, pointList[i].Y, val,  boundaryWidth);
             }
         }

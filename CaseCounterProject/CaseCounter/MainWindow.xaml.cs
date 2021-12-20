@@ -399,18 +399,16 @@ namespace CaseCounter {
             Random random = new();
 
             List<TimeSeries> tsList = new();
-            List<double> valueList = new();
 
             foreach (object tsKey in timeSeries1ListBox.SelectedItems) {
                 TimeSeries ts = timeSeriesSetOne.GetSeries((string)tsKey);
                 if (ts.ValidGIS) {
                     tsList.Add(ts);
-                    valueList.Add(random.NextDouble());
                 }
             }
 
             if (tsList.Count > 0) {
-                drawingWindow = new(tsList, valueList);
+                drawingWindow = new(tsList);
                 drawingWindow.Show();
             }
         }
