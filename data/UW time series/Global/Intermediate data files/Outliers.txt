@@ -15,7 +15,7 @@ Belgium/West Flanders+Confirmed: <295,38722>
 Belize+Confirmed: <316,1382>
 Benin+Confirmed: <574,1118><579,1838><588,2566><595,2160><601,1609><611,1508>
 Bolivia+Deaths: <229,1656>
-Botswana+Confirmed: <268,1328><288,1193><376,1445><397,1197><404,2356><425,2066><456,1153><530,2534><593,2869><603,6608><610,2639><635,2195><642,1066><653,5654>
+Botswana+Confirmed: <268,1328><288,1193><376,1445><397,1197><404,2356><425,2066><456,1153><530,2534><593,2869><603,6608><610,2639><635,2195><642,1066><653,5654><698,4837>
 Brazil/Acre+Confirmed: <119,2817>
 Brazil/Alagoas+Confirmed: <119,4437>
 Brazil/Amapa+Confirmed: <119,4549>
@@ -48,8 +48,9 @@ Brazil/Sao Paulo+Confirmed: <119,69859><692,1086>
 Brazil/Sao Paulo+Deaths: <119,5363>
 Brazil/Sergipe+Confirmed: <119,4277>
 Brazil/Tocantins+Confirmed: <119,1809>
-Burundi+Confirmed: <597,1462><609,2167><615,1149>
+Burundi+Confirmed: <597,1462><609,2167><615,1149><698,1217>
 Cameroon+Confirmed: <145,1183><167,2324><367,1607><381,1081><393,1651><400,1965><414,3828><429,7047><435,9668><442,4394><451,3078><457,1189><463,6252><470,2696><482,2483><602,1204><616,6889><623,3096><630,3003><636,1887><644,2210><651,1849><658,1371>
+Canada/Alberta+Confirmed: <698,1925>
 Canada/British Columbia+Confirmed: <342,2206>
 Central African Republic+Confirmed: <566,4044>
 Chile/Antofagasta+Confirmed: <119,1731>
@@ -330,7 +331,7 @@ Spain/Castilla - La Mancha+Confirmed: <113,16470>
 Spain/Castilla - La Mancha+Deaths: <113,2852>
 Spain/Castilla y Leon+Confirmed: <113,18173><468,1590>
 Spain/Castilla y Leon+Deaths: <113,1925>
-Spain/Catalonia+Confirmed: <113,55482><121,1148><404,4372><406,1623><407,1384><408,1266><505,10386>
+Spain/Catalonia+Confirmed: <113,55482><121,1148><404,4372><406,1623><407,1384><408,1266><505,10386><698,10800>
 Spain/Catalonia+Deaths: <113,5823><287,1037>
 Spain/Extremadura+Confirmed: <113,2923>
 Spain/Galicia+Confirmed: <113,9317>
@@ -365,13 +366,14 @@ US/Alabama/Tuscaloosa+Confirmed: <246,1059>
 US/California/Kern+Confirmed: <677,1008>
 US/California/Los Angeles+Confirmed: <491,4032>
 US/California/Orange+Confirmed: <538,1226>
-US/California/Riverside+Confirmed: <676,2457>
+US/California/Riverside+Confirmed: <676,2457><698,1951>
 US/California/Sacramento+Confirmed: <642,1415>
-US/California/San Bernardino+Confirmed: <676,2382>
+US/California/San Bernardino+Confirmed: <676,2382><698,1822>
 US/California/San Joaquin+Confirmed: <337,5703>
 US/California/Stanislaus+Confirmed: <697,1019>
-US/Connecticut/Hartford+Confirmed: <341,2336>
-US/Connecticut/New Haven+Confirmed: <341,2103>
+US/Connecticut/Fairfield+Confirmed: <698,1791>
+US/Connecticut/Hartford+Confirmed: <341,2336><698,1267>
+US/Connecticut/New Haven+Confirmed: <341,2103><698,1737>
 US/Florida/Alachua+Confirmed: <555,1087><562,1412><569,1642><576,1505><583,1526><590,1460><597,1295>
 US/Florida/Bay+Confirmed: <555,1410><562,1620><569,1418><576,1074><583,1132>
 US/Florida/Brevard+Confirmed: <541,1441><548,2166><555,3519><562,3853><569,4357><576,4588><583,4510><590,3685><597,2589><604,2165><611,1207>
@@ -409,12 +411,14 @@ US/Florida/Unassigned+Confirmed: <566,13075><567,24753><568,20656><572,12680><57
 US/Florida/Unassigned+Deaths: <603,1554>
 US/Florida/Volusia+Confirmed: <541,1354><548,2169><555,3514><562,3265><569,3312><576,2786><583,2617><590,2196><597,1990><604,1876><611,1321>
 US/Georgia/Clarke+Confirmed: <286,1073>
-US/Georgia/Cobb+Confirmed: <286,2191>
+US/Georgia/Cobb+Confirmed: <286,2191><698,1055>
 US/Georgia/Coweta+Confirmed: <286,1030>
-US/Georgia/Fulton+Confirmed: <286,2035>
+US/Georgia/Fulton+Confirmed: <286,2035><698,1714>
 US/Georgia/Gwinnett+Confirmed: <286,2117>
 US/Georgia/Unassigned+Confirmed: <159,1242><292,1324>
 US/Georgia/Union+Confirmed: <286,1447>
+US/Illinois/Cook+Confirmed: <698,15636>
+US/Illinois/Lake+Confirmed: <698,1292>
 US/Illinois/Unassigned+Confirmed: <167,1124><275,1134><282,1554>
 US/Iowa/Linn+Confirmed: <686,1017>
 US/Iowa/Polk+Confirmed: <581,1180><588,1427><595,1535><602,1880><609,2100><616,1668><623,1412><630,1177><644,1035><665,1175><672,1521><679,1358><686,1974><693,1000>
@@ -463,6 +467,7 @@ US/New York/Queens+Confirmed: <222,71356><427,6769>
 US/New York/Queens+Deaths: <222,7222>
 US/New York/Richmond+Confirmed: <222,15355><427,1671>
 US/New York/Richmond+Deaths: <222,1083>
+US/North Carolina/Mecklenburg+Confirmed: <698,1245>
 US/North Carolina/Unassigned+Confirmed: <363,2401><374,6168><603,1275>
 US/North Carolina/Wake+Confirmed: <594,2341>
 US/Oklahoma/Cleveland+Confirmed: <574,1046><588,1338><595,1361><602,1125><609,1029>
@@ -474,7 +479,7 @@ US/Puerto Rico/Unassigned+Confirmed: <290,1065><306,1010>
 US/Puerto Rico/Unassigned+Deaths: <551,1788>
 US/Rhode Island/Kent+Confirmed: <308,1028><322,1233><329,1094><357,1019><694,1124>
 US/Rhode Island/Providence+Confirmed: <110,1536><273,1104><280,1777><287,1989><294,2499><301,3704><308,4468><315,4226><322,6007><329,5658><336,4051><343,3024><350,3900><357,4680><364,3646><371,3066><378,2489><385,1939><392,1598><399,1318><406,1526><413,1421><420,1559><427,1432><434,1267><441,1833><449,1868><455,1736><462,1413><469,1131><488,1084><574,1130><581,1242><588,1003><595,1296><602,1330><609,1632><616,1207><623,1099><630,1133><637,1168><644,1079><658,1012><665,1885><672,1785><679,1864><687,3272><694,3476>
-US/Rhode Island/Unassigned+Confirmed: <285,1246><292,1629><299,2394><302,1040><303,1050><306,2572><310,1637><313,2769><316,1717><320,3681><321,1249><324,1571><327,3253><328,1166><330,1081><334,2419><341,3536><342,1187><348,4759><355,2993><359,1057><363,2623><369,2019><376,1518><383,1213><425,1000><447,1677><670,1144><677,2414><684,2091><685,1087><688,1078><691,2433><692,1246><693,1403><695,1197>
+US/Rhode Island/Unassigned+Confirmed: <285,1246><292,1629><299,2394><302,1040><303,1050><306,2572><310,1637><313,2769><316,1717><320,3681><321,1249><324,1571><327,3253><328,1166><330,1081><334,2419><341,3536><342,1187><348,4759><355,2993><359,1057><363,2623><369,2019><376,1518><383,1213><425,1000><447,1677><670,1144><677,2414><684,2091><685,1087><688,1078><691,2433><692,1246><693,1403>
 US/Rhode Island/Washington+Confirmed: <610,1583>
 US/South Carolina/Aiken+Confirmed: <244,1318>
 US/South Carolina/Richland+Confirmed: <600,2108>
@@ -515,6 +520,7 @@ US/Texas/Washington+Confirmed: <376,1535>
 US/Texas/Webb+Confirmed: <374,1069><504,2555><566,2333>
 US/Texas/Williamson+Confirmed: <295,1499><314,1079><404,1341>
 US/Virgin Islands+Confirmed: <692,2224>
+US/Virginia/Fairfax+Confirmed: <698,1469>
 US/Washington/King+Confirmed: <60,1040><504,1230>
 US/Washington/Spokane+Confirmed: <547,1121>
 US/Washington/Unassigned+Confirmed: <502,1104>
@@ -536,7 +542,7 @@ United Kingdom/Scotland+Confirmed: <141,15682><162,2437><170,2482>
 United Kingdom/Scotland+Deaths: <141,2434>
 United Kingdom/Wales+Confirmed: <141,14581>
 United Kingdom/Wales+Deaths: <141,1425>
-West Bank and Gaza+Confirmed: <623,30356>
+West Bank and Gaza+Confirmed: <623,30356><698,1575>
 Malaysia/Negeri Sembilan+Confirmed: <399,1392>
 Spain+Confirmed: <96,2793><97,2706><98,4771><101,3147>
 

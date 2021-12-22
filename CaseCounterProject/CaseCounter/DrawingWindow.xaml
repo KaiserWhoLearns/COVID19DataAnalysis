@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CaseCounter"
         mc:Ignorable="d"
-        Title="DrawingWindow" Height="1300" Width="2600">
+        Title="DrawingWindow" Height="700" Width="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,17 +13,28 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label Width="40" HorizontalAlignment ="Left">Date</Label>
+            <Slider  Width="100" Height="20" x:Name="dateSlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=dateSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Label HorizontalAlignment ="Left">Weight</Label>
             <Button Margin="10,0,0,0" Click="Query1_Click">Query 1</Button>
-            <Button Margin="10,0,0,0" Click="Query2_Click">Query 2</Button>
-            <Button Margin="10,0,0,0" Click="Query3_Click">Query 3</Button>
+            <Label  HorizontalAlignment ="Left">Max Date</Label>
             <Button Margin="10,0,0,0" Click="Query4_Click">Query 4</Button>
-            <Button Margin="10,0,0,0" Click="Query5_Click">Query 5</Button>
-            <Button Margin="10,0,0,0" Click="Query6_Click">Query 6</Button>
+            <Label HorizontalAlignment ="Left">Max Value</Label>
             <Button Margin="10,0,0,0" Click="Query7_Click">Query 7</Button>
-            <Button Margin="10,0,0,0" Click="Query8_Click">Query 8</Button>
-            <Button Margin="10,0,0,0" Click="Query9_Click">Query 9</Button>
         </StackPanel>
 
-        <Canvas Grid.Row="1"  Width="2400" Height="1200" x:Name="drawingCanvas"/>
+        <DockPanel Grid.Row="1">
+            <Label DockPanel.Dock="Top" Background="LightGray"
+           Content="Stuff at top of window here"
+           VerticalAlignment="Top"/>
+            <Label DockPanel.Dock="Bottom" Background="AliceBlue"
+           Content="Bottom stuff down here"
+           VerticalAlignment="Bottom"/>
+            <Viewbox>
+            <Canvas Width="800" Height="600" x:Name="drawingCanvas"/>
+            </Viewbox>
+        </DockPanel>
     </Grid>
 </Window>

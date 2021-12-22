@@ -119,39 +119,23 @@ namespace CaseCounter {
         }
 
         private void Query1_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query(180));
+            int d = (int)dateSlider.Value;
+            ExecuteQuery(waves => waves.Query(d));
 
         }
 
-        private void Query2_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query(343));
-        }
-
-        private void Query3_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query(575));
-        }
 
         private void Query4_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query2(180));
+            int d = (int)dateSlider.Value;
+            ExecuteQuery(waves => waves.Query2(d));
         }
 
-        private void Query5_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query2(343));
-        }
-
-        private void Query6_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query2(575));
-        }
+ 
 
         private void Query7_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query3(180));
+            int d = (int)dateSlider.Value;
+            ExecuteQuery(waves => waves.Query3(d));
         }
 
-        private void Query8_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query3(343));
-        }
-        private void Query9_Click(object sender, RoutedEventArgs e) {
-            ExecuteQuery(waves => waves.Query3(575));
-        }
     }
 }

@@ -65,11 +65,11 @@
             <Canvas Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
 
             <Label Width="40" HorizontalAlignment ="Left">Start</Label>
-            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  
+            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="730" SmallChange="1"  
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Label Width="40" HorizontalAlignment ="Left">End</Label>
-            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="700" 
+            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="730" 
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Button Margin="10,0,0,0" Click="ClearSelection_Click">Clear</Button>
