@@ -27,6 +27,11 @@ namespace CaseCounter {
         public List<(string, string, string, int)> Admin2AnomalyList { get; }
 
         public List<string> UsStatesList { get; }
+        public List<string> UsLowerFortyEightList { get; }
+        public List<string> UsSouthList { get; }
+        public List<string> UsNorthEastList { get; }
+        public List<string> UsMidWestList { get; }
+        public List<string> UsWestList { get; }
 
         public List<string> AfricaList { get; }
         public List<string> EuropeList { get; }
@@ -41,6 +46,12 @@ namespace CaseCounter {
 
         public Config() {
             UsStatesList = US_states.ToList();
+            UsLowerFortyEightList = US_lower48.ToList();
+            UsNorthEastList = US_northeast.ToList();
+            UsMidWestList = US_midwest.ToList();
+            UsSouthList = US_south.ToList();
+            UsWestList = US_west.ToList();
+
             AfricaList = African_countries.ToList();
             EuropeList = European_countries.ToList();
             AsiaList = Asian_countries.ToList();
@@ -187,6 +198,27 @@ namespace CaseCounter {
                                                 "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
                                                 "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                 "Washington", "West Virginia","Wisconsin","Wyoming" };
+
+        private readonly string[] US_lower48 = {"Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia",
+                                                "Florida", "Georgia", "Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
+                                                "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+                                                "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+                                                "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+                                                "Washington", "West Virginia","Wisconsin","Wyoming" };
+
+        private readonly string[] US_midwest = {"Illinois","Indiana","Iowa","Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", 
+                                                "North Dakota","Ohio", "South Dakota",  "West Virginia","Wisconsin"};
+
+        private readonly string[] US_northeast = {"Connecticut", "Delaware", "District of Columbia", "Maine","Maryland",
+                                                "Massachusetts",  "New Hampshire",  "New Jersey", "New York", "Pennsylvania",
+                                                "Rhode Island", "Vermont"};
+
+        private readonly string[] US_south = {"Alabama", "Arkansas", "Florida", "Georgia", "Kentucky","Louisiana",
+                                                 "Mississippi",  "North Carolina","Oklahoma",
+                                                 "South Carolina",  "Tennessee", "Texas", "Virginia" };
+
+        private readonly string[] US_west = {"Arizona", "California", "Colorado", "Idaho",
+                                                "Montana", "Nevada", "New Mexico", "Oregon", "Utah", "Washington", "Wyoming" };
 
         private readonly string[] Continents = { "Africa", "Asia", "Europe", "NorthAmerica", "SouthAmerica" };
 

@@ -25,17 +25,24 @@ namespace CaseCounter {
         private ScatterPlot scatterPlot;
         private List<TimeSeries> timeSeriesList;
         private List<Point> coordList;
-        private WaveParameters waveParameters;
+        private List<WaveSet> waveSetList;
 
+        public delegate double? WaveQuery(WaveSet waves, int date);
+        private WaveQuery waveQuery;
 
         public DrawingWindow(List<TimeSeries> tsList) {
             InitializeComponent();
 
             timeSeriesList = tsList;
             coordList = LatLongList(tsList);
-            waveParameters = new();
+            WaveParameters waveParameters = new();
 
             PlotSeries(tsList, coordList,  null);
+            waveSetList = new();
+            foreach (TimeSeries ts in tsList) {
+                waveSetList.Add(new(ts, waveParameters));
+            }
+
         }
 
        
@@ -56,7 +63,7 @@ namespace CaseCounter {
 
             scatterPlot.PlotPoints(pointList, valueList, 20);
         }
-
+/*
         private void Query_Click(object sender, RoutedEventArgs e) {
             List<double?> valueList = new();
 
@@ -69,14 +76,17 @@ namespace CaseCounter {
             PlotSeries(timeSeriesList, coordList, valueList);
         }
 
-        public delegate double? WaveQuery(WaveSet waves);
-        private void ExecuteQuery(WaveQuery waveQuery) {
+*/
+        private void ExecuteQuery(WaveQuery waveQuery, int date) {
+            if (waveQuery == null) {
+                return;
+            }
+
             List<double?> valueList = new();
 
-            foreach (TimeSeries ts in timeSeriesList) {
-                WaveSet waves = new(ts, waveParameters);
-                double? val = waveQuery(waves);
- //               double? val = waves.Query(343);
+            foreach (WaveSet waves in waveSetList) {
+
+                double? val = waveQuery(waves, date);
                 valueList.Add(val);
             }
 
@@ -118,24 +128,35 @@ namespace CaseCounter {
             return nList;
         }
 
-        private void Query1_Click(object sender, RoutedEventArgs e) {
-            int d = (int)dateSlider.Value;
-            ExecuteQuery(waves => waves.Query(d));
+        private void Query_Click(object sender, RoutedEventArgs e) {
+            ExecuteQuery(waveQuery, (int)dateSlider.Value);
 
         }
 
 
-        private void Query4_Click(object sender, RoutedEventArgs e) {
-            int d = (int)dateSlider.Value;
-            ExecuteQuery(waves => waves.Query2(d));
+        private void QueryChanged(object sender, SelectionChangedEventArgs e) {
+
+            string query = queryTypeComboBox.SelectedValue.ToString();
+
+            switch (query) {
+                case "Weight":
+                    waveQuery = (waves, d) => waves.Query(d);
+                    break;
+                case "Max Date":
+                    waveQuery = (waves, d) => waves.Query2(d);
+                    break;
+                case "Max Value":
+                    waveQuery = (waves, d) => waves.Query3(d);
+                    break;
+
+            }
+
+            ExecuteQuery(waveQuery, (int)dateSlider.Value);
+
         }
 
- 
-
-        private void Query7_Click(object sender, RoutedEventArgs e) {
-            int d = (int)dateSlider.Value;
-            ExecuteQuery(waves => waves.Query3(d));
+        private void DateValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+            ExecuteQuery(waveQuery, (int)dateSlider.Value);
         }
-
     }
 }

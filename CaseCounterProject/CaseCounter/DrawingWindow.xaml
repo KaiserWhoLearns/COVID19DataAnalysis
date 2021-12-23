@@ -13,16 +13,17 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <ComboBox Width="100" x:Name="queryTypeComboBox" SelectionChanged="QueryChanged" SelectedValuePath="Content" >
+                <ComboBoxItem Content="Weight"/>
+                <ComboBoxItem Content="Max Date"/>
+                <ComboBoxItem Content="Max Value"/>
+            </ComboBox>
             <Label Width="40" HorizontalAlignment ="Left">Date</Label>
-            <Slider  Width="100" Height="20" x:Name="dateSlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  
+            <Slider  Width="160" Height="20" x:Name="dateSlider"  Value="0" Minimum="0" Maximum="700" SmallChange="1"  ValueChanged="DateValueChanged"
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=dateSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
-            <Label HorizontalAlignment ="Left">Weight</Label>
-            <Button Margin="10,0,0,0" Click="Query1_Click">Query 1</Button>
-            <Label  HorizontalAlignment ="Left">Max Date</Label>
-            <Button Margin="10,0,0,0" Click="Query4_Click">Query 4</Button>
-            <Label HorizontalAlignment ="Left">Max Value</Label>
-            <Button Margin="10,0,0,0" Click="Query7_Click">Query 7</Button>
+
+            <Button Margin="10,0,0,0" Click="Query_Click">Query</Button>
         </StackPanel>
 
         <DockPanel Grid.Row="1">

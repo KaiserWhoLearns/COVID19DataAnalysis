@@ -150,7 +150,8 @@ namespace CaseCounter {
             BuildUSStateFiles(us_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, usbc_c));
             BuildUSStateFiles(us_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, usbc_d));
 
-
+            BuildUSRegionFiles(us_confirmed_TSS, "confirmed", Path.Combine(topLevelOutputDir, usbc));
+            BuildUSRegionFiles(us_deaths_TSS, "deaths", Path.Combine(topLevelOutputDir, usbc));
 
             ReportStep("Create additional country/state data sets");
 
@@ -266,8 +267,21 @@ namespace CaseCounter {
             tss.WriteToFile(Path.Combine(path, fileName));
         }
 
+        void BuildUSRegionFiles(TimeSeriesSet us_TSS, string dataType, string path) {
+            BuildUSRegionFiles("US_LowerFortyEight", config.UsLowerFortyEightList, us_TSS, dataType, path);
+            BuildUSRegionFiles("US_South", config.UsSouthList, us_TSS, dataType, path);
+            BuildUSRegionFiles("US_NorthEast", config.UsNorthEastList, us_TSS, dataType, path);
+            BuildUSRegionFiles("US_MidWest", config.UsMidWestList, us_TSS, dataType, path);
+            BuildUSRegionFiles("US_West", config.UsWestList, us_TSS, dataType, path);
+        }
 
-  
+        void BuildUSRegionFiles(string region, List<string> stateList, TimeSeriesSet us_TSS, string dataType, string path) {
+            TimeSeriesSet tss = us_TSS.Filter((TimeSeries ts) => stateList.Contains(ts.Admin1));
+            string fileName = region + "_" + dataType + "_sm.csv";
+            tss.WriteToFile(Path.Combine(path, fileName));
+        }
+
+
 
     }
 }
