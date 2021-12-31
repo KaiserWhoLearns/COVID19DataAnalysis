@@ -30,43 +30,43 @@ Brazil/Amapa+Confirmed 119: 4549 -> 257
 Brazil/Amapa+Deaths 119: 142 -> 3.3333333333333335  
 Brazil/Amazonas+Confirmed 119: 23704 -> 849.6666666666666  
 Brazil/Amazonas+Deaths 119: 1561 -> 30.5  
-Brazil/Bahia+Confirmed 119: 11197 -> 300.5  
+Brazil/Bahia+Confirmed 119: 11198 -> 300.5  
 Brazil/Bahia+Deaths 119: 362 -> 8.5  
 Brazil/Ceara+Confirmed 119: 30560 -> 760.3333333333334  
 Brazil/Ceara+Deaths 119: 1900 -> 68  
-Brazil/Distrito Federal+Confirmed 119: 5161 -> 181.66666666666666  
-Brazil/Distrito Federal+Deaths 119: 77 -> 3  
-Brazil/Espirito Santo+Confirmed 119: 8092 -> 304.3333333333333  
-Brazil/Espirito Santo+Deaths 119: 341 -> 12.666666666666666  
-Brazil/Goias+Confirmed 119: 1978 -> 66.5  
+Brazil/Distrito Federal+Confirmed 119: 5271 -> 163.33333333333334  
+Brazil/Distrito Federal+Deaths 119: 78 -> 2.8333333333333335  
+Brazil/Espirito Santo+Confirmed 119: 8495 -> 237.16666666666666  
+Brazil/Espirito Santo+Deaths 119: 346 -> 11.833333333333334  
+Brazil/Goias+Confirmed 119: 2049 -> 64.33333333333333  
 Brazil/Goias+Deaths 119: 78 -> 2.8333333333333335  
-Brazil/Maranhao+Confirmed 119: 15114 -> 608.8333333333334  
-Brazil/Maranhao+Deaths 119: 634 -> 14.666666666666666  
-Brazil/Mato Grosso+Confirmed 119: 1054 -> 49.666666666666664  
+Brazil/Maranhao+Confirmed 119: 16058 -> 855.5  
+Brazil/Maranhao+Deaths 119: 663 -> 15.166666666666666  
+Brazil/Mato Grosso+Confirmed 119: 1090 -> 45.5  
 Brazil/Mato Grosso+Deaths 119: 32 -> 0.8333333333333334  
 Brazil/Mato Grosso do Sul+Confirmed 119: 693 -> 27.5  
 Brazil/Mato Grosso do Sul+Deaths 119: 17 -> 0  
 Brazil/Minas Gerais+Confirmed 119: 5286 -> 175.33333333333334  
 Brazil/Minas Gerais+Deaths 119: 177 -> 6.666666666666667  
-Brazil/Para+Confirmed 119: 18135 -> 760.3333333333334  
-Brazil/Para+Deaths 119: 1633 -> 61.333333333333336  
+Brazil/Para+Confirmed 119: 18929 -> 866  
+Brazil/Para+Deaths 119: 1778 -> 62  
 Brazil/Paraiba+Confirmed 119: 5838 -> 278.3333333333333  
 Brazil/Paraiba+Deaths 119: 230 -> 4.666666666666667  
-Brazil/Parana+Confirmed 119: 2616 -> 80.5  
-Brazil/Parana+Deaths 119: 137 -> 2.1666666666666665  
+Brazil/Parana+Confirmed 119: 2656 -> 81.83333333333333  
+Brazil/Parana+Deaths 119: 140 -> 2.1666666666666665  
 Brazil/Pernambuco+Confirmed 119: 22560 -> 704.3333333333334  
 Brazil/Pernambuco+Deaths 119: 1834 -> 51.666666666666664  
-Brazil/Piaui+Confirmed 119: 2637 -> 103.5  
-Brazil/Piaui+Deaths 119: 87 -> 2  
-Brazil/Rio Grande do Norte+Confirmed 119: 3796 -> 133.83333333333334  
-Brazil/Rio Grande do Norte+Deaths 119: 170 -> 2.3333333333333335  
+Brazil/Piaui+Confirmed 119: 2852 -> 89.66666666666667  
+Brazil/Piaui+Deaths 119: 91 -> 2.6666666666666665  
+Brazil/Rio Grande do Norte+Confirmed 119: 4060 -> 89.83333333333333  
+Brazil/Rio Grande do Norte+Deaths 119: 178 -> 1  
 Brazil/Rio Grande do Sul+Confirmed 119: 4973 -> 227.16666666666666  
 Brazil/Rio Grande do Sul+Deaths 119: 161 -> 2.5  
 Brazil/Rio de Janeiro+Confirmed 119: 30372 -> 693.5  
 Brazil/Rio de Janeiro+Deaths 119: 3237 -> 111.33333333333333  
 Brazil/Rondonia+Confirmed 119: 2499 -> 101.66666666666667  
 Brazil/Rondonia+Deaths 119: 90 -> 4.166666666666667  
-Brazil/Roraima+Confirmed 119: 2067 -> 51.166666666666664  
+Brazil/Roraima+Confirmed 119: 2067 -> 62  
 Brazil/Roraima+Deaths 119: 64 -> 2.8333333333333335  
 Brazil/Santa Catarina+Confirmed 119: 5499 -> 184.66666666666666  
 Brazil/Santa Catarina+Deaths 119: 94 -> 1.5  
@@ -74,8 +74,8 @@ Brazil/Sao Paulo+Confirmed 119: 69859 -> 1783.1666666666667
 Brazil/Sao Paulo+Deaths 119: 5363 -> 113.66666666666667  
 Brazil/Sergipe+Confirmed 119: 4277 -> 142.33333333333334  
 Brazil/Sergipe+Deaths 119: 69 -> 2.8333333333333335  
-Brazil/Tocantins+Confirmed 119: 1809 -> 103.5  
-Brazil/Tocantins+Deaths 119: 42 -> 1.5  
+Brazil/Tocantins+Confirmed 119: 1976 -> 75.66666666666667  
+Brazil/Tocantins+Deaths 119: 47 -> 0.6666666666666666  
 Chile/Antofagasta+Confirmed 119: 1731 -> 27.666666666666668  
 Chile/Antofagasta+Deaths 119: 17 -> 0.6666666666666666  
 Chile/Araucania+Confirmed 119: 1680 -> 15.666666666666666  

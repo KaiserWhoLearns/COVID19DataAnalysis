@@ -221,7 +221,7 @@ namespace WaveAnalyzer {
                 return null;
             }
 
-            return wave.MaxValue;
+            return (wave.MaxDerivPos > 650) ? Math.Min(Math.Max(wave.MaxDeriv, 3), 7) : null;
 
 
         }
