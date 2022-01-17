@@ -1,0 +1,29 @@
+﻿<Window x:Class="CaseCounter.MapView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaseCounter"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="MapView" Height="650" Width="1000">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" HorizontalAlignment="Left">
+            <Label Width="40" HorizontalAlignment ="Left">Start</Label>
+            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="760" SmallChange="1"  
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Label Width="40" HorizontalAlignment ="Left">End</Label>
+            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="760" 
+                IsSnapToTickEnabled="True" TickFrequency="1"/>
+            <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <Button Margin="10,0,0,0" Click="LoadUS_Click">Load US</Button>
+            <Button Margin="10,0,0,0" Click="Refresh_Click">Refresh</Button>
+            <Button Margin="10,0,0,0" Click="Update_Click">Update</Button>
+        </DockPanel>
+        <wv2:WebView2 Name="webView"
+                  Source="about:blank"
+                      
+    />
+    </DockPanel>
+</Window>

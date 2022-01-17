@@ -412,6 +412,18 @@ namespace DataSeries {
             return null;
         }
 
+        // Build a csv computing a statistic of each time series
+        // Just for now, this targets Admin level 
+        public string NormalizedCaseCount(int startDay, int endDay) {
+            StringBuilder sb = new();
+            sb.AppendLine("region,value");
+
+            foreach (TimeSeries ts in series.Values) {
+                sb.AppendLine($"{ts.Admin1},{ts.NormalizedCaseCount(startDay, endDay)}");
+            }
+            return sb.ToString();
+        }
+
     }
 
 }

@@ -656,6 +656,19 @@ namespace DataSeries {
             return (xArray, yArray);
         }
 
+        public double NormalizedCaseCount(int startDay, int endDay) {
+            if (Population <= 0) {
+                return 0.0;
+            }
+
+            double  count = 0;
+            for (int i = startDay; i <= endDay; i++) {
+                count += data[i];
+            }
+
+            return count / Population;
+        }
+
     }
 
 }
