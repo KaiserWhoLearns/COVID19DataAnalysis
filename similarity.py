@@ -46,7 +46,7 @@ def plot_sim_scores(sim_matrix, terr_names, data_type, continent="Africa"):
     plt.clf()
     # plt.show()
 
-continent = "Europe"
+continent = "NorthAmerica"
 # Generate plot for neighboring African countries
 d2 = loader.get_continent_specific_case_and_deaths_time_series_data(continent=continent)
 
@@ -68,7 +68,7 @@ for df_idx, df in enumerate(d2):
         if type(neighbors.loc[neighbors["Country or territory"]==base_country]["neighbor list"].tolist()[0]) is str:
             list_of_neighbors = neighbors.loc[neighbors["Country or territory"]==base_country]["neighbor list"].tolist()[0].split(",")
         else:
-            pass
+            continue
         list_of_neighbors.insert(0, base_country)
         # Remove the neighbors not in the list and leading white space
         actual_list = []

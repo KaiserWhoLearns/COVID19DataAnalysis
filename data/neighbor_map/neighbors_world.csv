@@ -30,7 +30,7 @@
 28,Burundi,974,605,3,3,"Congo (Kinshasa), Rwanda, Tanzania"
 29,Cambodia,"2,572","1,598",3,3,"Laos, Thailand, Vietnam"
 30,Cameroon,"4,591","2,853",6,6,"Central African Republic, Chad, Congo (Brazzaville), Equatorial Guinea, Gabon, Nigeria"
-31,Canada,"8,893","5,526",4,1,United States (4)
+31,Canada,"8,893","5,526",4,1,US
 32,Cabo Verde,0,0,0,0,nan
 33,Central African Republic,"5,213","3,239",6,6,"Cameroon, Chad, Congo (Kinshasa), Congo (Brazzaville), South Sudan, Sudan"
 34,Chad,"5,968","3,708",6,6,"Cameroon, Central African Republic, Libya, Niger, Nigeria, Sudan"
@@ -118,7 +118,7 @@
 116,Marshall Islands,0,0,0,0,nan
 117,Mauritania,"5,074","3,153",4,4,"Algeria, Mali, Senegal, Western Sahara"
 118,Mauritius,0,0,0,0,nan
-119,Mexico,"4,353","2,705",3,3,"Belize, Guatemala, United States"
+119,Mexico,"4,353","2,705",3,3,"Belize, Guatemala, US"
 120,Federated States of Micronesia,0,0,0,0,nan
 121,Moldova,"1,389",863,2,2,"Romania, Ukraine"
 122,Monaco,4.4,2.7,1,1,France
@@ -196,7 +196,7 @@
 194,United Kingdom,499,310,1,1,Ireland
 195,United Kingdom (plus British overseas territories and Crown dependencies),,,,,nan
 196,→including:,513,319,7,3,"Cyprus (5), Ireland, Spain"
-197,United States,"12,034","7,478",5,2,"Canada (4), Mexico"
+197,US,"12,034","7,478",5,2,"Canada (4), Mexico"
 198,Uruguay,"1,564",972,2,2,"Argentina, Brazil"
 199,Uzbekistan,"6,221","3,866",5,5,"Afghanistan, Kazakhstan, Kyrgyzstan (6), Tajikistan (2), Turkmenistan"
 200,Vanuatu,0,0,0,0,nan
