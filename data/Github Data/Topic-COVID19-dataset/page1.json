@@ -1,0 +1,715 @@
+{
+  "data": {
+    "search": {
+      "repositoryCount": 366,
+      "pageInfo": {
+        "startCursor": "Y3Vyc29yOjE=",
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "endCursor": "Y3Vyc29yOjEwMA=="
+      },
+      "nodes": [
+        {
+          "nameWithOwner": "ieee8023/covid-chestxray-dataset",
+          "createdAt": "2020-02-14T23:22:23Z",
+          "updatedAt": "2022-01-19T04:08:50Z",
+          "forkCount": 1185,
+          "stargazerCount": 2769
+        },
+        {
+          "nameWithOwner": "UCSD-AI4H/COVID-CT",
+          "createdAt": "2020-03-27T23:29:54Z",
+          "updatedAt": "2022-01-18T12:36:24Z",
+          "forkCount": 395,
+          "stargazerCount": 915
+        },
+        {
+          "nameWithOwner": "RamiKrispin/coronavirus",
+          "createdAt": "2020-02-11T14:08:06Z",
+          "updatedAt": "2022-01-18T08:05:34Z",
+          "forkCount": 195,
+          "stargazerCount": 445
+        },
+        {
+          "nameWithOwner": "CSSEGISandData/COVID-19_Unified-Dataset",
+          "createdAt": "2020-06-10T12:36:45Z",
+          "updatedAt": "2022-01-19T13:09:27Z",
+          "forkCount": 49,
+          "stargazerCount": 129
+        },
+        {
+          "nameWithOwner": "OxCGRT/covid-policy-tracker",
+          "createdAt": "2020-04-08T14:56:49Z",
+          "updatedAt": "2022-01-19T14:00:36Z",
+          "forkCount": 294,
+          "stargazerCount": 580
+        },
+        {
+          "nameWithOwner": "github/covid-19-repo-data",
+          "createdAt": "2020-03-27T17:25:49Z",
+          "updatedAt": "2022-01-16T08:29:58Z",
+          "forkCount": 186,
+          "stargazerCount": 366
+        },
+        {
+          "nameWithOwner": "wuhan-support/dataset",
+          "createdAt": "2020-01-25T07:56:03Z",
+          "updatedAt": "2021-08-21T12:18:40Z",
+          "forkCount": 10,
+          "stargazerCount": 15
+        },
+        {
+          "nameWithOwner": "sfu-db/covid19-datasets",
+          "createdAt": "2020-05-11T22:38:35Z",
+          "updatedAt": "2021-10-07T18:14:51Z",
+          "forkCount": 26,
+          "stargazerCount": 51
+        },
+        {
+          "nameWithOwner": "UniversalDataTool/coronavirus-mask-image-dataset",
+          "createdAt": "2020-04-09T14:58:55Z",
+          "updatedAt": "2021-05-31T22:31:08Z",
+          "forkCount": 17,
+          "stargazerCount": 56
+        },
+        {
+          "nameWithOwner": "urmi-21/COVID-19-RNA-Seq-datasets",
+          "createdAt": "2020-06-04T17:44:56Z",
+          "updatedAt": "2022-01-17T06:47:47Z",
+          "forkCount": 20,
+          "stargazerCount": 58
+        },
+        {
+          "nameWithOwner": "v7labs/covid-19-xray-dataset",
+          "createdAt": "2020-06-17T19:45:19Z",
+          "updatedAt": "2022-01-12T17:09:01Z",
+          "forkCount": 13,
+          "stargazerCount": 54
+        },
+        {
+          "nameWithOwner": "AaronWard/covidify",
+          "createdAt": "2020-01-30T00:08:53Z",
+          "updatedAt": "2022-01-09T17:52:08Z",
+          "forkCount": 124,
+          "stargazerCount": 460
+        },
+        {
+          "nameWithOwner": "datasets/covid-19",
+          "createdAt": "2020-03-07T11:20:47Z",
+          "updatedAt": "2022-01-19T06:27:32Z",
+          "forkCount": 606,
+          "stargazerCount": 1133
+        },
+        {
+          "nameWithOwner": "simonw/covid-19-datasette",
+          "createdAt": "2020-03-10T18:44:52Z",
+          "updatedAt": "2022-01-13T18:32:01Z",
+          "forkCount": 6,
+          "stargazerCount": 62
+        },
+        {
+          "nameWithOwner": "pomber/covid19",
+          "createdAt": "2020-03-13T04:40:32Z",
+          "updatedAt": "2022-01-16T23:40:44Z",
+          "forkCount": 388,
+          "stargazerCount": 1217
+        },
+        {
+          "nameWithOwner": "ynshung/covid-19-malaysia",
+          "createdAt": "2020-03-21T14:17:52Z",
+          "updatedAt": "2021-12-12T00:34:45Z",
+          "forkCount": 43,
+          "stargazerCount": 49
+        },
+        {
+          "nameWithOwner": "cabani/MaskedFace-Net",
+          "createdAt": "2020-08-13T15:56:49Z",
+          "updatedAt": "2022-01-18T01:10:05Z",
+          "forkCount": 45,
+          "stargazerCount": 271
+        },
+        {
+          "nameWithOwner": "yahoo/covid-19-data",
+          "createdAt": "2020-03-30T23:05:25Z",
+          "updatedAt": "2022-01-09T13:34:45Z",
+          "forkCount": 21,
+          "stargazerCount": 98
+        },
+        {
+          "nameWithOwner": "covid19-eu-zh/covid19-eu-data",
+          "createdAt": "2020-03-04T19:35:17Z",
+          "updatedAt": "2022-01-10T22:42:28Z",
+          "forkCount": 24,
+          "stargazerCount": 71
+        },
+        {
+          "nameWithOwner": "vitorbaptista/google-covid19-mobility-reports",
+          "createdAt": "2020-04-04T18:34:50Z",
+          "updatedAt": "2021-05-01T05:40:29Z",
+          "forkCount": 12,
+          "stargazerCount": 81
+        },
+        {
+          "nameWithOwner": "kalyaniuniversity/COVID-19-Datasets",
+          "createdAt": "2020-03-29T15:47:17Z",
+          "updatedAt": "2022-01-10T13:43:25Z",
+          "forkCount": 5,
+          "stargazerCount": 19
+        },
+        {
+          "nameWithOwner": "GoogleCloudPlatform/covid-19-open-data",
+          "createdAt": "2020-07-23T23:43:51Z",
+          "updatedAt": "2022-01-19T08:53:28Z",
+          "forkCount": 114,
+          "stargazerCount": 394
+        },
+        {
+          "nameWithOwner": "bumbeishvili/covid19-daily-data",
+          "createdAt": "2020-03-25T18:49:16Z",
+          "updatedAt": "2022-01-17T23:11:31Z",
+          "forkCount": 12,
+          "stargazerCount": 44
+        },
+        {
+          "nameWithOwner": "ivanMSC/COVID19_Chile",
+          "createdAt": "2020-03-14T19:52:54Z",
+          "updatedAt": "2022-01-10T23:46:17Z",
+          "forkCount": 13,
+          "stargazerCount": 50
+        },
+        {
+          "nameWithOwner": "GeneralBlockchain/covid-19-chest-xray-segmentations-dataset",
+          "createdAt": "2020-07-17T15:30:23Z",
+          "updatedAt": "2021-12-03T11:17:43Z",
+          "forkCount": 7,
+          "stargazerCount": 20
+        },
+        {
+          "nameWithOwner": "neuml/cord19q",
+          "createdAt": "2020-03-19T17:47:34Z",
+          "updatedAt": "2022-01-16T18:19:46Z",
+          "forkCount": 18,
+          "stargazerCount": 54
+        },
+        {
+          "nameWithOwner": "JerryWei03/COVID-Q",
+          "createdAt": "2020-05-15T19:00:45Z",
+          "updatedAt": "2022-01-02T22:40:45Z",
+          "forkCount": 22,
+          "stargazerCount": 22
+        },
+        {
+          "nameWithOwner": "abd-shoumik/Social-distance-detection",
+          "createdAt": "2020-06-18T04:08:14Z",
+          "updatedAt": "2021-12-28T12:48:55Z",
+          "forkCount": 58,
+          "stargazerCount": 83
+        },
+        {
+          "nameWithOwner": "cipriancraciun/covid19-datasets",
+          "createdAt": "2020-03-23T07:52:51Z",
+          "updatedAt": "2022-01-08T11:21:53Z",
+          "forkCount": 5,
+          "stargazerCount": 21
+        },
+        {
+          "nameWithOwner": "ahmadhassan7/Covid-19-Datasets",
+          "createdAt": "2020-03-16T19:42:39Z",
+          "updatedAt": "2022-01-02T18:40:20Z",
+          "forkCount": 5,
+          "stargazerCount": 8
+        },
+        {
+          "nameWithOwner": "asreview/asreview-covid19",
+          "createdAt": "2020-03-18T14:00:16Z",
+          "updatedAt": "2022-01-08T06:48:00Z",
+          "forkCount": 8,
+          "stargazerCount": 24
+        },
+        {
+          "nameWithOwner": "mongodb-developer/open-data-covid-19",
+          "createdAt": "2020-03-30T16:04:31Z",
+          "updatedAt": "2022-01-12T02:13:58Z",
+          "forkCount": 10,
+          "stargazerCount": 17
+        },
+        {
+          "nameWithOwner": "Gautamshahi/FakeCovid",
+          "createdAt": "2020-05-09T22:18:13Z",
+          "updatedAt": "2021-12-14T09:33:00Z",
+          "forkCount": 8,
+          "stargazerCount": 27
+        },
+        {
+          "nameWithOwner": "jxeeno/aust-govt-covid19-vaccine-pdf",
+          "createdAt": "2021-04-17T14:47:56Z",
+          "updatedAt": "2022-01-13T03:58:34Z",
+          "forkCount": 4,
+          "stargazerCount": 45
+        },
+        {
+          "nameWithOwner": "haydengunraj/COVIDNet-CT",
+          "createdAt": "2020-04-23T00:56:21Z",
+          "updatedAt": "2022-01-04T07:59:57Z",
+          "forkCount": 38,
+          "stargazerCount": 91
+        },
+        {
+          "nameWithOwner": "mr7495/COVID-CTset",
+          "createdAt": "2020-06-01T15:41:22Z",
+          "updatedAt": "2022-01-19T20:32:59Z",
+          "forkCount": 20,
+          "stargazerCount": 65
+        },
+        {
+          "nameWithOwner": "dsfsi/covid19za",
+          "createdAt": "2020-03-13T11:22:20Z",
+          "updatedAt": "2022-01-19T06:27:30Z",
+          "forkCount": 209,
+          "stargazerCount": 251
+        },
+        {
+          "nameWithOwner": "lkorczowski/COVID19-datasets",
+          "createdAt": "2020-03-17T15:52:01Z",
+          "updatedAt": "2020-04-21T11:12:51Z",
+          "forkCount": 3,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "rearc-data/covid-datasets-aws-data-exchange",
+          "createdAt": "2020-04-16T04:17:22Z",
+          "updatedAt": "2022-01-03T05:05:06Z",
+          "forkCount": 3,
+          "stargazerCount": 8
+        },
+        {
+          "nameWithOwner": "Covid-19-Response-Greece/covid19-data-greece",
+          "createdAt": "2020-03-30T13:56:02Z",
+          "updatedAt": "2022-01-11T00:32:40Z",
+          "forkCount": 13,
+          "stargazerCount": 16
+        },
+        {
+          "nameWithOwner": "Code4PuertoRico/covid19-pr-api",
+          "createdAt": "2020-04-01T15:23:08Z",
+          "updatedAt": "2021-11-17T13:41:24Z",
+          "forkCount": 5,
+          "stargazerCount": 20
+        },
+        {
+          "nameWithOwner": "ccodwg/Covid19Canada",
+          "createdAt": "2020-03-17T18:09:18Z",
+          "updatedAt": "2022-01-19T20:50:51Z",
+          "forkCount": 136,
+          "stargazerCount": 323
+        },
+        {
+          "nameWithOwner": "Gautamshahi/Misinformation_COVID-19",
+          "createdAt": "2020-04-09T08:54:43Z",
+          "updatedAt": "2021-11-15T23:54:30Z",
+          "forkCount": 9,
+          "stargazerCount": 10
+        },
+        {
+          "nameWithOwner": "ccodwg/Covid19CanadaArchive",
+          "createdAt": "2020-08-21T16:10:38Z",
+          "updatedAt": "2022-01-10T21:52:29Z",
+          "forkCount": 9,
+          "stargazerCount": 21
+        },
+        {
+          "nameWithOwner": "tomwhite/covid-19-uk-data",
+          "createdAt": "2020-03-13T14:52:39Z",
+          "updatedAt": "2021-11-30T22:34:43Z",
+          "forkCount": 78,
+          "stargazerCount": 164
+        },
+        {
+          "nameWithOwner": "J535D165/CoronaWatchNL",
+          "createdAt": "2020-03-06T22:38:48Z",
+          "updatedAt": "2021-12-20T12:19:59Z",
+          "forkCount": 76,
+          "stargazerCount": 145
+        },
+        {
+          "nameWithOwner": "theojulienne/covid-19-data",
+          "createdAt": "2020-03-20T01:56:35Z",
+          "updatedAt": "2022-01-12T09:57:29Z",
+          "forkCount": 4,
+          "stargazerCount": 6
+        },
+        {
+          "nameWithOwner": "SistemasMapache/Covid19arData",
+          "createdAt": "2020-03-23T19:20:46Z",
+          "updatedAt": "2021-11-30T20:10:05Z",
+          "forkCount": 13,
+          "stargazerCount": 53
+        },
+        {
+          "nameWithOwner": "firojalam/COVID-19-tweets-for-check-worthiness",
+          "createdAt": "2020-04-08T13:43:39Z",
+          "updatedAt": "2021-11-29T12:31:46Z",
+          "forkCount": 2,
+          "stargazerCount": 13
+        },
+        {
+          "nameWithOwner": "mayrop/datosmx",
+          "createdAt": "2020-04-11T23:09:12Z",
+          "updatedAt": "2021-01-25T22:16:50Z",
+          "forkCount": 2,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "nasa-jpl-cord-19/covid19-knowledge-graph",
+          "createdAt": "2020-03-19T18:41:01Z",
+          "updatedAt": "2021-06-24T08:01:00Z",
+          "forkCount": 4,
+          "stargazerCount": 15
+        },
+        {
+          "nameWithOwner": "dsfsi/covid19africa",
+          "createdAt": "2020-03-19T14:58:54Z",
+          "updatedAt": "2021-08-31T14:09:29Z",
+          "forkCount": 60,
+          "stargazerCount": 47
+        },
+        {
+          "nameWithOwner": "hasibzunair/synthetic-covid-cxr-dataset",
+          "createdAt": "2020-04-25T23:47:19Z",
+          "updatedAt": "2021-10-31T12:36:48Z",
+          "forkCount": 2,
+          "stargazerCount": 9
+        },
+        {
+          "nameWithOwner": "bharathsudharsan/COVID-away",
+          "createdAt": "2020-06-25T08:45:05Z",
+          "updatedAt": "2021-11-24T09:04:08Z",
+          "forkCount": 15,
+          "stargazerCount": 17
+        },
+        {
+          "nameWithOwner": "longbiaochen/corona-virus",
+          "createdAt": "2020-01-23T07:26:30Z",
+          "updatedAt": "2021-09-30T13:13:42Z",
+          "forkCount": 4,
+          "stargazerCount": 34
+        },
+        {
+          "nameWithOwner": "CovidDataProject/DataCovid19Colombia",
+          "createdAt": "2020-04-19T16:43:03Z",
+          "updatedAt": "2021-06-06T20:12:28Z",
+          "forkCount": 3,
+          "stargazerCount": 6
+        },
+        {
+          "nameWithOwner": "SeanNaren/CORD-19-ANN",
+          "createdAt": "2020-03-30T21:38:46Z",
+          "updatedAt": "2021-11-25T02:23:56Z",
+          "forkCount": 3,
+          "stargazerCount": 23
+        },
+        {
+          "nameWithOwner": "mexicovid19/Mexico-datos",
+          "createdAt": "2020-03-28T03:31:57Z",
+          "updatedAt": "2022-01-10T19:18:34Z",
+          "forkCount": 18,
+          "stargazerCount": 20
+        },
+        {
+          "nameWithOwner": "geocrafter-studio/covid19-pt-ltmsooem",
+          "createdAt": "2020-03-27T22:43:10Z",
+          "updatedAt": "2021-03-07T22:53:30Z",
+          "forkCount": 5,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "arkhn/FHIR2Dataset",
+          "createdAt": "2020-03-09T18:25:44Z",
+          "updatedAt": "2022-01-05T01:21:49Z",
+          "forkCount": 1,
+          "stargazerCount": 26
+        },
+        {
+          "nameWithOwner": "SamBelkacem/COVID19-Algeria-and-World-Dataset",
+          "createdAt": "2020-08-17T15:41:07Z",
+          "updatedAt": "2021-03-01T10:44:31Z",
+          "forkCount": 1,
+          "stargazerCount": 18
+        },
+        {
+          "nameWithOwner": "WadhwaniAI/cough-against-covid",
+          "createdAt": "2021-02-17T13:21:06Z",
+          "updatedAt": "2022-01-14T08:56:37Z",
+          "forkCount": 5,
+          "stargazerCount": 21
+        },
+        {
+          "nameWithOwner": "sociepy/covid19-vaccination-subnational",
+          "createdAt": "2021-01-15T15:08:54Z",
+          "updatedAt": "2021-12-16T19:06:29Z",
+          "forkCount": 13,
+          "stargazerCount": 59
+        },
+        {
+          "nameWithOwner": "ml-workgroup/covid-19-image-repository",
+          "createdAt": "2020-04-29T20:30:20Z",
+          "updatedAt": "2022-01-15T03:30:06Z",
+          "forkCount": 13,
+          "stargazerCount": 39
+        },
+        {
+          "nameWithOwner": "fredericharnois/covid19-par-arrondissements-montreal",
+          "createdAt": "2020-04-01T23:45:14Z",
+          "updatedAt": "2021-07-29T00:20:59Z",
+          "forkCount": 4,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "TuTomasz/Covid19-Dataset",
+          "createdAt": "2020-03-27T17:05:17Z",
+          "updatedAt": "2022-01-10T23:07:35Z",
+          "forkCount": 2,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "jeremykohn/rid-covid",
+          "createdAt": "2020-04-06T06:08:15Z",
+          "updatedAt": "2021-12-29T21:33:07Z",
+          "forkCount": 22,
+          "stargazerCount": 70
+        },
+        {
+          "nameWithOwner": "PhantomInsights/covid-19",
+          "createdAt": "2020-04-02T01:52:34Z",
+          "updatedAt": "2021-07-15T23:22:07Z",
+          "forkCount": 3,
+          "stargazerCount": 14
+        },
+        {
+          "nameWithOwner": "GeneralBlockchain/covid-19-chest-xray-lung-bounding-boxes-dataset",
+          "createdAt": "2020-07-03T21:46:58Z",
+          "updatedAt": "2021-11-28T05:44:57Z",
+          "forkCount": 1,
+          "stargazerCount": 10
+        },
+        {
+          "nameWithOwner": "Quintessential-SFT/Covid-19-API",
+          "createdAt": "2020-03-14T14:15:24Z",
+          "updatedAt": "2022-01-11T15:55:49Z",
+          "forkCount": 4,
+          "stargazerCount": 15
+        },
+        {
+          "nameWithOwner": "nisaefendioglu/COVID-19-Deaths-Dataset",
+          "createdAt": "2021-06-04T18:50:44Z",
+          "updatedAt": "2022-01-06T19:15:07Z",
+          "forkCount": 1,
+          "stargazerCount": 4
+        },
+        {
+          "nameWithOwner": "Global-Policy-Lab/gpl-covid",
+          "createdAt": "2020-03-18T22:33:41Z",
+          "updatedAt": "2020-12-17T01:55:30Z",
+          "forkCount": 12,
+          "stargazerCount": 11
+        },
+        {
+          "nameWithOwner": "thepanacealab/annotated_twitter_covid19_dataset",
+          "createdAt": "2020-12-04T20:48:01Z",
+          "updatedAt": "2021-07-28T16:29:18Z",
+          "forkCount": 1,
+          "stargazerCount": 4
+        },
+        {
+          "nameWithOwner": "abhijithneilabraham/Covid-QA",
+          "createdAt": "2021-04-09T11:43:49Z",
+          "updatedAt": "2021-09-09T05:46:06Z",
+          "forkCount": 0,
+          "stargazerCount": 19
+        },
+        {
+          "nameWithOwner": "eebrown/data2019nCoV",
+          "createdAt": "2020-02-01T18:45:45Z",
+          "updatedAt": "2021-11-13T04:50:04Z",
+          "forkCount": 19,
+          "stargazerCount": 40
+        },
+        {
+          "nameWithOwner": "Covid-19-Response-Greece/covid19-greece-api",
+          "createdAt": "2020-04-16T08:52:52Z",
+          "updatedAt": "2022-01-13T17:02:36Z",
+          "forkCount": 19,
+          "stargazerCount": 50
+        },
+        {
+          "nameWithOwner": "ShahinSHH/COVID-CT-MD",
+          "createdAt": "2020-10-06T15:36:26Z",
+          "updatedAt": "2022-01-13T21:15:57Z",
+          "forkCount": 3,
+          "stargazerCount": 14
+        },
+        {
+          "nameWithOwner": "HDRUK/covid-19",
+          "createdAt": "2020-03-16T19:47:11Z",
+          "updatedAt": "2021-11-18T14:54:26Z",
+          "forkCount": 9,
+          "stargazerCount": 40
+        },
+        {
+          "nameWithOwner": "rushad7/mask-detection",
+          "createdAt": "2020-05-10T18:30:21Z",
+          "updatedAt": "2021-02-04T15:53:54Z",
+          "forkCount": 11,
+          "stargazerCount": 9
+        },
+        {
+          "nameWithOwner": "sakrifor/covid19-Greece",
+          "createdAt": "2020-03-25T20:56:26Z",
+          "updatedAt": "2021-05-24T10:08:33Z",
+          "forkCount": 2,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "oem/Hamburg.jl",
+          "createdAt": "2020-07-26T18:50:44Z",
+          "updatedAt": "2022-01-16T12:29:39Z",
+          "forkCount": 0,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "amirshnll/Covid-patient-datasets",
+          "createdAt": "2021-01-01T12:11:47Z",
+          "updatedAt": "2022-01-08T10:29:46Z",
+          "forkCount": 1,
+          "stargazerCount": 6
+        },
+        {
+          "nameWithOwner": "nrc-cnrc/COVID-US",
+          "createdAt": "2020-12-14T19:38:08Z",
+          "updatedAt": "2022-01-10T20:53:59Z",
+          "forkCount": 8,
+          "stargazerCount": 21
+        },
+        {
+          "nameWithOwner": "AFAgarap/pt-datasets",
+          "createdAt": "2020-11-01T05:03:58Z",
+          "updatedAt": "2021-07-12T10:03:47Z",
+          "forkCount": 1,
+          "stargazerCount": 4
+        },
+        {
+          "nameWithOwner": "ambientpointcorp/covid19-philadelphia",
+          "createdAt": "2020-06-11T00:06:12Z",
+          "updatedAt": "2022-01-16T22:02:41Z",
+          "forkCount": 7,
+          "stargazerCount": 13
+        },
+        {
+          "nameWithOwner": "sebaxtian/colombia_covid_19_pipe",
+          "createdAt": "2020-04-07T18:15:15Z",
+          "updatedAt": "2020-11-02T01:29:44Z",
+          "forkCount": 4,
+          "stargazerCount": 7
+        },
+        {
+          "nameWithOwner": "evozi/covid-19-malaysia",
+          "createdAt": "2020-03-31T10:18:22Z",
+          "updatedAt": "2020-09-11T15:13:50Z",
+          "forkCount": 2,
+          "stargazerCount": 3
+        },
+        {
+          "nameWithOwner": "memsql/memsql-covid-datasets",
+          "createdAt": "2020-06-29T19:39:11Z",
+          "updatedAt": "2021-03-31T18:05:00Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "pratik-choudhari/Covid-19",
+          "createdAt": "2020-04-09T13:46:41Z",
+          "updatedAt": "2021-09-20T06:48:16Z",
+          "forkCount": 1,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "badele/world-datas-analysis",
+          "createdAt": "2020-04-14T06:55:30Z",
+          "updatedAt": "2021-12-29T21:21:26Z",
+          "forkCount": 2,
+          "stargazerCount": 4
+        },
+        {
+          "nameWithOwner": "dostorio/datasets",
+          "createdAt": "2020-04-19T07:25:07Z",
+          "updatedAt": "2020-12-22T15:39:45Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "immunomind/covid19",
+          "createdAt": "2020-05-13T11:02:53Z",
+          "updatedAt": "2022-01-11T14:58:55Z",
+          "forkCount": 3,
+          "stargazerCount": 35
+        },
+        {
+          "nameWithOwner": "mayrop/covid19mx",
+          "createdAt": "2020-04-08T07:03:15Z",
+          "updatedAt": "2021-03-24T00:41:29Z",
+          "forkCount": 0,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "ccodwg/Covid19CanadaAPI",
+          "createdAt": "2020-08-14T18:15:11Z",
+          "updatedAt": "2021-12-17T14:59:42Z",
+          "forkCount": 3,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "MeghnathReddy/COVID19-dataset-C-",
+          "createdAt": "2020-07-28T07:43:22Z",
+          "updatedAt": "2021-10-11T13:48:24Z",
+          "forkCount": 1,
+          "stargazerCount": 3
+        },
+        {
+          "nameWithOwner": "edumardo/covid19-carm",
+          "createdAt": "2020-03-17T10:21:27Z",
+          "updatedAt": "2021-03-26T23:06:21Z",
+          "forkCount": 0,
+          "stargazerCount": 3
+        },
+        {
+          "nameWithOwner": "amel-github/CCCSL-Codes",
+          "createdAt": "2020-05-02T21:19:27Z",
+          "updatedAt": "2021-09-20T09:01:29Z",
+          "forkCount": 2,
+          "stargazerCount": 9
+        },
+        {
+          "nameWithOwner": "charrismatic/cdc-covid19-datasets",
+          "createdAt": "2020-07-16T16:20:31Z",
+          "updatedAt": "2020-07-16T17:52:57Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "mrg0lden/COVID19-SA",
+          "createdAt": "2020-04-03T00:37:18Z",
+          "updatedAt": "2020-04-22T20:56:23Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "fsmosca/COVID-19-PH-dataset",
+          "createdAt": "2020-04-25T03:50:21Z",
+          "updatedAt": "2020-05-31T11:00:16Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        }
+      ]
+    }
+  }
+}
