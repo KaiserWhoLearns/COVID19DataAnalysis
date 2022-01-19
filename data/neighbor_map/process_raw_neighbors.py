@@ -10,8 +10,8 @@ for idx, row in neighbors.iterrows():
     neighbors["neighbor list"][idx] = str(neighbors["neighbor list"][idx]) + "\n"
     neighbors["neighbor list"][idx] = re.sub("[:].*[\n]", ",", neighbors["neighbor list"][idx])[:-1]
 
-# Load the african countries list and print the ones that name does not match
-with open("../territory_names/africa_countries.txt", "r") as f:
+# Load the european countries list and print the ones that name does not match
+with open("../territory_names/SouthAmerica_countries.txt", "r") as f:
     african_names = [line.rstrip() for line in f]
 
 not_in_list = set()
