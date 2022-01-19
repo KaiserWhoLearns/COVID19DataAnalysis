@@ -1,7 +1,7 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"US","Rhode Island","Bristol",44001,48479,6839,152,14107.14,3135.38,0.0222
-"US","Rhode Island","Kent",44003,164292,25634,406,15602.71,2471.21,0.0158
-"US","Rhode Island","Newport",44005,82081,9934,54,12102.68,657.89,0.0054
-"US","Rhode Island","Providence",44007,638931,125868,2141,19699.78,3350.91,0.0170
-"US","Rhode Island","Unassigned",90044,-1,17031,21,0.00,0.00,0.0012
-"US","Rhode Island","Washington",44009,125577,16316,182,12992.83,1449.31,0.0112
+"US","Rhode Island","Bristol",44001,48479,10110,159,20854.39,3279.77,0.0157
+"US","Rhode Island","Kent",44003,164292,36576,438,22262.80,2665.98,0.0120
+"US","Rhode Island","Newport",44005,82082,14668,65,17869.93,791.89,0.0044
+"US","Rhode Island","Providence",44007,638931,173461,2268,27148.63,3549.68,0.0131
+"US","Rhode Island","Unassigned",90044,-1,46078,48,0.00,0.00,0.0010
+"US","Rhode Island","Washington",44009,125577,23328,198,18576.65,1576.72,0.0085

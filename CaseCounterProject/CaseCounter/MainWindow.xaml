@@ -49,6 +49,9 @@
                     <MenuItem Header="Compute all cosines" Click="AllCosines_Click"/>
                     <MenuItem Header="Compute all with window" Click="WindowDistances_Click"/>
                 </MenuItem>
+                <MenuItem Header="Maps">
+                    <MenuItem Header="US Map" Click="USMapView_Click"/>
+                </MenuItem>
                 <MenuItem Header="Data processing">
                     <MenuItem Header="To daily count" Click="DailyCount_Click"/>
                     <Separator/>
@@ -65,11 +68,11 @@
             <Canvas Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
 
             <Label Width="40" HorizontalAlignment ="Left">Start</Label>
-            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="730" SmallChange="1"  
+            <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="760" SmallChange="1"  
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Label Width="40" HorizontalAlignment ="Left">End</Label>
-            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="730" 
+            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="760" 
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Button Margin="10,0,0,0" Click="ClearSelection_Click">Clear</Button>
@@ -79,6 +82,7 @@
             <Button Margin="10,0,0,0" Click="WaveDetails_Click">Wave Details</Button>
             <Button Margin="10,0,0,0" Click="Drawing_Click">Draw</Button>
             <Button Margin="10,0,0,0" Click="MapInfo_Click">Map Info</Button>
+            <Button Margin="10,0,0,0" Click="SetDirectory_Click">Set Directory</Button>
 
 
         </StackPanel>

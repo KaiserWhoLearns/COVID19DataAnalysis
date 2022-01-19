@@ -6,6 +6,7 @@ using Utilities;
 using WaveAnalyzer;
 using System.Windows.Media;
 using System.Windows.Controls;
+using System.IO;
 
 
 
@@ -23,6 +24,8 @@ namespace CaseCounter {
         private TimeSeriesSet timeSeriesSetTwo;
         private List<string> filesInTSS;
 
+        private string topLevelDirectory;
+
         public TimeSeriesSet TimeSeriesSetOne { get { return timeSeriesSetOne; } }
 
         public TimeSeriesSet TimeSeriesSetTwo { get { return timeSeriesSetTwo; } }
@@ -37,6 +40,7 @@ namespace CaseCounter {
             timeSeriesSetOne = new();
             timeSeriesSetTwo = new();
             filesInTSS = new List<string>();
+            topLevelDirectory = "";
         }
 
 
@@ -411,6 +415,33 @@ namespace CaseCounter {
                 drawingWindow = new(tsList);
                 drawingWindow.Show();
             }
+        }
+
+        private void USMapView_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(topLevelDirectory)) {
+                SetDirectory();
+            }
+
+            TimeSeriesSet tss = new();
+            string filePath = Path.Combine(topLevelDirectory, "World by province/US_confirmed_sm.csv");
+            tss.LoadCsv(filePath);
+
+            MapView mv = new(tss);
+            mv.Show();
+        }
+
+        // We need to set the top level directory for looking up files
+        private void SetDirectory_Click(object sender, RoutedEventArgs e) {
+            SetDirectory();
+        }
+
+        private void SetDirectory() {  
+            _ = MessageBox.Show("Select top level directory");
+            System.Windows.Forms.FolderBrowserDialog folderDialog = new ();
+            System.Windows.Forms.DialogResult result = folderDialog.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK) {
+                topLevelDirectory = folderDialog.SelectedPath;
+            }  
         }
 
 

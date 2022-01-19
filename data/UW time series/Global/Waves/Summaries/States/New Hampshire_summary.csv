@@ -1,13 +1,13 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"US","New Hampshire","Belknap",33001,61303,8319,138,13570.30,2251.11,0.0166
-"US","New Hampshire","Carroll",33003,48909,5464,23,11171.77,470.26,0.0042
-"US","New Hampshire","Cheshire",33005,76085,7937,60,10431.75,788.59,0.0076
-"US","New Hampshire","Coos",33007,31563,4360,77,13813.64,2439.57,0.0177
-"US","New Hampshire","Grafton",33009,89885,8397,40,9341.94,445.01,0.0048
-"US","New Hampshire","Hillsborough",33011,417025,58299,731,13979.74,1752.89,0.0125
-"US","New Hampshire","Merrimack",33013,151390,18293,155,12083.36,1023.85,0.0085
-"US","New Hampshire","Rockingham",33015,309769,39169,356,12644.58,1149.24,0.0091
-"US","New Hampshire","Strafford",33017,130633,17247,149,13202.64,1140.60,0.0086
-"US","New Hampshire","Sullivan",33019,43146,5452,40,12636.17,927.08,0.0073
-"US","New Hampshire","Unassigned",90033,-1,2036,13,0.00,0.00,0.0064
+"US","New Hampshire","Belknap",33001,61302,10551,153,17211.51,2495.84,0.0145
+"US","New Hampshire","Carroll",33003,48910,7429,35,15189.12,715.60,0.0047
+"US","New Hampshire","Cheshire",33005,76085,10862,86,14276.14,1130.31,0.0079
+"US","New Hampshire","Coos",33007,31562,5150,87,16317.09,2756.48,0.0169
+"US","New Hampshire","Grafton",33009,89886,11927,50,13269.03,556.26,0.0042
+"US","New Hampshire","Hillsborough",33011,417024,78093,800,18726.26,1918.35,0.0102
+"US","New Hampshire","Merrimack",33013,151391,24799,180,16380.76,1188.97,0.0073
+"US","New Hampshire","Rockingham",33015,309769,52795,433,17043.35,1397.82,0.0082
+"US","New Hampshire","Strafford",33017,130632,22011,172,16849.62,1316.68,0.0078
+"US","New Hampshire","Sullivan",33019,43146,7010,57,16247.16,1321.10,0.0081
+"US","New Hampshire","Unassigned",90033,-1,6529,26,0.00,0.00,0.0040
 "US","New Hampshire","Nashua",0,-1,0,0,0.00,0.00,0.0000
