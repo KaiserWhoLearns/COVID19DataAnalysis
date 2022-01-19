@@ -17,12 +17,13 @@ d1 = loader.get_global_case_and_deaths_time_series_data()
 d3 = loader.get_available_and_supported_continents()  # In case you want to see continents supported to pass into the call above
 d = loader.get_united_states_case_and_death_time_series_data(county=True)  # True if you want State + County, and False if you want only State and not county level.
 
+pdb.set_trace()
 # death_data = d[1]
 # case_count_data = d[0]
 
 #%%
 
-def plot_sim_scores(sim_matrix, terr_names, data_type):
+def plot_sim_scores(sim_matrix, terr_names, data_type, continent="Africa"):
     # Plot the similarity scores between given country
     if len(terr_names) > 35:
         label_size = 5
@@ -41,14 +42,17 @@ def plot_sim_scores(sim_matrix, terr_names, data_type):
     ax.set_yticklabels(terr_names)
     ax.tick_params(axis='both', which='major', labelsize=label_size)
     plt.title(data_type + " cosine similarity near " + terr_names[0])
-    plt.savefig("results/similarity scores/Africa/" + data_type + "_" + terr_names[0] + ".png")
+    plt.savefig("results/similarity scores/" + continent + "/" + data_type + "_" + terr_names[0] + ".png")
     plt.clf()
     # plt.show()
 
+continent = "Europe"
 # Generate plot for neighboring African countries
-d2 = loader.get_continent_specific_case_and_deaths_time_series_data(continent='Africa')
+d2 = loader.get_continent_specific_case_and_deaths_time_series_data(continent=continent)
 
-with open("data/territory_names/africa_countries.txt", "r") as f:
+
+
+with open("data/territory_names/" + continent + "_countries.txt", "r") as f:
     country_names = [line.rstrip() for line in f]
 
 neighbors = pd.read_csv("data/neighbor_map/neighbors_world.csv")
@@ -84,7 +88,7 @@ for df_idx, df in enumerate(d2):
             for j in range(len(list_of_neighbors)):
                 sim_matrix[i, j] = processed_count[i, :].dot(processed_count[j, :])/ (np.linalg.norm(processed_count[i, :]) * np.linalg.norm(processed_count[j, :]))
 
-        plot_sim_scores(sim_matrix, list_of_neighbors, data_names[df_idx])
+        plot_sim_scores(sim_matrix, list_of_neighbors, data_names[df_idx], continent)
 
 #%%
 

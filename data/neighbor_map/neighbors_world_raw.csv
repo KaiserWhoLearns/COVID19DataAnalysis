@@ -221,7 +221,7 @@ Fiji,0,0,0,0,
 Finland,"2,690","1,670",4,3,"Norway: 736 km (457 mi)
  Sweden (2): 614 km (382 mi)
  Russia: 1,340 km (830 mi)"
-"France (excluding French overseas departments, collectivities, and territories)","2,889","1,795",10,8,"Andorra: 56.6 km (35.2 mi)
+"France","2,889","1,795",10,8,"Andorra: 56.6 km (35.2 mi)
  Belgium: 620 km (390 mi)
  Germany: 451 km (280 mi)
  Italy: 488 km (303 mi)
@@ -354,7 +354,7 @@ North Korea,"1,673","1,040",3,3,"People's Republic of China: 1,416 km (880 mi)
  South Korea: 238 km (148 mi)
  Russia: 19 km (12 mi)"
 South Korea,238,148,1,1,North Korea: 238 km (148 mi)
-Kosovo[4],701,436,4,4,"Albania: 112 km (70 mi)
+Kosovo,701,436,4,4,"Albania: 112 km (70 mi)
  Montenegro: 79 km (49 mi)
  North Macedonia: 159 km (99 mi)
  Serbia: 352 km (219 mi)"
@@ -672,7 +672,7 @@ Ukraine,"4,663","2,897",8,7,"Belarus: 891 km (554 mi)
  Slovakia: 97 km (60 mi)"
 United Arab Emirates,867,539,5 (6),2 (3),"Oman (4): 410 km (250 mi)
  Saudi Arabia: 457 km (284 mi)"
-United Kingdom[44],499,310,1,1,Ireland: 499 km (310 mi)
+United Kingdom,499,310,1,1,Ireland: 499 km (310 mi)
 United Kingdom (plus British overseas territories and Crown dependencies),,,,,
 →including:,513,319,7,3,"Cyprus (5):[21] 152 km (94 mi)
  Ireland: 499 km (310 mi)
