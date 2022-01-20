@@ -116,7 +116,7 @@ Cameroon,"4,591","2,853",6,6,"Central African Republic: 797 km (495 mi)
  Equatorial Guinea: 189 km (117 mi)
  Gabon: 298 km (185 mi)
  Nigeria: 1,690 km (1,050 mi)"
-Canada,"8,893","5,526",4,1,"United States (4): 8,893 km (5,526 mi)[16]"
+Canada,"8,893","5,526",4,1,"US: 8,893 km (5,526 mi)[16]"
 Cabo Verde,0,0,0,0,
 Central African Republic,"5,213","3,239",6,6,"Cameroon: 797 km (495 mi)
  Chad: 1,197 km (744 mi)
@@ -221,7 +221,7 @@ Fiji,0,0,0,0,
 Finland,"2,690","1,670",4,3,"Norway: 736 km (457 mi)
  Sweden (2): 614 km (382 mi)
  Russia: 1,340 km (830 mi)"
-"France (excluding French overseas departments, collectivities, and territories)","2,889","1,795",10,8,"Andorra: 56.6 km (35.2 mi)
+"France","2,889","1,795",10,8,"Andorra: 56.6 km (35.2 mi)
  Belgium: 620 km (390 mi)
  Germany: 451 km (280 mi)
  Italy: 488 km (303 mi)
@@ -354,7 +354,7 @@ North Korea,"1,673","1,040",3,3,"People's Republic of China: 1,416 km (880 mi)
  South Korea: 238 km (148 mi)
  Russia: 19 km (12 mi)"
 South Korea,238,148,1,1,North Korea: 238 km (148 mi)
-Kosovo[4],701,436,4,4,"Albania: 112 km (70 mi)
+Kosovo,701,436,4,4,"Albania: 112 km (70 mi)
  Montenegro: 79 km (49 mi)
  North Macedonia: 159 km (99 mi)
  Serbia: 352 km (219 mi)"
@@ -420,7 +420,7 @@ Mauritania,"5,074","3,153",4,4,"Algeria: 463 km (288 mi)
 Mauritius,0,0,0,0,
 Mexico,"4,353","2,705",3,3,"Belize: 250 km (160 mi)
  Guatemala: 962 km (598 mi)
- United States: 3,141 km (1,952 mi)"
+ US: 3,141 km (1,952 mi)"
 Federated States of Micronesia,0,0,0,0,
 Moldova,"1,389",863,2,2,"Romania: 450 km (280 mi)
  Ukraine: 939 km (583 mi)"
@@ -672,12 +672,12 @@ Ukraine,"4,663","2,897",8,7,"Belarus: 891 km (554 mi)
  Slovakia: 97 km (60 mi)"
 United Arab Emirates,867,539,5 (6),2 (3),"Oman (4): 410 km (250 mi)
  Saudi Arabia: 457 km (284 mi)"
-United Kingdom[44],499,310,1,1,Ireland: 499 km (310 mi)
+United Kingdom,499,310,1,1,Ireland: 499 km (310 mi)
 United Kingdom (plus British overseas territories and Crown dependencies),,,,,
 →including:,513,319,7,3,"Cyprus (5):[21] 152 km (94 mi)
  Ireland: 499 km (310 mi)
  Spain:[45] 1.2 km (0.75 mi)"
-United States,"12,034","7,478",5,2,"Canada (4): 8,893 km (5,526 mi)[16]
+US,"12,034","7,478",5,2,"Canada (4): 8,893 km (5,526 mi)[16]
  Mexico: 3,141 km (1,952 mi)"
 Uruguay,"1,564",972,2,2,"Argentina: 579 km (360 mi)
  Brazil: 985 km (612 mi)"
