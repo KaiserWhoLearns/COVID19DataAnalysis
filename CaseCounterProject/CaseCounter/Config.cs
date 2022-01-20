@@ -40,7 +40,8 @@ namespace CaseCounter {
         public List<string> SouthAmericaList { get; }
         public List<string> ContinentList { get; }
         public List<string> CountriesWithProvincesList { get; }
-
+        public List<string> ContinentalAfricaList { get; }
+        public List<string> IndiaStatesList { get; }
 
 
 
@@ -53,12 +54,14 @@ namespace CaseCounter {
             UsWestList = US_west.ToList();
 
             AfricaList = African_countries.ToList();
+            ContinentalAfricaList = Continental_African_countries.ToList();
             EuropeList = European_countries.ToList();
             AsiaList = Asian_countries.ToList();
             NorthAmericaList = NorthAmerican_countries.ToList();
             SouthAmericaList = SouthAmerican_countries.ToList();
             CountriesWithProvincesList = CountriesWithProvinces.ToList();
             ContinentList = Continents.ToList();
+            IndiaStatesList = India_states.ToList();
 
             Admin0RemoveList = Admin0Remove.ToList();
 
@@ -132,7 +135,7 @@ namespace CaseCounter {
 
         private readonly string[] Admin0Remove = { "Cruise Ship", "Summer Olympics 2020", "Others", "Taipei and environs", "occupied Palestinian territory",
                                                     "MS Zaandam", " Azerbaijan", "The Bahamas", "Bahamas, The", "Channel Islands", "Diamond Princess",
-                                                    "Russian Federation", "St. Martin", "Saint Martine", "Republic of Moldova", "Republic of the Congo", "Cape Verde", 
+                                                    "Russian Federation", "St. Martin", "Saint Martine", "Republic of Moldova", "Republic of the Congo", "Cape Verde",
                                                     "Greenland", "Macau", "Ivory Coast", "North Ireland", "Gibraltar", "UK", "Saint Barthelemy", "Saint Martin",
                                                     "Aruba", "Jersey", "Curacao", "Guam", "Puerto Rico", "East Timor"};
 
@@ -206,7 +209,7 @@ namespace CaseCounter {
                                                 "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
                                                 "Washington", "West Virginia","Wisconsin","Wyoming" };
 
-        private readonly string[] US_midwest = {"Illinois","Indiana","Iowa","Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", 
+        private readonly string[] US_midwest = {"Illinois","Indiana","Iowa","Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska",
                                                 "North Dakota","Ohio", "South Dakota",  "West Virginia","Wisconsin"};
 
         private readonly string[] US_northeast = {"Connecticut", "Delaware", "District of Columbia", "Maine","Maryland",
@@ -229,6 +232,16 @@ namespace CaseCounter {
                                                 "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius",
                                                 "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe",
                                                 "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
+                                                "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
+
+
+        private readonly string[] Continental_African_countries = { "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi",
+                                                "Cameroon", "Central African Republic", "Chad",  "Congo (Brazzaville)",
+                                                 "Congo (Kinshasa)", "Cote d'Ivoire", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea",
+                                                "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
+                                                "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania",
+                                                "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda",
+                                                "Senegal",  "Sierra Leone", "Somalia", "South Africa", "South Sudan",
                                                 "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
 
         private readonly string[] European_countries = {"Albania","Andorra","Austria","Belarus","Belgium","Bosnia and Herzegovina","Bulgaria",
@@ -254,6 +267,13 @@ namespace CaseCounter {
         private readonly string[] CountriesWithProvinces = {"Australia", "Belgium", "Brazil", "Canada", "Chile", "China", "Colombia", "Denmark", "Germany", "India",
                                                 "Italy", "Japan", "Malaysia", "Mexico", "Netherlands", "Pakistan", "Peru", "Russia",  "Spain", "Sweden", "Ukraine",
                                                 "United Kingdom", "US" };
+
+        private readonly string[] India_states = {"Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh",
+                                                    "Chhattisgarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana",
+                                                    "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Ladakh",
+                                                    "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
+                                                    "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh",
+                                                    "Uttarakhand", "West Bengal" };
 
         // Country level anomalies
         private readonly string[] Admin0Anomalies = { "France", "484" };

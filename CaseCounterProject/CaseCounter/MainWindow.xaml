@@ -51,6 +51,8 @@
                 </MenuItem>
                 <MenuItem Header="Maps">
                     <MenuItem Header="US Map" Click="USMapView_Click"/>
+                    <MenuItem Header="Africa Map" Click="AfricaMapView_Click"/>
+                    <MenuItem Header="India Map" Click="IndiaMapView_Click"/>
                 </MenuItem>
                 <MenuItem Header="Data processing">
                     <MenuItem Header="To daily count" Click="DailyCount_Click"/>

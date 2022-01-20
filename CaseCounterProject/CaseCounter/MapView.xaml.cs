@@ -14,6 +14,7 @@ using Microsoft.Web.WebView2.Core;
 using System.IO;
 using System.Reflection;
 using DataSeries;
+using Utilities;
 
 namespace CaseCounter {
     /// <summary>
@@ -33,18 +34,71 @@ namespace CaseCounter {
 
         //   private readonly string webDirectory = "O:\\cse\\web\\homes\\anderson\\b";     // Hard coded to a fixed directory
         //   private readonly string localURL = "https://homes.cs.washington.edu/~anderson/b/";
+/*
+        private readonly string[] US_states = {"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia",
+                                                "Florida", "Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
+                                                "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+                                                "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+                                                "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+                                                "Washington", "West Virginia","Wisconsin","Wyoming" };
+
+        // Excluding island countries
+        private readonly string[] Continental_African_countries = { "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", 
+                                                "Cameroon", "Central African Republic", "Chad",  "Congo (Brazzaville)",
+                                                 "Congo (Kinshasa)", "Cote d'Ivoire", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea",
+                                                "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
+                                                "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", 
+                                                "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda",
+                                                "Senegal",  "Sierra Leone", "Somalia", "South Africa", "South Sudan",
+                                                "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe" };
+ */ 
 
         TimeSeriesSet timeSeriesSet;
+        string mapName;
+        string csvFileName;
+        string d3FileName;
+        List<string> regionNames;
+        TimeSeriesSet.RegionString regionSelector;
+        Config config;
 
-        public MapView(TimeSeriesSet tss) {
+        public MapView(string mapName, TimeSeriesSet tss) {
             InitializeComponent();
             webView.CoreWebView2InitializationCompleted += Webview_InitializationComplete;
 
+            config = new();
             timeSeriesSet = tss;
+            this.mapName = mapName;
+
             int lastDay = tss.LastDay();
             startDaySlider.Maximum = lastDay;
             endDaySlider.Maximum = lastDay;
             endDaySlider.Value = lastDay;
+            mapNameLabel.Content = mapName;
+
+            switch (mapName) {
+                case "Africa":
+                    csvFileName = "data/africa_confirmed.csv";
+                    d3FileName = "d3_africa.html";
+                    regionNames = config.ContinentalAfricaList;
+                    regionSelector = Admin0Selector;
+                    break;
+                case "UnitedStates":
+                    csvFileName = "data/us_confirmed.csv";
+                    d3FileName = "d3_us_states.html";
+                    regionNames = config.UsStatesList;
+                    regionSelector = Admin1Selector;
+                    break;
+                case "India":
+                    csvFileName = "data/india_confirmed.csv";
+                    d3FileName = "d3_india_states.html";
+                    regionNames = config.IndiaStatesList;
+                    regionSelector = Admin1Selector;
+                    break;
+                default:
+                    throw new ProgrammingException("Unexpected map type in MapView");
+            }
+
+
         }
 
         private void Webview_InitializationComplete(object sender, EventArgs e) {
@@ -73,25 +127,20 @@ namespace CaseCounter {
 
 
         private void Refresh_Click(object sender, RoutedEventArgs e) {
-            LoadHtml("d3_us_states.html");
+            WriteRandom();
         }
 
-        private readonly string[] US_states = {"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia",
-                                                "Florida", "Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
-                                                "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
-                                                "New Jersey", "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
-                                                "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
-                                                "Washington", "West Virginia","Wisconsin","Wyoming" };
+
         private void WriteRandom() {
             Random rand = new();
             StringBuilder sb = new();
-            sb.AppendLine("state,value");
-            foreach (string str in US_states) {
-                sb.AppendLine($"{str},{rand.NextDouble()}");
+            sb.AppendLine("region,value");
+            foreach (string str in regionNames) {
+                sb.AppendLine($"{str},{rand.NextDouble():F5}");
             }
 
             string fileString = sb.ToString();
-            string fileName = "data/random.csv";
+            string fileName = csvFileName;
             using (StreamWriter outputFile = new(Path.Combine(webDirectory, fileName))) {
                 outputFile.Write(fileString);
             }
@@ -99,21 +148,30 @@ namespace CaseCounter {
 
         }
 
-        private void LoadUS_Click(object sender, RoutedEventArgs e) {
-            CopyHtmlToWebDirectory("d3_us_states.html");
-            LoadHtml("d3_us_states.html");
+        public string Admin0Selector(TimeSeries ts) {
+            return ts.Admin0;
         }
+
+        public string Admin1Selector(TimeSeries ts) {
+            return ts.Admin1;
+        }
+
 
         private void Random_Click(object sender, RoutedEventArgs e) {
             WriteRandom();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e) {
-            string fileString = timeSeriesSet.NormalizedCaseCount((int)startDaySlider.Value, (int)endDaySlider.Value);
-            string fileName = "data/us_confirmed.csv";
+            string fileString = timeSeriesSet.MapValues(regionSelector, (int)startDaySlider.Value, (int)endDaySlider.Value);
+            string fileName = csvFileName;
             using (StreamWriter outputFile = new(Path.Combine(webDirectory, fileName))) {
                 outputFile.Write(fileString);
             }
+        }
+
+        private void LoadMap_Click(object sender, RoutedEventArgs e) {
+            CopyHtmlToWebDirectory(d3FileName);
+            LoadHtml(d3FileName);
         }
     }
 }

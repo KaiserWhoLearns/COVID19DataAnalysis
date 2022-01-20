@@ -424,6 +424,18 @@ namespace DataSeries {
             return sb.ToString();
         }
 
+        public delegate string RegionString(TimeSeries ts);
+
+        public string MapValues(RegionString regionString, int startDay, int endDay) {
+            StringBuilder sb = new();
+            sb.AppendLine("region,value");
+
+            foreach (TimeSeries ts in series.Values) {
+                sb.AppendLine($"{regionString(ts)},{ts.NormalizedCaseCount(startDay, endDay):F5}");
+            }
+            return sb.ToString();
+        }
+
     }
 
 }
