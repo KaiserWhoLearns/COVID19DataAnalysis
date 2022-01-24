@@ -109,7 +109,7 @@ namespace CaseCounter {
             world_province_TSS.AddTimeSeriesSet(unitedStates_state_TSS);
             world_province_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBP_Daily_with_us.csv"));
 
-            ReportStep("Add provice and national sets");
+            ReportStep("Add province and national sets");
             world_country_TSS.AddTimeSeriesSet(world_province_combined_TSS);
             world_country_TSS.AddTimeSeriesSet(us_only_TSS);
             world_country_TSS.WriteToFile(Path.Combine(topLevelOutputDir, idf, "WBC_Daily_all_countries.csv"));
@@ -255,6 +255,7 @@ namespace CaseCounter {
 
         void BuildContinentFiles(TimeSeriesSet world_TSS, string dataType, string path) {
             BuildContinentFiles("Africa", config.AfricaList, world_TSS, dataType, path);
+            BuildContinentFiles("ContinentalAfrica", config.ContinentalAfricaList, world_TSS, dataType, path);
             BuildContinentFiles("Europe", config.EuropeList, world_TSS, dataType, path);
             BuildContinentFiles("Asia", config.AsiaList, world_TSS, dataType, path);
             BuildContinentFiles("NorthAmerica", config.NorthAmericaList, world_TSS, dataType, path);

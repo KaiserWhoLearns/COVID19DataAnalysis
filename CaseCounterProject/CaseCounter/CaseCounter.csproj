@@ -8,11 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="D3Files\d3_africa.html" />
+    <None Remove="D3Files\d3_india_states.html" />
     <None Remove="D3Files\d3_us_states.html" />
     <None Remove="D3Files\index.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="D3Files\d3_africa.html" />
+    <EmbeddedResource Include="D3Files\d3_india_states.html" />
     <EmbeddedResource Include="D3Files\d3_us_states.html" />
     <EmbeddedResource Include="D3Files\index.html" />
   </ItemGroup>

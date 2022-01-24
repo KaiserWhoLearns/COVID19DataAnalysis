@@ -16,18 +16,17 @@
 			var h = 600;
 
 			//Define map projection
-			var projection = d3.geoAlbersUsa()
-								   .translate([w/2, h/2])
-								   .scale([1000]);
+			var projection = d3.geoMercator()
+								   .translate([w/3,h/2])
+								   .scale([400]);
 
 			//Define path generator
 			var path = d3.geoPath()
 							 .projection(projection);
 
 			//Define quantize scale to sort data values into buckets of color
-		var color = d3.scaleQuantize()
-			.range(["#ffffe5", "#fff6c0", "#fee799", "#fece66", "#fdac3b", "#f58720", "#e1640e", "#bf4804", "#933304", "#662506"]);
-	//							.range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+			var color = d3.scaleQuantize()
+                .range(["#ffffcc", "#d9f0a3", "#addd8e", "#78c679", "#41ab5d", "#238443", "#005a32"]);
 								//Colors derived from ColorBrewer, by Cynthia Brewer, and included in
 								//https://github.com/d3/d3-scale-chromatic
 
@@ -38,7 +37,7 @@
 						.attr("height", h);
 
 			//Load in agriculture data
-			d3.csv("data/us_confirmed.csv", function(data) {
+			d3.csv("data/africa_confirmed.csv", function(data) {
 
 				//Set input domain for color scale
 				color.domain([
@@ -47,7 +46,7 @@
 				]);
 
 				//Load in GeoJSON data
-				d3.json("maps/us-states.json", function(json) {
+				d3.json("maps/africa.geo.json", function(json) {
 
 					//Merge the ag. data and GeoJSON
 					//Loop through once for each ag. data value

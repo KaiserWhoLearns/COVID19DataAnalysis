@@ -1,0 +1,477 @@
+{
+  "data": {
+    "search": {
+      "repositoryCount": 366,
+      "pageInfo": {
+        "startCursor": "Y3Vyc29yOjMwMQ==",
+        "hasNextPage": false,
+        "hasPreviousPage": true,
+        "endCursor": "Y3Vyc29yOjM2Ng=="
+      },
+      "nodes": [
+        {
+          "nameWithOwner": "RajarsiGit/Understanding-the-concept-of-Diffusion-on-COVID-19-virus-on-India",
+          "createdAt": "2020-04-18T08:13:27Z",
+          "updatedAt": "2020-09-06T14:31:23Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "diegodiasdos/Hackathon-Sanntander-Data-Challenge",
+          "createdAt": "2020-08-02T15:56:51Z",
+          "updatedAt": "2020-08-03T01:59:34Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "dusandjovanovic/pyspark-bigdata-sars-cov-2-analysis",
+          "createdAt": "2021-03-20T11:33:41Z",
+          "updatedAt": "2021-07-08T12:37:00Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "ToastCoder/COVID-CT",
+          "createdAt": "2021-09-04T04:57:11Z",
+          "updatedAt": "2021-09-05T10:00:59Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "amf60/Vac_Covid19_BR_SC_Combinations_of_Concern_1",
+          "createdAt": "2021-05-30T23:51:17Z",
+          "updatedAt": "2021-08-30T18:15:57Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "inuritdino/HyperInflamDataProcessing",
+          "createdAt": "2020-08-28T08:08:11Z",
+          "updatedAt": "2021-02-04T15:17:12Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "sanggusti/tubes_dskc_covid",
+          "createdAt": "2020-06-20T06:55:24Z",
+          "updatedAt": "2020-07-04T05:04:23Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "como-ph/comoparams",
+          "createdAt": "2020-04-15T08:16:09Z",
+          "updatedAt": "2020-06-27T10:25:42Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "falamo1969/COVID-19_worldwide",
+          "createdAt": "2021-04-01T09:28:14Z",
+          "updatedAt": "2021-04-11T10:49:05Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "janluke/iccas-code",
+          "createdAt": "2020-04-14T18:16:09Z",
+          "updatedAt": "2020-10-03T10:15:30Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "francescom412/SABD_project1_BallettiMarino",
+          "createdAt": "2020-05-04T13:00:15Z",
+          "updatedAt": "2021-02-24T11:52:30Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "SINTEF-9012/covid-19-data-pipeline",
+          "createdAt": "2020-11-04T08:24:07Z",
+          "updatedAt": "2021-05-28T07:30:40Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "JalajVora/COVID-19-predictions-on-Chest-X-Rays-using-Interpretable-Machine-Learning",
+          "createdAt": "2020-05-13T10:27:05Z",
+          "updatedAt": "2021-05-20T13:18:32Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "bsamimi25/COVID-19_Chest-Xray_Neural_Network",
+          "createdAt": "2021-01-20T19:29:49Z",
+          "updatedAt": "2022-01-17T16:20:06Z",
+          "forkCount": 1,
+          "stargazerCount": 3
+        },
+        {
+          "nameWithOwner": "nicholascannon/covid-19-graph-analysis",
+          "createdAt": "2020-06-01T05:32:44Z",
+          "updatedAt": "2021-09-23T09:50:34Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "raaaouf/Covid-19-Detection-CNN",
+          "createdAt": "2020-09-08T22:21:38Z",
+          "updatedAt": "2021-05-11T01:20:11Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "lrmendes/WHO-DATA-MINING",
+          "createdAt": "2020-06-18T07:39:01Z",
+          "updatedAt": "2020-06-27T22:00:16Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "Xenia101/Korean-Data-Set",
+          "createdAt": "2020-02-16T09:31:57Z",
+          "updatedAt": "2021-01-11T06:20:40Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "KevNgo/Detectoux",
+          "createdAt": "2021-09-08T14:18:18Z",
+          "updatedAt": "2021-10-12T13:50:15Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "TextCorpusLabs/covid19",
+          "createdAt": "2020-03-19T11:42:47Z",
+          "updatedAt": "2021-06-14T19:47:02Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "zilliz-bootcamp/covid_19_data_research",
+          "createdAt": "2021-01-05T10:26:16Z",
+          "updatedAt": "2021-08-10T08:45:15Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "rishabh547/Visual_Data_Analytics",
+          "createdAt": "2021-10-18T19:14:36Z",
+          "updatedAt": "2022-01-08T16:30:42Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "enricocid/monitoraggio-vaccini-italia",
+          "createdAt": "2021-10-28T20:26:19Z",
+          "updatedAt": "2021-10-29T11:07:57Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "lpillmann/covid19-vaccination-data-pipeline",
+          "createdAt": "2021-07-07T14:03:43Z",
+          "updatedAt": "2021-07-21T01:16:27Z",
+          "forkCount": 1,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "mohd-faizy/09P_Detecting_COVID_19_with_Chest_X-Ray_using_PyTorch",
+          "createdAt": "2020-08-23T17:32:01Z",
+          "updatedAt": "2021-11-08T07:34:56Z",
+          "forkCount": 2,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "liviucotfas/covid-19-mask-stance-detection",
+          "createdAt": "2021-09-19T17:02:43Z",
+          "updatedAt": "2021-10-19T16:58:56Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "infinitedreams9586/RDF",
+          "createdAt": "2021-08-14T13:18:21Z",
+          "updatedAt": "2021-09-11T08:33:10Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "orangejuicetin/CORD-19_Analysis",
+          "createdAt": "2020-04-19T21:42:36Z",
+          "updatedAt": "2020-10-29T21:58:52Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "farabimahmud/covid-vaccine-hesitancy-tweets",
+          "createdAt": "2021-03-07T23:08:53Z",
+          "updatedAt": "2021-03-17T21:21:45Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "rutvik8795/covid-19-analysis-hadoop-spark",
+          "createdAt": "2020-06-17T01:43:21Z",
+          "updatedAt": "2020-06-17T01:47:11Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "ederhmaia/covid19-twitterbot",
+          "createdAt": "2021-08-10T08:49:01Z",
+          "updatedAt": "2021-09-05T09:26:01Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "arpita739/COVID-19-Detection-from-Lung-CT-Scan-Images-using-Transfer-Learning-Approach",
+          "createdAt": "2021-06-05T15:48:39Z",
+          "updatedAt": "2021-11-15T17:21:22Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "govindk-18/Interactive-Covid19-Dashboard",
+          "createdAt": "2021-10-11T07:40:13Z",
+          "updatedAt": "2021-12-16T10:23:32Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "natyrrr/NYC-Restaurant-Analysis",
+          "createdAt": "2020-08-05T23:10:35Z",
+          "updatedAt": "2020-08-24T21:58:08Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "amf60/Vac_Covid19_BR_SC_Combinations_of_Concern_2",
+          "createdAt": "2021-06-13T21:17:40Z",
+          "updatedAt": "2021-08-30T18:35:12Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "maftouni/Patient_Aware_Splitter",
+          "createdAt": "2020-12-30T16:30:06Z",
+          "updatedAt": "2022-01-11T15:10:28Z",
+          "forkCount": 0,
+          "stargazerCount": 2
+        },
+        {
+          "nameWithOwner": "adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-combination-of-gaussians-model",
+          "createdAt": "2021-01-04T03:57:52Z",
+          "updatedAt": "2021-03-08T00:28:15Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "OmarConcepcion/Covid19-Panama",
+          "createdAt": "2020-05-11T08:53:27Z",
+          "updatedAt": "2020-05-11T09:08:42Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "lschmelzeisen/nasty-ncov-tweets",
+          "createdAt": "2020-08-01T13:42:15Z",
+          "updatedAt": "2020-09-21T07:36:21Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "lorenzomancini1/Dask_Distributed_Processing_Project",
+          "createdAt": "2021-07-31T15:38:29Z",
+          "updatedAt": "2021-07-31T15:51:00Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "ISG-ICS/Geolocated_USA_tweets_w_mask_IDs",
+          "createdAt": "2021-07-12T19:01:54Z",
+          "updatedAt": "2021-09-06T22:59:08Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "amf60/Vac_Covid19_BR_SC_Combinations_of_Concern_5",
+          "createdAt": "2021-09-02T19:49:30Z",
+          "updatedAt": "2021-09-04T15:07:57Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "didar00/COVID-19-Detection-Using-KNN-and-Weighted-KNN",
+          "createdAt": "2021-06-30T11:01:54Z",
+          "updatedAt": "2021-06-30T11:19:36Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "AIMedLab/DeepCE",
+          "createdAt": "2020-08-16T18:09:37Z",
+          "updatedAt": "2021-04-22T01:31:26Z",
+          "forkCount": 1,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "shanathvemula/CoWIN_Finding_Vaccination_Centers",
+          "createdAt": "2021-05-21T13:17:46Z",
+          "updatedAt": "2021-07-26T14:47:57Z",
+          "forkCount": 0,
+          "stargazerCount": 5
+        },
+        {
+          "nameWithOwner": "adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model",
+          "createdAt": "2021-03-07T22:33:55Z",
+          "updatedAt": "2021-04-21T23:13:59Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "Preetesh21/Covid-19",
+          "createdAt": "2020-04-01T16:32:50Z",
+          "updatedAt": "2020-08-04T04:35:14Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "tobiaskortus/covid19-search",
+          "createdAt": "2020-05-01T14:19:02Z",
+          "updatedAt": "2020-12-15T17:51:12Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "DeepanNarayanaMoorthy/Effect-of-COVID-19-pandemic-on-E-commerce",
+          "createdAt": "2020-08-23T11:37:13Z",
+          "updatedAt": "2021-01-08T12:14:30Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "raimondilab/An-explainable-model-of-host-genetic-interactions-linked-to-Covid19-severity",
+          "createdAt": "2021-11-12T01:58:33Z",
+          "updatedAt": "2021-11-19T09:15:24Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "PoojaDasIndia/Portfolio-Projects",
+          "createdAt": "2021-06-23T07:19:57Z",
+          "updatedAt": "2021-07-08T17:36:35Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "XxidroxX/Covid19-Diagnosis-from-recorded-coughts",
+          "createdAt": "2020-11-16T20:59:43Z",
+          "updatedAt": "2020-11-29T20:07:08Z",
+          "forkCount": 0,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "thongekchakrit/covid19-forex-airquality-an-analysis",
+          "createdAt": "2020-07-16T16:06:49Z",
+          "updatedAt": "2021-01-02T13:58:31Z",
+          "forkCount": 1,
+          "stargazerCount": 1
+        },
+        {
+          "nameWithOwner": "anjalysam/COVID19-Data-Analysis",
+          "createdAt": "2020-11-14T04:55:47Z",
+          "updatedAt": "2020-12-01T14:54:02Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "Tahahaha7/COVID_Movement_Range",
+          "createdAt": "2020-08-03T19:23:13Z",
+          "updatedAt": "2020-12-12T12:39:36Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "asmaesough/Economic-Impact-of-COVID-19",
+          "createdAt": "2021-11-05T21:53:20Z",
+          "updatedAt": "2021-11-21T00:58:38Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "maggieezzat/Covid19-Semantic-based-Search",
+          "createdAt": "2020-04-29T17:18:12Z",
+          "updatedAt": "2020-08-02T19:36:20Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "amf60/Vac_Covid19_BR_SC_Combinations_of_Concern_4",
+          "createdAt": "2021-08-30T18:47:11Z",
+          "updatedAt": "2021-08-30T20:11:40Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "UtkarshC99/Employee-Attrition-Prediction",
+          "createdAt": "2021-07-20T15:30:14Z",
+          "updatedAt": "2021-07-20T15:34:10Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "m-root/Covid-19-API",
+          "createdAt": "2020-03-29T21:09:22Z",
+          "updatedAt": "2020-03-30T10:49:38Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "madziialenkaa/Covid-19_Dataviz",
+          "createdAt": "2021-05-19T20:12:58Z",
+          "updatedAt": "2021-06-18T21:31:26Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "Ahad-Al-Seraihi/COVID-19-World-Vaccination-Progress",
+          "createdAt": "2021-06-28T21:50:10Z",
+          "updatedAt": "2021-06-30T17:27:09Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "amf60/Vac_Covid19_BR_SC_Combinations_of_Concern_3",
+          "createdAt": "2021-07-04T23:31:24Z",
+          "updatedAt": "2021-08-30T20:13:58Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "sahajshukla/covid-gossip",
+          "createdAt": "2021-01-22T22:45:29Z",
+          "updatedAt": "2021-03-02T18:07:33Z",
+          "forkCount": 1,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "SarmadNazki/Covid19-detection-using-chest-CT-Scans",
+          "createdAt": "2021-07-08T19:55:37Z",
+          "updatedAt": "2021-09-07T05:31:07Z",
+          "forkCount": 0,
+          "stargazerCount": 0
+        },
+        {
+          "nameWithOwner": "cirosantilli/china-dictatorship",
+          "createdAt": "2015-04-02T20:51:50Z",
+          "updatedAt": "2022-01-19T06:25:04Z",
+          "forkCount": 136,
+          "stargazerCount": 722
+        }
+      ]
+    }
+  }
+}

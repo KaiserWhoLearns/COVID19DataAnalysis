@@ -40,7 +40,7 @@ namespace CaseCounter {
             timeSeriesSetOne = new();
             timeSeriesSetTwo = new();
             filesInTSS = new List<string>();
-            topLevelDirectory = "";
+            topLevelDirectory = "C:\\Users\\anderson\\Documents\\GitHub\\COVID19DataAnalysis\\data\\UW time series\\Global";
         }
 
 
@@ -417,17 +417,30 @@ namespace CaseCounter {
             }
         }
 
-        private void USMapView_Click(object sender, RoutedEventArgs e) {
+
+        private void LaunchMapView(string mapName, string fileName) {
             if (string.IsNullOrEmpty(topLevelDirectory)) {
                 SetDirectory();
             }
 
             TimeSeriesSet tss = new();
-            string filePath = Path.Combine(topLevelDirectory, "World by province/US_confirmed_sm.csv");
+            string filePath = Path.Combine(topLevelDirectory, fileName);
             tss.LoadCsv(filePath);
 
-            MapView mv = new(tss);
+            MapView mv = new(mapName, tss);
             mv.Show();
+
+        }
+        private void USMapView_Click(object sender, RoutedEventArgs e) {
+            LaunchMapView("UnitedStates", "World by province/US_confirmed_sm.csv");
+        }
+
+        private void AfricaMapView_Click(object sender, RoutedEventArgs e) {
+            LaunchMapView("Africa", "World by country/ContinentalAfrica_confirmed_sm.csv");
+        }
+
+        private void IndiaMapView_Click(object sender, RoutedEventArgs e) {
+            LaunchMapView("India", "World by province/India_confirmed_sm.csv");
         }
 
         // We need to set the top level directory for looking up files
