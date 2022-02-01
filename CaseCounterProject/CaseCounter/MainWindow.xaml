@@ -67,7 +67,7 @@
                     <Separator/>
                 </MenuItem>
             </Menu>
-            <Canvas Width="200" Height="20"  x:Name="colorCanvas" Background="Gray"/>
+            <Canvas Width="100" Height="20"  x:Name="colorCanvas" Background="Gray"/>
 
             <Label Width="40" HorizontalAlignment ="Left">Start</Label>
             <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="760" SmallChange="1"  
