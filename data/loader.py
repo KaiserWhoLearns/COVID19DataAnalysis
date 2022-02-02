@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+from typing import overload
 
 from pkg_resources import resource_filename
 
@@ -20,6 +21,22 @@ def __populate_continent_wise_country_lookup(cases, continent_name):
     unique_countries_in_continent_df.sort()
     __continent_wise_lookup_of_countries[continent_name] = unique_countries_in_continent_df
     return __continent_wise_lookup_of_countries
+
+def get_global_raw_case_and_death_time_series_data():
+    """
+    This function reads the raw JHU files
+    at the directory location `UW Time Series/Global/Intermediate data files/`
+    and uses the files:
+    1. World_confirmed_sm.csv (for the cases data)
+    2. World_deaths_sm.csv (for the deaths data)
+
+    :return: (cases, deaths) Dataframes for the Global
+    """
+    local_dir_path = r'UW time series/Global/Intermediate data files/'
+    file_name = "WBC_Daily.csv"
+    file_path = f'{local_dir_path}{file_name}'
+    overall_df = __load_file(file_path)
+    return overall_df[overall_df["DataType"] == "Confirmed"], overall_df[overall_df["DataType"] == "Deaths"]
 
 
 def get_global_case_and_deaths_time_series_data():
