@@ -27,13 +27,13 @@ namespace CaseCounter {
 
 
         // Local server
-        private readonly string webDirectory = "C:\\Users\\anderson\\Documents\\CC-web-home";
-       private readonly string localURL = "http://localhost:8888";
+       // private readonly string webDirectory = "C:\\Users\\anderson\\Documents\\CC-web-home";
+       //private readonly string localURL = "http://localhost:8888";
 
         // CSE Home ddirectory
 
-        //   private readonly string webDirectory = "O:\\cse\\web\\homes\\anderson\\b";     // Hard coded to a fixed directory
-        //   private readonly string localURL = "https://homes.cs.washington.edu/~anderson/b/";
+           private readonly string webDirectory = "O:\\cse\\web\\homes\\anderson\\b";     // Hard coded to a fixed directory
+           private readonly string localURL = "https://homes.cs.washington.edu/~anderson/b/";
 /*
         private readonly string[] US_states = {"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia",
                                                 "Florida", "Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
@@ -60,11 +60,13 @@ namespace CaseCounter {
         List<string> regionNames;
         TimeSeriesSet.RegionString regionSelector;
         Config config;
+        Random random;
 
         public MapView(string mapName, TimeSeriesSet tss) {
             InitializeComponent();
             webView.CoreWebView2InitializationCompleted += Webview_InitializationComplete;
 
+            random = new();
             config = new();
             timeSeriesSet = tss;
             this.mapName = mapName;
@@ -132,20 +134,14 @@ namespace CaseCounter {
 
 
         private void WriteRandom() {
-            Random rand = new();
+
             StringBuilder sb = new();
             sb.AppendLine("region,value");
             foreach (string str in regionNames) {
-                sb.AppendLine($"{str},{rand.NextDouble():F5}");
+                sb.AppendLine($"{str},{random.NextDouble():F5}");
             }
 
-            string fileString = sb.ToString();
-            string fileName = csvFileName;
-            using (StreamWriter outputFile = new(Path.Combine(webDirectory, fileName))) {
-                outputFile.Write(fileString);
-            }
-
-
+            WriteCsv(sb.ToString());
         }
 
         public string Admin0Selector(TimeSeries ts) {
@@ -163,6 +159,10 @@ namespace CaseCounter {
 
         private void Update_Click(object sender, RoutedEventArgs e) {
             string fileString = timeSeriesSet.MapValues(regionSelector, (int)startDaySlider.Value, (int)endDaySlider.Value);
+            WriteCsv(fileString);
+        }
+
+        private void WriteCsv(string fileString) {
             string fileName = csvFileName;
             using (StreamWriter outputFile = new(Path.Combine(webDirectory, fileName))) {
                 outputFile.Write(fileString);
