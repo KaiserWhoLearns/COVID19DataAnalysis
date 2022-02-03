@@ -1,5 +1,6 @@
 Andorra+Confirmed: <729,2313><734,1676>
 Argentina+Deaths: <253,3351>
+Australia/New South Wales+Confirmed: <741,11807>
 Belgium/Antwerp+Confirmed: <295,60560><651,6336>
 Belgium/Brussels+Confirmed: <295,71270><651,2899>
 Belgium/East Flanders+Confirmed: <295,46386>
@@ -13,10 +14,10 @@ Belgium/Unknown+Confirmed: <295,8595>
 Belgium/Unknown+Deaths: <295,13891>
 Belgium/Walloon Brabant+Confirmed: <295,21252>
 Belgium/West Flanders+Confirmed: <295,38722>
-Belize+Confirmed: <316,1382>
+Belize+Confirmed: <316,1382><741,1517>
 Benin+Confirmed: <574,1118><579,1838><588,2566><595,2160><601,1609><611,1508>
 Bolivia+Deaths: <229,1656>
-Botswana+Confirmed: <268,1328><288,1193><376,1445><397,1197><404,2356><425,2066><456,1153><530,2534><593,2869><603,6608><610,2639><635,2195><642,1066><653,5654><708,7027><715,7802><722,5246><729,4059><736,4842>
+Botswana+Confirmed: <268,1328><288,1193><376,1445><397,1197><404,2356><425,2066><456,1153><530,2534><593,2869><603,6608><610,2639><635,2195><642,1066><653,5654><708,7027><715,7802><722,5246><729,4059><736,4842><740,2290>
 Brazil/Acre+Confirmed: <119,2817>
 Brazil/Alagoas+Confirmed: <119,4437>
 Brazil/Amapa+Confirmed: <119,4549>
@@ -51,7 +52,7 @@ Brazil/Sergipe+Confirmed: <119,4277>
 Brazil/Tocantins+Confirmed: <119,1976>
 Burkina Faso+Confirmed: <713,1005>
 Burundi+Confirmed: <597,1462><609,2167><615,1149><705,2567><713,4710>
-Cameroon+Confirmed: <145,1183><167,2324><367,1607><381,1081><393,1651><400,1965><414,3828><429,7047><435,9668><442,4394><451,3078><457,1189><463,6252><470,2696><482,2483><602,1204><616,6889><623,3096><630,3003><636,1887><644,2210><651,1849><658,1371><730,4447>
+Cameroon+Confirmed: <145,1183><167,2324><367,1607><381,1081><393,1651><400,1965><414,3828><429,7047><435,9668><442,4394><451,3078><457,1189><463,6252><470,2696><482,2483><602,1204><616,6889><623,3096><630,3003><636,1887><644,2210><651,1849><658,1371><730,4447><740,2605>
 Canada/Alberta+Confirmed: <707,10918>
 Canada/British Columbia+Confirmed: <342,2206>
 Central African Republic+Confirmed: <566,4044>
@@ -84,19 +85,19 @@ Colombia/Risaralda+Confirmed: <285,3104><546,1280>
 Colombia/San Andres y Providencia+Confirmed: <285,1035>
 Colombia/Santander+Confirmed: <285,42267><546,1728>
 Colombia/Sucre+Confirmed: <285,2533>
-Colombia/Unknown+Confirmed: <131,1087><286,302844><370,13606><409,3663><447,16377><496,25966><503,18586><508,28519><509,24376><510,24452><537,18650><543,18206><544,16447><545,11630><548,13164><571,3132><581,2448><602,1570><614,1015><670,2194><679,2173><681,2299><685,1704><719,27105><737,20946>
+Colombia/Unknown+Confirmed: <131,1087><286,302844><370,13606><409,3663><447,16377><496,25966><503,18586><508,28519><509,24376><510,24452><537,18650><543,18206><544,16447><545,11630><548,13164><571,3132><581,2448><602,1570><614,1015><670,2194><679,2173><681,2299><685,1704><719,27105><737,20946><740,15284>
 Colombia/Valle del Cauca+Confirmed: <127,2828><285,88948>
 Congo (Brazzaville)+Confirmed: <712,1188>
 Congo (Kinshasa)+Confirmed: <713,4481>
 Costa Rica+Confirmed: <433,1586><706,1696>
 Czech Republic+Confirmed: <703,37659>
-Ecuador+Confirmed: <93,11536><231,1409><232,1040><554,4953><568,1936><575,1348><579,3613><606,1143><620,1381><636,1061><641,1519><652,2415><663,2232><668,2055><677,2183><684,2479><715,6749><723,42992><735,33853>
+Ecuador+Confirmed: <93,11536><231,1409><232,1040><554,4953><568,1936><575,1348><579,3613><606,1143><620,1381><636,1061><641,1519><652,2415><663,2232><668,2055><677,2183><684,2479><715,6749><723,42992><735,33853><740,40140>
 Ecuador+Deaths: <229,3852><545,8786>
 El Salvador+Confirmed: <522,1088><528,1024><546,1292><567,1758><574,2006><581,1374><588,2007><596,2055><600,1579><607,2323><614,2324><623,2987><631,2217><639,2102><643,1132><654,2836><658,1092><690,1324><730,3435><738,6250>
 Equatorial Guinea+Confirmed: <162,1070><191,1750>
 Eswatini+Confirmed: <446,1017>
 France/French Polynesia+Confirmed: <61,19859><623,5003>
-France/Guadeloupe+Confirmed: <245,1061><252,1041><558,2812><566,5646><573,5523><579,2672><586,7438><595,4044><601,1970><726,8525><735,17089>
+France/Guadeloupe+Confirmed: <245,1061><252,1041><558,2812><566,5646><573,5523><579,2672><586,7438><595,4044><601,1970><726,8525><735,17089><741,13430>
 France/Martinique+Confirmed: <279,1295><544,2157><551,2251><558,5224><590,2032>
 France/Mayotte+Confirmed: <713,2760><719,6040><723,2277>
 France/Reunion+Confirmed: <434,1025><461,1038><469,1070><476,1193><490,1335><497,1174><504,1160><511,1206><518,1061><524,1081><531,1262><539,1450><546,1320><553,2616><559,3014><567,3590><573,2919><581,1929><588,1663><595,1305><666,1308><672,1875><678,2140><685,2675><692,3374><701,4558><707,4807><714,9358><721,16256><729,31401><735,46914>
@@ -122,7 +123,7 @@ Germany/Sachsen+Confirmed: <113,5046>
 Germany/Sachsen-Anhalt+Confirmed: <113,1668><316,2121>
 Germany/Schleswig-Holstein+Confirmed: <113,2988>
 Germany/Thuringen+Confirmed: <113,2663>
-Germany/Unknown+Confirmed: <113,1447><260,2999><264,2576><271,2917><275,7657><285,2381><295,1182><300,8722><301,1110><308,10543><313,1032><314,7394><318,8159><321,9050><323,3095><325,1033><328,8163><329,2596><331,1290><335,11169><336,1077><340,1418><341,1394><345,2102><351,14756><356,7626><362,4119><364,9202><367,8633><373,6910><382,2137><383,1270><390,3365><391,1012><396,1761><400,6634><403,1419><404,1277><413,7004><416,7755><418,1105><433,6589><438,2174><440,3384><442,1058><446,1592><447,7706><448,1755><453,1913><454,6549><456,3731><459,3484><461,3691><462,2100><463,1450><468,6110><474,1076><475,4825><478,2366><480,1616><484,1833><494,2474><548,1476><553,2253><564,1059><571,1615><580,5077><585,2081><587,5124><592,3350><594,5520><598,1204><599,1611><606,1957><611,1714><613,2256><620,1939><624,1040><630,8314><634,2738><636,5322><641,3307><642,6159><650,10293><656,1836><657,1612><663,2859><665,2994><670,2547><671,1166><672,3091><677,4962><678,1455><679,2284><682,1274><684,3966><685,1734><691,4560><699,19289><703,7149><706,17731><711,9709><715,2834><719,5624><720,5104><721,4810><726,8397><727,5745><728,5463><733,9462><734,8509><735,32151>
+Germany/Unknown+Confirmed: <113,1447><260,2999><264,2576><271,2917><275,7657><285,2381><295,1182><300,8722><301,1110><308,10543><313,1032><314,7394><318,8159><321,9050><323,3095><325,1033><328,8163><329,2596><331,1290><335,11169><336,1077><340,1418><341,1394><345,2102><351,14756><356,7626><362,4119><364,9202><367,8633><373,6910><382,2137><383,1270><390,3365><391,1012><396,1761><400,6634><403,1419><404,1277><413,7004><416,7755><418,1105><433,6589><438,2174><440,3384><442,1058><446,1592><447,7706><448,1755><453,1913><454,6549><456,3731><459,3484><461,3691><462,2100><463,1450><468,6110><474,1076><475,4825><478,2366><480,1616><484,1833><494,2474><548,1476><553,2253><564,1059><571,1615><580,5077><585,2081><587,5124><592,3350><594,5520><598,1204><599,1611><606,1957><611,1714><613,2256><620,1939><624,1040><630,8314><634,2738><636,5322><641,3307><642,6159><650,10293><656,1836><657,1612><663,2859><665,2994><670,2547><671,1166><672,3091><677,4962><678,1455><679,2284><682,1274><684,3966><685,1734><691,4560><699,19289><703,7149><706,17731><711,9709><715,2834><719,5624><720,5104><721,4810><726,8397><727,5745><728,5463><733,9462><734,8509><735,32151><740,16776>
 Honduras+Confirmed: <734,3630>
 India/Andhra Pradesh+Confirmed: <140,5070>
 India/Assam+Confirmed: <140,2937>
@@ -340,7 +341,7 @@ Somalia+Confirmed: <733,1066>
 South Africa+Confirmed: <671,18586>
 Spain/Andalusia+Confirmed: <113,12359><712,52875>
 Spain/Andalusia+Deaths: <113,1336>
-Spain/Aragon+Confirmed: <113,5389><194,4764>
+Spain/Aragon+Confirmed: <113,5389><194,4764><741,9672>
 Spain/Asturias+Confirmed: <113,2356><712,8057>
 Spain/Baleares+Confirmed: <113,1958>
 Spain/C. Valenciana+Confirmed: <113,10784>
@@ -363,21 +364,28 @@ Spain/Navarra+Confirmed: <113,5105>
 Spain/Pais Vasco+Confirmed: <113,13219>
 Spain/Pais Vasco+Deaths: <113,1454>
 Sudan+Confirmed: <354,1215><448,1099>
-Sweden/Dalarna+Confirmed: <135,1277>
-Sweden/Gavleborg+Confirmed: <135,1435><335,1341><342,1404><349,1347>
-Sweden/Halland+Confirmed: <342,1424><349,1555>
-Sweden/Jonkoping+Confirmed: <135,1681>
-Sweden/Orebro+Confirmed: <135,1896>
-Sweden/Ostergotland+Confirmed: <135,2197><349,1252><440,1108>
-Sweden/Skane+Confirmed: <135,1928><335,5181><342,7707><349,7661>
-Sweden/Sormland+Confirmed: <135,1655>
-Sweden/Stockholm+Confirmed: <135,14366><335,4248><342,6098><489,1269><498,1544>
+Sweden/Blekinge+Confirmed: <741,1856>
+Sweden/Dalarna+Confirmed: <135,1277><741,3872>
+Sweden/Gavleborg+Confirmed: <135,1435><335,1341><342,1404><349,1347><741,3568>
+Sweden/Halland+Confirmed: <342,1424><349,1555><741,5124>
+Sweden/Jamtland Harjedalen+Confirmed: <741,1058>
+Sweden/Jonkoping+Confirmed: <135,1681><741,3159>
+Sweden/Kalmar+Confirmed: <741,3202>
+Sweden/Kronoberg+Confirmed: <741,2585>
+Sweden/Norrbotten+Confirmed: <741,1722>
+Sweden/Orebro+Confirmed: <135,1896><741,5792>
+Sweden/Ostergotland+Confirmed: <135,2197><349,1252><440,1108><741,5022>
+Sweden/Skane+Confirmed: <135,1928><335,5181><342,7707><349,7661><741,14881>
+Sweden/Sormland+Confirmed: <135,1655><741,1690>
+Sweden/Stockholm+Confirmed: <135,14366><335,4248><342,6098><489,1269><498,1544><741,19464>
 Sweden/Stockholm+Deaths: <135,2136>
-Sweden/Uppsala+Confirmed: <135,2136><342,1079>
-Sweden/Vastmanland+Confirmed: <135,1434>
-Sweden/Vastra Gotaland+Confirmed: <135,7218><335,4738><342,6278><349,6352><498,1667><706,4039>
+Sweden/Uppsala+Confirmed: <135,2136><342,1079><741,4705>
+Sweden/Varmland+Confirmed: <741,4088>
+Sweden/Vasterbotten+Confirmed: <741,1729>
+Sweden/Vasternorrland+Confirmed: <741,2255>
+Sweden/Vastmanland+Confirmed: <135,1434><741,3363>
+Sweden/Vastra Gotaland+Confirmed: <135,7218><335,4738><342,6278><349,6352><498,1667><706,4039><741,23833>
 Tanzania+Confirmed: <610,24307><707,2823><714,1258>
-Thailand+Confirmed: <728,44447>
 Tunisia+Confirmed: <658,1924>
 Turkey+Confirmed: <323,823225>
 US/Alabama/Baldwin+Confirmed: <725,2175><737,1611>
@@ -399,17 +407,19 @@ US/Alabama/Walker+Confirmed: <737,1002>
 US/Alaska/Anchorage+Confirmed: <712,1765><728,5449>
 US/California/Kern+Confirmed: <677,1008><712,3092>
 US/California/Los Angeles+Confirmed: <491,4032>
+US/California/Merced+Confirmed: <739,1534>
+US/California/Monterey+Confirmed: <739,1906>
 US/California/Napa+Confirmed: <725,1876>
 US/California/Orange+Confirmed: <538,1226>
 US/California/Riverside+Confirmed: <676,2457>
 US/California/Sacramento+Confirmed: <642,1415>
 US/California/San Bernardino+Confirmed: <676,2381>
 US/California/San Joaquin+Confirmed: <337,5703>
-US/California/Stanislaus+Confirmed: <737,4478>
-US/California/Unassigned+Confirmed: <713,2994><719,2276><723,1806><727,1373><728,1138><733,4607>
+US/California/Santa Barbara+Confirmed: <739,2526>
+US/California/Unassigned+Confirmed: <713,2994><719,2276><723,1806><727,1373><728,1138><733,4607><740,1112>
 US/Connecticut/Hartford+Confirmed: <341,2336>
 US/Connecticut/New Haven+Confirmed: <341,2103>
-US/District of Columbia/District of Columbia+Confirmed: <712,9201><727,3836>
+US/District of Columbia/District of Columbia+Confirmed: <712,9201><727,3836><741,1132>
 US/Florida/Alachua+Confirmed: <555,1087><562,1412><569,1642><576,1505><583,1526><590,1460><597,1295><709,2073><716,3778><724,6529><730,4951><737,3584>
 US/Florida/Bay+Confirmed: <555,1410><562,1620><569,1418><576,1074><583,1132><716,1482><724,2667><730,2770><737,2423>
 US/Florida/Brevard+Confirmed: <541,1441><548,2166><555,3519><562,3853><569,4357><576,4588><583,4510><590,3685><597,2589><604,2165><611,1207><702,1214><709,4997><716,8190><724,11548><730,7966><737,6130>
@@ -456,7 +466,7 @@ US/Florida/Seminole+Confirmed: <541,1102><548,1579><555,2420><562,2677><569,2994
 US/Florida/St. Johns+Confirmed: <548,1279><555,1640><562,1760><569,1519><576,1261><583,1461><590,1593><597,1435><604,1210><709,1788><716,3131><724,3521><730,3492><737,3231>
 US/Florida/St. Lucie+Confirmed: <548,1054><555,1601><562,1877><569,2053><576,2199><583,2314><590,2193><597,1766><604,1359><709,2803><716,4765><724,5621><730,4290><737,2526>
 US/Florida/Sumter+Confirmed: <724,1248><730,1024>
-US/Florida/Unassigned+Confirmed: <566,13075><567,24753><568,20656><572,12680><573,21669><574,23335><575,15586><579,11244><580,21208><581,26203><582,21765><586,8597><587,18608><588,19048><589,21723><594,12547><595,13774><596,12386><602,10723><603,9760><610,4215><700,16778><701,32869><706,29059><707,46923><708,77848><713,150251><715,126098><719,125996><721,71742><722,54994><723,59061><727,111621><728,43179><729,45668><733,23390><734,35266><735,37661><736,27533>
+US/Florida/Unassigned+Confirmed: <566,13075><567,24753><568,20656><572,12680><573,21669><574,23335><575,15586><579,11244><580,21208><581,26203><582,21765><586,8597><587,18608><588,19048><589,21723><594,12547><595,13774><596,12386><602,10723><603,9760><610,4215><700,16778><701,32869><706,29059><707,46923><708,77848><713,150251><715,126098><719,125996><721,71742><722,54994><723,59061><727,111621><728,43179><729,45668><733,23390><734,35266><735,37661><736,27533><740,13597>
 US/Florida/Unassigned+Deaths: <603,1554>
 US/Florida/Volusia+Confirmed: <541,1354><548,2169><555,3514><562,3265><569,3312><576,2786><583,2617><590,2196><597,1990><604,1876><611,1321><709,3975><716,6447><724,7462><730,5746><737,4961>
 US/Georgia/Barrow+Confirmed: <719,1076>
@@ -556,7 +566,7 @@ US/Michigan/Saginaw+Confirmed: <728,1888>
 US/Michigan/St. Clair+Confirmed: <728,1514>
 US/Michigan/Washtenaw+Confirmed: <712,2897><728,4089>
 US/Michigan/Wayne+Confirmed: <712,16965><723,10535><728,16111>
-US/Minnesota/Unassigned+Confirmed: <720,2818><721,2142><728,11632><733,1052><734,8571>
+US/Minnesota/Unassigned+Confirmed: <720,2818><721,2142><728,11632><733,1052><734,8571><737,3127><741,3703>
 US/Mississippi/Hinds+Confirmed: <712,2708>
 US/Mississippi/Madison+Confirmed: <720,1001>
 US/Missouri/Boone+Confirmed: <414,1270>
@@ -582,7 +592,7 @@ US/Nebraska/Hall+Confirmed: <612,1391>
 US/Nebraska/Lancaster+Confirmed: <612,7775>
 US/Nebraska/Lincoln+Confirmed: <612,1063>
 US/Nebraska/Sarpy+Confirmed: <612,3773>
-US/Nebraska/Unassigned+Confirmed: <553,1009><608,2412><650,1607><653,1025><668,1131><676,2538><705,1176><717,4393>
+US/Nebraska/Unassigned+Confirmed: <553,1009><608,2412><650,1607><653,1025><668,1131><676,2538><705,1176><717,4393><741,2130>
 US/Nevada/Clark+Confirmed: <712,11467>
 US/Nevada/Elko+Confirmed: <728,1119>
 US/New Hampshire/Hillsborough+Confirmed: <650,1347><727,4981>
@@ -639,23 +649,23 @@ US/Rhode Island/Providence+Confirmed: <110,1536><273,1104><280,1777><287,1989><2
 US/Rhode Island/Unassigned+Confirmed: <285,1246><292,1629><299,2394><302,1040><303,1050><306,2572><310,1637><313,2769><316,1717><320,3681><321,1249><324,1571><327,3253><328,1166><330,1081><334,2419><341,3536><342,1187><348,4759><355,2993><359,1057><363,2623><369,2019><376,1518><383,1213><425,1000><447,1677><670,1144><677,2414><684,2091><685,1087><688,1078><691,2433><692,1246><693,1403><698,3962><699,1015><701,1687><706,6757><713,16228><719,13765><720,5076><722,5670><723,5805><726,11591><727,3644><729,3617><730,2875><733,5852><734,1620><736,1912><737,1836>
 US/Rhode Island/Washington+Confirmed: <610,1583><714,1813><721,2679><728,2927><735,1999>
 US/South Carolina/Aiken+Confirmed: <244,1318><735,1555>
-US/South Carolina/Anderson+Confirmed: <727,2978><735,2546>
-US/South Carolina/Beaufort+Confirmed: <735,1579>
-US/South Carolina/Berkeley+Confirmed: <735,2300>
-US/South Carolina/Charleston+Confirmed: <735,4329>
-US/South Carolina/Dorchester+Confirmed: <735,2434>
+US/South Carolina/Anderson+Confirmed: <727,2978><735,2546><741,1153>
+US/South Carolina/Beaufort+Confirmed: <735,1579><741,1250>
+US/South Carolina/Berkeley+Confirmed: <735,2300><741,1035>
+US/South Carolina/Charleston+Confirmed: <735,4329><741,2704>
+US/South Carolina/Dorchester+Confirmed: <735,2434><741,1032>
 US/South Carolina/Florence+Confirmed: <727,1951><735,1902>
-US/South Carolina/Greenville+Confirmed: <727,10269><735,7219>
+US/South Carolina/Greenville+Confirmed: <727,10269><735,7219><741,5195>
 US/South Carolina/Greenwood+Confirmed: <735,1271>
-US/South Carolina/Horry+Confirmed: <735,3878>
+US/South Carolina/Horry+Confirmed: <735,3878><741,2616>
 US/South Carolina/Kershaw+Confirmed: <735,1105>
-US/South Carolina/Lexington+Confirmed: <735,4746>
+US/South Carolina/Lexington+Confirmed: <735,4746><741,2226>
 US/South Carolina/Oconee+Confirmed: <727,1104><735,1215>
-US/South Carolina/Pickens+Confirmed: <727,2819><735,2957>
-US/South Carolina/Richland+Confirmed: <600,2108><727,6755><735,4332>
-US/South Carolina/Spartanburg+Confirmed: <727,4502><735,4078>
+US/South Carolina/Pickens+Confirmed: <727,2819><735,2957><741,1194>
+US/South Carolina/Richland+Confirmed: <600,2108><727,6755><735,4332><741,2354>
+US/South Carolina/Spartanburg+Confirmed: <727,4502><735,4078><741,1344>
 US/South Carolina/Sumter+Confirmed: <727,1400><735,1208>
-US/South Carolina/York+Confirmed: <727,3719><735,3416>
+US/South Carolina/York+Confirmed: <727,3719><735,3416><741,1882>
 US/South Dakota/Minnehaha+Confirmed: <728,2254>
 US/South Dakota/Pennington+Confirmed: <728,1542>
 US/Tennessee/Anderson+Confirmed: <728,1253><735,1527>
@@ -686,7 +696,7 @@ US/Tennessee/Sevier+Confirmed: <721,1004><728,1597><735,1787>
 US/Tennessee/Shelby+Confirmed: <594,3469><600,2749><712,10553><721,14627><728,14545><735,10284>
 US/Tennessee/Sullivan+Confirmed: <721,1346><728,2256><735,2765>
 US/Tennessee/Sumner+Confirmed: <712,1274><721,2049><728,2935><735,2886>
-US/Tennessee/Unassigned+Confirmed: <182,1326><594,1590><600,1205><622,1569><721,1298><728,2991><735,3080>
+US/Tennessee/Unassigned+Confirmed: <182,1326><594,1590><600,1205><622,1569><721,1298><728,2991><735,3080><741,100935>
 US/Tennessee/Washington+Confirmed: <721,1096><728,1856><735,2225>
 US/Tennessee/Williamson+Confirmed: <712,1404><721,2237><728,3140><735,3343>
 US/Tennessee/Wilson+Confirmed: <721,1443><728,2402><735,2291>
@@ -743,7 +753,7 @@ Ukraine/Ternopil Oblast+Confirmed: <131,1176>
 Ukraine/Vinnytsia Oblast+Confirmed: <131,1005>
 Ukraine/Zakarpattia Oblast+Confirmed: <131,1206>
 United Kingdom/Cayman Islands+Confirmed: <731,1711>
-United Kingdom/England+Confirmed: <141,156018><162,83146>
+United Kingdom/England+Confirmed: <141,156018><162,83146><740,822205>
 United Kingdom/England+Deaths: <141,36883>
 United Kingdom/Isle of Man+Confirmed: <713,3221>
 United Kingdom/Northern Ireland+Confirmed: <141,4822><707,22972>
