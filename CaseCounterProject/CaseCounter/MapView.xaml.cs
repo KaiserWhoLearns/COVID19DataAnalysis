@@ -73,8 +73,8 @@ namespace CaseCounter {
 
             int lastDay = tss.LastDay();
             startDaySlider.Maximum = lastDay;
-            endDaySlider.Maximum = lastDay;
-            endDaySlider.Value = lastDay;
+            spanSlider.Maximum = lastDay;
+            spanSlider.Value = lastDay;
             mapNameLabel.Content = mapName;
 
             switch (mapName) {
@@ -87,6 +87,12 @@ namespace CaseCounter {
                 case "UnitedStates":
                     csvFileName = "data/us_confirmed.csv";
                     d3FileName = "d3_us_states.html";
+                    regionNames = config.UsStatesList;
+                    regionSelector = Admin1Selector;
+                    break;
+                case "UnitedStates2":
+                    csvFileName = "data/us_confirmed.csv";
+                    d3FileName = "d3_us2.html";
                     regionNames = config.UsStatesList;
                     regionSelector = Admin1Selector;
                     break;
@@ -158,7 +164,9 @@ namespace CaseCounter {
         }
 
         private void Update_Click(object sender, RoutedEventArgs e) {
-            string fileString = timeSeriesSet.MapValues(regionSelector, (int)startDaySlider.Value, (int)endDaySlider.Value);
+            int startDay = (int)startDaySlider.Value;
+            int endDay = Math.Max(startDay + (int)spanSlider.Value, timeSeriesSet.LastDay());
+            string fileString = timeSeriesSet.MapValues(regionSelector, startDay, endDay);
             WriteCsv(fileString);
         }
 
@@ -172,6 +180,10 @@ namespace CaseCounter {
         private void LoadMap_Click(object sender, RoutedEventArgs e) {
             CopyHtmlToWebDirectory(d3FileName);
             LoadHtml(d3FileName);
+        }
+
+        private void Foo_Click(object sender, RoutedEventArgs e) {
+            webView.ExecuteScriptAsync("foo()");
         }
     }
 }

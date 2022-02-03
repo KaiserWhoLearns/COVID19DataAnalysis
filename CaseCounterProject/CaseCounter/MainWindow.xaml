@@ -51,6 +51,7 @@
                 </MenuItem>
                 <MenuItem Header="Maps">
                     <MenuItem Header="US Map" Click="USMapView_Click"/>
+                    <MenuItem Header="US2 Map" Click="USMap2View_Click"/>
                     <MenuItem Header="Africa Map" Click="AfricaMapView_Click"/>
                     <MenuItem Header="India Map" Click="IndiaMapView_Click"/>
                 </MenuItem>

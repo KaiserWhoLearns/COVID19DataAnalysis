@@ -435,6 +435,10 @@ namespace CaseCounter {
             LaunchMapView("UnitedStates", "World by province/US_confirmed_sm.csv");
         }
 
+        private void USMap2View_Click(object sender, RoutedEventArgs e) {
+            LaunchMapView("UnitedStates2", "World by province/US_confirmed_sm.csv");
+        }
+
         private void AfricaMapView_Click(object sender, RoutedEventArgs e) {
             LaunchMapView("Africa", "World by country/ContinentalAfrica_confirmed_sm.csv");
         }

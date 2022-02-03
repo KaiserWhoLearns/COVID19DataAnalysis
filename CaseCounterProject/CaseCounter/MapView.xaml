@@ -14,13 +14,14 @@
             <Slider  Width="100" Height="20" x:Name="startDaySlider"  Value="0" Minimum="0" Maximum="760" SmallChange="1"  
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
             <TextBox Text="{Binding ElementName=startDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
-            <Label Width="40" HorizontalAlignment ="Left">End</Label>
-            <Slider  Width="100" Height="20" x:Name="endDaySlider"  Value="0" Minimum="0" Maximum="760" 
+            <Label Width="40" HorizontalAlignment ="Left">Span</Label>
+            <Slider  Width="100" Height="20" x:Name="spanSlider"  Value="0" Minimum="0" Maximum="760" 
                 IsSnapToTickEnabled="True" TickFrequency="1"/>
-            <TextBox Text="{Binding ElementName=endDaySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
+            <TextBox Text="{Binding ElementName=spanSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"  TextAlignment="Right" Width="40" />
             <Button Margin="10,0,0,0" Click="LoadMap_Click">Load Map</Button>
             <Button Margin="10,0,0,0" Click="Refresh_Click">Random</Button>
             <Button Margin="10,0,0,0" Click="Update_Click">Update</Button>
+            <Button Margin="10,0,0,0" Click="Foo_Click">Foo</Button>
             <Label Width="60" HorizontalAlignment ="Left">Min Val</Label>
             <TextBox Margin="10,0,0,0" x:Name="minumumValueTextBox" TextAlignment="Right" Width="40"/>
             <Label Width="60" HorizontalAlignment ="Left">Max Val</Label>
