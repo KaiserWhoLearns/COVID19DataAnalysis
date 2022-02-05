@@ -1,0 +1,18 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Massachusetts","Barnstable",25001,212989,33110,623,15545.40,2925.03,0.0188
+"US","Massachusetts","Berkshire",25003,124944,20696,377,16564.22,3017.35,0.0182
+"US","Massachusetts","Bristol",25005,565216,144114,2294,25497.16,4058.63,0.0159
+"US","Massachusetts","Dukes and Nantucket",0,28730,6566,10,22854.16,348.07,0.0015
+"US","Massachusetts","Essex",25009,789034,198340,2975,25137.07,3770.43,0.0150
+"US","Massachusetts","Franklin",25011,70180,9447,153,13461.10,2180.11,0.0162
+"US","Massachusetts","Hampden",25013,466372,126800,1931,27188.60,4140.47,0.0152
+"US","Massachusetts","Hampshire",25015,160830,24281,379,15097.31,2356.53,0.0156
+"US","Massachusetts","Middlesex",25017,1611698,306337,4469,19007.10,2772.85,0.0146
+"US","Massachusetts","Norfolk",25021,706775,124701,2100,17643.66,2971.24,0.0168
+"US","Massachusetts","Plymouth",25023,521202,111286,1852,21351.80,3553.32,0.0166
+"US","Massachusetts","Suffolk",25025,803906,198958,2167,24748.91,2695.59,0.0109
+"US","Massachusetts","Unassigned",90025,-1,136830,7,0.00,0.00,0.0001
+"US","Massachusetts","Worcester",25027,830622,182648,2810,21989.30,3383.01,0.0154
+"US","Massachusetts","Brockton",0,-1,4,0,0.00,0.00,0.0000
+"US","Massachusetts","Dukes",25007,-1,31,0,0.00,0.00,0.0000
+"US","Massachusetts","Nantucket",25019,-1,9,0,0.00,0.00,0.0000
