@@ -84,6 +84,12 @@ namespace CaseCounter {
                     regionNames = config.ContinentalAfricaList;
                     regionSelector = Admin0Selector;
                     break;
+                case "Africa2":
+                    csvFileName = "data/africa_confirmed.csv";
+                    d3FileName = "d3_africa2.html";
+                    regionNames = config.ContinentalAfricaList;
+                    regionSelector = Admin0Selector;
+                    break;
                 case "UnitedStates":
                     csvFileName = "data/us_confirmed.csv";
                     d3FileName = "d3_us_states.html";
@@ -165,7 +171,7 @@ namespace CaseCounter {
 
         private void Update_Click(object sender, RoutedEventArgs e) {
             int startDay = (int)startDaySlider.Value;
-            int endDay = Math.Max(startDay + (int)spanSlider.Value, timeSeriesSet.LastDay());
+            int endDay = Math.Min(startDay + (int)spanSlider.Value, timeSeriesSet.LastDay());
             string fileString = timeSeriesSet.MapValues(regionSelector, startDay, endDay);
             WriteCsv(fileString);
         }

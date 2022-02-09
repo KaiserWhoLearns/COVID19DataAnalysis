@@ -11,7 +11,7 @@ C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAn
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.AssemblyInfoInputs.cache
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.AssemblyInfo.cs
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.csproj.CoreCompileInputs.cache
-C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.csproj.CopyComplete
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.dll
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\ref\WaveAnalyzer.dll
 C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.pdb
+C:\Users\anderson\Documents\GitHub\COVID19DataAnalysis\CaseCounterProject\WaveAnalyzer\obj\Debug\net5.0-windows\WaveAnalyzer.csproj.CopyComplete

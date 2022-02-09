@@ -1,0 +1,8 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Hawaii","Hawaii",15001,201512,8455,65,4195.78,322.56,0.0077
+"US","Hawaii","Honolulu",15003,974563,33474,321,3434.77,329.38,0.0096
+"US","Hawaii","Kauai",15007,72293,2468,8,3413.89,110.66,0.0032
+"US","Hawaii","Maui",15009,167417,5866,48,3503.83,286.71,0.0082
+"US","Hawaii","Out of HI",80015,-1,1681,4,0.00,0.00,0.0024
+"US","Hawaii","Unassigned",90015,-1,-2,0,0.00,0.00,0.0000
+"US","Hawaii","Kalawao",15005,-1,0,0,0.00,0.00,0.0000

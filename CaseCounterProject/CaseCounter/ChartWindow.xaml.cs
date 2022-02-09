@@ -21,21 +21,33 @@ namespace CaseCounter {
     /// Interaction logic for ChartWindow.xaml
     /// </summary>
     public partial class ChartWindow : Window {
-        public ChartWindow(List<(TimeSeries,int)> tsList) : base() {
+        public ChartWindow(List<(TimeSeries,int)> tsList, int startDay, int endDay) : base() {
+
+            if (startDay > endDay) {
+                _ = MessageBox.Show("Error: start day after end day");
+                endDay = startDay;
+            }
+
             InitializeComponent();
-            PlotSeries(tsList);
+            PlotSeries(tsList, startDay, endDay);
         }
 
-        void PlotSeries(List<(TimeSeries,int)> tsList) {
+        void PlotSeries(List<(TimeSeries,int)> tsList, int startDay, int endDay) {
 
             foreach ((TimeSeries ts, int axisIndex) in tsList) {
-
-                double[] dataX = new double[ts.LastDay + 1];
+                double[] dataX = new double[endDay - startDay + 1];
                 for (int i = 0; i < dataX.Length; i++) {
-                    dataX[i] = i;
+                    dataX[i] = startDay + i;
                 }
-                double[] dataY = ts.GetData();
+                double[] dataY = ts.GetData(startDay, endDay);
 
+                /*
+                                double[] dataX = new double[ts.LastDay + 1];
+                                for (int i = 0; i < dataX.Length; i++) {
+                                    dataX[i] = i;
+                                }
+                                double[] dataY = ts.GetData();
+                */
 
                 ScottPlot.Plottable.ScatterPlot curve = wpfPlot1.Plot.AddScatter(dataX, dataY);
                 curve.YAxisIndex = axisIndex;

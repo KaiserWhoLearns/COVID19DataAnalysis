@@ -1,0 +1,18 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Malaysia","Johor","",0,3768200,99,3,2.63,0.80,0.0303
+"Malaysia","Kedah","",0,2185900,334,4,15.28,1.83,0.0120
+"Malaysia","Kelantan","",0,1892200,7,0,0.37,0.00,0.0000
+"Malaysia","Melaka","",0,932700,66,1,7.08,1.07,0.0152
+"Malaysia","Negeri Sembilan","",0,1132100,540,0,47.70,0.00,0.0000
+"Malaysia","Pahang","",0,1677100,80,3,4.77,1.79,0.0375
+"Malaysia","Perak","",0,2514300,17,0,0.68,0.00,0.0000
+"Malaysia","Perlis","",0,254600,16,0,6.28,0.00,0.0000
+"Malaysia","Pulau Pinang","",0,1777600,23,1,1.29,0.56,0.0435
+"Malaysia","Sabah","",0,3904700,1444,9,36.98,2.30,0.0062
+"Malaysia","Sarawak","",0,2818100,204,2,7.24,0.71,0.0098
+"Malaysia","Selangor","",0,6541900,805,6,12.31,0.92,0.0075
+"Malaysia","Terengganu","",0,1250099,9,0,0.72,0.00,0.0000
+"Malaysia","W.P. Kuala Lumpur","",0,1778400,1422,2,79.96,1.12,0.0014
+"Malaysia","W.P. Labuan","",0,99400,11,0,11.07,0.00,0.0000
+"Malaysia","W.P. Putrajaya","",0,105400,18,0,17.08,0.00,0.0000
+"Malaysia","Unknown","",0,-1,0,0,0.00,0.00,0.0000

@@ -1,0 +1,28 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Ukraine","Cherkasy Oblast","",0,1206350,63816,828,5290.01,686.37,0.0130
+"Ukraine","Chernihiv Oblast","",0,1005745,45132,934,4487.42,928.66,0.0207
+"Ukraine","Chernivtsi Oblast","",0,904373,60597,1189,6700.44,1314.72,0.0196
+"Ukraine","Crimea Republic*","",0,1913731,34756,1087,1816.14,568.00,0.0313
+"Ukraine","Dnipropetrovsk Oblast","",0,3206477,102950,2721,3210.69,848.59,0.0264
+"Ukraine","Donetsk Oblast","",0,4165901,67262,1441,1614.58,345.90,0.0214
+"Ukraine","Ivano-Frankivsk Oblast","",0,1373251,68893,1569,5016.78,1142.54,0.0228
+"Ukraine","Kharkiv Oblast","",0,2675598,104625,2003,3910.34,748.62,0.0191
+"Ukraine","Kherson Oblast","",0,1037640,27190,766,2620.37,738.21,0.0282
+"Ukraine","Khmelnytskyi Oblast","",0,1264705,71112,1304,5622.81,1031.07,0.0183
+"Ukraine","Kiev","",0,2950800,160263,3738,5431.17,1266.78,0.0233
+"Ukraine","Kiev Oblast","",0,1767940,101129,1849,5720.16,1045.85,0.0183
+"Ukraine","Kirovohrad Oblast","",0,945549,14639,489,1548.20,517.16,0.0334
+"Ukraine","Luhansk Oblast","",0,2151833,19569,599,909.41,278.37,0.0306
+"Ukraine","Lviv Oblast","",0,2522021,101114,2419,4009.24,959.15,0.0239
+"Ukraine","Mykolaiv Oblast","",0,2522021,55034,1309,2182.14,519.03,0.0238
+"Ukraine","Odessa Oblast","",0,2380307,111303,2007,4675.99,843.17,0.0180
+"Ukraine","Poltava Oblast","",0,1400439,62396,1316,4455.46,939.71,0.0211
+"Ukraine","Rivne Oblast","",0,1157301,53516,737,4624.21,636.83,0.0138
+"Ukraine","Sevastopol*","",0,443211,12769,561,2881.02,1265.76,0.0439
+"Ukraine","Sumy Oblast","",0,1081418,63507,899,5872.57,831.32,0.0142
+"Ukraine","Ternopil Oblast","",0,1045879,49026,801,4687.54,765.86,0.0163
+"Ukraine","Vinnytsia Oblast","",0,1560394,58398,1243,3742.52,796.59,0.0213
+"Ukraine","Volyn Oblast","",0,1035329,44929,725,4339.59,700.26,0.0161
+"Ukraine","Zakarpattia Oblast","",0,1256802,48631,1158,3869.42,921.39,0.0238
+"Ukraine","Zaporizhia Oblast","",0,1705836,84510,1593,4954.17,933.85,0.0188
+"Ukraine","Zhytomyr Oblast","",0,1220193,74068,1325,6070.19,1085.89,0.0179

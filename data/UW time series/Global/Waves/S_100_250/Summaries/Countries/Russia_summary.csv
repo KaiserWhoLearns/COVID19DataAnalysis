@@ -1,0 +1,84 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Russia","Adygea Republic","",0,453376,3159,23,696.77,50.73,0.0073
+"Russia","Altai Krai","",0,2350080,11774,185,501.00,78.72,0.0157
+"Russia","Altai Republic","",0,218063,3273,12,1500.94,55.03,0.0037
+"Russia","Amur Oblast","",0,798424,3716,46,465.42,57.61,0.0124
+"Russia","Arkhangelsk Oblast","",0,1155027,11236,254,972.79,219.91,0.0226
+"Russia","Astrakhan Oblast","",0,1017514,5158,92,506.92,90.42,0.0178
+"Russia","Bashkortostan Republic","",0,4063292,5421,20,133.41,4.92,0.0037
+"Russia","Belgorod Oblast","",0,1549876,6386,39,412.03,25.16,0.0061
+"Russia","Bryansk Oblast","",0,1210981,5604,6,462.77,4.95,0.0011
+"Russia","Buryatia Republic","",0,984511,5268,58,535.09,58.91,0.0110
+"Russia","Chechen Republic","",0,1436981,1179,27,82.05,18.79,0.0229
+"Russia","Chelyabinsk Oblast","",0,3493036,12690,111,363.29,31.78,0.0087
+"Russia","Chukotka Autonomous Okrug","",0,49347,113,1,228.99,20.26,0.0088
+"Russia","Chuvashia Republic","",0,1231117,5611,79,455.76,64.17,0.0141
+"Russia","Dagestan Republic","",0,3063885,8230,348,268.61,113.58,0.0423
+"Russia","Ingushetia Republic","",0,488043,3468,34,710.59,69.67,0.0098
+"Russia","Irkutsk Oblast","",0,2404195,17018,277,707.85,115.22,0.0163
+"Russia","Ivanovo Oblast","",0,1014646,6598,116,650.28,114.33,0.0176
+"Russia","Jewish Autonomous Okrug","",0,162014,588,9,362.93,55.55,0.0153
+"Russia","Kabardino-Balkarian Republic","",0,865828,4712,72,544.22,83.16,0.0153
+"Russia","Kaliningrad Oblast","",0,994599,2767,51,278.20,51.28,0.0184
+"Russia","Kalmykia Republic","",0,275413,5234,56,1900.42,203.33,0.0107
+"Russia","Kaluga Oblast","",0,1012055,5116,43,505.51,42.49,0.0084
+"Russia","Kamchatka Krai","",0,315557,3580,59,1134.50,186.97,0.0165
+"Russia","Karachay-Cherkess Republic","",0,466305,5798,23,1243.39,49.32,0.0040
+"Russia","Karelia Republic","",0,622484,3467,22,556.96,35.34,0.0063
+"Russia","Kemerovo Oblast","",0,2694877,9028,87,335.01,32.28,0.0096
+"Russia","Khabarovsk Krai","",0,1328302,9838,91,740.64,68.51,0.0092
+"Russia","Khakassia Republic","",0,537513,3333,38,620.08,70.70,0.0114
+"Russia","Khanty-Mansi Autonomous Okrug","",0,1532243,19712,167,1286.48,108.99,0.0085
+"Russia","Kirov Oblast","",0,1283238,6667,112,519.55,87.28,0.0168
+"Russia","Komi Republic","",0,840873,6816,86,810.59,102.27,0.0126
+"Russia","Kostroma Oblast","",0,643324,3895,57,605.45,88.60,0.0146
+"Russia","Krasnodar Krai","",0,5603419,9926,241,177.14,43.01,0.0243
+"Russia","Krasnoyarsk Krai","",0,2876497,15479,511,538.12,177.65,0.0330
+"Russia","Kurgan Oblast","",0,845537,3499,30,413.82,35.48,0.0086
+"Russia","Kursk Oblast","",0,1115237,4995,44,447.89,39.45,0.0088
+"Russia","Leningrad Oblast","",0,1813816,5201,87,286.74,47.97,0.0167
+"Russia","Lipetsk Oblast","",0,1150201,3869,37,336.38,32.17,0.0096
+"Russia","Magadan Oblast","",0,144091,2622,22,1819.68,152.68,0.0084
+"Russia","Mari El Republic","",0,682333,3016,36,442.01,52.76,0.0119
+"Russia","Mordovia Republic","",0,805056,4455,29,553.38,36.02,0.0065
+"Russia","Moscow","",0,12506468,106849,2673,854.35,213.73,0.0250
+"Russia","Moscow Oblast","",0,7503385,33848,863,451.10,115.01,0.0255
+"Russia","Murmansk Oblast","",0,753557,11590,203,1538.04,269.39,0.0175
+"Russia","Nenets Autonomous Okrug","",0,43996,258,0,586.42,0.00,0.0000
+"Russia","Nizhny Novgorod Oblast","",0,3234752,22098,469,683.14,144.99,0.0212
+"Russia","North Ossetia - Alania Republic","",0,701764,2768,20,394.43,28.50,0.0072
+"Russia","Novgorod Oblast","",0,606476,3850,78,634.81,128.61,0.0203
+"Russia","Novosibirsk Oblast","",0,2788849,10146,409,363.81,146.66,0.0403
+"Russia","Omsk Oblast","",0,1960080,9474,268,483.35,136.73,0.0283
+"Russia","Orel Oblast","",0,747247,6159,103,824.23,137.84,0.0167
+"Russia","Orenburg Oblast","",0,1977720,10697,78,540.88,39.44,0.0073
+"Russia","Penza Oblast","",0,1331655,8328,111,625.39,83.35,0.0133
+"Russia","Perm Krai","",0,2623121,7927,254,302.20,96.83,0.0320
+"Russia","Primorsky Krai","",0,1913037,9591,98,501.35,51.23,0.0102
+"Russia","Pskov Oblast","",0,636545,4530,55,711.65,86.40,0.0121
+"Russia","Rostov Oblast","",0,4220452,16729,450,396.38,106.62,0.0269
+"Russia","Ryazan Oblast","",0,1121474,4554,43,406.07,38.34,0.0094
+"Russia","Saint Petersburg","",0,5351934,26452,2711,494.25,506.55,0.1025
+"Russia","Sakha (Yakutiya) Republic","",0,964330,7222,87,748.91,90.22,0.0120
+"Russia","Sakhalin Oblast","",0,490181,5415,0,1104.69,0.00,0.0000
+"Russia","Samara Oblast","",0,3193513,8935,168,279.79,52.61,0.0188
+"Russia","Saratov Oblast","",0,2462950,12166,66,493.96,26.80,0.0054
+"Russia","Smolensk Oblast","",0,949348,4341,100,457.26,105.34,0.0230
+"Russia","Stavropol Krai","",0,2800674,13259,268,473.42,95.69,0.0202
+"Russia","Sverdlovsk Oblast","",0,4325255,23306,567,538.84,131.09,0.0243
+"Russia","Tambov Oblast","",0,1033552,4631,39,448.07,37.73,0.0084
+"Russia","Tatarstan Republic","",0,3894284,3967,38,101.87,9.76,0.0096
+"Russia","Tomsk Oblast","",0,1078280,6640,73,615.80,67.70,0.0110
+"Russia","Tula Oblast","",0,1491855,6183,335,414.45,224.55,0.0542
+"Russia","Tver Oblast","",0,1283873,4610,222,359.07,172.91,0.0482
+"Russia","Tyumen Oblast","",0,3692400,7730,29,209.35,7.85,0.0038
+"Russia","Tyva Republic","",0,321721,6584,81,2046.49,251.77,0.0123
+"Russia","Udmurt Republic","",0,1513044,4393,54,290.34,35.69,0.0123
+"Russia","Ulyanovsk Oblast","",0,1246618,12737,155,1021.72,124.34,0.0122
+"Russia","Vladimir Oblast","",0,1378337,4514,191,327.50,138.57,0.0423
+"Russia","Volgograd Oblast","",0,2521275,11742,123,465.72,48.78,0.0105
+"Russia","Vologda Oblast","",0,1176689,3592,40,305.26,33.99,0.0111
+"Russia","Voronezh Oblast","",0,2333768,15606,162,668.70,69.42,0.0104
+"Russia","Yamalo-Nenets Autonomous Okrug","",0,538546,12796,89,2376.03,165.26,0.0070
+"Russia","Yaroslavl Oblast","",0,1265684,5315,32,419.93,25.28,0.0060
+"Russia","Zabaykalsky Krai","",0,1072806,4996,48,465.69,44.74,0.0096

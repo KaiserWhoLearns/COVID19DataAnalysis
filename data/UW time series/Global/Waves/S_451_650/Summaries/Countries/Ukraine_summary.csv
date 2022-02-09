@@ -1,0 +1,28 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Ukraine","Cherkasy Oblast","",0,1206350,34883,785,2891.62,650.72,0.0225
+"Ukraine","Chernihiv Oblast","",0,1005745,25573,719,2542.69,714.89,0.0281
+"Ukraine","Chernivtsi Oblast","",0,904373,32694,919,3615.10,1016.17,0.0281
+"Ukraine","Crimea Republic*","",0,1913731,59219,1883,3094.43,983.94,0.0318
+"Ukraine","Dnipropetrovsk Oblast","",0,3206477,82854,3135,2583.96,977.71,0.0378
+"Ukraine","Donetsk Oblast","",0,4165901,58928,1946,1414.53,467.13,0.0330
+"Ukraine","Ivano-Frankivsk Oblast","",0,1373251,22798,591,1660.15,430.37,0.0259
+"Ukraine","Kharkiv Oblast","",0,2675598,86606,2405,3236.88,898.86,0.0278
+"Ukraine","Kherson Oblast","",0,1037640,38435,1074,3704.08,1035.04,0.0279
+"Ukraine","Khmelnytskyi Oblast","",0,1264705,40825,1004,3228.03,793.86,0.0246
+"Ukraine","Kiev","",0,2950800,79866,2166,2706.59,734.04,0.0271
+"Ukraine","Kiev Oblast","",0,1767940,42488,1327,2403.25,750.59,0.0312
+"Ukraine","Kirovohrad Oblast","",0,945549,9338,446,987.57,471.68,0.0478
+"Ukraine","Luhansk Oblast","",0,2151833,28612,981,1329.66,455.89,0.0343
+"Ukraine","Lviv Oblast","",0,2522021,63307,1634,2510.17,647.89,0.0258
+"Ukraine","Mykolaiv Oblast","",0,2522021,29194,1008,1157.56,399.68,0.0345
+"Ukraine","Odessa Oblast","",0,2380307,71738,1938,3013.81,814.18,0.0270
+"Ukraine","Poltava Oblast","",0,1400439,36597,1017,2613.25,726.20,0.0278
+"Ukraine","Rivne Oblast","",0,1157301,37451,724,3236.06,625.59,0.0193
+"Ukraine","Sevastopol*","",0,443211,25998,790,5865.83,1782.45,0.0304
+"Ukraine","Sumy Oblast","",0,1081418,40986,968,3790.02,895.12,0.0236
+"Ukraine","Ternopil Oblast","",0,1045879,29378,682,2808.93,652.08,0.0232
+"Ukraine","Vinnytsia Oblast","",0,1560394,21664,747,1388.37,478.73,0.0345
+"Ukraine","Volyn Oblast","",0,1035329,26233,661,2533.78,638.44,0.0252
+"Ukraine","Zakarpattia Oblast","",0,1256802,11381,309,905.55,245.86,0.0272
+"Ukraine","Zaporizhia Oblast","",0,1705836,56472,1754,3310.52,1028.23,0.0311
+"Ukraine","Zhytomyr Oblast","",0,1220193,37845,1042,3101.56,853.96,0.0275

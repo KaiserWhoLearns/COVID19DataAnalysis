@@ -1,0 +1,13 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Belgium","Antwerp","",0,1857986,64976,0,3497.12,0.00,0.0000
+"Belgium","Brussels","",0,1208541,67565,0,5590.63,0.00,0.0000
+"Belgium","East Flanders","",0,1515063,45367,0,2994.40,0.00,0.0000
+"Belgium","Flemish Brabant","",0,1146175,40131,0,3501.30,0.00,0.0000
+"Belgium","Hainaut","",0,1344240,45751,0,3403.48,0.00,0.0000
+"Belgium","Liege","",0,1106992,51340,0,4637.79,0.00,0.0000
+"Belgium","Limburg","",0,874048,28772,0,3291.81,0.00,0.0000
+"Belgium","Luxembourg","",0,284638,11004,0,3865.96,0.00,0.0000
+"Belgium","Namur","",0,494325,18348,0,3711.73,0.00,0.0000
+"Belgium","Unknown","",0,-1,8600,2370,0.00,0.00,0.2756
+"Belgium","Walloon Brabant","",0,403599,18374,0,4552.54,0.00,0.0000
+"Belgium","West Flanders","",0,1195796,37587,0,3143.26,0.00,0.0000

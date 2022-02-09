@@ -1,0 +1,10 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Connecticut","Fairfield",9001,943332,82075,273,8700.54,289.40,0.0033
+"US","Connecticut","Hartford",9003,891720,72010,331,8075.40,371.19,0.0046
+"US","Connecticut","Litchfield",9005,180333,13041,97,7231.62,537.89,0.0074
+"US","Connecticut","Middlesex",9007,162435,11294,64,6952.94,394.00,0.0057
+"US","Connecticut","New Haven",9009,854757,79337,404,9281.82,472.65,0.0051
+"US","Connecticut","New London",9011,265206,24286,105,9157.41,395.92,0.0043
+"US","Connecticut","Tolland",9013,150721,8151,56,5408.01,371.55,0.0069
+"US","Connecticut","Unassigned",90009,-1,1347,-3,0.00,0.00,-0.0022
+"US","Connecticut","Windham",9015,116782,11340,60,9710.40,513.78,0.0053

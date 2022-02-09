@@ -1,16 +1,16 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"United Kingdom","Anguilla","",0,14511,2048,6,14113.43,413.48,0.0029
-"United Kingdom","Bermuda","",0,62273,8578,110,13774.83,1766.42,0.0128
-"United Kingdom","British Virgin Islands","",0,30237,5306,41,17548.04,1355.95,0.0077
-"United Kingdom","Cayman Islands","",0,65720,11774,15,17915.40,228.24,0.0013
-"United Kingdom","Channel Islands","",0,170498,36149,122,21202.01,715.55,0.0034
-"United Kingdom","England","",0,55977200,12686973,95425,22664.54,1704.71,0.0075
-"United Kingdom","Falkland Islands","",0,3483,85,0,2440.42,0.00,0.0000
-"United Kingdom","Gibraltar","",0,33691,10835,100,32159.92,2968.15,0.0092
-"United Kingdom","Isle of Man","",0,85032,19803,70,23288.88,823.22,0.0035
-"United Kingdom","Montserrat","",0,4999,137,1,2740.55,200.04,0.0073
-"United Kingdom","Northern Ireland","",0,1881599,475192,2503,25254.69,1330.25,0.0053
+"United Kingdom","Anguilla","",0,15001,2388,8,15918.94,533.30,0.0034
+"United Kingdom","Bermuda","",0,62273,10946,118,17577.44,1894.88,0.0108
+"United Kingdom","British Virgin Islands","",0,30236,5932,50,19619.00,1653.66,0.0084
+"United Kingdom","Cayman Islands","",0,65720,15867,15,24143.34,228.24,0.0009
+"United Kingdom","Channel Islands","",0,170498,43862,135,25725.81,791.80,0.0031
+"United Kingdom","England","",0,55977200,15056864,101069,26898.21,1805.54,0.0067
+"United Kingdom","Falkland Islands","",0,3483,90,0,2583.98,0.00,0.0000
+"United Kingdom","Gibraltar","",0,33691,13590,101,40337.18,2997.83,0.0074
+"United Kingdom","Isle of Man","",0,85032,21888,73,25740.90,858.50,0.0033
+"United Kingdom","Montserrat","",0,4999,163,1,3260.65,200.04,0.0061
+"United Kingdom","Northern Ireland","",0,1881600,558330,2592,29673.15,1377.55,0.0046
 "United Kingdom","Saint Helena, Ascension and Tristan da Cunha","",0,5661,3,0,52.99,0.00,0.0000
-"United Kingdom","Scotland","",0,5463299,1075463,7628,19685.23,1396.23,0.0071
-"United Kingdom","Turks and Caicos Islands","",0,38718,5134,30,13259.98,774.83,0.0058
-"United Kingdom","Wales","",0,3138600,728077,5264,23197.51,1677.18,0.0072
+"United Kingdom","Scotland","",0,5463300,1147223,7994,20998.72,1463.22,0.0070
+"United Kingdom","Turks and Caicos Islands","",0,38718,5784,35,14938.79,903.97,0.0061
+"United Kingdom","Wales","",0,3138599,773452,5426,24643.22,1728.80,0.0070

@@ -1,0 +1,36 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Alaska","Aleutians East",2013,3337,361,2,10818.10,599.34,0.0055
+"US","Alaska","Aleutians West",2016,5634,669,0,11874.33,0.00,0.0000
+"US","Alaska","Anchorage",2020,288000,25242,137,8764.58,475.69,0.0054
+"US","Alaska","Bethel",2050,18386,3740,19,20341.56,1033.39,0.0051
+"US","Alaska","Bristol Bay",2060,-1,-9,0,0.00,0.00,0.0000
+"US","Alaska","Bristol Bay plus Lake and Peninsula",2164,2428,191,0,7866.56,0.00,0.0000
+"US","Alaska","Denali",2068,2097,88,0,4196.47,0.00,0.0000
+"US","Alaska","Dillingham",2070,4916,215,1,4373.47,203.42,0.0047
+"US","Alaska","Fairbanks North Star",2090,96848,5840,23,6030.07,237.49,0.0039
+"US","Alaska","Haines",2100,2530,24,0,948.62,0.00,0.0000
+"US","Alaska","Juneau",2110,31974,1057,3,3305.81,93.83,0.0028
+"US","Alaska","Kenai Peninsula",2122,58708,3866,19,6585.13,323.64,0.0049
+"US","Alaska","Ketchikan Gateway",2130,13901,360,2,2589.74,143.87,0.0056
+"US","Alaska","Kodiak Island",2150,12998,1072,5,8247.42,384.67,0.0047
+"US","Alaska","Kusilvak",2158,8314,1232,3,14818.38,360.84,0.0024
+"US","Alaska","Matanuska-Susitna",2170,108317,10218,37,9433.42,341.59,0.0036
+"US","Alaska","Nome",2180,10004,276,0,2758.90,0.00,0.0000
+"US","Alaska","North Slope",2185,9832,930,4,9458.91,406.83,0.0043
+"US","Alaska","Northwest Arctic",2188,7621,490,2,6429.60,262.43,0.0041
+"US","Alaska","Petersburg",2195,3265,155,0,4747.32,0.00,0.0000
+"US","Alaska","Prince of Wales-Hyder",2198,6202,55,1,886.81,161.24,0.0182
+"US","Alaska","Sitka",2220,8493,296,0,3485.22,0.00,0.0000
+"US","Alaska","Skagway",2230,1183,20,0,1690.62,0.00,0.0000
+"US","Alaska","Southeast Fairbanks",2240,6893,612,3,8878.57,435.22,0.0049
+"US","Alaska","Unassigned",90002,-1,285,0,0.00,0.00,0.0000
+"US","Alaska","Valdez-Cordova",2261,-1,0,0,0.00,0.00,0.0000
+"US","Alaska","Wrangell",2275,2502,34,0,1358.91,0.00,0.0000
+"US","Alaska","Yakutat",2282,2727,49,1,1796.85,366.70,0.0204
+"US","Alaska","Yukon-Koyukuk",2290,5230,277,2,5296.37,382.41,0.0072
+"US","Alaska","Copper River",2066,2699,193,0,7150.80,0.00,0.0000
+"US","Alaska","Chugach",2063,6751,304,2,4503.04,296.25,0.0066
+"US","Alaska","Soldotna",0,-1,0,0,0.00,0.00,0.0000
+"US","Alaska","Sterling",0,-1,0,0,0.00,0.00,0.0000
+"US","Alaska","Hoonah-Angoon",2105,-1,0,0,0.00,0.00,0.0000
+"US","Alaska","Lake and Peninsula",2164,-1,0,0,0.00,0.00,0.0000

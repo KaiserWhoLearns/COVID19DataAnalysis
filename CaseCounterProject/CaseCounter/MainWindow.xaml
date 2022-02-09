@@ -22,7 +22,8 @@
                     <MenuItem Header="Clear Time Series" Click="ClearTimeSeries_Click"/>
                     <Separator/>
                     <MenuItem Header="Build Library" Click="BuildLibrary_Click"/>
-                    <MenuItem Header="Export Summaries" Click="ExportSummaries_Click"/>
+                    <MenuItem Header="Waves and Summaries" Click="ExportSummaries_Click"/>
+                    <MenuItem Header="Summaries Only" Click="ExportSummariesOnly_Click"/>
                 </MenuItem>
                 <MenuItem Header="Chart Display">
                     <MenuItem Header="Display Multiple" Click="Display_Multiple_Click" />
@@ -53,6 +54,7 @@
                     <MenuItem Header="US Map" Click="USMapView_Click"/>
                     <MenuItem Header="US2 Map" Click="USMap2View_Click"/>
                     <MenuItem Header="Africa Map" Click="AfricaMapView_Click"/>
+                    <MenuItem Header="Africa2 Map" Click="AfricaMap2View_Click"/>
                     <MenuItem Header="India Map" Click="IndiaMapView_Click"/>
                 </MenuItem>
                 <MenuItem Header="Data processing">

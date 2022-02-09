@@ -1,18 +1,18 @@
 Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
-"US","Massachusetts","Barnstable",25001,212989,29470,578,13836.40,2713.76,0.0196
-"US","Massachusetts","Berkshire",25003,124943,17146,352,13723.06,2817.28,0.0205
-"US","Massachusetts","Bristol",25005,565217,128606,2153,22753.38,3809.16,0.0167
-"US","Massachusetts","Dukes and Nantucket",0,28731,5757,8,20037.59,278.44,0.0014
-"US","Massachusetts","Essex",25009,789033,182051,2834,23072.67,3591.74,0.0156
-"US","Massachusetts","Franklin",25011,70180,7478,139,10655.46,1980.62,0.0186
-"US","Massachusetts","Hampden",25013,466371,110632,1823,23721.89,3908.91,0.0165
-"US","Massachusetts","Hampshire",25015,160830,20360,362,12659.33,2250.82,0.0178
-"US","Massachusetts","Middlesex",25017,1611699,272475,4232,16906.07,2625.80,0.0155
-"US","Massachusetts","Norfolk",25021,706775,111119,2005,15721.98,2836.83,0.0180
-"US","Massachusetts","Plymouth",25023,521201,100444,1738,19271.64,3334.61,0.0173
-"US","Massachusetts","Suffolk",25025,803907,179260,2057,22298.60,2558.75,0.0115
-"US","Massachusetts","Unassigned",90025,-1,118528,7,0.00,0.00,0.0001
-"US","Massachusetts","Worcester",25027,830622,160557,2670,19329.73,3214.46,0.0166
+"US","Massachusetts","Barnstable",25001,212990,33465,634,15712.01,2976.67,0.0189
+"US","Massachusetts","Berkshire",25003,124944,21211,382,16976.41,3057.37,0.0180
+"US","Massachusetts","Bristol",25005,565217,145354,2328,25716.49,4118.77,0.0160
+"US","Massachusetts","Dukes and Nantucket",0,28731,6612,11,23013.47,382.86,0.0017
+"US","Massachusetts","Essex",25009,789034,199557,3001,25291.31,3803.38,0.0150
+"US","Massachusetts","Franklin",25011,70180,9723,153,13854.37,2180.11,0.0157
+"US","Massachusetts","Hampden",25013,466372,127986,1957,27442.90,4196.22,0.0153
+"US","Massachusetts","Hampshire",25015,160830,24746,381,15386.43,2368.96,0.0154
+"US","Massachusetts","Middlesex",25017,1611699,309145,4509,19181.31,2797.67,0.0146
+"US","Massachusetts","Norfolk",25021,706775,125917,2127,17815.71,3009.44,0.0169
+"US","Massachusetts","Plymouth",25023,521201,112110,1874,21509.94,3595.54,0.0167
+"US","Massachusetts","Suffolk",25025,803907,200792,2187,24977.02,2720.46,0.0109
+"US","Massachusetts","Unassigned",90025,-1,138619,7,0.00,0.00,0.0001
+"US","Massachusetts","Worcester",25027,830622,184833,2845,22252.36,3425.14,0.0154
 "US","Massachusetts","Brockton",0,-1,4,0,0.00,0.00,0.0000
 "US","Massachusetts","Dukes",25007,-1,31,0,0.00,0.00,0.0000
 "US","Massachusetts","Nantucket",25019,-1,9,0,0.00,0.00,0.0000

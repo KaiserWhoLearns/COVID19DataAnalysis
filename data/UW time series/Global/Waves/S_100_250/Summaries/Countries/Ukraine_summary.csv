@@ -1,0 +1,28 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Ukraine","Cherkasy Oblast","",0,1206350,3402,38,282.01,31.50,0.0112
+"Ukraine","Chernihiv Oblast","",0,1005745,3848,56,382.60,55.68,0.0146
+"Ukraine","Chernivtsi Oblast","",0,904373,10809,211,1195.19,233.31,0.0195
+"Ukraine","Crimea Republic*","",0,1913731,3929,58,205.31,30.31,0.0148
+"Ukraine","Dnipropetrovsk Oblast","",0,3206477,4546,85,141.78,26.51,0.0187
+"Ukraine","Donetsk Oblast","",0,4165901,3029,51,72.71,12.24,0.0168
+"Ukraine","Ivano-Frankivsk Oblast","",0,1373251,12045,226,877.12,164.57,0.0188
+"Ukraine","Kharkiv Oblast","",0,2675598,16764,290,626.55,108.39,0.0173
+"Ukraine","Kherson Oblast","",0,1037640,901,20,86.83,19.27,0.0222
+"Ukraine","Khmelnytskyi Oblast","",0,1264705,5350,98,423.02,77.49,0.0183
+"Ukraine","Kiev","",0,2950800,19144,300,648.77,101.67,0.0157
+"Ukraine","Kiev Oblast","",0,1767940,7273,139,411.38,78.62,0.0191
+"Ukraine","Kirovohrad Oblast","",0,945549,574,31,60.71,32.79,0.0540
+"Ukraine","Luhansk Oblast","",0,2151833,949,11,44.10,5.11,0.0116
+"Ukraine","Lviv Oblast","",0,2522021,18317,501,726.28,198.65,0.0274
+"Ukraine","Mykolaiv Oblast","",0,2522021,2749,67,109.00,26.57,0.0244
+"Ukraine","Odessa Oblast","",0,2380307,12256,175,514.89,73.52,0.0143
+"Ukraine","Poltava Oblast","",0,1400439,1800,25,128.53,17.85,0.0139
+"Ukraine","Rivne Oblast","",0,1157301,10432,125,901.41,108.01,0.0120
+"Ukraine","Sevastopol*","",0,443211,806,23,181.85,51.89,0.0285
+"Ukraine","Sumy Oblast","",0,1081418,3785,62,350.00,57.33,0.0164
+"Ukraine","Ternopil Oblast","",0,1045879,11967,134,1144.21,128.12,0.0112
+"Ukraine","Vinnytsia Oblast","",0,1560394,5003,96,320.62,61.52,0.0192
+"Ukraine","Volyn Oblast","",0,1035329,6861,137,662.69,132.33,0.0200
+"Ukraine","Zakarpattia Oblast","",0,1256802,8499,275,676.24,218.81,0.0324
+"Ukraine","Zaporizhia Oblast","",0,1705836,3336,46,195.56,26.97,0.0138
+"Ukraine","Zhytomyr Oblast","",0,1220193,5054,91,414.20,74.58,0.0180

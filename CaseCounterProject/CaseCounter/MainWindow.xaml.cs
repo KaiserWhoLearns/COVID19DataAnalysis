@@ -40,7 +40,16 @@ namespace CaseCounter {
             timeSeriesSetOne = new();
             timeSeriesSetTwo = new();
             filesInTSS = new List<string>();
+
             topLevelDirectory = "C:\\Users\\anderson\\Documents\\GitHub\\COVID19DataAnalysis\\data\\UW time series\\Global";
+                // The app needs a date range, so we open one of the files - this is crude
+            string tssFileName = "World by province\\US_confirmed_sm.csv";
+            TimeSeriesSet tempTSS = new();
+            tempTSS.LoadCsv(Path.Combine(topLevelDirectory, tssFileName));
+            int lastDay = tempTSS.LastDay();
+            startDaySlider.Maximum = lastDay;
+            endDaySlider.Maximum = lastDay;
+            endDaySlider.Value = lastDay;
         }
 
 
@@ -91,10 +100,10 @@ namespace CaseCounter {
                     tss.LoadCsv(openFileDialog.FileName);
                     tss.ToListBox(listBox);
 
-                    int lastDay = tss.LastDay();
-                    startDaySlider.Maximum = lastDay;
-                    endDaySlider.Maximum = lastDay;
-                    endDaySlider.Value = lastDay;
+   //                 int lastDay = tss.LastDay();
+   //                 startDaySlider.Maximum = lastDay;
+  //                  endDaySlider.Maximum = lastDay;
+  //                  endDaySlider.Value = lastDay;
 
                 } catch (Exception exception) {
                     _ = System.Windows.MessageBox.Show(exception.Message);
@@ -129,12 +138,29 @@ namespace CaseCounter {
             colorCanvas.Background = Brushes.Yellow;
 
             ResultExporter re = new(caseListBox);
+            re.SetDays((int) startDaySlider.Value, (int) endDaySlider.Value);
             bool result = re.Build();
 
             if (result) {
                 colorCanvas.Background = Brushes.Green;
             } else {
-                colorCanvas.Background = Brushes.Red; ;
+                colorCanvas.Background = Brushes.Red; 
+            }
+        }
+
+        private void ExportSummariesOnly_Click(object sender, RoutedEventArgs e) {
+            colorCanvas.Background = Brushes.Yellow;
+
+            ResultExporter re = new(caseListBox);
+            re.SetDays((int)startDaySlider.Value, (int)endDaySlider.Value);
+            re.OnlySummaries = true;
+
+            bool result = re.Build();
+
+            if (result) {
+                colorCanvas.Background = Brushes.Green;
+            } else {
+                colorCanvas.Background = Brushes.Red;
             }
         }
 
@@ -168,7 +194,7 @@ namespace CaseCounter {
             AddToDisplayList(displayList, timeSeriesSetOne, timeSeries1ListBox, 0, scaleOptions, TruncateNegative);
             AddToDisplayList(displayList, timeSeriesSetTwo, timeSeries2ListBox, 1, scaleOptions, TruncateNegative);
 
-            ChartWindow cw = new(displayList);
+            ChartWindow cw = new(displayList, (int) startDaySlider.Value, (int) endDaySlider.Value);
             cw.Show();
 
         }
@@ -441,6 +467,10 @@ namespace CaseCounter {
 
         private void AfricaMapView_Click(object sender, RoutedEventArgs e) {
             LaunchMapView("Africa", "World by country/ContinentalAfrica_confirmed_sm.csv");
+        }
+
+        private void AfricaMap2View_Click(object sender, RoutedEventArgs e) {
+            LaunchMapView("Africa2", "World by country/ContinentalAfrica_confirmed_sm.csv");
         }
 
         private void IndiaMapView_Click(object sender, RoutedEventArgs e) {

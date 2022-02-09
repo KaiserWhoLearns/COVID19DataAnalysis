@@ -237,9 +237,13 @@ namespace DataSeries {
         }
 
         public double[] GetData() {
-            double[] ddata = new double[LastDay + 1];
+            return GetData(0, LastDay);
+        }
+
+        public double[] GetData(int startDay, int endDay) {  
+            double[] ddata = new double[endDay - startDay + 1];
             for (int i = 0; i < ddata.Length; i++)
-                ddata[i] = data[i];
+                ddata[i] = data[startDay + i];
 
             return ddata;
 

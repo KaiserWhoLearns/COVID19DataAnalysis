@@ -23,7 +23,18 @@ namespace CaseCounter {
         string topLevelInputDir;
         string topLevelOutputDir;
 
+        private int startDay;
+        private int endDay;
+
+        public bool OnlySummaries { get; set; }
+
         public ResultExporter(ListBox listBox) : base(listBox) {
+            OnlySummaries = false;
+        }
+
+        public void SetDays(int startDay, int endDay) {
+            this.startDay = startDay;
+            this.endDay = endDay;
         }
 
         public override bool Build() {
@@ -47,9 +58,11 @@ namespace CaseCounter {
 
             ReportStep("Basic Summaries");
 
-            WaveSummaries();
+            if (!OnlySummaries) {
+                WaveSummaries();
+                ReportStep("Wave Summaries");
+            }
 
-            ReportStep("Wave Summaries");
             return true;
         }
 
@@ -110,7 +123,7 @@ namespace CaseCounter {
                 foreach (TimeSeries ts in tssConf) {
                     string tsKey = TimeSeries.BuildKey(DataType.Deaths, ts.Admin0, ts.Admin1, ts.Admin2);
                     TimeSeries ts2 = tssDeaths.GetSeries(tsKey);
-                    outputFile.WriteLine(summary.Summarize(ts, ts2, maxWaves));
+                    outputFile.WriteLine(summary.Summarize(ts, ts2, maxWaves, startDay, endDay));
                 }
             }
         }

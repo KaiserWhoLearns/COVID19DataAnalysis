@@ -15,19 +15,19 @@ namespace WaveAnalyzer {
 
         public abstract string HeaderString(int maxWaves);
 
-        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves);
+        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay);
 
 
         protected string SummaryHeader() {
             return "Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR";
         }
-        protected string SummaryData(TimeSeries caseSeries, TimeSeries deathSeries) {
+        protected string SummaryData(TimeSeries caseSeries, TimeSeries deathSeries, int startDay, int endDay) {
             StringBuilder sb = new();
             sb.Append($"\"{caseSeries.Admin0}\",\"{caseSeries.Admin1}\",\"{caseSeries.Admin2}\",{caseSeries.Fips},");
 
             double population = caseSeries.Population;
-            double caseCount = caseSeries.CaseCount();
-            double deathCount = (deathSeries != null) ? deathSeries.CaseCount() : 0;
+            double caseCount = caseSeries.CaseCount(startDay, endDay);
+            double deathCount = (deathSeries != null) ? deathSeries.CaseCount(startDay, endDay) : 0;
             double casesPer100K = (population > 0) ? caseCount * 100000 / population : 0;
             double deathsPer1M = (population > 0) ? deathCount * 1000000 / population : 0;
             double caseFatalityRate = (caseCount > 0) ? deathCount / caseCount : 0;
@@ -48,8 +48,8 @@ namespace WaveAnalyzer {
             return SummaryHeader();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves) {
-            return SummaryData(caseSeries, deathSeries);
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay) {
+            return SummaryData(caseSeries, deathSeries, startDay, endDay);
         }
     }
 
@@ -69,9 +69,9 @@ namespace WaveAnalyzer {
             return sb.ToString();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves) {
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay) {
             StringBuilder sb = new();
-            sb.Append(SummaryData(caseSeries, deathSeries));
+            sb.Append(SummaryData(caseSeries, deathSeries, startDay, endDay));
 
             WaveSet waves = new(caseSeries, new WaveParameters());
             waves.Trim(maxWaves);
