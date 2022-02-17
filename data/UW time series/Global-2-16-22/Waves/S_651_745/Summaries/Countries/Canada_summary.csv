@@ -1,0 +1,15 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Canada","Alberta","",0,4413146,179781,519,4073.76,117.60,0.0029
+"Canada","British Columbia","",0,5110917,124392,495,2433.85,96.85,0.0040
+"Canada","Manitoba","",0,1377517,59022,337,4284.67,244.64,0.0057
+"Canada","New Brunswick","",0,779993,24063,140,3085.03,179.49,0.0058
+"Canada","Newfoundland and Labrador","",0,521364,16315,29,3129.29,55.62,0.0018
+"Canada","Northwest Territories","",0,44904,4701,6,10469.00,133.62,0.0013
+"Canada","Nova Scotia","",0,977457,31806,56,3253.95,57.29,0.0018
+"Canada","Nunavut","",0,38780,1275,1,3287.78,25.79,0.0008
+"Canada","Ontario","",0,14711827,450541,1887,3062.44,128.26,0.0042
+"Canada","Prince Edward Island","",0,158158,8491,11,5368.68,69.55,0.0013
+"Canada","Quebec","",0,8537674,451419,1955,5287.38,228.99,0.0043
+"Canada","Repatriated Travellers","",0,-1,0,0,0.00,0.00,0.0000
+"Canada","Saskatchewan","",0,1181666,44665,149,3779.83,126.09,0.0033
+"Canada","Yukon","",0,41078,2226,7,5418.96,170.41,0.0031

@@ -1,0 +1,16 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"United Kingdom","Anguilla","",0,15001,0,0,0.00,0.00,0.0000
+"United Kingdom","Bermuda","",0,62273,69,2,110.80,32.12,0.0290
+"United Kingdom","British Virgin Islands","",0,30236,64,0,211.67,0.00,0.0000
+"United Kingdom","Cayman Islands","",0,65720,135,0,205.42,0.00,0.0000
+"United Kingdom","Channel Islands","",0,170498,127,10,74.49,58.65,0.0787
+"United Kingdom","England","",0,55977200,141618,541,252.99,9.66,0.0038
+"United Kingdom","Falkland Islands","",0,3483,0,0,0.00,0.00,0.0000
+"United Kingdom","Gibraltar","",0,33691,245,0,727.20,0.00,0.0000
+"United Kingdom","Isle of Man","",0,85032,25,3,29.40,35.28,0.1200
+"United Kingdom","Montserrat","",0,4999,2,0,40.01,0.00,0.0000
+"United Kingdom","Northern Ireland","",0,1881600,5550,43,294.96,22.85,0.0077
+"United Kingdom","Saint Helena, Ascension and Tristan da Cunha","",0,5661,1,0,17.66,0.00,0.0000
+"United Kingdom","Scotland","",0,5463300,10148,83,185.75,15.19,0.0082
+"United Kingdom","Turks and Caicos Islands","",0,38718,673,4,1738.21,103.31,0.0059
+"United Kingdom","Wales","",0,3138599,8793,188,280.16,59.90,0.0214

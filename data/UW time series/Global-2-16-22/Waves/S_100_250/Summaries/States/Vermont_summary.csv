@@ -1,0 +1,16 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Vermont","Addison",50001,36777,23,0,62.54,0.00,0.0000
+"US","Vermont","Bennington",50003,35470,69,0,194.53,0.00,0.0000
+"US","Vermont","Caledonia",50005,29993,20,0,66.68,0.00,0.0000
+"US","Vermont","Chittenden",50007,163773,419,6,255.84,36.64,0.0143
+"US","Vermont","Essex",50009,6163,3,0,48.68,0.00,0.0000
+"US","Vermont","Franklin",50011,49402,32,2,64.77,40.48,0.0625
+"US","Vermont","Grand Isle",50013,7235,11,0,152.04,0.00,0.0000
+"US","Vermont","Lamoille",50015,25362,32,0,126.17,0.00,0.0000
+"US","Vermont","Orange",50017,28892,17,0,58.84,0.00,0.0000
+"US","Vermont","Orleans",50019,27037,12,0,44.38,0.00,0.0000
+"US","Vermont","Rutland",50021,58190,84,0,144.35,0.00,0.0000
+"US","Vermont","Unassigned",90050,-1,4,0,0.00,0.00,0.0000
+"US","Vermont","Washington",50023,58409,44,1,75.33,17.12,0.0227
+"US","Vermont","Windham",50025,42222,52,0,123.16,0.00,0.0000
+"US","Vermont","Windsor",50027,55062,46,0,83.54,0.00,0.0000

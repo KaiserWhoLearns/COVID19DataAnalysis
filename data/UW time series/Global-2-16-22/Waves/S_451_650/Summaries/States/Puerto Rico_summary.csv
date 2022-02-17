@@ -1,0 +1,81 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","Puerto Rico","Adjuntas",72001,17363,153,0,881.18,0.00,0.0000
+"US","Puerto Rico","Aguada",72003,36693,1067,0,2907.91,0.00,0.0000
+"US","Puerto Rico","Aguadilla",72005,50265,1318,0,2622.10,0.00,0.0000
+"US","Puerto Rico","Aguas Buenas",72007,24814,454,0,1829.61,0.00,0.0000
+"US","Puerto Rico","Aibonito",72009,22108,331,0,1497.20,0.00,0.0000
+"US","Puerto Rico","Anasco",72011,26161,516,0,1972.40,0.00,0.0000
+"US","Puerto Rico","Arecibo",72013,81966,1441,0,1758.05,0.00,0.0000
+"US","Puerto Rico","Arroyo",72015,17238,151,0,875.97,0.00,0.0000
+"US","Puerto Rico","Barceloneta",72017,23727,364,0,1534.12,0.00,0.0000
+"US","Puerto Rico","Barranquitas",72019,27724,447,0,1612.32,0.00,0.0000
+"US","Puerto Rico","Bayamon",72021,169269,4422,0,2612.41,0.00,0.0000
+"US","Puerto Rico","Cabo Rojo",72023,47515,790,0,1662.63,0.00,0.0000
+"US","Puerto Rico","Caguas",72025,124605,2427,0,1947.75,0.00,0.0000
+"US","Puerto Rico","Camuy",72027,30503,500,0,1639.18,0.00,0.0000
+"US","Puerto Rico","Canovanas",72029,44674,1045,0,2339.17,0.00,0.0000
+"US","Puerto Rico","Carolina",72031,146984,3926,0,2671.04,0.00,0.0000
+"US","Puerto Rico","Catano",72033,23121,559,0,2417.72,0.00,0.0000
+"US","Puerto Rico","Cayey",72035,42408,566,0,1334.65,0.00,0.0000
+"US","Puerto Rico","Ceiba",72037,10903,217,0,1990.28,0.00,0.0000
+"US","Puerto Rico","Ciales",72039,15808,226,0,1429.66,0.00,0.0000
+"US","Puerto Rico","Cidra",72041,38307,559,0,1459.26,0.00,0.0000
+"US","Puerto Rico","Coamo",72043,38335,345,0,899.96,0.00,0.0000
+"US","Puerto Rico","Comerio",72045,18648,260,0,1394.25,0.00,0.0000
+"US","Puerto Rico","Corozal",72047,32292,627,0,1941.66,0.00,0.0000
+"US","Puerto Rico","Culebra",72049,1714,18,0,1050.18,0.00,0.0000
+"US","Puerto Rico","Dorado",72051,36141,987,0,2730.97,0.00,0.0000
+"US","Puerto Rico","Fajardo",72053,29453,730,0,2478.53,0.00,0.0000
+"US","Puerto Rico","Florida",72054,11317,255,0,2253.25,0.00,0.0000
+"US","Puerto Rico","Guanica",72055,15383,168,0,1092.11,0.00,0.0000
+"US","Puerto Rico","Guayama",72057,39465,360,0,912.20,0.00,0.0000
+"US","Puerto Rico","Guayanilla",72059,17623,201,0,1140.55,0.00,0.0000
+"US","Puerto Rico","Guaynabo",72061,83727,1978,0,2362.44,0.00,0.0000
+"US","Puerto Rico","Gurabo",72063,47092,897,0,1904.78,0.00,0.0000
+"US","Puerto Rico","Hatillo",72065,39218,674,0,1718.60,0.00,0.0000
+"US","Puerto Rico","Hormigueros",72067,15518,239,0,1540.15,0.00,0.0000
+"US","Puerto Rico","Humacao",72069,50653,992,0,1958.42,0.00,0.0000
+"US","Puerto Rico","Isabela",72071,40423,1162,0,2874.60,0.00,0.0000
+"US","Puerto Rico","Jayuya",72073,13890,132,0,950.32,0.00,0.0000
+"US","Puerto Rico","Juana Diaz",72075,44679,494,0,1105.66,0.00,0.0000
+"US","Puerto Rico","Juncos",72077,38155,768,0,2012.84,0.00,0.0000
+"US","Puerto Rico","Lajas",72079,22010,315,0,1431.17,0.00,0.0000
+"US","Puerto Rico","Lares",72081,24275,354,0,1458.29,0.00,0.0000
+"US","Puerto Rico","Las Marias",72083,7927,169,0,2131.95,0.00,0.0000
+"US","Puerto Rico","Las Piedras",72085,37006,530,0,1432.20,0.00,0.0000
+"US","Puerto Rico","Loiza",72087,24552,554,0,2256.44,0.00,0.0000
+"US","Puerto Rico","Luquillo",72089,17665,491,0,2779.51,0.00,0.0000
+"US","Puerto Rico","Manati",72091,37287,653,0,1751.28,0.00,0.0000
+"US","Puerto Rico","Maricao",72093,5430,52,0,957.64,0.00,0.0000
+"US","Puerto Rico","Maunabo",72095,10321,184,0,1782.77,0.00,0.0000
+"US","Puerto Rico","Mayaguez",72097,71530,1668,0,2331.89,0.00,0.0000
+"US","Puerto Rico","Moca",72099,34890,868,0,2487.82,0.00,0.0000
+"US","Puerto Rico","Morovis",72101,30335,466,0,1536.18,0.00,0.0000
+"US","Puerto Rico","Naguabo",72103,25761,526,0,2041.85,0.00,0.0000
+"US","Puerto Rico","Naranjito",72105,27349,538,0,1967.17,0.00,0.0000
+"US","Puerto Rico","Orocovis",72107,20220,222,0,1097.92,0.00,0.0000
+"US","Puerto Rico","Out of PR",72888,-1,172,0,0.00,0.00,0.0000
+"US","Puerto Rico","Patillas",72109,16211,109,0,672.38,0.00,0.0000
+"US","Puerto Rico","Penuelas",72111,19249,208,0,1080.58,0.00,0.0000
+"US","Puerto Rico","Ponce",72113,131880,2080,0,1577.19,0.00,0.0000
+"US","Puerto Rico","Quebradillas",72115,22918,495,0,2159.87,0.00,0.0000
+"US","Puerto Rico","Rincon",72117,13656,375,0,2746.05,0.00,0.0000
+"US","Puerto Rico","Rio Grande",72119,48025,1143,0,2380.01,0.00,0.0000
+"US","Puerto Rico","Sabana Grande",72121,21712,292,0,1344.88,0.00,0.0000
+"US","Puerto Rico","Salinas",72123,27128,310,0,1142.73,0.00,0.0000
+"US","Puerto Rico","San German",72125,30227,446,0,1475.50,0.00,0.0000
+"US","Puerto Rico","San Juan",72127,318441,8582,0,2695.00,0.00,0.0000
+"US","Puerto Rico","San Lorenzo",72129,35989,607,0,1686.63,0.00,0.0000
+"US","Puerto Rico","San Sebastian",72131,35528,714,0,2009.68,0.00,0.0000
+"US","Puerto Rico","Santa Isabel",72133,21209,238,0,1122.17,0.00,0.0000
+"US","Puerto Rico","Toa Alta",72135,72025,1467,0,2036.79,0.00,0.0000
+"US","Puerto Rico","Toa Baja",72137,74271,1789,0,2408.75,0.00,0.0000
+"US","Puerto Rico","Trujillo Alto",72139,63674,1244,0,1953.70,0.00,0.0000
+"US","Puerto Rico","Unassigned",72999,-1,566,1041,0.00,0.00,1.8392
+"US","Puerto Rico","Utuado",72141,27395,400,0,1460.12,0.00,0.0000
+"US","Puerto Rico","Vega Alta",72143,36061,926,0,2567.87,0.00,0.0000
+"US","Puerto Rico","Vega Baja",72145,50023,1414,0,2826.70,0.00,0.0000
+"US","Puerto Rico","Vieques",72147,8386,69,0,822.80,0.00,0.0000
+"US","Puerto Rico","Villalba",72149,21372,195,0,912.41,0.00,0.0000
+"US","Puerto Rico","Yabucoa",72151,32282,437,0,1353.70,0.00,0.0000
+"US","Puerto Rico","Yauco",72153,33575,368,0,1096.05,0.00,0.0000

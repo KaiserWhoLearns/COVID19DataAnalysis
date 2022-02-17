@@ -1,0 +1,8 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Pakistan","Azad Jammu and Kashmir","",0,4045365,6132,20,151.58,4.94,0.0033
+"Pakistan","Balochistan","",0,12344408,1497,11,12.13,0.89,0.0073
+"Pakistan","Gilgit-Baltistan","",0,1013584,500,3,49.33,2.96,0.0060
+"Pakistan","Islamabad","",0,2006571,24573,44,1224.63,21.93,0.0018
+"Pakistan","Khyber Pakhtunkhwa","",0,30523371,23917,286,78.36,9.37,0.0120
+"Pakistan","Punjab","",0,110012442,48335,311,43.94,2.83,0.0064
+"Pakistan","Sindh","",0,47886050,80796,315,168.73,6.58,0.0039

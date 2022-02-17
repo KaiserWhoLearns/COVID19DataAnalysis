@@ -1,0 +1,18 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Netherlands","Aruba","",0,106766,3785,24,3545.14,224.79,0.0063
+"Netherlands","Bonaire, Sint Eustatius and Saba","",0,26221,90,1,343.24,38.14,0.0111
+"Netherlands","Curacao","",0,164099,347,0,211.46,0.00,0.0000
+"Netherlands","Drenthe","",0,493682,545,4,110.39,8.10,0.0073
+"Netherlands","Flevoland","",0,423021,1149,7,271.62,16.55,0.0061
+"Netherlands","Friesland","",0,649956,795,0,122.32,0.00,0.0000
+"Netherlands","Gelderland","",0,2085951,4626,14,221.77,6.71,0.0030
+"Netherlands","Groningen","",0,585866,1270,2,216.77,3.41,0.0016
+"Netherlands","Limburg","",0,1117201,1634,11,146.26,9.85,0.0067
+"Netherlands","Noord-Brabant","",0,2562955,7092,24,276.71,9.36,0.0034
+"Netherlands","Noord-Holland","",0,2879527,15854,39,550.58,13.54,0.0025
+"Netherlands","Overijssel","",0,1162405,1710,26,147.11,22.37,0.0152
+"Netherlands","Sint Maarten","",0,42882,571,8,1331.56,186.56,0.0140
+"Netherlands","Unknown","",0,-1,1739,2,0.00,0.00,0.0012
+"Netherlands","Utrecht","",0,1354834,4951,13,365.43,9.60,0.0026
+"Netherlands","Zeeland","",0,383488,585,3,152.55,7.82,0.0051
+"Netherlands","Zuid-Holland","",0,3708696,22187,91,598.24,24.54,0.0041

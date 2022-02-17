@@ -1,0 +1,28 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"Ukraine","Cherkasy Oblast","",0,1206350,40856,1140,3386.75,945.00,0.0279
+"Ukraine","Chernihiv Oblast","",0,1005745,34175,903,3397.98,897.84,0.0264
+"Ukraine","Chernivtsi Oblast","",0,904373,32030,701,3541.68,775.12,0.0219
+"Ukraine","Crimea Republic*","",0,1913731,38168,1725,1994.43,901.38,0.0452
+"Ukraine","Dnipropetrovsk Oblast","",0,3206477,74163,3234,2312.91,1008.58,0.0436
+"Ukraine","Donetsk Oblast","",0,4165901,59557,1910,1429.63,458.48,0.0321
+"Ukraine","Ivano-Frankivsk Oblast","",0,1373251,64822,842,4720.33,613.14,0.0130
+"Ukraine","Kharkiv Oblast","",0,2675598,66460,1883,2483.93,703.77,0.0283
+"Ukraine","Kherson Oblast","",0,1037640,22806,919,2197.87,885.66,0.0403
+"Ukraine","Khmelnytskyi Oblast","",0,1264705,58634,1108,4636.18,876.09,0.0189
+"Ukraine","Kiev","",0,2950800,116195,2295,3937.75,777.76,0.0198
+"Ukraine","Kiev Oblast","",0,1767940,53224,1505,3010.51,851.27,0.0283
+"Ukraine","Kirovohrad Oblast","",0,945549,12438,667,1315.43,705.41,0.0536
+"Ukraine","Luhansk Oblast","",0,2151833,19626,698,912.06,324.37,0.0356
+"Ukraine","Lviv Oblast","",0,2522021,91663,1669,3634.51,661.77,0.0182
+"Ukraine","Mykolaiv Oblast","",0,2522021,39169,1022,1553.08,405.23,0.0261
+"Ukraine","Odessa Oblast","",0,2380307,80789,1626,3394.06,683.11,0.0201
+"Ukraine","Poltava Oblast","",0,1400439,56817,1611,4057.08,1150.35,0.0284
+"Ukraine","Rivne Oblast","",0,1157301,49175,788,4249.11,680.89,0.0160
+"Ukraine","Sevastopol*","",0,443211,20057,602,4525.38,1358.27,0.0300
+"Ukraine","Sumy Oblast","",0,1081418,52248,1095,4831.43,1012.56,0.0210
+"Ukraine","Ternopil Oblast","",0,1045879,41208,620,3940.04,592.80,0.0150
+"Ukraine","Vinnytsia Oblast","",0,1560394,52190,1287,3344.67,824.79,0.0247
+"Ukraine","Volyn Oblast","",0,1035329,36855,727,3559.74,702.19,0.0197
+"Ukraine","Zakarpattia Oblast","",0,1256802,32881,819,2616.24,651.65,0.0249
+"Ukraine","Zaporizhia Oblast","",0,1705836,48644,2180,2851.62,1277.97,0.0448
+"Ukraine","Zhytomyr Oblast","",0,1220193,51762,909,4242.12,744.96,0.0176

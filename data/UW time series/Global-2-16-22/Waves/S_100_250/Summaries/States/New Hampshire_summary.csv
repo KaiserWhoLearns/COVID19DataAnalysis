@@ -1,0 +1,13 @@
+Admin0,Admin1,Admin2,FIPS,Population,CaseCount,DeathCount,CasesPer100K,DeathsPerM,CFR
+"US","New Hampshire","Belknap",33001,61303,113,4,184.33,65.25,0.0354
+"US","New Hampshire","Carroll",33003,48910,91,2,186.06,40.89,0.0220
+"US","New Hampshire","Cheshire",33005,76085,109,1,143.26,13.14,0.0092
+"US","New Hampshire","Coos",33007,31563,20,0,63.37,0.00,0.0000
+"US","New Hampshire","Grafton",33009,89886,92,0,102.35,0.00,0.0000
+"US","New Hampshire","Hillsborough",33011,417025,3436,270,823.93,647.44,0.0786
+"US","New Hampshire","Merrimack",33013,151391,419,21,276.77,138.71,0.0501
+"US","New Hampshire","Rockingham",33015,309769,1298,93,419.02,300.22,0.0716
+"US","New Hampshire","Strafford",33017,130632,408,9,312.33,68.90,0.0221
+"US","New Hampshire","Sullivan",33019,43146,44,0,101.98,0.00,0.0000
+"US","New Hampshire","Unassigned",90033,-1,-9,-37,0.00,0.00,0.0000
+"US","New Hampshire","Nashua",0,-1,0,0,0.00,0.00,0.0000
