@@ -30,12 +30,12 @@ namespace CaseCounter {
         public delegate double? WaveQuery(WaveSet waves, int date);
         private WaveQuery waveQuery;
 
-        public DrawingWindow(List<TimeSeries> tsList) {
+        public DrawingWindow(List<TimeSeries> tsList, double zeroLevel) {
             InitializeComponent();
 
             timeSeriesList = tsList;
             coordList = LatLongList(tsList);
-            WaveParameters waveParameters = new();
+            WaveParameters waveParameters = new(zeroLevel);
 
             PlotSeries(tsList, coordList,  null);
             waveSetList = new();

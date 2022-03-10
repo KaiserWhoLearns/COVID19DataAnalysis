@@ -50,11 +50,14 @@ namespace WaveAnalyzer {
         private double maxDeriv;
         public double MaxDeriv { get { return maxDeriv; } }
 
+
+
         private int maxDerivPos;
         public double MaxDerivPos { get { return maxDerivPos; } }
 
         private double minDeriv;
         public double MinDeriv { get { return minDeriv; } }
+
 
         private int minDerivPos;
         public double MinDerivPos { get { return minDerivPos; } }
@@ -126,9 +129,11 @@ namespace WaveAnalyzer {
             maxDerivPos = pos;
             maxDeriv = (normalization > 0) ? deriv / normalization : 0.0;
 
+
             (pos, deriv) = timeSeries.MinimumDerivative(derivSpan, Start, End);
             minDerivPos = pos;
             minDeriv = (normalization > 0) ? deriv / normalization : 0.0;
+
         }
 
         public string ToLongString() {
@@ -144,8 +149,8 @@ namespace WaveAnalyzer {
             sb.Append($"  Median: {Median}");
             sb.Append($"  Mean: {Mean:F2}");
             sb.Append($"  Sigma: {Sigma:F2}\r\n");
-            sb.Append($"  Max Derivative {MaxDeriv:F2} at {MaxDerivPos}");
-            sb.Append($"  Min Derivative {MinDeriv:F2} at {MinDerivPos}\r\n");
+            sb.Append($"  Max Derivative {MaxDeriv:F2}  at {MaxDerivPos}");
+            sb.Append($"  Min Derivative {MinDeriv:F2}  at {MinDerivPos}\r\n");
             return sb.ToString();
         }
 
@@ -165,14 +170,14 @@ namespace WaveAnalyzer {
         }
 
         public string ToCSVString() {
-            return $"{Start},{End},{Maximum},{MaxValue:F2},{CaseCount:F0},{Deaths:F0},{Weight:F3},{DeathWeight:F3},{FatalityRate:F4}";
+            return $"{Start},{End},{Maximum},{MaxDerivPos},{MinDerivPos},{MaxValue:F2},{CaseCount:F0},{Deaths:F0},{Weight:F3},{DeathWeight:F3},{FatalityRate:F4}";
         }
         public static string ToCSVHeaderString() {
-            return "Start,End,Peak,NormalizedPeakValue,CaseCount,DeathCount,Weight,DeathWeight,CFR";
+            return "Start,End,Peak,MaxDeriv,MinDeriv,NormalizedPeakValue,CaseCount,DeathCount,Weight,DeathWeight,CFR";
         }
 
         public static string ToCSVEmptyString() {
-            return ",,,,,,,,";
+            return ",,,,,,,,,,";
         }
     }
 }

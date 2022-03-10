@@ -15,7 +15,7 @@ namespace WaveAnalyzer {
 
         public abstract string HeaderString(int maxWaves);
 
-        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay);
+        public abstract string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay, double zeroLevel);
 
 
         protected string SummaryHeader() {
@@ -48,7 +48,7 @@ namespace WaveAnalyzer {
             return SummaryHeader();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay) {
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay, double zeroLevel) {
             return SummaryData(caseSeries, deathSeries, startDay, endDay);
         }
     }
@@ -69,11 +69,11 @@ namespace WaveAnalyzer {
             return sb.ToString();
         }
 
-        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay) {
+        public override string Summarize(TimeSeries caseSeries, TimeSeries deathSeries, int maxWaves, int startDay, int endDay, double zeroLevel) {
             StringBuilder sb = new();
             sb.Append(SummaryData(caseSeries, deathSeries, startDay, endDay));
 
-            WaveSet waves = new(caseSeries, new WaveParameters());
+            WaveSet waves = new(caseSeries, new WaveParameters(zeroLevel));
             waves.Trim(maxWaves);
             if (deathSeries != null) {
                 waves.AddDeath(deathSeries);

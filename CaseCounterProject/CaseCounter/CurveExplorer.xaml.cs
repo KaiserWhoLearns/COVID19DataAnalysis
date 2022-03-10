@@ -190,10 +190,10 @@ namespace CaseCounter {
             overlayCurve.YAxisIndex = 0;
             wpfPlot3.Plot.YAxis2.Ticks(true);
             overlayCurve.LineWidth = 3;
-            overlayCurve.Color = System.Drawing.Color.Aqua;
+            overlayCurve.Color = System.Drawing.Color.Orange;
 
             criticalPoints = wpfPlot3.Plot.AddScatter(cpX, cpY, System.Drawing.Color.Red, markerSize: 10, lineWidth: 0, label: "Critical Points");
-            inflectionPoints = wpfPlot3.Plot.AddScatter(ipX, ipY, System.Drawing.Color.Lime, markerSize: 10, lineWidth: 0, label: "Inflection Points");
+   //         inflectionPoints = wpfPlot3.Plot.AddScatter(ipX, ipY, System.Drawing.Color.Lime, markerSize: 10, lineWidth: 0, label: "Inflection Points");
 
 
             wpfPlot3.Refresh();

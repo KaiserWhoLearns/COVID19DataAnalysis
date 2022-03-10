@@ -123,7 +123,7 @@ namespace CaseCounter {
                 foreach (TimeSeries ts in tssConf) {
                     string tsKey = TimeSeries.BuildKey(DataType.Deaths, ts.Admin0, ts.Admin1, ts.Admin2);
                     TimeSeries ts2 = tssDeaths.GetSeries(tsKey);
-                    outputFile.WriteLine(summary.Summarize(ts, ts2, maxWaves, startDay, endDay));
+                    outputFile.WriteLine(summary.Summarize(ts, ts2, maxWaves, startDay, endDay, 0.0));
                 }
             }
         }

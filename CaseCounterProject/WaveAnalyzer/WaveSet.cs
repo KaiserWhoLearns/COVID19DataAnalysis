@@ -9,7 +9,7 @@ using System.Windows.Controls;
 
 namespace WaveAnalyzer {
     public class WaveParameters {
-        private readonly double zeroLevel = 0.5;
+        private double zeroLevel;
         private readonly int zeroSmoothing = 14;
         private int waveSmoothing = 17;
 
@@ -19,8 +19,8 @@ namespace WaveAnalyzer {
             get { return waveSmoothing; } 
             set { waveSmoothing = value; }
         }
-        public WaveParameters() {
-
+        public WaveParameters(double zeroLevel) {
+            this.zeroLevel = zeroLevel;
         }
     }
     public class WaveSet : IEnumerable<Wave> {

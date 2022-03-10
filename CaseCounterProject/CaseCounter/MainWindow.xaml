@@ -88,6 +88,8 @@
             <Button Margin="10,0,0,0" Click="Drawing_Click">Draw</Button>
             <Button Margin="10,0,0,0" Click="MapInfo_Click">Map Info</Button>
             <Button Margin="10,0,0,0" Click="SetDirectory_Click">Set Directory</Button>
+            <Label Margin="10,0,0,0">Zero Level</Label>
+            <TextBox Margin="10,0,0,0" x:Name="zeroLevelTextBox" TextAlignment="Right" Width="40" Text="0.5"/>
 
 
         </StackPanel>

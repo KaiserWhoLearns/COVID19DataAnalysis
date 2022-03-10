@@ -25,6 +25,7 @@ namespace CaseCounter {
         private List<string> filesInTSS;
 
         private string topLevelDirectory;
+        private readonly double DefaultZeroLevel = 0.5;
 
         public TimeSeriesSet TimeSeriesSetOne { get { return timeSeriesSetOne; } }
 
@@ -43,6 +44,8 @@ namespace CaseCounter {
 
             topLevelDirectory = "C:\\Users\\anderson\\Documents\\GitHub\\COVID19DataAnalysis\\data\\UW time series\\Global";
                 // The app needs a date range, so we open one of the files - this is crude
+                // This is also buggy,  as it interferes with data archived on a different path, with a different date range.  Ugh.
+
             string tssFileName = "World by province\\US_confirmed_sm.csv";
             TimeSeriesSet tempTSS = new();
             tempTSS.LoadCsv(Path.Combine(topLevelDirectory, tssFileName));
@@ -362,9 +365,23 @@ namespace CaseCounter {
             AllDistances((tss, key) => tss.GetDistanceList(key, startDay, endDay));
         }
 
+        private double GetZeroLevel() {
+            double zeroLevel;
+
+            if (Double.TryParse(zeroLevelTextBox.Text, out zeroLevel)) {
+                return zeroLevel;
+            } else {
+                _ = MessageBox.Show($"Incorrect value for ZeroLevel: {zeroLevelTextBox.Text}");
+                return DefaultZeroLevel;
+            }        
+        }
+
         private void MakeWaves_Click(object sender, RoutedEventArgs e) {
             fileListBox.Items.Clear();
-            WaveParameters wp = new();
+
+
+
+            WaveParameters wp = new(GetZeroLevel());
 
             wp.WaveSmoothing = int.Parse(waveSmoothTextBox.Text);
 
@@ -384,7 +401,8 @@ namespace CaseCounter {
             else {
                 string tsKey = (string) timeSeries1ListBox.SelectedItem;
                 TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
-                WaveSet ws = new(ts, new());
+                double zeroLevel = DefaultZeroLevel;
+                WaveSet ws = new(ts, new(GetZeroLevel()));
                 if (timeSeriesSetTwo != null) {         // If there is a matching file of deaths,  add deaths to waveset
                     TimeSeries ts1 = timeSeriesSetTwo.LookupCorrespondingSeries(ts);
                     if (ts1 != null) {
@@ -400,7 +418,7 @@ namespace CaseCounter {
             fileListBox.Items.Clear();
             foreach (string tsKey in timeSeries1ListBox.SelectedItems) {
                 TimeSeries ts = timeSeriesSetOne.GetSeries(tsKey);
-                WaveSet ws = new(ts, new());
+                WaveSet ws = new(ts, new(GetZeroLevel()));
                 fileListBox.Items.Add(ws.MainPeaks(0.10));
             } 
         }
@@ -419,7 +437,7 @@ namespace CaseCounter {
             }
 
             if (tsList.Count > 0) {
-                drawingWindow = new(tsList);
+                drawingWindow = new(tsList, GetZeroLevel());
                 drawingWindow.Show();
             }
         }
@@ -438,7 +456,7 @@ namespace CaseCounter {
             }
 
             if (tsList.Count > 0) {
-                drawingWindow = new(tsList);
+                drawingWindow = new(tsList, GetZeroLevel());
                 drawingWindow.Show();
             }
         }
