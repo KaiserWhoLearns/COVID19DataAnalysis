@@ -1,9 +1,3 @@
 [submodule "data/COVID-19"]
 	path = data/COVID-19
 	url = https://github.com/CSSEGISandData/COVID-19
-[submodule "data/covariants"]
-	path = data/covariants
-	url = https://github.com/hodcroftlab/covariants
-[submodule "data/COVID-19-Vaccination"]
-	path = data/COVID-19-Vaccination
-	url = https://github.com/govex/COVID-19
